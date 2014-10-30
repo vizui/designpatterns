@@ -1,0 +1,29 @@
+@import "../bower_components/bootstrap/less/modals.less";
+
+.modal-footer {
+    background-color: #fafafb;
+    border-top: 1px solid #f0f2f3;
+
+    &:last-child {
+        border-radius: 0 0 2px 2px;
+    }
+}
+.modal-header {
+    // text-align: center;
+    border-bottom: none;
+}
+.modal-center {
+    .modal-header, .modal-body {
+        text-align: center;
+    }
+}
+
+.modal-content {
+    box-shadow: 0 1px 4px rgba(0,0,0,.3);
+    border: none;
+}
+@media (min-width: @screen-sm-min) {
+    .modal-content {
+        box-shadow: 0 1px 4px rgba(0,0,0,.3);
+    }
+}
