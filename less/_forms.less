@@ -1,0 +1,70 @@
+@import "../bower_components/bootstrap/less/forms.less";
+
+// increase spacing between inline radio/checkboxes to distinguish label relationships.
+.radio-inline + .radio-inline,
+.checkbox-inline + .checkbox-inline {
+    margin-left: 18px;
+}
+
+// improve checkbox/radio positioning
+input[type="radio"], input[type="checkbox"] {
+    margin: .15em 0 0;
+}
+
+// removes shadow from inputs and darkens focused field
+.form-control {
+    box-shadow: none;
+
+    &:focus {
+        background-color: #fafafb;
+        box-shadow: none;
+    }
+
+    .has-error & {
+        box-shadow: none;
+    }
+}
+
+// adds required asterisk after label
+form:not(.form-horizontal) {
+    label.required::after {
+        position: relative;
+        content: "*";
+        left: 4px;
+        font-size: 12px;
+    }
+}
+
+// adds required asterisk before label
+.form-horizontal {
+    @media(min-width: 768px) {
+        label.required::before {
+            position: relative;
+            content: "*";
+            left: -4px;
+            font-size: 12px;
+        }
+    }
+    @media(max-width: 767px) {
+        label.required::after {
+            position: relative;
+            content: "*";
+            left: 4px;
+            font-size: 12px;
+        }
+    }
+}
+
+// Add an icon inside the front of an input
+.input-icon {
+    position: absolute;
+    pointer-events: none;
+    margin-top: 9px;
+    margin-left: 9px;
+    color: #ccc;
+    font-size: 14px;
+}
+.input-icon+input {
+    padding-left: 28px;
+}
+

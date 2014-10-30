@@ -1,0 +1,93 @@
+@import "../bower_components/bootstrap/less/navs.less";
+
+.nav-tabs {
+    > li {
+        > a {
+            color: @gray;
+        }
+        &.disabled > a {
+            color: #999;
+        }
+        &.active > a {
+            background-color: @nav-tabs-active-link-hover-bg;
+        }
+        &.active > a,
+        &.active > a:hover,
+        &.active > a:focus,
+        &.active > a:active, {
+            color: @brand-primary;
+            // padding-top: 9px;
+            // border-top: 2px solid #004C97;
+        }
+
+        &.open > a,
+        &.open > a:focus {
+            border-color: transparent;
+        }
+    }
+    &.nav-justified {
+        > .active > a,
+        > .active > a:hover,
+        > .active > a:focus {
+            border-bottom-color: #fff;
+        }
+
+        @media (max-width: @screen-xs-max) {
+            > .active > a,
+            > li > a {
+                background: #fff;
+                border: 1px solid @nav-tabs-border-color;
+            }
+        }
+    }
+}
+
+.nav-centered {
+    text-align: center;
+    > li {
+        float: initial;
+        display: inline-block;
+    }
+}
+
+.nav-tabs.nav-tabs-light {
+    border-bottom: 1px solid @gray-lighter;
+    > li {
+        margin-bottom: -1px;
+        > a {
+            color: inherit;
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid transparent;
+        }
+        &.disabled > a {
+            color: #999;
+            &:hover {
+                color: #999;
+                border-bottom-color: transparent;
+            }
+        }
+        > a:hover {
+            color: inherit;
+            border: none;
+            background: transparent;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            border-bottom: 2px solid @gray-light;
+        }
+
+        // > a:hover,
+        &.active > a,
+        &.active > a:hover,
+        &.active > a:focus,
+        &.active > a:active,
+        &.open > a {
+            color: @brand-primary;
+            border: none;
+            background: transparent;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            border-bottom: 2px solid @brand-primary;
+        }
+    }
+}
