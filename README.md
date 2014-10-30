@@ -6,7 +6,7 @@ This project is a work in progress.
 ## To run it locally
 You will first need to have [Node.js](http://nodejs.org/download/) installed. Node.js powers the popular front-end build and dependency management tools [Grunt](http://gruntjs.com/) and [Bower](http://bower.io/).
 
-Once Node.js is installed, insure you have Grunt and Bower installed globally with:
+Once Node.js is installed, ensure you have Grunt and Bower installed globally with:
 ```
 npm install grunt-cli -g
 npm install bower -g
