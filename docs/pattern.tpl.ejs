@@ -1,0 +1,152 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Pattern Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="shortcut icon" href="favicon.ico">
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600,700" rel="stylesheet" type="text/css">
+
+        <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=RobotoDraft:100,300,400,500,700"> -->
+
+        <!-- build:css(docs) styles/vendor.css -->
+        <link rel="stylesheet" href="vendor/jquery-ui-1.11.1.custom/jquery-ui.structure.css"/>
+        <!-- bower:css -->
+        <link rel="stylesheet" href="../bower_components/font-awesome/css/font-awesome.css" />
+        <link rel="stylesheet" href="../bower_components/select2/select2.css" />
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/pattern-library.css">
+        <!-- endbuild -->
+
+    </head>
+    <body>
+        <!--[if lt IE 9]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="pl-header navbar navbar-fixed-top navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <span class="navbar-brand"><strong>USPTO</strong> Patterns</span>
+                    <!-- <button type="button" class="btn btn-link nav-collapse"><i class="fa fa-navicon"></i></button> -->
+                    <button type="button" class="nav-collapse btn btn-link"><i class="fa fa-1x fa-bars"></i></button>
+                    <button type="button" class="btn navbar-toggle collapsed"><i class="fa fa-1x fa-angle-down"></i></button>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="#"><i class="fa fa-1x fa-home"></i></a>
+                        </li>
+                        <% Object.keys(nav).forEach(function (k) { %>
+                        <li><a href="#"><%= k %></a></li>
+                    <% }); %>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- <a ><i class="fa fa-1x fa-warning"></i><span class="count">3</span></a> -->
+                        <li>
+                            <a href="#" title="View on Github" ><i class="fa fa-1x fa-github"></i> &nbsp; View on Github</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="pl-sub-header">
+            <div class="pull-left">
+                <h4><strong><%= category %></strong> - <%= meta.title %></h4>
+            </div>
+            <div class="pull-right">
+                <button type="button" title="Edit this page on Github" class="btn btn-sm btn-default"> <i class="fa fa-pencil"></i></button>
+            </div>
+        </div>
+        <div class="pl-container">
+            <ul class="pl-sidebar">
+                <% Object.keys(nav[category] || {}).forEach(function (subCategory) { %>
+                    <li class="category"><%= subCategory.toUpperCase() %></li>
+                    <% nav[category][subCategory].forEach(function(l) { %>
+                        <% if (!l.meta.draft) { %>
+                            <li class="<%= l.title == meta.title ? 'active' : '' %>"><a href="<%= l.url %>"><%- l.meta.preview ? '<i title="Work in Progress / Preview" class="fa fa-exclamation pull-right"></i>' : '' %><%= l.title %> </a>
+                                <% if (l.title === meta.title && l.subNav && l.subNav.length) { %>
+                                    <ul class="nav">
+                                        <%l.subNav.forEach(function(s) { %>
+                                            <li><a title="<%= s %>" href="#<%= s.toLowerCase().replace(/[^\w]+/g, '-') %>"><%= s %></a></li>
+                                        <%});%>
+                                    </ul>
+                                <%}%>
+                            </li>
+                        <%}%>
+                    <% });%>
+                <% });%>
+            </ul>
+            <div class="pl-content">
+                <% if (meta.preview) { %>
+                    <div class="pl-preview-header">Work in Progress / Preview</div>
+                <% } %>
+                <%- content %>
+<!--
+
+                <div class="pl-footer">
+                    <% if (locals.prev) { %>
+                        <a class="pl-footer-previous btn btn-link" style="text-align: left;" href="<%= prev.url %>">
+                            <div class="text-muted" style="font-size: 11px;">PREVIOUS</div>
+                            <%= prev.title %>
+                        </a>
+                    <% } %>
+                    <% if (locals.next) { %>
+                        <a class="pl-footer-next pull-right btn btn-link" style="text-align: right;" href="<%= next.url %>">
+                            <div class="text-muted" style="font-size: 11px;">NEXT</div>
+                            <%= next.title %>
+                        </a>
+                    <% } %>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- build:js(docs) scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.js"></script>
+        <script src="../bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.extensions.js"></script>
+        <script src="../bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.date.extensions.js"></script>
+        <script src="../bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.numeric.extensions.js"></script>
+        <script src="../bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.phone.extensions.js"></script>
+        <script src="../bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.regex.extensions.js"></script>
+        <script src="../bower_components/select2/select2.js"></script>
+        <!-- endbower -->
+        <script src="vendor/jquery-ui-1.11.1.custom/jquery-ui.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js(docs) scripts/plugins.js -->
+        <script src="../bower_components/bootstrap/js/affix.js"></script>
+        <script src="../bower_components/bootstrap/js/alert.js"></script>
+        <script src="../bower_components/bootstrap/js/dropdown.js"></script>
+        <script src="../bower_components/bootstrap/js/tooltip.js"></script>
+        <script src="../bower_components/bootstrap/js/modal.js"></script>
+        <script src="../bower_components/bootstrap/js/transition.js"></script>
+        <script src="../bower_components/bootstrap/js/button.js"></script>
+        <script src="../bower_components/bootstrap/js/popover.js"></script>
+        <script src="../bower_components/bootstrap/js/carousel.js"></script>
+        <script src="../bower_components/bootstrap/js/scrollspy.js"></script>
+        <script src="../bower_components/bootstrap/js/collapse.js"></script>
+        <script src="../bower_components/bootstrap/js/tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js(docs) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-55956815-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+</body>
+</html>

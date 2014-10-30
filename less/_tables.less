@@ -1,0 +1,74 @@
+@import "../bower_components/bootstrap/less/tables.less";
+
+// Sortable table
+//
+// Adds styling for sortable/disabled/active sort cells.
+
+.table-sortable {
+    > thead > tr > th,
+    > tbody > tr > th {
+        font-weight: 400;
+    }
+    > thead > tr > .sortable {
+        &.active {
+            background: @table-header-bg; //overrides bootstrap's active color
+            font-weight: 700;
+        }
+
+        &:hover {
+            background: @table-header-sortable-hover-bg;
+            cursor: pointer;
+        }
+    }
+}
+
+// Borderless version
+//
+// gets rid of all cell borders
+
+.table-borderless {
+    > tbody > tr > td, > thead > tr > th {
+        border: none;
+    }
+}
+
+// Outlined version
+//
+// Adds a border to the outside of the table, but not the cells.
+
+.table-outline {
+    border: 1px solid #eee;
+}
+
+// Vertical align middle all cells
+.table-valign {
+    > tbody > tr > td {
+        vertical-align: middle;
+    }
+}
+
+// Adds a background color to the table header
+.table > thead > tr {
+    background: @table-header-bg;
+}
+
+// Styles the .table-config-column
+.table > thead > tr > .table-config-column {
+    width: 28px;
+    text-align: center;
+    padding: 0;
+    vertical-align: middle;
+
+    > button {
+      background: none;
+      padding: 0;
+      margin: 0;
+      border: none;
+      width: 100%;
+      height: 100%;
+
+      &:hover {
+          background-color: @table-header-sortable-hover-bg;
+      }
+    }
+}
