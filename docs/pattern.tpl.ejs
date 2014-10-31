@@ -24,32 +24,30 @@
         <!-- endbuild -->
 
     </head>
-    <body>
+    <body class="<%= meta.sidebar == false ? 'pl-no-sidebar' : '' %>">
         <!--[if lt IE 9]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
         <div class="pl-header navbar navbar-fixed-top navbar-inverse">
-            <div class="container-fluid">
+            <div class="<%= meta.sidebar == false ? 'container' : 'container-fluid' %>">
                 <div class="navbar-header">
-                    <span class="navbar-brand"><strong>USPTO</strong> Patterns</span>
+                    <a href="index.html" class="navbar-brand"><strong>USPTO</strong> <span class="light">Design</span></a>
                     <!-- <button type="button" class="btn btn-link nav-collapse"><i class="fa fa-navicon"></i></button> -->
+                    <% if (meta.sidebar !== false) { %>
                     <button type="button" class="nav-collapse btn btn-link"><i class="fa fa-1x fa-bars"></i></button>
-                    <button type="button" class="btn navbar-toggle collapsed"><i class="fa fa-1x fa-angle-down"></i></button>
+                    <%}%>
+                    <button data-toggle="collapse" data-target="#pl-navbar-collapse" type="button" class="btn navbar-toggle collapsed"><i class="fa fa-1x fa-angle-down"></i></button>
                 </div>
-                <div class="navbar-collapse collapse">
+                <div class="navbar-collapse collapse" id="pl-navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li>
-                            <a href="#"><i class="fa fa-1x fa-home"></i></a>
+                            <a href="patterns-index.html">Patterns</a>
                         </li>
-                        <% Object.keys(nav).forEach(function (k) { %>
-                        <li><a href="#"><%= k %></a></li>
-                    <% }); %>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <!-- <a ><i class="fa fa-1x fa-warning"></i><span class="count">3</span></a> -->
                         <li>
-                            <a href="#" title="View on Github" ><i class="fa fa-1x fa-github"></i> &nbsp; View on Github</a>
+                            <a href="<%= globals.githubURL %>" title="View on Github" ><i class="fa fa-1x fa-github"></i> &nbsp; View on Github</a>
                         </li>
                     </ul>
                 </div>
@@ -82,7 +80,7 @@
                     <% });%>
                 <% });%>
             </ul>
-            <div class="pl-content">
+            <div class="pl-content <%= meta.sidebar == false ? 'container' : '' %>">
                 <% if (meta.preview) { %>
                     <div class="pl-preview-header">Work in Progress / Preview</div>
                 <% } %>

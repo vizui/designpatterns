@@ -39,7 +39,7 @@ module.exports = function(grunt) {
 
         var options = this.options({
             patternRoot: 'content',
-            urlRoot: '/'
+            urlRoot: ''
         });
 
         options.patternRoot = appendTrailingSlash(options.patternRoot);
@@ -90,9 +90,9 @@ module.exports = function(grunt) {
                     category: category,
                     subCategory: subCategory,
                     content: md.html,
-                    subNav: h3s
+                    subNav: h3s,
+                    globals: options.variables
                 };
-                console.log(contentMap[filePath].url);
 
                 if (path.basename(filePath, '.md') != 'index') {
                     nav[category] = nav[category] || {};
