@@ -1,7 +1,6 @@
 {
   "name": "USPTOPatternLibrary",
   "version": "0.0.0",
-  "dependencies": {},
   "devDependencies": {
     "ejs": "~1.0.0",
     "grunt": "~0.4.1",
@@ -29,7 +28,7 @@
     "js-yaml": "~3.1.0",
     "jshint-stylish": "~0.1.5",
     "load-grunt-tasks": "~0.4.0",
-    "meta-marked": "^0.3.1",
+    "meta-remarkable": "^0.1.0",
     "time-grunt": "~0.3.1"
   },
   "engines": {
