@@ -45,8 +45,8 @@ module.exports = function (grunt) {
                 files: ['Gruntfile.js']
             },
             patterns: {
-                files: ['<%= paths.app %>/content/**/*.md'],
-                tasks: ['patterns']
+                files: ['<%= paths.app %>/*.tpl.ejs', '<%= paths.app %>/content/**/*.md'],
+                tasks: ['copy:tpl', 'patterns']
             },
             // template: {
             //     files: ['<%= paths.app %>/{,*/}*.html'],
@@ -379,7 +379,6 @@ module.exports = function (grunt) {
             ]
         }
     });
-
 
     grunt.registerTask('serve', function (target) {
         if (target === 'dist') {
