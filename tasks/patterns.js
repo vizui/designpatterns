@@ -39,7 +39,7 @@ module.exports = function(grunt) {
 
         var options = this.options({
             patternRoot: 'content',
-            urlRoot: '/'
+            urlRoot: ''
         });
 
         options.patternRoot = appendTrailingSlash(options.patternRoot);

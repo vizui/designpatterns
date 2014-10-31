@@ -296,7 +296,7 @@ module.exports = function (grunt) {
                 options: {
                     variables: config,
                     patternRoot: '<%= paths.app %>/content',
-                    urlRoot: '/',
+                    urlRoot: '',
                     template: '<%= paths.tmp %>/pattern.tpl.ejs'
                 },
                 files: [{
