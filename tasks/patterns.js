@@ -2,49 +2,38 @@
 
 module.exports = function(grunt) {
 
-    var marked = require('meta-marked');
+    var metaRemarkable = require('meta-remarkable');
+
     var ejs = require('ejs');
     var path = require('path');
     var highlight = require('highlight.js');
-    var renderer = new marked.Renderer();
 
-    // converts [preview] and [pattern] tags to properly classed divs
-    renderer.paragraph = function (text) {
-        if (/\[\/?(preview|pattern)\]/.test(text)) {
-            text = text.replace("[preview]", '<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>');
-            text = text.replace("[/preview]", '</div>');
-            text = text.replace("[pattern]", '<div class="pl-pattern">');
-            text = text.replace("[/pattern]", '</div>');
-            return text;
-        } else {
-            return marked.Renderer.prototype.paragraph.call(this, text);
-        }
-    };
-
-    // add links to <h3> tags
-    renderer.heading = function(text, level) {
-        var escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
-        if (level === 3) {
-            return '<h' + level + '><a class="pl-heading-link" id="' + escapedText + '" href="#' + escapedText + '"><i class="fa fa-link"></i></a> ' + text + '</h' + level + '>';
-        } else {
-            return marked.Renderer.prototype.heading.apply(this, arguments);
-        }
-    };
-
-    // markdown parser options & syntax highlighting using highlight.js
-    marked.setOptions({
-        renderer: renderer,
-        gfm: true,
-        tables: true,
-        breaks: false,
-        pedantic: false,
-        smartLists: true,
-        smartypants: false,
+    var md = new metaRemarkable('commonmark', {
+        html: true,
         langPrefix: 'hljs ',
         highlight: function(code, lang) {
             return highlight.highlightAuto(code, [lang]).value;
         }
     });
+
+    // converts [preview] and [pattern] tags to properly classed divs
+    var replaceMarkup = function (text) {
+        text = text.replace(/\[preview\]/g, '<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>\n');
+        text = text.replace(/\[\/preview\]/g, '</div>\n');
+        text = text.replace(/\[pattern\]/g, '<div class="pl-pattern">\n');
+        text = text.replace(/\[\/pattern\]/g, '</div>\n');
+        return text;
+    };
+
+    // add links to <h3> tags
+    // renderer.heading = function(text, level) {
+    //     var escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
+    //     if (level === 3) {
+    //         return '<h' + level + '><a class="pl-heading-link" id="' + escapedText + '" href="#' + escapedText + '"><i class="fa fa-link"></i></a> ' + text + '</h' + level + '>';
+    //     } else {
+    //         return marked.Renderer.prototype.heading.apply(this, arguments);
+    //     }
+    // };
 
     grunt.registerMultiTask('patterns', 'Gather and compile patterns.', function() {
 
@@ -67,6 +56,7 @@ module.exports = function(grunt) {
             validFiles.forEach(function (filePath) {
 
                 var text = grunt.file.read(filePath, 'utf8');
+                var text = replaceMarkup(text);
 
                 // collect all the h3s (###) from the file and put them in an array for subnav
                 var h3Regex = /^###\s?([^\#\n\r]+)/gm;
@@ -135,7 +125,7 @@ module.exports = function(grunt) {
      */
 
     var compileMarkdown = function(text) {
-        var comp = marked(text);
+        var comp = md.render(text);
         comp.meta = comp.meta || {};
         return comp;
     };
