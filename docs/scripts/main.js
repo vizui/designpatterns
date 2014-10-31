@@ -10,9 +10,29 @@ $('.pl-toggle-code').on('click', function () {
     $(this).toggleClass('active');
 });
 
+
+var autoCollapsed = false;
 $('.nav-collapse').on('click', function () {
+    autoCollapsed = false;
     $('body').toggleClass('pl-collapsed-nav');
 });
+
+/* collapse sidebar when necessary */
+var checkNav = function () {
+    var collapsed = $('body').hasClass('pl-collapsed-nav'),
+        width = $(this).width();
+
+    if (width <= 767 && !collapsed) {
+        autoCollapsed = true;
+        $('body').addClass('pl-collapsed-nav');
+    } else if (width > 767 && autoCollapsed) {
+        $('body').removeClass('pl-collapsed-nav');
+    }
+};
+
+$(window).on('resize', checkNav);
+$(document).on('ready', checkNav);
+
 
 
 /*
@@ -31,7 +51,6 @@ $('.select2').select2({
 
 /* enable tooltips */
 $('[data-toggle="tooltip"]').tooltip({container: 'body', delay: { show: 200, hide: 0 } });
-
 
 /* enable datepickers */
 $('.datepicker').datepicker({
