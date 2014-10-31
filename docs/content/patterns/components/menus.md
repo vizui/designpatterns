@@ -13,7 +13,7 @@ title: "Menus"
 - Indicate dialogs with an ellipsis
 
 [preview]
-<ul style="display: inline-block; position: initial; float: initial; width: 200px;" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+<ul style="display: inline-block; position: relative; float: none; width: 200px;" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
   <li role="presentation"><a href="">Bold <span style="" class="pull-right text-muted">Ctrl+B</span></a></li>
   <li role="presentation"><a href="">Italic <span style="" class="pull-right text-muted">Ctrl+I</span></a></li>
   <li role="presentation"><a href="">Underline <span style="" class="pull-right text-muted">Ctrl+U</span></a></li>
@@ -38,7 +38,7 @@ title: "Menus"
 ### Submenus
 Submenus help organize menu items.
 [preview]
-<ul style="display: inline-block; position: initial; float: initial; width: 200px;" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+<ul style="display: inline-block; position: relative; float: none; width: 200px;" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
   <li role="presentation"><a href="">Submenu item <i style=" line-height: 18px;" class="fa fa-caret-right text-muted pull-right fa-1x"></i></a></li>
   <li role="presentation" class="disabled"><a href="">Disabled submenu item <i style=" line-height: 18px;" class="fa fa-caret-right text-muted pull-right fa-1x"></i></a></li>
 </ul>
@@ -52,7 +52,7 @@ Use icons for menu items that have a common, easily recognizable icon. You don't
 If you have an icon in a menu, ensure that all menu items are aligned appropriately.
 
 [preview]
-<ul style="display: inline-block; position: initial; float: initial; width: 200px;" class="dropdown-menu has-icon" role="menu" aria-labelledby="dropdownMenu2">
+<ul style="display: inline-block; position: relative; float: none; width: 200px;" class="dropdown-menu has-icon" role="menu" aria-labelledby="dropdownMenu2">
   <li role="presentation"><a href=""><i class="fa fa-fw fa-1x fa-star dropdown-menu-icon"></i> Star</a></li>
   <li role="presentation"><a href="">Share...</a></li>
   <li class="divider" role="presentation"></li>
@@ -65,7 +65,7 @@ If you have an icon in a menu, ensure that all menu items are aligned appropriat
 ### Form Controls
 Sometimes menus can contain form elements like checkboxes, radio buttons.
 [preview]
-<ul style="display: inline-block; position: initial; float: initial; width: 200px;" class="dropdown-menu has-icon" role="menu" aria-labelledby="dropdownMenu2">
+<ul style="display: inline-block; position: relative; float: none; width: 200px;" class="dropdown-menu has-icon" role="menu" aria-labelledby="dropdownMenu2">
   <li class="dropdown-header">Radio buttons</li>
   <li role="presentation"><a href=""><i class="fa fa-fw fa-1x fa-circle-o dropdown-menu-icon"></i> 1.0</a></li>
   <li role="presentation"><a href=""><i class="fa fa-fw fa-1x fa-circle dropdown-menu-icon"></i> 1.5</a></li>
