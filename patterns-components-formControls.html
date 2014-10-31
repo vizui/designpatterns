@@ -1,0 +1,598 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Pattern Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="shortcut icon" href="favicon.ico">
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600,700" rel="stylesheet" type="text/css">
+
+        <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=RobotoDraft:100,300,400,500,700"> -->
+
+        <link rel="stylesheet" href="styles/333b841e.vendor.css">
+
+        <link rel="stylesheet" href="styles/80a87100.main.css">
+
+    </head>
+    <body class="">
+        <!--[if lt IE 9]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="pl-header navbar navbar-fixed-top navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand"><strong>USPTO</strong> <span class="light">Design</span></a>
+                    <!-- <button type="button" class="btn btn-link nav-collapse"><i class="fa fa-navicon"></i></button> -->
+                    
+                    <button type="button" class="nav-collapse btn btn-link"><i class="fa fa-1x fa-bars"></i></button>
+                    
+                    <button data-toggle="collapse" data-target="#pl-navbar-collapse" type="button" class="btn navbar-toggle collapsed"><i class="fa fa-1x fa-angle-down"></i></button>
+                </div>
+                <div class="navbar-collapse collapse" id="pl-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="patterns-index.html">Patterns</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- <a ><i class="fa fa-1x fa-warning"></i><span class="count">3</span></a> -->
+                        <li>
+                            <a href="http://github.com/uspto/designpatterns" title="View on Github"><i class="fa fa-1x fa-github"></i> &nbsp; View on Github</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="pl-sub-header">
+            <div class="pull-left">
+                <h4><strong>Patterns</strong> - Form Controls</h4>
+            </div>
+            <div class="pull-right">
+                <button type="button" title="Edit this page on Github" class="btn btn-sm btn-default"> <i class="fa fa-pencil"></i></button>
+            </div>
+        </div>
+        <div class="pl-container">
+            <ul class="pl-sidebar">
+                
+                    <li class="category">COMPONENTS</li>
+                    
+                        
+                            <li class=""><a href="/patterns-components-alerts.html">Alerts </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="/patterns-components-breadcrumbs.html"><i title="Work in Progress / Preview" class="fa fa-exclamation pull-right"></i>Breadcrumbs </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="/patterns-components-buttons.html">Buttons </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="/patterns-components-dialogs.html"><i title="Work in Progress / Preview" class="fa fa-exclamation pull-right"></i>Dialogs </a>
+                                
+                            </li>
+                        
+                    
+                        
+                    
+                        
+                            <li class=""><a href="/patterns-components-filters.html"><i title="Work in Progress / Preview" class="fa fa-exclamation pull-right"></i>Filters </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class="active"><a href="/patterns-components-formControls.html">Form Controls </a>
+                                
+                                    <ul class="nav">
+                                        
+                                            <li><a title="Text box" href="#text-box">Text box</a></li>
+                                        
+                                            <li><a title="Text area" href="#text-area">Text area</a></li>
+                                        
+                                            <li><a title="Radio Buttons" href="#radio-buttons">Radio Buttons</a></li>
+                                        
+                                            <li><a title="Checkboxes" href="#checkboxes">Checkboxes</a></li>
+                                        
+                                            <li><a title="Native Select" href="#native-select">Native Select</a></li>
+                                        
+                                            <li><a title="Native Mult-select" href="#native-mult-select">Native Mult-select</a></li>
+                                        
+                                            <li><a title="Enhanced Select" href="#enhanced-select">Enhanced Select</a></li>
+                                        
+                                            <li><a title="Date Picker" href="#date-picker">Date Picker</a></li>
+                                        
+                                    </ul>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="/patterns-components-forms.html">Forms </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="/patterns-components-labelsAndBadges.html">Labels and Badges </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="/patterns-components-menus.html">Menus </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="/patterns-components-metadata.html">Metadata </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="/patterns-components-pagination.html">Pagination </a>
+                                
+                            </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            <li class=""><a href="/patterns-components-tables.html">Tables </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="/patterns-components-tabs.html"><i title="Work in Progress / Preview" class="fa fa-exclamation pull-right"></i>Tabs </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="/patterns-components-tooltips.html">Tooltips </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="/patterns-components-wizard.html"><i title="Work in Progress / Preview" class="fa fa-exclamation pull-right"></i>Wizard </a>
+                                
+                            </li>
+                        
+                    
+                
+                    <li class="category">LAYOUT</li>
+                    
+                        
+                            <li class=""><a href="/patterns-layout-layoutGrid.html"><i title="Work in Progress / Preview" class="fa fa-exclamation pull-right"></i>Layout Grid </a>
+                                
+                            </li>
+                        
+                    
+                
+                    <li class="category">STYLE</li>
+                    
+                        
+                            <li class=""><a href="/patterns-style-colors.html">Colors </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="/patterns-style-iconography.html">Iconography </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="/patterns-style-typography.html">Typography </a>
+                                
+                            </li>
+                        
+                    
+                
+            </ul>
+            <div class="pl-content">
+                
+                <div class="pl-pattern">
+<h3>Text box</h3>
+<p>Text boxes allow for single line input.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="container-fluid" style="max-width: 400px; margin: 0">
+    <div class="row">
+        <form role="form" class="col-sm-12 form-horizontal">
+            <div class="form-group">
+                <label for="tb12" class="col-sm-3 control-label">Normal</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="tb12">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="tb13" class="col-sm-3 control-label">Disabled</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="tb13" disabled="disabled">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">disabled</span>&gt;</span>
+</code></pre>
+<p> </p>
+<p> </p>
+<h4>Input masks</h4>
+<p>Input masks ensure that the user understands the input format required, in addition to making input easier.</p>
+<p><span class="text-muted">These examples use https://github.com/RobinHerbots/jquery.inputmask for demo purposes.</span></p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="container-fluid" style="max-width: 400px; margin: 0">
+    <div class="row">
+        <form class="form-horizontal col-sm-12" role="form">
+          <div class="form-group">
+              <label for="im1" class="col-sm-3 control-label">SSN</label>
+              <div class="col-sm-9">
+                  <input type="text" class="form-control" id="im1" data-inputmask="'mask': '999-99-9999', 'placeholder': 'ˍ'">
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="im1" class="col-sm-3 control-label">Routing #</label>
+              <div class="col-sm-9">
+                  <input type="text" class="form-control" placeholder="PCT/" id="im1" data-inputmask="'mask': '\\PCT/99,999,999', 'placeholder': 'ˍ'">
+              </div>
+          </div>
+          <div class="form-group">
+              <label for="im1" class="col-sm-3 control-label">Start date</label>
+              <div class="col-sm-9">
+                  <input type="text" class="form-control" id="im1" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'">
+              </div>
+          </div>
+        </form>
+    </div>
+</div>
+</div>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"im1"</span> <span class="hljs-attribute">data-inputmask</span>=<span class="hljs-value">"'mask': '999-99-9999'"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"im1"</span> <span class="hljs-attribute">data-inputmask</span>=<span class="hljs-value">"'mask': 'PCT/99,999,999'"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"im1"</span> <span class="hljs-attribute">data-inputmask</span>=<span class="hljs-value">"'alias': 'date'"</span>&gt;</span>
+</code></pre>
+</div>
+<div class="pl-pattern">
+<h3>Text area</h3>
+<p>Text areas allow for multi-line input.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="container-fluid" style="max-width: 400px; margin: 0">
+    <div class="row">
+        <form role="form" class="col-sm-12 form-horizontal">
+            <div class="form-group">
+                <label for="ta12" class="col-sm-3 control-label">Normal</label>
+                <div class="col-sm-9">
+                    <textarea class="form-control" id="ta12" cols="30" rows="2"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="ta13" class="col-sm-3 control-label">Disabled</label>
+                <div class="col-sm-9">
+                    <textarea class="form-control" id="ta12" cols="30" rows="2" disabled="disabled"></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"ta12"</span> <span class="hljs-attribute">cols</span>=<span class="hljs-value">"30"</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">"2"</span> <span class="hljs-attribute">disabled</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span>
+</code></pre>
+</div>
+<div class="pl-pattern">
+<h3>Radio Buttons</h3>
+<p> </p>
+<h4>Vertical</h4>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="radio">
+    <label><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="checked">Checked</label>
+</div>
+<div class="radio">
+    <label><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Normal</label>
+</div>
+<div class="radio">
+    <label><input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="disabled">Disabled</label>
+</div>
+</div>
+<p> </p>
+<h4>Inline</h4>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<p><label class="radio-inline">
+<input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked="checked"> Checked
+</label>
+<label class="radio-inline">
+<input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Normal
+</label>
+<label class="radio-inline">
+<input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled="disabled"> Disabled
+</label></p>
+</div>
+<pre><code class="hljs html">
+</code></pre>
+</div>
+<div class="pl-pattern">
+<h3>Checkboxes</h3>
+<p> </p>
+<h4>Vertical</h4>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="checkbox">
+  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes1" value="option1" checked="checked">Checked</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes2" value="option2">Normal</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes3" value="option3" disabled="disabled">Disabled</label>
+</div>
+</div>
+<p> </p>
+<h4>Inline</h4>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<p><label class="checkbox-inline">
+<input type="checkbox" id="inlineCheckbox1" value="option1" checked="checked"> Checked
+</label> <label class="checkbox-inline">
+<input type="checkbox" id="inlineCheckbox2" value="option2"> Normal
+</label> <label class="checkbox-inline">
+<input type="checkbox" id="inlineCheckbox3" value="option3" disabled="disabled"> Disabled
+</label></p>
+</div>
+<pre><code class="hljs html">
+</code></pre>
+</div>
+<div class="pl-pattern">
+<h3>Native Select</h3>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="container-fluid" style="max-width: 400px; margin: 0">
+    <div class="row">
+        <form role="form" class="col-sm-12 form-horizontal">
+            <div class="form-group">
+                <label for="se13" class="col-sm-3 control-label">Normal</label>
+                <div class="col-sm-9">
+                    <select id="se13" class="form-control">
+                        <option value="A">Option A</option>
+                        <option value="B">Option B</option>
+                        <option value="C">Option C</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="se14" class="col-sm-3 control-label">Disabled</label>
+                <div class="col-sm-9">
+                    <select id="se14" disabled="disabled" class="form-control">
+                        <option value="A">Option A</option>
+                        <option value="B">Option B</option>
+                        <option value="C">Option C</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+<pre><code class="hljs html">
+</code></pre>
+</div>
+<div class="pl-pattern">
+<h3>Native Mult-select</h3>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="container-fluid" style="max-width: 400px; margin: 0">
+    <div class="row">
+        <form role="form" class="col-sm-12 form-horizontal">
+            <div class="form-group">
+                <label for="se15" class="col-sm-3 control-label">Normal</label>
+                <div class="col-sm-9">
+                    <select multiple="multiple" id="se15" class="form-control">
+                        <option value="A">Option A</option>
+                        <option value="B">Option B</option>
+                        <option value="C">Option C</option>
+                        <option value="D">Option D</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="se16" class="col-sm-3 control-label">Disabled</label>
+                <div class="col-sm-9">
+                    <select multiple="multiple" id="se16" disabled="disabled" class="form-control">
+                        <option value="A">Option A</option>
+                        <option value="B">Option B</option>
+                        <option value="C">Option C</option>
+                        <option value="D">Option D</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+<pre><code class="hljs html">
+</code></pre>
+</div>
+<div class="pl-pattern">
+<h3>Enhanced Select</h3>
+<p><span class="text-muted">These examples use https://github.com/ivaynberg/select2 for demo purposes.</span></p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="container-fluid" style="max-width: 400px; margin: 0">
+    <div class="row">
+        <form role="form" class="col-sm-12 form-horizontal">
+            <div class="form-group">
+                <label for="se17" class="col-sm-3 control-label">Simple</label>
+                <div class="col-sm-9">
+                    <select id="se17" class="form-control select2">
+                        <option value="A">Option A</option>
+                        <option value="B">Option B</option>
+                        <option value="C">Option C</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="se18" class="col-sm-3 control-label">Filterable</label>
+                <div class="col-sm-9">
+                    <select id="se18" class="form-control select2">
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AS">American Samoa</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District Of Columbia</option>
+                        <option value="FM">Federated States Of Micronesia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="GU">Guam</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MH">Marshall Islands</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="MP">Northern Mariana Islands</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PW">Palau</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="PR">Puerto Rico</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VI">Virgin Islands</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="se19" class="col-sm-3 control-label">Disabled</label>
+                <div class="col-sm-9">
+                    <select id="se19" disabled="disabled" class="form-control select2">
+                        <option value="A">Option A</option>
+                        <option value="B">Option B</option>
+                        <option value="C">Option C</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+<pre><code class="hljs html">
+</code></pre>
+</div>
+<div class="pl-pattern">
+<h3>Date Picker</h3>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="container-fluid" style="max-width: 400px; margin: 0">
+    <div class="row">
+        <form role="form" class="col-sm-12 form-horizontal">
+            <div class="form-group">
+                <label for="dp1" class="col-sm-3 control-label">When</label>
+                <div class="col-sm-9">
+                    <span class="input-icon fa fa-calendar-o"></span>
+                    <input id="dp1" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'" type="text" class="datepicker form-control">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="dp2" class="col-sm-3 control-label">Range</label>
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <span class="input-icon fa fa-calendar-o"></span>
+                            <input id="dp2" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'" type="text" class="datepicker form-control">
+                        </div>
+                        <div class="col-sm-6">
+                            <span class="input-icon fa fa-calendar-o"></span>
+                            <input id="dp3" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'" type="text" class="datepicker form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+<pre><code class="hljs html">
+</code></pre>
+</div>
+
+<!--
+
+                <div class="pl-footer">
+                    
+                        <a class="pl-footer-previous btn btn-link" style="text-align: left;" href="/patterns-components-filters.html">
+                            <div class="text-muted" style="font-size: 11px;">PREVIOUS</div>
+                            Filters
+                        </a>
+                    
+                    
+                        <a class="pl-footer-next pull-right btn btn-link" style="text-align: right;" href="/patterns-components-forms.html">
+                            <div class="text-muted" style="font-size: 11px;">NEXT</div>
+                            Forms
+                        </a>
+                    
+                </div> -->
+            </div>
+        </div>
+
+        <script src="scripts/af5016f2.vendor.js"></script>
+
+        <script src="scripts/2c80432f.plugins.js"></script>
+
+        <script src="scripts/211822d3.main.js"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-55956815-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+</body>
+</html>
