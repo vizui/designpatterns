@@ -76,9 +76,6 @@ body {
         width: 158px;
         padding-left: 16px;
         background: darken(@pl-header-bg, 5%);
-        &:hover {
-            background: darken(@pl-header-bg, 5%);
-        }
     }
 
     .nav-collapse {
@@ -157,6 +154,19 @@ body {
     }
     .pl-header .container-fluid {
         padding-left: 0;
+    }
+}
+.pl-no-sidebar {
+    .pl-sidebar {
+        display: none;
+    }
+    .pl-content {
+        margin: auto;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .navbar-brand {
+        background: none;
     }
 }
 
@@ -365,7 +375,7 @@ body {
     margin: 0;
     position: fixed;
     width: @pl-sidebar-width;
-    z-index: @zindex-navbar-fixed;
+    z-index: @zindex-navbar-fixed - 1;
     // border-right: 1px solid #ddd;
 
     background: @pl-sidebar-bg;
