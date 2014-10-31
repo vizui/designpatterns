@@ -1,0 +1,959 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Pattern Library</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="shortcut icon" href="favicon.ico">
+        <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600,700" rel="stylesheet" type="text/css">
+
+        <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=RobotoDraft:100,300,400,500,700"> -->
+
+        <link rel="stylesheet" href="styles/333b841e.vendor.css">
+
+        <link rel="stylesheet" href="styles/80a87100.main.css">
+
+    </head>
+    <body class="">
+        <!--[if lt IE 9]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="pl-header navbar navbar-fixed-top navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="index.html" class="navbar-brand"><strong>USPTO</strong> <span class="light">Design</span></a>
+                    <!-- <button type="button" class="btn btn-link nav-collapse"><i class="fa fa-navicon"></i></button> -->
+                    
+                    <button type="button" class="nav-collapse btn btn-link"><i class="fa fa-1x fa-bars"></i></button>
+                    
+                    <button data-toggle="collapse" data-target="#pl-navbar-collapse" type="button" class="btn navbar-toggle collapsed"><i class="fa fa-1x fa-angle-down"></i></button>
+                </div>
+                <div class="navbar-collapse collapse" id="pl-navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li>
+                            <a href="patterns-index.html">Patterns</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <!-- <a ><i class="fa fa-1x fa-warning"></i><span class="count">3</span></a> -->
+                        <li>
+                            <a href="http://github.com/uspto/designpatterns" title="View on Github"><i class="fa fa-1x fa-github"></i> &nbsp; View on Github</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="pl-sub-header">
+            <div class="pull-left">
+                <h4><strong>Patterns</strong> - Tables</h4>
+            </div>
+            <div class="pull-right">
+                <button type="button" title="Edit this page on Github" class="btn btn-sm btn-default"> <i class="fa fa-pencil"></i></button>
+            </div>
+        </div>
+        <div class="pl-container">
+            <ul class="pl-sidebar">
+                
+                    <li class="category">COMPONENTS</li>
+                    
+                        
+                            <li class=""><a href="patterns-components-alerts.html">Alerts </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-breadcrumbs.html"><i title="Work in Progress / Preview" class="fa fa-exclamation pull-right"></i>Breadcrumbs </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-buttons.html">Buttons </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-dialogs.html"><i title="Work in Progress / Preview" class="fa fa-exclamation pull-right"></i>Dialogs </a>
+                                
+                            </li>
+                        
+                    
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-filters.html"><i title="Work in Progress / Preview" class="fa fa-exclamation pull-right"></i>Filters </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-formControls.html">Form Controls </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-forms.html">Forms </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-labelsAndBadges.html">Labels and Badges </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-menus.html">Menus </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-metadata.html">Metadata </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-pagination.html">Pagination </a>
+                                
+                            </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                            <li class="active"><a href="patterns-components-tables.html">Tables </a>
+                                
+                                    <ul class="nav">
+                                        
+                                            <li><a title="Overview" href="#overview">Overview</a></li>
+                                        
+                                            <li><a title="Styles" href="#styles">Styles</a></li>
+                                        
+                                            <li><a title="Headers" href="#headers">Headers</a></li>
+                                        
+                                            <li><a title="Sorting" href="#sorting">Sorting</a></li>
+                                        
+                                            <li><a title="Selection" href="#selection">Selection</a></li>
+                                        
+                                            <li><a title="Row action buttons" href="#row-action-buttons">Row action buttons</a></li>
+                                        
+                                            <li><a title="Column Customization" href="#column-customization">Column Customization</a></li>
+                                        
+                                            <li><a title="Grouping" href="#grouping">Grouping</a></li>
+                                        
+                                            <li><a title="Expandable rows" href="#expandable-rows">Expandable rows</a></li>
+                                        
+                                    </ul>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-tabs.html"><i title="Work in Progress / Preview" class="fa fa-exclamation pull-right"></i>Tabs </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-tooltips.html">Tooltips </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-wizard.html"><i title="Work in Progress / Preview" class="fa fa-exclamation pull-right"></i>Wizard </a>
+                                
+                            </li>
+                        
+                    
+                
+                    <li class="category">LAYOUT</li>
+                    
+                        
+                            <li class=""><a href="patterns-layout-layoutGrid.html"><i title="Work in Progress / Preview" class="fa fa-exclamation pull-right"></i>Layout Grid </a>
+                                
+                            </li>
+                        
+                    
+                
+                    <li class="category">STYLE</li>
+                    
+                        
+                            <li class=""><a href="patterns-style-colors.html">Colors </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-style-iconography.html">Iconography </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-style-typography.html">Typography </a>
+                                
+                            </li>
+                        
+                    
+                
+            </ul>
+            <div class="pl-content">
+                
+                <div class="pl-pattern">
+<h3>Overview</h3>
+<p>Tables organize tabular data. A table's complexity and needs can vary greatly. This section provides many different features a table <em>may</em> have. Features can be mixed and matched based on your needs. Don't include features unless they're actually needed.</p>
+<p> </p>
+</div>
+<div class="pl-pattern">
+<h3>Styles</h3>
+<p> </p>
+<h4>Standard</h4>
+<p>A standard table has subtle row borders.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div style="padding: 40px; background: #fff">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Invoice</td>
+                <td><span class="text-muted">Add invoice confirmation</span></td>
+                <td><span class="text-muted">$4,500</span></td>
+            </tr>
+            <tr>
+                <td>Templates</td>
+                <td><span class="text-muted">Refactor templates to use the new templating library</span></td>
+                <td><span class="text-muted">$9,000</span></td>
+            </tr>
+            <tr>
+                <td>Payments</td>
+                <td><span class="text-muted">Process payments using third party api</span></td>
+                <td><span class="text-muted">$5,400</span></td>
+            </tr>
+            <tr>
+                <td>Account Management</td>
+                <td><span class="text-muted">Improve account management workflow</span></td>
+                <td><span class="text-muted">$6,000</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+<p> </p>
+<h4>Striped</h4>
+<p>A striped table adds an alternating row background color, increasing usability for wider tables.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div style="padding: 40px; background: #fff">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Invoice</td>
+                <td><span class="text-muted">Add invoice confirmation</span></td>
+                <td><span class="text-muted">$4,500</span></td>
+            </tr>
+            <tr>
+                <td>Templates</td>
+                <td><span class="text-muted">Refactor templates to use the new templating library</span></td>
+                <td><span class="text-muted">$9,000</span></td>
+            </tr>
+            <tr>
+                <td>Payments</td>
+                <td><span class="text-muted">Process payments using third party api</span></td>
+                <td><span class="text-muted">$5,400</span></td>
+            </tr>
+            <tr>
+                <td>Account Management</td>
+                <td><span class="text-muted">Improve account management workflow</span></td>
+                <td><span class="text-muted">$6,000</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+<p> </p>
+<h4>Bordered</h4>
+<p>A bordered table adds column and row borders, increasing usability for content-dense tables.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div style="padding: 40px; background: #fff">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Invoice</td>
+                <td><span class="text-muted">Add invoice confirmation</span></td>
+                <td><span class="text-muted">$4,500</span></td>
+            </tr>
+            <tr>
+                <td>Templates</td>
+                <td><span class="text-muted">Refactor templates to use the new templating library</span></td>
+                <td><span class="text-muted">$9,000</span></td>
+            </tr>
+            <tr>
+                <td>Payments</td>
+                <td><span class="text-muted">Process payments using third party api</span></td>
+                <td><span class="text-muted">$5,400</span></td>
+            </tr>
+            <tr>
+                <td>Account Management</td>
+                <td><span class="text-muted">Improve account management workflow</span></td>
+                <td><span class="text-muted">$6,000</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+<p> </p>
+<h4>Borderless</h4>
+<p>A borderless table removes all borders, decreasing clutter for simple tables.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div style="padding: 40px; background: #fff">
+    <table class="table table-borderless">
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Invoice</td>
+                <td><span class="text-muted">Add invoice confirmation</span></td>
+                <td><span class="text-muted">$4,500</span></td>
+            </tr>
+            <tr>
+                <td>Templates</td>
+                <td><span class="text-muted">Refactor templates to use the new templating library</span></td>
+                <td><span class="text-muted">$9,000</span></td>
+            </tr>
+            <tr>
+                <td>Payments</td>
+                <td><span class="text-muted">Process payments using third party api</span></td>
+                <td><span class="text-muted">$5,400</span></td>
+            </tr>
+            <tr>
+                <td>Account Management</td>
+                <td><span class="text-muted">Improve account management workflow</span></td>
+                <td><span class="text-muted">$6,000</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+<p> </p>
+<h4>Condensed</h4>
+<p>Use the condensed style, which reduces cell padding, for very large amounts of data.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div style="padding: 40px; background: #fff">
+    <table class="table table-bordered table-condensed">
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Invoice</td>
+                <td><span class="text-muted">Add invoice confirmation</span></td>
+                <td><span class="text-muted">$4,500</span></td>
+            </tr>
+            <tr>
+                <td>Templates</td>
+                <td><span class="text-muted">Refactor templates to use the new templating library</span></td>
+                <td><span class="text-muted">$9,000</span></td>
+            </tr>
+            <tr>
+                <td>Payments</td>
+                <td><span class="text-muted">Process payments using third party api</span></td>
+                <td><span class="text-muted">$5,400</span></td>
+            </tr>
+            <tr>
+                <td>Account Management</td>
+                <td><span class="text-muted">Improve account management workflow</span></td>
+                <td><span class="text-muted">$6,000</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+</div>
+<div class="pl-pattern">
+<h3>Headers</h3>
+<p> </p>
+<h4>Normal</h4>
+<p>A normal header scrolls with the data.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div style="padding: 40px; background: #fff">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Invoice</td>
+                <td><span class="text-muted">Add invoice confirmation</span></td>
+                <td><span class="text-muted">$4,500</span></td>
+            </tr>
+            <tr>
+                <td>Templates</td>
+                <td><span class="text-muted">Refactor templates to use the new templating library</span></td>
+                <td><span class="text-muted">$9,000</span></td>
+            </tr>
+            <tr>
+                <td>Payments</td>
+                <td><span class="text-muted">Process payments using third party api</span></td>
+                <td><span class="text-muted">$5,400</span></td>
+            </tr>
+            <tr>
+                <td>Account Management</td>
+                <td><span class="text-muted">Improve account management workflow</span></td>
+                <td><span class="text-muted">$6,000</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+<p> </p>
+<h4>Fixed</h4>
+<p>A fixed header remains visible as the table body is scrolled. This is useful for larger amounts of data.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div style="padding: 40px; background: #fff">
+    <table class="table" style="margin: 0">
+        <thead>
+            <tr>
+                <th style="width: 25%">Project Name</th>
+                <th style="width: 50%">Description</th>
+                <th style="width: 25%">Price</th>
+            </tr>
+        </thead>
+    </table>
+    <div style="overflow: auto; max-height: 200px; border-top: none">
+        <table class="table table-striped" style="border: none; margin-bottom: 0; border-top: none">
+            <thead style="visibility: hidden; border: none;height: 0; overflow: hidden">
+                <tr>
+                    <th style="width: 25%; height: 0; line-height: 0; font-size: 0; padding: 0; border: 0">Project Name</th>
+                    <th style="width: 50%; height: 0; line-height: 0; font-size: 0; padding: 0; border: 0">Description</th>
+                    <th style="width: 25%; height: 0; line-height: 0; font-size: 0; padding: 0; border: 0">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="border-top: none">Invoice</td>
+                    <td style="border-top: none"><span class="text-muted">Add invoice confirmation</span></td>
+                    <td style="border-top: none"><span class="text-muted">$4,500</span></td>
+                </tr>
+                <tr>
+                    <td>Templates</td>
+                    <td><span class="text-muted">Refactor templates to use the new templating library</span></td>
+                    <td><span class="text-muted">$9,000</span></td>
+                </tr>
+                <tr>
+                    <td>Payments</td>
+                    <td><span class="text-muted">Process payments using third party api</span></td>
+                    <td><span class="text-muted">$5,400</span></td>
+                </tr>
+                <tr>
+                    <td>Account Management</td>
+                    <td><span class="text-muted">Improve account management workflow</span></td>
+                    <td><span class="text-muted">$6,000</span></td>
+                </tr>
+                <tr>
+                    <td>Invoice</td>
+                    <td><span class="text-muted">Add invoice confirmation</span></td>
+                    <td><span class="text-muted">$4,500</span></td>
+                </tr>
+                <tr>
+                    <td>Templates</td>
+                    <td><span class="text-muted">Refactor templates to use the new templating library</span></td>
+                    <td><span class="text-muted">$9,000</span></td>
+                </tr>
+                <tr>
+                    <td>Payments</td>
+                    <td><span class="text-muted">Process payments using third party api</span></td>
+                    <td><span class="text-muted">$5,400</span></td>
+                </tr>
+                <tr>
+                    <td>Account Management</td>
+                    <td><span class="text-muted">Improve account management workflow</span></td>
+                    <td><span class="text-muted">$6,000</span></td>
+                </tr>
+                <tr>
+                    <td>Invoice</td>
+                    <td><span class="text-muted">Add invoice confirmation</span></td>
+                    <td><span class="text-muted">$4,500</span></td>
+                </tr>
+                <tr>
+                    <td>Templates</td>
+                    <td><span class="text-muted">Refactor templates to use the new templating library</span></td>
+                    <td><span class="text-muted">$9,000</span></td>
+                </tr>
+                <tr>
+                    <td>Payments</td>
+                    <td><span class="text-muted">Process payments using third party api</span></td>
+                    <td><span class="text-muted">$5,400</span></td>
+                </tr>
+                <tr>
+                    <td>Account Management</td>
+                    <td><span class="text-muted">Improve account management workflow</span></td>
+                    <td><span class="text-muted">$6,000</span></td>
+                </tr>
+                <tr>
+                    <td>Invoice</td>
+                    <td><span class="text-muted">Add invoice confirmation</span></td>
+                    <td><span class="text-muted">$4,500</span></td>
+                </tr>
+                <tr>
+                    <td>Templates</td>
+                    <td><span class="text-muted">Refactor templates to use the new templating library</span></td>
+                    <td><span class="text-muted">$9,000</span></td>
+                </tr>
+                <tr>
+                    <td>Payments</td>
+                    <td><span class="text-muted">Process payments using third party api</span></td>
+                    <td><span class="text-muted">$5,400</span></td>
+                </tr>
+                <tr>
+                    <td>Account Management</td>
+                    <td><span class="text-muted">Improve account management workflow</span></td>
+                    <td><span class="text-muted">$6,000</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+<p> </p>
+<h4>Headerless</h4>
+<p>If the content of the table is self-explanatory for your users, it may not need a header. Provide an alternative for sorting, if necessary (e.g., a toolbar with a dropdown).</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div style="padding: 40px; background: #fff">
+    <table class="table table-valign table-bordered table-striped">
+        <tbody>
+            <tr>
+                <td class="vert-align"><strong>CSS is 20 years old today!</strong><br><span class="text-muted">13 points and 4 comments - 2 days ago</span></td>
+                <td class="vert-align text-center" style="width: 63px"><span class="text-success semi-bold"><i class="fa fa-1x fa-angle-up"></i> 3.4%</span></td>
+            </tr>
+            <tr>
+                <td class="vert-align"><strong>Motion Experiments</strong><br><span class="text-muted">31 points and 7 comments - 11 hours ago</span></td>
+                <td class="vert-align text-center" style="width: 63px"><span class="text-success semi-bold"><i class="fa fa-1x fa-angle-up"></i> 2.5%</span></td>
+            </tr>
+            <tr>
+                <td class="vert-align"><strong>Is everyone a designer? </strong><br><span class="text-muted">15 points and 3 comments - 3 days ago</span></td>
+                <td class="vert-align text-center" style="width: 63px"><span class="text-primary semi-bold"><i class="fa fa-1x fa-angle-right"></i> 0.0%</span></td>
+            </tr>
+            <tr>
+                <td class="vert-align"><strong>Introducing GIFV</strong><br><span class="text-muted">24 points and 9 comments - 5 days ago</span></td>
+                <td class="vert-align text-center" style="width: 63px"><span class="text-danger semi-bold"><i class="fa fa-1x fa-angle-down"></i> 0.1%</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+</div>
+<div class="pl-pattern">
+<h3>Sorting</h3>
+<p> </p>
+<h4>Single sorting</h4>
+<p>Clicking a header cell sets that column as the currently sorted column. The first click should sort <code>descending</code>, the second click should sort <code>ascending</code>.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div style="padding: 40px; background: #fff">
+    <table class="table table-sortable table-bordered table-striped">
+        <thead>
+            <tr>
+                <th class="sortable active">Project Name <i class="fa fa-caret-down fa-1x text-muted"></i></th>
+                <th class="sortable">Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Invoice</td>
+                <td><span class="text-muted">Add invoice confirmation</span></td>
+                <td><span class="text-muted">$4,500</span></td>
+            </tr>
+            <tr>
+                <td>Templates</td>
+                <td><span class="text-muted">Refactor templates to use the new templating library</span></td>
+                <td><span class="text-muted">$9,000</span></td>
+            </tr>
+            <tr>
+                <td>Payments</td>
+                <td><span class="text-muted">Process payments using third party api</span></td>
+                <td><span class="text-muted">$5,400</span></td>
+            </tr>
+            <tr>
+                <td>Account Management</td>
+                <td><span class="text-muted">Improve account management workflow</span></td>
+                <td><span class="text-muted">$6,000</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+<p> </p>
+<h4>Multi sorting</h4>
+<p>When a table is sorted by multiple columns, the sort order is indicated by the superscript numbers.</p>
+<p>Performing a <code>shift+click</code> on a header cell should add that column to the sorted list. A second <code>shift+click</code> on the same header cell should toggle the sort direction. A third <code>shift+click</code> on the same header cell should remove that column from the sort list. A left click should clear the sort list and then behave as a single sort.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div style="padding: 40px; background: #fff">
+    <table class="table table-sortable table-bordered table-striped">
+        <thead>
+            <tr>
+                <th class="sortable active">Event <i class="fa fa-caret-down fa-1x text-muted"></i> <sup class="text-muted">1</sup></th>
+                <th class="sortable active">Date <i class="fa fa-caret-up fa-1x text-muted"></i> <sup class="text-muted">2</sup></th>
+                <th>Module</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>user.create</td>
+                <td><span class="text-muted">10/21/14</span></td>
+                <td><span class="text-muted">Users</span></td>
+            </tr>
+            <tr>
+                <td>user.create</td>
+                <td><span class="text-muted">10/19/14</span></td>
+                <td><span class="text-muted">Users</span></td>
+            </tr>
+            <tr>
+                <td>user.register</td>
+                <td><span class="text-muted">10/21/14</span></td>
+                <td><span class="text-muted">Users</span></td>
+            </tr>
+            <tr>
+                <td>user.register</td>
+                <td><span class="text-muted">10/18/14</span></td>
+                <td><span class="text-muted">Users</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+</div>
+<div class="pl-pattern">
+<h3>Selection</h3>
+<p>Checkboxes are generally the best way to facilitate multi-row selection, especially if clicking a row already has a different action (e.g., opening an email).</p>
+<ul>
+<li>Checking a checkbox should highlight the corresponding row.</li>
+<li>If there's a control for selecting all/none, it should represent the current state of the row selection, including an indeterminate state.</li>
+<li><code>shift+click</code> should select all items between the previoulsy clicked checkbox and the currently clicked checkbox.</li>
+</ul>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div style="padding: 40px; background: #fff">
+    <span class="help-block" style="color: #ccc">Note: checkboxes are disabled for demo purposes.</span>
+    <table class="table">
+        <thead>
+            <tr>
+                <th style="width: 28px"><input indeterminate="" type="checkbox" disabled="disabled"></th>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" disabled="disabled"></td>
+                <td>Payments</td>
+                <td><span class="text-muted">Process payments using third party api</span></td>
+                <td><span class="text-muted">$5,400</span></td>
+            </tr>
+            <tr class="info">
+                <td><input type="checkbox" disabled="disabled" checked="checked"></td>
+                <td>Invoice</td>
+                <td><span class="text-muted">Add invoice confirmation</span></td>
+                <td><span class="text-muted">$4,500</span></td>
+            </tr>
+            <tr class="info">
+                <td><input type="checkbox" disabled="disabled" checked="checked"></td>
+                <td>Templates</td>
+                <td><span class="text-muted">Refactor templates to use the new templating library</span></td>
+                <td><span class="text-muted">$9,000</span></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" disabled="disabled"></td>
+                <td>Account Management</td>
+                <td><span class="text-muted">Improve account management workflow</span></td>
+                <td><span class="text-muted">$6,000</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+</div>
+<div class="pl-pattern">
+<h3>Row action buttons</h3>
+<p>Buttons with the <code>btn-hover</code> and <code>btn-icon-only</code> classes.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div style="padding: 40px; background: #fff">
+    <table class="table table-outline table-valign table-striped">
+        <tbody>
+            <tr>
+                <td class="vert-align">
+                    <strong>IMG_234.jpg</strong><br><span class="text-muted">2 days ago</span>
+                </td>
+                <td class="vert-align">
+                    <div class="pull-right">
+                        <button class="btn btn-hover btn-icon-only" title="Delete">
+                            <i class="fa fa-1x text-muted fa-times"></i>
+                        </button>
+                        <button class="btn btn-hover btn-icon-only" title="More options">
+                            <i class="fa fa-1x text-muted fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="vert-align">
+                    <strong>IMG_235.jpg</strong><br><span class="text-muted">2 days ago</span>
+                </td>
+                <td class="vert-align">
+                    <div class="pull-right">
+                        <button class="btn btn-hover btn-icon-only" title="Delete">
+                            <i class="fa fa-1x text-muted fa-times"></i>
+                        </button>
+                        <button class="btn btn-hover btn-icon-only" title="More options">
+                            <i class="fa fa-1x text-muted fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="vert-align">
+                    <strong>IMG_236.jpg</strong><br><span class="text-muted">2 days ago</span>
+                </td>
+                <td class="vert-align">
+                    <div class="pull-right">
+                        <button class="btn btn-hover btn-icon-only" title="Delete">
+                            <i class="fa fa-1x text-muted fa-times"></i>
+                        </button>
+                        <button class="btn btn-hover btn-icon-only" title="More options">
+                            <i class="fa fa-1x text-muted fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="vert-align">
+                    <strong>IMG_237.jpg</strong><br><span class="text-muted">2 days ago</span>
+                </td>
+                <td class="vert-align">
+                    <div class="pull-right">
+                        <button class="btn btn-hover btn-icon-only" title="Delete">
+                            <i class="fa fa-1x text-muted fa-times"></i>
+                        </button>
+                        <button class="btn btn-hover btn-icon-only" title="More options">
+                            <i class="fa fa-1x text-muted fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+</div>
+<div class="pl-pattern">
+<h3>Column Customization</h3>
+<p>To provide column customization, add an icon to the top right corner of the table. Clicking on the icon will show the <code>Show &amp; Hide Columns</code> dialog.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div style="padding: 40px; background: #fff">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th class="table-config-column"><button type="button"><i class="fa fa-ellipsis-h fa-1x"></i></button></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Invoice</td>
+                <td><span class="text-muted">Add invoice confirmation</span></td>
+                <td colspan="2"><span class="text-muted">$4,500</span></td>
+            </tr>
+            <tr>
+                <td>Templates</td>
+                <td><span class="text-muted">Refactor templates to use the new templating library</span></td>
+                <td colspan="2"><span class="text-muted">$9,000</span></td>
+            </tr>
+            <tr>
+                <td>Payments</td>
+                <td><span class="text-muted">Process payments using third party api</span></td>
+                <td colspan="2"><span class="text-muted">$5,400</span></td>
+            </tr>
+            <tr>
+                <td>Account Management</td>
+                <td><span class="text-muted">Improve account management workflow</span></td>
+                <td colspan="2"><span class="text-muted">$6,000</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+<p> </p>
+<h4>Show &amp; Hide Columns dialog</h4>
+<p>This dialog provides the ability to show/hide columns as desired.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="modal fade in" style="display: block; position: relative; z-index: inherit">
+  <div class="modal-dialog" style="width: 300px; max-width: 100%; padding: 20px">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Show & Hide Columns</h4>
+      </div>
+      <div class="modal-body">
+          <form role="form">
+            <div class="form-group">
+                <div class="checkbox">
+                  <label><input type="checkbox" disabled="disabled" indeterminate="" name="optionsCheckboxes" id="optionsCheckboxes0" value="option0" checked="checked">Select All</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" disabled="disabled" name="optionsCheckboxes" id="optionsCheckboxes1" value="option1">Thumbnail</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" disabled="disabled" name="optionsCheckboxes" id="optionsCheckboxes2" value="option2">Word Mark</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" disabled="disabled" name="optionsCheckboxes" id="optionsCheckboxes3" value="option3" checked="checked">Review Source</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" disabled="disabled" name="optionsCheckboxes" id="optionsCheckboxes4" value="option4">Review Type</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" disabled="disabled" name="optionsCheckboxes" id="optionsCheckboxes5" value="option5" checked="checked">Review Revision</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" disabled="disabled" name="optionsCheckboxes" id="optionsCheckboxes6" value="option6">Mentor</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" disabled="disabled" name="optionsCheckboxes" id="optionsCheckboxes7" value="option7" checked="checked">Class</label>
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox" disabled="disabled" name="optionsCheckboxes" id="optionsCheckboxes8" value="option8" checked="checked">Owner</label>
+                </div>
+            </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Done</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<div class="pl-pattern">
+<h3>Grouping</h3>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div style="padding: 40px; background: #fff">
+    <table class="table table-sortable table-bordered">
+        <thead>
+            <tr>
+                <th style="width: 200px" class="sortable active">Module <i class="fa fa-caret-down fa-1x text-muted"></i> <sup class="text-muted">1</sup></th>
+                <th class="sortable active">Event <i class="fa fa-caret-down fa-1x text-muted"></i> <sup class="text-muted">2</sup></th>
+                <th class="sortable active">Date <i class="fa fa-caret-up fa-1x text-muted"></i> <sup class="text-muted">3</sup></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="" style="text-decoration: normal; background: #f8f9fa" colspan="3"><i class="fa fa-1x text-info fa-angle-down" style="margin-right: 6px"></i><strong>Module:</strong> User <span style="color: #aaa">(2)</span></td>
+            </tr>
+            <tr>
+                <td class="" style="text-decoration: normal; background: #f8f9fa; padding-left: 20px" colspan="3"><i class="fa fa-1x text-info fa-angle-down" style="margin-right: 6px"></i><strong>Event:</strong> Create <span style="color: #aaa">(2)</span></td>
+            </tr>
+            <tr>
+                <td><span class="text-muted">Users</span></td>
+                <td>Create</td>
+                <td><span class="text-muted">10/21/14</span></td>
+            </tr>
+            <tr>
+                <td><span class="text-muted">Users</span></td>
+                <td>Create</td>
+                <td><span class="text-muted">10/19/14</span></td>
+            </tr>
+            <tr>
+                <td class="" style="text-decoration: normal; background: #f8f9fa; padding-left: 20px" colspan="4"><i class="fa fa-1x text-info fa-angle-right" style="margin-right: 6px"></i><strong>Event:</strong> Register <span style="color: #aaa">(2)</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+</div>
+<div class="pl-pattern">
+<h3>Expandable rows</h3>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+</div>
+</div>
+
+<!--
+
+                <div class="pl-footer">
+                    
+                        <a class="pl-footer-previous btn btn-link" style="text-align: left;" href="patterns-components-progressBars.html">
+                            <div class="text-muted" style="font-size: 11px;">PREVIOUS</div>
+                            Progress Bars
+                        </a>
+                    
+                    
+                        <a class="pl-footer-next pull-right btn btn-link" style="text-align: right;" href="patterns-components-tabs.html">
+                            <div class="text-muted" style="font-size: 11px;">NEXT</div>
+                            Tabs
+                        </a>
+                    
+                </div> -->
+            </div>
+        </div>
+
+        <script src="scripts/af5016f2.vendor.js"></script>
+
+        <script src="scripts/2c80432f.plugins.js"></script>
+
+        <script src="scripts/211822d3.main.js"></script>
+
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-55956815-1', 'auto');
+            ga('send', 'pageview');
+        </script>
+</body>
+</html>
