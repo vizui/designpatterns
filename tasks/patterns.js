@@ -25,15 +25,16 @@ module.exports = function(grunt) {
         return text;
     };
 
-    // add links to <h3> tags
-    // renderer.heading = function(text, level) {
-    //     var escapedText = text.toLowerCase().replace(/[^\w]+/g, '-');
-    //     if (level === 3) {
-    //         return '<h' + level + '><a class="pl-heading-link" id="' + escapedText + '" href="#' + escapedText + '"><i class="fa fa-link"></i></a> ' + text + '</h' + level + '>';
-    //     } else {
-    //         return marked.Renderer.prototype.heading.apply(this, arguments);
-    //     }
-    // };
+    // pre-processes markdown text and converts ### to h3s with anchors in them.
+    var linkifyHeadings = function (text) {
+        var re = /^###\s?([^\#\n\r]+)/gm;
+        var result;
+        while ((result = re.exec(text)) !== null) {
+            var escapedTitle = result[1].toLowerCase().replace(/[^\w]+/g, '-');
+            text = text.replace(result[0], '<h3><a class="pl-heading-link" id="' + escapedTitle + '" href="#' + escapedTitle + '"><i class="fa fa-link"></i></a> ' + result[1] + '</h3>');
+        }
+        return text;
+    };
 
     grunt.registerMultiTask('patterns', 'Gather and compile patterns.', function() {
 
@@ -65,6 +66,8 @@ module.exports = function(grunt) {
                 while (match = h3Regex.exec(text)) {
                     h3s.push(match[1]);
                 }
+
+                var text = linkifyHeadings(text);
 
                 var md = compileMarkdown(text);
 
