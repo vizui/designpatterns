@@ -13,7 +13,7 @@
 
         <link rel="stylesheet" href="styles/333b841e.vendor.css">
 
-        <link rel="stylesheet" href="styles/80a87100.main.css">
+        <link rel="stylesheet" href="styles/bdafc472.main.css">
 
     </head>
     <body class="">
@@ -59,7 +59,7 @@
                     <li class="category">COMPONENTS</li>
                     
                         
-                            <li class=""><a href="patterns-components-alerts.html">Alerts </a>
+                            <li class=""><a href="patterns-components-alerts.html">Alerts and Notifications </a>
                                 
                             </li>
                         
@@ -127,6 +127,16 @@
                         
                     
                         
+                            <li class="active"><a href="patterns-components-popovers.html"><i title="Work in Progress / Preview" class="fa fa-exclamation pull-right"></i>Popovers </a>
+                                
+                                    <ul class="nav">
+                                        
+                                            <li><a title="Overview" href="#overview">Overview</a></li>
+                                        
+                                    </ul>
+                                
+                            </li>
+                        
                     
                         
                     
@@ -191,8 +201,38 @@
                     <div class="pl-preview-header">Work in Progress / Preview</div>
                 
                 <div class="pl-pattern">
-<h3>General</h3>
+<h3>Overview</h3>
+<p>Popovers are a cross between a dialog and a tooltip. Popovers are smaller contextual dialogs that are generally triggered by a click. They may or may not provide other interactions.</p>
+<p>Use a popover instead of a tooltip or dialog when:</p>
+<ul>
+<li>You want a contextual relationship that a dialog can't provide</li>
+<li>You need to provide relatively simple interactions</li>
+<li>You have more text/content than can comfortably fit in a tooltip</li>
+</ul>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="popover left" style="position: relative; display: block; margin-left: 0">
+  <div class="arrow"></div>
+  <h3 class="popover-title">Add note</h3>
+  <div class="popover-content">
+    <textarea placeholder="Enter note here" class="form-control" name="" id="" rows="3"></textarea>
+  </div>
+  <div class="popover-toolbar">
+        <button class="btn btn-hover btn-icon-only"><i class="fa fa-image"></i></button>
+        <button class="btn btn-hover btn-icon-only"><i class="fa fa-link"></i></button>
+        <button class="btn btn-primary pull-right">Add</button>
+  </div>
+</div>
+<div class="popover right" style="position: relative; display: block; margin-left: 0; margin-top: 20px">
+  <div class="arrow"></div>
+  <h3 class="popover-title">Search</h3>
+  <div class="popover-content">
+    <p>Simple search: Type a term in the search field and select the search button.</p>
+    <p>Advanced  search: Advanced boolean operators may be used. The default operator when searching multiple terms is “AND”.</p>
+  </div>
+  <div class="popover-toolbar text-right">
+        <a href="">Learn more</a>
+  </div>
+</div>
 </div>
 <pre><code class="hljs html">
 </code></pre>
