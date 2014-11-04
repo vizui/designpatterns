@@ -3,7 +3,6 @@
 /*
  * Toggle code visibility
  */
-$('.pl-pattern .pl-preview+pre').toggle(0);
 $('.pl-toggle-code').on('click', function () {
     // toggle the sibling pre element
     $(this).parent().next('.pl-preview+pre').toggle(250);
