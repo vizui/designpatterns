@@ -13,9 +13,9 @@ There are two primary ways to help:
 
 ## Using the issue tracker
 
-Use the issue tracker to suggest feature requests, report bugs, and ask questions. 
-This is also a great way to connect with the developers of the project as well
-as others who are interested in this solution.  
+Use the [issue tracker](https://github.com/USPTO/designpatterns/issues) to suggest 
+feature requests, report bugs, and ask questions. This is also a great way to connect 
+with the developers of the project as well as others who are interested in this solution.  
 
 Use the issue tracker to find ways to contribute. Find a bug or a feature, mention in
 the issue that you will take on that effort, then follow the _Changing the code-base_ 
@@ -24,21 +24,23 @@ guidance below.
 
 ## Changing the code-base
 
-Generally speaking, you should fork this repository, make changes in your
-own fork, and then submit a pull-request.  All new code should have associated unit
-tests that validate implemented features and the presence or lack of defects. 
-Additionally, the code should follow any stylistic and architectural guidelines 
-prescribed by the project. In the absence of such guidelines, mimic the styles
-and patterns in the existing code-base.
+Generally speaking, you should [fork this repository](https://help.github.com/articles/fork-a-repo/), 
+make changes in your own fork, and then submit a 
+[pull-request](https://help.github.com/articles/using-pull-requests/). Additionally, the 
+code should follow any stylistic and architectural guidelines prescribed by the project. 
+In the absence of such guidelines, mimic the styles and patterns in the existing 
+code-base.
 
-----
+### Pattern code
 
-## Public domain
+Patterns are located in the docs/content/patterns directory. Patterns are organized into folders
+which show up as categories on the web site. Each pattern is a single [markdown](https://guides.github.com/features/mastering-markdown/) file.
 
-The project is in the public domain within the United States, and
-copyright and related rights in the work worldwide are waived through
-the [CC0 1.0 Universal public domain dedication][CC0].
-
-
-[CC0]: http://creativecommons.org/publicdomain/zero/1.0/
+Our markdown files have some additional enhancements, facilitated through the grunt build process:
+- YAML metadata at the top, which accepts the following fields
+  - `title: My New Pattern` The title of the pattern in the navigation
+  - `draft: true` Hides the pattern from the navigation
+  - `preview: true` Adds banners/icons to the pattern to indicate it is a preview
+- `[pattern] [/pattern]` blocks, which separate multiple sections in a single pattern file. `###` h3 headings are used to add sub-navigation to the sidebar.
+- `[preview] [/preview]` blocks, which show up as example code blocks in the web site. 
 
