@@ -10,6 +10,7 @@ There are 4 button styles:
 - __Primary__, indicates the critical, or most important action on a form/page.
 - __Danger__, indicates a dangerous, generally destructive action, such as deleting.
 - __Warning__, indicates an action that may have some side effects, such as giving a user admin access.
+- __Success__, indicates a positive action.
 - __Link__, used for non-critical actions. Useful for keeping the interface simple.
 
 All buttons are prefixed with the `btn` class. The `btn` class can be applied to any element. Try to use `<button>` elements when an action won't change the URL/route, and `<a>` elements when the action will change the URL/route.
