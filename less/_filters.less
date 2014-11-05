@@ -1,8 +1,9 @@
+
 .filters {
-    padding-bottom: 8px;
-    padding: 6px 14px 0 14px;
-    background:#fff;
-    border: 1px solid #eee;
+    // padding-bottom: 8px;
+    // padding: 6px 0 0 0;
+    background: #fff;
+    border: 1px solid #ddd;
 }
 
 .filters-horizontal {
@@ -37,36 +38,40 @@
     }
 }
 
-.filters h5 {
-    // background: #fff;
-    // border-bottom: 1px solid #eee;
-    // border-top: 1px solid #eee;
-    padding: 8px 0;
-    margin: 0;
-    margin-top: 8px;
+.filters .filter-group-title {
+    padding: 6px 14px;
+    // border-bottom: 1px solid rgba(0,0,0,.05);
+    // margin: 0;
     font-weight: 700;
-    color: #333;
-    // text-transform: uppercase;
-    // margin-top: 16px;
-    // text-align: center;
+    font-family: Arial;
+    cursor: pointer;
+    background: rgba(0,0,0,.05);
+
+    i {
+        position: relative;
+        top: 1px;
+    }
+
+    &:hover {
+        background: rgba(0,0,0,.1);
+    }
+}
+
+.filters .filter-group-content {
+    padding: 14px 14px 0px 14px;
 }
 
 .filters .filter-heading {
     color: @gray-light;
     font-size: 16px;
-    padding: 0 0;
+    padding: 6px 14px;
     font-weight: 400;
-}
-
-.filters h4+h5 {
-    // padding-top: 8px;
-    // border-top: 0;
 }
 
 .filters .filters-clear {
     font-size: 13px;
     float: right;
-    line-height: 16px;
+    line-height: 22px;
 }
 
 .filters .filter-color {
