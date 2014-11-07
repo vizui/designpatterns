@@ -45,8 +45,8 @@ module.exports = function (grunt) {
                 files: ['Gruntfile.js']
             },
             patterns: {
-                files: ['<%= paths.app %>/*.tpl.ejs', '<%= paths.app %>/content/**/*.md'],
-                tasks: ['copy:tpl', 'patterns']
+                files: ['<%= paths.app %>/*.ejs', '<%= paths.app %>/content/**/*.md'],
+                tasks: ['copy:tpl', 'template', 'patterns']
             },
             // template: {
             //     files: ['<%= paths.app %>/{,*/}*.html'],
@@ -75,12 +75,12 @@ module.exports = function (grunt) {
         template: {
             dist: {
                 engine: 'ejs',
-                variables: config,
+                variables: { globals: config },
                 files: [{
                     expand: true,
-                    cwd: '<%= paths.app %>',
+                    cwd: '<%= paths.tmp %>',
                     dest: '<%= paths.tmp %>',
-                    src: '*.html',
+                    src: 'index.tpl.ejs',
                     ext: '.html'
                 }]
             }
@@ -235,7 +235,7 @@ module.exports = function (grunt) {
             options: {
                 dest: '<%= paths.dist %>'
             },
-            html: ['<%= paths.tmp %>/**/*.tpl.ejs']
+            html: ['<%= paths.tmp %>/**/*.ejs']
         },
 
         // Performs rewrites based on rev and the useminPrepare configuration
@@ -243,7 +243,7 @@ module.exports = function (grunt) {
             options: {
                 assetsDirs: ['<%= paths.dist %>', '<%= paths.dist %>/images']
             },
-            html: ['<%= paths.tmp %>/**/*.tpl.ejs'],
+            html: ['<%= paths.tmp %>/**/*.ejs'],
             css: ['<%= paths.dist %>/styles/{,*/}*.css']
         },
 
@@ -318,7 +318,7 @@ module.exports = function (grunt) {
                     dot: true,
                     cwd: '<%= paths.app %>',
                     dest: '<%= paths.tmp %>',
-                    src: '*.tpl.ejs'
+                    src: '*.ejs'
                 }]
             },
             dist: {
@@ -365,7 +365,7 @@ module.exports = function (grunt) {
                 'less:theme',
                 'less:server',
                 'patterns',
-                // 'template',
+                'template',
                 'copy:styles'
             ],
             dist: [
@@ -408,6 +408,7 @@ module.exports = function (grunt) {
         'rev',
         'usemin',
         'patterns',
+        'template',
         'htmlmin'
     ]);
 

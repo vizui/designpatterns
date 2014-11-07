@@ -1,0 +1,67 @@
+<% include header %>
+<div class="pl-header navbar navbar-inverse pl-no-sidebar">
+    <div class="container">
+        <ul class="nav navbar-nav navbar-right pull-right">
+            <li>
+                <a href="<%= globals.githubURL %>" title="View on Github" ><i class="fa fa-1x fa-github"></i> &nbsp; View on Github</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="pl-hero">
+    <div class="container">
+        <h1 class="text-center" style="font-size: 50px; font-weight: 100;">USPTO Design Patterns</h1>
+        <h3 class="text-center">An open source design guide, pattern library, and Bootstrap theme.</h3>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <div style="margin-top: 30px; margin-bottom: 40px;">
+                    <a class="btn btn-lg btn-primary">Download </a>
+                    <a href="patterns-index.html" class="btn btn-lg btn-default">View Patterns</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pl-hero-background"></div>
+</div>
+<!-- <h2 class="pl-lets">Let's make beautiful software.</h2> -->
+<div class="pl-about">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <i class="fa fa-paint-brush fa-4x text-success" style="font-size: 50px;"></i>
+                <h3>What is this?</h3>
+                <p>An open source design guide, pattern library, and Bootstrap theme. Our docs are packed full of usability guidelines, examples, and source code.</p>
+            </div>
+            <div class="col-sm-6">
+                <i class="fa fa-cloud-download fa-4x text-success" style="font-size: 50px;"></i>
+                <h3>How can I use it?</h3>
+                <p>Once downloaded from the link above or via Bower, you can use either the minified CSS build or the source LESS files in your own build system.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <i class="fa fa-users fa-4x text-success" style="font-size: 50px;"></i>
+                <h3>Who is it for?</h3>
+                <p>For designers and developers working on USPTO related projects, but since it's public domain anyone can use it. If you can benefit from it, use it.</p>
+            </div>
+            <div class="col-sm-6">
+                <i class="fa fa-question-circle fa-4x text-success" style="font-size: 50px;"></i>
+                <h3>Why did we make it?</h3>
+                <p>We have a lot of web projects at the USPTO. These design guidelines and resources aim to create a unified experience across all projects at the USPTO, both internal and external.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <i class="fa fa-code fa-4x text-success" style="font-size: 50px;"></i>
+                <h3>Not using Bootstrap?</h3>
+                <p>That's fine! A lot of our projects use Bootstrap, but not all of them. The usability guidelines and some resources (like LESS variables or icons) could still be useful.</p>
+            </div>
+            <div class="col-sm-6">
+                <i class="fa fa-github fa-4x text-success" style="font-size: 50px;"></i>
+                <h3>Want to contribute?</h3>
+                <p>We want your help! Visit our <a href="<%= globals.githubURL %>">Github repository</a> for contribution guidelines. If you have improvements or bug fixes, let us know!</p>
+            </div>
+        </div>
+    </div>
+</div>
+<% include footer %>

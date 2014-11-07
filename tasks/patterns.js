@@ -7,6 +7,7 @@ module.exports = function(grunt) {
     var ejs = require('ejs');
     var path = require('path');
     var highlight = require('highlight.js');
+    var _ = require('lodash');
 
     var md = new metaRemarkable('commonmark', {
         html: true,
@@ -45,7 +46,7 @@ module.exports = function(grunt) {
 
         options.patternRoot = appendTrailingSlash(options.patternRoot);
 
-        var template = grunt.file.read(options.template, 'utf8');
+        var tplString = grunt.file.read(options.template, 'utf8');
 
         // generate content map
         var contentMap = {};
@@ -86,7 +87,7 @@ module.exports = function(grunt) {
                 contentMap[filePath] = {
                     url: options.urlRoot + filePath.substr(options.patternRoot.length).replace(".md", ".html").replace(/\//g, '-'),
                     dest: paths.destDir + paths.destName,
-                    template: template,
+                    template: tplString,
                     nav: nav,
                     meta: md.meta,
                     title: md.meta.title,
@@ -111,17 +112,15 @@ module.exports = function(grunt) {
             var c = contentMap[key];
 
             // add prev/next indicators
-
             if (i > 0) { c.prev = contentMap[arr[i-1]]; }
             if (i < arr.length - 1) { c.next = contentMap[arr[i+1]]; }
 
-
-
-            var output = renderTemplate(c.template, c);
+            var output = renderTemplate(c.template, c, options.template);
             grunt.file.write(c.dest, output);
         });
 
     });
+
 
     /**
      * Compile a string of markdown, including metadata.
@@ -133,12 +132,13 @@ module.exports = function(grunt) {
         return comp;
     };
 
+
     /**
      * Render a template with globals
      */
 
-    var renderTemplate = function (tpl, globals) {
-        return ejs.render(tpl, globals);
+    var renderTemplate = function (tpl, globals, tplPath) {
+        return ejs.render(tpl, _.extend(globals, {filename: tplPath}));
     };
 
 
