@@ -5,7 +5,7 @@ title: "Alerts and Notifications"
 [pattern]
 ### Contextual alerts
 
-Contextual alerts messages related to some area/form on the page. They may or may not contain action buttons, depending on the situation.
+Contextual alerts are positioned in relation to some area/form on the page. They may or may not contain action buttons, depending on the situation.
 
 - __Info__ alerts can be used when there are tips/information that a user can benefit from. 
 - __Success__ alerts can be used when an action was performed successfully.
