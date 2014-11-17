@@ -63,18 +63,19 @@ If you have an icon in a menu, ensure that all menu items are aligned appropriat
 
 [pattern]
 ### Form Controls
-Sometimes menus can contain form elements like checkboxes, radio buttons.
+Sometimes menus can contain form elements like checkboxes. Use checkboxes for both single and multi-select options. In some situations 
 [preview]
 <ul style="display: inline-block; position: relative; float: none; width: 200px;" class="dropdown-menu has-icon" role="menu" aria-labelledby="dropdownMenu2">
-  <li class="dropdown-header">Radio buttons</li>
-  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x fa-circle-o dropdown-menu-icon"></i> 1.0</a></li>
-  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x fa-circle dropdown-menu-icon"></i> 1.5</a></li>
-  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x fa-circle-o dropdown-menu-icon"></i> 2.0</a></li>
-  <li class="divider" role="presentation"></li>
-  <li class="dropdown-header">Checkboxes</li>
-  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x fa-check dropdown-menu-icon"></i> 1.0</a></li>
+  <li class="dropdown-header">Single-select</li>
+  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x dropdown-menu-icon"></i> 1.0</a></li>
   <li role="presentation"><a href=""><i class="fa fa-fw fa-1x fa-check dropdown-menu-icon"></i> 1.5</a></li>
   <li role="presentation"><a href=""><i class="fa fa-fw fa-1x dropdown-menu-icon"></i> 2.0</a></li>
+  <li class="divider" role="presentation"></li>
+  <li class="dropdown-header">Multi-select</li>
+  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x fa-check dropdown-menu-icon"></i> Grid lines</a></li>
+  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x fa-check dropdown-menu-icon"></i> Rulers</a></li>
+  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x dropdown-menu-icon"></i> Margins</a></li>
+  
 </ul>
 [/preview]
 [/pattern]
