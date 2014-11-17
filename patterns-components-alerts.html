@@ -202,7 +202,7 @@
             
             <div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="contextual-alerts" href="#contextual-alerts"><i class="fa fa-link"></i></a> Contextual alerts</h3></p>
-<p>Provide contextual feedback messages.</p>
+<p>Contextual alerts are positioned in relation to some area/form on the page. They may or may not contain action buttons, depending on the situation.</p>
 <ul>
 <li><strong>Info</strong> alerts can be used when there are tips/information that a user can benefit from.</li>
 <li><strong>Success</strong> alerts can be used when an action was performed successfully.</li>
@@ -211,16 +211,46 @@
 </ul>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div style="max-width: 450px">
-<div class="alert alert-warning"><strong>Warning!</strong> There are more than <strong>10</strong> cases assigned to <strong>John</strong>. <a href="" class="alert-link pull-right">Dismiss</a></div>
-<div class="alert alert-success"><strong>Success:</strong> Case assigned to <strong>Jerry</strong>. <a href="" class="alert-link pull-right">Undo</a></div>
-<div class="alert alert-info"><strong>Info:</strong> Press the <strong>'A'</strong> key to automatically assign a case.<a href="" class="alert-link pull-right">Dismiss</a></div>
-<div class="alert alert-danger"><strong>Whoops!</strong> There was an error assigning case <strong>90/934,382</strong>. <a href="" class="alert-link pull-right">Retry</a></div>
+    <div class="alert alert-warning">
+        <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <strong>Warning!</strong> There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
+    </div>
+    <div class="alert alert-success">
+        <a href="" class="alert-link pull-right">Undo</a>
+        <strong>Success:</strong> Case assigned to <strong>Jerry</strong>.
+    </div>
+    <div class="alert alert-info">
+        <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <strong>Info:</strong> Press the <strong>'A'</strong> key to automatically assign a case.
+    </div>
+    <div class="alert alert-danger">
+        <a href="" class="alert-link pull-right">Retry</a>
+        <strong>Whoops!</strong> There was a network error assigning case <strong>90/934,382</strong>. 
+    </div>
+    <div class="alert alert-danger">
+        <strong>Whoops!</strong> Please fix the 3 errors.
+    </div>
 </div>
 </div>
-<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alert alert-warning"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Warning!<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> There are more than <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> cases assigned to <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>John<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alert alert-success"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Success:<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> Case assigned to <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Jerry<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alert alert-info"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Info:<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> Press the <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>'A'<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> key to automatically assign a case.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alert alert-danger"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Whoops!<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> There was an error assigning case <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>90/934,382<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>.<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alert alert-warning"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"close"</span> &gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span>&amp;times;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span>&gt;</span>Close<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Warning!<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> There are more than <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>10<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> cases assigned to <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>John<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>.
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alert alert-success"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alert-link pull-right"</span>&gt;</span>Undo<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Success:<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> Case assigned to <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Jerry<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>.
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alert alert-info"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"close"</span> &gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">aria-hidden</span>=<span class="hljs-value">"true"</span>&gt;</span>&amp;times;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span>&gt;</span>Close<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Info:<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> Press the <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>'A'<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> key to automatically assign a case.
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alert alert-danger"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alert-link pull-right"</span>&gt;</span>Retry<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Whoops!<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> There was a network error assigning case <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>90/934,382<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span>. 
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"alert alert-danger"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">strong</span>&gt;</span>Whoops!<span class="hljs-tag">&lt;/<span class="hljs-title">strong</span>&gt;</span> Please fix the 3 errors.
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre>
 </div>
 <div class="pl-pattern">
