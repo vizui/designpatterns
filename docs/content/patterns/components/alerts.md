@@ -5,7 +5,7 @@ title: "Alerts and Notifications"
 [pattern]
 ### Contextual alerts
 
-Provide contextual feedback messages.
+Contextual alerts messages related to some area/form on the page. They may or may not contain action buttons, depending on the situation.
 
 - __Info__ alerts can be used when there are tips/information that a user can benefit from. 
 - __Success__ alerts can be used when an action was performed successfully.
@@ -14,18 +14,48 @@ Provide contextual feedback messages.
 
 [preview]
 <div style="max-width: 450px;">
-<div class="alert alert-warning"><strong>Warning!</strong> There are more than <strong>10</strong> cases assigned to <strong>John</strong>. <a href="" class="alert-link pull-right">Dismiss</a></div>
-<div class="alert alert-success"><strong>Success:</strong> Case assigned to <strong>Jerry</strong>. <a href="" class="alert-link pull-right">Undo</a></div>
-<div class="alert alert-info"><strong>Info:</strong> Press the <strong>'A'</strong> key to automatically assign a case.<a href="" class="alert-link pull-right">Dismiss</a></div>
-<div class="alert alert-danger"><strong>Whoops!</strong> There was an error assigning case <strong>90/934,382</strong>. <a href="" class="alert-link pull-right">Retry</a></div>
+    <div class="alert alert-warning">
+        <button type="button" class="close" ><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <strong>Warning!</strong> There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
+    </div>
+    <div class="alert alert-success">
+        <a href="" class="alert-link pull-right">Undo</a>
+        <strong>Success:</strong> Case assigned to <strong>Jerry</strong>.
+    </div>
+    <div class="alert alert-info">
+        <button type="button" class="close" ><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <strong>Info:</strong> Press the <strong>'A'</strong> key to automatically assign a case.
+    </div>
+    <div class="alert alert-danger">
+        <a href="" class="alert-link pull-right">Retry</a>
+        <strong>Whoops!</strong> There was a network error assigning case <strong>90/934,382</strong>. 
+    </div>
+    <div class="alert alert-danger">
+        <strong>Whoops!</strong> Please fix the 3 errors.
+    </div>
 </div>
 [/preview]
 
 ```html
-<div class="alert alert-warning"><strong>Warning!</strong> There are more than <strong>10</strong> cases assigned to <strong>John</strong>.</div>
-<div class="alert alert-success"><strong>Success:</strong> Case assigned to <strong>Jerry</strong>.</div>
-<div class="alert alert-info"><strong>Info:</strong> Press the <strong>'A'</strong> key to automatically assign a case.</div>
-<div class="alert alert-danger"><strong>Whoops!</strong> There was an error assigning case <strong>90/934,382</strong>.</div>
+<div class="alert alert-warning">
+    <button type="button" class="close" ><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <strong>Warning!</strong> There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
+</div>
+<div class="alert alert-success">
+    <a href="" class="alert-link pull-right">Undo</a>
+    <strong>Success:</strong> Case assigned to <strong>Jerry</strong>.
+</div>
+<div class="alert alert-info">
+    <button type="button" class="close" ><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+    <strong>Info:</strong> Press the <strong>'A'</strong> key to automatically assign a case.
+</div>
+<div class="alert alert-danger">
+    <a href="" class="alert-link pull-right">Retry</a>
+    <strong>Whoops!</strong> There was a network error assigning case <strong>90/934,382</strong>. 
+</div>
+<div class="alert alert-danger">
+    <strong>Whoops!</strong> Please fix the 3 errors.
+</div>
 ```
 [/pattern]
 
