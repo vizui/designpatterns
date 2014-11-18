@@ -203,6 +203,12 @@
             <div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="contextual-alerts" href="#contextual-alerts"><i class="fa fa-link"></i></a> Contextual alerts</h3></p>
 <p>Contextual alerts are positioned in relation to some area/form on the page. They may or may not contain action buttons, depending on the situation.</p>
+<p><strong>When to use:</strong></p>
+<ul>
+<li>An event has occurred <strong>related to user interaction</strong></li>
+<li>There <strong>is</strong> a related element/form to attach the alert to</li>
+</ul>
+<p><strong>Types:</strong></p>
 <ul>
 <li><strong>Info</strong> alerts can be used when there are tips/information that a user can benefit from.</li>
 <li><strong>Success</strong> alerts can be used when an action was performed successfully.</li>
@@ -213,10 +219,14 @@
 <div style="max-width: 450px">
     <div class="alert alert-warning">
         <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <strong>Warning!</strong> There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
+        <strong>Warning:</strong> There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
     </div>
     <div class="alert alert-success">
         <a href="" class="alert-link pull-right">Undo</a>
+        <strong>Success:</strong> Case assigned to <strong>Jerry</strong>.
+    </div>
+    <div class="alert alert-success">
+        <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <strong>Success:</strong> Case assigned to <strong>Jerry</strong>.
     </div>
     <div class="alert alert-info">
@@ -225,10 +235,10 @@
     </div>
     <div class="alert alert-danger">
         <a href="" class="alert-link pull-right">Retry</a>
-        <strong>Whoops!</strong> There was a network error assigning case <strong>90/934,382</strong>. 
+        <strong>Error:</strong> There was a network error assigning case <strong>90/934,382</strong>. 
     </div>
     <div class="alert alert-danger">
-        <strong>Whoops!</strong> Please fix the 3 errors.
+        <strong>Error:</strong> Please fix the 3 errors.
     </div>
 </div>
 </div>
@@ -255,7 +265,19 @@
 </div>
 <div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="system-alerts" href="#system-alerts"><i class="fa fa-link"></i></a> System alerts</h3></p>
-<p>System alerts aren't placed in relation with any particular context and float in one in a corner of the screen.</p>
+<p>System alerts aren't placed in relation with any particular context and float in one corner of the screen (usually the top right).</p>
+<p><strong>When to use:</strong></p>
+<ul>
+<li>An event has occurred <strong>unrelated to any user interaction</strong></li>
+<li>There <strong>is no</strong> related element/form to attach the alert to</li>
+</ul>
+<p><strong>Types:</strong></p>
+<ul>
+<li><strong>Info</strong> alerts can be used for general messages that aren't particularly critical</li>
+<li><strong>Success</strong> alerts can be used for positive messages that don't have a context to associate it with</li>
+<li><strong>Warning</strong> alerts can be used for messages that likely require attention</li>
+<li><strong>Danger</strong> alerts can be used for critical messages that require immediate attention</li>
+</ul>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div style="max-width: 400px; margin-bottom: 20px">
     <div class="toast toast-success">
