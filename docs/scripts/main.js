@@ -70,7 +70,12 @@ $('input[type="checkbox"][indeterminate]').each(function () {
 /* closable toast examples */
 $('.pl-closable-toasts .toast .close').each(function () {
     $(this).on('click', function () {
-        $(this).closest('.toast').slideUp(150);
+        $(this).closest('.toast').animate({
+            right: "-100%",
+            opacity: 0
+        }, 150, 'swing', function () {
+          $(this).hide(150);
+        });
     });
 });
 
@@ -99,28 +104,30 @@ $('.show-toasts').each(function () {
     });
 
     var showToast = function (toastEl) {
-        toastEl.slideDown({
-            duration: 150,
-            complete: function () {
-                if (toastEl.next().length) {
-                    setTimeout(function () {
-                        showToast(toastEl.next());
-                    }, 1000);
-                }
+        toastEl.css({right: "-100%", opacity: 0, display: "block"});
+        toastEl.animate({
+            right: "0",
+            opacity: 1
+        }, 150, 'swing', function () {
+          if (toastEl.next().length) {
+                setTimeout(function () {
+                    showToast(toastEl.next());
+                }, 1000);
             }
         });
     };
 
     // show the toasts on click
     showToastButton.on('click', function() {
+        toastContainer.find('.toast').hide(0).css({right: 0, opacity: 1});
         toastContainer.toggle();
         toastContainer.css({
             position: 'fixed',
-            top: '50px',
-            right: '8px'
+            top: '42px',
+            right: '0px',
+            zIndex: '10000'
         });
         closedCount = 0;
-        toastContainer.find('.toast').hide(0);
         showToast($(toastContainer.find('.toast')[0]));
     });
 });

@@ -233,7 +233,7 @@ If more than one system alert needs to be displayed at once, they should appear 
 &nbsp;
 
 #### Live example
-This example shows where and how system alerts may appear.
+This example shows where and how system alerts may appear <span class="text-muted">(not a <i>real</i> implementation).</span>
 
 [preview]
 <button type="button" data-toast-target="#example-toasts" class="btn btn-default show-toasts">Toggle alerts</button>
