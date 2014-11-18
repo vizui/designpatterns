@@ -119,15 +119,17 @@ $('.show-toasts').each(function () {
 
     // show the toasts on click
     showToastButton.on('click', function() {
-        toastContainer.find('.toast').hide(0).css({right: 0, opacity: 1});
+        toastContainer.find('.toast').hide().css({right: 0, opacity: 1});
         toastContainer.toggle();
-        toastContainer.css({
-            position: 'fixed',
-            top: '42px',
-            right: '0px',
-            zIndex: '10000'
-        });
-        closedCount = 0;
-        showToast($(toastContainer.find('.toast')[0]));
+        if (toastContainer.css('display') === 'block') {
+            toastContainer.css({
+                position: 'fixed',
+                top: '42px',
+                right: '0px',
+                zIndex: '10000'
+            });
+            closedCount = 0;
+            showToast($(toastContainer.find('.toast')[0]));
+        }
     });
 });

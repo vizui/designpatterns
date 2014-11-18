@@ -238,6 +238,18 @@ This example shows where and how system alerts may appear <span class="text-mute
 [preview]
 <button type="button" data-toast-target="#example-toasts" class="btn btn-default show-toasts">Toggle alerts</button>
 <div class="toast-list pl-closable-toasts " style="display: none; width: 400px;" id="example-toasts">
+    <div class="toast toast-warning">
+        <div class="toast-content">
+            <button type="button" class="close">
+                <span>&times;</span>
+            </button>
+            <span>Case 90/842,381 is due tomorrow.</span>
+        </div>
+        <div class="toast-actions">
+            <button type="button" class="btn btn-default">View case</button> 
+            <button type="button" class="btn btn-default">Snooze <span class="caret"></span></button> 
+        </div>
+    </div>
     <div class="toast toast-info">
         <div class="toast-content">
             <button class="close">
