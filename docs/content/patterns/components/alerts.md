@@ -48,10 +48,14 @@ __Types:__
 ```html
 <div class="alert alert-warning">
     <button type="button" class="close" ><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-    <strong>Warning!</strong> There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
+    <strong>Warning:</strong> There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
 </div>
 <div class="alert alert-success">
     <a href="" class="alert-link pull-right">Undo</a>
+    <strong>Success:</strong> Case assigned to <strong>Jerry</strong>.
+</div>
+<div class="alert alert-success">
+    <button type="button" class="close" ><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
     <strong>Success:</strong> Case assigned to <strong>Jerry</strong>.
 </div>
 <div class="alert alert-info">
@@ -60,10 +64,10 @@ __Types:__
 </div>
 <div class="alert alert-danger">
     <a href="" class="alert-link pull-right">Retry</a>
-    <strong>Whoops!</strong> There was a network error assigning case <strong>90/934,382</strong>. 
+    <strong>Error:</strong> There was a network error assigning case <strong>90/934,382</strong>. 
 </div>
 <div class="alert alert-danger">
-    <strong>Whoops!</strong> Please fix the 3 errors.
+    <strong>Error:</strong> Please fix the 3 errors.
 </div>
 ```
 [/pattern]
