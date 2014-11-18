@@ -7,6 +7,11 @@ title: "Alerts and Notifications"
 
 Contextual alerts are positioned in relation to some area/form on the page. They may or may not contain action buttons, depending on the situation.
 
+__When to use:__
+- An event has occurred __related to user interaction__
+- There __is__ a related element/form to attach the alert to
+
+__Types:__
 - __Info__ alerts can be used when there are tips/information that a user can benefit from. 
 - __Success__ alerts can be used when an action was performed successfully.
 - __Warning__ alerts can be used when an action is out of the ordinary or might not be desired.
@@ -16,10 +21,14 @@ Contextual alerts are positioned in relation to some area/form on the page. They
 <div style="max-width: 450px;">
     <div class="alert alert-warning">
         <button type="button" class="close" ><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <strong>Warning!</strong> There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
+        <strong>Warning:</strong> There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
     </div>
     <div class="alert alert-success">
         <a href="" class="alert-link pull-right">Undo</a>
+        <strong>Success:</strong> Case assigned to <strong>Jerry</strong>.
+    </div>
+    <div class="alert alert-success">
+        <button type="button" class="close" ><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <strong>Success:</strong> Case assigned to <strong>Jerry</strong>.
     </div>
     <div class="alert alert-info">
@@ -28,10 +37,10 @@ Contextual alerts are positioned in relation to some area/form on the page. They
     </div>
     <div class="alert alert-danger">
         <a href="" class="alert-link pull-right">Retry</a>
-        <strong>Whoops!</strong> There was a network error assigning case <strong>90/934,382</strong>. 
+        <strong>Error:</strong> There was a network error assigning case <strong>90/934,382</strong>. 
     </div>
     <div class="alert alert-danger">
-        <strong>Whoops!</strong> Please fix the 3 errors.
+        <strong>Error:</strong> Please fix the 3 errors.
     </div>
 </div>
 [/preview]
@@ -62,7 +71,17 @@ Contextual alerts are positioned in relation to some area/form on the page. They
 [pattern]
 ### System alerts
 
-System alerts aren't placed in relation with any particular context and float in one in a corner of the screen.
+System alerts aren't placed in relation with any particular context and float in one corner of the screen (usually the top right).
+
+__When to use:__
+- An event has occurred __unrelated to any user interaction__
+- There __is no__ related element/form to attach the alert to
+
+__Types:__
+- __Info__ alerts can be used for general messages that aren't particularly critical
+- __Success__ alerts can be used for positive messages that don't have a context to associate it with
+- __Warning__ alerts can be used for messages that likely require attention
+- __Danger__ alerts can be used for critical messages that require immediate attention
 
 [preview]
 <div style="max-width: 400px; margin-bottom: 20px;">
