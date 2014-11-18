@@ -65,3 +65,62 @@ $('.datepicker').datepicker({
 $('input[type="checkbox"][indeterminate]').each(function () {
     this.indeterminate = true;
 });
+
+
+/* closable toast examples */
+$('.pl-closable-toasts .toast .close').each(function () {
+    $(this).on('click', function () {
+        $(this).closest('.toast').slideUp(150);
+    });
+});
+
+/* quick and dirty working toast examples */
+$('.show-toasts').each(function () {
+    var showToastButton = $(this);
+
+    // get toasts and move to body
+    var selector = showToastButton.attr('data-toast-target');
+    var toastContainer = $(selector);
+    toastContainer.hide();
+    $(document.body).append(toastContainer);
+
+    var closers = toastContainer.find('.close');
+    var closersCount = closers.length;
+    var closedCount = 0;
+    closers.each(function () {
+        $(this).on('click', function () {
+            if (closersCount == ++closedCount) {
+                closedCount = 0;
+                setTimeout(function () {
+                    toastContainer.hide();
+                }, 150)
+            }
+        });
+    });
+
+    var showToast = function (toastEl) {
+        toastEl.slideDown({
+            duration: 150,
+            complete: function () {
+                if (toastEl.next().length) {
+                    setTimeout(function () {
+                        showToast(toastEl.next());
+                    }, 1000);
+                }
+            }
+        })
+    }
+
+    // show the toasts on click
+    showToastButton.on('click', function() {
+        toastContainer.toggle();
+        toastContainer.css({
+            position: 'fixed',
+            top: '50px',
+            right: '8px'
+        });
+        closedCount = 0;
+        toastContainer.find('.toast').hide(0);
+        showToast($(toastContainer.find('.toast')[0]));
+    })
+})
