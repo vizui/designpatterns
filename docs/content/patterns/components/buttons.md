@@ -3,6 +3,16 @@ title: "Buttons"
 ---
 
 [pattern]
+<h3>Buttons</h3>
+Buttons are used as triggers for actions. Depending on the use case, buttons contain a combination of a clear label and an icon. There are a variety of styles, sizes, and variations that can be combined in different situations.
+
+All button labels are sentence case. They should be as short as possible, while clearly explaining to users what happens when they click the button.
+
+&nbsp;
+
+[/pattern]
+
+[pattern]
 ### Styles
 
 There are 4 button styles:
@@ -13,7 +23,7 @@ There are 4 button styles:
 - __Success__, indicates a positive action.
 - __Link__, used for non-critical actions. Useful for keeping the interface simple.
 
-All buttons are prefixed with the `btn` class. The `btn` class can be applied to any element. Try to use `<button>` elements when an action won't change the URL/route, and `<a>` elements when the action will change the URL/route.
+All buttons are prefixed with the `btn` class. The `btn` class can be applied to any element. Try to use `<button>` elements when an action won't change the URL/route, and `<a>` elements when the action will change the URL/route. 
 
 [preview]
 <button type="button" class="btn btn-default">Default</button> <button type="button" class="btn btn-primary">Primary</button> <button type="button" class="btn btn-danger">Danger</button> <button type="button" class="btn btn-success">Success</button> <button type="button" class="btn btn-warning">Warning</button> <button type="button" class="btn btn-link">Link</button>
@@ -29,7 +39,7 @@ All buttons are prefixed with the `btn` class. The `btn` class can be applied to
 [/pattern]
 
 [pattern]
-### Button States
+### Button states
 
 There are 3 different button states:
 - __Normal__, the available, clickable state.
@@ -49,13 +59,13 @@ There are 3 different button states:
 
 
 [pattern]
-### Button Sizes
+### Button sizes
 
 There are 4 different button sizes:
 - __Large__, use the `btn-lg` class.
 - __Normal__, no extra classes necessary.
 - __Small__, use the `btn-sm` class.
-- __Extra Small__, use the `btn-xs` class. 
+- __Extra small__, use the `btn-xs` class. 
 
 [preview]
 <button type="button" class="btn btn-lg btn-default">Button</button> <button type="button" class="btn btn-default">Button</button> <button type="button" class="btn btn-sm btn-default">Button</button> <button type="button" class="btn btn-xs btn-default">Button</button>
@@ -85,7 +95,7 @@ Use the `btn-block` class for buttons that fill the width of their container.
 [/pattern]
 
 [pattern]
-### Button Groups
+### Button groups
 
 Related buttons can be grouped together to show associations and improve clarity. Button groups can be sized using the `btn-group-lg`, `btn-group-sm`, and `btn-group-xs` classes.
 
@@ -122,7 +132,7 @@ Add the `active` class to the active button.
 [/pattern]
 
 [pattern]
-### Split Buttons
+### Split buttons
 
 Split buttons contain both a button and a dropdown. The button is usually a 'primary' action, and the dropdown usually contains less important actions. Split buttons are implemented with a `btn-group`, and can use any of the other button styles and sizes as shown elsewhere.
 
@@ -163,7 +173,7 @@ Split buttons contain both a button and a dropdown. The button is usually a 'pri
 [/pattern]
 
 [pattern]
-### Icon Buttons
+### Icon buttons
 
 Icon buttons are buttons with an icon inside. An icon button may or may not have text. Icon buttons can help save space or improve the ability to scan/find buttons quickly.
 
