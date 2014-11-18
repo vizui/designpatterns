@@ -83,36 +83,78 @@ __Types:__
 - __Warning__ alerts can be used for messages that likely require attention
 - __Danger__ alerts can be used for critical messages that require immediate attention
 
+__Behavior:__
+- Alerts with low importance, like `info` or `success` alerts, should close automatically after 5 seconds.
+- Alerts with high importance, like `warning` or `danger`, should not close automatically unless the situation has been resolved in some other way.
+
 [preview]
 <div style="max-width: 400px; margin-bottom: 20px;">
-    <div class="toast toast-success">
-        <div class="toast-content">
-            <button class="close">
-                <span>×</span>
-            </button>
-            <span>Your settings have been saved.</span>
+    <div class="toast-list">
+        <div class="toast toast-success">
+            <div class="toast-content">
+                <button class="close">
+                    <span>&times;</span>
+                </button>
+                <span>Your settings have been saved.</span>
+            </div>
         </div>
     </div>
 </div>
 
 <div style="max-width: 400px; margin-bottom: 20px;">
-    <div class="toast toast-info">
-        <div class="toast-content">
-            <button class="close">
-                <span>×</span>
-            </button>
-            <span>Jerry added a comment to one of your cases (90/098,881).</span>
-        </div>
-        <div class="toast-actions">
-            <button type="button" class="btn btn-default">View comment</button> 
+    <div class="toast-list">
+        <div class="toast toast-info">
+            <div class="toast-content">
+                <button class="close">
+                    <span>&times;</span>
+                </button>
+                <span>Jerry added a comment to one of your cases (90/098,881).</span>
+            </div>
+            <div class="toast-actions">
+                <button type="button" class="btn btn-default">View comment</button> 
+            </div>
         </div>
     </div>
 </div>
 <div style="max-width: 400px; margin-bottom: 20px;">
+    <div class="toast-list">
+        <div class="toast toast-warning">
+            <div class="toast-content">
+                <button type="button" class="close">
+                    <span>&times;</span>
+                </button>
+                <span>Case 90/842,381 is due tomorrow.</span>
+            </div>
+            <div class="toast-actions">
+                <button type="button" class="btn btn-default">View case</button> 
+                <button type="button" class="btn btn-default">Snooze <span class="caret"></span></button> 
+            </div>
+        </div>
+    </div>
+</div>
+<div style="max-width: 400px; margin-bottom: 20px;">
+    <div class="toast-list">
+        <div class="toast toast-danger">
+            <div class="toast-content">
+                <button type="button" class="close">
+                    <span>&times;</span>
+                </button>
+                <span>Connection has been lost. Retrying in 30 seconds.</span>
+            </div>
+            <div class="toast-actions">
+                <button type="button" class="btn btn-default">Retry now</button> 
+            </div>
+        </div>
+    </div>
+</div>
+[/preview]
+
+```html
+<div class="toast-list">
     <div class="toast toast-warning">
         <div class="toast-content">
             <button type="button" class="close">
-                <span>×</span>
+                <span>&times;</span>
             </button>
             <span>Case 90/842,381 is due tomorrow.</span>
         </div>
@@ -122,11 +164,91 @@ __Types:__
         </div>
     </div>
 </div>
+```
+
+&nbsp;
+
+#### Stacked alerts
+If more than one system alert needs to be displayed at once, they should appear connected/stacked.
+[preview]
 <div style="max-width: 400px; margin-bottom: 20px;">
+    <div class="toast-list">
+        <div class="toast toast-danger">
+            <div class="toast-content">
+                <button type="button" class="close">
+                    <span>&times;</span>
+                </button>
+                <span>Connection has been lost. Retrying in 30 seconds.</span>
+            </div>
+            <div class="toast-actions">
+                <button type="button" class="btn btn-default">Retry now</button> 
+            </div>
+        </div>
+        <div class="toast toast-info">
+            <div class="toast-content">
+                <button class="close">
+                    <span>&times;</span>
+                </button>
+                <span>Jerry added a comment to one of your cases (90/098,881).</span>
+            </div>
+            <div class="toast-actions">
+                <button type="button" class="btn btn-default">View comment</button> 
+            </div>
+        </div>
+    </div>
+</div> 
+[/preview]
+
+```html
+<div class="toast-list">
     <div class="toast toast-danger">
         <div class="toast-content">
             <button type="button" class="close">
-                <span>×</span>
+                <span>&times;</span>
+            </button>
+            <span>Connection has been lost. Retrying in 30 seconds.</span>
+        </div>
+        <div class="toast-actions">
+            <button type="button" class="btn btn-default">Retry now</button> 
+        </div>
+    </div>
+    <div class="toast toast-info">
+        <div class="toast-content">
+            <button class="close">
+                <span>&times;</span>
+            </button>
+            <span>Jerry added a comment to one of your cases (90/098,881).</span>
+        </div>
+        <div class="toast-actions">
+            <button type="button" class="btn btn-default">View comment</button> 
+        </div>
+    </div>
+</div>
+```
+
+&nbsp;
+
+#### Live example
+This example shows where and how system alerts may appear.
+
+[preview]
+<button type="button" data-toast-target="#example-toasts" class="btn btn-default show-toasts">Toggle alerts</button>
+<div class="toast-list pl-closable-toasts " style="display: none; width: 400px;" id="example-toasts">
+    <div class="toast toast-info">
+        <div class="toast-content">
+            <button class="close">
+                <span>&times;</span>
+            </button>
+            <span>Jerry added a comment to one of your cases (90/098,881).</span>
+        </div>
+        <div class="toast-actions">
+            <button type="button" class="btn btn-default">View comment</button> 
+        </div>
+    </div>
+    <div class="toast toast-danger">
+        <div class="toast-content">
+            <button type="button" class="close">
+                <span>&times;</span>
             </button>
             <span>Connection has been lost. Retrying in 30 seconds.</span>
         </div>
@@ -137,7 +259,4 @@ __Types:__
 </div>
 [/preview]
 
-```html
-
-```
 [/pattern]
