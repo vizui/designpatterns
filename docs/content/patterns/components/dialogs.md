@@ -13,12 +13,12 @@ Dialogs contain a combination of: a title, a body, and a footer.
 
 &nbsp;
 
-#### Button Placement
+#### Button placement
 The primary action buttons are generally placed on the right, and if applicable, a cancel button is placed on the left. 
 
 &nbsp;
 
-#### Button Styles
+#### Button styles
 In general, use the button style that matches the action. In some scenarios, there may be no button that takes priority over another, and they all have similar actions, in which case it might be best to use the default button style for them all.
 
 [preview]
@@ -56,7 +56,7 @@ In general, use the button style that matches the action. In some scenarios, the
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title">Find & Replace</h4>
+        <h4 class="modal-title">Find & replace</h4>
       </div>
       <div class="modal-body">
           <form role="form" class="form-horizontal">
@@ -87,7 +87,7 @@ In general, use the button style that matches the action. In some scenarios, the
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Find</button>
         <button type="button" class="btn btn-default" data-dismiss="modal" disabled>Replace</button>
-        <button type="button" class="btn btn-default" data-dismiss="modal">Replace All</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal">Replace all</button>
         <button type="button" class="btn btn-default" data-dismiss="modal">Done</button>
       </div>
     </div>
@@ -106,7 +106,7 @@ In general, use the button style that matches the action. In some scenarios, the
       </div>
       <div class="modal-footer">
         <button type="button" class="pull-left btn btn-default">Back</button>
-        <button type="button" class="btn btn-success">View Request</button>
+        <button type="button" class="btn btn-success">View request</button>
       </div>
     </div>
   </div>
@@ -136,7 +136,7 @@ A confirmation dialog may or may not contain an icon.
       </div>
       <div class="modal-footer">
         <button type="button" class="pull-left btn btn-default" data-dismiss="modal">Cancel</button>
-        <button type="button" class="btn btn-danger">Delete User</button>
+        <button type="button" class="btn btn-danger">Delete user</button>
       </div>
     </div>
   </div>
@@ -153,7 +153,7 @@ A confirmation dialog may or may not contain an icon.
       </div>
       <div class="modal-footer">
         <button type="button" class="pull-left btn btn-default">Cancel</button>
-        <button type="button" class="btn btn-warning">Yes</button>
+        <button type="button" class="btn btn-warning">Grant permission</button>
       </div>
     </div>
   </div>
@@ -207,14 +207,14 @@ Dialogs can prevent the user from performing actions behind/around the dialog if
 ### Live
 [preview]
 <button class="btn btn-default" data-toggle="modal" data-target="#myModal">
-  Show Modal
+  Show modal
 </button>
 <div class="modal fade" id="myModal">
   <div class="modal-dialog" style="width: 400px; max-width: 100%; padding: 20px;">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title">Rename File</h4>
+        <h4 class="modal-title">Rename file</h4>
       </div>
       <div class="modal-body">
           <form role="form" class="">
