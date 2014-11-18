@@ -88,7 +88,7 @@ __Types:__
 - __Danger__ alerts can be used for critical messages that require immediate attention
 
 __Behavior:__
-- Alerts with low importance, like `info` or `success` alerts, should close automatically after 5 seconds.
+- Alerts with low importance, like `info` or `success` alerts, can close automatically after 5 seconds (if desired).
 - Alerts with high importance, like `warning` or `danger`, should not close automatically unless the situation has been resolved in some other way.
 
 [preview]
