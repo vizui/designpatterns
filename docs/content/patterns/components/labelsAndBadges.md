@@ -1,5 +1,5 @@
 ---
-title: "Labels and Badges"
+title: "Labels and badges"
 ---
 
 [pattern]
