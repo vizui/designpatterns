@@ -1,5 +1,5 @@
 ---
-title: "Form Controls"
+title: "Form controls"
 ---
 
 
@@ -110,7 +110,7 @@ Text areas allow for multi-line input.
 [/pattern]
 
 [pattern]
-### Radio Buttons
+### Radio buttons
 
 &nbsp;
 
@@ -190,7 +190,7 @@ Text areas allow for multi-line input.
 
 
 [pattern]
-### Native Select
+### Native select
 [preview]
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
     <div class="row">
@@ -227,7 +227,7 @@ Text areas allow for multi-line input.
 [/pattern]
 
 [pattern]
-### Native Mult-select
+### Native mult-select
 [preview]
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
     <div class="row">
@@ -266,7 +266,7 @@ Text areas allow for multi-line input.
 [/pattern]
 
 [pattern]
-### Enhanced Select
+### Enhanced select
 
 <span class="text-muted">These examples use https://github.com/ivaynberg/select2 for demo purposes.</span>
 [preview]
@@ -371,7 +371,7 @@ Text areas allow for multi-line input.
 [/pattern]
 
 [pattern]
-### Date Picker
+### Date picker
 [preview]
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
     <div class="row">
