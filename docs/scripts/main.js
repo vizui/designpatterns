@@ -89,11 +89,11 @@ $('.show-toasts').each(function () {
     var closedCount = 0;
     closers.each(function () {
         $(this).on('click', function () {
-            if (closersCount == ++closedCount) {
+            if (closersCount === ++closedCount) {
                 closedCount = 0;
                 setTimeout(function () {
                     toastContainer.hide();
-                }, 150)
+                }, 150);
             }
         });
     });
@@ -108,8 +108,8 @@ $('.show-toasts').each(function () {
                     }, 1000);
                 }
             }
-        })
-    }
+        });
+    };
 
     // show the toasts on click
     showToastButton.on('click', function() {
@@ -122,5 +122,5 @@ $('.show-toasts').each(function () {
         closedCount = 0;
         toastContainer.find('.toast').hide(0);
         showToast($(toastContainer.find('.toast')[0]));
-    })
-})
+    });
+});

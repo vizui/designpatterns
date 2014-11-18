@@ -76,7 +76,10 @@ module.exports = function(grunt) {
                 var shortPath = filePath.substr(options.patternRoot.length);
 
                 var category = shortPath.split(path.sep)[0];
-                var subCategory = shortPath.split(path.sep)[1];
+
+                if (shortPath.split(path.sep).length > 2) {
+                    var subCategory = shortPath.split(path.sep)[1];
+                }
 
                 category = category.substr(0, 1).toUpperCase() + category.substr(1);
 
