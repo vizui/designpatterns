@@ -1,5 +1,5 @@
 ---
-title: "Alerts and Notifications"
+title: "Alerts and notifications"
 ---
 
 [pattern]
