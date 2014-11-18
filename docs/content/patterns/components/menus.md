@@ -11,6 +11,7 @@ title: "Menus"
 - Disable menus rather than hiding
 - Indicate submenus with a caret
 - Indicate dialogs with an ellipsis
+- Use sentence case for menu items
 
 [preview]
 <ul style="display: inline-block; position: relative; float: none; width: 200px;" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
@@ -62,7 +63,7 @@ If you have an icon in a menu, ensure that all menu items are aligned appropriat
 [/pattern]
 
 [pattern]
-### Form Controls
+### Form controls
 Sometimes menus can contain form elements like checkboxes. Use checkboxes for both single and multi-select options. When dealing with a multi-selectable collection of checkboxes, it's likely beneficial to keep the menu open after items are checked. Otherwise, menus should close after items are clicked.
 [preview]
 <ul style="display: inline-block; position: relative; float: none; width: 200px;" class="dropdown-menu has-icon" role="menu" aria-labelledby="dropdownMenu2">

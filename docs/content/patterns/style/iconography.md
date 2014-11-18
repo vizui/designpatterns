@@ -2,7 +2,7 @@
 title: "Iconography"
 ---
 [pattern]
-### Web Application Icons
+### Web application icons
 
 <div class="row pl-icon-list">
     <div class="col-md-3 col-sm-4"><i class="fa fa-adjust"></i> fa-adjust</div>
@@ -330,7 +330,7 @@ title: "Iconography"
 [/pattern]
 
 [pattern]
-### File Type Icons
+### File type icons
     
 <div class="row pl-icon-list">
     <div class="col-md-3 col-sm-4"><i class="fa fa-file"></i> fa-file</div>
@@ -356,7 +356,7 @@ title: "Iconography"
 [/pattern]
 
 [pattern]
-### Spinner Icons
+### Spinner icons
 
 <div class="row pl-icon-list">
     <div class="col-md-3 col-sm-4"><i class="fa fa-circle-o-notch"></i> fa-circle-o-notch</div>
@@ -369,7 +369,7 @@ title: "Iconography"
 [/pattern]
 
 [pattern]
-### Form Control Icons
+### Form control icons
 
 <div class="row pl-icon-list">
     <div class="col-md-3 col-sm-4"><i class="fa fa-check-square"></i> fa-check-square</div>
@@ -389,7 +389,7 @@ title: "Iconography"
 [/pattern]
 
 [pattern]
-### Payment Icons
+### Payment icons
 
 <div class="row pl-icon-list">
     <div class="col-md-3 col-sm-4"><i class="fa fa-cc-amex"></i> fa-cc-amex</div>
@@ -406,7 +406,7 @@ title: "Iconography"
 [/pattern]
 
 [pattern]
-### Chart Icons
+### Chart icons
 
 <div class="row pl-icon-list">
     <div class="col-md-3 col-sm-4"><i class="fa fa-area-chart"></i> fa-area-chart</div>
@@ -419,7 +419,7 @@ title: "Iconography"
 [/pattern]
 
 [pattern]
-### Currency Icons
+### Currency icons
 
 <div class="row pl-icon-list">
     <div class="col-md-3 col-sm-4"><i class="fa fa-bitcoin"></i> fa-bitcoin <span class="text-muted">(alias)</span></div>
@@ -451,7 +451,7 @@ title: "Iconography"
 [/pattern]
 
 [pattern]
-### Text Editor Icons
+### Text editor icons
 
 <div class="row pl-icon-list">
     <div class="col-md-3 col-sm-4"><i class="fa fa-align-center"></i> fa-align-center</div>
@@ -508,7 +508,7 @@ title: "Iconography"
 [/pattern]
 
 [pattern]
-### Directional Icons
+### Directional icons
 
 <div class="row pl-icon-list">
     <div class="col-md-3 col-sm-4"><i class="fa fa-angle-double-down"></i> fa-angle-double-down</div>
@@ -568,7 +568,7 @@ title: "Iconography"
 [/pattern]
 
 [pattern]
-### Video Player Icons
+### Video player ucons
 
 <div class="row pl-icon-list">
     <div class="col-md-3 col-sm-4"><i class="fa fa-arrows-alt"></i> fa-arrows-alt</div>
@@ -592,7 +592,7 @@ title: "Iconography"
 [/pattern]
 
 [pattern]
-### Brand Icons
+### Brand icons
 <div class="row pl-icon-list">
     <div class="col-md-3 col-sm-4"><i class="fa fa-adn"></i> fa-adn</div>
     <div class="col-md-3 col-sm-4"><i class="fa fa-android"></i> fa-android</div>
@@ -701,7 +701,7 @@ title: "Iconography"
 [/pattern]
 
 [pattern]
-### Medical Icons
+### Medical icons
 
 <div class="row pl-icon-list">
     <div class="col-md-3 col-sm-4"><i class="fa fa-ambulance"></i> fa-ambulance</div>

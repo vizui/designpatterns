@@ -16,7 +16,7 @@ title: "Typography"
 [/pattern]
 
 [pattern]
-### Sizes and Weights
+### Sizes and weights
 
 [preview]
 <!-- <h3>Open Sans</h3> -->

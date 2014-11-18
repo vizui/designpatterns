@@ -1,5 +1,5 @@
 ---
-title: "Layout Grid"
+title: "Layout grid"
 preview: true
 ---
 

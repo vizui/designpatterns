@@ -619,7 +619,7 @@ Buttons with the `btn-hover` and `btn-icon-only` classes.
 [/pattern]
 
 [pattern]
-### Column Customization
+### Column customization
 To provide column customization, add an icon to the top right corner of the table. Clicking on the icon will show the `Show & Hide Columns` dialog.
 [preview]
 <div style="padding: 40px; background: #fff;">
