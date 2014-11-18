@@ -12,10 +12,10 @@ preview: true
         <div style="max-width: 275px;" class="pull-left">
             <form class="filters">
                 <div class="filter-heading">
-                    Refine by <a href="" class="filters-clear">Defaults</a>
+                    Refine by <a href="" class="filters-clear">Clear</a>
                 </div>
                 <div data-toggle="collapse" data-target="#filterGroup2" class="filter-group-title">
-                    <i class="fa fa-angle-down pull-right text-muted fa-1x"></i> Conveyance Type 
+                    <i class="fa fa-angle-down pull-right text-muted fa-1x"></i> Conveyance type 
                 </div>
                 <div id="filterGroup2" class="collapse in">
                     <div class="filter-group-content">
@@ -55,7 +55,7 @@ preview: true
                     </div>
                 </div>
                 <div data-toggle="collapse" data-target="#filterGroup1" class="filter-group-title">
-                    <i class="fa fa-angle-right pull-right text-muted fa-1x"></i> Date Range 
+                    <i class="fa fa-angle-right pull-right text-muted fa-1x"></i> Date range 
                 </div>
                 <div id="filterGroup1" class="collapse in">
                     <div class="filter-group-content">
@@ -315,7 +315,7 @@ preview: true
         <h4 style="display: inline-block;">Refine by</h4>
         <div style="display: inline-block; vertical-align: top;">
             <button class="btn btn-link">
-                Date Range <span class="caret"></span>
+                Date range <span class="caret"></span>
             </button>
             <ul class="list-unstyled">
                 <li class="filter-value">4/01/2014 - 5/01/2014 <i class="pull-right fa fa-times"></i></li>
@@ -323,7 +323,7 @@ preview: true
         </div>
         <div style="display: inline-block; vertical-align: top;">
             <button class="btn btn-link">
-                Conveyance Type <span class="caret"></span>
+                Conveyance type <span class="caret"></span>
             </button>
             <ul class="list-unstyled">
                 <li class="filter-value">Assignment <i class="pull-right fa fa-times"></i></li>
@@ -353,7 +353,7 @@ preview: true
             4/01/2014 - 5/01/2014 <span class="caret"></span>
         </button>
         <button class="btn btn-link">
-            Conveyance Type <span class="caret"></span>
+            Conveyance type <span class="caret"></span>
         </button>
         <button class="btn btn-link">
             Color <span class="caret"></span>
