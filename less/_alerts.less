@@ -7,44 +7,62 @@
     padding: @alert-padding @alert-padding*2;
 }
 
-.toast {
+.toast-list {
     border-radius: 0 2px 2px 0;
     position: relative;
     font-size: 13px;
     background: #fff;
     box-shadow: 0px 2px 8px rgba(0,0,0,.3);
-    border-left: 4px solid transparent;
     display: block;
 
-    &.toast-info {
-        border-color: @brand-info;
-    }
-    &.toast-primary {
-        border-color: @brand-primary;
-    }
-    &.toast-success {
-        border-color: @brand-success;
-    }
-    &.toast-danger {
-        border-color: @brand-danger;
-    }
-    &.toast-warning {
-        border-color: @brand-warning;
+    .toast {
+        border-left: 4px solid transparent;
+
+        &::after{
+            display: block;
+            content: "";
+            height: 2px;
+            position: relative;
+            top: 1px;
+            background-color: #eee;
+        }
+
+        &:last-child::after {
+            display: none;
+        }
+
+        &.toast-info {
+            border-left-color: @brand-info;
+        }
+        &.toast-primary {
+            border-left-color: @brand-primary;
+        }
+        &.toast-success {
+            border-left-color: @brand-success;
+        }
+        &.toast-danger {
+            border-left-color: @brand-danger;
+        }
+        &.toast-warning {
+            border-left-color: @brand-warning;
+        }
+
+        .toast-content {
+            padding: @alert-padding*2 @alert-padding*2;
+        }
+
+        .toast-actions {
+            padding: @alert-padding*2 @alert-padding*2;
+            padding-top: 0;
+            display: inline-block;
+            width: 100%;
+        }
+
+        .close {
+            margin-top: -1px;
+            margin-left: 8px;
+        }
     }
 
-    .toast-content {
-        padding: @alert-padding*2 @alert-padding*2;
-    }
 
-    .toast-actions {
-        padding: @alert-padding*2 @alert-padding*2;
-        padding-top: 0;
-        display: inline-block;
-        width: 100%;
-    }
-
-    .close {
-        margin-top: -1px;
-        margin-left: 8px;
-    }
 }
