@@ -2,7 +2,7 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>Menus - Components - USPTO design patterns</title>
+        <title>Settings - Components - USPTO design patterns</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -47,7 +47,7 @@
     </div>
     <div class="pl-sub-header">
         <div class="pull-left">
-            <h4><strong>Patterns</strong> - Menus</h4>
+            <h4><strong>Patterns</strong> - Settings</h4>
         </div>
         <div class="pull-right">
             <button type="button" title="Edit this page on Github" class="btn btn-sm btn-default"> <i class="fa fa-pencil"></i></button>
@@ -109,17 +109,7 @@
                     
                 
                     
-                        <li class="active"><a href="patterns-components-menus.html">Menus </a>
-                            
-                                <ul class="nav">
-                                    
-                                        <li><a title="Submenus" href="#submenus">Submenus</a></li>
-                                    
-                                        <li><a title="Icons" href="#icons">Icons</a></li>
-                                    
-                                        <li><a title="Form controls" href="#form-controls">Form controls</a></li>
-                                    
-                                </ul>
+                        <li class=""><a href="patterns-components-menus.html">Menus </a>
                             
                         </li>
                     
@@ -145,7 +135,7 @@
                     
                 
                     
-                        <li class=""><a href="patterns-components-settings.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Settings </a>
+                        <li class="active"><a href="patterns-components-settings.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Settings </a>
                             
                         </li>
                     
@@ -208,72 +198,82 @@
         </ul>
         <div class="pl-content">
             
+                <div class="pl-preview-header">This document is a preview.</div>
+            
             <div class="pl-pattern">
-<p><h3>General</h3></p>
+<p><h3>Settings</h3>
+Depending on the application type, settings can appear as a dedicated page or as a modal dialog. The complexity of the settings panel can vary drastically between applications.</p>
+<p>The settings panel can be composed of:</p>
 <ul>
-<li>Use dividers to group related menu items</li>
-<li>Use submenus to separate large sets of menu items</li>
-<li>Include keyboard shortcuts if applicable</li>
-<li>Disable menus rather than hiding</li>
-<li>Indicate submenus with a caret</li>
-<li>Indicate dialogs with an ellipsis</li>
-<li>Use sentence case for menu items</li>
+<li>Side tree navigation containing grouped settings</li>
+<li>The settings forms and controls</li>
+</ul>
+<p>Avoid the urge to “just make it a setting”. Only add a setting if:</p>
+<ul>
+<li>More than 20% of your users will change the setting</li>
+<li>It's actually a setting that can be changed, not just information</li>
+<li>It's infrequently changed by users. If its frequently changed, consider making it more available</li>
 </ul>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
-<ul style="display: inline-block; position: relative; float: none; width: 200px" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
-  <li role="presentation"><a href="">Bold <span style="" class="pull-right text-muted">Ctrl+B</span></a></li>
-  <li role="presentation"><a href="">Italic <span style="" class="pull-right text-muted">Ctrl+I</span></a></li>
-  <li role="presentation"><a href="">Underline <span style="" class="pull-right text-muted">Ctrl+U</span></a></li>
-  <li role="presentation" class="divider"></li>
-  <li role="presentation"><a href="">Font <i style="line-height: 18px" class="fa fa-caret-right text-muted pull-right fa-1x"></i></a></li>
-  <li role="presentation"><a href="">Font size <i style="line-height: 18px" class="fa fa-caret-right text-muted pull-right fa-1x"></i></a></li>
-  <li role="presentation" class="divider"></li>
-  <li role="presentation" class="disabled"><a>Conditional formatting...</a></li>
-  <li role="presentation" class="divider"></li>
-  <li role="presentation"><a href="">Clear formatting</a></li>
-</ul>
+<div class="modal fade in" style="display: block; position: relative; z-index: inherit">
+  <div class="modal-dialog" style="width: 750px; max-width: 100%; padding: 20px">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Settings</h4>
+      </div>
+      <div style="width: 200px; min-height: 400px; border-right: 1px solid #f0f2f3; float: left">
+        <ul class="nav nav-pills nav-stacked" role="tab-list" style="margin-top: 6px">
+            <li role="presentation" class="category">General</li>
+            <li role="presentation"><a data-toggle="tab" role="tab" href="#">Profile</a></li>
+            <li role="presentation" class="active"><a data-toggle="tab" role="tab" href="#">Account</a></li>
+            <li role="presentation"><a data-toggle="tab" role="tab" href="#">Billing</a></li>
+            <li role="presentation" class="category">System</li>
+            <li role="presentation"><a data-toggle="tab" role="tab" href="#">Notifications</a></li>
+            <li role="presentation"><a data-toggle="tab" role="tab" href="#">Emails</a></li>
+            <li role="presentation"><a data-toggle="tab" role="tab" href="#">SSH keys</a></li>
+        </ul>
+      </div>
+      <div style="margin-left: 200px; max-height: 400px; overflow: auto" class="clearfix">
+        <div style="opacity: 1; display: inline-block; width: 100%">
+<!--          <div style="padding: 16px 16px 0 16px;"><h4>Account settings</h4></div>
+           <ul class="nav nav-tabs nav-tabs-light" role="tab-list" style="text-align: center; padding: 16px 16px 0 16px">
+              <li class="active" role="presentation"><a data-toggle="tab" role="tab" href="">General</a></li>
+              <li role="presentation"><a data-toggle="tab" role="tab" href="">Password</a></li>
+              <li role="presentation"><a data-toggle="tab" role="tab" href="">Advanced</a></li>
+          </ul>
+           <form class="" role="form" style="padding: 16px; max-width: 300px;">
+            <div class="form-group">
+              <label for="emailInput2" class="3 control-label">Name</label>
+              <div class="9">
+                <input type="text" class="form-control" value="John Smith" id="emailInput2">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="passwordInput2" class="3 control-label">Email</label>
+              <div class="9">
+                <input type="email" class="form-control" value="john.smith@gmail.com" id="passwordInput2" >
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="passwordInput2" class="3 control-label">Language</label>
+              <div class="9">
+                <select id="se17" class="form-control select2">
+                    <option value="A">English (US)</option>
+                    <option value="B">English (UK)</option>
+                    <option value="C">Español</option>
+                </select>
+              </div>
+            </div>
+          </form>-->
+        </div>
+      </div>
+      <div class="modal-footer" style="clear: both">
+        <button type="button" class="btn btn-default">Done</button>
+      </div>
+    </div>
+  </div>
 </div>
-<pre><code class="hljs html">
-</code></pre>
-</div>
-<div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="submenus" href="#submenus"><i class="fa fa-link"></i></a> Submenus</h3>
-Submenus help organize menu items.</p>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
-<ul style="display: inline-block; position: relative; float: none; width: 200px" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
-  <li role="presentation"><a href="">Submenu item <i style="line-height: 18px" class="fa fa-caret-right text-muted pull-right fa-1x"></i></a></li>
-  <li role="presentation" class="disabled"><a href="">Disabled submenu item <i style="line-height: 18px" class="fa fa-caret-right text-muted pull-right fa-1x"></i></a></li>
-</ul>
-</div>
-</div>
-<div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="icons" href="#icons"><i class="fa fa-link"></i></a> Icons</h3>
-Use icons for menu items that have a common, easily recognizable icon. You don't need an icon for every menu item, only for menu items that are more frequently used.</p>
-<p>If you have an icon in a menu, ensure that all menu items are aligned appropriately.</p>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
-<ul style="display: inline-block; position: relative; float: none; width: 200px" class="dropdown-menu has-icon" role="menu" aria-labelledby="dropdownMenu2">
-  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x fa-star dropdown-menu-icon"></i> Star</a></li>
-  <li role="presentation"><a href="">Share...</a></li>
-  <li class="divider" role="presentation"></li>
-  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x fa-trash-o dropdown-menu-icon"></i> Remove</a></li>
-</ul>
-</div>
-</div>
-<div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="form-controls" href="#form-controls"><i class="fa fa-link"></i></a> Form controls</h3>
-Sometimes menus can contain form elements like checkboxes. Use checkboxes for both single and multi-select options. When dealing with a multi-selectable collection of checkboxes, it's likely beneficial to keep the menu open after items are checked. Otherwise, menus should close after items are clicked.</p>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
-<ul style="display: inline-block; position: relative; float: none; width: 200px" class="dropdown-menu has-icon" role="menu" aria-labelledby="dropdownMenu2">
-  <li class="dropdown-header">Single-select</li>
-  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x dropdown-menu-icon"></i> 1.0</a></li>
-  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x fa-check dropdown-menu-icon"></i> 1.5</a></li>
-  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x dropdown-menu-icon"></i> 2.0</a></li>
-  <li class="divider" role="presentation"></li>
-  <li class="dropdown-header">Multi-select</li>
-  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x fa-check dropdown-menu-icon"></i> Grid lines</a></li>
-  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x fa-check dropdown-menu-icon"></i> Rulers</a></li>
-  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x dropdown-menu-icon"></i> Margins</a></li>
-</ul>
 </div>
 </div>
 
@@ -281,15 +281,15 @@ Sometimes menus can contain form elements like checkboxes. Use checkboxes for bo
                 <hr>
                 <div class="pl-footer">
                     
-                        <a class="pl-footer-previous btn btn-link" style="text-align: left" href="patterns-components-labelsAndBadges.html">
+                        <a class="pl-footer-previous btn btn-link" style="text-align: left" href="patterns-components-popovers.html">
                             <div class="text-muted" style="font-size: 11px">PREVIOUS</div>
-                            Labels and badges
+                            Popovers
                         </a>
                     
                     
-                        <a class="pl-footer-next pull-right btn btn-link" style="text-align: right" href="patterns-components-metadata.html">
+                        <a class="pl-footer-next pull-right btn btn-link" style="text-align: right" href="patterns-components-tables.html">
                             <div class="text-muted" style="font-size: 11px">NEXT</div>
-                            Metadata
+                            Tables
                         </a>
                     
                 </div>
