@@ -1,5 +1,42 @@
 @import "../bower_components/bootstrap/less/navs.less";
 
+.nav-pills.nav-stacked {
+    > .category {
+        text-transform: uppercase;
+        font-weight: 600;
+        border-left: 3px solid transparent;
+        padding: 3px 15px;
+        margin-top: 18px;
+        color: @gray-light;
+        font-size: @font-size-base - 1;
+
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+
+    > li > a {
+        padding: 3px 15px;
+        border-left: 3px solid transparent;
+        border-radius: 0;
+
+        &:hover {
+            background-color: #f3f3f3;
+        }
+    }
+    > .active > a {
+        background-color: #f3f3f3;
+        color: @text-color;
+        border-left-color: @brand-primary;
+
+        &:hover {
+            background-color: #f3f3f3;
+            color: @text-color;
+            cursor: default;
+        }
+    }
+}
+
 .nav-tabs {
     > li {
         > a {
