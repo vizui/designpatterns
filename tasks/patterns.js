@@ -113,10 +113,29 @@ module.exports = function(grunt) {
         // render templates with locals
         Object.keys(contentMap).forEach(function (key, i, arr) {
             var c = contentMap[key];
+            var x = i;
 
             // add prev/next indicators
-            if (i > 0) { c.prev = contentMap[arr[i-1]]; }
-            if (i < arr.length - 1) { c.next = contentMap[arr[i+1]]; }
+            if (i > 0) {
+                var obj1 = contentMap[arr[x-1]];
+                while (obj1 && (!obj1.subCategory || obj1.meta.draft === true)) {
+                    x--;
+                    obj1 = contentMap[arr[x-1]];
+                }
+                c.prev = obj1;
+            }
+            x = i;
+            if (i < arr.length - 1) {
+                var obj = contentMap[arr[x+1]];
+                while (obj && (!obj.subCategory || obj.meta.draft === true)) {
+                    x++;
+                    obj = contentMap[arr[x+1]];
+                }
+                c.next = obj;
+                if (c.next == c) {
+                    console.log("wtf", c.title, x, i);
+                }
+            }
 
             var output = renderTemplate(c.template, c, options.template);
             grunt.file.write(c.dest, output);
