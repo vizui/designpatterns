@@ -56,23 +56,23 @@
                 <div class="pl-preview-header">This document is a preview.</div>
             <% } %>
             <%- content %>
-
-            <hr>
-
-            <div class="pl-footer">
-                <% if (locals.prev) { %>
-                    <a class="pl-footer-previous btn btn-link" style="text-align: left;" href="<%= prev.url %>">
-                        <div class="text-muted" style="font-size: 11px;">PREVIOUS</div>
-                        <%= prev.title %>
-                    </a>
-                <% } %>
-                <% if (locals.next) { %>
-                    <a class="pl-footer-next pull-right btn btn-link" style="text-align: right;" href="<%= next.url %>">
-                        <div class="text-muted" style="font-size: 11px;">NEXT</div>
-                        <%= next.title %>
-                    </a>
-                <% } %>
-            </div>
+            <% if (locals.subCategory) { %>
+                <hr>
+                <div class="pl-footer">
+                    <% if (locals.prev) { %>
+                        <a class="pl-footer-previous btn btn-link" style="text-align: left;" href="<%= prev.url %>">
+                            <div class="text-muted" style="font-size: 11px;">PREVIOUS</div>
+                            <%= prev.title %>
+                        </a>
+                    <% } %>
+                    <% if (locals.next) { %>
+                        <a class="pl-footer-next pull-right btn btn-link" style="text-align: right;" href="<%= next.url %>">
+                            <div class="text-muted" style="font-size: 11px;">NEXT</div>
+                            <%= next.title %>
+                        </a>
+                    <% } %>
+                </div>
+            <% } %>
         </div>
     </div>
 <% include footer %>
