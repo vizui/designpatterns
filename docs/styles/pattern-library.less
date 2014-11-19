@@ -370,7 +370,7 @@ body {
     }
 }
 
-.pl-sidebar {
+.pl-sidebar.nav-pills.nav-stacked {
     display: inline-block;
     float: left;
     overflow: auto;
@@ -380,70 +380,62 @@ body {
     position: fixed;
     width: @pl-sidebar-width;
     z-index: @zindex-navbar-fixed - 1;
-    // border-right: 1px solid #ddd;
 
     background: @pl-sidebar-bg;
     list-style: none;
 
-    padding: 0 0 6px 0;
+    padding: 14px 0 6px 0;
     font-weight: 600;
-    line-height: 22px;
+    line-height: 14px;
 
-    li > ul {
-        list-style: none;
-        padding-left: 0;
-        > li > a {
-            font-weight: 400;
+    > li > a {
+        color: @pl-sidebar-link-fg;
+
+        &:hover,
+        &:focus {
             background: darken(@pl-sidebar-bg, 2%);
-            color: lighten(@pl-sidebar-category-fg, 15%);
-            // box-shadow: inset 4px 0 0 0 #fa6280;
-            font-size: 12px;
-            // font-weight: 400;
-            overflow: hidden;
-            padding: 0 0 0 35px;
-            display: block;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-        }
-        .active > a {
-            background: @pl-sidebar-link-active-bg;
             color: @pl-sidebar-link-fg;
         }
     }
 
-    > .active > a {
+    > li.active > a {
         background: darken(@pl-sidebar-bg, 2%);
-        box-shadow: inset 3px 0 0 0 @pl-header-bg;
+        color: @pl-sidebar-link-fg;
     }
+
+    > li > ul > li > a {
+        font-weight: 400;
+        background: darken(@pl-sidebar-bg, 2%);
+        color: lighten(@pl-sidebar-category-fg, 15%);
+        padding: 3px 15px;
+        font-size: 12px;
+        overflow: hidden;
+        padding-left: 35px;
+        display: block;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    > li > ul > li.active > a {
+        background: @pl-sidebar-link-active-bg;
+        color: @pl-sidebar-link-fg;
+    }
+
+
+
 
     > .category {
         color: @pl-sidebar-category-fg;
-        padding-left: 16px;
-        padding-top: 14px;
     }
 
     > li > a > .fa {
         color: #fff;
         opacity: .15;
         position: relative;
-        line-height: inherit;
         top: 1px;
+        left: .6em;
     }
 
-    li a {
-        color: @pl-sidebar-link-fg;
-        display: block;
-        padding: 0 16px;
-        text-decoration: none;
-
-        &:hover {
-            background: @pl-sidebar-link-active-bg;
-        }
-    }
-
-}
-
-.pl-hero-background {
 }
 
 .pl-hero {

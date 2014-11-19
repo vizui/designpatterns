@@ -33,12 +33,12 @@
         </div>
     </div>
     <div class="pl-container">
-        <ul class="pl-sidebar">
+        <ul class="nav nav-pills nav-stacked pl-sidebar">
             <% Object.keys(nav[category] || {}).forEach(function (subCategory) { %>
                 <li class="category"><%= subCategory.toUpperCase() %></li>
                 <% nav[category][subCategory].forEach(function(l) { %>
                     <% if (!l.meta.draft) { %>
-                        <li class="<%= l.title == meta.title ? 'active' : '' %>"><a href="<%= l.url %>"><%- l.meta.preview ? '<i title="This document is a preview." class="fa fa-exclamation pull-right"></i>' : '' %><%= l.title %> </a>
+                        <li class="<%= l.title == meta.title ? 'active' : '' %>"><a href="<%= l.url %>"><%- l.meta.preview ? '<i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>' : '' %><%= l.title %> </a>
                             <% if (l.title === meta.title && l.subNav && l.subNav.length) { %>
                                 <ul class="nav">
                                     <%l.subNav.forEach(function(s) { %>
