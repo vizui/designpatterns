@@ -1,5 +1,5 @@
 <% include header %>
-    <div class="pl-header navbar navbar-fixed-top navbar-inverse">
+    <header class="pl-header navbar navbar-fixed-top navbar-inverse">
         <div class="<%= meta.sidebar == false ? 'container' : 'container-fluid' %>">
             <div class="navbar-header">
                 <a href="index.html" class="navbar-brand"><strong>USPTO</strong> <span class="light">Design</span></a>
@@ -23,7 +23,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </header>
     <div class="pl-sub-header">
         <div class="pull-left">
             <h4><strong><%= category %></strong> - <%= meta.title %></h4>
@@ -33,31 +33,32 @@
         </div>
     </div>
     <div class="pl-container">
-        <ul class="nav nav-pills nav-stacked pl-sidebar">
-            <% Object.keys(nav[category] || {}).forEach(function (subCategory) { %>
-                <li class="category"><%= subCategory.toUpperCase() %></li>
-                <% nav[category][subCategory].forEach(function(l) { %>
-                    <% if (!l.meta.draft) { %>
-                        <li class="<%= l.title == meta.title ? 'active' : '' %>"><a href="<%= l.url %>"><%- l.meta.preview ? '<i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>' : '' %><%= l.title %> </a>
-                            <% if (l.title === meta.title && l.subNav && l.subNav.length) { %>
-                                <ul class="nav">
-                                    <%l.subNav.forEach(function(s) { %>
-                                        <li><a title="<%= s %>" href="#<%= s.toLowerCase().replace(/[^\w]+/g, '-') %>"><%= s %></a></li>
-                                    <%});%>
-                                </ul>
-                            <%}%>
-                        </li>
-                    <%}%>
+        <nav class="pl-sidebar">
+            <ul class="nav nav-pills nav-stacked">
+                <% Object.keys(nav[category] || {}).forEach(function (subCategory) { %>
+                    <li class="category"><%= subCategory.toUpperCase() %></li>
+                    <% nav[category][subCategory].forEach(function(l) { %>
+                        <% if (!l.meta.draft) { %>
+                            <li class="<%= l.title == meta.title ? 'active' : '' %>"><a href="<%= l.url %>"><%- l.meta.preview ? '<i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>' : '' %><%= l.title %> </a>
+                                <% if (l.title === meta.title && l.subNav && l.subNav.length) { %>
+                                    <ul class="nav">
+                                        <%l.subNav.forEach(function(s) { %>
+                                            <li><a title="<%= s %>" href="#<%= s.toLowerCase().replace(/[^\w]+/g, '-') %>"><%= s %></a></li>
+                                        <%});%>
+                                    </ul>
+                                <%}%>
+                            </li>
+                        <%}%>
+                    <% });%>
                 <% });%>
-            <% });%>
-        </ul>
-        <div class="pl-content <%= meta.sidebar == false ? 'container' : '' %>">
+            </ul>
+        </nav>
+        <section class="pl-content <%= meta.sidebar == false ? 'container' : '' %>">
             <% if (meta.preview) { %>
                 <div class="pl-preview-header">This document is a preview.</div>
             <% } %>
             <%- content %>
             <% if (locals.subCategory) { %>
-                <hr>
                 <div class="pl-footer">
                     <% if (locals.prev) { %>
                         <a class="pl-footer-previous btn btn-link" style="text-align: left;" href="<%= prev.url %>">
@@ -73,6 +74,6 @@
                     <% } %>
                 </div>
             <% } %>
-        </div>
+        </section>
     </div>
 <% include footer %>

@@ -373,20 +373,22 @@ body {
     }
 }
 
-.pl-sidebar.nav.nav-pills {
+.pl-sidebar {
     float: left;
     overflow: auto;
     top: @navbar-height + @pl-sub-header-height;
+    background: @pl-sidebar-bg;
     bottom: 0;
     margin: 0;
     position: fixed;
     width: @pl-sidebar-width;
     z-index: @zindex-navbar-fixed - 1;
-
-    background: @pl-sidebar-bg;
-    list-style: none;
-
     padding: 14px 0 6px 0;
+}
+
+.pl-sidebar .nav.nav-pills {
+
+    list-style: none;
     font-weight: 600;
     line-height: 14px;
 

@@ -346,6 +346,12 @@ module.exports = function (grunt) {
                     cwd: 'bower_components/font-awesome/fonts/',
                     src: ['*.*'],
                     dest: '<%= paths.dist %>/fonts/'
+                }, {
+                    dot: true,
+                    expand: true,
+                    cwd: '<%= paths.app %>/vendor/html5shiv/',
+                    src: ['html5shiv.min.js'],
+                    dest: '<%= paths.dist %>/vendor/html5shiv/'
                 }]
             },
             styles: {
