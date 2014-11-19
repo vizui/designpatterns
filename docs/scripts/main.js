@@ -71,10 +71,10 @@ $('input[type="checkbox"][indeterminate]').each(function () {
 $('.pl-closable-toasts .toast .close').each(function () {
     $(this).on('click', function () {
         $(this).closest('.toast').animate({
-            right: "-100%",
+            right: '-100%',
             opacity: 0
         }, 150, 'swing', function () {
-          $(this).hide(150);
+            $(this).hide(150);
         });
     });
 });
@@ -104,12 +104,12 @@ $('.show-toasts').each(function () {
     });
 
     var showToast = function (toastEl) {
-        toastEl.css({right: "-100%", opacity: 0, display: "block"});
+        toastEl.css({right: '-100%', opacity: 0, display: 'block'});
         toastEl.animate({
-            right: "0",
+            right: '0',
             opacity: 1
         }, 150, 'swing', function () {
-          if (toastEl.next().length) {
+            if (toastEl.next().length) {
                 setTimeout(function () {
                     showToast(toastEl.next());
                 }, 1000);
