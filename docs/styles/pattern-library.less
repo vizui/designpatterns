@@ -158,6 +158,9 @@ body {
     .pl-header .container-fluid {
         padding-left: 0;
     }
+    .pl-header .container-fluid > .navbar-header {
+        margin-left: 0;
+    }
 }
 .pl-no-sidebar {
     .pl-sidebar {
@@ -370,8 +373,7 @@ body {
     }
 }
 
-.pl-sidebar.nav-pills.nav-stacked {
-    display: inline-block;
+.pl-sidebar.nav.nav-pills {
     float: left;
     overflow: auto;
     top: @navbar-height + @pl-sub-header-height;
