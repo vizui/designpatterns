@@ -32,6 +32,19 @@
     }
 }
 
+// Zebra-striping
+//
+// Targets even rows rather than odd
+
+.table-striped {
+  > tbody > tr:nth-child(odd) {
+    background-color: transparent;
+  }
+  > tbody > tr:nth-child(even) {
+    background-color: @table-bg-accent;
+  }
+}
+
 // Outlined version
 //
 // Adds a border to the outside of the table, but not the cells.
