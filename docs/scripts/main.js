@@ -37,7 +37,7 @@ $(document).on('ready', checkNav);
 /*
  * Use bootstrap's scrollspy plugin to highlight subnav based on scroll position
  */
-$('body').scrollspy({ target: '.pl-sidebar > .active', offset: 125 });
+$('body').scrollspy({ target: '.pl-sidebar > .nav > .active', offset: 125 });
 
 
 /* enable masks */
