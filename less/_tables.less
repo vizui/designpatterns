@@ -7,12 +7,13 @@
 .table-sortable {
     > thead > tr > th,
     > tbody > tr > th {
-        font-weight: 400;
+        // font-weight: 400;
     }
     > thead > tr > .sortable {
         &.active {
-            background: @table-header-bg; //overrides bootstrap's active color
-            font-weight: 700;
+            background: #fff; //overrides bootstrap's active color
+            border-bottom-color: #bbb;
+            // font-weight: 700;
         }
 
         &:hover {
@@ -37,10 +38,10 @@
 // Targets even rows rather than odd
 
 .table-striped {
-  > tbody > tr:nth-child(odd) {
+  > tbody > tr:nth-child(even) {
     background-color: transparent;
   }
-  > tbody > tr:nth-child(even) {
+  > tbody > tr:nth-child(odd) {
     background-color: @table-bg-accent;
   }
 }
@@ -62,7 +63,10 @@
 
 // Adds a background color to the table header
 .table > thead > tr {
-    background: @table-header-bg;
+    background: transparent;
+}
+.table > thead > tr > th {
+    border-bottom-color: #ddd;
 }
 
 // Styles the .table-config-column
