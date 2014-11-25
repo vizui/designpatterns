@@ -17,7 +17,7 @@
 
         <link rel="stylesheet" href="styles/333b841e.vendor.css">
 
-        <link rel="stylesheet" href="styles/97c4ec72.main.css">
+        <link rel="stylesheet" href="styles/cfbcbe4c.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -59,7 +59,7 @@
     </div>
     <div class="pl-container">
         <nav class="pl-sidebar">
-            <ul class="nav nav-pills nav-stacked">
+            <ul class="nav nav-stacked">
                 
                     <li class="category">COMPONENTS</li>
                     
@@ -92,7 +92,7 @@
                         
                             <li class="active"><a href="patterns-components-filters.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Filters </a>
                                 
-                                    <ul class="nav">
+                                    <ul class="nav nav-stacked">
                                         
                                             <li><a title="Side filters" href="#side-filters">Side filters</a></li>
                                         
@@ -172,7 +172,7 @@
                         
                     
                         
-                            <li class=""><a href="patterns-components-wizard.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Wizard </a>
+                            <li class=""><a href="patterns-components-wizards.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Wizards </a>
                                 
                             </li>
                         
@@ -218,8 +218,8 @@
 <p><h3><a class="pl-heading-link" id="side-filters" href="#side-filters"><i class="fa fa-link"></i></a> Side filters</h3></p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="container-fluid" style="margin-top: 8px">
-    <div class="row">
-        <div style="max-width: 275px" class="pull-left">
+    <div class="row panel panel-default">
+        <div style="width: 275px; border-right: 1px solid #ddd" class="pull-left">
             <form class="filters">
                 <div class="filter-heading">
                     Refine by <a href="" class="filters-clear">Clear</a>
@@ -343,173 +343,41 @@
                 </div>
             </form>
         </div>
-        <div style="margin-left: 290px; opacity: .15">
-            <div class="panel panel-default" style="display: inline-block; width: 100%">
-                <div class="panel-body">
-                    <div style="margin-bottom: 4px; display: inline-block; width: 100%">
-                        <div class="pull-right">
-                            <div class="dropdown" style="display: inline-block">
-                                <button type="button" id="dropdownMenu3" class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span class="text-muted">Showing</span> 1-100 <span class="caret"></span></button>
-                                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
-                                    <li role="presentation" class="dropdown-header">Jump to page</li>
-                                    <li style="padding: 0 16px" role="presentation">
-                                        <form action="">
-                                            <input type="text" placeholder="15" class="form-control">
-                                        </form>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li role="presentation" class="dropdown-header">Show up to</li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
-                                </ul>
-                            </div> <div class="btn-group">
-                              <a href="#" class="btn btn-default"><i class="fa fa-angle-left"></i></a>
-                             <a href="#" class="btn btn-default"><i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </div>
-                        <h4 style="margin-top: 4px; margin-bottom: 20px">4,342 <span class="text-muted">results found</span></h4>
-                    </div>
-                    <div>
-                        <div class="pull-left">
-                            <button class="btn btn-default"><input type="checkbox" indeterminate="" style="margin: 0"> &nbsp;<span class="caret"></span></button> <span class="btn btn-hover">8 selected</span>
-                        </div>
-                        <div class="pull-right">
-                            <button class="btn btn-default">Sort by Inventor <span class="caret"></span></button>
-                        </div>
+        <div style="margin-left: 275px">
+            <div class="filter-criteria" style="display: inline-block; width: 100%; float; left">
+                <div class="pull-right">
+                    <div class="dropdown" style="display: inline-block">
+                        <button type="button" id="dropdownMenu3" class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span class="text-muted">Showing</span> 150-160 <span class="text-muted">of</span> 305 <span class="caret"></span></button>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+                            <li role="presentation" class="dropdown-header">Jump to page</li>
+                            <li style="padding: 0 16px" role="presentation">
+                                <form action="">
+                                    <input type="text" placeholder="15" class="form-control">
+                                </form>
+                            </li>
+                            <li class="divider"></li>
+                            <li role="presentation" class="dropdown-header">Show up to</li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
+                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
+                        </ul>
+                    </div> <div class="btn-group">
+                      <a href="#" class="btn btn-default"><i class="fa fa-angle-left"></i></a>
+                     <a href="#" class="btn btn-default"><i class="fa fa-angle-right"></i></a>
                     </div>
                 </div>
+                <span class="toolbar-text">
+                    Refined by
+                    <ul class="filter-applied-list">
+                        <li>Assignment</li>
+                        <li>2014</li>
+                        <li>Orange</li>
+                        <li>Within 5 miles</li>
+                    </ul>
+                </span>
             </div>
-            <div class="panel panel-default" style="display: inline-block; width: 100%">
-                <div class="panel-heading" style="padding: 10px 14px; display: inline-block; width: 100%">
-                    <div class="pull-right">
-                        <button class="btn btn-hover btn-icon-only"><i class="fa fa-download fa-1x"></i></button>
-                        <button class="btn btn-hover btn-icon-only"><i class="fa fa-envelope fa-1x"></i></button>
-                    </div>
-                    <div style="padding: 4px 8px">
-                        <input type="checkbox"> <span class="bold">10951/1202</span>
-                    </div>
-                </div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <dl style="margin-bottom: 0" class="dl-horizontal">
-                                <dt>Examiner</dt>
-                                <dd>IP, Sikyin / 69776 / 1742</dd>
-                                <dt>SPE (Multiple)</dt>
-                                <dd>John Olaskey</dd>
-                                <dt>Applicants</dt>
-                                <dd>Roman Amirpur</dd>
-                                <dt>Inventors</dt>
-                                <dd>Disney Dale</dd>
-                                <dt>Law Firm</dt>
-                                <dd>Clayton & Clayton Associates</dd>
-                            </dl>
-                        </div>
-                        <div class="col-md-6">
-                            <dl style="margin-bottom: 0" class="dl-horizontal">
-                                <dt>Confirmation #</dt>
-                                <dd>1662</dd>
-                                <dt>Publication #</dt>
-                                <dd><a href="">32132132132 <i class="fa fa-external-link-square fa-1x"></i></a></dd>
-                                <dt>Patent #</dt>
-                                <dd>---</dd>
-                                <dt>Attorney Docket #</dt>
-                                <dd>10951/1202</dd>
-                                <dt>Foreign Priority Claimed</dt>
-                                <dd>Yes</dd>
-                            </dl>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default" style="display: inline-block; width: 100%">
-                <div class="panel-heading" style="padding: 10px 14px; display: inline-block; width: 100%">
-                    <div class="pull-right">
-                        <button class="btn btn-hover btn-icon-only"><i class="fa fa-download fa-1x"></i></button>
-                        <button class="btn btn-hover btn-icon-only"><i class="fa fa-envelope fa-1x"></i></button>
-                    </div>
-                    <div style="padding: 4px 8px">
-                        <input type="checkbox"> <span class="bold">10951/1202</span>
-                    </div>
-                </div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <dl style="margin-bottom: 0" class="dl-horizontal">
-                                <dt>Examiner</dt>
-                                <dd>IP, Sikyin / 69776 / 1742</dd>
-                                <dt>SPE (Multiple)</dt>
-                                <dd>John Olaskey</dd>
-                                <dt>Applicants</dt>
-                                <dd>Roman Amirpur</dd>
-                                <dt>Inventors</dt>
-                                <dd>Disney Dale</dd>
-                                <dt>Law Firm</dt>
-                                <dd>Clayton & Clayton Associates</dd>
-                            </dl>
-                        </div>
-                        <div class="col-md-6">
-                            <dl style="margin-bottom: 0" class="dl-horizontal">
-                                <dt>Confirmation #</dt>
-                                <dd>1662</dd>
-                                <dt>Publication #</dt>
-                                <dd><a href="">32132132132 <i class="fa fa-external-link-square fa-1x"></i></a></dd>
-                                <dt>Patent #</dt>
-                                <dd>---</dd>
-                                <dt>Attorney Docket #</dt>
-                                <dd>10951/1202</dd>
-                                <dt>Foreign Priority Claimed</dt>
-                                <dd>Yes</dd>
-                            </dl>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel panel-default" style="display: inline-block; width: 100%">
-                <div class="panel-heading" style="padding: 10px 14px; display: inline-block; width: 100%">
-                    <div class="pull-right">
-                        <button class="btn btn-hover btn-icon-only"><i class="fa fa-download fa-1x"></i></button>
-                        <button class="btn btn-hover btn-icon-only"><i class="fa fa-envelope fa-1x"></i></button>
-                    </div>
-                    <div style="padding: 4px 8px">
-                        <input type="checkbox"> <span class="bold">10951/1202</span>
-                    </div>
-                </div>
-                <div class="panel-body">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <dl style="margin-bottom: 0" class="dl-horizontal">
-                                <dt>Examiner</dt>
-                                <dd>IP, Sikyin / 69776 / 1742</dd>
-                                <dt>SPE (Multiple)</dt>
-                                <dd>John Olaskey</dd>
-                                <dt>Applicants</dt>
-                                <dd>Roman Amirpur</dd>
-                                <dt>Inventors</dt>
-                                <dd>Disney Dale</dd>
-                                <dt>Law Firm</dt>
-                                <dd>Clayton & Clayton Associates</dd>
-                            </dl>
-                        </div>
-                        <div class="col-md-6">
-                            <dl style="margin-bottom: 0" class="dl-horizontal">
-                                <dt>Confirmation #</dt>
-                                <dd>1662</dd>
-                                <dt>Publication #</dt>
-                                <dd><a href="">32132132132 <i class="fa fa-external-link-square fa-1x"></i></a></dd>
-                                <dt>Patent #</dt>
-                                <dd>---</dd>
-                                <dt>Attorney Docket #</dt>
-                                <dd>10951/1202</dd>
-                                <dt>Foreign Priority Claimed</dt>
-                                <dd>Yes</dd>
-                            </dl>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h5 style="margin: 0"></h5>
         </div>
     </div>
 </div>
@@ -520,7 +388,7 @@
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="container-fluid" style="margin-top: 8px">
     <form class="filters filters-horizontal">
-        <h4 style="display: inline-block">Refine by</h4>
+        <div class="filter-heading">Refine by</div>
         <div style="display: inline-block; vertical-align: top">
             <button class="btn btn-link">
                 Date range <span class="caret"></span>
@@ -555,7 +423,7 @@
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="container-fluid" style="margin-top: 8px">
     <form class="filters filters-horizontal">
-        <h4 style="display: inline-block">Refine by</h4>
+        <div class="filter-heading">Refine by</div>
         <button class="btn btn-link">
             4/01/2014 - 5/01/2014 <span class="caret"></span>
         </button>
@@ -597,7 +465,7 @@
 
         <script src="scripts/2c80432f.plugins.js"></script>
 
-        <script src="scripts/0f26efc9.main.js"></script>
+        <script src="scripts/1da2a746.main.js"></script>
 
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

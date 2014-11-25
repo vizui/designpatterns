@@ -2,7 +2,7 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>Wizard - Components - USPTO design patterns</title>
+        <title>Wizards - Components - USPTO design patterns</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -17,7 +17,7 @@
 
         <link rel="stylesheet" href="styles/333b841e.vendor.css">
 
-        <link rel="stylesheet" href="styles/97c4ec72.main.css">
+        <link rel="stylesheet" href="styles/cfbcbe4c.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -51,7 +51,7 @@
     </header>
     <div class="pl-sub-header">
         <div class="pull-left">
-            <h4><strong>Patterns</strong> - Wizard</h4>
+            <h4><strong>Patterns</strong> - Wizards</h4>
         </div>
         <div class="pull-right">
             <button type="button" title="Edit this page on Github" class="btn btn-sm btn-default"> <i class="fa fa-pencil"></i></button>
@@ -59,7 +59,7 @@
     </div>
     <div class="pl-container">
         <nav class="pl-sidebar">
-            <ul class="nav nav-pills nav-stacked">
+            <ul class="nav nav-stacked">
                 
                     <li class="category">COMPONENTS</li>
                     
@@ -164,7 +164,13 @@
                         
                     
                         
-                            <li class="active"><a href="patterns-components-wizard.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Wizard </a>
+                            <li class="active"><a href="patterns-components-wizards.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Wizards </a>
+                                
+                                    <ul class="nav nav-stacked">
+                                        
+                                            <li><a title="Steps" href="#steps">Steps</a></li>
+                                        
+                                    </ul>
                                 
                             </li>
                         
@@ -207,24 +213,127 @@
                 <div class="pl-preview-header">This document is a preview.</div>
             
             <div class="pl-pattern">
-<p><h3>Wizard</h3></p>
-<p>This pattern will contain:</p>
+<p><h3><a class="pl-heading-link" id="steps" href="#steps"><i class="fa fa-link"></i></a> Steps</h3></p>
+<p>In many cases it's beneficial to show the list of steps a wizard will have. Depending on the number of steps and space available, steps can be listed vertically or horizontally.</p>
+<h4>Validation</h4>
 <ul>
-<li>Validation for steps
+<li>Indicate a step's validity
 <ul>
-<li>Some optional fields, some required fields</li>
+<li>Show a check icon when valid (only if the user has left/submitted the form with valid input)</li>
+<li>Show a warning icon when invalid (only if the user has left/submitted the form with errors)</li>
 </ul></li>
-<li>Next/prev step</li>
-<li>List of steps
+</ul>
+<h4>Navigation</h4>
 <ul>
-<li>Horizontal or vertical</li>
-<li>Steps with validation</li>
-<li>Progressively changing steps</li>
-</ul></li>
-<li>Summary section</li>
-<li>Finalize section</li>
+<li>Allow for navigating to previous steps when possible</li>
+<li>In some cases, skipping ahead is applicable</li>
+<li>Navigation may evolve depending on previous steps</li>
 </ul>
 <p> </p>
+<h4>Vertical steps</h4>
+<p>Use vertical steps when there are many steps or 'nested' steps.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="">
+    <div class="" style="margin: auto; max-width: 700px">
+        <div class="" style="display: inline-block; width: 100%">
+            <div style="width: 200px; min-height: 400px; float: left">
+                <div class="panel-body">
+                    <h4>New alert</h4>
+                    <p>Add and configure new alerts for this environment.</p>
+                </div>
+                <ul class="nav nav-stacked nav-tree" role="tab-list">
+                    <li role="presentation"><a role="tab" href="#"><span style="margin-left: -10px; position: relative; top: 1px" class="fa fa-1x fa-fw fa-check text-success"></span> Criteria</a></li>
+                    <li class="active" role="presentation"><a role="tab" href="#"><i style="margin-left: -10px; position: relative; top: 1px" class="fa fa-1x fa-fw fa-warning text-danger"></i> Recipients</a>
+                    </li>
+                    <li class="disabled" role="presentation"><a role="tab"><i style="margin-left: -10px; position: relative; top: 1px" class="fa fa-1x fa-fw"></i> Configure</a>
+                        <ul class="nav nav-stacked nav-tree" role="tab-list">
+                            <li class="disabled" role="presentation"><a href=""><i style="margin-left: -10px; position: relative; top: 1px" class="fa fa-1x fa-fw"></i>Instances</a></li>
+                            <li class="disabled" role="presentation"><a href=""><i style="margin-left: -10px; position: relative; top: 1px" class="fa fa-1x fa-fw"></i>Monitoring</a></li>
+                        </ul>
+                    </li>
+                    <li class="disabled" role="presentation"><a role="tab"><i style="margin-left: -10px; position: relative; top: 1px" class="fa fa-1x fa-fw"></i> Review</a></li>
+                </ul>
+            </div>
+            <div class="panel panel-default" style="margin-left: 200px; height: 400px; max-height: 400px; overflow: auto; position: relative">
+                <div class="panel-body">
+                    <h4>Recipients <span class="pull-right" style="font-size: 13px"><span class="text-primary">Step 2 of 6</span></span></h4>
+                    <p>When the alert criteria is met, each recipient will receive an email notification.</p>
+                    <hr>
+                    <div class="alert alert-danger"><strong>Error!</strong> Fix the 1 error below.</div> 
+                    <div class="form-group" style="">
+                        <div class="input-group">
+                            <input type="text" class="form-control" value="jsmith@corp.com">
+                            <div class="input-group-btn"><button class="btn btn-default"><i class="fa fa-times"></i></button></div>
+                        </div>
+                    </div>
+                    <div class="form-group has-error" style="">
+                        <div class="input-group">
+                            <input type="text" class="form-control" value="aharrison@corp">
+                            <div class="input-group-btn"><button class="btn btn-default"><i class="fa fa-times"></i></button></div>
+                        </div>
+                        <p class="help-block">Invalid email address.</p>
+                    </div>
+                    <div class="form-group" style="">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter an email address">
+                            <div class="input-group-btn"><button class="btn btn-default">Add</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div style="position: absolute; text-align: right; padding: 15px; bottom: 0; right: 0; left: 0">
+                    <button class="btn btn-link pull-left">Back</button>
+                    <button class="btn btn-primary">Next: Configure</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<p> </p>
+<h4>Horizontal steps</h4>
+<p>Use horizontal steps when there are few steps.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="">
+    <div class="" style="margin: auto; max-width: 450px">
+        <div class="panel panel-default" style="overflow: auto; position: relative">
+            <div class="">
+                <h3 class="text-center">Create your account</h3>
+                <ul class="nav nav-steps nav-centered" style="">
+                    <li class="success"><a href=""><i class="step-icon"><i class="fa fa-check"></i></i>Account</a></li>
+                    <li class="active"><a href=""><i class="step-icon">2</i>Personal</a></li>
+                    <li class="disabled"><a href=""><i class="step-icon">3</i>Customize</a></li>
+                </ul>
+                <div class="panel-body">
+                    <form class="" role="form">
+                        <div class="form-group">
+                          <label for="name1" class="control-label required">Name</label>
+                          <div class="">
+                            <input type="text" class="form-control" style="" id="name1">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="location1" class="control-label required">Location</label>
+                          <div class="">
+                            <input type="text" class="form-control" style="" id="location1">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="bio1" class="control-label">Bio</label>
+                          <div class="">
+                            <textarea id="bio1" class="form-control" style="" rows="4"></textarea>
+                          </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div style="text-align: right; padding: 15px">
+                <button class="btn btn-link pull-left">Back</button>
+                <button class="btn btn-default"><div class="pull-right" style="background: #004c97; padding: 6px; color: #fff; text-align: center;margin-top: 2px;margin-left: 8px"><i class="fa fa-arrow-right fa-fw"></i></div><div style="margin-right: 4px; float: right;text-align: right"><div class="text-muted small">NEXT</div>Customize</div></button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
 </div>
 
             
@@ -251,7 +360,7 @@
 
         <script src="scripts/2c80432f.plugins.js"></script>
 
-        <script src="scripts/0f26efc9.main.js"></script>
+        <script src="scripts/1da2a746.main.js"></script>
 
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
