@@ -21,26 +21,26 @@ __Types:__
 <div style="max-width: 450px;">
     <div class="alert alert-warning">
         <button type="button" class="close" ><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <strong>Warning:</strong> There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
+        <i class="fa fa-fw fa-warning" style="margin-right: 6px;"></i>There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
     </div>
     <div class="alert alert-success">
         <a href="" class="alert-link pull-right">Undo</a>
-        <strong>Success:</strong> Case assigned to <strong>Jerry</strong>.
+        <i class="fa fa-fw fa-check" style="margin-right: 6px;"></i> Case assigned to <strong>Jerry</strong>.
     </div>
     <div class="alert alert-success">
         <button type="button" class="close" ><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <strong>Success:</strong> Case assigned to <strong>Jerry</strong>.
+        <i class="fa fa-fw fa-check" style="margin-right: 6px;"></i> Case assigned to <strong>Jerry</strong>.
     </div>
     <div class="alert alert-info">
         <button type="button" class="close" ><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <strong>Info:</strong> Press the <strong>'A'</strong> key to automatically assign a case.
+        <i class="fa fa-fw fa-info" style="margin-right: 6px;"></i> Press the <strong>'A'</strong> key to automatically assign a case.
     </div>
     <div class="alert alert-danger">
         <a href="" class="alert-link pull-right">Retry</a>
-        <strong>Error:</strong> There was a network error assigning case <strong>90/934,382</strong>. 
+        <i class="fa fa-fw fa-times-circle" style="margin-right: 6px;"></i> There was a network error assigning case <strong>90/934,382</strong>. 
     </div>
     <div class="alert alert-danger">
-        <strong>Error:</strong> Please fix the 3 errors.
+        <i class="fa fa-fw fa-times-circle" style="margin-right: 6px;"></i> Please fix the 3 errors.
     </div>
 </div>
 [/preview]
@@ -60,7 +60,7 @@ __Types:__
 </div>
 <div class="alert alert-info">
     <button type="button" class="close" ><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-    <strong>Info:</strong> Press the <strong>'A'</strong> key to automatically assign a case.
+    Press the <strong>'A'</strong> key to automatically assign a case.
 </div>
 <div class="alert alert-danger">
     <a href="" class="alert-link pull-right">Retry</a>
