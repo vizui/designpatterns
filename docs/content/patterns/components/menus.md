@@ -3,7 +3,7 @@ title: "Menus"
 ---
 
 [pattern]
-<h3>General</h3>
+### Overview
 
 - Use dividers to group related menu items
 - Use submenus to separate large sets of menu items

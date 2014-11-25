@@ -4,7 +4,7 @@ preview: true
 ---
 
 [pattern]
-### General
+### Overview
 
 &nbsp;
 
@@ -131,7 +131,7 @@ A confirmation dialog may or may not contain an icon.
     <div class="modal-content">
       <div class="modal-body">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h3 class="text-danger">Are you sure?</h3>
+        <h3 class="text-danger">Delete this user?</h3>
         <p>All user information will be deleted.</p>
       </div>
       <div class="modal-footer">
@@ -148,7 +148,7 @@ A confirmation dialog may or may not contain an icon.
     <div class="modal-content">
       <div class="modal-body">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h3 class="text-warning">Are you sure?</h3>
+        <h3 class="text-warning">Giver Owner permission?</h3>
         <p>Giving someone Owner permission will allow them to see your billing information.</p>
       </div>
       <div class="modal-footer">

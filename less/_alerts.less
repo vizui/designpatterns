@@ -5,6 +5,15 @@
     display: inline-block;
     width: 100%;
     padding: @alert-padding @alert-padding*2;
+
+    .close {
+        text-shadow: none;
+        opacity: .4;
+
+        &:hover {
+            opacity: .6;
+        }
+    }
 }
 
 .toast-list {

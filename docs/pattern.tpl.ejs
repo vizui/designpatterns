@@ -34,14 +34,14 @@
     </div>
     <div class="pl-container">
         <nav class="pl-sidebar">
-            <ul class="nav nav-pills nav-stacked">
+            <ul class="nav nav-stacked">
                 <% Object.keys(nav[category] || {}).forEach(function (subCategory) { %>
                     <li class="category"><%= subCategory.toUpperCase() %></li>
                     <% nav[category][subCategory].forEach(function(l) { %>
                         <% if (!l.meta.draft) { %>
                             <li class="<%= l.title == meta.title ? 'active' : '' %>"><a href="<%= l.url %>"><%- l.meta.preview ? '<i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>' : '' %><%= l.title %> </a>
                                 <% if (l.title === meta.title && l.subNav && l.subNav.length) { %>
-                                    <ul class="nav">
+                                    <ul class="nav nav-stacked">
                                         <%l.subNav.forEach(function(s) { %>
                                             <li><a title="<%= s %>" href="#<%= s.toLowerCase().replace(/[^\w]+/g, '-') %>"><%= s %></a></li>
                                         <%});%>

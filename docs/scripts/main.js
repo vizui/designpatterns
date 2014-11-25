@@ -133,3 +133,31 @@ $('.show-toasts').each(function () {
         }
     });
 });
+
+$('.nav-stacked.nav-tree > li').each(function () {
+    var self = $(this);
+    var nested = $(this).find('> .nav-stacked');
+    var expander = $(this).find('> .expander');
+    expander.on('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var visible = nested.is(':visible');
+        expander.toggleClass('expanded', !visible);
+        expander.toggleClass('collapsed', visible);
+
+        nested.toggle(150);
+
+        // remove any nested actives
+        if (nested.find('li.active').length > 0) {
+            nested.find('li.active').removeClass('active');
+            self.addClass('active');
+        }
+
+        // collapse all expanded subtrees
+        if (visible) {
+            // nested.find('.expander').removeClass('expanded');
+            // nested.find('.expander').addClass('collapsed');
+            // nested.find('.nav-stacked').hide(250);
+        }
+    });
+});

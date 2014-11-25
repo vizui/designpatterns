@@ -1,6 +1,23 @@
 @import "../bower_components/bootstrap/less/navs.less";
 
-.nav-pills.nav-stacked {
+
+.nav-pills {
+    > li > a {
+        padding: 6px 15px;
+    }
+    > li.active > a {
+        &,
+        &:hover,
+        &:focus {
+            background-color: #eee;
+            color: @text-color;
+        }
+    }
+}
+
+// Simple stacked nav menu
+
+.nav.nav-stacked {
     > .category {
         text-transform: uppercase;
         font-weight: 600;
@@ -11,7 +28,7 @@
         font-size: @font-size-base - 1;
 
         &:first-child {
-            margin-top: 0;
+            margin-top: 12px;
         }
     }
 
@@ -21,27 +38,113 @@
         border-radius: 0;
 
         &:hover {
-            background-color: #f3f3f3;
+            background-color: #eee;
         }
     }
-    > .active > a {
-        background-color: #f3f3f3;
+    > li.active > a {
+        background-color: #eee;
         color: @text-color;
-        border-left-color: @brand-primary;
+        // border-left-color: @brand-primary;
 
-        &:hover {
-            background-color: #f3f3f3;
+        &:hover, &:focus {
+            background-color: #eee;
             color: @text-color;
             cursor: default;
         }
     }
 }
 
+.nav-stacked.nav-tree {
+
+    > .category {
+        padding-left: 20px;
+    }
+
+    // standard level
+    > li > a {
+        padding-left: 20px;
+    }
+
+    // nested 1 level
+    > li > .nav-stacked > li > a {
+        padding-left: 40px;
+    }
+    // nested 2 levels
+    > li > .nav-stacked > li > .nav-stacked > li > a {
+        padding-left: 60px;
+    }
+
+    > li > .expander {
+        padding-left: 8px;
+    }
+
+    > li > .nav-stacked > li > .expander {
+        padding-left: 28px;
+    }
+
+    > li > .nav-stacked > li > .nav-stacked > li > .expander {
+        padding-left: 48px;
+    }
+
+    > li .expander {
+        z-index: 1;
+        position: absolute;
+        font-style: normal;
+        text-align: right;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-right: 8px;
+        color: @gray-light;
+        font-size: 14px;
+        margin-top: -1px;
+        border: none;
+        background: transparent;
+        outline: none;
+
+        &:hover, &:focus {
+            background: transparent;
+            border: none;
+            color: #000;
+            cursor: pointer;
+        }
+    }
+
+    > li .expander.expanded:before {
+        font-family: "FontAwesome";
+        content: "\f107";
+    }
+
+    > li .expander.collapsed:before {
+        font-family: "FontAwesome";
+        content: "\f105";
+        margin-left: 2px;
+    }
+}
+
+// Nested stacked menus
+//
+// Increases padding and lightens text weight
+
+.nav-stacked > li > .nav-stacked {
+  > li > a {
+    padding-left: 35px;
+    font-weight: 400;
+  }
+
+  > li > .nav-stacked > li > a {
+    padding-left: 55px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+
 .nav-tabs {
     > li {
         > a {
             margin-right: 0;
-            color: @gray;
+            // color: @gray;
         }
         &.disabled > a {
             color: #999;
@@ -53,7 +156,7 @@
         &.active > a:hover,
         &.active > a:focus,
         &.active > a:active, {
-            color: @brand-primary;
+            // color: @brand-primary;
             // padding-top: 9px;
             // border-top: 2px solid #004C97;
         }
@@ -89,7 +192,8 @@
 }
 
 .nav-tabs.nav-tabs-light {
-    border-bottom: 1px solid @gray-lighter;
+    border-bottom: 1px solid @nav-tabs-border-color;
+    padding-left: 6px;
     > li {
         margin-bottom: -1px;
         > a {
@@ -97,25 +201,23 @@
             padding-right: 4px;
             margin-left: 6px;
             margin-right: 6px;
-            color: inherit;
+            padding-bottom: 9px;
+            padding-top: 11px;
             border: none;
             background: transparent;
-            border-bottom: 1px solid transparent;
+            border-bottom: 2px solid transparent;
         }
         &.disabled > a {
-            color: #999;
             &:hover {
-                color: #999;
                 border-bottom-color: transparent;
             }
         }
         > a:hover {
-            color: inherit;
             border: none;
             background: transparent;
-            padding-bottom: 10px;
-            padding-top: 10px;
-            border-bottom: 2px solid @gray-light;
+            padding-bottom: 9px;
+            padding-top: 11px;
+            border-bottom: 2px solid @nav-tabs-border-color;
         }
 
         // > a:hover,
@@ -124,12 +226,50 @@
         &.active > a:focus,
         &.active > a:active,
         &.open > a {
-            color: @brand-primary;
             border: none;
             background: transparent;
-            padding-bottom: 10px;
-            padding-top: 10px;
-            border-bottom: 2px solid @brand-primary;
+            padding-bottom: 9px;
+            padding-top: 11px;
+            border-bottom: 2px solid @gray-light;
+        }
+    }
+}
+
+.nav-steps {
+    // text-align: center;
+    padding: 10px;
+    > li {
+        display: inline-block;
+        margin: 0;
+
+        > a {
+            font-weight: 600;
+            display: inline-block;
+        }
+        > a > .step-icon {
+            font-style: normal;
+            display: inline-block;
+            text-align: center;
+            padding: 3px;
+            margin-right: 6px;
+            width: 25px;
+            height: 25px;
+            background: @brand-primary;
+            color: #fff;
+            border-radius: 50%;
+        }
+
+        &.success {
+            > a > .step-icon {
+                background: @brand-success;
+            }
+            > a {
+                color: @brand-success;
+            }
+        }
+
+        &.disabled > a > .step-icon {
+            background: @gray-light;
         }
     }
 }

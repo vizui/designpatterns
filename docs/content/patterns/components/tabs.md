@@ -72,8 +72,8 @@ Use when yours tabs need less emphasis in relation to other navigational element
 </ul>
 <div style="border-top: none; border-radius: 0;" class="panel panel-default">
     <ul class="nav nav-tabs nav-tabs-light" role="tablist">
-      <li><a href="#" role="tab" data-toggle="tab"><i class="fa fa-1x fa-code"></i> &nbsp;HTML</a></li>
-      <li class="active"><a href="#" role="tab" data-toggle="tab"><i class="fa fa-1x fa-eye"></i> &nbsp;Preview</a></li>
+      <li><a href="#" role="tab" data-toggle="tab">HTML</a></li>
+      <li class="active"><a href="#" role="tab" data-toggle="tab">Preview</a></li>
     </ul>
     <div class="panel-body">
         <p></p><p></p>

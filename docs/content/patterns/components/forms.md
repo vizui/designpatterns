@@ -3,7 +3,7 @@ title: "Forms"
 ---
 
 [pattern]
-### General
+### Overview
 
 __Do__
 - Properly mark fields as required
@@ -422,8 +422,7 @@ Help text can be placed at the top of the form, under the heading of a form grou
 [pattern]
 ### Form groups
 
-Grouping related form controls into groups helps users understand the purpose more fields at once. 
-
+If you have many fields, consider organizing related fields into titled groups. 
 
 [preview]
 <div class="row">

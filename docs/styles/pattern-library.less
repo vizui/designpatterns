@@ -383,18 +383,17 @@ body {
     position: fixed;
     width: @pl-sidebar-width;
     z-index: @zindex-navbar-fixed - 1;
-    padding: 14px 0 6px 0;
+    padding: 0 0 6px 0;
 }
 
-.pl-sidebar .nav.nav-pills {
+.pl-sidebar .nav.nav-stacked {
 
     list-style: none;
     font-weight: 600;
-    line-height: 14px;
+    line-height: 16px;
 
     > li > a {
         color: @pl-sidebar-link-fg;
-
         &:hover,
         &:focus {
             background: darken(@pl-sidebar-bg, 2%);
@@ -408,14 +407,11 @@ body {
     }
 
     > li > ul > li > a {
-        font-weight: 400;
         background: darken(@pl-sidebar-bg, 2%);
         color: lighten(@pl-sidebar-category-fg, 15%);
-        padding: 3px 15px;
+        border-left-color: transparent;
         font-size: 12px;
         overflow: hidden;
-        padding-left: 35px;
-        display: block;
         white-space: nowrap;
         text-overflow: ellipsis;
     }
@@ -425,8 +421,13 @@ body {
         color: @pl-sidebar-link-fg;
     }
 
+    li + li {
+        margin-top: 0;
 
-
+        &.category {
+            margin-top: 18px;
+        }
+    }
 
     > .category {
         color: @pl-sidebar-category-fg;

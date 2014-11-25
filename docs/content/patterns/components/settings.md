@@ -4,17 +4,18 @@ preview: true
 ---
 
 [pattern]
-<h3>Settings</h3>
+### Overview
 Depending on the application type, settings can appear as a dedicated page or as a modal dialog. The complexity of the settings panel can vary drastically between applications. 
 
 The settings panel can be composed of:
-- Side tree navigation containing grouped settings
-- The settings forms and controls
+- Navigation
+- Settings
+- Search
 
 Avoid the urge to “just make it a setting”. Only add a setting if:
-- More than 20% of your users will change the setting
-- It's actually a setting that can be changed, not just information
-- It's infrequently changed by users. If its frequently changed, consider making it more available
+- More than 15% of your users will change the setting
+- It's infrequently changed by users. If it's frequently changed, consider making it more available
+
 
 [preview]
 <div class="modal fade in" style="display: block; position: relative; z-index: inherit;">
@@ -24,54 +25,162 @@ Avoid the urge to “just make it a setting”. Only add a setting if:
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <h4 class="modal-title">Settings</h4>
       </div>
-      <div style="width: 200px; min-height: 400px; border-right: 1px solid #f0f2f3; float: left;">
-        <ul class="nav nav-pills nav-stacked" role="tab-list" style="margin-top: 6px;">
+      <div style="width: 200px; min-height: 400px; border-right: 1px solid #ddd; float: left;">
+        <ul class="nav nav-stacked nav-tree" role="tab-list">
             <li role="presentation" class="category">General</li>
-            <li role="presentation"><a data-toggle="tab" role="tab" href="#">Profile</a></li>
-            <li role="presentation" class="active"><a data-toggle="tab" role="tab" href="#">Account</a></li>
-            <li role="presentation"><a data-toggle="tab" role="tab" href="#">Billing</a></li>
+            <li class="active" role="presentation"><a role="tab" href="#">Profile</a></li>
+            <li role="presentation"><a role="tab" href="#">Deployments</a></li>
+            <li role="presentation"><a role="tab" href="#">Billing</a></li>
             <li role="presentation" class="category">System</li>
-            <li role="presentation"><a data-toggle="tab" role="tab" href="#">Notifications</a></li>
-            <li role="presentation"><a data-toggle="tab" role="tab" href="#">Emails</a></li>
-            <li role="presentation"><a data-toggle="tab" role="tab" href="#">SSH keys</a></li>
+            <li role="presentation"><a role="tab" href="#">Notifications</a></li>
+            <li role="presentation"><a role="tab" href="#">Emails</a></li>
+            <li role="presentation"><a role="tab" href="#">SSH keys</a></li>
         </ul>
       </div>
-      <div style="margin-left: 200px; max-height: 400px; overflow: auto;" class="clearfix">
+      <div style="margin-left: 200px; max-height: 400px; overflow: auto;">
         <div style="opacity: 1; display: inline-block; width: 100%;">
-<!--          <div style="padding: 16px 16px 0 16px;"><h4>Account settings</h4></div>
-           <ul class="nav nav-tabs nav-tabs-light" role="tab-list" style="text-align: center; padding: 16px 16px 0 16px">
-              <li class="active" role="presentation"><a data-toggle="tab" role="tab" href="">General</a></li>
-              <li role="presentation"><a data-toggle="tab" role="tab" href="">Password</a></li>
-              <li role="presentation"><a data-toggle="tab" role="tab" href="">Advanced</a></li>
-          </ul>
-           <form class="" role="form" style="padding: 16px; max-width: 300px;">
-            <div class="form-group">
-              <label for="emailInput2" class="3 control-label">Name</label>
-              <div class="9">
-                <input type="text" class="form-control" value="John Smith" id="emailInput2">
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="passwordInput2" class="3 control-label">Email</label>
-              <div class="9">
-                <input type="email" class="form-control" value="john.smith@gmail.com" id="passwordInput2" >
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="passwordInput2" class="3 control-label">Language</label>
-              <div class="9">
-                <select id="se17" class="form-control select2">
-                    <option value="A">English (US)</option>
-                    <option value="B">English (UK)</option>
-                    <option value="C">Español</option>
-                </select>
-              </div>
-            </div>
-          </form>-->
+          <div class="modal-body">
+            <a class="pull-right"></a><h4 style="margin-top: 0px; margin-bottom: 16px;">Profile</h4> 
+            <form class="" role="form">
+                <div class="form-group">
+                    <label class="control-label">Username</label>
+                    <div class="">
+                      <input disabled type="text" class="form-control" style="display: inline-block; max-width: 250px;" value="jsmith12">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Name</label>
+                    <div class="">
+                      <input type="text" class="form-control" style="max-width: 250px;" value="John Smith">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Email</label>
+                    <div class="">
+                      <input type="text" class="form-control" style="max-width: 250px;" value="john.smith@gmail.com">
+                    </div>
+                </div>
+                <button class="btn btn-primary">Save changes</button>
+            </form>
+          </div>
         </div>
       </div>
-      <div class="modal-footer" style="clear: both;">
-        <button type="button" class="btn btn-default">Done</button>
+    </div>
+  </div>
+</div>
+[/preview]
+
+
+[/pattern]
+
+[pattern]
+### Navigation
+
+Use tabs if there are 5 or less sections of settings without nesting, otherwise use tree navigation. Hierarchical tree navigation is preferred over nested levels of tabs and improves discoverability.
+[preview]
+<div class="modal fade in" style="display: block; position: relative; z-index: inherit;">
+  <div class="modal-dialog" style="width: 750px; max-width: 100%; padding: 20px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Settings</h4>
+      </div>
+      <div style="width: 200px; min-height: 400px; border-right: 1px solid #ddd; float: left; padding-bottom: 14px;">
+        <div style="padding: 8px 8px 8px 8px; border-bottom: 1px solid #ddd;" >
+            <div class="input-icon fa fa-search" style="margin-top: 6px;"></div>
+            <input type="text" class="form-control input-search input-sm" placeholder="">
+        </div>
+        <ul class="nav nav-stacked nav-tree" role="tab-list">
+            <li role="presentation" class="category">General</li>
+            <li role="presentation"><a role="tab" href="#">Profile</a></li>
+            <li role="presentation"><button class="expander expanded"></button> <a role="tab" href="#">Account</a>
+                <ul class="nav nav-stacked nav-tree">
+                    <li role="presentation"><button class="expander expanded"></button> <a role="tab" href="#">General</a>
+                        <ul class="nav nav-stacked nav-tree">
+                            <li role="presentation"><a role="tab" href="#">Analytics</a></li>
+                            <li role="presentation" class="active"><a role="tab" href="#" >Deployments</a></li>
+                            <li role="presentation"><a role="tab" href="#">Automation</a></li>
+                            <li role="presentation"><a role="tab" href="#">Continous integration for real</a></li>
+                        </ul>
+                    </li>
+                    <li role="presentation"><a role="tab" href="#">Password</a></li>
+                    <li role="presentation"><a role="tab" href="#">Advanced</a>
+                    </li>
+                </ul>
+            </li>
+            <li role="presentation"><a role="tab" href="#">Billing</a></li>
+            <li role="presentation" class="category">System</li>
+            <li role="presentation"><a role="tab" href="#">Notifications</a></li>
+            <li role="presentation"><a role="tab" href="#">Emails</a></li>
+            <li role="presentation"><a role="tab" href="#">SSH keys</a></li>
+        </ul>
+      </div>
+      <div style="margin-left: 200px; max-height: 400px; overflow: auto;">
+        <div style="opacity: 1; display: inline-block; width: 100%;">
+          <div class="modal-body">
+            <h4 style="margin-top: 0px; margin-bottom: 16px;">Deployments</h4>
+            <p>Modify deployment scheduling to minimize impact. For certain traffic patterns, time scheduled deployments may be more appropriate.</p>
+            <form class="" role="form">
+                <div class="form-group">
+                    <label class="control-label">Deploy during</label>
+                    <div class="">
+                      <div class="radio">
+                        <label><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Low traffic</label>
+                      </div>
+                      <div style="padding-left: 45px;">
+                        <span>Less than <input type="text" class="form-control" style="display: inline-block; max-width: 75px" value="100"> RPM</span>
+                      </div>
+                      <div class="radio">
+                        <label><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Time</label>
+                      </div>
+                    </div>
+                </div>
+                <button class="btn btn-primary">Save changes</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+[/preview]
+[preview]
+<div class="modal fade in" style="display: block; position: relative; z-index: inherit;">
+  <div class="modal-dialog" style="width: 600px; max-width: 100%; padding: 20px;">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title">Settings</h4>
+      </div>
+      <div style="max-height: 400px; overflow: auto;">
+        <div style="opacity: 1; display: inline-block; width: 100%;">
+            <ul class="nav nav-tabs nav-tabs-light" role="tablist">
+              <li><a href="#" role="tab" data-toggle="tab">Profile</a></li>
+              <li><a href="#" role="tab" data-toggle="tab">Deployments</a></li>
+              <li><a href="#" role="tab" data-toggle="tab">Billing</a></li>
+              <li class="active"><a href="#" role="tab" data-toggle="tab">Notifications</a></li>
+              <li><a href="#" role="tab" data-toggle="tab">SSH Keys</a></li>
+            </ul>
+            <div class="modal-body" >
+                <label>Receive email notifications when</label>
+                <form class="" role="form">
+                    <div class="form-group">
+                        <div class="">
+                          <div class="checkbox">
+                            <label><input type="checkbox" id="optionsRadios1" value="option1" checked>My case is transferred to another examining attorney</label>
+                          </div>
+                          <div class="checkbox">
+                            <label><input type="checkbox" id="optionsRadios2" value="option2" checked>New classes added</label>
+                          </div>
+                          <div class="checkbox">
+                            <label><input type="checkbox" id="optionsRadios3" value="option3" checked>Classes originally paid for are deleted</label>
+                          </div>
+                        </div>
+                    </div>
+                </form>
+                <button class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
       </div>
     </div>
   </div>
@@ -79,3 +188,41 @@ Avoid the urge to “just make it a setting”. Only add a setting if:
 [/preview]
 [/pattern]
 
+
+[pattern]
+### Saving changes
+There should be a `Save changes` button on every panel with savable changes. The buttons should be disabled if there have not yet been any changes. If the user attempts to navigate away with unsaved changes, the application or browser should ask them to confirm. 
+
+[preview]
+<div class="modal fade in" style="display: block; position: relative; z-index: inherit;">
+  <div class="modal-dialog" style="width: 400px; max-width: 100%; padding: 20px;">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h3 class="">Abandon changes?</h3>
+        <p>You have unsaved changes. Your changes will be lost.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default">Leave this page</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Stay on this page</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade in" style="display: block; position: relative; z-index: inherit;">
+  <div class="modal-dialog" style="width: 400px; max-width: 100%; padding: 20px;">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h3 class="">Abandon changes?</h3>
+        <p>You have unsaved changes. Your changes will be lost.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default">Close settings</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Keep settings open</button>
+      </div>
+    </div>
+  </div>
+</div>
+[/preview]
+[/pattern]

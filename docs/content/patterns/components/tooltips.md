@@ -8,7 +8,7 @@ Use tooltips for providing information that does not need to be visible at all t
 - Icon descriptions
 - Term definitions
 - Expanding shortened date/time stamps
-- Help text
+- Brief help/info text
 
 Other characteristics:
 - Tooltips cannot be interacted with.
@@ -41,9 +41,9 @@ Tooltips can be positioned either above, below, to the left, or to the right of 
 The content of a tooltip can vary. It's best to keep it short and simple. 
 [preview]
 <div style="width: 120px;">
-    <button type="button" class="btn btn-block btn-default" data-toggle="tooltip" data-placement="right" title="Print">Few words</button>
-    <button type="button" class="btn btn-block btn-default" data-toggle="tooltip" data-placement="right" data-html="true" title='Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper volutpat ultrices. Mauris lobortis lacus vel ullamcorper vestibulum. Praesent ipsum odio, fringilla et porttitor at, consequat at nisi. Nulla non magna turpis. Phasellus tincidunt, diam eu dictum convallis, mi purus dictum nunc, vitae molestie elit ipsum eu massa. Phasellus sit amet dui porta, interdum nulla quis, suscipit diam. Vivamus elementum libero arcu, sed porta quam imperdiet nec.'>Many words</button>
-    <button type="button" class="btn btn-block btn-default" data-toggle="tooltip" data-placement="right" data-html="true" title='Clicking on the <i class="fa fa-cog"></i> icon will allow you to modify the <strong>default settings.</strong>'>HTML content</button>
+    <button type="button" class="btn btn-block btn-default" data-toggle="tooltip" data-placement="right" title="Print">Short</button>
+    <button type="button" class="btn btn-block btn-default" data-toggle="tooltip" data-placement="right" data-html="true" title='Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper volutpat ultrices. Mauris lobortis lacus vel ullamcorper vestibulum.'>Wrapping</button>
+    <button type="button" class="btn btn-block btn-default" data-toggle="tooltip" data-placement="right" data-html="true" title='<i class="fa fa-1x fa-calendar-o"></i> &nbsp; <strong>January 21</strong>, 2014'>Rich content</button>
 </div>
 [/preview]
 
