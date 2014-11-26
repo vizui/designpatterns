@@ -938,7 +938,7 @@ These examples show various form configurations.
         <form role="form" class="col-sm-offset-3" style="max-width: 350px;">
           <div class="form-group">
             <div class="alert alert-danger">
-              <strong>Woops!</strong> Please fix the 3 errors.
+              <i class="alert-icon fa fa-times-circle"></i>Please fix the 3 errors.
             </div>
           </div>
           <div class="form-group has-error">
