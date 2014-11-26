@@ -17,7 +17,7 @@
 
         <link rel="stylesheet" href="styles/333b841e.vendor.css">
 
-        <link rel="stylesheet" href="styles/cfbcbe4c.main.css">
+        <link rel="stylesheet" href="styles/86dbb1f3.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -425,7 +425,7 @@ Required fields are generally marked with an asterisk. For external, public faci
 <li>Provide validation feedback as soon as possible, either 500ms after a key is pressed, when the field is blurred, or (if all else fails) when the form is submitted.</li>
 <li>Provide inline level validation for fields that are known to be invalid</li>
 <li>Provide form level validation for large forms, or when the system doesn't know exactly which field is invalid</li>
-<li>Describe <em>why</em> an error occurred. <code>Email is already in use</code> rather than <code>Invalid email</code></li>
+<li>Describe <em>why</em> an error occurred. <code>Email is already in use</code> rather than <code>There was an error</code></li>
 <li>Describe/imply what the user should do to fix the error</li>
 </ul>
 <p><strong>Don't</strong></p>
@@ -488,7 +488,7 @@ Required fields are generally marked with an asterisk. For external, public faci
     <div class="form-group">
         <div class="col-sm-offset-3 col-sm-9">
             <div class="alert alert-danger" style="margin: 0">
-                The email or password you entered is incorrect.
+                <i class="alert-icon fa fa-times-circle"></i> The email or password you entered is incorrect.
             </div>
         </div>
     </div>
