@@ -19,7 +19,7 @@ Full paging contains separate dropdowns for adjusting the page size and jumping 
 [preview]
 <div class="btn-group">
     <div class="dropdown" style="display: inline-block">
-        <button type="button" id="dropdownMenu1" class="btn-link btn-sm btn dropdown-toggle" data-toggle="dropdown">10 per page <span class="caret"></span></button>
+        <button type="button" id="dropdownMenu1" class="btn-link btn dropdown-toggle" data-toggle="dropdown">10 per page <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
             <li role="presentation" class="dropdown-header">Show up to</li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
@@ -29,7 +29,7 @@ Full paging contains separate dropdowns for adjusting the page size and jumping 
         </ul>
     </div>
     <div class="dropdown" style="display: inline-block">
-        <button type="button" id="dropdownMenu2" class="btn-link btn-sm btn dropdown-toggle" data-toggle="dropdown">Page 15 of 25 <span class="caret"></span></button>
+        <button type="button" id="dropdownMenu2" class="btn-link btn dropdown-toggle" data-toggle="dropdown">Page 15 of 25 <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
             <li role="presentation" class="dropdown-header">Jump to page</li>
             <li style="padding: 0 16px;" role="presentation">

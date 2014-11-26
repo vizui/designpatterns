@@ -34,7 +34,7 @@ Use vertical steps when there are many steps or 'nested' steps.
                 </div>
                 <ul class="nav nav-stacked nav-tree" role="tab-list">
                     <li role="presentation"><a role="tab" href="#"><span style="margin-left: -10px; position: relative; top: 1px;" class="fa fa-1x fa-fw fa-check text-success"></span> Criteria</a></li>
-                    <li class="active" role="presentation"><a role="tab" href="#"><i style="margin-left: -10px; position: relative; top: 1px;" class="fa fa-1x fa-fw fa-warning text-danger"></i> Recipients</a>
+                    <li class="active" role="presentation"><a role="tab" href="#"><i style="margin-left: -10px; position: relative; top: 1px;" class="fa fa-1x fa-fw fa-times-circle text-danger"></i> Recipients</a>
                     </li>
                     <li class="disabled" role="presentation"><a role="tab"><i style="margin-left: -10px; position: relative; top: 1px;" class="fa fa-1x fa-fw"></i> Configure</a>
                         <ul class="nav nav-stacked nav-tree" role="tab-list">
@@ -50,7 +50,7 @@ Use vertical steps when there are many steps or 'nested' steps.
                     <h4>Recipients <span class="pull-right" style="font-size: 13px;"><span class="text-primary">Step 2 of 6</span></span></h4>
                     <p>When the alert criteria is met, each recipient will receive an email notification.</p>
                     <hr>
-                    <div class="alert alert-danger"><strong>Error!</strong> Fix the 1 error below.</div> 
+                    <div class="alert alert-danger"><i class="alert-icon fa fa-times-circle"></i>Fix the 1 error below.</div> 
                     <div class="form-group" style="">
                         <div class="input-group">
                             <input type="text" class="form-control" value="jsmith@corp.com">
@@ -121,7 +121,7 @@ Use horizontal steps when there are few steps.
                 </div>
             </div>
             <div style="text-align: right; padding: 15px;">
-                <button class="btn btn-link pull-left">Back</button>
+                <button class="btn btn-default pull-left"><div class="pull-left" style="background: #004c97; padding: 6px; color: #fff; text-align: center;margin-top: 2px;margin-right: 8px;"><i class="fa fa-arrow-left fa-fw"></i></div><div style="margin-left: 4px; float: left;text-align: left;"><div class="text-muted small">BACK</div>Account</div></button>
                 <button class="btn btn-default"><div class="pull-right" style="background: #004c97; padding: 6px; color: #fff; text-align: center;margin-top: 2px;margin-left: 8px;"><i class="fa fa-arrow-right fa-fw"></i></div><div style="margin-right: 4px; float: right;text-align: right;"><div class="text-muted small">NEXT</div>Customize</div></button>
             </div>
         </div>

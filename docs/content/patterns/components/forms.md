@@ -226,7 +226,7 @@ __Do__
 - Provide validation feedback as soon as possible, either 500ms after a key is pressed, when the field is blurred, or (if all else fails) when the form is submitted.
 - Provide inline level validation for fields that are known to be invalid
 - Provide form level validation for large forms, or when the system doesn't know exactly which field is invalid
-- Describe _why_ an error occurred. `Email is already in use` rather than `Invalid email`
+- Describe _why_ an error occurred. `Email is already in use` rather than `There was an error`
 - Describe/imply what the user should do to fix the error
 
 __Don't__
@@ -291,7 +291,7 @@ __Don't__
     <div class="form-group">
         <div class="col-sm-offset-3 col-sm-9">
             <div class="alert alert-danger" style="margin: 0;">
-                The email or password you entered is incorrect.
+                <i class="alert-icon fa fa-times-circle"></i> The email or password you entered is incorrect.
             </div>
         </div>
     </div>
