@@ -218,7 +218,7 @@ When the fields are left aligned, the asterisk is placed to the left.
 
 There are two types of form validation, often used together.
 
-- __Inline level__: Validation errors appear directly below the field with errors (e.g., `This field is required.`)
+- __Inline level__: Validation errors appear directly below the field with errors (e.g., `You can't leave this blank.`)
 - __Form level__: Validation errors appear at the top or bottom of the form (e.g., `The email or password you entered is incorrect.`, and `Please fix the 3 errors.`)
 
 __Do__
@@ -247,7 +247,7 @@ __Don't__
       <label for="pw9" class="col-sm-3 control-label required">Password</label>
       <div class="col-sm-9">
         <input type="password" class="form-control" id="pw9" >
-        <span class="help-block">This field is required.<span>
+        <span class="help-block">You can't leave this blank.<span>
       </div>
     </div>
     <div class="form-group">
@@ -273,7 +273,7 @@ __Don't__
     <label for="pw9" class="col-sm-3 control-label required">Password</label>
     <div class="col-sm-9">
       <input type="password" class="form-control" id="pw9" >
-      <span class="help-block">This field is required.<span>
+      <span class="help-block">You can't leave this blank.<span>
     </div>
   </div>
   <div class="form-group">
@@ -838,7 +838,7 @@ These examples show various form configurations.
         </div>
         <label for="si12" class="col-sm-2 control-label required">State</label>
         <div class="col-sm-3">
-            <select id="si12" class="form-control">
+            <select id="si12" class="select2 form-control">
               <option>AL</option>
               <option>AK</option>
               <option>AZ</option>
@@ -953,7 +953,7 @@ These examples show various form configurations.
           </div>
           <div class="form-group">
             <label class="control-label required" for="t12">Title</label>
-            <select class="form-control" id="t12">
+            <select class="select2 form-control" id="t12">
               <option value="Mr.">Mr.</option>
               <option value="Mrs.">Mrs.</option>
               <option value="Miss">Miss</option>
@@ -982,7 +982,7 @@ These examples show various form configurations.
           </div>
           <div class="form-group">
             <label class="control-label required" for="country12">Country</label>
-            <select class="form-control" id="country12">
+            <select class="select2 form-control" id="country12">
               <option value="Mr.">United States</option>
             </select>
           </div>

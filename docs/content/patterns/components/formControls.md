@@ -274,7 +274,7 @@ Text areas allow for multi-line input.
     <div class="row">
         <form role="form" class="col-sm-12 form-horizontal">
             <div class="form-group">
-                <label for="se17" class="col-sm-3 control-label">Simple</label>
+                <label for="se17" class="col-sm-3 control-label">Normal</label>
                 <div class="col-sm-9">
                     <select id="se17" class="form-control select2">
                         <option value="A">Option A</option>
