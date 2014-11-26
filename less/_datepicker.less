@@ -1,13 +1,17 @@
 .ui-datepicker {
     // extend the bootstrap dropdown-menu
     &:extend(.dropdown-menu);
+    padding-top: 0;
 
     .ui-datepicker-title {
         font-weight: 600;
+        position: relative;
+        top: 1px;
     }
 
     .ui-datepicker-header {
-        border-bottom: 1px solid #eee;
+        border-bottom: 1px solid #ddd;
+        background: #f3f4f5;
         padding-bottom: 7px;
     }
 
@@ -29,7 +33,7 @@
 
     td a, td span {
         text-align: center;
-        color: @gray-dark;
+        color: @text-color;
         font-size: @font-size-base;
     }
 
@@ -55,6 +59,7 @@
         -moz-osx-font-smoothing: grayscale;
         overflow: visible;
         margin-left: -4px;
+        color: @text-color;
     }
 
     .ui-datepicker-prev, .ui-datepicker-next {
@@ -62,11 +67,11 @@
     }
 
     .ui-datepicker-prev-hover, .ui-datepicker-prev {
-        top: 4px;
+        top: 7px;
         left: 2px;
     }
     .ui-datepicker-next-hover, .ui-datepicker-next {
-        top: 4px;
+        top: 7px;
         right: 2px;
     }
 

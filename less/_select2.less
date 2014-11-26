@@ -30,7 +30,8 @@
 
  .select2-drop.select2-drop-above.select2-drop-active {
     &:extend(.btn-default:active);
-    color: inherit;
+    background: #fff;
+    padding: 0;
     border-radius: 2px 2px 0 0;
  }
 
@@ -47,8 +48,18 @@
  .select2-drop {
     &:extend(.btn-default:active);
     background: #fff;
-    color: inherit;
+    padding: 0;
     border-radius: 0 0 2px 2px;
+ }
+
+ .select2-results {
+    margin: 6px 0;
+    padding: 0;
+    color: @dropdown-link-color;
+ }
+
+ .select2-results .select2-result-label {
+    padding: 3px 12px;
  }
 
  .select2-search input {
@@ -60,6 +71,6 @@
  }
 
  .select2-results .select2-highlighted {
-    background-color: #e9e9e9;
-    color: inherit;
+    background-color: @dropdown-link-hover-bg;
+    color: @dropdown-link-hover-color;
  }
