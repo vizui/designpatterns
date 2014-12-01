@@ -24,6 +24,7 @@ __Types:__
         <i class="fa fa-warning alert-icon"></i>There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
     </div>
     <div class="alert alert-success">
+        <button type="button" class="close" ><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <a href="" class="alert-link pull-right">Undo</a>
         <i class="fa fa-check alert-icon"></i> Case assigned to <strong>Jerry</strong>.
     </div>
