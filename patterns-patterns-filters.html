@@ -2,7 +2,7 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>Filters - Components - USPTO design patterns</title>
+        <title>Filters - Patterns - USPTO design patterns</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -17,7 +17,7 @@
 
         <link rel="stylesheet" href="styles/333b841e.vendor.css">
 
-        <link rel="stylesheet" href="styles/86dbb1f3.main.css">
+        <link rel="stylesheet" href="styles/a1cd6642.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -38,6 +38,12 @@
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="patterns-index.html">Patterns</a>
+                    </li>
+                    <li>
+                        <a href="resources.html">Resources</a>
+                    </li>
+                    <li>
+                        <a href="changelog.html">Changelog</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -64,6 +70,8 @@
                     <li class="category">COMPONENTS</li>
                     
                         
+                    
+                        
                             <li class=""><a href="patterns-components-alerts.html">Alerts and notifications </a>
                                 
                             </li>
@@ -87,20 +95,6 @@
                             </li>
                         
                     
-                        
-                    
-                        
-                            <li class="active"><a href="patterns-components-filters.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Filters </a>
-                                
-                                    <ul class="nav nav-stacked">
-                                        
-                                            <li><a title="Side filters" href="#side-filters">Side filters</a></li>
-                                        
-                                            <li><a title="Top filters" href="#top-filters">Top filters</a></li>
-                                        
-                                    </ul>
-                                
-                            </li>
                         
                     
                         
@@ -148,12 +142,6 @@
                         
                     
                         
-                            <li class=""><a href="patterns-components-settings.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Settings </a>
-                                
-                            </li>
-                        
-                    
-                        
                             <li class=""><a href="patterns-components-tables.html">Tables </a>
                                 
                             </li>
@@ -171,38 +159,60 @@
                             </li>
                         
                     
+                
+                    <li class="category">FOUNDATION</li>
+                    
                         
-                            <li class=""><a href="patterns-components-wizards.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Wizards </a>
+                            <li class=""><a href="patterns-foundation-colors.html">Colors </a>
                                 
                             </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-foundation-grid.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Grid </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-foundation-icons.html">Icons </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-foundation-typography.html">Typography </a>
+                                
+                            </li>
+                        
+                    
                         
                     
                 
-                    <li class="category">LAYOUT</li>
+                    <li class="category">PATTERNS</li>
                     
                         
-                            <li class=""><a href="patterns-layout-layoutGrid.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Layout grid </a>
+                            <li class="active"><a href="patterns-patterns-filters.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Filters </a>
                                 
-                            </li>
-                        
-                    
-                
-                    <li class="category">STYLE</li>
-                    
-                        
-                            <li class=""><a href="patterns-style-colors.html">Colors </a>
-                                
-                            </li>
-                        
-                    
-                        
-                            <li class=""><a href="patterns-style-iconography.html">Iconography </a>
+                                    <ul class="nav nav-stacked">
+                                        
+                                            <li><a title="Side filters" href="#side-filters">Side filters</a></li>
+                                        
+                                            <li><a title="Top filters" href="#top-filters">Top filters</a></li>
+                                        
+                                    </ul>
                                 
                             </li>
                         
                     
                         
-                            <li class=""><a href="patterns-style-typography.html">Typography </a>
+                            <li class=""><a href="patterns-patterns-settings.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Settings </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-patterns-wizards.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Wizards </a>
                                 
                             </li>
                         
@@ -215,139 +225,142 @@
                 <div class="pl-preview-header">This document is a preview.</div>
             
             <div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="side-filters" href="#side-filters"><i class="fa fa-link"></i></a> Side filters</h3></p>
+<p><h3><a class="pl-heading-link" id="side-filters" href="#side-filters"><i class="fa fa-link"></i></a> Side filters</h3>
+When filters are frequently used or there are many filters, place them to the left. This provides more space and makes filters easier to access. If there are more than 5 filter groups, consider making them collapsible.</p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="container-fluid" style="margin-top: 8px">
-    <div class="row panel panel-default">
-        <div style="width: 275px; border-right: 1px solid #ddd" class="pull-left">
+    <div class="row">
+        <div style="width: 275px" class="panel panel-default pull-left">
             <form class="filters">
                 <div class="filter-heading">
-                    Refine by <a href="" class="filters-clear">Clear</a>
+                    Filter by <a href="" class="filters-clear">Clear</a>
                 </div>
-                <div data-toggle="collapse" data-target="#filterGroup2" class="filter-group-title">
-                    <i class="fa fa-angle-down pull-right text-muted fa-1x"></i> Conveyance type 
-                </div>
-                <div id="filterGroup2" class="collapse in">
-                    <div class="filter-group-content">
-                        <div class="form-group">
-                            <div class="checkbox">
-                                <label><input checked="checked" type="checkbox">Assignment <span class="text-muted">(13)</span></label>
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox"> Change of name <span class="text-muted">(45)</span></label>
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox"> Trademark <span class="text-muted">(18)</span></label>
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox"> Certification <span class="text-muted">(32)</span></label>
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox"> Service <span class="text-muted">(43)</span></label>
-                            </div>
-                            <a href="" style="margin-left: 21px; display: block; margin-top: -5px">Show 12 more...</a>
-                        </div>
+                <div class="filter-list">
+                    <div data-toggle="collapse" data-target="#filterGroup8" class="filter-group-title">
+                        Year <i class="fa fa-angle-right pull-right text-muted fa-1x"></i>
                     </div>
-                </div>
-                <div data-toggle="collapse" data-target="#filterGroup4" class="filter-group-title">
-                    Year <i class="fa fa-angle-right pull-right text-muted fa-1x"></i>
-                </div>
-                <div id="filterGroup4" class="collapse in">
-                    <div class="filter-group-content">
-                        <div class="form-group">
-                            <ul class="list-unstyled">
-                                <li><a href="">2014 <span class="text-muted">(15)</span></a></li>
-                                <li><a href="">2013 <span class="text-muted">(23)</span></a></li>
-                                <li><a href="">2012 <span class="text-muted">(41)</span></a></li>
-                                <li><a href="">2011 <span class="text-muted">(39)</span></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div data-toggle="collapse" data-target="#filterGroup1" class="filter-group-title">
-                    <i class="fa fa-angle-right pull-right text-muted fa-1x"></i> Date range 
-                </div>
-                <div id="filterGroup1" class="collapse in">
-                    <div class="filter-group-content">
-                        <div class="row">
-                            <div class="form-group col-sm-6">
-                                <span class="input-icon fa fa-calendar-o"></span>
-                                <input type="text" placeholder="Start" class="datepicker form-control" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'">
-                            </div>
-                            <div class="form-group col-sm-6">
-                                <span class="input-icon fa fa-calendar-o"></span>
-                                <input type="text" placeholder="End" class="datepicker form-control" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'">
+                    <div id="filterGroup8" class="collapse in">
+                        <div class="filter-group-content">
+                            <div class="form-group">
+                                <ul class="list-unstyled">
+                                    <li><a href="">2014</a></li>
+                                    <li><a href="">2013</a></li>
+                                    <li><a href="">2012</a></li>
+                                    <li><a href="">2011</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div data-toggle="collapse" data-target="#filterGroup5" class="filter-group-title">
-                    <i class="fa fa-angle-right pull-right text-muted fa-1x"></i> Distance 
-                </div>
-                <div id="filterGroup5" class="collapse in">
-                    <div class="filter-group-content">
-                        <div class="form-group">
-                            <label for="serange" class="sr-only control-label">Range</label>
-                            <select name="" id="serange" class="form-control select2">
-                                <option value="5">Within 5 miles</option>
-                                <option value="255">Within 25 miles</option>
-                            </select>
+                    <div data-toggle="collapse" data-target="#filterGroup2" class="filter-group-title">
+                        <i class="fa fa-angle-down pull-right text-muted fa-1x"></i> Conveyance type 
+                    </div>
+                    <div id="filterGroup2" class="collapse in">
+                        <div class="filter-group-content">
+                            <div class="form-group">
+                                <div class="checkbox">
+                                    <label><input checked="checked" type="checkbox">Assignment <span class="text-muted">(13)</span></label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Change of name <span class="text-muted">(45)</span></label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Trademark <span class="text-muted">(18)</span></label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Certification <span class="text-muted">(32)</span></label>
+                                </div>
+                                <div class="checkbox">
+                                    <label><input type="checkbox"> Service <span class="text-muted">(43)</span></label>
+                                </div>
+                                <a href="" style="margin-left: 21px; display: block; margin-top: -5px">Show 12 more...</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div data-toggle="collapse" data-target="#filterGroup6" class="filter-group-title">
-                    <i class="fa fa-angle-right pull-right text-muted fa-1x"></i> Name 
-                </div>
-                <div id="filterGroup6" class="collapse in">
-                    <div class="filter-group-content">
-                        <div class="form-group">
-                            <label for="serange" class="sr-only control-label">Range</label>
-                            <span class="input-icon fa fa-search"></span>
-                            <input type="text" class="form-control" placeholder="Search">
+                    <div data-toggle="collapse" data-target="#filterGroup1" class="filter-group-title">
+                        <i class="fa fa-angle-right pull-right text-muted fa-1x"></i> Date range 
+                    </div>
+                    <div id="filterGroup1" class="collapse in">
+                        <div class="filter-group-content">
+                            <div class="row">
+                                <div class="form-group col-sm-6">
+                                    <span class="input-icon fa fa-calendar-o"></span>
+                                    <input type="text" placeholder="Start" class="datepicker form-control" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'">
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <span class="input-icon fa fa-calendar-o"></span>
+                                    <input type="text" placeholder="End" class="datepicker form-control" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'">
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div data-toggle="collapse" data-target="#filterGroup3" class="filter-group-title">
-                    Colors <i class="fa fa-angle-right pull-right text-muted fa-1x"></i>
-                </div>
-                <div id="filterGroup3" class="collapse in">
-                    <div class="filter-group-content">
-                        <div class="form-group">
-                            <div style="background-color: red" class="filter-color"></div>
-                            <div style="background-color: green" class="filter-color"></div>
-                            <div style="background-color: orange" class="filter-color active"></div>
-                            <div style="background-color: purple" class="filter-color"></div>
-                            <div style="background-color: black" class="filter-color"></div>
-                            <div style="background-color: white" class="filter-color"></div>
+                    <div data-toggle="collapse" data-target="#filterGroup5" class="filter-group-title">
+                        <i class="fa fa-angle-right pull-right text-muted fa-1x"></i> Distance 
+                    </div>
+                    <div id="filterGroup5" class="collapse in">
+                        <div class="filter-group-content">
+                            <div class="form-group">
+                                <label for="serange" class="sr-only control-label">Range</label>
+                                <select name="" id="serange" class="form-control select2">
+                                    <option value="5">Within 5 miles</option>
+                                    <option value="255">Within 25 miles</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div data-toggle="collapse" data-target="#filterGroup7" class="filter-group-title">
-                    Tags <i class="fa fa-angle-right pull-right text-muted fa-1x"></i>
-                </div>
-                <div id="filterGroup7" class="collapse in">
-                    <div class="filter-group-content">
-                        <div class="form-group">
-                            <ul class="list-unstyled">
-                                <li class="filter-value">Assignment <i class="pull-right fa fa-times"></i></li>
-                                <li class="filter-value">Change of name <i class="pull-right fa fa-times"></i></li>
-                            </ul>
-                            <div class="input-group">
-                              <input class="form-control" type="email" placeholder="Enter tag">
-                              <div class="input-group-btn">
-                                <button class="btn btn-default">Add</button>
-                              </div>
+                    <div data-toggle="collapse" data-target="#filterGroup6" class="filter-group-title">
+                        <i class="fa fa-angle-right pull-right text-muted fa-1x"></i> Name 
+                    </div>
+                    <div id="filterGroup6" class="collapse in">
+                        <div class="filter-group-content">
+                            <div class="form-group">
+                                <label for="serange" class="sr-only control-label">Range</label>
+                                <span class="input-icon fa fa-search"></span>
+                                <input type="text" class="form-control" placeholder="Search">
+                            </div>
+                        </div>
+                    </div>
+                    <div data-toggle="collapse" data-target="#filterGroup3" class="filter-group-title">
+                        Colors <i class="fa fa-angle-right pull-right text-muted fa-1x"></i>
+                    </div>
+                    <div id="filterGroup3" class="collapse in">
+                        <div class="filter-group-content">
+                            <div class="form-group">
+                                <div style="background-color: red" class="filter-color"></div>
+                                <div style="background-color: green" class="filter-color"></div>
+                                <div style="background-color: orange" class="filter-color active"></div>
+                                <div style="background-color: purple" class="filter-color"></div>
+                                <div style="background-color: black" class="filter-color"></div>
+                                <div style="background-color: white" class="filter-color"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-toggle="collapse" data-target="#filterGroup7" class="filter-group-title">
+                        Tags <i class="fa fa-angle-right pull-right text-muted fa-1x"></i>
+                    </div>
+                    <div id="filterGroup7" class="collapse in">
+                        <div class="filter-group-content">
+                            <div class="form-group">
+                                <ul class="list-unstyled">
+                                    <li class="filter-value">Assignment <i class="pull-right fa fa-times"></i></li>
+                                    <li class="filter-value">Change of name <i class="pull-right fa fa-times"></i></li>
+                                </ul>
+                                <div class="input-group">
+                                  <input class="form-control" type="email" placeholder="Enter tag">
+                                  <div class="input-group-btn">
+                                    <button class="btn btn-default">Add</button>
+                                  </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </form>
         </div>
-        <div style="margin-left: 275px">
+        <div style="margin-left: 290px" class="panel panel-default">
             <div class="filter-criteria" style="display: inline-block; width: 100%; float; left">
                 <div class="pull-right">
                     <div class="dropdown" style="display: inline-block">
-                        <button type="button" id="dropdownMenu3" class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span class="text-muted">Showing</span> 150-160 <span class="text-muted">of</span> 305 <span class="caret"></span></button>
+                        <button type="button" id="dropdownMenu3" class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span class="text-muted normal">Showing</span> 150-160 <span class="text-muted normal">of</span> 305 <span class="caret"></span></button>
                         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
                             <li role="presentation" class="dropdown-header">Jump to page</li>
                             <li style="padding: 0 16px" role="presentation">
@@ -368,12 +381,12 @@
                     </div>
                 </div>
                 <span class="toolbar-text">
-                    Refined by
+                    Filtered by
                     <ul class="filter-applied-list">
-                        <li>Assignment</li>
-                        <li>2014</li>
-                        <li>Orange</li>
-                        <li>Within 5 miles</li>
+                        <li>Assignment <i class="fa fa-times-circle fa-1x"></i></li>
+                        <li>2014 <i class="fa fa-times-circle fa-1x"></i></li>
+                        <li>Orange <i class="fa fa-times-circle fa-1x"></i></li>
+                        <li>Within 5 miles <i class="fa fa-times-circle fa-1x"></i></li>
                     </ul>
                 </span>
             </div>
@@ -388,7 +401,7 @@
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="container-fluid" style="margin-top: 8px">
     <form class="filters filters-horizontal">
-        <div class="filter-heading">Refine by</div>
+        <div class="filter-heading">Filter by</div>
         <div style="display: inline-block; vertical-align: top">
             <button class="btn btn-link">
                 Date range <span class="caret"></span>
@@ -423,7 +436,7 @@
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="container-fluid" style="margin-top: 8px">
     <form class="filters filters-horizontal">
-        <div class="filter-heading">Refine by</div>
+        <div class="filter-heading">Filter by</div>
         <button class="btn btn-link">
             4/01/2014 - 5/01/2014 <span class="caret"></span>
         </button>
@@ -444,15 +457,15 @@
             
                 <div class="pl-footer">
                     
-                        <a class="pl-footer-previous btn btn-link" style="text-align: left" href="patterns-components-dialogs.html">
+                        <a class="pl-footer-previous btn btn-link" style="text-align: left" href="patterns-foundation-typography.html">
                             <div class="text-muted" style="font-size: 11px">PREVIOUS</div>
-                            Dialogs
+                            Typography
                         </a>
                     
                     
-                        <a class="pl-footer-next pull-right btn btn-link" style="text-align: right" href="patterns-components-formControls.html">
+                        <a class="pl-footer-next pull-right btn btn-link" style="text-align: right" href="patterns-patterns-settings.html">
                             <div class="text-muted" style="font-size: 11px">NEXT</div>
-                            Form controls
+                            Settings
                         </a>
                     
                 </div>

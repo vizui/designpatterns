@@ -2,7 +2,7 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>Colors - Style - USPTO design patterns</title>
+        <title>Accordions - Components - USPTO design patterns</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -17,7 +17,7 @@
 
         <link rel="stylesheet" href="styles/333b841e.vendor.css">
 
-        <link rel="stylesheet" href="styles/86dbb1f3.main.css">
+        <link rel="stylesheet" href="styles/a1cd6642.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -39,6 +39,12 @@
                     <li>
                         <a href="patterns-index.html">Patterns</a>
                     </li>
+                    <li>
+                        <a href="resources.html">Resources</a>
+                    </li>
+                    <li>
+                        <a href="changelog.html">Changelog</a>
+                    </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <!-- <a ><i class="fa fa-1x fa-warning"></i><span class="count">3</span></a> -->
@@ -51,7 +57,7 @@
     </header>
     <div class="pl-sub-header">
         <div class="pull-left">
-            <h4><strong>Patterns</strong> - Colors</h4>
+            <h4><strong>Patterns</strong> - Accordions</h4>
         </div>
         <div class="pull-right">
             <button type="button" title="Edit this page on Github" class="btn btn-sm btn-default"> <i class="fa fa-pencil"></i></button>
@@ -62,6 +68,8 @@
             <ul class="nav nav-stacked">
                 
                     <li class="category">COMPONENTS</li>
+                    
+                        
                     
                         
                             <li class=""><a href="patterns-components-alerts.html">Alerts and notifications </a>
@@ -87,12 +95,6 @@
                             </li>
                         
                     
-                        
-                    
-                        
-                            <li class=""><a href="patterns-components-filters.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Filters </a>
-                                
-                            </li>
                         
                     
                         
@@ -140,12 +142,6 @@
                         
                     
                         
-                            <li class=""><a href="patterns-components-settings.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Settings </a>
-                                
-                            </li>
-                        
-                    
-                        
                             <li class=""><a href="patterns-components-tables.html">Tables </a>
                                 
                             </li>
@@ -163,38 +159,52 @@
                             </li>
                         
                     
+                
+                    <li class="category">FOUNDATION</li>
+                    
                         
-                            <li class=""><a href="patterns-components-wizards.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Wizards </a>
+                            <li class=""><a href="patterns-foundation-colors.html">Colors </a>
                                 
                             </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-foundation-grid.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Grid </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-foundation-icons.html">Icons </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-foundation-typography.html">Typography </a>
+                                
+                            </li>
+                        
+                    
                         
                     
                 
-                    <li class="category">LAYOUT</li>
+                    <li class="category">PATTERNS</li>
                     
                         
-                            <li class=""><a href="patterns-layout-layoutGrid.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Layout grid </a>
-                                
-                            </li>
-                        
-                    
-                
-                    <li class="category">STYLE</li>
-                    
-                        
-                            <li class="active"><a href="patterns-style-colors.html">Colors </a>
+                            <li class=""><a href="patterns-patterns-filters.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Filters </a>
                                 
                             </li>
                         
                     
                         
-                            <li class=""><a href="patterns-style-iconography.html">Iconography </a>
+                            <li class=""><a href="patterns-patterns-settings.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Settings </a>
                                 
                             </li>
                         
                     
                         
-                            <li class=""><a href="patterns-style-typography.html">Typography </a>
+                            <li class=""><a href="patterns-patterns-wizards.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Wizards </a>
                                 
                             </li>
                         
@@ -204,39 +214,65 @@
         </nav>
         <section class="pl-content">
             
+                <div class="pl-preview-header">This document is a preview.</div>
+            
             <div class="pl-pattern">
-<h4>Primary colors</h4>
-<div class="pl-swatch">
-    <div class="pl-swatch-color pl-swatch-brand-primary"></div>
-    <div class="pl-swatch-color pl-swatch-brand-success"></div>
-    <div class="pl-swatch-color pl-swatch-brand-info"></div>
-    <div class="pl-swatch-color pl-swatch-brand-warning"></div>
-    <div class="pl-swatch-color pl-swatch-brand-danger"></div>
+<p><h3>Accordions</h3></p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Collapsible Group Item #1
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Collapsible Group Item #2
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Collapsible Group Item #3
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
 </div>
-<p> </p>
-<h4>Secondary colors</h4>
-<div class="pl-swatch">
-    <div class="pl-swatch-color pl-swatch-gray-darker"></div>
-    <div class="pl-swatch-color pl-swatch-gray-dark"></div>
-    <div class="pl-swatch-color pl-swatch-gray"></div>
-    <div class="pl-swatch-color pl-swatch-gray-light"></div>
-    <div class="pl-swatch-color pl-swatch-gray-lighter"></div>
 </div>
-<p> </p>
 </div>
 
             
                 <div class="pl-footer">
                     
-                        <a class="pl-footer-previous btn btn-link" style="text-align: left" href="patterns-layout-layoutGrid.html">
-                            <div class="text-muted" style="font-size: 11px">PREVIOUS</div>
-                            Layout grid
-                        </a>
                     
-                    
-                        <a class="pl-footer-next pull-right btn btn-link" style="text-align: right" href="patterns-style-iconography.html">
+                        <a class="pl-footer-next pull-right btn btn-link" style="text-align: right" href="patterns-components-alerts.html">
                             <div class="text-muted" style="font-size: 11px">NEXT</div>
-                            Iconography
+                            Alerts and notifications
                         </a>
                     
                 </div>

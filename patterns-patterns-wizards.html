@@ -2,7 +2,7 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>Wizards - Components - USPTO design patterns</title>
+        <title>Wizards - Patterns - USPTO design patterns</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -17,7 +17,7 @@
 
         <link rel="stylesheet" href="styles/333b841e.vendor.css">
 
-        <link rel="stylesheet" href="styles/86dbb1f3.main.css">
+        <link rel="stylesheet" href="styles/a1cd6642.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -38,6 +38,12 @@
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="patterns-index.html">Patterns</a>
+                    </li>
+                    <li>
+                        <a href="resources.html">Resources</a>
+                    </li>
+                    <li>
+                        <a href="changelog.html">Changelog</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
@@ -64,6 +70,8 @@
                     <li class="category">COMPONENTS</li>
                     
                         
+                    
+                        
                             <li class=""><a href="patterns-components-alerts.html">Alerts and notifications </a>
                                 
                             </li>
@@ -87,12 +95,6 @@
                             </li>
                         
                     
-                        
-                    
-                        
-                            <li class=""><a href="patterns-components-filters.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Filters </a>
-                                
-                            </li>
                         
                     
                         
@@ -140,12 +142,6 @@
                         
                     
                         
-                            <li class=""><a href="patterns-components-settings.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Settings </a>
-                                
-                            </li>
-                        
-                    
-                        
                             <li class=""><a href="patterns-components-tables.html">Tables </a>
                                 
                             </li>
@@ -163,44 +159,58 @@
                             </li>
                         
                     
+                
+                    <li class="category">FOUNDATION</li>
+                    
                         
-                            <li class="active"><a href="patterns-components-wizards.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Wizards </a>
+                            <li class=""><a href="patterns-foundation-colors.html">Colors </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-foundation-grid.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Grid </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-foundation-icons.html">Icons </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-foundation-typography.html">Typography </a>
+                                
+                            </li>
+                        
+                    
+                        
+                    
+                
+                    <li class="category">PATTERNS</li>
+                    
+                        
+                            <li class=""><a href="patterns-patterns-filters.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Filters </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-patterns-settings.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Settings </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class="active"><a href="patterns-patterns-wizards.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Wizards </a>
                                 
                                     <ul class="nav nav-stacked">
                                         
                                             <li><a title="Steps" href="#steps">Steps</a></li>
                                         
                                     </ul>
-                                
-                            </li>
-                        
-                    
-                
-                    <li class="category">LAYOUT</li>
-                    
-                        
-                            <li class=""><a href="patterns-layout-layoutGrid.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Layout grid </a>
-                                
-                            </li>
-                        
-                    
-                
-                    <li class="category">STYLE</li>
-                    
-                        
-                            <li class=""><a href="patterns-style-colors.html">Colors </a>
-                                
-                            </li>
-                        
-                    
-                        
-                            <li class=""><a href="patterns-style-iconography.html">Iconography </a>
-                                
-                            </li>
-                        
-                    
-                        
-                            <li class=""><a href="patterns-style-typography.html">Typography </a>
                                 
                             </li>
                         
@@ -279,10 +289,10 @@
                             <div class="input-group-btn"><button class="btn btn-default">Add</button></div>
                         </div>
                     </div>
-                </div>
-                <div style="position: absolute; text-align: right; padding: 15px; bottom: 0; right: 0; left: 0">
-                    <button class="btn btn-link pull-left">Back</button>
-                    <button class="btn btn-primary">Next: Configure</button>
+                        <div class="text-right" style="position: absolute; padding: 15px; bottom: 0; right: 0; left: 0">
+                        <button class="btn btn-link pull-left">Back</button>
+                        <button class="btn btn-primary">Next: Configure</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -296,40 +306,42 @@
 <div class="">
     <div class="" style="margin: auto; max-width: 450px">
         <div class="panel panel-default" style="overflow: auto; position: relative">
-            <div class="">
+            <div class="panel-body">
                 <h3 class="text-center">Create your account</h3>
                 <ul class="nav nav-steps nav-centered" style="">
-                    <li class="success"><a href=""><i class="step-icon"><i class="fa fa-check"></i></i>Account</a></li>
-                    <li class="active"><a href=""><i class="step-icon">2</i>Personal</a></li>
-                    <li class="disabled"><a href=""><i class="step-icon">3</i>Customize</a></li>
+                    <li class="success"><a href=""><i class="step-icon"><i class="fa fa-check"></i></i><div>Account</div></a></li>
+                    <li class="active"><a href=""><i class="step-icon">2</i><div>Personal</div></a></li>
+                    <li class="disabled"><a href=""><i class="step-icon">3</i><div>Customize</div></a></li>
                 </ul>
-                <div class="panel-body">
-                    <form class="" role="form">
-                        <div class="form-group">
-                          <label for="name1" class="control-label required">Name</label>
-                          <div class="">
-                            <input type="text" class="form-control" style="" id="name1">
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label for="location1" class="control-label required">Location</label>
-                          <div class="">
-                            <input type="text" class="form-control" style="" id="location1">
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label for="bio1" class="control-label">Bio</label>
-                          <div class="">
-                            <textarea id="bio1" class="form-control" style="" rows="4"></textarea>
-                          </div>
-                        </div>
-                    </form>
+                <form class="" role="form">
+                    <div class="form-group">
+                      <label for="name1" class="control-label required">Name</label>
+                      <div class="">
+                        <input type="text" class="form-control" style="" id="name1">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="location1" class="control-label required">Location</label>
+                      <div class="">
+                        <input type="text" class="form-control" style="" id="location1">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="bio1" class="control-label">Bio</label>
+                      <div class="">
+                        <textarea id="bio1" class="form-control" style="" rows="4"></textarea>
+                      </div>
+                    </div>
+                </form>
+                <div class="text-right">
+                    <button class="btn btn-link pull-left">Back</button>
+                    <button class="btn btn-primary">Next: Customize</button>
                 </div>
             </div>
-            <div style="text-align: right; padding: 15px">
-                <button class="btn btn-default pull-left"><div class="pull-left" style="background: #004c97; padding: 6px; color: #fff; text-align: center;margin-top: 2px;margin-right: 8px"><i class="fa fa-arrow-left fa-fw"></i></div><div style="margin-left: 4px; float: left;text-align: left"><div class="text-muted small">BACK</div>Account</div></button>
-                <button class="btn btn-default"><div class="pull-right" style="background: #004c97; padding: 6px; color: #fff; text-align: center;margin-top: 2px;margin-left: 8px"><i class="fa fa-arrow-right fa-fw"></i></div><div style="margin-right: 4px; float: right;text-align: right"><div class="text-muted small">NEXT</div>Customize</div></button>
-            </div>
+            <!-- <div style="text-align: right; padding: 15px;">
+                <button class="btn btn-default pull-left"><div class="pull-left" style="background: #004c97; padding: 6px; color: #fff; text-align: center;margin-top: 2px;margin-right: 8px;"><i class="fa fa-arrow-left fa-fw"></i></div><div style="margin-left: 4px; float: left;text-align: left;"><div class="text-muted small">BACK</div>Account</div></button>
+                <button class="btn btn-default"><div class="pull-right" style="background: #004c97; padding: 6px; color: #fff; text-align: center;margin-top: 2px;margin-left: 8px;"><i class="fa fa-arrow-right fa-fw"></i></div><div style="margin-right: 4px; float: right;text-align: right;"><div class="text-muted small">NEXT</div>Customize</div></button>
+            </div> -->
         </div>
     </div>
 </div>
@@ -339,16 +351,11 @@
             
                 <div class="pl-footer">
                     
-                        <a class="pl-footer-previous btn btn-link" style="text-align: left" href="patterns-components-tooltips.html">
+                        <a class="pl-footer-previous btn btn-link" style="text-align: left" href="patterns-patterns-settings.html">
                             <div class="text-muted" style="font-size: 11px">PREVIOUS</div>
-                            Tooltips
+                            Settings
                         </a>
                     
-                    
-                        <a class="pl-footer-next pull-right btn btn-link" style="text-align: right" href="patterns-layout-layoutGrid.html">
-                            <div class="text-muted" style="font-size: 11px">NEXT</div>
-                            Layout grid
-                        </a>
                     
                 </div>
             
