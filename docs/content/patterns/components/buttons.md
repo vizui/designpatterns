@@ -81,7 +81,7 @@ There are 4 different button sizes:
 &nbsp;
 
 #### Block level buttons
-Use the `btn-block` class for buttons that fill the width of their container.
+Use the `btn-block` class for buttons that fill the width of their container. These are useful for narrow containers and cleaning up alignment.
 
 [preview]
 <div style="width: 280px;">
@@ -129,6 +129,25 @@ Add the `active` class to the active button.
 </div>
 [/preview]
 
+[/pattern]
+
+[pattern]
+### Dropdown buttons
+Dropdown buttons can provide a menu or popover when clicked.
+[preview]
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    Dropdown <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+[/preview]
 [/pattern]
 
 [pattern]
