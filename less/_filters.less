@@ -39,7 +39,8 @@
 }
 
 .filters .filter-group-title {
-    padding: 6px 14px;
+    padding: 8px 14px;
+    // text-transform: uppercase;
     // border-bottom: 1px solid rgba(0,0,0,.05);
     // margin: 0;
     font-weight: 700;
@@ -51,6 +52,15 @@
     }
 
     &:hover {
+    }
+
+    &:before {
+        position: relative;
+        top: -7px;
+        height: 1px;
+        content: "";
+        display: block;
+        background: #eee;
     }
 }
 
@@ -96,7 +106,7 @@
 
 .filter-criteria {
     padding: 8px;
-    border-bottom: 1px solid #ddd;
+    // border-bottom: 1px solid #ddd;
 
     .filter-applied-list {
         list-style: none;

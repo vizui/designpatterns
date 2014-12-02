@@ -1,5 +1,5 @@
 ---
-title: "Iconography"
+title: "Icons"
 ---
 [pattern]
 ### Web application icons

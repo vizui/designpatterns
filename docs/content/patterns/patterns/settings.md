@@ -199,7 +199,7 @@ There should be a `Save changes` button on every panel with savable changes. The
     <div class="modal-content">
       <div class="modal-body">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h3 class="">Abandon changes?</h3>
+        <h4>Abandon changes?</h4>
         <p>You have unsaved changes. Your changes will be lost.</p>
       </div>
       <div class="modal-footer">
@@ -214,7 +214,7 @@ There should be a `Save changes` button on every panel with savable changes. The
     <div class="modal-content">
       <div class="modal-body">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h3 class="">Abandon changes?</h3>
+        <h4>Abandon changes?</h4>
         <p>You have unsaved changes. Your changes will be lost.</p>
       </div>
       <div class="modal-footer">

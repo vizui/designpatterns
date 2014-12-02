@@ -1,12 +1,12 @@
 ---
-title: "Layout grid"
+title: "Grid"
 preview: true
 ---
 
 [pattern]
-<h3>Layout grid</h3>
+<h3>Grid</h3>
 
-A layout grid can be used for aligning components and assisting in responsive behavior. It is not intended to be the only solution for aligning components. 
+The 12 column grid can be used for aligning components and assisting in responsive behavior. It is not intended to be the only solution for aligning components. 
 
 [preview]
 <div class="container-fluid pl-grid-example">

@@ -60,7 +60,7 @@ Medium-sized paging contains a single dropdown for changing the page size and ju
 
 [preview]
 <div class="dropdown" style="display: inline-block">
-    <button type="button" id="dropdownMenu3" class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span class="text-muted">Showing</span> 150-160 <span class="text-muted">of</span> 305 <span class="caret"></span></button>
+    <button type="button" id="dropdownMenu3" class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span class="text-muted normal">Showing</span> 150-160 <span class="text-muted normal">of</span> 305 <span class="caret"></span></button>
     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
         <li role="presentation" class="dropdown-header">Jump to page</li>
         <li style="padding: 0 16px;" role="presentation">

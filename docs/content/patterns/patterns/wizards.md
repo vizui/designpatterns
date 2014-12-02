@@ -70,10 +70,10 @@ Use vertical steps when there are many steps or 'nested' steps.
                             <div class="input-group-btn"><button class="btn btn-default">Add</button></div>
                         </div>
                     </div>
-                </div>
-                <div style="position: absolute; text-align: right; padding: 15px; bottom: 0; right: 0; left: 0;">
-                    <button class="btn btn-link pull-left">Back</button>
-                    <button class="btn btn-primary">Next: Configure</button>
+                        <div class="text-right" style="position: absolute; padding: 15px; bottom: 0; right: 0; left: 0;">
+                        <button class="btn btn-link pull-left">Back</button>
+                        <button class="btn btn-primary">Next: Configure</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -90,40 +90,42 @@ Use horizontal steps when there are few steps.
 <div class="">
     <div class="" style="margin: auto; max-width: 450px;">
         <div class="panel panel-default" style="overflow: auto; position: relative;">
-            <div class="">
+            <div class="panel-body">
                 <h3 class="text-center">Create your account</h3>
                 <ul class="nav nav-steps nav-centered" style="">
-                    <li class="success"><a href=""><i class="step-icon"><i class="fa fa-check"></i></i>Account</a></li>
-                    <li class="active"><a href=""><i class="step-icon">2</i>Personal</a></li>
-                    <li class="disabled"><a href=""><i class="step-icon">3</i>Customize</a></li>
+                    <li class="success"><a href=""><i class="step-icon"><i class="fa fa-check"></i></i><div>Account</div></a></li>
+                    <li class="active"><a href=""><i class="step-icon">2</i><div>Personal</div></a></li>
+                    <li class="disabled"><a href=""><i class="step-icon">3</i><div>Customize</div></a></li>
                 </ul>
-                <div class="panel-body">
-                    <form class="" role="form">
-                        <div class="form-group">
-                          <label for="name1" class="control-label required">Name</label>
-                          <div class="">
-                            <input type="text" class="form-control" style="" id="name1">
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label for="location1" class="control-label required">Location</label>
-                          <div class="">
-                            <input type="text" class="form-control" style="" id="location1" >
-                          </div>
-                        </div>
-                        <div class="form-group">
-                          <label for="bio1" class=" control-label">Bio</label>
-                          <div class="">
-                            <textarea id="bio1" class="form-control" style="" rows="4"></textarea>
-                          </div>
-                        </div>
-                    </form>
+                <form class="" role="form">
+                    <div class="form-group">
+                      <label for="name1" class="control-label required">Name</label>
+                      <div class="">
+                        <input type="text" class="form-control" style="" id="name1">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="location1" class="control-label required">Location</label>
+                      <div class="">
+                        <input type="text" class="form-control" style="" id="location1" >
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="bio1" class=" control-label">Bio</label>
+                      <div class="">
+                        <textarea id="bio1" class="form-control" style="" rows="4"></textarea>
+                      </div>
+                    </div>
+                </form>
+                <div class="text-right">
+                    <button class="btn btn-link pull-left">Back</button>
+                    <button class="btn btn-primary">Next: Customize</button>
                 </div>
             </div>
-            <div style="text-align: right; padding: 15px;">
+            <!-- <div style="text-align: right; padding: 15px;">
                 <button class="btn btn-default pull-left"><div class="pull-left" style="background: #004c97; padding: 6px; color: #fff; text-align: center;margin-top: 2px;margin-right: 8px;"><i class="fa fa-arrow-left fa-fw"></i></div><div style="margin-left: 4px; float: left;text-align: left;"><div class="text-muted small">BACK</div>Account</div></button>
                 <button class="btn btn-default"><div class="pull-right" style="background: #004c97; padding: 6px; color: #fff; text-align: center;margin-top: 2px;margin-left: 8px;"><i class="fa fa-arrow-right fa-fw"></i></div><div style="margin-right: 4px; float: right;text-align: right;"><div class="text-muted small">NEXT</div>Customize</div></button>
-            </div>
+            </div> -->
         </div>
     </div>
 </div>
