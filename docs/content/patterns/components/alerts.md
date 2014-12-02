@@ -19,9 +19,9 @@ __Types:__
 
 [preview]
 <div style="max-width: 450px;">
-    <div class="alert alert-warning">
+    <div class="alert alert-info">
         <button type="button" class="close" ><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <i class="fa fa-warning alert-icon"></i>There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
+        <i class="fa fa-info alert-icon"></i> Press the <strong>'A'</strong> key to automatically assign a case.
     </div>
     <div class="alert alert-success">
         <button type="button" class="close" ><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
@@ -32,9 +32,9 @@ __Types:__
         <button type="button" class="close" ><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <i class="fa fa-check alert-icon"></i> Case assigned to <strong>Jerry</strong>.
     </div>
-    <div class="alert alert-info">
+    <div class="alert alert-warning">
         <button type="button" class="close" ><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <i class="fa fa-info alert-icon"></i> Press the <strong>'A'</strong> key to automatically assign a case.
+        <i class="fa fa-warning alert-icon"></i>There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
     </div>
     <div class="alert alert-danger">
         <a href="" class="alert-link pull-right">Retry</a>
