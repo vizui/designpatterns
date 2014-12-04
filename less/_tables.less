@@ -89,3 +89,41 @@
       }
     }
 }
+
+// Contextual backgrounds
+
+.table-variant(@color) {
+    > thead > tr > th {
+        background: @color;
+        color: #fff;
+        border-bottom: none;
+    }
+
+    &.table-bordered {
+        border-top-color: darken(@color, 5%);
+        > thead > tr > th {
+            border-color: darken(@color, 5%);
+            border-bottom: 1px solid darken(@color, 5%);
+        }
+    }
+}
+
+.table-primary {
+    .table-variant(@brand-primary);
+}
+.table-success {
+    .table-variant(@brand-success);
+}
+.table-warning {
+    .table-variant(@brand-warning);
+}
+.table-danger {
+    .table-variant(@brand-danger);
+}
+.table-info {
+    .table-variant(@brand-info);
+}
+.table-inverse {
+    .table-variant(#282930);
+}
+
