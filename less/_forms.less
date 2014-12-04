@@ -29,6 +29,12 @@ label {
     }
 }
 
+
+// bumps up z-index for input-group-btns to make sure borders are clean.
+.input-group .input-group-btn {
+    z-index: 2;
+}
+
 // adds required asterisk after label
 form:not(.form-horizontal) {
     label.required::after {
