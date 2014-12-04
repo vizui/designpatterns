@@ -171,8 +171,6 @@ __Behavior:__
 </div>
 ```
 
-&nbsp;
-
 #### Stacked alerts
 If more than one system alert needs to be displayed at once, they should appear connected/stacked.
 [preview]
@@ -230,8 +228,6 @@ If more than one system alert needs to be displayed at once, they should appear 
     </div>
 </div>
 ```
-
-&nbsp;
 
 #### Live example
 This example shows where and how system alerts may appear <span class="text-muted">(not a <i>real</i> implementation).</span>

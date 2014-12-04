@@ -16,7 +16,6 @@ __Don't__
 - Use placeholders as the only label
 - Place unrelated inputs on the same line
 
-&nbsp;
 
 This is an evolving document. Here are some things that are still being worked on.<br>
 <span class="label label-warning">TODO</span> Field width guidelines<br>
@@ -26,7 +25,6 @@ This is an evolving document. Here are some things that are still being worked o
 <span class="label label-warning">TODO</span> Add/remove fields (e.g., multiple phone numbers)<br>
 <span class="label label-warning">TODO</span> More examples<br>
 
-&nbsp;
 
 [/pattern]
 
@@ -46,7 +44,6 @@ __Do__
 __Don't__
 - Use colons after labels
 
-&nbsp;
 
 #### Top aligned labels
 
@@ -80,7 +77,6 @@ Labels are placed above the inputs, left justified.
 </form>
 ```
 
-&nbsp;
 
 #### Left aligned labels
 
@@ -132,7 +128,6 @@ Required fields are generally marked with an asterisk. For external, public faci
 
 If the majority of the fields are required, consider adding `(optional)` to the minority optional fields.
 
-&nbsp;
 
 #### Top aligned labels
 When the fields are top aligned, the asterisk is placed on the right.
@@ -153,6 +148,7 @@ When the fields are top aligned, the asterisk is placed on the right.
   </form>
 </div>
 [/preview]
+
 ```html
 <form class="form-horizontal col-sm-10 col-md-8 col-lg-6" role="form">
   <div class="form-group">
@@ -170,7 +166,6 @@ When the fields are top aligned, the asterisk is placed on the right.
 </form>
 ```
 
-&nbsp;
 
 #### Left aligned labels
 When the fields are left aligned, the asterisk is placed to the left.
@@ -797,7 +792,6 @@ __Do__
 
 These examples show various form configurations.
 
-&nbsp;
 
 #### Various form elements
 
@@ -930,7 +924,6 @@ These examples show various form configurations.
     </form>
 </div>
 ```
-&nbsp;
 
 [preview]
 <div class="row">

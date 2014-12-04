@@ -4,6 +4,29 @@ preview: true
 ---
 
 [pattern]
+<h3>Wizards</h3>
+
+#### Purpose
+Users need guidance filling out a complex form.
+
+#### Description
+Splitting a complex form into multiple steps accomplishes a few things:
+- Reduces cognitive overhead by organizing and presenting related input fields
+- Facilitates a potentially linear or evolving process
+- Can provide improved contextual or evolving help 
+
+#### Basic functionality
+A wizard is usually composed of:
+- A list of steps, either horizontally or vertically
+- A collection of form controls and help text organized into steps
+- Buttons for navigation
+- Validation
+
+&nbsp;
+
+[/pattern]
+
+[pattern]
 ### Steps
 
 In many cases it's beneficial to show the list of steps a wizard will have. Depending on the number of steps and space available, steps can be listed vertically or horizontally.
@@ -17,8 +40,6 @@ In many cases it's beneficial to show the list of steps a wizard will have. Depe
 - Allow for navigating to previous steps when possible
 - In some cases, skipping ahead is applicable
 - Navigation may evolve depending on previous steps
-
-&nbsp;
 
 #### Vertical steps
 Use vertical steps when there are many steps or 'nested' steps. 

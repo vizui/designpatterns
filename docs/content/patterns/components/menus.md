@@ -3,12 +3,23 @@ title: "Menus"
 ---
 
 [pattern]
-### Overview
+<h3>Menus</h3>
 
+#### Purpose
+User needs to perform an action, and depending on space constraints or the frequency of use, the action does not need to be visible at all times.
+
+#### Description
+Menus provide a list of available actions and options. They're used in dropdowns, selects, and context menus. 
+
+#### Basic functionality
+Menus appear relative to the control or interaction that triggered the menu. Clicking an item from the menu performs the action or selects the option. For most actions, the menu should close when a menu item is clicked. If the clicked menu item is part of a set of multi-selectable options, then the menu should stay open. 
+
+- Menus may have submenus, icons, dividers, category labels, and checkboxes
+- Menu items may change depending on the context (e.g., `Mark as read` vs `Mark as unread`)
 - Use dividers to group related menu items
 - Use submenus to separate large sets of menu items
 - Include keyboard shortcuts if applicable
-- Disable menus rather than hiding
+- Disable menu items rather than hiding to improve discoverability of features
 - Indicate submenus with a caret
 - Indicate dialogs with an ellipsis
 - Use sentence case for menu items

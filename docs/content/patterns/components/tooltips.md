@@ -3,16 +3,24 @@ title: "Tooltips"
 ---
 
 [pattern]
-### Overview
+<h3>Tooltips</h3>
+
+#### Purpose
+Users need additional, potentially optional information on demand. 
+
+#### Description
+Tooltips provide information when an element is hovered over.
+
 Use tooltips for providing information that does not need to be visible at all times, such as:
 - Icon descriptions
 - Term definitions
 - Expanding shortened date/time stamps
 - Brief help/info text
 
-Other characteristics:
-- Tooltips cannot be interacted with.
-- The show and hide delays of a tooltip may vary depending on the need, but the default is 200ms to show and 0ms to hide.
+#### Basic functionality
+- Tooltips are attached to an element, and appear when the element is hovered over
+- The show and hide delays of a tooltip may vary depending on the need, but the default is 200ms to show and 0ms to hide
+- Tooltips cannot be interacted with
 
 
 [preview]

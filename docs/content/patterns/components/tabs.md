@@ -4,11 +4,20 @@ preview: true
 ---
 
 [pattern]
-### General
+<h3>Tabs</h3>
 
-Tabs organize data into separate groups. 
+#### Purpose
+User's need to flip between multiple focused panes/views of content.
 
-Tab buttons can contain icons, text, both, and even dropdowns. 
+#### Description
+Tabs manage stacked panes of content, giving the users the ability to view only the content pane they are interested in. Each tab button has a corresponding content pane. Tabs build on a real world metaphor. The selected state is reinforced with the tab metaphor of a folder physically in front of the others in the set.
+
+#### Basic functionality
+- You have multiple categories/views/panes of content, but there is the need to only show one pane at a time.
+- Tabs are listed in a horizontal row.
+- Avoid overflowing tabs to new lines.
+- Tab titles should be short and predictable.
+- Tab buttons can contain icons, text, both, and even dropdowns.
 
 &nbsp;
 

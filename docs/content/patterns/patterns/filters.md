@@ -4,8 +4,28 @@ preview: true
 ---
 
 [pattern]
+<h3>Filters</h3>
+#### Purpose
+Users may need filter a collection of items or search results to find items of interest.
+
+#### Description
+Filters provide a set of controls to reduce items in a collection based on characteristics or attributes that a user is targeting. For example, showing all notes created last year.
+
+#### Basic functionality
+Filters can provide the following functionality:
+- A list of interesting attributes common to items in a collection, and 
+possible values to filter by
+- An indication of the currently applied filters
+- A way to clear the currently applied filters
+- Predefined filters
+
+&nbsp;
+
+[/pattern]
+
+[pattern]
 ### Side filters
-When filters are frequently used or there are many filters, place them to the left. This provides more space and makes filters easier to access. If there are more than 5 filter groups, consider making them collapsible. 
+When filters are frequently used or there are many filters, place them to the left. This provides more space and makes filters easier to access. If there are more than 5 filter groups, consider making them collapsible and even collapsing them by default.
 
 [preview]
 <div class="container-fluid" style="margin-top: 8px;">

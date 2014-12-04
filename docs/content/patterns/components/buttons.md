@@ -4,9 +4,9 @@ title: "Buttons"
 
 [pattern]
 <h3>Buttons</h3>
-Buttons are used as triggers for actions. Depending on the use case, buttons contain a combination of a clear label and an icon. There are a variety of styles, sizes, and variations that can be combined in different situations.
+Buttons are used as triggers for actions. Depending on the use case, buttons contain a label and/or an icon. There are a variety of styles, sizes, and variations that can be used for different situations.
 
-All button labels are sentence case. They should be as short as possible, while clearly explaining to users what happens when they click the button.
+All button labels are sentence case. They should be as short as possible while clearly explaining what will happen when the button is clicked.
 
 &nbsp;
 
@@ -19,8 +19,8 @@ There are 4 button styles:
 - __Default__, the general button style.
 - __Primary__, indicates the critical, or most important action on a form/page.
 - __Danger__, indicates a dangerous, generally destructive action, such as deleting.
-- __Warning__, indicates an action that may have some side effects, such as giving a user admin access.
 - __Success__, indicates a positive action.
+- __Warning__, indicates an action that may have some side effects, such as giving a user admin access.
 - __Link__, used for non-critical actions. Useful for keeping the interface simple.
 
 All buttons are prefixed with the `btn` class. The `btn` class can be applied to any element. Try to use `<button>` elements when an action won't change the URL/route, and `<a>` elements when the action will change the URL/route. 
@@ -77,8 +77,6 @@ There are 4 different button sizes:
 <button type="button" class="btn btn-sm btn-default">Button</button>
 <button type="button" class="btn btn-xs btn-default">Button</button>
 ```
-
-&nbsp;
 
 #### Block level buttons
 Use the `btn-block` class for buttons that fill the width of their container. These are useful for narrow containers and cleaning up alignment.
@@ -153,7 +151,7 @@ Dropdown buttons can provide a menu or popover when clicked.
 [pattern]
 ### Split buttons
 
-Split buttons contain both a button and a dropdown. The button is usually a 'primary' action, and the dropdown usually contains less important actions. Split buttons are implemented with a `btn-group`, and can use any of the other button styles and sizes as shown elsewhere.
+Split buttons contain both a button and a dropdown. Clicking the button performs the action. Clicking the dropdown reveals other actions. Generally, the button is the primary or most common action, and items in the dropdown are secondary or less common actions.
 
 [preview]
 <div class="btn-group">

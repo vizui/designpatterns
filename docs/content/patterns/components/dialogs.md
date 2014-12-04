@@ -4,19 +4,19 @@ preview: true
 ---
 
 [pattern]
-### Overview
+<h3>Dialogs</h3>
 
-&nbsp;
+#### Purpose
+Dialogs provide the user with a focused way of accomplishing or confirming something. 
 
-#### Components
-Dialogs contain a combination of: a title, a body, and a footer. 
+#### Description
+Dialogs float above the application until the user has taken a desired action or dismissed the dialog. Dialogs can be used for managing settings, editing/creating simple objects, or other actions that require simple input from a user. Dialogs are useful for interactions that are quick (less than a couple minutes) where background information is not necessary. Dialogs are usually opened from a click action, like a button or menu item. 
 
-&nbsp;
+#### Basic functionality
+Dialogs provide a title, an optional dismiss icon, text and/or form controls, and a footer. Dialog content can be scrollable, but the footer should always be visible. Dialogs may or may not block interactions "behind" or "under" the dialog (see Modes).
 
 #### Button placement
-The primary action buttons are generally placed on the right, and if applicable, a cancel button is placed on the left. 
-
-&nbsp;
+Action buttons are generally placed on the right, and if applicable, a cancel button is placed on the left. 
 
 #### Button styles
 In general, use the button style that matches the action. In some scenarios, there may be no button that takes priority over another, and they all have similar actions, in which case it might be best to use the default button style for them all.

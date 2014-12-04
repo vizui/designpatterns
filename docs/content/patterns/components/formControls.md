@@ -6,6 +6,13 @@ title: "Form controls"
 [pattern]
 ### Text box
 
+#### Purpose
+Users need to be able to input free form text into a field.
+
+#### Description
+Text boxes allow the user to input free form text into a field. A text box only allows for a single line of input. 
+
+#### Basic functionality
 Text boxes allow for single line input.
 
 [preview]
@@ -33,13 +40,9 @@ Text boxes allow for single line input.
 <input type="text" class="form-control" disabled>
 ```
 
-&nbsp;
-
-&nbsp;
-
 #### Input masks
 
-Input masks ensure that the user understands the input format required, in addition to making input easier.
+Input masks ensure that the user understands the input format required, in addition to making input less error-prone by potentially restricting the number or types of characters that can be entered.
 
 <span class="text-muted">These examples use https://github.com/RobinHerbots/jquery.inputmask for demo purposes.</span>
 [preview]
@@ -112,7 +115,14 @@ Text areas allow for multi-line input.
 [pattern]
 ### Radio buttons
 
-&nbsp;
+#### Purpose
+Users must choose between two or more mutually exclusive options.
+
+#### Description
+Radio buttons come in a group of two or more mutually exclusive options. Users can select only one option.
+
+#### Basic functionality
+A radio button has two states, checked and unchecked. Radio buttons are always in a group of two or more. When a radio button is checked, the previously selected radio button is unchecked. There can only be one radio button checked at any given time. Radio button labels should use sentence casing.
 
 #### Vertical
 [preview]
@@ -126,8 +136,6 @@ Text areas allow for multi-line input.
     <label><input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>Disabled</label>
 </div>
 [/preview]
-
-&nbsp;
 
 #### Inline
 [preview]
@@ -152,7 +160,14 @@ Text areas allow for multi-line input.
 [pattern]
 ### Checkboxes
 
-&nbsp;
+#### Purpose
+Users need to specify which option(s) from a set are applicable/valid/true based on a label. 
+
+#### Description
+A checkbox allows the user to mark any number of choices from a set as checked. 
+
+#### Basic functionality
+When clicked, a checkbox's state toggles between unchecked and checked. Checkboxes can have an indeterminate state that is set based on external interactions (e.g., indicating that some but not all items in a collection are selected). Checkbox labels should use sentence casing.
 
 #### Vertical
 [preview]
@@ -166,8 +181,6 @@ Text areas allow for multi-line input.
   <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes3" value="option3" disabled>Disabled</label>
 </div>
 [/preview]
-
-&nbsp;
 
 #### Inline
 [preview]
@@ -187,86 +200,16 @@ Text areas allow for multi-line input.
 [/pattern]
 
 
-
-
 [pattern]
-### Native select
-[preview]
-<div class="container-fluid" style="max-width: 400px; margin: 0;">
-    <div class="row">
-        <form role="form" class="col-sm-12 form-horizontal">
-            <div class="form-group">
-                <label for="se13" class="col-sm-3 control-label">Normal</label>
-                <div class="col-sm-9">
-                    <select id="se13" class="form-control">
-                        <option value="A">Option A</option>
-                        <option value="B">Option B</option>
-                        <option value="C">Option C</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="se14" class="col-sm-3 control-label">Disabled</label>
-                <div class="col-sm-9">
-                    <select id="se14" disabled class="form-control">
-                        <option value="A">Option A</option>
-                        <option value="B">Option B</option>
-                        <option value="C">Option C</option>
-                    </select>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
-[/preview]
+### Select
+#### Purpose
+The user needs to choose an option from a predefined set.
 
-```html
+#### Description
+A select, sometimes referred to as a combo box, provides functionality for choosing an option from a set. It is similar to dropdown button but facilitates item selection, filtering, and reflects the currently selected value. 
 
-```
-
-[/pattern]
-
-[pattern]
-### Native mult-select
-[preview]
-<div class="container-fluid" style="max-width: 400px; margin: 0;">
-    <div class="row">
-        <form role="form" class="col-sm-12 form-horizontal">
-            <div class="form-group">
-                <label for="se15" class="col-sm-3 control-label">Normal</label>
-                <div class="col-sm-9">
-                    <select multiple id="se15" class="form-control">
-                        <option value="A">Option A</option>
-                        <option value="B">Option B</option>
-                        <option value="C">Option C</option>
-                        <option value="D">Option D</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="se16" class="col-sm-3 control-label">Disabled</label>
-                <div class="col-sm-9">
-                    <select multiple id="se16" disabled class="form-control">
-                        <option value="A">Option A</option>
-                        <option value="B">Option B</option>
-                        <option value="C">Option C</option>
-                        <option value="D">Option D</option>
-                    </select>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
-[/preview]
-
-```html
-
-```
-
-[/pattern]
-
-[pattern]
-### Enhanced select
+#### Basic functionality
+When clicked, the user is shown all available options and can make a selection. When a selection is made, the dropdown closes and the select control updates to reflect the current selection. If there are 5 or more options, the list should allow for filtering via a text field.
 
 <span class="text-muted">These examples use https://github.com/ivaynberg/select2 for demo purposes.</span>
 [preview]
@@ -370,6 +313,44 @@ Text areas allow for multi-line input.
 
 [/pattern]
 
+[pattern]
+### Multi-select
+[preview]
+<div class="container-fluid" style="max-width: 400px; margin: 0;">
+    <div class="row">
+        <form role="form" class="col-sm-12 form-horizontal">
+            <div class="form-group">
+                <label for="se15" class="col-sm-3 control-label">Normal</label>
+                <div class="col-sm-9">
+                    <select multiple id="se15" class="form-control">
+                        <option value="A">Option A</option>
+                        <option value="B">Option B</option>
+                        <option value="C">Option C</option>
+                        <option value="D">Option D</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="se16" class="col-sm-3 control-label">Disabled</label>
+                <div class="col-sm-9">
+                    <select multiple id="se16" disabled class="form-control">
+                        <option value="A">Option A</option>
+                        <option value="B">Option B</option>
+                        <option value="C">Option C</option>
+                        <option value="D">Option D</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+[/preview]
+
+```html
+
+```
+
+[/pattern]
 [pattern]
 ### Date picker
 [preview]

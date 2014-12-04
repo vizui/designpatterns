@@ -4,9 +4,15 @@ preview: true
 ---
 
 [pattern]
-### Overview
+<h3>Popovers</h3>
+#### Purpose
+Users need to be able to access additional related information or functionality without a change in context.
 
-Popovers are a cross between a dialog and a tooltip. Popovers are smaller contextual dialogs that are generally triggered by a click. They may or may not provide other interactions. 
+#### Description
+Popovers are a cross between a dialog and a tooltip. Popovers are smaller contextual dialogs that are generally triggered by a click. They may or may not provide additional interactive controls.  
+
+#### Basic functionality
+Popovers display information or functionality related to a particular item or control. When the item or control is clicked, the popover is displayed. Popovers can be dismissed via a close icon, clicking the control that opened it, or by clicking anywhere outside of the popover. The amount of content in a popover should be relatively short, but they can be scrollable if necessary.
 
 Use a popover instead of a tooltip or dialog when:
 - You want a contextual relationship that a dialog can't provide

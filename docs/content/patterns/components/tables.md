@@ -3,18 +3,32 @@ title: "Tables"
 ---
 
 [pattern]
-### Overview
+<h3>Tables</h3>
+#### Purpose
+Users need to see structured data in a manner that makes the data readable, scannable, and comparable.
 
-Tables organize tabular data. A table's complexity and needs can vary greatly. This section provides many different features a table _may_ have. Features can be mixed and matched based on your needs. Don't include features unless they're actually needed.
+#### Description
+Tables provide customizable views of tabular data with features including sorting and managing columns. Tables are useful when a collection of data requires vertical alignment through columns for quick scanning and discovery of information, as well as for data that with many attributes that requires sorting, grouping, and a user customizable display.
 
-&nbsp;
+#### Basic functionality
+Tables list a collection of items in rows that have similar attributes, usually with headers to label each attribute. 
+
+The following functionality can be provided by tables:
+- Sorting by columns
+- Resizing columns
+- Showing and hiding columns
+- Reordering columns
+- Row selection
+- Performing actions on row
+- Grouping by attributes
+- Expanding rows
+
+A table's complexity and needs can vary greatly. This pattern provides many different features a table _may_ have. Features can be mixed and matched based on your needs. Don't include features unless they're actually needed.
 
 [/pattern]
 
 [pattern]
 ### Styles
-
-&nbsp;
 
 #### Standard
 A standard table has subtle row borders.
@@ -54,8 +68,6 @@ A standard table has subtle row borders.
 </div>
 [/preview]
 
-&nbsp;
-
 #### Striped
 A striped table adds an alternating row background color, increasing usability for wider tables.
 [preview]
@@ -93,8 +105,6 @@ A striped table adds an alternating row background color, increasing usability f
     </table>
 </div>
 [/preview]
-
-&nbsp;
 
 #### Bordered
 A bordered table adds column and row borders, increasing usability for content-dense tables.
@@ -134,8 +144,6 @@ A bordered table adds column and row borders, increasing usability for content-d
 </div>
 [/preview]
 
-&nbsp;
-
 #### Borderless
 A borderless table removes all borders, decreasing clutter for simple tables.
 [preview]
@@ -173,8 +181,6 @@ A borderless table removes all borders, decreasing clutter for simple tables.
     </table>
 </div>
 [/preview]
-
-&nbsp;
 
 #### Condensed
 Use the condensed style, which reduces cell padding, for very large amounts of data.
@@ -214,13 +220,50 @@ Use the condensed style, which reduces cell padding, for very large amounts of d
 </div>
 [/preview]
 
+#### Colored
+For text heavy pages (e.g., FAQ, APIs, Documentation, Pricing), or pages where there is one primary grid, a colored header may be appropriate.
+
+Similar to other components, the available styles are `.table-{primary, success, info, warning, danger, inverse}`.
+[preview]
+<div style="padding: 40px; background: #fff;">
+    <table class="table table-striped table-info">
+        <thead>
+            <tr>
+                <th>Project name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Invoice</td>
+                <td><span >Add invoice confirmation</span></td>
+                <td><span >$4,500</span></td>
+            </tr>
+            <tr>
+                <td>Templates</td>
+                <td><span >Refactor templates to use the new templating library</span></td>
+                <td><span >$9,000</span></td>
+            </tr>
+            <tr>
+                <td>Payments</td>
+                <td><span >Process payments using third party api</span></td>
+                <td><span >$5,400</span></td>
+            </tr>
+            <tr>
+                <td>Account Management</td>
+                <td><span >Improve account management workflow</span></td>
+                <td><span >$6,000</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+[/preview]
 
 [/pattern]
 
 [pattern]
 ### Headers
-
-&nbsp;
 
 #### Normal
 A normal header scrolls with the data.
@@ -260,8 +303,6 @@ A normal header scrolls with the data.
     </table>
 </div>
 [/preview]
-
-&nbsp;
 
 #### Fixed
 
@@ -374,8 +415,6 @@ A fixed header remains visible as the table body is scrolled. This is useful for
 </div>
 [/preview]
 
-&nbsp;
-
 #### Headerless
 If the content of the table is self-explanatory for your users, it may not need a header. Provide an alternative for sorting, if necessary (e.g., a toolbar with a dropdown). 
 
@@ -407,8 +446,6 @@ If the content of the table is self-explanatory for your users, it may not need 
 
 [pattern]
 ### Sorting
-
-&nbsp;
 
 #### Single sorting
 Clicking a header cell sets that column as the currently sorted column. The first click should sort `descending`, the second click should sort `ascending`. 
@@ -448,8 +485,6 @@ Clicking a header cell sets that column as the currently sorted column. The firs
     </table>
 </div>
 [/preview]
-
-&nbsp;
 
 #### Multi sorting
 When a table is sorted by multiple columns, the sort order is indicated by the superscript numbers.
@@ -657,8 +692,6 @@ To provide column customization, add an icon to the top right corner of the tabl
     </table>
 </div>
 [/preview]
-
-&nbsp;
 
 #### Show and hide columns dialog
 This dialog provides the ability to show/hide columns as desired.

@@ -4,19 +4,38 @@ preview: true
 ---
 
 [pattern]
-### Overview
-Depending on the application type, settings can appear as a dedicated page or as a modal dialog. The complexity of the settings panel can vary drastically between applications. 
+<h3>Settings</h3>
+#### Purpose
 
-The settings panel can be composed of:
-- Navigation
-- Settings
-- Search
+Some system behaviors and settings may need to change depending on the user.
+
+#### Description
+
+Settings should be implemented when there is functionality and behaviors that may need to be changed to meet a user's needs, such as notification settings, account settings, and other system behaviors. 
 
 Avoid the urge to “just make it a setting”. Only add a setting if:
 - More than 15% of your users will change the setting
 - It's infrequently changed by users. If it's frequently changed, consider making it more available
 
+#### Basic functionality
 
+Depending on the application type, settings can appear as a dedicated page or as a modal dialog. The complexity of the settings panel can vary drastically between applications.
+
+The settings panel can be composed of:
+- Navigation
+- Settings forms
+- Search
+
+&nbsp;
+
+[/pattern]
+
+[pattern]
+### Navigation
+
+Use tabs if there are 5 or less sections of settings without nesting, otherwise use tree navigation. Hierarchical tree navigation is preferred over nested levels of tabs and improves discoverability.
+
+#### Flat navigation
 [preview]
 <div class="modal fade in" style="display: block; position: relative; z-index: inherit;">
   <div class="modal-dialog" style="width: 750px; max-width: 100%; padding: 20px;">
@@ -69,14 +88,7 @@ Avoid the urge to “just make it a setting”. Only add a setting if:
   </div>
 </div>
 [/preview]
-
-
-[/pattern]
-
-[pattern]
-### Navigation
-
-Use tabs if there are 5 or less sections of settings without nesting, otherwise use tree navigation. Hierarchical tree navigation is preferred over nested levels of tabs and improves discoverability.
+#### Tree navigation
 [preview]
 <div class="modal fade in" style="display: block; position: relative; z-index: inherit;">
   <div class="modal-dialog" style="width: 750px; max-width: 100%; padding: 20px;">
@@ -144,6 +156,7 @@ Use tabs if there are 5 or less sections of settings without nesting, otherwise 
   </div>
 </div>
 [/preview]
+#### Tab navigation
 [preview]
 <div class="modal fade in" style="display: block; position: relative; z-index: inherit;">
   <div class="modal-dialog" style="width: 600px; max-width: 100%; padding: 20px;">
