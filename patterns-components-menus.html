@@ -17,7 +17,7 @@
 
         <link rel="stylesheet" href="styles/333b841e.vendor.css">
 
-        <link rel="stylesheet" href="styles/a1cd6642.main.css">
+        <link rel="stylesheet" href="styles/a486a7eb.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -120,8 +120,6 @@
                                 
                                     <ul class="nav nav-stacked">
                                         
-                                            <li><a title="Overview" href="#overview">Overview</a></li>
-                                        
                                             <li><a title="Submenus" href="#submenus">Submenus</a></li>
                                         
                                             <li><a title="Icons" href="#icons">Icons</a></li>
@@ -210,6 +208,12 @@
                         
                     
                         
+                            <li class=""><a href="patterns-patterns-search.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Search </a>
+                                
+                            </li>
+                        
+                    
+                        
                             <li class=""><a href="patterns-patterns-settings.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Settings </a>
                                 
                             </li>
@@ -227,12 +231,20 @@
         <section class="pl-content">
             
             <div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="overview" href="#overview"><i class="fa fa-link"></i></a> Overview</h3></p>
+<p><h3>Menus</h3></p>
+<h4>Purpose</h4>
+<p>User needs to perform an action, and depending on space constraints or the frequency of use, the action does not need to be visible at all times.</p>
+<h4>Description</h4>
+<p>Menus provide a list of available actions and options. They're used in dropdowns, selects, and context menus.</p>
+<h4>Basic functionality</h4>
+<p>Menus appear relative to the control or interaction that triggered the menu. Clicking an item from the menu performs the action or selects the option. For most actions, the menu should close when a menu item is clicked. If the clicked menu item is part of a set of multi-selectable options, then the menu should stay open.</p>
 <ul>
+<li>Menus may have submenus, icons, dividers, category labels, and checkboxes</li>
+<li>Menu items may change depending on the context (e.g., <code>Mark as read</code> vs <code>Mark as unread</code>)</li>
 <li>Use dividers to group related menu items</li>
 <li>Use submenus to separate large sets of menu items</li>
 <li>Include keyboard shortcuts if applicable</li>
-<li>Disable menus rather than hiding</li>
+<li>Disable menu items rather than hiding to improve discoverability of features</li>
 <li>Indicate submenus with a caret</li>
 <li>Indicate dialogs with an ellipsis</li>
 <li>Use sentence case for menu items</li>

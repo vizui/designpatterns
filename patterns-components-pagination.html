@@ -17,7 +17,7 @@
 
         <link rel="stylesheet" href="styles/333b841e.vendor.css">
 
-        <link rel="stylesheet" href="styles/a1cd6642.main.css">
+        <link rel="stylesheet" href="styles/a486a7eb.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -130,6 +130,12 @@
                         
                             <li class="active"><a href="patterns-components-pagination.html">Pagination </a>
                                 
+                                    <ul class="nav nav-stacked">
+                                        
+                                            <li><a title="Examples" href="#examples">Examples</a></li>
+                                        
+                                    </ul>
+                                
                             </li>
                         
                     
@@ -198,6 +204,12 @@
                         
                     
                         
+                            <li class=""><a href="patterns-patterns-search.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Search </a>
+                                
+                            </li>
+                        
+                    
+                        
                             <li class=""><a href="patterns-patterns-settings.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Settings </a>
                                 
                             </li>
@@ -215,15 +227,26 @@
         <section class="pl-content">
             
             <div class="pl-pattern">
-<p><h3>Pagination</h3>
-Pagination provides a few variations of the following features:</p>
+<p><h3>Pagination</h3></p>
+<h4>Purpose</h4>
+<p>Users need to navigate through pages of items.</p>
+<h4>Description</h4>
+<p>Collections of data are often split into multiple pages for performance reasons. Either the size of the data is too much to download at once, or the size of the data would take too longer to render. Pagination controls allow for the user to retrieve or view pages of data in a performant matter.</p>
+<h4>Basic functionality</h4>
+<p>This pagination pattern provides a few variations of the following features:</p>
 <ul>
-<li>Navigating to prev/next pages.</li>
-<li>Navigating to first/last pages.</li>
-<li>Jumping to a manually entered page.</li>
-<li>Adjusting the number of items per page.</li>
+<li>Navigating to prev/next pages</li>
+<li>Navigating to first/last pages</li>
+<li>Jumping to a manually entered page/item</li>
+<li>Adjusting the number of items per page</li>
 </ul>
+<p>The features should be chosen based on the user's needs, the data, and the space available. Don't include pagination features that aren't necessary. If your users have no need to adjust the paging size or jump to a manually entered page for a particular type of data, don't include those features.</p>
+<div><span class="label label-warning">TODO</span> Infinite scrolling and 'Load more'</div>
 <p> </p>
+</div>
+<div class="pl-pattern">
+<p><h3><a class="pl-heading-link" id="examples" href="#examples"><i class="fa fa-link"></i></a> Examples</h3></p>
+<p>The examples below show various configurations of pagination features. Depending on the data, you may treat your pages as item ranges <code>Showing 150-160</code> or as pages <code>Page 15 of 25</code>.</p>
 <h4>Full</h4>
 <p>Full paging contains separate dropdowns for adjusting the page size and jumping to a page, and a full sized pagination bar that allows for prev/next navigation as well as buttons for jumping to the beginning and end.</p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
@@ -261,17 +284,16 @@ Pagination provides a few variations of the following features:</p>
  <a class="btn btn-default" href="#"><i class="fa fa-angle-right"></i></a>
 </div>
 </div>
-<p> </p>
 <h4>Medium</h4>
 <p>Medium-sized paging contains a single dropdown for changing the page size and jumping to a page, and a simple left/right button group. This is useful in space constrained areas as well as in areas where it is <em>less</em> likely that users will need to adjust the page size or jump to a particular page.</p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="dropdown" style="display: inline-block">
     <button type="button" id="dropdownMenu3" class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span class="text-muted normal">Showing</span> 150-160 <span class="text-muted normal">of</span> 305 <span class="caret"></span></button>
     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
-        <li role="presentation" class="dropdown-header">Jump to page</li>
+        <li role="presentation" class="dropdown-header">Jump to item</li>
         <li style="padding: 0 16px" role="presentation">
             <form action="">
-                <input type="text" placeholder="15" class="form-control">
+                <input type="text" placeholder="150" class="form-control">
             </form>
         </li>
         <li class="divider"></li>
@@ -286,7 +308,6 @@ Pagination provides a few variations of the following features:</p>
  <a href="#" class="btn btn-default"><i class="fa fa-angle-right"></i></a>
 </div>
 </div>
-<p> </p>
 <h4>Small</h4>
 <p>Small paging contains a single button group, containing left/right buttons and a single dropdown for changing the page size and jumping to a page.</p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>

@@ -17,7 +17,7 @@
 
         <link rel="stylesheet" href="styles/333b841e.vendor.css">
 
-        <link rel="stylesheet" href="styles/a1cd6642.main.css">
+        <link rel="stylesheet" href="styles/a486a7eb.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -110,11 +110,9 @@
                                         
                                             <li><a title="Checkboxes" href="#checkboxes">Checkboxes</a></li>
                                         
-                                            <li><a title="Native select" href="#native-select">Native select</a></li>
+                                            <li><a title="Select" href="#select">Select</a></li>
                                         
-                                            <li><a title="Native mult-select" href="#native-mult-select">Native mult-select</a></li>
-                                        
-                                            <li><a title="Enhanced select" href="#enhanced-select">Enhanced select</a></li>
+                                            <li><a title="Multi-select" href="#multi-select">Multi-select</a></li>
                                         
                                             <li><a title="Date picker" href="#date-picker">Date picker</a></li>
                                         
@@ -218,6 +216,12 @@
                         
                     
                         
+                            <li class=""><a href="patterns-patterns-search.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Search </a>
+                                
+                            </li>
+                        
+                    
+                        
                             <li class=""><a href="patterns-patterns-settings.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Settings </a>
                                 
                             </li>
@@ -236,6 +240,11 @@
             
             <div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="text-box" href="#text-box"><i class="fa fa-link"></i></a> Text box</h3></p>
+<h4>Purpose</h4>
+<p>Users need to be able to input free form text into a field.</p>
+<h4>Description</h4>
+<p>Text boxes allow the user to input free form text into a field. A text box only allows for a single line of input.</p>
+<h4>Basic functionality</h4>
 <p>Text boxes allow for single line input.</p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="container-fluid" style="max-width: 400px; margin: 0">
@@ -260,10 +269,8 @@
 <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">disabled</span>&gt;</span>
 </code></pre>
-<p> </p>
-<p> </p>
 <h4>Input masks</h4>
-<p>Input masks ensure that the user understands the input format required, in addition to making input easier.</p>
+<p>Input masks ensure that the user understands the input format required, in addition to making input less error-prone by potentially restricting the number or types of characters that can be entered.</p>
 <p><span class="text-muted">These examples use https://github.com/RobinHerbots/jquery.inputmask for demo purposes.</span></p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="container-fluid" style="max-width: 400px; margin: 0">
@@ -324,7 +331,12 @@
 </div>
 <div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="radio-buttons" href="#radio-buttons"><i class="fa fa-link"></i></a> Radio buttons</h3></p>
-<p> </p>
+<h4>Purpose</h4>
+<p>Users must choose between two or more mutually exclusive options.</p>
+<h4>Description</h4>
+<p>Radio buttons come in a group of two or more mutually exclusive options. Users can select only one option.</p>
+<h4>Basic functionality</h4>
+<p>A radio button has two states, checked and unchecked. Radio buttons are always in a group of two or more. When a radio button is checked, the previously selected radio button is unchecked. There can only be one radio button checked at any given time. Radio button labels should use sentence casing.</p>
 <h4>Vertical</h4>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="radio">
@@ -337,7 +349,6 @@
     <label><input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled="disabled">Disabled</label>
 </div>
 </div>
-<p> </p>
 <h4>Inline</h4>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <p><label class="radio-inline">
@@ -355,7 +366,12 @@
 </div>
 <div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="checkboxes" href="#checkboxes"><i class="fa fa-link"></i></a> Checkboxes</h3></p>
-<p> </p>
+<h4>Purpose</h4>
+<p>Users need to specify which option(s) from a set are applicable/valid/true based on a label.</p>
+<h4>Description</h4>
+<p>A checkbox allows the user to mark any number of choices from a set as checked.</p>
+<h4>Basic functionality</h4>
+<p>When clicked, a checkbox's state toggles between unchecked and checked. Checkboxes can have an indeterminate state that is set based on external interactions (e.g., indicating that some but not all items in a collection are selected). Checkbox labels should use sentence casing.</p>
 <h4>Vertical</h4>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="checkbox">
@@ -368,7 +384,6 @@
   <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes3" value="option3" disabled="disabled">Disabled</label>
 </div>
 </div>
-<p> </p>
 <h4>Inline</h4>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <p><label class="checkbox-inline">
@@ -383,75 +398,13 @@
 </code></pre>
 </div>
 <div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="native-select" href="#native-select"><i class="fa fa-link"></i></a> Native select</h3></p>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
-<div class="container-fluid" style="max-width: 400px; margin: 0">
-    <div class="row">
-        <form role="form" class="col-sm-12 form-horizontal">
-            <div class="form-group">
-                <label for="se13" class="col-sm-3 control-label">Normal</label>
-                <div class="col-sm-9">
-                    <select id="se13" class="form-control">
-                        <option value="A">Option A</option>
-                        <option value="B">Option B</option>
-                        <option value="C">Option C</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="se14" class="col-sm-3 control-label">Disabled</label>
-                <div class="col-sm-9">
-                    <select id="se14" disabled="disabled" class="form-control">
-                        <option value="A">Option A</option>
-                        <option value="B">Option B</option>
-                        <option value="C">Option C</option>
-                    </select>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
-</div>
-<pre><code class="hljs html">
-</code></pre>
-</div>
-<div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="native-mult-select" href="#native-mult-select"><i class="fa fa-link"></i></a> Native mult-select</h3></p>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
-<div class="container-fluid" style="max-width: 400px; margin: 0">
-    <div class="row">
-        <form role="form" class="col-sm-12 form-horizontal">
-            <div class="form-group">
-                <label for="se15" class="col-sm-3 control-label">Normal</label>
-                <div class="col-sm-9">
-                    <select multiple="multiple" id="se15" class="form-control">
-                        <option value="A">Option A</option>
-                        <option value="B">Option B</option>
-                        <option value="C">Option C</option>
-                        <option value="D">Option D</option>
-                    </select>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="se16" class="col-sm-3 control-label">Disabled</label>
-                <div class="col-sm-9">
-                    <select multiple="multiple" id="se16" disabled="disabled" class="form-control">
-                        <option value="A">Option A</option>
-                        <option value="B">Option B</option>
-                        <option value="C">Option C</option>
-                        <option value="D">Option D</option>
-                    </select>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
-</div>
-<pre><code class="hljs html">
-</code></pre>
-</div>
-<div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="enhanced-select" href="#enhanced-select"><i class="fa fa-link"></i></a> Enhanced select</h3></p>
+<p><h3><a class="pl-heading-link" id="select" href="#select"><i class="fa fa-link"></i></a> Select</h3></p>
+<h4>Purpose</h4>
+<p>The user needs to choose an option from a predefined set.</p>
+<h4>Description</h4>
+<p>A select, sometimes referred to as a combo box, provides functionality for choosing an option from a set. It is similar to dropdown button but facilitates item selection, filtering, and reflects the currently selected value.</p>
+<h4>Basic functionality</h4>
+<p>When clicked, the user is shown all available options and can make a selection. When a selection is made, the dropdown closes and the select control updates to reflect the current selection. If there are 5 or more options, the list should allow for filtering via a text field.</p>
 <p><span class="text-muted">These examples use https://github.com/ivaynberg/select2 for demo purposes.</span></p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="container-fluid" style="max-width: 400px; margin: 0">
@@ -540,6 +493,41 @@
                         <option value="A">Option A</option>
                         <option value="B">Option B</option>
                         <option value="C">Option C</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+<pre><code class="hljs html">
+</code></pre>
+</div>
+<div class="pl-pattern">
+<p><h3><a class="pl-heading-link" id="multi-select" href="#multi-select"><i class="fa fa-link"></i></a> Multi-select</h3></p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="container-fluid" style="max-width: 400px; margin: 0">
+    <div class="row">
+        <form role="form" class="col-sm-12 form-horizontal">
+            <div class="form-group">
+                <label for="se15" class="col-sm-3 control-label">Normal</label>
+                <div class="col-sm-9">
+                    <select multiple="multiple" id="se15" class="form-control">
+                        <option value="A">Option A</option>
+                        <option value="B">Option B</option>
+                        <option value="C">Option C</option>
+                        <option value="D">Option D</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="se16" class="col-sm-3 control-label">Disabled</label>
+                <div class="col-sm-9">
+                    <select multiple="multiple" id="se16" disabled="disabled" class="form-control">
+                        <option value="A">Option A</option>
+                        <option value="B">Option B</option>
+                        <option value="C">Option C</option>
+                        <option value="D">Option D</option>
                     </select>
                 </div>
             </div>

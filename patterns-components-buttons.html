@@ -17,7 +17,7 @@
 
         <link rel="stylesheet" href="styles/333b841e.vendor.css">
 
-        <link rel="stylesheet" href="styles/a1cd6642.main.css">
+        <link rel="stylesheet" href="styles/a486a7eb.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -218,6 +218,12 @@
                         
                     
                         
+                            <li class=""><a href="patterns-patterns-search.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Search </a>
+                                
+                            </li>
+                        
+                    
+                        
                             <li class=""><a href="patterns-patterns-settings.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Settings </a>
                                 
                             </li>
@@ -236,8 +242,8 @@
             
             <div class="pl-pattern">
 <p><h3>Buttons</h3>
-Buttons are used as triggers for actions. Depending on the use case, buttons contain a combination of a clear label and an icon. There are a variety of styles, sizes, and variations that can be combined in different situations.</p>
-<p>All button labels are sentence case. They should be as short as possible, while clearly explaining to users what happens when they click the button.</p>
+Buttons are used as triggers for actions. Depending on the use case, buttons contain a label and/or an icon. There are a variety of styles, sizes, and variations that can be used for different situations.</p>
+<p>All button labels are sentence case. They should be as short as possible while clearly explaining what will happen when the button is clicked.</p>
 <p> </p>
 </div>
 <div class="pl-pattern">
@@ -247,8 +253,8 @@ Buttons are used as triggers for actions. Depending on the use case, buttons con
 <li><strong>Default</strong>, the general button style.</li>
 <li><strong>Primary</strong>, indicates the critical, or most important action on a form/page.</li>
 <li><strong>Danger</strong>, indicates a dangerous, generally destructive action, such as deleting.</li>
-<li><strong>Warning</strong>, indicates an action that may have some side effects, such as giving a user admin access.</li>
 <li><strong>Success</strong>, indicates a positive action.</li>
+<li><strong>Warning</strong>, indicates an action that may have some side effects, such as giving a user admin access.</li>
 <li><strong>Link</strong>, used for non-critical actions. Useful for keeping the interface simple.</li>
 </ul>
 <p>All buttons are prefixed with the <code>btn</code> class. The <code>btn</code> class can be applied to any element. Try to use <code>&lt;button&gt;</code> elements when an action won't change the URL/route, and <code>&lt;a&gt;</code> elements when the action will change the URL/route.</p>
@@ -295,7 +301,6 @@ Buttons are used as triggers for actions. Depending on the use case, buttons con
 <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-sm btn-default"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-xs btn-default"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 </code></pre>
-<p> </p>
 <h4>Block level buttons</h4>
 <p>Use the <code>btn-block</code> class for buttons that fill the width of their container. These are useful for narrow containers and cleaning up alignment.</p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
@@ -355,7 +360,7 @@ Dropdown buttons can provide a menu or popover when clicked.</p>
 </div>
 <div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="split-buttons" href="#split-buttons"><i class="fa fa-link"></i></a> Split buttons</h3></p>
-<p>Split buttons contain both a button and a dropdown. The button is usually a 'primary' action, and the dropdown usually contains less important actions. Split buttons are implemented with a <code>btn-group</code>, and can use any of the other button styles and sizes as shown elsewhere.</p>
+<p>Split buttons contain both a button and a dropdown. Clicking the button performs the action. Clicking the dropdown reveals other actions. Generally, the button is the primary or most common action, and items in the dropdown are secondary or less common actions.</p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="btn-group">
   <button type="button" class="btn btn-default">Action</button>

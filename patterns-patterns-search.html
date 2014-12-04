@@ -2,7 +2,7 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>Metadata - Components - USPTO design patterns</title>
+        <title>Search - Patterns - USPTO design patterns</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -57,7 +57,7 @@
     </header>
     <div class="pl-sub-header">
         <div class="pull-left">
-            <h4><strong>Patterns</strong> - Metadata</h4>
+            <h4><strong>Patterns</strong> - Search</h4>
         </div>
         <div class="pull-right">
             <button type="button" title="Edit this page on Github" class="btn btn-sm btn-default"> <i class="fa fa-pencil"></i></button>
@@ -122,13 +122,7 @@
                         
                     
                         
-                            <li class="active"><a href="patterns-components-metadata.html">Metadata </a>
-                                
-                                    <ul class="nav nav-stacked">
-                                        
-                                            <li><a title="Overview" href="#overview">Overview</a></li>
-                                        
-                                    </ul>
+                            <li class=""><a href="patterns-components-metadata.html">Metadata </a>
                                 
                             </li>
                         
@@ -204,7 +198,7 @@
                         
                     
                         
-                            <li class=""><a href="patterns-patterns-search.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Search </a>
+                            <li class="active"><a href="patterns-patterns-search.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Search </a>
                                 
                             </li>
                         
@@ -226,62 +220,64 @@
         </nav>
         <section class="pl-content">
             
+                <div class="pl-preview-header">This document is a preview.</div>
+            
             <div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="overview" href="#overview"><i class="fa fa-link"></i></a> Overview</h3>
-The metadata pattern can be used for showing key/value pairs.</p>
+<p>If your application features a primary search bar, use this pattern.</p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
-<div class="row">
-    <div class="col-md-6">
-        <dl class="dl-horizontal">
-            <dt>Examiner</dt>
-            <dd>IP, Sikyin / 69776 / 1742</dd>
-            <dt>SPE (Multiple)</dt>
-            <dd>John Olaskey</dd>
-            <dt>Applicants</dt>
-            <dd>Roman Amirpur</dd>
-            <dt>Inventors</dt>
-            <dd>Disney Dale</dd>
-            <dt>Law Firm</dt>
-            <dd>Clayton & Clayton Associates</dd>
-        </dl>
-    </div>
-    <div class="col-md-6">
-        <dl class="dl-horizontal">
-            <dt>Confirmation #</dt>
-            <dd>1662</dd>
-            <dt>Publication #</dt>
-            <dd><a href="">32132132132 <i class="fa fa-external-link-square fa-1x"></i></a></dd>
-            <dt>Patent #</dt>
-            <dd>---</dd>
-            <dt>Attorney Docket #</dt>
-            <dd>10951/1202</dd>
-            <dt>Foreign Priority Claimed</dt>
-            <dd>Yes</dd>
-        </dl>
+<div style="width: 400px">
+    <div class="input-group">
+        <input type="text" placeholder="Search" class="form-control">
+        <span class="input-group-btn">
+            <button class="btn btn-info btn-search"><i class="fa fa-search"></i></button>
+        </span>
     </div>
 </div>
 </div>
-<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">dl</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dl-horizontal"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">dt</span>&gt;</span>Confirmation #<span class="hljs-tag">&lt;/<span class="hljs-title">dt</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">dd</span>&gt;</span>1662<span class="hljs-tag">&lt;/<span class="hljs-title">dd</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">dt</span>&gt;</span>Patent #<span class="hljs-tag">&lt;/<span class="hljs-title">dt</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">dd</span>&gt;</span>---<span class="hljs-tag">&lt;/<span class="hljs-title">dd</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">dl</span>&gt;</span>
-</code></pre>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div style="width: 400px">
+    <div class="input-group">
+        <input type="text" placeholder="Search" class="form-control">
+        <span class="input-group-btn">
+            <button class="btn btn-info btn-search"><i class="fa fa-search"></i></button>
+        </span>
+    </div>
+    <div class="help-block">
+        <a href="">Show advanced search</a>
+    </div>
+</div>
+</div>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div style="width: 400px">
+    <div class="input-group">
+        <div class="input-group-btn">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Patents <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">Patents</a></li>
+              <li><a href="#">Applications</a></li>
+            </ul>
+        </div>
+        <input type="text" placeholder="Search" class="form-control">
+        <span class="input-group-btn">
+            <button class="btn btn-info btn-search"><i class="fa fa-search"></i></button>
+        </span>
+    </div>
+</div>
+</div>
 </div>
 
             
                 <div class="pl-footer">
                     
-                        <a class="pl-footer-previous btn btn-link" style="text-align: left" href="patterns-components-menus.html">
+                        <a class="pl-footer-previous btn btn-link" style="text-align: left" href="patterns-patterns-filters.html">
                             <div class="text-muted" style="font-size: 11px">PREVIOUS</div>
-                            Menus
+                            Filters
                         </a>
                     
                     
-                        <a class="pl-footer-next pull-right btn btn-link" style="text-align: right" href="patterns-components-pagination.html">
+                        <a class="pl-footer-next pull-right btn btn-link" style="text-align: right" href="patterns-patterns-settings.html">
                             <div class="text-muted" style="font-size: 11px">NEXT</div>
-                            Pagination
+                            Settings
                         </a>
                     
                 </div>
