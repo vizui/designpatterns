@@ -17,13 +17,16 @@ __Don't__
 - Place unrelated inputs on the same line
 
 
-This is an evolving document. Here are some things that are still being worked on.<br>
+This is an evolving document. Here are some things that are still being worked on:
+
 <span class="label label-warning">TODO</span> Field width guidelines<br>
 <span class="label label-warning">TODO</span> Advanced options<br>
 <span class="label label-warning">TODO</span> Dynamic/evolving forms<br>
 <span class="label label-warning">TODO</span> Input/format parsing<br>
 <span class="label label-warning">TODO</span> Add/remove fields (e.g., multiple phone numbers)<br>
 <span class="label label-warning">TODO</span> More examples<br>
+
+&nbsp;
 
 
 [/pattern]

@@ -25,6 +25,8 @@ The following functionality can be provided by tables:
 
 A table's complexity and needs can vary greatly. This pattern provides many different features a table _may_ have. Features can be mixed and matched based on your needs. Don't include features unless they're actually needed.
 
+&nbsp;
+
 [/pattern]
 
 [pattern]
