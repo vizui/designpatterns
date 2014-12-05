@@ -44,7 +44,7 @@ Text boxes allow for single line input.
 
 Input masks ensure that the user understands the input format required, in addition to making input less error-prone by potentially restricting the number or types of characters that can be entered.
 
-<span class="text-muted">These examples use https://github.com/RobinHerbots/jquery.inputmask for demo purposes.</span>
+<span class="text-muted">Example uses https://github.com/RobinHerbots/jquery.inputmask for demo purposes.</span>
 [preview]
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
     <div class="row">
@@ -211,7 +211,7 @@ A select, sometimes referred to as a combo box, provides functionality for choos
 #### Basic functionality
 When clicked, the user is shown all available options and can make a selection. When a selection is made, the dropdown closes and the select control updates to reflect the current selection. If there are 5 or more options, the list should allow for filtering via a text field.
 
-<span class="text-muted">These examples use https://github.com/ivaynberg/select2 for demo purposes.</span>
+<span class="text-muted">Example uses https://github.com/ivaynberg/select2 for demo purposes.</span>
 [preview]
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
     <div class="row">
@@ -353,7 +353,7 @@ When clicked, the user is shown all available options and can make a selection. 
 [/pattern]
 [pattern]
 ### Date picker
-<span class="text-muted">Example uses jQuery UI.</span>
+<span class="text-muted">Example uses jQuery UI for demo purposes.</span>
 [preview]
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
     <div class="row">
@@ -395,7 +395,7 @@ When clicked, the user is shown all available options and can make a selection. 
 
 [pattern]
 ### Slider
-<span class="text-muted">Example uses HTML5 input range/slider. IE10+</span>
+<span class="text-muted">Example uses HTML5 input range/slider for demo purposes (IE10+).</span>
 [preview]
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
     <div class="row">
