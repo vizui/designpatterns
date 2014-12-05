@@ -353,6 +353,7 @@ When clicked, the user is shown all available options and can make a selection. 
 [/pattern]
 [pattern]
 ### Date picker
+<span class="text-muted">Example uses jQuery UI.</span>
 [preview]
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
     <div class="row">
@@ -383,6 +384,37 @@ When clicked, the user is shown all available options and can make a selection. 
     </div>
 </div>
 
+[/preview]
+
+```html
+
+```
+
+[/pattern]
+
+
+[pattern]
+### Slider
+<span class="text-muted">Example uses HTML5 input range/slider. IE10+</span>
+[preview]
+<div class="container-fluid" style="max-width: 400px; margin: 0;">
+    <div class="row">
+        <form role="form" class="col-sm-12 form-horizontal">
+            <div class="form-group">
+                <label for="se15" class="col-sm-3 control-label">Normal</label>
+                <div class="col-sm-9">
+                    <input class="form-control" type="range">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="se16" class="col-sm-3 control-label">Disabled</label>
+                <div class="col-sm-9">
+                    <input class="form-control" type="range" disabled>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
 [/preview]
 
 ```html

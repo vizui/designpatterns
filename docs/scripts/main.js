@@ -161,3 +161,17 @@ $('.nav-stacked.nav-tree > li').each(function () {
         }
     });
 });
+
+
+
+/* example progress bar */
+$("#exampleProgressBar").each(function() {
+    var barEl = $(this);
+    var valueEl = $('#exampleProgressBarValue');
+    var progress = parseInt(this.style.width, 10);
+    setInterval(function () {
+        barEl.css('width', ((progress += 19) % 100) + "%");
+        valueEl.text(progress % 100 + "%");
+    }, 1000);
+});
+
