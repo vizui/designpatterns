@@ -97,6 +97,28 @@ Medium-sized paging contains a single dropdown for changing the page size and ju
  <a href="#" class="btn btn-default"><i class="fa fa-angle-right"></i></a>
 </div>
 [/preview]
+[preview]
+<div class="dropdown" style="display: inline-block">
+    <button type="button" id="dropdownMenu3" class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span class="text-muted normal">Page</span> 15 <span class="text-muted normal">of</span> 25 <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+        <li role="presentation" class="dropdown-header">Jump to page</li>
+        <li style="padding: 0 16px;" role="presentation">
+            <form action="">
+                <input type="text" placeholder="15" class="form-control"/>
+            </form>
+        </li>
+        <li class="divider"></li>
+        <li role="presentation" class="dropdown-header">Show up to</li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
+    </ul>
+</div> <div class="btn-group">
+  <a href="#" class="btn btn-default"><i class="fa fa-angle-left"></i></a>
+ <a href="#" class="btn btn-default"><i class="fa fa-angle-right"></i></a>
+</div>
+[/preview]
 
 #### Small
 
