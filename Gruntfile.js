@@ -360,6 +360,13 @@ module.exports = function (grunt) {
                 cwd: '<%= paths.app %>/styles',
                 dest: '<%= paths.tmp %>/styles/',
                 src: '{,*/}*.css'
+            },
+            images: {
+                expand: true,
+                dot: true,
+                cwd: 'images',
+                dest: '<%= paths.tmp %>/images/',
+                src: '*.*'
             }
         },
 
@@ -372,7 +379,8 @@ module.exports = function (grunt) {
                 'less:server',
                 'patterns',
                 'template',
-                'copy:styles'
+                'copy:styles',
+                'copy:images'
             ],
             dist: [
                 // 'lesslint',
@@ -380,6 +388,7 @@ module.exports = function (grunt) {
                 'less',
                 // 'patterns',
                 'copy:styles',
+                'copy:images',
                 'imagemin',
                 'svgmin'
             ]
