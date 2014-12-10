@@ -52,7 +52,7 @@ Tabs manage stacked panes of content, giving the users the ability to view only 
 
 [pattern]
 ### Light tabs
-Use when yours tabs need less emphasis in relation to other navigational elements. 
+Use when the tabs need less emphasis in relation to other navigational elements. 
 [preview]
 <ul class="nav nav-tabs nav-tabs-light" role="tablist">
   <li class="active"><a href="#" role="tab" data-toggle="tab">Active</a></li>
