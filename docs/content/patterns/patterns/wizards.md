@@ -42,7 +42,7 @@ In many cases it's beneficial to show the list of steps a wizard will have. Depe
 - Navigation may evolve depending on previous steps
 
 #### Vertical steps
-Use vertical steps when there are many steps or 'nested' steps. 
+Use vertical steps when there are 5 or more steps, when there are nested steps, or when steps are categorized.
 
 [preview]
 <div class="">
@@ -51,7 +51,7 @@ Use vertical steps when there are many steps or 'nested' steps.
             <div style="width: 200px; min-height: 400px; float: left;">
                 <div class="panel-body">
                     <h4>New alert</h4>
-                    <p>Add and configure new alerts for this environment.</p>
+                    <p>Add and configure new alerts for an environment.</p>
                 </div>
                 <ul class="nav nav-stacked nav-tree" role="tab-list">
                     <li role="presentation"><a role="tab" href="#"><span style="margin-left: -10px; position: relative; top: 1px;" class="fa fa-1x fa-fw fa-check text-success"></span> Criteria</a></li>
@@ -92,8 +92,8 @@ Use vertical steps when there are many steps or 'nested' steps.
                         </div>
                     </div>
                         <div class="text-right" style="position: absolute; padding: 15px; bottom: 0; right: 0; left: 0;">
-                        <button class="btn btn-link pull-left">Back</button>
-                        <button class="btn btn-primary">Next: Configure</button>
+                        <button class="btn btn-default pull-left">Back</button>
+                        <button class="btn btn-primary">Continue</button>
                     </div>
                 </div>
             </div>
@@ -105,19 +105,28 @@ Use vertical steps when there are many steps or 'nested' steps.
 &nbsp;
 
 #### Horizontal steps
-Use horizontal steps when there are few steps.
+Use horizontal steps when there are 4 or less steps.
 
 [preview]
 <div class="">
     <div class="" style="margin: auto; max-width: 450px;">
         <div class="panel panel-default" style="overflow: auto; position: relative;">
+            <div class="panel-heading" style="background-color: transparent;">
+                <h4 class="text-center">Create your account</h4>
+                <br>
+                <ol class="nav-steps">
+                    <li  style="width:33.3%">
+                        <span>Account</span>
+                    </li>
+                    <li class="active" style="width:33.3%">
+                        <span>Personal</span>
+                    </li>
+                    <li class="" style="width:33.3%">
+                        <span>Customize</span>
+                    </li>
+                </ol>
+            </div>
             <div class="panel-body">
-                <h3 class="text-center">Create your account</h3>
-                <ul class="nav nav-steps nav-centered" style="">
-                    <li class="success"><a href=""><i class="step-icon"><i class="fa fa-check"></i></i><div>Account</div></a></li>
-                    <li class="active"><a href=""><i class="step-icon">2</i><div>Personal</div></a></li>
-                    <li class="disabled"><a href=""><i class="step-icon">3</i><div>Customize</div></a></li>
-                </ul>
                 <form class="" role="form">
                     <div class="form-group">
                       <label for="name1" class="control-label required">Name</label>
@@ -139,8 +148,8 @@ Use horizontal steps when there are few steps.
                     </div>
                 </form>
                 <div class="text-right">
-                    <button class="btn btn-link pull-left">Back</button>
-                    <button class="btn btn-primary">Next: Customize</button>
+                    <button class="btn btn-default pull-left">Back</button>
+                    <button class="btn btn-primary">Continue</button>
                 </div>
             </div>
             <!-- <div style="text-align: right; padding: 15px;">

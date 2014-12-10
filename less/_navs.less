@@ -236,40 +236,69 @@
 }
 
 .nav-steps {
-    text-align: center;
-    padding: 10px;
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+    word-wrap: break-word;
+    margin-left: 0;
+    padding: 0;
     > li {
-        display: inline-block;
-        margin: 0;
+        display: table-cell;
+        max-width: 150px;
+        min-width: 75px;
+        text-align: center;
+        padding: 0 10px;
 
-        > a {
+        > a, > span {
+            display: block;
             font-weight: 600;
-            display: inline-block;
+            outline: none;
+            padding-top: 25px;
+            position: relative;
         }
-        > a > .step-icon {
-            font-style: normal;
-            display: inline-block;
-            text-align: center;
-            padding: 3px;
-            margin-bottom: 4px;
-            width: 25px;
-            height: 25px;
+
+        > a:before, > span:before {
             background: @brand-primary;
-            color: #fff;
-            border-radius: 50%;
+            border-radius: 100%;
+            content: "";
+            box-shadow: 0 0 0 3px #f5f5f5;
+            height: 10px;
+            left: 50%;
+            margin-left: -5px;
+            position: absolute;
+            top: 3px;
+            width: 10px;
         }
+    }
 
-        &.success {
-            > a > .step-icon {
-                background: @brand-success;
-            }
-            > a {
-                color: @brand-success;
-            }
-        }
+    li + li > span:after,
+    li + li > a:after {
+      background: @brand-primary;
+      border: solid #f5f5f5;
+      border-width: 2px 0;
+      box-shadow: -5px 0 0 -2px @brand-primary, 5px 0 0 -2px @brand-primary;
+      content: "";
+      height: 8px;
+      left: -50%;
+      margin-left: -14px;
+      margin-right: 6px;
+      position: absolute;
+      right: 50%;
+      top: 4px;
+    }
 
-        &.disabled > a > .step-icon {
-            background: @gray-light;
-        }
+    .active ~ li {
+      color: #707070;
+    }
+
+    .active ~ li > span:before,
+    .active ~ li > a:before {
+      background-color: #cccccc;
+    }
+
+    .active ~ li > span:after,
+    .active ~ li > a:after {
+      background-color: #f5f5f5;
+      box-shadow: none;
     }
 }
