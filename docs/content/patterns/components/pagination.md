@@ -53,7 +53,12 @@ Full paging contains separate dropdowns for adjusting the page size and jumping 
             <li role="presentation" class="dropdown-header">Jump to page</li>
             <li style="padding: 0 16px;" role="presentation">
                 <form action="">
-                    <input type="text" placeholder="15" class="form-control"/>
+                    <div class="input-group input-group-sm">
+                        <input type="text" placeholder="15" class="form-control"/>
+                        <div class="input-group-btn">
+                            <button class="btn btn-default">Go</button>
+                        </div>
+                    </div>
                 </form>
             </li>
         </ul>
@@ -82,7 +87,12 @@ Medium-sized paging contains a single dropdown for changing the page size and ju
         <li role="presentation" class="dropdown-header">Jump to item</li>
         <li style="padding: 0 16px;" role="presentation">
             <form action="">
-                <input type="text" placeholder="150" class="form-control"/>
+                <div class="input-group input-group-sm">
+                    <input type="text" placeholder="150" class="form-control"/>
+                    <div class="input-group-btn">
+                        <button class="btn btn-default">Go</button>
+                    </div>
+                </div>
             </form>
         </li>
         <li class="divider"></li>
@@ -104,7 +114,12 @@ Medium-sized paging contains a single dropdown for changing the page size and ju
         <li role="presentation" class="dropdown-header">Jump to page</li>
         <li style="padding: 0 16px;" role="presentation">
             <form action="">
-                <input type="text" placeholder="15" class="form-control"/>
+                <div class="input-group input-group-sm">
+                    <input type="text" placeholder="15" class="form-control"/>
+                    <div class="input-group-btn">
+                        <button class="btn btn-default">Go</button>
+                    </div>
+                </div>
             </form>
         </li>
         <li class="divider"></li>
@@ -133,7 +148,12 @@ Small paging contains a single button group, containing left/right buttons and a
         <li role="presentation" class="dropdown-header">Jump to page</li>
         <li style="padding: 0 16px;" role="presentation">
             <form action="">
-                <input type="text" placeholder="15" class="form-control"/>
+                <div class="input-group input-group-sm">
+                    <input type="text" placeholder="15" class="form-control"/>
+                    <div class="input-group-btn">
+                        <button class="btn btn-default">Go</button>
+                    </div>
+                </div>
             </form>
         </li>
         <li class="divider"></li>
@@ -145,6 +165,8 @@ Small paging contains a single button group, containing left/right buttons and a
     </ul>
 </div>
 [/preview]
+
+
 
 [/pattern]
 
