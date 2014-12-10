@@ -17,7 +17,7 @@
 
         <link rel="stylesheet" href="styles/333b841e.vendor.css">
 
-        <link rel="stylesheet" href="styles/96e8bd04.main.css">
+        <link rel="stylesheet" href="styles/1fe2983b.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -116,6 +116,8 @@
                                         
                                             <li><a title="Date picker" href="#date-picker">Date picker</a></li>
                                         
+                                            <li><a title="Slider" href="#slider">Slider</a></li>
+                                        
                                     </ul>
                                 
                             </li>
@@ -157,6 +159,10 @@
                             </li>
                         
                     
+                        
+                            <li class=""><a href="patterns-components-progressBars.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Progress and loading </a>
+                                
+                            </li>
                         
                     
                         
@@ -271,7 +277,7 @@
 </code></pre>
 <h4>Input masks</h4>
 <p>Input masks ensure that the user understands the input format required, in addition to making input less error-prone by potentially restricting the number or types of characters that can be entered.</p>
-<p><span class="text-muted">These examples use https://github.com/RobinHerbots/jquery.inputmask for demo purposes.</span></p>
+<p><span class="text-muted">Example uses https://github.com/RobinHerbots/jquery.inputmask for demo purposes.</span></p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="container-fluid" style="max-width: 400px; margin: 0">
     <div class="row">
@@ -405,7 +411,7 @@
 <p>A select, sometimes referred to as a combo box, provides functionality for choosing an option from a set. It is similar to dropdown button but facilitates item selection, filtering, and reflects the currently selected value.</p>
 <h4>Basic functionality</h4>
 <p>When clicked, the user is shown all available options and can make a selection. When a selection is made, the dropdown closes and the select control updates to reflect the current selection. If there are 5 or more options, the list should allow for filtering via a text field.</p>
-<p><span class="text-muted">These examples use https://github.com/ivaynberg/select2 for demo purposes.</span></p>
+<p><span class="text-muted">Example uses https://github.com/ivaynberg/select2 for demo purposes.</span></p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="container-fluid" style="max-width: 400px; margin: 0">
     <div class="row">
@@ -539,7 +545,8 @@
 </code></pre>
 </div>
 <div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="date-picker" href="#date-picker"><i class="fa fa-link"></i></a> Date picker</h3></p>
+<p><h3><a class="pl-heading-link" id="date-picker" href="#date-picker"><i class="fa fa-link"></i></a> Date picker</h3>
+<span class="text-muted">Example uses jQuery UI for demo purposes.</span></p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="container-fluid" style="max-width: 400px; margin: 0">
     <div class="row">
@@ -564,6 +571,32 @@
                             <input id="dp3" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'" type="text" class="datepicker form-control">
                         </div>
                     </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+<pre><code class="hljs html">
+</code></pre>
+</div>
+<div class="pl-pattern">
+<p><h3><a class="pl-heading-link" id="slider" href="#slider"><i class="fa fa-link"></i></a> Slider</h3>
+<span class="text-muted">Example uses HTML5 input range/slider for demo purposes (IE10+).</span></p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="container-fluid" style="max-width: 400px; margin: 0">
+    <div class="row">
+        <form role="form" class="col-sm-12 form-horizontal">
+            <div class="form-group">
+                <label for="se15" class="col-sm-3 control-label">Normal</label>
+                <div class="col-sm-9">
+                    <input class="form-control" type="range">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="se16" class="col-sm-3 control-label">Disabled</label>
+                <div class="col-sm-9">
+                    <input class="form-control" type="range" disabled="disabled">
                 </div>
             </div>
         </form>
@@ -598,7 +631,7 @@
 
         <script src="scripts/2c80432f.plugins.js"></script>
 
-        <script src="scripts/1da2a746.main.js"></script>
+        <script src="scripts/c4761bc9.main.js"></script>
 
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
