@@ -19,7 +19,7 @@ The following functionality can be provided by tables:
 - Showing and hiding columns
 - Reordering columns
 - Row selection
-- Performing actions on row
+- Performing actions on a row
 - Grouping by attributes
 - Expanding rows
 
