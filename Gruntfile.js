@@ -367,6 +367,13 @@ module.exports = function (grunt) {
                 cwd: 'images',
                 dest: '<%= paths.tmp %>/images/',
                 src: '*.*'
+            },
+            imagesDist: {
+                expand: true,
+                dot: true,
+                cwd: 'images',
+                dest: '<%= paths.dist %>/images/',
+                src: '*.*'
             }
         },
 
@@ -388,7 +395,7 @@ module.exports = function (grunt) {
                 'less',
                 // 'patterns',
                 'copy:styles',
-                'copy:images',
+                'copy:imagesDist',
                 'imagemin',
                 'svgmin'
             ]
