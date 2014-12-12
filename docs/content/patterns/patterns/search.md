@@ -4,7 +4,6 @@ preview: true
 ---
 
 [pattern]
-If your application features a primary search bar, use this pattern.
 [preview]
 <div style="width: 400px">
     <div class="input-group">
