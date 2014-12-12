@@ -1,20 +1,5 @@
 @import "../bower_components/bootstrap/less/buttons.less";
 
-// A chromeless button until you hover over it, which then looks like btn-default.
-.btn-hover {
-    border-color: transparent;
-    box-shadow: none;
-    background: none;
-    &:hover {
-        &:extend(.btn-default);
-    }
-    &:focus {
-        &:extend(.btn-default:focus);
-    }
-    &:active {
-        &:extend(.btn-default:active);
-    }
-}
 
 // FA icons only look good at 14px.
 .btn .fa {
@@ -32,6 +17,22 @@
 // Add a real subtle shadow to buttons
 .btn {
     box-shadow: 0 1px 1px rgba(0,0,0,.025);
+}
+
+// A chromeless button until you hover over it, which then looks like btn-default.
+.btn.btn-hover {
+    border-color: transparent;
+    box-shadow: none;
+    background: none;
+    &:hover {
+        &:extend(.btn-default);
+    }
+    &:focus {
+        &:extend(.btn-default:focus);
+    }
+    &:active {
+        &:extend(.btn-default:active);
+    }
 }
 
 // Make btn-links bold
