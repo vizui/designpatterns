@@ -80,7 +80,7 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: '<%= paths.tmp %>',
                     dest: '<%= paths.tmp %>',
-                    src: '{index,resources,changelog}.tpl.ejs',
+                    src: '{index,resources,changelog,example-preexam}.tpl.ejs',
                     ext: '.html'
                 }]
             }
