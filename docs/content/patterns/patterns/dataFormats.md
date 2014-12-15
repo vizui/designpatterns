@@ -5,21 +5,48 @@ preview: true
 
 [pattern]
 ### Date and time
-Formats:
-- `time` 10:00 AM
-- `short date` Jan 11
-- `long date` Apr 23, 2010
-- `short date, time` Feb 5, 8:00 AM
-- `long date, time` Feb 8, 2014, 1:00 PM
-- `day of week, time` Mon, 7:30 AM
-- `day of week, short date, time` Mon, Mar 15, 3:25 PM
+#### Formats
+<table class="table table-bordered" style="max-width: 600px;">
+    <colgroup>
+        <col style="width: 60%">
+        <col style="width: 40%;">
+    </colgroup>
+    <tbody>
+        <tr>
+            <td><code>time</code></td>
+            <td>10:00 AM</td>
+        </tr>
+        <tr>
+            <td><code>short date</code></td>
+            <td> Jan 11</td>
+        </tr>
+        <tr>
+            <td><code>long date</code></td>
+            <td> Apr 23, 2010</td>
+        </tr>
+        <tr>
+            <td><code>short date, time</code></td>
+            <td> Feb 5, 8:00 AM</td>
+        </tr>
+        <tr>
+            <td><code>long date, time</code></td>
+            <td> Feb 8, 2014, 1:00 PM</td>
+        </tr>
+        <tr>
+            <td><code>day of week, time</code></td>
+            <td> Mon, 7:30 AM</td>
+        </tr>
+        <tr>
+            <td><code>day of week, short date, time</code></td>
+            <td> Mon, Mar 15, 3:25 PM</td>
+        </tr>
+    </tbody>
+</table>
 
-In some cases it may make sense to add a tooltip to a formatted date to reveal the whole date/time (e.g, when showing a `short date`, the tooltip can show `long date, time`).
+#### Smart format
 
-<hr>
-
-For dates/times associated with user generated data, use the `smart format`:
-<table class="table table-borderless" style="max-width: 600px;">
+For dates/times associated with user generated data (e.g., notes, documents), use the `smart format`, which changes depending on the current date and the date to display.
+<table class="table table-bordered" style="max-width: 600px;">
     <colgroup>
         <col style="width: 60%">
         <col style="width: 40%;">
@@ -39,8 +66,10 @@ For dates/times associated with user generated data, use the `smart format`:
         </tr>
     </tbody>
 </table>
-<hr>
-<table class="table table-borderless" style="max-width: 600px">
+
+#### Other
+
+<table class="table table-bordered" style="max-width: 600px">
     <colgroup>
         <col style="width: 60%">
         <col style="width: 40%;">
