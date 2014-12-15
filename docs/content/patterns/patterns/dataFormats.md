@@ -11,8 +11,8 @@ Formats:
 - `long date` Apr 23, 2010
 - `short date, time` Feb 5, 8:00 AM
 - `long date, time` Feb 8, 2014, 1:00 PM
-- `day of week, short date, time` Mon, Mar 15, 3:25 PM
 - `day of week, time` Mon, 7:30 AM
+- `day of week, short date, time` Mon, Mar 15, 3:25 PM
 
 In some cases it may make sense to add a tooltip to a formatted date to reveal the whole date/time (e.g, when showing a `short date`, the tooltip can show `long date, time`).
 
@@ -26,15 +26,15 @@ For dates/times associated with user generated data, use the `smart format`:
     </colgroup>
     <tbody>
         <tr>
-            <td>If the date is in the past or future on the current day, format as <code>hh:mm AM/PM</code></td>
+            <td>If the date is in the past or future on the current day, format as <code>time</code> only</td>
             <td>10:00 AM</td>
         </tr>
         <tr>
-            <td>If the date is in the past or future within the current calendar year, format as <code>MMM dd</code></td>
+            <td>If the date is in the past or future within the current calendar year, format as <code>short date</code></td>
             <td>Jan 11</td>
         </tr>
         <tr>
-            <td>If the date is in the past or future outside the current calendar year, format as <code>MMM dd, yyyy</code></td>
+            <td>If the date is in the past or future outside the current calendar year, format as <code>long date</code></td>
             <td>Apr 23, 2010</td>
         </tr>
     </tbody>
