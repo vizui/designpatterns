@@ -318,6 +318,7 @@ When clicked, the user is shown all available options and can make a selection. 
 
 [pattern]
 ### Multi-select
+This is the native browser multi-select. `Ctrl+click` (or `cmd+click`) toggles selection on an item. `shift+click` performs a range selection. A single `click` sets the selection to only that item.
 [preview]
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
     <div class="row">
