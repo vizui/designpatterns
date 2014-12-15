@@ -164,10 +164,13 @@ A radio button has two states, checked and unchecked. Radio buttons are always i
 Users need to specify which option(s) from a set are applicable/valid/true based on a label. 
 
 #### Description
-A checkbox allows the user to mark any number of choices from a set as checked. 
+A set of Checkboxes are used when a user is able to select none, one, or multiple options. A single checkbox is used when a user is able to select or not select an option.
 
 #### Basic functionality
-When clicked, a checkbox's state toggles between unchecked and checked. Checkboxes can have an indeterminate state that is set based on external interactions (e.g., indicating that some but not all items in a collection are selected). Checkbox labels should use sentence casing.
+- When clicked, a checkbox's state toggles between unchecked and checked.
+- Checkboxes can have an indeterminate state that is set based on external interactions (e.g., indicating that some but not all items in a collection are selected).
+- Checkbox labels should use sentence casing.
+- The selected state of a checkbox should ideally indicate a positive action, and may require the rephrasing of the label. E.g. a label `Send me weekly reminders`, vs. `Do not send me weekly reminders`
 
 #### Vertical
 [preview]
