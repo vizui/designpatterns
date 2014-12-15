@@ -216,7 +216,7 @@ When the fields are left aligned, the asterisk is placed to the left.
 
 There are two types of form validation, often used together.
 
-- __Inline level__: Validation errors appear directly below the field with errors (e.g., `You can't leave this blank.`)
+- __Inline level__: Validation errors appear directly below the field with errors (e.g., `This field is required.`)
 - __Form level__: Validation errors appear at the top or bottom of the form (e.g., `The email or password you entered is incorrect.`, and `Please fix the 3 errors.`)
 
 __Do__
@@ -245,7 +245,7 @@ __Don't__
       <label for="pw9" class="col-sm-3 control-label required">Password</label>
       <div class="col-sm-9">
         <input type="password" class="form-control" id="pw9" >
-        <span class="help-block">You can't leave this blank.<span>
+        <span class="help-block">This field is required.<span>
       </div>
     </div>
     <div class="form-group">
@@ -271,7 +271,7 @@ __Don't__
     <label for="pw9" class="col-sm-3 control-label required">Password</label>
     <div class="col-sm-9">
       <input type="password" class="form-control" id="pw9" >
-      <span class="help-block">You can't leave this blank.<span>
+      <span class="help-block">This field is required.<span>
     </div>
   </div>
   <div class="form-group">
@@ -962,7 +962,7 @@ These examples show various form configurations.
           <div class="form-group has-error">
             <label class="control-label required" for="mn12">Middle name</label>
             <input type="text" class="form-control" id="mn12">
-            <span class="help-block">Middle name is required.</span>
+            <span class="help-block">This field is required.</span>
           </div>
           <div class="form-group">
             <label class="control-label required" for="ln12">Last name</label>
@@ -1047,7 +1047,7 @@ These examples show various form configurations.
       <div class="form-group has-error">
         <label class="control-label required" for="mn12">Middle name</label>
         <input type="text" class="form-control" id="mn12">
-        <span class="help-block">Middle name is required.</span>
+        <span class="help-block">This field is required.</span>
       </div>
       <div class="form-group">
         <label class="control-label required" for="ln12">Last name</label>
