@@ -349,7 +349,12 @@ __Don't__
 [pattern]
 ### Help text
 
-Help text can be placed at the top of the form, under the heading of a form group, and under an individual form field. Use the class `help-block` for lightened help text.
+Help text can be placed at the top of the form, under the heading of a form group, under an individual form field, or as a popover when the field is focused.
+
+- Place help text at the top of the form to give information that relates to the entire form
+- Place help text under the heading of a form group to give information that relates to that form group alone
+- Place short help text under an individual form field that relates to that field alone
+- Use a popover on an input field (text box, text area, or select) for help text that is lengthy or not 
 
 [preview]
 
@@ -375,9 +380,9 @@ Help text can be placed at the top of the form, under the heading of a form grou
             </div>
         </div>
         <div class="form-group">
-            <label for="ht1" class="col-sm-3 control-label">URL</label>
+            <label for="po1" class="col-sm-3 control-label">Popover</label>
             <div class="col-sm-9">
-                <input class="form-control" type="text" id="ht1">
+                <input class="form-control" type="password" id="po1" data-html="true" data-toggle="popover" data-container="body" data-trigger="focus" data-content="Use at least 8 characters. Don’t use a password from another site, or something too obvious like your pet’s name. <a href=''>Why?</a>">
             </div>
         </div>
     </form>
