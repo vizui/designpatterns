@@ -121,9 +121,7 @@ In general, use the button style that matches the action. In some scenarios, the
 [pattern]
 ### Confirmation
 
-A confirmation dialog is short, simple dialog that ensures the user is performing an action intentionally. This is especially useful for dangerous, irreversible operations.
-
-A confirmation dialog may or may not contain an icon.
+A confirmation dialog is short, simple dialog that ensures the user is performing an action intentionally. This is especially useful for dangerous or irreversible operations.
 
 [preview]
 <div class="modal fade in" style="display: block; position: relative; z-index: inherit;">
