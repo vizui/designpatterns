@@ -138,15 +138,15 @@ When the fields are top aligned, the asterisk is placed on the right.
 <div class="row">
   <form class="col-sm-10 col-md-8 col-lg-6" role="form">
     <div class="form-group col-sm-offset-3">
-      <label for="emailInput3" class="control-label required">Email</label>
-      <input type="email" class="form-control" id="emailInput3">
-    </div>
-    <div class="form-group col-sm-offset-3">
-      <label for="emailInput4" class="control-label">Password</label>
-      <input type="password" class="form-control" id="emailInput4">
-    </div>
-    <div class="form-group col-sm-offset-3">
         <span class="help-block text-right">* indicates required</span>
+    </div>
+    <div class="form-group col-sm-offset-3">
+      <label for="nameInput3" class="control-label required">Name</label>
+      <input type="text" class="form-control" id="nameInput3" required>
+    </div>
+    <div class="form-group col-sm-offset-3">
+      <label for="emailInput3" class="control-label">Email</label>
+      <input type="email" class="form-control" id="emailInput3">
     </div>
   </form>
 </div>
@@ -155,15 +155,15 @@ When the fields are top aligned, the asterisk is placed on the right.
 ```html
 <form class="form-horizontal col-sm-10 col-md-8 col-lg-6" role="form">
   <div class="form-group">
-    <label for="emailInput5" class="col-sm-3 control-label required">Email</label>
+    <label for="nameInput5" class="col-sm-3 control-label required">Name</label>
     <div class="col-sm-9">
-      <input type="email" class="form-control" id="emailInput5">
+      <input type="text" class="form-control" id="nameInput5" required>
     </div>
   </div>
   <div class="form-group">
-    <label for="pw6" class="col-sm-3 control-label">Password</label>
+    <label for="emailInput5" class="col-sm-3 control-label">Email</label>
     <div class="col-sm-9">
-      <input type="password" class="form-control" id="pw6">
+      <input type="email" class="form-control" id="emailInput5">
     </div>
   </div>
 </form>
@@ -177,15 +177,15 @@ When the fields are left aligned, the asterisk is placed to the left.
 <div class="row">
   <form class="form-horizontal col-sm-10 col-md-8 col-lg-6" role="form">
     <div class="form-group">
-      <label for="em7" class="col-sm-3 control-label required">Email</label>
+      <label for="nm7" class="col-sm-3 control-label required">Name</label>
       <div class="col-sm-9">
-        <input type="email" class="form-control" id="em7">
+        <input type="text" class="form-control" id="nm7" required>
       </div>
     </div>
     <div class="form-group">
-      <label for="pw7" class="col-sm-3 control-label">Password</label>
+      <label for="em7" class="col-sm-3 control-label">Email</label>
       <div class="col-sm-9">
-        <input type="password" class="form-control" id="pw7">
+        <input type="email" class="form-control" id="em7">
       </div>
     </div>
   </form>
