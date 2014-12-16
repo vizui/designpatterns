@@ -220,8 +220,9 @@ The user needs to choose an option from a predefined set.
 - A select, sometimes referred to as a combo box, provides functionality for choosing an option from a set
 - It is similar to dropdown button but facilitates item selection, filtering, and reflects the currently selected value
 - When clicked, the user is shown all available options and can make a selection
-- When a selection is made, the dropdown closes and the select control updates to reflect the current selection. 
-- If there are 5 or more options, the list should allow for filtering via a text field.
+- When a selection is made, the dropdown closes and the select control updates to reflect the current selection
+- If there are 5 or more options, the list should allow for filtering via a text field
+- For empty selects, use a placeholder in the format of `Select a [type]...` or `Select...`
 
 <span class="text-muted">Example uses https://github.com/ivaynberg/select2 for demo purposes.</span>
 [preview]
@@ -301,6 +302,17 @@ The user needs to choose an option from a predefined set.
                         <option value="WV">West Virginia</option>
                         <option value="WI">Wisconsin</option>
                         <option value="WY">Wyoming</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sel175"  class="col-sm-3 control-label">Placeholder</label>
+                <div class="col-sm-9">
+                    <select id="sel175" data-placeholder="Select a database..." class="form-control select2">
+                        <option></option>
+                        <option value="A">mongodb</option>
+                        <option value="B">mysql</option>
+                        <option value="C">leveldb</option>
                     </select>
                 </div>
             </div>
