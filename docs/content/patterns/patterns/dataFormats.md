@@ -91,3 +91,12 @@ For dates/times associated with user generated data (e.g., notes, documents), us
 </table>
 
 [/pattern]
+
+[pattern]
+### File sizes
+- 340 KB (round to nearest KB)
+- 4.13 MB (two decimal max)
+- 3.22 GB (two decimal max)
+- 1.13 TB (two decimal max)
+
+[/pattern]
