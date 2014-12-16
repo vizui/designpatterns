@@ -21,7 +21,7 @@ __Types:__
 <div style="max-width: 450px;">
     <div class="alert alert-info">
         <button type="button" class="close" ><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <i class="fa fa-info alert-icon"></i> Press the <strong>'A'</strong> key to automatically assign a case.
+        <i class="fa fa-info-circle alert-icon"></i> Press the <strong>'A'</strong> key to automatically assign a case.
     </div>
     <div class="alert alert-success">
         <button type="button" class="close" ><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
