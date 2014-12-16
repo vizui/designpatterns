@@ -31,6 +31,13 @@
     }
  }
 
+.select2-container .select2-default {
+    color: @gray-light !important; // necessary due to origin select2 css
+    .select2-arrow b {
+        color: @text-color;
+    }
+ }
+
  .select2-drop.select2-drop-above.select2-drop-active {
     &:extend(.btn-default:active);
     background: #fff;
