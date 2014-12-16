@@ -33,7 +33,7 @@ Use tooltips for providing information that does not need to be visible at all t
 
 [pattern]
 ### Positioning
-Tooltips can be positioned either above, below, to the left, or to the right of target element. In many situations, tooltips need to be positioned dynamically based on the available space around the target element.
+Tooltips can be positioned either above, below, to the left, or to the right of target element. In many situations, tooltips should be positioned dynamically based on the available space around the target element.
 [preview]
 <div style="width: 120px;">
     <button type="button" class="btn btn-block btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip above">Position above</button>

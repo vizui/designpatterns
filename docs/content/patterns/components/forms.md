@@ -214,10 +214,12 @@ When the fields are left aligned, the asterisk is placed to the left.
 [pattern]
 ### Form validation
 
-There are two types of form validation, often used together.
+There are two main types of form validation, often used together.
 
-- __Inline level__: Validation errors appear directly below the field with errors (e.g., `This field is required.`)
+- __Field level__: Validation errors appear directly below the field with errors (e.g., `This field is required.`)
 - __Form level__: Validation errors appear at the top or bottom of the form (e.g., `The email or password you entered is incorrect.`, and `Please fix the 3 errors.`)
+
+For input fields that are cramped, you may need to resort to using a popover error message.
 
 __Do__
 - Scroll to and focus the first field with an error when the submit button is pressed.

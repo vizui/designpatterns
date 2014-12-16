@@ -9,10 +9,13 @@ preview: true
 Users need to be able to access additional related information or functionality without a change in context.
 
 #### Description
-Popovers are a cross between a dialog and a tooltip. Popovers are smaller contextual dialogs that are generally triggered by a click. They may or may not provide additional interactive controls.  
-
-#### Basic functionality
-Popovers display information or functionality related to a particular item or control. When the item or control is clicked, the popover is displayed. Popovers can be dismissed via a close icon, clicking the control that opened it, or by clicking anywhere outside of the popover. The amount of content in a popover should be relatively short, but they can be scrollable if necessary.
+- Popovers are a cross between a dialog and a tooltip
+- Popovers are smaller contextual dialogs that are generally triggered by a click
+- They may or may not provide additional interactive controls
+- Popovers display information or functionality related to a particular item or control
+- Popovers can be dismissed via a close icon, clicking the control that opened it, or by clicking anywhere outside of the popover
+- The amount of content in a popover should be relatively short, but they can be scrollable if necessary
+- Popovers should be positioned based on the screen space available, 
 
 Use a popover instead of a tooltip or dialog when:
 - You want a contextual relationship that a dialog can't provide
@@ -34,13 +37,10 @@ Use a popover instead of a tooltip or dialog when:
 </div>
 <div class="popover right" style="position: relative; display: block; margin-left: 0; margin-top: 20px;">
   <div class="arrow"></div>
-  <h3 class="popover-title">Search</h3>
   <div class="popover-content">
     <p>Simple search: Type a term in the search field and select the search button.</p>
     <p>Advanced  search: Advanced boolean operators may be used. The default operator when searching multiple terms is “AND”.</p>
-  </div>
-  <div class="popover-toolbar text-right">
-        <a href="">Learn more</a>
+    <a href="">Learn more</a>
   </div>
 </div>
 [/preview]
@@ -48,4 +48,9 @@ Use a popover instead of a tooltip or dialog when:
 ```html
 
 ```
+
+[preview]
+<button class="btn btn-default" data-html="true" data-toggle="popover" data-container="body" data-trigger="focus" data-content="<p>Simple search: Type a term in the search field and select the search button.</p>
+    <p>Advanced  search: Advanced boolean operators may be used. The default operator when searching multiple terms is “AND”.</p> <a href=''>Learn more</a>">Show popover</button>
+[/preview]
 [/pattern]
