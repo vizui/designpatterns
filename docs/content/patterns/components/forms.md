@@ -354,7 +354,7 @@ Help text can be placed at the top of the form, under the heading of a form grou
 - Place help text at the top of the form to give information that relates to the entire form
 - Place help text under the heading of a form group to give information that relates to that form group alone
 - Place short help text under an individual form field that relates to that field alone
-- Use a popover on an input field (text box, text area, or select) for help text that is lengthy or not 
+- Use a popover on an input field (text box, text area, or select) for help text that is lengthy, complex, or not critical.
 
 [preview]
 
