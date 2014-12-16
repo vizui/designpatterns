@@ -17,7 +17,7 @@
 
         <link rel="stylesheet" href="styles/333b841e.vendor.css">
 
-        <link rel="stylesheet" href="styles/8d879869.main.css">
+        <link rel="stylesheet" href="styles/84ecbee7.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -216,6 +216,12 @@
                     <li class="category">PATTERNS</li>
                     
                         
+                            <li class=""><a href="patterns-patterns-dataFormats.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Data formats </a>
+                                
+                            </li>
+                        
+                    
+                        
                             <li class=""><a href="patterns-patterns-filters.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Filters </a>
                                 
                             </li>
@@ -375,9 +381,14 @@
 <h4>Purpose</h4>
 <p>Users need to specify which option(s) from a set are applicable/valid/true based on a label.</p>
 <h4>Description</h4>
-<p>A checkbox allows the user to mark any number of choices from a set as checked.</p>
+<p>A set of Checkboxes are used when a user is able to select none, one, or multiple options. A single checkbox is used when a user is able to select or not select an option.</p>
 <h4>Basic functionality</h4>
-<p>When clicked, a checkbox's state toggles between unchecked and checked. Checkboxes can have an indeterminate state that is set based on external interactions (e.g., indicating that some but not all items in a collection are selected). Checkbox labels should use sentence casing.</p>
+<ul>
+<li>When clicked, a checkbox's state toggles between unchecked and checked.</li>
+<li>Checkboxes can have an indeterminate state that is set based on external interactions (e.g., indicating that some but not all items in a collection are selected).</li>
+<li>Checkbox labels should use sentence casing.</li>
+<li>The selected state of a checkbox should ideally indicate a positive action, and may require the rephrasing of the label. E.g. a label <code>Send me weekly reminders</code>, vs. <code>Do not send me weekly reminders</code></li>
+</ul>
 <h4>Vertical</h4>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="checkbox">
@@ -510,7 +521,8 @@
 </code></pre>
 </div>
 <div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="multi-select" href="#multi-select"><i class="fa fa-link"></i></a> Multi-select</h3></p>
+<p><h3><a class="pl-heading-link" id="multi-select" href="#multi-select"><i class="fa fa-link"></i></a> Multi-select</h3>
+This is the native browser multi-select. <code>Ctrl+click</code> (or <code>cmd+click</code>) toggles selection on an item. <code>shift+click</code> performs a range selection. A single <code>click</code> sets the selection to only that item.</p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="container-fluid" style="max-width: 400px; margin: 0">
     <div class="row">

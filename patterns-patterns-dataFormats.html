@@ -2,7 +2,7 @@
 <html class="no-js">
     <head>
         <meta charset="utf-8">
-        <title>Tabs - Components - USPTO design patterns</title>
+        <title>Data formats - Patterns - USPTO design patterns</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
 
@@ -57,7 +57,7 @@
     </header>
 <!--     <div class="pl-sub-header">
         <div class="pull-left">
-            <h4><strong>Patterns</strong> - Tabs</h4>
+            <h4><strong>Patterns</strong> - Data formats</h4>
         </div>
         <div class="pull-right">
             <button type="button" title="Edit this page on Github" class="btn btn-sm btn-default"> <i class="fa fa-pencil"></i></button>
@@ -152,19 +152,7 @@
                         
                     
                         
-                            <li class="active"><a href="patterns-components-tabs.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Tabs </a>
-                                
-                                    <ul class="nav nav-stacked">
-                                        
-                                            <li><a title="Normal tabs" href="#normal-tabs">Normal tabs</a></li>
-                                        
-                                            <li><a title="Light tabs" href="#light-tabs">Light tabs</a></li>
-                                        
-                                            <li><a title="Nested tabs" href="#nested-tabs">Nested tabs</a></li>
-                                        
-                                            <li><a title="Justified tabs" href="#justified-tabs">Justified tabs</a></li>
-                                        
-                                    </ul>
+                            <li class=""><a href="patterns-components-tabs.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Tabs </a>
                                 
                             </li>
                         
@@ -208,7 +196,15 @@
                     <li class="category">PATTERNS</li>
                     
                         
-                            <li class=""><a href="patterns-patterns-dataFormats.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Data formats </a>
+                            <li class="active"><a href="patterns-patterns-dataFormats.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Data formats </a>
+                                
+                                    <ul class="nav nav-stacked">
+                                        
+                                            <li><a title="Date and time" href="#date-and-time">Date and time</a></li>
+                                        
+                                            <li><a title="File sizes" href="#file-sizes">File sizes</a></li>
+                                        
+                                    </ul>
                                 
                             </li>
                         
@@ -245,118 +241,110 @@
                 <div class="pl-preview-header">This document is a preview.</div>
             
             <div class="pl-pattern">
-<p><h3>Tabs</h3></p>
-<h4>Purpose</h4>
-<p>User's need to flip between multiple focused panes/views of content.</p>
-<h4>Description</h4>
-<p>Tabs manage stacked panes of content, giving the users the ability to view only the content pane they are interested in. Each tab button has a corresponding content pane. Tabs build on a real world metaphor. The selected state is reinforced with the tab metaphor of a folder physically in front of the others in the set.</p>
-<h4>Basic functionality</h4>
+<p><h3><a class="pl-heading-link" id="date-and-time" href="#date-and-time"><i class="fa fa-link"></i></a> Date and time</h3></p>
+<h4>Formats</h4>
+<table class="table table-bordered" style="max-width: 600px">
+    <colgroup>
+        <col style="width: 60%">
+        <col style="width: 40%">
+    </colgroup>
+    <tbody>
+        <tr>
+            <td><code>time</code></td>
+            <td>10:00 AM</td>
+        </tr>
+        <tr>
+            <td><code>short date</code></td>
+            <td> Jan 11</td>
+        </tr>
+        <tr>
+            <td><code>long date</code></td>
+            <td> Apr 23, 2010</td>
+        </tr>
+        <tr>
+            <td><code>short date, time</code></td>
+            <td> Feb 5, 8:00 AM</td>
+        </tr>
+        <tr>
+            <td><code>long date, time</code></td>
+            <td> Feb 8, 2014, 1:00 PM</td>
+        </tr>
+        <tr>
+            <td><code>day of week, time</code></td>
+            <td> Mon, 7:30 AM</td>
+        </tr>
+        <tr>
+            <td><code>day of week, short date, time</code></td>
+            <td> Mon, Mar 15, 3:25 PM</td>
+        </tr>
+    </tbody>
+</table>
+<h4>Smart format</h4>
+<p>For dates/times associated with user generated data (e.g., notes, documents), use the <code>smart format</code>, which changes depending on the current date and the date to display.</p>
+<table class="table table-bordered" style="max-width: 600px">
+    <colgroup>
+        <col style="width: 60%">
+        <col style="width: 40%">
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>If the date is in the past or future on the current day, format as <code>time</code> only</td>
+            <td>10:00 AM</td>
+        </tr>
+        <tr>
+            <td>If the date is in the past or future within the current calendar year, format as <code>short date</code></td>
+            <td>Jan 11</td>
+        </tr>
+        <tr>
+            <td>If the date is in the past or future outside the current calendar year, format as <code>long date</code></td>
+            <td>Apr 23, 2010</td>
+        </tr>
+    </tbody>
+</table>
+<h4>Other</h4>
+<table class="table table-bordered" style="max-width: 600px">
+    <colgroup>
+        <col style="width: 60%">
+        <col style="width: 40%">
+    </colgroup>
+    <tbody>
+        <tr>
+            <td>For reminders or appointments, show both time and date</td>
+            <td>Jun 8, 8:00 AM <br>Today, 8:00 AM</td>
+        </tr>
+        <tr>
+            <td>Separate ranges with an en-dash without a space</td>
+            <td>Jun 15–Jun 16 <br> Dec 20, 2014–Jan 2, 2015</td>
+        </tr>
+        <tr>
+            <td>If a time range shares a common AM/PM, append only on the end of the range</td>
+            <td>10:00–11:00 AM <br>10:00 AM–12:30 PM</td>
+        </tr>
+    </tbody>
+</table>
+</div>
+<div class="pl-pattern">
+<p><h3><a class="pl-heading-link" id="file-sizes" href="#file-sizes"><i class="fa fa-link"></i></a> File sizes</h3></p>
 <ul>
-<li>You have multiple categories/views/panes of content, but there is the need to only show one pane at a time.</li>
-<li>Tabs are listed in a horizontal row.</li>
-<li>Avoid overflowing tabs to new lines.</li>
-<li>Tab titles should be short and predictable.</li>
-<li>Tab buttons can contain icons, text, both, and even dropdowns.</li>
+<li>340 KB (round to nearest KB)</li>
+<li>4.13 MB (two decimal max)</li>
+<li>3.22 GB (two decimal max)</li>
+<li>1.13 TB (two decimal max)</li>
 </ul>
-<p> </p>
-</div>
-<div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="normal-tabs" href="#normal-tabs"><i class="fa fa-link"></i></a> Normal tabs</h3></p>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
-<ul class="nav nav-tabs" role="tablist">
-  <li class="active"><a href="#" role="tab" data-toggle="tab">Active</a></li>
-  <li><a href="#" role="tab" data-toggle="tab">Normal</a></li>
-  <li class="disabled"><a href="#" role="tab">Disabled</a></li>
-  <li class="dropdown">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-          Dropdown <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu">
-          <li role="presentation"><a href="#">Item 1</a></li>
-          <li role="presentation"><a href="#">Item 2</a></li>
-          <li role="presentation"><a href="#">Item 3</a></li>
-        </ul>
-  </li>
-</ul>
-<div style="border-top: none; border-radius: 0" class="panel panel-default">
-    <div class="panel-body">
-        <p></p><p></p>
-    </div>
-</div>
-</div>
-</div>
-<div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="light-tabs" href="#light-tabs"><i class="fa fa-link"></i></a> Light tabs</h3>
-Use when the tabs need less emphasis in relation to other navigational elements.</p>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
-<ul class="nav nav-tabs nav-tabs-light" role="tablist">
-  <li class="active"><a href="#" role="tab" data-toggle="tab">Active</a></li>
-  <li><a href="#" role="tab" data-toggle="tab">Normal</a></li>
-  <li class="disabled"><a href="#" role="tab">Disabled</a></li>
-  <li class="dropdown">
-      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-          Dropdown <span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu" role="menu">
-          <li role="presentation"><a href="#">Item 1</a></li>
-          <li role="presentation"><a href="#">Item 2</a></li>
-          <li role="presentation"><a href="#">Item 3</a></li>
-        </ul>
-  </li>
-</ul>
-</div>
-</div>
-<div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="nested-tabs" href="#nested-tabs"><i class="fa fa-link"></i></a> Nested tabs</h3></p>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
-<ul class="nav nav-tabs" role="tablist">
-  <li class="active"><a href="#" role="tab" data-toggle="tab">Template</a></li>
-  <li><a href="#" role="tab" data-toggle="tab">History</a></li>
-  <li><a href="#" role="tab" data-toggle="tab">Analytics</a></li>
-</ul>
-<div style="border-top: none; border-radius: 0" class="panel panel-default">
-    <ul class="nav nav-tabs nav-tabs-light" role="tablist">
-      <li><a href="#" role="tab" data-toggle="tab">HTML</a></li>
-      <li class="active"><a href="#" role="tab" data-toggle="tab">Preview</a></li>
-    </ul>
-    <div class="panel-body">
-        <p></p><p></p>
-    </div>
-</div>
-</div>
-</div>
-<div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="justified-tabs" href="#justified-tabs"><i class="fa fa-link"></i></a> Justified tabs</h3>
-Evenly sized tabs distributed among the width of the container.</p>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
-<ul class="nav nav-tabs nav-justified text-center" role="tablist">
-  <li class="active"><a href="#" role="tab" data-toggle="tab"><i class="fa fa-3x fa-bell"></i><br>Notifications</a></li>
-  <li><a href="#" role="tab" data-toggle="tab"><i class="fa fa-3x fa-flag"></i><br>Language</a></li>
-  <li><a href="#" role="tab" data-toggle="tab"><i class="fa fa-3x fa-folder-open"></i><br>Sharing</a></li>
-  <li><a href="#" role="tab" data-toggle="tab"><i class="fa fa-3x fa-lock"></i><br>Security</a></li>
-</ul>
-<div style="border-top: none; border-radius: 0" class="panel panel-default">
-    <div class="panel-body">
-        <p></p><p></p>
-    </div>
-</div>
-</div>
-<pre><code class="hljs html">
-</code></pre>
 </div>
 
             
                 <div class="pl-footer">
                     
-                        <a class="pl-footer-previous btn btn-link" style="text-align: left" href="patterns-components-tables.html">
+                        <a class="pl-footer-previous btn btn-link" style="text-align: left" href="patterns-foundation-typography.html">
                             <div class="text-muted" style="font-size: 11px">PREVIOUS</div>
-                            Tables
+                            Typography
                         </a>
                     
                     
-                        <a class="pl-footer-next pull-right btn btn-link" style="text-align: right" href="patterns-components-tooltips.html">
+                        <a class="pl-footer-next pull-right btn btn-link" style="text-align: right" href="patterns-patterns-filters.html">
                             <div class="text-muted" style="font-size: 11px">NEXT</div>
-                            Tooltips
+                            Filters
                         </a>
                     
                 </div>
