@@ -17,7 +17,7 @@
 
         <link rel="stylesheet" href="styles/333b841e.vendor.css">
 
-        <link rel="stylesheet" href="styles/84ecbee7.main.css">
+        <link rel="stylesheet" href="styles/83f5ec77.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -120,13 +120,7 @@
                                         
                                             <li><a title="Form groups" href="#form-groups">Form groups</a></li>
                                         
-                                            <li><a title="Radio buttons" href="#radio-buttons">Radio buttons</a></li>
-                                        
-                                            <li><a title="Checkboxes" href="#checkboxes">Checkboxes</a></li>
-                                        
-                                            <li><a title="Inline checkboxes and radio buttons" href="#inline-checkboxes-and-radio-buttons">Inline checkboxes and radio buttons</a></li>
-                                        
-                                            <li><a title="Text areas" href="#text-areas">Text areas</a></li>
+                                            <li><a title="Input character limits" href="#input-character-limits">Input character limits</a></li>
                                         
                                             <li><a title="Examples" href="#examples">Examples</a></li>
                                         
@@ -223,6 +217,12 @@
                     
                         
                             <li class=""><a href="patterns-patterns-dataFormats.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Data formats </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-patterns-fileUpload.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>File upload </a>
                                 
                             </li>
                         
@@ -369,30 +369,30 @@ Required fields are generally marked with an asterisk. For external, public faci
 <div class="row">
   <form class="col-sm-10 col-md-8 col-lg-6" role="form">
     <div class="form-group col-sm-offset-3">
-      <label for="emailInput3" class="control-label required">Email</label>
-      <input type="email" class="form-control" id="emailInput3">
-    </div>
-    <div class="form-group col-sm-offset-3">
-      <label for="emailInput4" class="control-label">Password</label>
-      <input type="password" class="form-control" id="emailInput4">
-    </div>
-    <div class="form-group col-sm-offset-3">
         <span class="help-block text-right">* indicates required</span>
+    </div>
+    <div class="form-group col-sm-offset-3">
+      <label for="nameInput3" class="control-label required">Name</label>
+      <input type="text" class="form-control" id="nameInput3" required="">
+    </div>
+    <div class="form-group col-sm-offset-3">
+      <label for="emailInput3" class="control-label">Email</label>
+      <input type="email" class="form-control" id="emailInput3">
     </div>
   </form>
 </div>
 </div>
 <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-horizontal col-sm-10 col-md-8 col-lg-6"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"form"</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"emailInput5"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-3 control-label required"</span>&gt;</span>Email<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"nameInput5"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-3 control-label required"</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-9"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"emailInput5"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"nameInput5"</span> <span class="hljs-attribute">required</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"pw6"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-3 control-label"</span>&gt;</span>Password<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"emailInput5"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-3 control-label"</span>&gt;</span>Email<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-9"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"password"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"pw6"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"emailInput5"</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
@@ -403,15 +403,15 @@ Required fields are generally marked with an asterisk. For external, public faci
 <div class="row">
   <form class="form-horizontal col-sm-10 col-md-8 col-lg-6" role="form">
     <div class="form-group">
-      <label for="em7" class="col-sm-3 control-label required">Email</label>
+      <label for="nm7" class="col-sm-3 control-label required">Name</label>
       <div class="col-sm-9">
-        <input type="email" class="form-control" id="em7">
+        <input type="text" class="form-control" id="nm7" required="">
       </div>
     </div>
     <div class="form-group">
-      <label for="pw7" class="col-sm-3 control-label">Password</label>
+      <label for="em7" class="col-sm-3 control-label">Email</label>
       <div class="col-sm-9">
-        <input type="password" class="form-control" id="pw7">
+        <input type="email" class="form-control" id="em7">
       </div>
     </div>
   </form>
@@ -565,7 +565,13 @@ Required fields are generally marked with an asterisk. For external, public faci
 </div>
 <div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="help-text" href="#help-text"><i class="fa fa-link"></i></a> Help text</h3></p>
-<p>Help text can be placed at the top of the form, under the heading of a form group, and under an individual form field. Use the class <code>help-block</code> for lightened help text.</p>
+<p>Help text can be placed at the top of the form, under the heading of a form group, under an individual form field, or as a popover when the field is focused.</p>
+<ul>
+<li>Place help text at the top of the form to give information that relates to the entire form</li>
+<li>Place help text under the heading of a form group to give information that relates to that form group alone</li>
+<li>Place short help text under an individual form field that relates to that field alone</li>
+<li>Use a popover on an input field (text box, text area, or select) for help text that is lengthy, complex, non-critical, or when screen real estate is limited</li>
+</ul>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="row">
     <form class="form-horizontal col-sm-10 col-md-8 col-lg-6" role="form">
@@ -589,9 +595,9 @@ Required fields are generally marked with an asterisk. For external, public faci
             </div>
         </div>
         <div class="form-group">
-            <label for="ht1" class="col-sm-3 control-label">URL</label>
+            <label for="po1" class="col-sm-3 control-label">Popover</label>
             <div class="col-sm-9">
-                <input class="form-control" type="text" id="ht1">
+                <input class="form-control" type="password" id="po1" data-html="true" data-toggle="popover" data-container="body" data-trigger="focus" data-content="Use at least 8 characters. Don’t use a password from another site, or something too obvious like your pet’s name. <a href=''>Why?</a>">
             </div>
         </div>
     </form>
@@ -698,244 +704,18 @@ Required fields are generally marked with an asterisk. For external, public faci
 </code></pre>
 </div>
 <div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="radio-buttons" href="#radio-buttons"><i class="fa fa-link"></i></a> Radio buttons</h3></p>
-<p>Radio buttons provide a set of mutually exclusives options from which a person may only select one.</p>
-<p><strong>Do</strong></p>
+<p><h3><a class="pl-heading-link" id="input-character-limits" href="#input-character-limits"><i class="fa fa-link"></i></a> Input character limits</h3></p>
+<p>Most input fields have technical character limits. The system should handle this gracefully in all scenarios.</p>
+<p><strong>Text box</strong></p>
 <ul>
-<li>Provide an initially checked option when the field is not required and/or there is a sane default</li>
-<li>Ensure the labels are click-able, as well as the radio button</li>
-<li>Use concise labels</li>
-<li>Align vertically when possible</li>
-<li>Align in shorter columns when there are many options</li>
+<li>In most cases, simply ignore key presses that exceed the limit</li>
 </ul>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
-<form class="form-horizontal" role="form">
-  <div class="form-group">
-    <label class="col-sm-2 control-label">Shipping</label>
-    <div class="col-sm-10">
-      <div class="radio">
-        <label><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="checked">UPS</label>
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">FedEx</label>
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">USPS</label>
-      </div>
-    </div>
-  </div>
-</form>
-</div>
-<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-horizontal"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"form"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-2 control-label"</span>&gt;</span>Shipping<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-10"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"optionsRadios"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"optionsRadios1"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"option1"</span> <span class="hljs-attribute">checked</span>&gt;</span>UPS<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"optionsRadios"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"optionsRadios2"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"option2"</span>&gt;</span>FedEx<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"optionsRadios"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"optionsRadios3"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"option3"</span>&gt;</span>USPS<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
-</code></pre>
-</div>
-<div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="checkboxes" href="#checkboxes"><i class="fa fa-link"></i></a> Checkboxes</h3></p>
-<p>Checkboxes provide a set of options from which a person may select none, one, many, or all.</p>
-<p><strong>Do</strong></p>
+<p><strong>Text area</strong></p>
 <ul>
-<li>Ensure the labels are click-able, as well as the checkboxes</li>
-<li>Try to use 'positive' labels.</li>
-<li>Use concise labels</li>
-<li>Align vertically when possible</li>
-<li>Align in shorter columns when there are many options</li>
-</ul>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
-<div class="row">
-  <form class="form-horizontal col-sm-10 col-md-8 col-lg-6" role="form">
-    <div class="form-group col-sm-12">
-      <label class="col-sm-3 control-label">Post card</label>
-      <div class="col-sm-9">
-        <div class="checkbox">
-          <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes1" value="option1" checked="checked">Post card received</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes2" value="option2" checked="checked">Postage paid</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes3" value="option3">Address included</label>
-        </div>
-      </div>
-    </div>
-    <div class="form-group col-sm-12">
-      <label class="col-sm-3 control-label">Options</label>
-      <div class="col-sm-9">
-          <div class="row">
-              <div class="col-sm-6">
-                <div class="checkbox">
-                  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes1" value="option1" checked="checked">Option A</label>
-                </div>
-                <div class="checkbox">
-                  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes2" value="option2" checked="checked">Option B</label>
-                </div>
-                <div class="checkbox">
-                  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes3" value="option3">Option C</label>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="checkbox">
-                  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes1" value="option1" checked="checked">Option D</label>
-                </div>
-                <div class="checkbox">
-                  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes2" value="option2" checked="checked">Option E</label>
-                </div>
-                <div class="checkbox">
-                  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes3" value="option3">Option F</label>
-                </div>
-              </div>
-          </div>
-      </div>
-    </div>
-  </form>
-</div>
-</div>
-<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-horizontal"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"form"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group col-sm-12"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-3 control-label"</span>&gt;</span>Post card<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-9"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"optionsCheckboxes"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"optionsCheckboxes1"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"option1"</span> <span class="hljs-attribute">checked</span>&gt;</span>Post card received<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"optionsCheckboxes"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"optionsCheckboxes2"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"option2"</span> <span class="hljs-attribute">checked</span>&gt;</span>Postage paid<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"optionsCheckboxes"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"optionsCheckboxes3"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"option3"</span>&gt;</span>Address included<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group col-sm-12"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-3 control-label"</span>&gt;</span>Options<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-9"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-6"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"optionsCheckboxes"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"optionsCheckboxes1"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"option1"</span> <span class="hljs-attribute">checked</span>&gt;</span>Option A<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"optionsCheckboxes"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"optionsCheckboxes2"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"option2"</span> <span class="hljs-attribute">checked</span>&gt;</span>Option B<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"optionsCheckboxes"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"optionsCheckboxes3"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"option3"</span>&gt;</span>Option C<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-6"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"optionsCheckboxes"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"optionsCheckboxes1"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"option1"</span> <span class="hljs-attribute">checked</span>&gt;</span>Option D<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"optionsCheckboxes"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"optionsCheckboxes2"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"option2"</span> <span class="hljs-attribute">checked</span>&gt;</span>Option E<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox"</span>&gt;</span>
-                  <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"optionsCheckboxes"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"optionsCheckboxes3"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"option3"</span>&gt;</span>Option F<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-              <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-          <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-      <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
-</code></pre>
-</div>
-<div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="inline-checkboxes-and-radio-buttons" href="#inline-checkboxes-and-radio-buttons"><i class="fa fa-link"></i></a> Inline checkboxes and radio buttons</h3></p>
-<p>Inline inputs are generally more difficult to scan than vertically stacked inputs. Try to use them sparingly.</p>
-<p><strong>Do</strong></p>
+<li>If the limit is low or the expected input size is unknown, include a limit indicator
 <ul>
-<li>Ensure that there is adequate spacing between adjacent checkboxes and radio buttons.</li>
-<li>Use when you have vertical space constraints</li>
-</ul>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
-<form class="form-horizontal" role="form">
-    <div class="form-group">
-        <label class="col-sm-2 control-label required">Entry</label>
-        <div class="col-sm-10">
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox1" value="option1" checked="checked"> Checked
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox2" value="option2" checked="checked"> Deleted
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox3" value="option3"> Changed
-            </label>
-        </div>
-    </div>
-</form>
-<form class="form-horizontal" role="form">
-    <div class="form-group">
-        <label class="col-sm-2 control-label">Shipping</label>
-        <div class="col-sm-10">
-            <label class="radio-inline">
-              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked="checked"> UPS
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> FedEx
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> USPS
-            </label>
-        </div>
-    </div>
-</form>
-</div>
-<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-horizontal"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"form"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-2 control-label required"</span>&gt;</span>Entry<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-10"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox-inline"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"inlineCheckbox1"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"option1"</span> <span class="hljs-attribute">checked</span>&gt;</span> Checked
-            <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox-inline"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"inlineCheckbox2"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"option2"</span> <span class="hljs-attribute">checked</span>&gt;</span> Deleted
-            <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"checkbox-inline"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"checkbox"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"inlineCheckbox3"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"option3"</span>&gt;</span> Changed
-            <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-horizontal"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"form"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-2 control-label"</span>&gt;</span>Shipping<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-10"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio-inline"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"inlineRadioOptions"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"inlineRadio1"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"option1"</span>&gt;</span> UPS
-            <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio-inline"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"inlineRadioOptions"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"inlineRadio2"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"option2"</span>&gt;</span> FedEx
-            <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio-inline"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"inlineRadioOptions"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"inlineRadio3"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"option3"</span>&gt;</span> USPS
-            <span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
-</code></pre>
-</div>
-<div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="text-areas" href="#text-areas"><i class="fa fa-link"></i></a> Text areas</h3></p>
-<p><strong>Do</strong></p>
-<ul>
-<li>Provide enough vertical space (visible rows of text) for the anticipated/average amount of input</li>
-<li>Give users an indication of any character limits
-<ul>
-<li>Turn limit indicator red when limit exceeded</li>
-<li>Update limit indicator as keys are pressed</li>
+<li>Update the limit indicator on each key press</li>
+<li>Allow the user to keep typing past the indicator, but provide obvious indications that the limit has been exceeded.</li>
 </ul></li>
 </ul>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
@@ -955,6 +735,12 @@ Required fields are generally marked with an asterisk. For external, public faci
                 <span class="help-block pull-right">0/140 character limit</span>
             </div>
         </div>
+        <div class="form-group">
+            <label for="ml1" class="col-sm-3 control-label">Max 25</label>
+            <div class="col-sm-9">
+                <input id="ml1" type="text" class="form-control" maxlength="25">
+            </div>
+        </div>
     </form>
 </div>
 </div>
@@ -971,6 +757,12 @@ Required fields are generally marked with an asterisk. For external, public faci
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-9"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"ta2"</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">"3"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"help-block pull-right"</span>&gt;</span>0/140 character limit<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"ml1"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-3 control-label"</span>&gt;</span>Limit 25<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-9"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"ml1"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">maxlength</span>=<span class="hljs-value">"25"</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
@@ -1302,7 +1094,7 @@ Required fields are generally marked with an asterisk. For external, public faci
 
         <script src="scripts/2c80432f.plugins.js"></script>
 
-        <script src="scripts/c4761bc9.main.js"></script>
+        <script src="scripts/e83ec284.main.js"></script>
 
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

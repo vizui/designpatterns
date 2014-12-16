@@ -17,7 +17,7 @@
 
         <link rel="stylesheet" href="styles/333b841e.vendor.css">
 
-        <link rel="stylesheet" href="styles/84ecbee7.main.css">
+        <link rel="stylesheet" href="styles/83f5ec77.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -222,6 +222,12 @@
                         
                     
                         
+                            <li class=""><a href="patterns-patterns-fileUpload.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>File upload </a>
+                                
+                            </li>
+                        
+                    
+                        
                             <li class=""><a href="patterns-patterns-filters.html"><i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>Filters </a>
                                 
                             </li>
@@ -253,11 +259,9 @@
             <div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="text-box" href="#text-box"><i class="fa fa-link"></i></a> Text box</h3></p>
 <h4>Purpose</h4>
-<p>Users need to be able to input free form text into a field.</p>
+<p>Users need to input a simple text value.</p>
 <h4>Description</h4>
-<p>Text boxes allow the user to input free form text into a field. A text box only allows for a single line of input.</p>
-<h4>Basic functionality</h4>
-<p>Text boxes allow for single line input.</p>
+<p>Text boxes allow the user to input a simple text value. A text box only allows for a single line of input.</p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="container-fluid" style="max-width: 400px; margin: 0">
     <div class="row">
@@ -317,7 +321,10 @@
 </div>
 <div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="text-area" href="#text-area"><i class="fa fa-link"></i></a> Text area</h3></p>
-<p>Text areas allow for multi-line input.</p>
+<h4>Purpose</h4>
+<p>Users need to input an extended, potentially multi-line text value.</p>
+<h4>Description</h4>
+<p>Text areas allow the user to input extended, multi-line text values.</p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="container-fluid" style="max-width: 400px; margin: 0">
     <div class="row">
@@ -325,20 +332,20 @@
             <div class="form-group">
                 <label for="ta12" class="col-sm-3 control-label">Normal</label>
                 <div class="col-sm-9">
-                    <textarea class="form-control" id="ta12" cols="30" rows="2"></textarea>
+                    <textarea class="form-control" id="ta12" rows="2"></textarea>
                 </div>
             </div>
             <div class="form-group">
                 <label for="ta13" class="col-sm-3 control-label">Disabled</label>
                 <div class="col-sm-9">
-                    <textarea class="form-control" id="ta12" cols="30" rows="2" disabled="disabled"></textarea>
+                    <textarea class="form-control" id="ta13" rows="2" disabled="disabled"></textarea>
                 </div>
             </div>
         </form>
     </div>
 </div>
 </div>
-<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"ta12"</span> <span class="hljs-attribute">cols</span>=<span class="hljs-value">"30"</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">"2"</span> <span class="hljs-attribute">disabled</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">textarea</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">rows</span>=<span class="hljs-value">"2"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">textarea</span>&gt;</span>
 </code></pre>
 </div>
 <div class="pl-pattern">
@@ -346,9 +353,17 @@
 <h4>Purpose</h4>
 <p>Users must choose between two or more mutually exclusive options.</p>
 <h4>Description</h4>
-<p>Radio buttons come in a group of two or more mutually exclusive options. Users can select only one option.</p>
-<h4>Basic functionality</h4>
-<p>A radio button has two states, checked and unchecked. Radio buttons are always in a group of two or more. When a radio button is checked, the previously selected radio button is unchecked. There can only be one radio button checked at any given time. Radio button labels should use sentence casing.</p>
+<ul>
+<li>Radio buttons come in a group of two or more mutually exclusive options</li>
+<li>A radio button is either checked or unchecked</li>
+<li>There can only be one radio button checked in a group</li>
+<li>Radio button labels should use sentence casing</li>
+<li>Use concise labels</li>
+<li>Provide an initially checked option when the field is not required and/or there is a sane default</li>
+<li>Align vertically when possible</li>
+<li>Align in shorter columns if there are many options</li>
+<li>Ensure there is adequate spacing between adjacent fields and radio/checkbox groups</li>
+</ul>
 <h4>Vertical</h4>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="radio">
@@ -381,13 +396,17 @@
 <h4>Purpose</h4>
 <p>Users need to specify which option(s) from a set are applicable/valid/true based on a label.</p>
 <h4>Description</h4>
-<p>A set of Checkboxes are used when a user is able to select none, one, or multiple options. A single checkbox is used when a user is able to select or not select an option.</p>
-<h4>Basic functionality</h4>
 <ul>
-<li>When clicked, a checkbox's state toggles between unchecked and checked.</li>
-<li>Checkboxes can have an indeterminate state that is set based on external interactions (e.g., indicating that some but not all items in a collection are selected).</li>
-<li>Checkbox labels should use sentence casing.</li>
-<li>The selected state of a checkbox should ideally indicate a positive action, and may require the rephrasing of the label. E.g. a label <code>Send me weekly reminders</code>, vs. <code>Do not send me weekly reminders</code></li>
+<li>A set of checkboxes are used when a user is able to select none, one, or multiple options</li>
+<li>A single checkbox is used when a user is able to select or not select an option</li>
+<li>When clicked, a checkbox's state toggles between unchecked and checked</li>
+<li>Checkboxes can have an indeterminate state that is set based on external interactions (e.g., indicating that some but not all items in a collection are selected)</li>
+<li>Checkbox labels should use sentence casing</li>
+<li>Use concise labels</li>
+<li>Align vertically when possible</li>
+<li>Align in shorter columns if there are many options</li>
+<li>The selected state of a checkbox should ideally indicate something 'positive' and may require the rephrasing of the label (e.g., <code>Send me weekly reminders</code>, vs. <code>Do not send me weekly reminders</code>)</li>
+<li>Ensure there is adequate spacing between adjacent fields and radio/checkbox groups</li>
 </ul>
 <h4>Vertical</h4>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
@@ -419,9 +438,13 @@
 <h4>Purpose</h4>
 <p>The user needs to choose an option from a predefined set.</p>
 <h4>Description</h4>
-<p>A select, sometimes referred to as a combo box, provides functionality for choosing an option from a set. It is similar to dropdown button but facilitates item selection, filtering, and reflects the currently selected value.</p>
-<h4>Basic functionality</h4>
-<p>When clicked, the user is shown all available options and can make a selection. When a selection is made, the dropdown closes and the select control updates to reflect the current selection. If there are 5 or more options, the list should allow for filtering via a text field.</p>
+<ul>
+<li>A select, sometimes referred to as a combo box, provides functionality for choosing an option from a set</li>
+<li>It is similar to dropdown button but facilitates item selection, filtering, and reflects the currently selected value</li>
+<li>When clicked, the user is shown all available options and can make a selection</li>
+<li>When a selection is made, the dropdown closes and the select control updates to reflect the current selection.</li>
+<li>If there are 5 or more options, the list should allow for filtering via a text field.</li>
+</ul>
 <p><span class="text-muted">Example uses https://github.com/ivaynberg/select2 for demo purposes.</span></p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="container-fluid" style="max-width: 400px; margin: 0">
@@ -643,7 +666,7 @@ This is the native browser multi-select. <code>Ctrl+click</code> (or <code>cmd+c
 
         <script src="scripts/2c80432f.plugins.js"></script>
 
-        <script src="scripts/c4761bc9.main.js"></script>
+        <script src="scripts/e83ec284.main.js"></script>
 
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
