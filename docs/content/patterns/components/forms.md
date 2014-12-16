@@ -495,258 +495,18 @@ If you have many fields, consider organizing related fields into titled groups.
 [/pattern]
 
 [pattern]
-### Radio buttons
 
-Radio buttons provide a set of mutually exclusives options from which a person may only select one. 
+### Input character limits
 
-__Do__
-- Provide an initially checked option when the field is not required and/or there is a sane default
-- Ensure the labels are click-able, as well as the radio button
-- Use concise labels
-- Align vertically when possible
-- Align in shorter columns when there are many options
+Most input fields have technical character limits. The system should handle this gracefully in all scenarios. 
 
-[preview]
-<form class="form-horizontal" role="form">
-  <div class="form-group">
-    <label class="col-sm-2 control-label">Shipping</label>
-    <div class="col-sm-10">
-      <div class="radio">
-        <label><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>UPS</label>
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">FedEx</label>
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">USPS</label>
-      </div>
-    </div>
-  </div>
-</form>
-[/preview]
+__Text box__
+- In most cases, simply ignore key presses that exceed the limit
 
-```html
-<form class="form-horizontal" role="form">
-  <div class="form-group">
-    <label class="col-sm-2 control-label">Shipping</label>
-    <div class="col-sm-10">
-      <div class="radio">
-        <label><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>UPS</label>
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">FedEx</label>
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">USPS</label>
-      </div>
-    </div>
-  </div>
-</form>
-```
-
-[/pattern]
-
-[pattern]
-### Checkboxes
-
-Checkboxes provide a set of options from which a person may select none, one, many, or all.
-
-__Do__
-- Ensure the labels are click-able, as well as the checkboxes
-- Try to use 'positive' labels.
-- Use concise labels
-- Align vertically when possible
-- Align in shorter columns when there are many options
-
-[preview]
-<div class="row">
-  <form class="form-horizontal col-sm-10 col-md-8 col-lg-6" role="form">
-    <div class="form-group col-sm-12">
-      <label class="col-sm-3 control-label">Post card</label>
-      <div class="col-sm-9">
-        <div class="checkbox">
-          <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes1" value="option1" checked>Post card received</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes2" value="option2" checked>Postage paid</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes3" value="option3">Address included</label>
-        </div>
-      </div>
-    </div>
-    <div class="form-group col-sm-12">
-      <label class="col-sm-3 control-label">Options</label>
-      <div class="col-sm-9">
-          <div class="row">
-              <div class="col-sm-6">
-                <div class="checkbox">
-                  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes1" value="option1" checked>Option A</label>
-                </div>
-                <div class="checkbox">
-                  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes2" value="option2" checked>Option B</label>
-                </div>
-                <div class="checkbox">
-                  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes3" value="option3">Option C</label>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="checkbox">
-                  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes1" value="option1" checked>Option D</label>
-                </div>
-                <div class="checkbox">
-                  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes2" value="option2" checked>Option E</label>
-                </div>
-                <div class="checkbox">
-                  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes3" value="option3">Option F</label>
-                </div>
-              </div>
-          </div>
-      </div>
-    </div>
-  </form>
-</div>
-[/preview]
-
-```html
-<form class="form-horizontal" role="form">
-    <div class="form-group col-sm-12">
-      <label class="col-sm-3 control-label">Post card</label>
-      <div class="col-sm-9">
-        <div class="checkbox">
-          <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes1" value="option1" checked>Post card received</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes2" value="option2" checked>Postage paid</label>
-        </div>
-        <div class="checkbox">
-          <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes3" value="option3">Address included</label>
-        </div>
-      </div>
-    </div>
-    <div class="form-group col-sm-12">
-      <label class="col-sm-3 control-label">Options</label>
-      <div class="col-sm-9">
-          <div class="row">
-              <div class="col-sm-6">
-                <div class="checkbox">
-                  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes1" value="option1" checked>Option A</label>
-                </div>
-                <div class="checkbox">
-                  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes2" value="option2" checked>Option B</label>
-                </div>
-                <div class="checkbox">
-                  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes3" value="option3">Option C</label>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="checkbox">
-                  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes1" value="option1" checked>Option D</label>
-                </div>
-                <div class="checkbox">
-                  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes2" value="option2" checked>Option E</label>
-                </div>
-                <div class="checkbox">
-                  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes3" value="option3">Option F</label>
-                </div>
-              </div>
-          </div>
-      </div>
-    </div>
-  </form>
-```
-
-[/pattern]
-
-[pattern]
-### Inline checkboxes and radio buttons
-
-Inline inputs are generally more difficult to scan than vertically stacked inputs. Try to use them sparingly.
-
-__Do__
-- Ensure that there is adequate spacing between adjacent checkboxes and radio buttons. 
-- Use when you have vertical space constraints
-
-[preview]
-<form class="form-horizontal" role="form">
-    <div class="form-group">
-        <label class="col-sm-2 control-label required">Entry</label>
-        <div class="col-sm-10">
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox1" value="option1" checked> Checked
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox2" value="option2" checked> Deleted
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox3" value="option3"> Changed
-            </label>
-        </div>
-    </div>
-</form>
-<form class="form-horizontal" role="form">
-    <div class="form-group">
-        <label class="col-sm-2 control-label">Shipping</label>
-        <div class="col-sm-10">
-            <label class="radio-inline">
-              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked> UPS
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> FedEx
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> USPS
-            </label>
-        </div>
-    </div>
-</form>
-[/preview]
-
-```html
-<form class="form-horizontal" role="form">
-    <div class="form-group">
-        <label class="col-sm-2 control-label required">Entry</label>
-        <div class="col-sm-10">
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox1" value="option1" checked> Checked
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox2" value="option2" checked> Deleted
-            </label>
-            <label class="checkbox-inline">
-              <input type="checkbox" id="inlineCheckbox3" value="option3"> Changed
-            </label>
-        </div>
-    </div>
-</form>
-<form class="form-horizontal" role="form">
-    <div class="form-group">
-        <label class="col-sm-2 control-label">Shipping</label>
-        <div class="col-sm-10">
-            <label class="radio-inline">
-              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> UPS
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> FedEx
-            </label>
-            <label class="radio-inline">
-              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> USPS
-            </label>
-        </div>
-    </div>
-</form>
-```
-[/pattern]
-
-[pattern]
-
-### Text areas
-
-__Do__
-- Provide enough vertical space (visible rows of text) for the anticipated/average amount of input
-- Give users an indication of any character limits
-  - Turn limit indicator red when limit exceeded
-  - Update limit indicator as keys are pressed
+__Text area__
+- If the limit is low or the expected input size is unknown, include a limit indicator
+  - Update the limit indicator on each key press
+  - Allow the user to keep typing past the indicator, but provide obvious indications that the limit has been exceeded.
 
 [preview]
 <div class="row">
@@ -763,6 +523,12 @@ __Do__
             <div class="col-sm-9">
                 <textarea id="ta2" rows="3" class="form-control"></textarea>
                 <span class="help-block pull-right">0/140 character limit</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="ml1" class="col-sm-3 control-label">Max 25</label>
+            <div class="col-sm-9">
+                <input id="ml1" type="text" class="form-control" maxlength="25">
             </div>
         </div>
     </form>
@@ -783,6 +549,12 @@ __Do__
         <div class="col-sm-9">
             <textarea id="ta2" rows="3" class="form-control"></textarea>
             <span class="help-block pull-right">0/140 character limit</span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="ml1" class="col-sm-3 control-label">Limit 25</label>
+        <div class="col-sm-9">
+            <input id="ml1" type="text" class="form-control" maxlength="25">
         </div>
     </div>
 </form>

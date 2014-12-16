@@ -7,13 +7,10 @@ title: "Form controls"
 ### Text box
 
 #### Purpose
-Users need to be able to input free form text into a field.
+Users need to input a simple text value.
 
 #### Description
-Text boxes allow the user to input free form text into a field. A text box only allows for a single line of input. 
-
-#### Basic functionality
-Text boxes allow for single line input.
+Text boxes allow the user to input a simple text value. A text box only allows for a single line of input. 
 
 [preview]
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
@@ -82,8 +79,11 @@ Input masks ensure that the user understands the input format required, in addit
 
 [pattern]
 ### Text area
+#### Purpose
+Users need to input an extended, potentially multi-line text value.
 
-Text areas allow for multi-line input.
+#### Description
+Text areas allow the user to input extended, multi-line text values. 
 
 [preview]
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
@@ -92,13 +92,13 @@ Text areas allow for multi-line input.
             <div class="form-group">
                 <label for="ta12" class="col-sm-3 control-label">Normal</label>
                 <div class="col-sm-9">
-                    <textarea class="form-control" id="ta12" cols="30" rows="2"></textarea>
+                    <textarea class="form-control" id="ta12" rows="2"></textarea>
                 </div>
             </div>
             <div class="form-group">
                 <label for="ta13" class="col-sm-3 control-label">Disabled</label>
                 <div class="col-sm-9">
-                    <textarea class="form-control" id="ta12" cols="30" rows="2" disabled></textarea>
+                    <textarea class="form-control" id="ta13" rows="2" disabled></textarea>
                 </div>
             </div>
         </form>
@@ -107,7 +107,7 @@ Text areas allow for multi-line input.
 [/preview]
 
 ```html
-<textarea class="form-control" id="ta12" cols="30" rows="2" disabled></textarea>
+<textarea class="form-control" rows="2"></textarea>
 ```
 
 [/pattern]
@@ -119,10 +119,15 @@ Text areas allow for multi-line input.
 Users must choose between two or more mutually exclusive options.
 
 #### Description
-Radio buttons come in a group of two or more mutually exclusive options. Users can select only one option.
-
-#### Basic functionality
-A radio button has two states, checked and unchecked. Radio buttons are always in a group of two or more. When a radio button is checked, the previously selected radio button is unchecked. There can only be one radio button checked at any given time. Radio button labels should use sentence casing.
+- Radio buttons come in a group of two or more mutually exclusive options
+- A radio button is either checked or unchecked
+- There can only be one radio button checked in a group
+- Radio button labels should use sentence casing
+- Use concise labels
+- Provide an initially checked option when the field is not required and/or there is a sane default
+- Align vertically when possible
+- Align in shorter columns if there are many options
+- Ensure there is adequate spacing between adjacent fields and radio/checkbox groups
 
 #### Vertical
 [preview]
@@ -164,13 +169,16 @@ A radio button has two states, checked and unchecked. Radio buttons are always i
 Users need to specify which option(s) from a set are applicable/valid/true based on a label. 
 
 #### Description
-A set of Checkboxes are used when a user is able to select none, one, or multiple options. A single checkbox is used when a user is able to select or not select an option.
-
-#### Basic functionality
-- When clicked, a checkbox's state toggles between unchecked and checked.
-- Checkboxes can have an indeterminate state that is set based on external interactions (e.g., indicating that some but not all items in a collection are selected).
-- Checkbox labels should use sentence casing.
-- The selected state of a checkbox should ideally indicate a positive action, and may require the rephrasing of the label. E.g. a label `Send me weekly reminders`, vs. `Do not send me weekly reminders`
+- A set of checkboxes are used when a user is able to select none, one, or multiple options
+- A single checkbox is used when a user is able to select or not select an option
+- When clicked, a checkbox's state toggles between unchecked and checked
+- Checkboxes can have an indeterminate state that is set based on external interactions (e.g., indicating that some but not all items in a collection are selected)
+- Checkbox labels should use sentence casing
+- Use concise labels
+- Align vertically when possible
+- Align in shorter columns if there are many options
+- The selected state of a checkbox should ideally indicate something 'positive' and may require the rephrasing of the label (e.g., `Send me weekly reminders`, vs. `Do not send me weekly reminders`)
+- Ensure there is adequate spacing between adjacent fields and radio/checkbox groups
 
 #### Vertical
 [preview]
@@ -209,10 +217,11 @@ A set of Checkboxes are used when a user is able to select none, one, or multipl
 The user needs to choose an option from a predefined set.
 
 #### Description
-A select, sometimes referred to as a combo box, provides functionality for choosing an option from a set. It is similar to dropdown button but facilitates item selection, filtering, and reflects the currently selected value. 
-
-#### Basic functionality
-When clicked, the user is shown all available options and can make a selection. When a selection is made, the dropdown closes and the select control updates to reflect the current selection. If there are 5 or more options, the list should allow for filtering via a text field.
+- A select, sometimes referred to as a combo box, provides functionality for choosing an option from a set
+- It is similar to dropdown button but facilitates item selection, filtering, and reflects the currently selected value
+- When clicked, the user is shown all available options and can make a selection
+- When a selection is made, the dropdown closes and the select control updates to reflect the current selection. 
+- If there are 5 or more options, the list should allow for filtering via a text field.
 
 <span class="text-muted">Example uses https://github.com/ivaynberg/select2 for demo purposes.</span>
 [preview]
