@@ -17,7 +17,7 @@
 
         <link rel="stylesheet" href="styles/333b841e.vendor.css">
 
-        <link rel="stylesheet" href="styles/83f5ec77.main.css">
+        <link rel="stylesheet" href="styles/740cbe83.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -442,8 +442,9 @@
 <li>A select, sometimes referred to as a combo box, provides functionality for choosing an option from a set</li>
 <li>It is similar to dropdown button but facilitates item selection, filtering, and reflects the currently selected value</li>
 <li>When clicked, the user is shown all available options and can make a selection</li>
-<li>When a selection is made, the dropdown closes and the select control updates to reflect the current selection.</li>
-<li>If there are 5 or more options, the list should allow for filtering via a text field.</li>
+<li>When a selection is made, the dropdown closes and the select control updates to reflect the current selection</li>
+<li>If there are 5 or more options, the list should allow for filtering via a text field</li>
+<li>For empty selects, use a placeholder in the format of <code>Select a [type]...</code> or <code>Select...</code></li>
 </ul>
 <p><span class="text-muted">Example uses https://github.com/ivaynberg/select2 for demo purposes.</span></p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
@@ -523,6 +524,17 @@
                         <option value="WV">West Virginia</option>
                         <option value="WI">Wisconsin</option>
                         <option value="WY">Wyoming</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sel175" class="col-sm-3 control-label">Placeholder</label>
+                <div class="col-sm-9">
+                    <select id="sel175" data-placeholder="Select a database..." class="form-control select2">
+                        <option></option>
+                        <option value="A">mongodb</option>
+                        <option value="B">mysql</option>
+                        <option value="C">leveldb</option>
                     </select>
                 </div>
             </div>
