@@ -11,7 +11,7 @@ Progress bars should be used when there is a determinate amount of time/progress
 #### Determinate progress bar
 [preview]
 <div style="max-width: 200px;">
-    <div style="margin-bottom: 6px;" class="bold clearfix">
+    <div style="margin-bottom: 6px;" class="clearfix">
         <div class="pull-left">Importing...</div>
         <span id="exampleProgressBarValue" class="pull-right text-muted">60%</span>
     </div>
@@ -25,7 +25,7 @@ Progress bars should be used when there is a determinate amount of time/progress
 #### Indeterminate progress bar
 [preview]
 <div style="max-width: 200px;">
-    <div style="margin-bottom: 6px;" class="bold clearfix">
+    <div style="margin-bottom: 6px;" class="clearfix">
         <div class="pull-left">Finalizing...</div>
         <span class="pull-right text-muted">100%</span>
     </div>
