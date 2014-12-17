@@ -181,6 +181,6 @@ $('[data-toggle="popover"]').popover();
 
 
 /* enable sliders */
-$("input.slider").slider({
+$('input.slider').slider({
     tooltip: 'hide'
 });
