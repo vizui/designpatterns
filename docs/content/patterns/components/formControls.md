@@ -420,7 +420,7 @@ This is the native browser multi-select. `Ctrl+click` (or `cmd+click`) toggles s
 
 [pattern]
 ### Slider
-<span class="text-muted">Example uses HTML5 input range/slider for demo purposes (IE10+).</span>
+<span class="text-muted">Example uses https://github.com/seiyria/bootstrap-slider for demo purposes.</span>
 [preview]
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
     <div class="row">
@@ -428,13 +428,13 @@ This is the native browser multi-select. `Ctrl+click` (or `cmd+click`) toggles s
             <div class="form-group">
                 <label for="se15" class="col-sm-3 control-label">Normal</label>
                 <div class="col-sm-9">
-                    <input class="form-control" type="range">
+                    <input class="slider">
                 </div>
             </div>
             <div class="form-group">
                 <label for="se16" class="col-sm-3 control-label">Disabled</label>
                 <div class="col-sm-9">
-                    <input class="form-control" type="range" disabled>
+                    <input class="slider" disabled data-slider-enabled="false">
                 </div>
             </div>
         </form>
