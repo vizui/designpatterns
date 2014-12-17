@@ -22,14 +22,14 @@ The file list shows the files that are uploading, successfully uploaded, or fail
         <li class="list-group-item">
             <a href=""><i style="position: relative; top: 2px;" class="pull-right fa text-muted fa-times fa-1x fa-fw"></i></a>
             IMG_211.jpg  <span class="text-muted">(5 MB)</span>
-            <div class="text-danger" style="margin: 6px 0 0 0">
+            <div class="text-danger" style="margin: 2px 0 0 0">
                 This file exceeds the 2 MB limit.
             </div>
         </li>
         <li class="list-group-item">
             <a href=""><i style="position: relative; top: 2px;" class="pull-right fa text-muted fa-times fa-1x fa-fw"></i></a>
             IMG_212.jpg  <span class="text-muted">(312 KB)</span>
-            <div class="text-danger" style="margin: 6px 0 0 0">
+            <div class="text-danger" style="margin: 2px 0 0 0">
                 Error uploading file.
             </div>
         </li>
