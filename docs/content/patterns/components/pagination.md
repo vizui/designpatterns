@@ -41,7 +41,7 @@ Full paging contains separate dropdowns for adjusting the page size and jumping 
         <button type="button" id="dropdownMenu1" class="btn-link btn dropdown-toggle" data-toggle="dropdown">10 per page <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
             <li role="presentation" class="dropdown-header">Show up to</li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
+            <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
@@ -53,12 +53,7 @@ Full paging contains separate dropdowns for adjusting the page size and jumping 
             <li role="presentation" class="dropdown-header">Jump to page</li>
             <li style="padding: 0 16px;" role="presentation">
                 <form action="">
-                    <div class="input-group">
                         <input type="text" placeholder="15" class="form-control"/>
-                        <div class="input-group-btn">
-                            <button class="btn btn-default">Go</button>
-                        </div>
-                    </div>
                 </form>
             </li>
         </ul>
@@ -83,7 +78,7 @@ Full paging contains separate dropdowns for adjusting the page size and jumping 
         <button type="button" id="dropdownMenu1" class="btn-link btn dropdown-toggle" data-toggle="dropdown">10 per page <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
             <li role="presentation" class="dropdown-header">Show up to</li>
-            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
+            <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
@@ -95,12 +90,7 @@ Full paging contains separate dropdowns for adjusting the page size and jumping 
             <li role="presentation" class="dropdown-header">Jump to page</li>
             <li style="padding: 0 16px;" role="presentation">
                 <form action="">
-                    <div class="input-group">
                         <input type="text" placeholder="15" class="form-control"/>
-                        <div class="input-group-btn">
-                            <button class="btn btn-default">Go</button>
-                        </div>
-                    </div>
                 </form>
             </li>
         </ul>
@@ -122,20 +112,9 @@ Medium-sized paging contains a single dropdown for changing the page size and ju
         <li role="presentation" class="dropdown-header">Jump to item</li>
         <li style="padding: 0 16px;" role="presentation">
             <form action="">
-                <div class="input-group">
                     <input type="text" placeholder="150" class="form-control"/>
-                    <div class="input-group-btn">
-                        <button class="btn btn-default">Go</button>
-                    </div>
-                </div>
             </form>
         </li>
-        <li class="divider"></li>
-        <li role="presentation" class="dropdown-header">Show up to</li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
     </ul>
 </div> <div class="btn-group">
   <a href="#" class="btn btn-default"><i class="fa fa-angle-left"></i></a>
@@ -144,29 +123,26 @@ Medium-sized paging contains a single dropdown for changing the page size and ju
 [/preview]
 [preview]
 <div class="dropdown" style="display: inline-block">
-    <button type="button" id="dropdownMenu3" class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span class="text-muted normal">Page</span> 15 <span class="text-muted normal">of</span> 25 <span class="caret"></span></button>
-    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+        <button type="button" id="dropdownMenu1" class="btn-link btn dropdown-toggle" data-toggle="dropdown">10 per page <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation" class="dropdown-header">Show up to</li>
+            <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
+        </ul>
+    </div> <div class="btn-group dropdown">
+  <a href="#" class="btn btn-default"><i class="fa fa-angle-left"></i></a>
+  <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="">15/25 <span class="caret"></span></a>
+  <a href="#" class="btn btn-default"><i class="fa fa-angle-right"></i></a>
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu4">
         <li role="presentation" class="dropdown-header">Jump to page</li>
         <li style="padding: 0 16px;" role="presentation">
             <form action="">
-                <div class="input-group">
                     <input type="text" placeholder="15" class="form-control"/>
-                    <div class="input-group-btn">
-                        <button class="btn btn-default">Go</button>
-                    </div>
-                </div>
             </form>
         </li>
-        <li class="divider"></li>
-        <li role="presentation" class="dropdown-header">Show up to</li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
     </ul>
-</div> <div class="btn-group">
-  <a href="#" class="btn btn-default"><i class="fa fa-angle-left"></i></a>
- <a href="#" class="btn btn-default"><i class="fa fa-angle-right"></i></a>
 </div>
 [/preview]
 
@@ -177,23 +153,18 @@ Small paging contains a single button group, containing left/right buttons and a
 [preview]
 <div class="btn-group dropdown">
   <a href="#" class="btn btn-default"><i class="fa fa-angle-left"></i></a>
-  <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="">15<span class="text-muted">/25</span> <span class="caret"></span></a>
+  <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="">15/25 <span class="caret"></span></a>
   <a href="#" class="btn btn-default"><i class="fa fa-angle-right"></i></a>
   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu4">
         <li role="presentation" class="dropdown-header">Jump to page</li>
         <li style="padding: 0 16px;" role="presentation">
             <form action="">
-                <div class="input-group">
                     <input type="text" placeholder="15" class="form-control"/>
-                    <div class="input-group-btn">
-                        <button class="btn btn-default">Go</button>
-                    </div>
-                </div>
             </form>
         </li>
         <li class="divider"></li>
         <li role="presentation" class="dropdown-header">Show up to</li>
-        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
+        <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
         <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
