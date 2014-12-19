@@ -27,13 +27,12 @@ The features should be chosen based on the user's needs, the data, and the space
 [/pattern]
 
 [pattern]
-### Examples
 
+### Examples
 The examples below show various configurations of pagination features. Depending on the data, you may treat your pages as item ranges `Showing 150-160` or as pages `Page 15 of 25`.
 
 #### Full
-Full paging contains separate dropdowns for adjusting the page size and jumping to a page, and a full sized pagination bar that allows for prev/next navigation as well as buttons for jumping to the beginning and end.
-
+These show possible configurations for layouts with large amounts of screen real estate. 
 
 [preview]
 <div class="btn-group">
@@ -51,9 +50,9 @@ Full paging contains separate dropdowns for adjusting the page size and jumping 
         <button type="button" id="dropdownMenu2" class="btn-link btn dropdown-toggle" data-toggle="dropdown">Page 15 of 25 <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
             <li role="presentation" class="dropdown-header">Jump to page</li>
-            <li style="padding: 0 16px;" role="presentation">
+            <li style="padding: 6px 18px;" role="presentation">
                 <form action="">
-                        <input type="text" placeholder="15" class="form-control"/>
+                    <input type="text" placeholder="15" class="form-control"/>
                 </form>
             </li>
         </ul>
@@ -62,13 +61,13 @@ Full paging contains separate dropdowns for adjusting the page size and jumping 
   <a class="btn btn-default" href="#"><i class="fa fa-angle-left"></i></a>
   <a class="btn btn-default" href="#">1</a>
   <a class="btn btn-default" disabled href="#">...</a>
-  <a class="btn btn-default" href="#">4</a>
-  <a class="btn btn-default" href="#">5</a>
-  <a class="btn btn-default active" href="#">6</a>
-  <a class="btn btn-default" href="#">7</a>
-  <a class="btn btn-default" href="#">8</a>
+  <a class="btn btn-default" href="#">13</a>
+  <a class="btn btn-default" href="#">14</a>
+  <a class="btn btn-default active" href="#">15</a>
+  <a class="btn btn-default" href="#">16</a>
+  <a class="btn btn-default" href="#">17</a>
   <a class="btn btn-default" disabled href="#">...</a>
-  <a class="btn btn-default" href="#">10</a>
+  <a class="btn btn-default" href="#">25</a>
  <a class="btn btn-default" href="#"><i class="fa fa-angle-right"></i></a>
 </div>
 [/preview]
@@ -88,7 +87,7 @@ Full paging contains separate dropdowns for adjusting the page size and jumping 
         <button type="button" id="dropdownMenu2" class="btn-link btn dropdown-toggle" data-toggle="dropdown">Page 15 of 25 <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
             <li role="presentation" class="dropdown-header">Jump to page</li>
-            <li style="padding: 0 16px;" role="presentation">
+            <li style="padding: 6px 18px;" role="presentation">
                 <form action="">
                         <input type="text" placeholder="15" class="form-control"/>
                 </form>
@@ -102,17 +101,31 @@ Full paging contains separate dropdowns for adjusting the page size and jumping 
 [/preview]
 
 #### Medium
-
-Medium-sized paging contains a single dropdown for changing the page size and jumping to a page, and a simple left/right button group. This is useful in space constrained areas as well as in areas where it is _less_ likely that users will need to adjust the page size or jump to a particular page.
-
+These show possible configurations for layouts with limited screen real estate. 
 [preview]
 <div class="dropdown" style="display: inline-block">
-    <button type="button" id="dropdownMenu3" class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span class="text-muted normal">Showing</span> 150-160 <span class="text-muted normal">of</span> 305 <span class="caret"></span></button>
+    <button type="button" id="dropdownMenu3" class="btn btn-link dropdown-toggle" data-toggle="dropdown">Showing 150-160 of 305 <span class="caret"></span></button>
     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
         <li role="presentation" class="dropdown-header">Jump to item</li>
-        <li style="padding: 0 16px;" role="presentation">
+        <li style="padding: 6px 18px;" role="presentation">
             <form action="">
-                    <input type="text" placeholder="150" class="form-control"/>
+                <input type="text" placeholder="150" class="form-control"/>
+            </form>
+        </li>
+    </ul>
+</div> <div class="btn-group">
+  <a href="#" class="btn btn-default"><i class="fa fa-angle-left"></i></a>
+  <a href="#" class="btn btn-default"><i class="fa fa-angle-right"></i></a>
+</div>
+[/preview]
+[preview]
+<div class="dropdown" style="display: inline-block">
+    <button type="button" id="dropdownMenu3" class="btn btn-link dropdown-toggle" data-toggle="dropdown">Page 15 of 25 <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
+        <li role="presentation" class="dropdown-header">Jump to page</li>
+        <li style="padding: 6px 18px;" role="presentation">
+            <form action="">
+                <input type="text" placeholder="15" class="form-control"/>
             </form>
         </li>
     </ul>
@@ -137,9 +150,9 @@ Medium-sized paging contains a single dropdown for changing the page size and ju
   <a href="#" class="btn btn-default"><i class="fa fa-angle-right"></i></a>
   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu4">
         <li role="presentation" class="dropdown-header">Jump to page</li>
-        <li style="padding: 0 16px;" role="presentation">
+        <li style="padding: 6px 18px;" role="presentation">
             <form action="">
-                    <input type="text" placeholder="15" class="form-control"/>
+                <input type="text" placeholder="15" class="form-control"/>
             </form>
         </li>
     </ul>
@@ -147,8 +160,7 @@ Medium-sized paging contains a single dropdown for changing the page size and ju
 [/preview]
 
 #### Small
-
-Small paging contains a single button group, containing left/right buttons and a single dropdown for changing the page size and jumping to a page.
+A possible configuration for very narrow/confined layouts. 
 
 [preview]
 <div class="btn-group dropdown">
@@ -157,9 +169,9 @@ Small paging contains a single button group, containing left/right buttons and a
   <a href="#" class="btn btn-default"><i class="fa fa-angle-right"></i></a>
   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu4">
         <li role="presentation" class="dropdown-header">Jump to page</li>
-        <li style="padding: 0 16px;" role="presentation">
+        <li style="padding: 6px 18px;" role="presentation">
             <form action="">
-                    <input type="text" placeholder="15" class="form-control"/>
+                <input type="text" placeholder="15" class="form-control"/>
             </form>
         </li>
         <li class="divider"></li>
