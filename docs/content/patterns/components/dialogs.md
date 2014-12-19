@@ -15,7 +15,7 @@ Dialogs provide the user with a focused way of accomplishing, confirming, or vie
 - Dialogs can be used for managing settings, editing/creating simple objects, confirming an action, or any other set of information/actions that warrant not leaving the page
 - Dialogs are usually opened from a click action
 - Dialogs may or may not block interactions "behind" or "under" the dialog (see <a href="#modes">modes</a>)
-- Dialogs can close the dialog by clicking outside of the 
+- If there is a non-destructive dismiss/cancel, dialogs can be closed by clicking outside of the dialog
 
 #### Components
 __Header / title bar__
