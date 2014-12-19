@@ -15,12 +15,13 @@ Dialogs provide the user with a focused way of accomplishing, confirming, or vie
 - Dialogs can be used for managing settings, editing/creating simple objects, confirming an action, or any other set of information/actions that warrant not leaving the page
 - Dialogs are usually opened from a click action
 - Dialogs may or may not block interactions "behind" or "under" the dialog (see <a href="#modes">modes</a>)
+- Dialogs can close the dialog by clicking outside of the 
 
 #### Components
 __Header / title bar__
 - Short and concise title
 - Sentence case title
-- Dismiss icon if 'cancel/done' is applicable
+- Dismiss (X) icon if a non-destructive 'cancel/done' is applicable
 
 __Content__
 - Can contain text or UI controls focused on a particular task, process, or entitiy
@@ -29,8 +30,9 @@ __Content__
 __Footer__
 - Contains action buttons
 - Primary action buttons are right aligned
-- Cancel buttons are left aligned
+- Cancel/previous buttons are left aligned
 - Use button styles that match the actions/priority, but if there more than two buttons with similar actions/priority, use the default button style for them all
+- Buttons should use action verbs that describe by themselves what will happen on click (e.g., 'Delete user' instead of 'Ok')
 
 [preview]
 <div class="modal fade in" style="display: block; position: relative; z-index: inherit;">
