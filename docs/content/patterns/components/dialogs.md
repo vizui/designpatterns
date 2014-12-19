@@ -7,19 +7,30 @@ preview: true
 <h3>Dialogs</h3>
 
 #### Purpose
-Dialogs provide the user with a focused way of accomplishing or confirming something. 
+Dialogs provide the user with a focused way of accomplishing, confirming, or viewing something without entirely leaving a screen or page.
 
 #### Description
-Dialogs float above the application until the user has taken a desired action or dismissed the dialog. Dialogs can be used for managing settings, editing/creating simple objects, or other actions that require simple input from a user. Dialogs are useful for interactions that are quick (less than a couple minutes) where background information is not necessary. Dialogs are usually opened from a click action, like a button or menu item. 
+- Dialogs are useful for interactions that are relatively quick (less than a couple minutes)
+- Dialogs float above the application until the user has taken a desired action or dismissed the dialog
+- Dialogs can be used for managing settings, editing/creating simple objects, confirming an action, or any other set of information/actions that warrant not leaving the page
+- Dialogs are usually opened from a click action
+- Dialogs may or may not block interactions "behind" or "under" the dialog (see <a href="#modes">modes</a>)
 
-#### Basic functionality
-Dialogs provide a title, an optional dismiss icon, text and/or form controls, and a footer. Dialog content can be scrollable, but the footer should always be visible. Dialogs may or may not block interactions "behind" or "under" the dialog (see Modes).
+#### Components
+__Header / title bar__
+- Short and concise title
+- Sentence case title
+- Dismiss icon if 'cancel/done' is applicable
 
-#### Button placement
-Action buttons are generally placed on the right, and if applicable, a cancel button is placed on the left. 
+__Content__
+- Can contain text or UI controls focused on a particular task, process, or entitiy
+- Can scroll independently depending on the content, creating a pinned header/footer
 
-#### Button styles
-In general, use the button style that matches the action. In some scenarios, there may be no button that takes priority over another, and they all have similar actions, in which case it might be best to use the default button style for them all.
+__Footer__
+- Contains action buttons
+- Primary action buttons are right aligned
+- Cancel buttons are left aligned
+- Use button styles that match the actions/priority, but if there more than two buttons with similar actions/priority, use the default button style for them all
 
 [preview]
 <div class="modal fade in" style="display: block; position: relative; z-index: inherit;">
@@ -167,19 +178,21 @@ A confirmation dialog is short, simple dialog that ensures the user is performin
 [pattern]
 ### Actionless
 
-An actionless dialog may block user interaction for a period of time, usually until another event occurs.
+An actionless dialog may block user interaction for a period of time, usually until something finishes or some other event occurs.
 
 [preview]
 <div class="modal fade in" style="display: block; position: relative; z-index: inherit;">
   <div class="modal-dialog" style="width: 400px; max-width: 100%; padding: 20px;">
     <div class="modal-content modal-center">
-      <div class="modal-body">
-          <p>Uploading document. Please wait...</p>
-        <div class="progress" style="margin-bottom: 0;">
-          <div class="progress-bar progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-            <span class="sr-only">60% Complete</span>
-          </div>
-        </div>
+        <div class="modal-body">
+            <div style="margin-bottom: 6px;" class="clearfix">
+                <div class="pull-left">Uploading document...</div>
+                <span class="pull-right text-muted">60%</span>
+            </div>
+            <div class="progress" style="margin-bottom: 0;">
+              <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+              </div>
+            </div>
       </div>
     </div>
   </div>
