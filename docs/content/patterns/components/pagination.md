@@ -53,7 +53,7 @@ Full paging contains separate dropdowns for adjusting the page size and jumping 
             <li role="presentation" class="dropdown-header">Jump to page</li>
             <li style="padding: 0 16px;" role="presentation">
                 <form action="">
-                    <div class="input-group input-group-sm">
+                    <div class="input-group">
                         <input type="text" placeholder="15" class="form-control"/>
                         <div class="input-group-btn">
                             <button class="btn btn-default">Go</button>
@@ -67,12 +67,47 @@ Full paging contains separate dropdowns for adjusting the page size and jumping 
   <a class="btn btn-default" href="#"><i class="fa fa-angle-left"></i></a>
   <a class="btn btn-default" href="#">1</a>
   <a class="btn btn-default" disabled href="#">...</a>
-  <a class="btn btn-default" href="#">14</a>
-  <a class="btn btn-default active" href="#">15</a>
-  <a class="btn btn-default" href="#">16</a>
+  <a class="btn btn-default" href="#">4</a>
+  <a class="btn btn-default" href="#">5</a>
+  <a class="btn btn-default active" href="#">6</a>
+  <a class="btn btn-default" href="#">7</a>
+  <a class="btn btn-default" href="#">8</a>
   <a class="btn btn-default" disabled href="#">...</a>
-  <a class="btn btn-default" href="#">25</a>
+  <a class="btn btn-default" href="#">10</a>
  <a class="btn btn-default" href="#"><i class="fa fa-angle-right"></i></a>
+</div>
+[/preview]
+[preview]
+<div class="btn-group">
+    <div class="dropdown" style="display: inline-block">
+        <button type="button" id="dropdownMenu1" class="btn-link btn dropdown-toggle" data-toggle="dropdown">10 per page <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+            <li role="presentation" class="dropdown-header">Show up to</li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
+        </ul>
+    </div>
+    <div class="dropdown" style="display: inline-block">
+        <button type="button" id="dropdownMenu2" class="btn-link btn dropdown-toggle" data-toggle="dropdown">Page 15 of 25 <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
+            <li role="presentation" class="dropdown-header">Jump to page</li>
+            <li style="padding: 0 16px;" role="presentation">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" placeholder="15" class="form-control"/>
+                        <div class="input-group-btn">
+                            <button class="btn btn-default">Go</button>
+                        </div>
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+</div> <div class="btn-group">
+  <a href="#" class="btn btn-default"><i class="fa fa-angle-left"></i></a>
+  <a href="#" class="btn btn-default"><i class="fa fa-angle-right"></i></a>
 </div>
 [/preview]
 
@@ -87,7 +122,7 @@ Medium-sized paging contains a single dropdown for changing the page size and ju
         <li role="presentation" class="dropdown-header">Jump to item</li>
         <li style="padding: 0 16px;" role="presentation">
             <form action="">
-                <div class="input-group input-group-sm">
+                <div class="input-group">
                     <input type="text" placeholder="150" class="form-control"/>
                     <div class="input-group-btn">
                         <button class="btn btn-default">Go</button>
@@ -104,7 +139,7 @@ Medium-sized paging contains a single dropdown for changing the page size and ju
     </ul>
 </div> <div class="btn-group">
   <a href="#" class="btn btn-default"><i class="fa fa-angle-left"></i></a>
- <a href="#" class="btn btn-default"><i class="fa fa-angle-right"></i></a>
+  <a href="#" class="btn btn-default"><i class="fa fa-angle-right"></i></a>
 </div>
 [/preview]
 [preview]
@@ -114,7 +149,7 @@ Medium-sized paging contains a single dropdown for changing the page size and ju
         <li role="presentation" class="dropdown-header">Jump to page</li>
         <li style="padding: 0 16px;" role="presentation">
             <form action="">
-                <div class="input-group input-group-sm">
+                <div class="input-group">
                     <input type="text" placeholder="15" class="form-control"/>
                     <div class="input-group-btn">
                         <button class="btn btn-default">Go</button>
@@ -148,7 +183,7 @@ Small paging contains a single button group, containing left/right buttons and a
         <li role="presentation" class="dropdown-header">Jump to page</li>
         <li style="padding: 0 16px;" role="presentation">
             <form action="">
-                <div class="input-group input-group-sm">
+                <div class="input-group">
                     <input type="text" placeholder="15" class="form-control"/>
                     <div class="input-group-btn">
                         <button class="btn btn-default">Go</button>
