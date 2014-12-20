@@ -93,17 +93,18 @@ Use when the tabs need less emphasis in relation to other navigational elements.
 
 [pattern]
 ### Justified tabs
-Evenly sized tabs distributed among the width of the container.
+Evenly sized tabs distributed among the width of the container. This can improve alignment when the tabs are otherwise close to filling the width of the container.
+
 [preview]
-<ul class="nav nav-tabs nav-justified text-center" role="tablist">
-  <li class="active"><a href="#" role="tab" data-toggle="tab"><i class="fa fa-3x fa-bell"></i><br>Notifications</a></li>
-  <li><a href="#" role="tab" data-toggle="tab"><i class="fa fa-3x fa-flag"></i><br>Language</a></li>
-  <li><a href="#" role="tab" data-toggle="tab"><i class="fa fa-3x fa-folder-open"></i><br>Sharing</a></li>
-  <li><a href="#" role="tab" data-toggle="tab"><i class="fa fa-3x fa-lock"></i><br>Security</a></li>
-</ul>
-<div style="border-top: none; border-radius: 0;" class="panel panel-default">
-    <div class="panel-body">
-        <p></p><p></p>
+<div style="width: 300px;">
+    <ul class="nav nav-tabs nav-justified text-center" role="tablist">
+      <li class="active"><a href="#" role="tab" data-toggle="tab">Recent</a></li>
+      <li><a href="#" role="tab" data-toggle="tab">Notes</a></li>
+    </ul>
+    <div style="border-top: none; border-radius: 0;" class="panel panel-default">
+        <div class="panel-body">
+            <p></p><p></p>
+        </div>
     </div>
 </div>
 [/preview]
