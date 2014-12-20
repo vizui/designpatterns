@@ -13,11 +13,13 @@ Breadcrumbs display the current path to a particular page relative to the starti
 
 #### Basic functionality
 - Breadcrumbs display the current path as links separated by carets to indicate each level.
-- The current location is at the far right, and the root is on the far left. 
+- The navigation root is the first element, the current location is the last element
 - The current location is not clickable.
 - Clicking on a link takes you to that screen. 
 
-Depending on the complexity of the navigational hierarchy and the type of page or application, it may make sense for the breadcrumb to represent only part of the hierarchy while sub tabs/navigation alone represent the remaining hierarchy.
+Depending on the complexity of the navigational hierarchy and the type of page or application, it may make sense for the breadcrumb to represent only part of the hierarchy while sub tabs/trees/navigation represent the remaining hierarchy. In that case, you may want to make the far right element clickable.
+
+Breadcrumb links do not have the usual link color since they are statically positioned and and take less precedence over contextual link icons. 
 
 [preview]
 <ol class="breadcrumb">
