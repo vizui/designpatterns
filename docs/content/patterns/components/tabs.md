@@ -25,7 +25,7 @@ Tabs manage stacked panes of content, giving the users the ability to view only 
 
 [pattern]
 ### Normal tabs
-
+The selected tab color should be the same color as the tab content.
 [preview]
 <ul class="nav nav-tabs" role="tablist">
   <li class="active"><a href="#" role="tab" data-toggle="tab">Active</a></li>
