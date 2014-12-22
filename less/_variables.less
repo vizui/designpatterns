@@ -40,6 +40,7 @@
 
 @btn-font-weight:                   600;
 @font-size-base:                    13px;
+@line-height-base:                  1.4;
 
 @input-border-focus:                @brand-info;
 
@@ -65,8 +66,9 @@
 
 @popover-border-color:                rgba(0,0,0,.05);
 
-@table-border-color:                #edeeef;
-@table-bg-accent:                   #f6f7f8;
+@table-border-color:                #e9eaeb;
+@table-bg-header:                   #f2f3f4;
+@table-bg-accent:                   #F9FAFB;
 @table-bg-hover:                    #f0f1f2;
 @table-condensed-cell-padding:      4px;
 
@@ -76,7 +78,7 @@
 
 @breadcrumb-bg:                     transparent;
 @breadcrumb-active-color:           #888;
-@breadcrumb-color:                  #888;
+@breadcrumb-color:                  @text-color;
 @breadcrumb-separator:              "\f105";
 
 @state-success-text:                @brand-success;
@@ -126,4 +128,5 @@
 // These variables don't exist in Bootstrap.
 
 @table-header-bg:                   #f5f6f7;
-@table-header-sortable-hover-bg:    darken(#f5f6f7, 3%);
+@table-header-sortable-active-bg:    darken(@table-header-bg, 3%);
+@table-header-sortable-hover-bg:    darken(@table-header-bg, 6%);

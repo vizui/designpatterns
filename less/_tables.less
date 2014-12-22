@@ -11,13 +11,16 @@
     }
     > thead > tr > .sortable {
         &.active {
-            background: #fff; //overrides bootstrap's active color
-            border-bottom-color: #bbb;
+            background: @table-header-sortable-active-bg; //overrides bootstrap's active color
+            border-color: darken(@table-header-sortable-active-bg, 4%);
+            color: #000;
+            // border-bottom-color: #bbb;
             // font-weight: 700;
         }
 
         &:hover {
             background: @table-header-sortable-hover-bg;
+            border-color: darken(@table-header-sortable-active-bg, 4%);
             cursor: pointer;
         }
     }
@@ -61,12 +64,53 @@
     }
 }
 
+.table {
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: @table-cell-padding @table-cell-padding*1.4;
+      }
+    }
+  }
+}
+
+.table-condensed {
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: @table-condensed-cell-padding @table-condensed-cell-padding*2;
+      }
+    }
+  }
+}
+
+.table-comfortable {
+  > thead,
+  > tbody,
+  > tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: @table-cell-padding*1.6 @table-cell-padding*2;
+      }
+    }
+  }
+}
+
 // Adds a background color to the table header
 .table > thead > tr {
-    background: transparent;
+    background: @table-bg-header;
 }
 .table > thead > tr > th {
-    border-bottom-color: #ddd;
+    border-bottom-color: @table-border-color;
+    border-bottom-width: 1px;
+    font-weight: 600;
 }
 
 // Styles the .table-config-column

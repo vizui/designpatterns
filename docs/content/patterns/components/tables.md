@@ -221,6 +221,43 @@ Use the condensed style, which reduces cell padding, for very large amounts of d
     </table>
 </div>
 [/preview]
+#### Comfortable
+Use the comfortable style, which increases cell padding, for making simple data breathe more. 
+[preview]
+<div style="padding: 40px; background: #fff;">
+    <table class="table table-outline table-comfortable">
+        <thead>
+            <tr>
+                <th>Project name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Invoice</td>
+                <td><span >Add invoice confirmation</span></td>
+                <td><span >$4,500</span></td>
+            </tr>
+            <tr>
+                <td>Templates</td>
+                <td><span >Refactor templates to use the new templating library</span></td>
+                <td><span >$9,000</span></td>
+            </tr>
+            <tr>
+                <td>Payments</td>
+                <td><span >Process payments using third party api</span></td>
+                <td><span >$5,400</span></td>
+            </tr>
+            <tr>
+                <td>Account Management</td>
+                <td><span >Improve account management workflow</span></td>
+                <td><span >$6,000</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+[/preview]
 
 #### Colored
 For text heavy pages (e.g., FAQ, APIs, Documentation, Pricing), or pages where there is one primary grid, a colored header may be appropriate.
@@ -426,19 +463,19 @@ If the content of the table is self-explanatory for your users, it may not need 
         <tbody>
             <tr>
                 <td class="vert-align"><strong>CSS is 20 years old today!</strong><br><span >13 points and 4 comments - 2 days ago</span></td>
-                <td class="vert-align text-center" style="width: 63px;"><span class="text-success semi-bold"><i class="fa fa-1x fa-angle-up"></i> 3.4%</span></td>
+                <td class="vert-align text-center" style="width: 70px;"><span class="text-success semi-bold"><i class="fa fa-1x fa-angle-up"></i> 3.4%</span></td>
             </tr>
             <tr>
                 <td class="vert-align"><strong>Motion Experiments</strong><br><span >31 points and 7 comments - 11 hours ago</span></td>
-                <td class="vert-align text-center" style="width: 63px;"><span class="text-success semi-bold"><i class="fa fa-1x fa-angle-up"></i> 2.5%</span></td>
+                <td class="vert-align text-center" style="width: 70px;"><span class="text-success semi-bold"><i class="fa fa-1x fa-angle-up"></i> 2.5%</span></td>
             </tr>
             <tr>
                 <td class="vert-align"><strong>Is everyone a designer? </strong><br><span >15 points and 3 comments - 3 days ago</span></td>
-                <td class="vert-align text-center" style="width: 63px;"><span class="text-primary semi-bold"><i class="fa fa-1x fa-angle-right"></i> 0.0%</span></td>
+                <td class="vert-align text-center" style="width: 70px;"><span class="text-primary semi-bold"><i class="fa fa-1x fa-angle-right"></i> 0.0%</span></td>
             </tr>
             <tr>
                 <td class="vert-align"><strong>Introducing GIFV</strong><br><span >24 points and 9 comments - 5 days ago</span></td>
-                <td class="vert-align text-center" style="width: 63px;"><span class="text-danger semi-bold"><i class="fa fa-1x fa-angle-down"></i> 0.1%</span></td>
+                <td class="vert-align text-center" style="width: 70px;"><span class="text-danger semi-bold"><i class="fa fa-1x fa-angle-down"></i> 0.1%</span></td>
             </tr>
         </tbody>
     </table>
