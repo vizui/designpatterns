@@ -33,6 +33,9 @@
     &:active {
         &:extend(.btn-default:active);
     }
+    &.active {
+        &:extend(.btn-default.active, .btn.active);
+    }
 }
 
 // Make btn-links bold
@@ -57,5 +60,29 @@
     }
     &.btn-xs {
         padding: @padding-xs-horizontal/2;
+    }
+}
+
+
+
+// A toolbar for hover buttons with separators created by btn-groups.
+.btn-toolbar.btn-toolbar-hover {
+    margin-left: 0;
+    .btn-group {
+        border-right: 1px solid #ddd;
+        padding-right: 5px;
+        &:last-child {
+            border-right: 0;
+        }
+    }
+
+    .btn {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .btn-group > .btn {
+        padding: 3px 8px;
+        min-width: initial;
     }
 }
