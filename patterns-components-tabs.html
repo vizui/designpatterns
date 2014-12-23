@@ -3,8 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Tabs - Components - USPTO design patterns</title>
-        <meta name="description" content="">
+        <meta name="description" content="An open source design guide, pattern library, and Bootstrap theme.">
         <meta name="viewport" content="width=device-width">
+        <meta name="robots" content="noindex">
 
         <link rel="shortcut icon" href="6353e75c.favicon.ico">
         <!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600,700" rel="stylesheet" type="text/css"> -->
@@ -17,7 +18,7 @@
 
         <link rel="stylesheet" href="styles/3141330f.vendor.css">
 
-        <link rel="stylesheet" href="styles/2535f4ca.main.css">
+        <link rel="stylesheet" href="styles/33e100fc.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -267,7 +268,8 @@
 <p> </p>
 </div>
 <div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="normal-tabs" href="#normal-tabs"><i class="fa fa-link"></i></a> Normal tabs</h3></p>
+<p><h3><a class="pl-heading-link" id="normal-tabs" href="#normal-tabs"><i class="fa fa-link"></i></a> Normal tabs</h3>
+The selected tab color should be the same color as the tab content.</p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <ul class="nav nav-tabs" role="tablist">
   <li class="active"><a href="#" role="tab" data-toggle="tab">Active</a></li>
@@ -333,17 +335,17 @@ Use when the tabs need less emphasis in relation to other navigational elements.
 </div>
 <div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="justified-tabs" href="#justified-tabs"><i class="fa fa-link"></i></a> Justified tabs</h3>
-Evenly sized tabs distributed among the width of the container.</p>
+Evenly sized tabs distributed among the width of the container. This can improve alignment when the tabs are otherwise close to filling the width of the container.</p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
-<ul class="nav nav-tabs nav-justified text-center" role="tablist">
-  <li class="active"><a href="#" role="tab" data-toggle="tab"><i class="fa fa-3x fa-bell"></i><br>Notifications</a></li>
-  <li><a href="#" role="tab" data-toggle="tab"><i class="fa fa-3x fa-flag"></i><br>Language</a></li>
-  <li><a href="#" role="tab" data-toggle="tab"><i class="fa fa-3x fa-folder-open"></i><br>Sharing</a></li>
-  <li><a href="#" role="tab" data-toggle="tab"><i class="fa fa-3x fa-lock"></i><br>Security</a></li>
-</ul>
-<div style="border-top: none; border-radius: 0" class="panel panel-default">
-    <div class="panel-body">
-        <p></p><p></p>
+<div style="width: 300px">
+    <ul class="nav nav-tabs nav-justified text-center" role="tablist">
+      <li class="active"><a href="#" role="tab" data-toggle="tab">Recent</a></li>
+      <li><a href="#" role="tab" data-toggle="tab">Notes</a></li>
+    </ul>
+    <div style="border-top: none; border-radius: 0" class="panel panel-default">
+        <div class="panel-body">
+            <p></p><p></p>
+        </div>
     </div>
 </div>
 </div>

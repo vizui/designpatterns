@@ -3,8 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Labels and badges - Components - USPTO design patterns</title>
-        <meta name="description" content="">
+        <meta name="description" content="An open source design guide, pattern library, and Bootstrap theme.">
         <meta name="viewport" content="width=device-width">
+        <meta name="robots" content="noindex">
 
         <link rel="shortcut icon" href="6353e75c.favicon.ico">
         <!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600,700" rel="stylesheet" type="text/css"> -->
@@ -17,7 +18,7 @@
 
         <link rel="stylesheet" href="styles/3141330f.vendor.css">
 
-        <link rel="stylesheet" href="styles/2535f4ca.main.css">
+        <link rel="stylesheet" href="styles/33e100fc.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -247,27 +248,52 @@
             <div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="labels" href="#labels"><i class="fa fa-link"></i></a> Labels</h3></p>
 <p>Labels are generally used to provide emphasis on a characteristic of an object, e.g., the category of a document. They are generally actionless.</p>
+<p>Avoid mixing standard and subtle labels.</p>
+<h4>Standard</h4>
+<p>Use standard labels by default unless there are going to be many on the screen at once.</p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
-<p><span class="label label-default">Default</span>
-<span class="label label-primary">Primary</span>
-<span class="label label-success">Success</span>
-<span class="label label-info">Info</span>
-<span class="label label-warning">Warning</span>
-<span class="label label-danger">Danger</span></p>
+<p><span class="label label-default">DEFAULT</span>
+<span class="label label-primary">PRIMARY</span>
+<span class="label label-success">SUCCESS</span>
+<span class="label label-info">INFO</span>
+<span class="label label-warning">WARNING</span>
+<span class="label label-danger">DANGER</span></p>
 </div>
-<pre><code class="hljs html">
+<h4>Subtle</h4>
+<p>Use subtle labels when labels are going to be repeated in a grid or list</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<p><span class="label label-default subtle">DEFAULT</span>
+<span class="label label-primary subtle">PRIMARY</span>
+<span class="label label-success subtle">SUCCESS</span>
+<span class="label label-info subtle">INFO</span>
+<span class="label label-warning subtle">WARNING</span>
+<span class="label label-danger subtle">DANGER</span></p>
+</div>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-default"</span>&gt;</span>DEFAULT<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"label label-primary subtle"</span>&gt;</span>SUBTLE PRIMARY<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
 </code></pre>
 </div>
 <div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="badges" href="#badges"><i class="fa fa-link"></i></a> Badges</h3></p>
 <p>Badges are generally used for emphasizing a numerical characteristic of an object, e.g., the number of unread items in a folder.</p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
-<p><span class="badge">5</span>
-<span class="badge">0</span>
-<span class="badge">100</span></p>
+<p><span class="badge">5</span> <span class="badge">200</span> <span class="badge">0</span></p>
 </div>
-<pre><code class="hljs html">
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"badge"</span>&gt;</span>5<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
 </code></pre>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<ul class="list-group" style="max-width: 150px">
+    <li class="list-group-item">
+        Inbox <span class="badge pull-right">1,932</span>
+    </li>
+    <li class="list-group-item active">
+        Outbox <span class="badge pull-right">2</span>
+    </li>
+    <li class="list-group-item">
+        Spam
+    </li>
+</ul>
+</div>
 </div>
 
             
