@@ -18,7 +18,6 @@ Breadcrumbs display the current path to a particular page relative to the starti
 
 Depending on the complexity of the navigational hierarchy and the type of page or application, it may make sense for the breadcrumb to represent only part of the hierarchy while sub tabs/trees/navigation represent the remaining hierarchy. In that case, you may want to make the far right element clickable.
 
-Breadcrumb links do not have the usual link color since they are statically positioned and and take less precedence over contextual links.
 
 [preview]
 <ol class="breadcrumb">
