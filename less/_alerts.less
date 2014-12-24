@@ -19,12 +19,20 @@
         margin-left: -3px;
         text-align: center;
     }
+
+    .btn {
+        margin: -4px;
+        margin-left: 10px;
+        // margin-right: -10px;
+        // text-transform: uppercase;
+    }
 }
 
 .toast-list {
     .toast {
+        position: relative;
         border: 1px solid #ddd;
-        border-left: 4px solid #ddd;
+        border-left-width: 4px;
         border-radius: 2px;
         margin: 8px;
         position: relative;
@@ -34,19 +42,19 @@
         padding: @alert-padding*2;
 
         &.toast-info {
-            border-color: @brand-info;
+            border-left-color: @brand-info;
         }
         &.toast-primary {
-            border-color: @brand-primary;
+            border-left-color: @brand-primary;
         }
         &.toast-success {
-            border-color: @brand-success;
+            border-left-color: @brand-success;
         }
         &.toast-danger {
-            border-color: @brand-danger;
+            border-left-color: @brand-danger;
         }
         &.toast-warning {
-            border-color: @brand-warning;
+            border-left-color: @brand-warning;
         }
 
         .toast-content {
