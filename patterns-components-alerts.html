@@ -7,10 +7,8 @@
         <meta name="viewport" content="width=device-width">
         <meta name="robots" content="noindex">
 
+        <meta name="theme-color" content="#004c97">
         <link rel="shortcut icon" href="6353e75c.favicon.ico">
-        <!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,300,600,700" rel="stylesheet" type="text/css"> -->
-
-        <!-- <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=RobotoDraft:100,300,400,500,700"> -->
 
         <!--[if lt IE 9]>
             <script src="vendor/html5shiv/html5shiv.min.js"></script>
@@ -18,7 +16,7 @@
 
         <link rel="stylesheet" href="styles/3141330f.vendor.css">
 
-        <link rel="stylesheet" href="styles/33e100fc.main.css">
+        <link rel="stylesheet" href="styles/6877040c.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -268,7 +266,7 @@
     </div>
     <div class="alert alert-success">
         <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <a href="" class="alert-link pull-right">Undo</a>
+        <button class="btn btn-sm btn-link alert-link pull-right">Undo</button>
         <i class="fa fa-check alert-icon"></i> Case assigned to <strong>Jerry</strong>.
     </div>
     <div class="alert alert-success">
@@ -280,7 +278,7 @@
         <i class="fa fa-warning alert-icon"></i>There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
     </div>
     <div class="alert alert-danger">
-        <a href="" class="alert-link pull-right">Retry</a>
+        <button class="btn btn-sm btn-link alert-link pull-right">Retry</button>
         <i class="fa fa-times-circle alert-icon"></i> There was a network error assigning case <strong>90/934,382</strong>. 
     </div>
     <div class="alert alert-danger">
@@ -334,61 +332,47 @@
 <li>Alerts with high importance, like <code>warning</code> or <code>danger</code>, should not close automatically unless the situation has been resolved in some other way.</li>
 </ul>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
-<div style="max-width: 400px; margin-bottom: 20px">
-    <div class="toast-list">
-        <div class="toast toast-success">
-            <div class="toast-content">
-                <button class="close">
-                    <span>&times;</span>
-                </button>
-                <span>Your settings have been saved.</span>
-            </div>
+<div class="toast-list" style="max-width: 400px">
+    <div class="toast toast-success">
+        <div class="toast-content">
+            <button class="close">
+                <span>&times;</span>
+            </button>
+            <span>Message sent to Jerry.</span>
         </div>
     </div>
-</div>
-<div style="max-width: 400px; margin-bottom: 20px">
-    <div class="toast-list">
-        <div class="toast toast-info">
-            <div class="toast-content">
-                <button class="close">
-                    <span>&times;</span>
-                </button>
-                <span>Jerry added a comment to one of your cases (90/098,881).</span>
-            </div>
-            <div class="toast-actions">
-                <button type="button" class="btn btn-default">View comment</button> 
-            </div>
+    <div class="toast toast-info">
+        <div class="toast-content">
+            <button class="close">
+                <span>&times;</span>
+            </button>
+            <span>Jerry added a comment to one of your cases (90/098,881).</span>
+        </div>
+        <div class="toast-actions">
+            <button type="button" class="btn btn-link">View comment</button> 
         </div>
     </div>
-</div>
-<div style="max-width: 400px; margin-bottom: 20px">
-    <div class="toast-list">
-        <div class="toast toast-warning">
-            <div class="toast-content">
-                <button type="button" class="close">
-                    <span>&times;</span>
-                </button>
-                <span>Case 90/842,381 is due tomorrow.</span>
-            </div>
-            <div class="toast-actions">
-                <button type="button" class="btn btn-default">View case</button> 
-                <button type="button" class="btn btn-default">Snooze <span class="caret"></span></button> 
-            </div>
+    <div class="toast toast-warning">
+        <div class="toast-content">
+            <button type="button" class="close">
+                <span>&times;</span>
+            </button>
+            <span>Case 90/842,381 is due tomorrow.</span>
+        </div>
+        <div class="toast-actions">
+            <button type="button" class="btn btn-link">View case</button> 
+            <button type="button" class="btn btn-link">Snooze <span class="caret"></span></button> 
         </div>
     </div>
-</div>
-<div style="max-width: 400px; margin-bottom: 20px">
-    <div class="toast-list">
-        <div class="toast toast-danger">
-            <div class="toast-content">
-                <button type="button" class="close">
-                    <span>&times;</span>
-                </button>
-                <span>Connection has been lost. Retrying in 30 seconds.</span>
-            </div>
-            <div class="toast-actions">
-                <button type="button" class="btn btn-default">Retry now</button> 
-            </div>
+    <div class="toast toast-danger">
+        <div class="toast-content">
+            <button type="button" class="close">
+                <span>&times;</span>
+            </button>
+            <span>Connection has been lost. Retrying in 30 seconds.</span>
+        </div>
+        <div class="toast-actions">
+            <button type="button" class="btn btn-link">Retry now</button> 
         </div>
     </div>
 </div>
@@ -402,63 +386,8 @@
             <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Case 90/842,381 is due tomorrow.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"toast-actions"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span>&gt;</span>View case<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span> 
-            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span>&gt;</span>Snooze <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"caret"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span> 
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-</code></pre>
-<h4>Stacked alerts</h4>
-<p>If more than one system alert needs to be displayed at once, they should appear connected/stacked.</p>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
-<div style="max-width: 400px; margin-bottom: 20px">
-    <div class="toast-list">
-        <div class="toast toast-danger">
-            <div class="toast-content">
-                <button type="button" class="close">
-                    <span>&times;</span>
-                </button>
-                <span>Connection has been lost. Retrying in 30 seconds.</span>
-            </div>
-            <div class="toast-actions">
-                <button type="button" class="btn btn-default">Retry now</button> 
-            </div>
-        </div>
-        <div class="toast toast-info">
-            <div class="toast-content">
-                <button class="close">
-                    <span>&times;</span>
-                </button>
-                <span>Jerry added a comment to one of your cases (90/098,881).</span>
-            </div>
-            <div class="toast-actions">
-                <button type="button" class="btn btn-default">View comment</button> 
-            </div>
-        </div>
-    </div>
-</div> 
-</div>
-<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"toast-list"</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"toast toast-danger"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"toast-content"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"close"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>&amp;times;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Connection has been lost. Retrying in 30 seconds.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"toast-actions"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span>&gt;</span>Retry now<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span> 
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"toast toast-info"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"toast-content"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"close"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>&amp;times;<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-            <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>Jerry added a comment to one of your cases (90/098,881).<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-        <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"toast-actions"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span>&gt;</span>View comment<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span> 
+            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-link"</span>&gt;</span>View case<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span> 
+            <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-link"</span>&gt;</span>Snooze <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"caret"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span> 
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
@@ -468,16 +397,12 @@
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <button type="button" data-toast-target="#example-toasts" class="btn btn-default show-toasts">Toggle alerts</button>
 <div class="toast-list pl-closable-toasts" style="display: none; width: 400px" id="example-toasts">
-    <div class="toast toast-warning">
+    <div class="toast toast-success">
         <div class="toast-content">
-            <button type="button" class="close">
+            <button class="close">
                 <span>&times;</span>
             </button>
-            <span>Case 90/842,381 is due tomorrow.</span>
-        </div>
-        <div class="toast-actions">
-            <button type="button" class="btn btn-default">View case</button> 
-            <button type="button" class="btn btn-default">Snooze <span class="caret"></span></button> 
+            <span>Message sent to Jerry.</span>
         </div>
     </div>
     <div class="toast toast-info">
@@ -488,7 +413,19 @@
             <span>Jerry added a comment to one of your cases (90/098,881).</span>
         </div>
         <div class="toast-actions">
-            <button type="button" class="btn btn-default">View comment</button> 
+            <button type="button" class="btn btn-link">View comment</button> 
+        </div>
+    </div>
+    <div class="toast toast-warning">
+        <div class="toast-content">
+            <button type="button" class="close">
+                <span>&times;</span>
+            </button>
+            <span>Case 90/842,381 is due tomorrow.</span>
+        </div>
+        <div class="toast-actions">
+            <button type="button" class="btn btn-link">View case</button> 
+            <button type="button" class="btn btn-link">Snooze <span class="caret"></span></button> 
         </div>
     </div>
     <div class="toast toast-danger">
@@ -499,7 +436,7 @@
             <span>Connection has been lost. Retrying in 30 seconds.</span>
         </div>
         <div class="toast-actions">
-            <button type="button" class="btn btn-default">Retry now</button> 
+            <button type="button" class="btn btn-link">Retry now</button> 
         </div>
     </div>
 </div>
