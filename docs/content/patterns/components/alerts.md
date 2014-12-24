@@ -116,7 +116,7 @@ __Behavior:__
                 <span>Jerry added a comment to one of your cases (90/098,881).</span>
             </div>
             <div class="toast-actions">
-                <button type="button" class="btn btn-default">View comment</button> 
+                <button type="button" class="btn btn-link">View comment</button> 
             </div>
         </div>
     </div>
@@ -131,8 +131,8 @@ __Behavior:__
                 <span>Case 90/842,381 is due tomorrow.</span>
             </div>
             <div class="toast-actions">
-                <button type="button" class="btn btn-default">View case</button> 
-                <button type="button" class="btn btn-default">Snooze <span class="caret"></span></button> 
+                <button type="button" class="btn btn-link">View case</button> 
+                <button type="button" class="btn btn-link">Snooze <span class="caret"></span></button> 
             </div>
         </div>
     </div>
@@ -147,7 +147,7 @@ __Behavior:__
                 <span>Connection has been lost. Retrying in 30 seconds.</span>
             </div>
             <div class="toast-actions">
-                <button type="button" class="btn btn-default">Retry now</button> 
+                <button type="button" class="btn btn-link">Retry now</button> 
             </div>
         </div>
     </div>
@@ -164,8 +164,8 @@ __Behavior:__
             <span>Case 90/842,381 is due tomorrow.</span>
         </div>
         <div class="toast-actions">
-            <button type="button" class="btn btn-default">View case</button> 
-            <button type="button" class="btn btn-default">Snooze <span class="caret"></span></button> 
+            <button type="button" class="btn btn-link">View case</button> 
+            <button type="button" class="btn btn-link">Snooze <span class="caret"></span></button> 
         </div>
     </div>
 </div>
@@ -184,7 +184,7 @@ If more than one system alert needs to be displayed at once, they should appear 
                 <span>Connection has been lost. Retrying in 30 seconds.</span>
             </div>
             <div class="toast-actions">
-                <button type="button" class="btn btn-default">Retry now</button> 
+                <button type="button" class="btn btn-link">Retry now</button> 
             </div>
         </div>
         <div class="toast toast-info">
@@ -195,7 +195,7 @@ If more than one system alert needs to be displayed at once, they should appear 
                 <span>Jerry added a comment to one of your cases (90/098,881).</span>
             </div>
             <div class="toast-actions">
-                <button type="button" class="btn btn-default">View comment</button> 
+                <button type="button" class="btn btn-link">View comment</button> 
             </div>
         </div>
     </div>
@@ -212,7 +212,7 @@ If more than one system alert needs to be displayed at once, they should appear 
             <span>Connection has been lost. Retrying in 30 seconds.</span>
         </div>
         <div class="toast-actions">
-            <button type="button" class="btn btn-default">Retry now</button> 
+            <button type="button" class="btn btn-link">Retry now</button> 
         </div>
     </div>
     <div class="toast toast-info">
@@ -223,7 +223,7 @@ If more than one system alert needs to be displayed at once, they should appear 
             <span>Jerry added a comment to one of your cases (90/098,881).</span>
         </div>
         <div class="toast-actions">
-            <button type="button" class="btn btn-default">View comment</button> 
+            <button type="button" class="btn btn-link">View comment</button> 
         </div>
     </div>
 </div>
@@ -243,8 +243,8 @@ This example shows where and how system alerts may appear <span class="text-mute
             <span>Case 90/842,381 is due tomorrow.</span>
         </div>
         <div class="toast-actions">
-            <button type="button" class="btn btn-default">View case</button> 
-            <button type="button" class="btn btn-default">Snooze <span class="caret"></span></button> 
+            <button type="button" class="btn btn-link">View case</button> 
+            <button type="button" class="btn btn-link">Snooze <span class="caret"></span></button> 
         </div>
     </div>
     <div class="toast toast-info">
@@ -255,7 +255,7 @@ This example shows where and how system alerts may appear <span class="text-mute
             <span>Jerry added a comment to one of your cases (90/098,881).</span>
         </div>
         <div class="toast-actions">
-            <button type="button" class="btn btn-default">View comment</button> 
+            <button type="button" class="btn btn-link">View comment</button> 
         </div>
     </div>
     <div class="toast toast-danger">
@@ -266,7 +266,7 @@ This example shows where and how system alerts may appear <span class="text-mute
             <span>Connection has been lost. Retrying in 30 seconds.</span>
         </div>
         <div class="toast-actions">
-            <button type="button" class="btn btn-default">Retry now</button> 
+            <button type="button" class="btn btn-link">Retry now</button> 
         </div>
     </div>
 </div>
