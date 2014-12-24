@@ -450,7 +450,7 @@ This is the native browser multi-select. `Ctrl+click` (or `cmd+click`) toggles s
 
 [pattern]
 ### Rich text editor
-Only use toolbar buttons relevant to the intended data.
+The rich text editor allows for text input with additional formatting and inline images/links. Only include the necessary functionality/buttons/tools for the intended data.
 [preview]
 <div class="container-fluid" style="max-width: 450px; margin: 0;">
     <div class="row">
