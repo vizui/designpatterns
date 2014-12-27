@@ -46,7 +46,7 @@ Use vertical steps when there are 5 or more steps, when there are nested steps, 
 
 [preview]
 <div class="">
-    <div class="" style="margin: auto; max-width: 700px;">
+    <div class="" style="max-width: 700px;">
         <div class="" style="display: inline-block; width: 100%;">
             <div style="width: 200px; min-height: 400px; float: left;">
                 <div class="panel-body">
@@ -109,7 +109,7 @@ Use horizontal steps when there are 4 or less steps.
 
 [preview]
 <div class="">
-    <div class="" style="margin: auto; max-width: 450px;">
+    <div class="" style="max-width: 450px;">
         <div class="panel panel-default" style="overflow: auto; position: relative;">
             <div class="panel-heading" style="background-color: transparent;">
                 <h4 class="text-center">Create your account</h4>
@@ -147,18 +147,47 @@ Use horizontal steps when there are 4 or less steps.
                       </div>
                     </div>
                 </form>
-                <div class="text-right">
+                <div class="text-right" style="margin-top: 16px;">
                     <button class="btn btn-default pull-left">Back</button>
                     <button class="btn btn-primary">Continue</button>
                 </div>
             </div>
-            <!-- <div style="text-align: right; padding: 15px;">
-                <button class="btn btn-default pull-left"><div class="pull-left" style="background: #004c97; padding: 6px; color: #fff; text-align: center;margin-top: 2px;margin-right: 8px;"><i class="fa fa-arrow-left fa-fw"></i></div><div style="margin-left: 4px; float: left;text-align: left;"><div class="text-muted small">BACK</div>Account</div></button>
-                <button class="btn btn-default"><div class="pull-right" style="background: #004c97; padding: 6px; color: #fff; text-align: center;margin-top: 2px;margin-left: 8px;"><i class="fa fa-arrow-right fa-fw"></i></div><div style="margin-right: 4px; float: right;text-align: right;"><div class="text-muted small">NEXT</div>Customize</div></button>
-            </div> -->
-        </div>
+<!--             <div style="display: inline-block; width: 100%; text-align: center; padding: 15px; margin-bottom: 10px;">
+                <button class="btn btn-default pull-left"><div class="pull-left" style="background: #ccc; padding: 6px; color: #fff; text-align: center;margin-top: 2px;margin-right: 8px; margin-left: -4px; "><i class="fa fa-arrow-left fa-fw"></i></div><div style="margin-left: 4px; float: left;text-align: left;"><div class="text-muted small">PREVIOUS</div>Account</div></button>
+                <button class="btn btn-default pull-right"><div class="pull-right" style="background: #004c97; padding: 6px; color: #fff; text-align: center;margin-top: 2px;margin-left: 8px; margin-right: -2;"><i class="fa fa-arrow-right fa-fw"></i></div><div style="margin-right: 4px; float: right;text-align: right;"><div class="text-muted small">NEXT</div>Customize</div></button>
+            </div>
+ -->        </div>
     </div>
 </div>
 [/preview]
 
+[/pattern]
+
+[pattern]
+### Buttons
+Buttons for a wizard can vary depending on the need. The primary actions should be on the right, the secondary actions should be on the left.
+[preview]
+<div style="max-width: 450px; display: inline-block; width: 100%;">
+    <div class="btn-toolbar">
+        <button class="btn btn-primary pull-right">Continue</button>
+    </div>
+    <hr>
+    <div class="btn-toolbar">
+        <button class="btn btn-default">Back</button>
+        <button class="btn btn-primary pull-right">Continue</button>
+    </div>
+    <hr>
+    <div class="btn-toolbar">
+        <button class="btn btn-default">Back</button><button class="btn btn-default">Cancel</button>
+        <button class="btn btn-primary pull-right">Continue</button>
+    </div>
+    <hr>
+    <div class="btn-toolbar">
+        <button class="btn btn-default">Back</button><button class="btn btn-default">Cancel</button>
+        <button class="btn btn-primary pull-right">Continue</button>
+        <button class="btn btn-default pull-right">Save</button>
+    </div>
+    <p style="margin-top: 10px;" class="pull-right text-muted"> Last saved 09/19/14 10:45 AM</p>
+</div>
+[/preview]
 [/pattern]
