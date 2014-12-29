@@ -175,20 +175,18 @@ Use tabs if there are 5 or less sections of settings without nesting, otherwise 
               <li><a href="#" role="tab" data-toggle="tab">SSH Keys</a></li>
             </ul>
             <div class="modal-body" >
-                <label>Receive email notifications when</label>
                 <form class="" role="form">
                     <div class="form-group">
-                        <div class="">
-                          <div class="checkbox">
-                            <label><input type="checkbox" id="optionsRadios1" value="option1" checked>My case is transferred to another examining attorney</label>
-                          </div>
-                          <div class="checkbox">
-                            <label><input type="checkbox" id="optionsRadios2" value="option2" checked>New classes added</label>
-                          </div>
-                          <div class="checkbox">
-                            <label><input type="checkbox" id="optionsRadios3" value="option3" checked>Classes originally paid for are deleted</label>
-                          </div>
-                        </div>
+                      <label>Receive email notifications when</label>
+                      <div class="checkbox">
+                        <label><input type="checkbox" id="optionsRadios1" value="option1" checked>My case is transferred to another examining attorney</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" id="optionsRadios2" value="option2" checked>New classes added</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" id="optionsRadios3" value="option3" checked>Classes originally paid for are deleted</label>
+                      </div>
                     </div>
                 </form>
                 <button class="btn btn-primary">Save changes</button>
