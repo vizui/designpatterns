@@ -22,52 +22,29 @@ body {
     overflow-y: auto;
 }
 
-.pl-swatch {
-    text-align: left;
-}
-
-.pl-swatch-color {
-    // float: left;
+.pl-palette-color {
     display: inline-block;
-    height: 150px;
-    width: 150px;
-    padding: 10px;
+    padding: 4px;
     margin-bottom: 55px;
     margin-right: 8px;
-    border-radius: 2px;
-    vertical-align: top;
-    text-align: left;
-    // line-height: 46px;
-}
+    border: 1px solid #eee;
+    text-align: center;
 
-.swatchColor(@variableName) {
-    @color: @@variableName;
-    .pl-swatch-@{variableName} {
-        background-color: @color;
-        &::before {
-            white-space: pre-wrap;
-            position: relative;
-            display: block;
-            text-align: center;
-            font-weight: 600;
-            line-height: 18px;
-            top: 100%;
-            padding: 12px;
-            content: "@{color} \A @@{variableName}";
-        }
+    .pl-palette-preview {
+        border-radius: 2px;
+        width: 125px;
+        height: 50px;
+    }
+
+    .pl-palette-variable {
+        font-weight: 600;
+        color: #808080;
+    }
+
+    .pl-palette-value {
+
     }
 }
-
-.swatchColor(~"brand-primary");
-.swatchColor(~"brand-success");
-.swatchColor(~"brand-info");
-.swatchColor(~"brand-warning");
-.swatchColor(~"brand-danger");
-.swatchColor(~"gray-darker");
-.swatchColor(~"gray-dark");
-.swatchColor(~"gray-light");
-.swatchColor(~"gray-lighter");
-.swatchColor(~"gray");
 
 .pl-header {
     &.navbar-fixed-top {
