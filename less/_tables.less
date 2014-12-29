@@ -13,9 +13,9 @@
         &.active {
             background: @table-header-sortable-active-bg; //overrides bootstrap's active color
             border-color: darken(@table-header-sortable-active-bg, 4%);
-            color: #000;
+            color: #222;
             // border-bottom-color: #bbb;
-            // font-weight: 700;
+            font-weight: 700;
         }
 
         &:hover {
@@ -137,10 +137,12 @@
 // Contextual backgrounds
 
 .table-variant(@color) {
-    > thead > tr > th {
+    > thead > tr {
         background: @color;
-        color: #fff;
-        border-bottom: none;
+        > th {
+          color: #fff;
+          border-bottom: none;
+        }
     }
 
     &.table-bordered {
@@ -169,5 +171,10 @@
 }
 .table-inverse {
     .table-variant(#282930);
+}
+.table-clear {
+  > thead > tr {
+    background: transparent;
+  }
 }
 

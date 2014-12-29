@@ -259,10 +259,11 @@ Use the comfortable style, which increases cell padding, for making simple data 
 </div>
 [/preview]
 
-#### Colored
-For text heavy pages (e.g., FAQ, APIs, Documentation, Pricing), or pages where there is one primary grid, a colored header may be appropriate.
+#### Colored headers
+For text heavy pages (e.g., FAQ, APIs, Documentation, Pricing), or pages where there is one primary grid, a colored header may be appropriate. For tables immediately surrounded by other distinguishing elements, a clear header may be appropriate.
 
-Similar to other components, the available styles are `.table-{primary, success, info, warning, danger, inverse}`.
+Similar to other components, the available styles are `.table-{primary, success, info, warning, danger}`, as well as `table-inverse` (black header) and `table-clear` (clear header). 
+
 [preview]
 <div style="padding: 40px; background: #fff;">
     <table class="table table-striped table-info">
