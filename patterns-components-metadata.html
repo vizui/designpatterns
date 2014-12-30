@@ -16,7 +16,7 @@
 
         <link rel="stylesheet" href="styles/f2dd75fb.vendor.css">
 
-        <link rel="stylesheet" href="styles/8b719be2.main.css">
+        <link rel="stylesheet" href="styles/468ee487.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -124,7 +124,7 @@
                                 
                                     <ul class="nav nav-stacked">
                                         
-                                            <li><a title="Overview" href="#overview">Overview</a></li>
+                                            <li><a title="General" href="#general">General</a></li>
                                         
                                     </ul>
                                 
@@ -241,8 +241,8 @@
         <section class="pl-content">
             
             <div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="overview" href="#overview"><i class="fa fa-link"></i></a> Overview</h3>
-The metadata pattern can be used for showing key/value pairs.</p>
+<p><h3><a class="pl-heading-link" id="general" href="#general"><i class="fa fa-link"></i></a> General</h3>
+The metadata pattern can be used for showing label/value pairs.</p>
 <p><strong>Do</strong></p>
 <ul>
 <li>Consistently use <code>#</code> or <code>number</code> in labels</li>
@@ -250,6 +250,8 @@ The metadata pattern can be used for showing key/value pairs.</p>
 <li>Reflow columns based on available screen real estate</li>
 <li>Sentence case labels</li>
 </ul>
+<h4>Horizontal</h4>
+<p>Useful for shorter labels/values.</p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
 <div class="row">
     <div class="col-md-6">
@@ -286,9 +288,47 @@ The metadata pattern can be used for showing key/value pairs.</p>
     <span class="hljs-tag">&lt;<span class="hljs-title">dt</span>&gt;</span>Confirmation #<span class="hljs-tag">&lt;/<span class="hljs-title">dt</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">dd</span>&gt;</span>1662<span class="hljs-tag">&lt;/<span class="hljs-title">dd</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">dt</span>&gt;</span>Patent #<span class="hljs-tag">&lt;/<span class="hljs-title">dt</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-title">dd</span>&gt;</span>---<span class="hljs-tag">&lt;/<span class="hljs-title">dd</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">dd</span>&gt;</span>&amp;mdash;<span class="hljs-tag">&lt;/<span class="hljs-title">dd</span>&gt;</span>
 <span class="hljs-tag">&lt;/<span class="hljs-title">dl</span>&gt;</span>
 </code></pre>
+<h4>Vertical</h4>
+<p>Useful for longer labels/values.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="row">
+    <div class="col-sm-6">
+        <dl>
+            <dt>Examiner</dt>
+            <dd>IP, Sikyin / 69776 / 1742</dd>
+            <dt>SPE (multiple)</dt>
+            <dd>John Olaskey</dd>
+        </dl>
+    </div>
+    <div class="col-sm-6">
+        <dl>
+            <dt>Confirmation #</dt>
+            <dd>1662</dd>
+            <dt>Publication #</dt>
+            <dd><a href="">32132132132 <i class="fa fa-external-link-square fa-1x"></i></a></dd>
+        </dl>
+    </div>
+</div>
+</div>
+<h4>Inline</h4>
+<p>Useful for few labels/values.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="row">
+    <div class="col-sm-12">
+        <dl class="dl-inline">
+            <dt>Created</dt>
+            <dd>Mar 5, 2014</dd>
+            <dt>Views</dt>
+            <dd>1,662</dd>
+            <dt>Status</dt>
+            <dd>Approved</dd>
+        </dl>
+    </div>
+</div>
+</div>
 </div>
 
             
