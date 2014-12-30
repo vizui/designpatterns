@@ -24,6 +24,7 @@
     "grunt-svgmin": "~0.4.0",
     "grunt-templater": "0.0.6",
     "grunt-usemin": "~2.1.0",
+    "grunt-zip": "^0.16.2",
     "highlight.js": "^8.2.0",
     "js-yaml": "~3.1.0",
     "jshint-stylish": "~0.1.5",

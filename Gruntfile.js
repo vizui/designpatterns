@@ -20,13 +20,14 @@ module.exports = function (grunt) {
         dist: 'docs/dist'
     };
 
-    var config = yaml.safeLoad(fs.readFileSync('./config.yaml', 'utf8'));
+    var config = grunt.file.readYAML('./config.yaml');
 
     // Define the configuration for all the tasks
     grunt.initConfig({
 
         // Project settings
         paths: paths,
+        pkg: grunt.file.readJSON("package.json"),
 
         // Watches files for changes and runs tasks based on the changed files
         watch: {
@@ -377,6 +378,10 @@ module.exports = function (grunt) {
             }
         },
 
+        zip: {
+          'dist/usptostrap-<%= pkg.version %>-dist.zip': ['dist/usptostrap.css', 'less/**/*.less']
+        },
+
         // Run some tasks in parallel to speed up build process
         concurrent: {
             server: [
@@ -431,7 +436,8 @@ module.exports = function (grunt) {
         'usemin',
         'patterns',
         'template',
-        'htmlmin'
+        'htmlmin',
+        'zip'
     ]);
 
     grunt.registerTask('default', [
