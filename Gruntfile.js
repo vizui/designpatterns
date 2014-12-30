@@ -379,7 +379,7 @@ module.exports = function (grunt) {
         },
 
         zip: {
-            'dist/usptostrap-<%= pkg.version %>-dist.zip': ['dist/usptostrap.min.css', 'less/**/*.less']
+            'dist/usptostrap-<%= pkg.version %>.zip': ['dist/usptostrap.min.css', 'less/**/*.less']
         },
 
         // Run some tasks in parallel to speed up build process
