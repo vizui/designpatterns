@@ -7,5 +7,5 @@ title: "Overview"
     <p class="text-muted" style="font-size: 16px;">A pattern library is a collection of user interface design patterns. Design patterns are recurring solutions that solve common design problems. Patterns define how interactions behave, what they look like, and how they are coded.</p>
 
     <p class="text-muted" style="font-size: 12px;"><a href="mailto:contactUXD@uspto.gov?subject=Design Pattern Library">Send us feedback or ask a question.</a></p>
-    <p class="text-muted" style="font-size: 12px;"><a href="/s/uxd">Patent Leather Bootstrap is a product of the U.S. Patent and Trademark Office User Experience Division.</a></p>
+    <p class="text-muted" style="font-size: 11px;">Patent Leather Bootstrap is a product of the U.S. Patent and Trademark Office User Experience Division.</p>
 </div>
