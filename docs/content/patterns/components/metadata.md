@@ -3,8 +3,8 @@ title: "Metadata"
 ---
 
 [pattern]
-### Overview
-The metadata pattern can be used for showing key/value pairs.
+### General
+The metadata pattern can be used for showing label/value pairs.
 
 __Do__
 - Consistently use `#` or `number` in labels
@@ -12,6 +12,9 @@ __Do__
 - Reflow columns based on available screen real estate
 - Sentence case labels
 
+
+#### Horizontal
+Useful for shorter labels/values.
 [preview]
 <div class="row">
     <div class="col-md-6">
@@ -50,8 +53,49 @@ __Do__
     <dt>Confirmation #</dt>
     <dd>1662</dd>
     <dt>Patent #</dt>
-    <dd>---</dd>
+    <dd>&mdash;</dd>
 </dl>
 ```
+
+#### Vertical
+Useful for longer labels/values.
+[preview]
+<div class="row">
+    <div class="col-sm-6">
+        <dl>
+            <dt>Examiner</dt>
+            <dd>IP, Sikyin / 69776 / 1742</dd>
+            <dt>SPE (multiple)</dt>
+            <dd>John Olaskey</dd>
+        </dl>
+    </div>
+    <div class="col-sm-6">
+        <dl>
+            <dt>Confirmation #</dt>
+            <dd>1662</dd>
+            <dt>Publication #</dt>
+            <dd><a href="">32132132132 <i class="fa fa-external-link-square fa-1x"></i></a></dd>
+        </dl>
+    </div>
+</div>
+[/preview]
+
+#### Inline
+Useful for few labels/values.
+[preview]
+<div class="row">
+    <div class="col-sm-12">
+        <dl class="dl-inline">
+            <dt>Created</dt>
+            <dd>Mar 5, 2014</dd>
+            <dt>Views</dt>
+            <dd>1,662</dd>
+            <dt>Status</dt>
+            <dd>Approved</dd>
+        </dl>
+    </div>
+</div>
+[/preview]
+
 [/pattern]
 

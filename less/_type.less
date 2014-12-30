@@ -80,8 +80,33 @@ dd {
 }
 
 @media (min-width: @screen-sm) {
-    dd {
+    .dl-horizontal dd {
         margin-bottom: 0px;
+    }
+}
+
+.dl-inline {
+    dd, dt {
+        font-weight: 400;
+        float: left;
+        display: inline-block;
+        color: @gray-light;
+    }
+    dd, dt {
+        margin-right: 4px;
+    }
+    dt:after {
+        content: ":";
+        display: inline-block;
+    }
+    dd:after {
+        margin-left: 8px;
+        margin-right: 4px;
+        display: inline-block;
+        content: "•";
+    }
+    dd:last-child:after {
+        display: none;
     }
 }
 
