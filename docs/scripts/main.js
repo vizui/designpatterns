@@ -37,7 +37,14 @@ $(document).on('ready', checkNav);
 /*
  * Use bootstrap's scrollspy plugin to highlight subnav based on scroll position
  */
-$('body').scrollspy({ target: '.pl-sidebar > .nav > .active', offset: 125 });
+$('body').scrollspy({ target: '.pl-sidebar > .nav > .active', offset: 120 });
+
+/* animate scrolling to the sidebar sublink targets to ensure proper offsets */
+$('.pl-sidebar > .nav > .active > .nav > li > a').on('click', function () {
+    $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top - 110
+    }, 200);
+});
 
 
 /* enable masks */
