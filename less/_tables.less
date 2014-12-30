@@ -41,13 +41,24 @@
 // Odd rows have accent color
 
 .table-striped {
-  > tbody > tr:nth-child(even) {
+  > tbody > tr:nth-child(odd) {
     background-color: transparent;
   }
-  > tbody > tr:nth-child(odd) {
+  > tbody > tr:nth-child(even) {
     background-color: @table-bg-accent;
   }
 }
+
+// Row hover effect
+//
+// Duplicated from Bootstrap for precedence over striping
+
+.table-hover {
+  > tbody > tr:hover {
+    background-color: @table-bg-hover;
+  }
+}
+
 
 // Outlined version
 //
