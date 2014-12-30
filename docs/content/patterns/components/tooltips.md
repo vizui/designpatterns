@@ -11,17 +11,15 @@ Users need additional, potentially optional information on demand.
 #### Description
 Tooltips provide information when an element is hovered over.
 
-Use tooltips for providing information that does not need to be visible at all times, such as:
-- Icon descriptions
-- Term definitions
-- Expanding shortened date/time stamps
-- Brief help/info text
 
-#### Basic functionality
-- Tooltips are attached to an element, and appear when the element is hovered over
+- Tooltips are attached to an element and appear when the element is hovered over
 - The show and hide delays of a tooltip may vary depending on the need, but the default is 200ms to show and 0ms to hide
 - Tooltips cannot be interacted with
 
+
+Use tooltips for:
+- Icon/button descriptions
+- Expanding shortened date/time stamps
 
 [preview]
 <div class="tooltip fade in right" style="display: inline-block; position: relative; width: auto;">
@@ -46,7 +44,7 @@ Tooltips can be positioned either above, below, to the left, or to the right of 
 
 [pattern]
 ### Content
-The content of a tooltip can vary. It's best to keep it short and simple. 
+The content of a tooltip can vary. It's best to keep it to a few words.
 [preview]
 <div style="width: 120px;">
     <button type="button" class="btn btn-block btn-default" data-toggle="tooltip" data-placement="right" title="Print">Short</button>
