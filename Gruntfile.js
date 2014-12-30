@@ -17,6 +17,8 @@ module.exports = function (grunt) {
         dist: 'docs/dist'
     };
 
+    var pkg = grunt.file.readJSON('package.json');
+
     var config = grunt.file.readYAML('./config.yaml');
 
     // Define the configuration for all the tasks
@@ -24,7 +26,7 @@ module.exports = function (grunt) {
 
         // Project settings
         paths: paths,
-        pkg: grunt.file.readJSON('package.json'),
+        pkg: pkg,
 
         // Watches files for changes and runs tasks based on the changed files
         watch: {
@@ -73,7 +75,7 @@ module.exports = function (grunt) {
         template: {
             dist: {
                 engine: 'ejs',
-                variables: { globals: config },
+                variables: { globals: config, pkg: pkg },
                 files: [{
                     expand: true,
                     cwd: '<%= paths.tmp %>',
