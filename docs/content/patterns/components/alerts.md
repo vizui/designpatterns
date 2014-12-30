@@ -5,17 +5,22 @@ title: "Alerts and notifications"
 [pattern]
 ### Contextual alerts
 
-Contextual alerts are positioned in relation to some area/form on the page. They may or may not contain action buttons, depending on the situation.
+Contextual alerts are positioned in relation to an area or form on the page. They may or may not contain action buttons, depending on the situation.
 
 __When to use:__
 - An event has occurred __related to user interaction__
-- There __is__ a related element/form to attach the alert to
+- There __is__ a related element or form to attach the alert to
 
 __Types:__
-- __Info__ alerts can be used when there are tips/information that a user can benefit from. 
-- __Success__ alerts can be used when an action was performed successfully.
-- __Warning__ alerts can be used when an action is out of the ordinary or might not be desired.
-- __Danger__ alerts can be used when the system has failed to perform an action, or when the user has made an error. 
+- __Info__ alerts should be used when there are tips or information that a user can benefit from. 
+- __Success__ alerts should be used when an action was performed successfully.
+- __Warning__ alerts should be used when an action is out of the ordinary or might not be desired.
+- __Danger__ alerts should be used when the system has failed to perform an action, or when the user has made an error. 
+
+__Rules:__
+- If the alert pertains to the entire application or website, the alert should appear at the very top of the entire page.
+- If the alert pertains to a section on the page, the alert should appear at the very top of the section.
+- If the alert pertains to a form, the alert should appear at the top of the form. If there is an error in the form, a danger alert should appear at the top of the form, while the form field with the error is highlighted in red.
 
 [preview]
 <div style="max-width: 450px;">
