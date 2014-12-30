@@ -71,6 +71,29 @@ Use when the tabs need less emphasis in relation to other navigational elements.
 </ul>
 [/preview]
 [/pattern]
+
+[pattern]
+### Pill tabs
+Use when the tabs need even less emphasis in relation to other navigational elements.
+[preview]
+<ul class="nav nav-pills" role="tablist">
+  <li class="active"><a href="#" role="tab" data-toggle="tab">Active</a></li>
+  <li><a href="#" role="tab" data-toggle="tab">Normal</a></li>
+  <li class="disabled"><a href="#" role="tab">Disabled</a></li>
+  <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          Dropdown <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <li role="presentation"><a href="#">Item 1</a></li>
+          <li role="presentation"><a href="#">Item 2</a></li>
+          <li role="presentation"><a href="#">Item 3</a></li>
+        </ul>
+  </li>
+</ul>
+[/preview]
+[/pattern]
+
 [pattern]
 ### Nested tabs
 [preview]
