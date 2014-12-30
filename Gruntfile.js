@@ -10,9 +10,6 @@ module.exports = function (grunt) {
     // Time how long tasks take. Can help when optimizing build times
     require('time-grunt')(grunt);
 
-    var yaml = require('js-yaml'),
-        fs = require('fs');
-
     // Configurable paths
     var paths = {
         tmp: '.tmp',
@@ -27,7 +24,7 @@ module.exports = function (grunt) {
 
         // Project settings
         paths: paths,
-        pkg: grunt.file.readJSON("package.json"),
+        pkg: grunt.file.readJSON('package.json'),
 
         // Watches files for changes and runs tasks based on the changed files
         watch: {
@@ -379,7 +376,7 @@ module.exports = function (grunt) {
         },
 
         zip: {
-          'dist/usptostrap-<%= pkg.version %>-dist.zip': ['dist/usptostrap.css', 'less/**/*.less']
+            'dist/usptostrap-<%= pkg.version %>-dist.zip': ['dist/usptostrap.css', 'less/**/*.less']
         },
 
         // Run some tasks in parallel to speed up build process
