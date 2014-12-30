@@ -140,6 +140,9 @@ Users must choose between two or more mutually exclusive options.
 <div class="radio">
     <label><input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>Disabled</label>
 </div>
+<div class="radio">
+  <label><input type="radio" name="optionsRadios" id="optionsRadios4" value="option5">Extended <div class="text-muted" style="width: 300px;">This option has some useful help text associated with it that elaborates on the state or purpose.</div></label>
+</div>
 [/preview]
 
 #### Inline
@@ -190,6 +193,9 @@ Users need to specify which option(s) from a set are applicable/valid/true based
 </div>
 <div class="checkbox">
   <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes3" value="option3" disabled>Disabled</label>
+</div>
+<div class="checkbox">
+  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes4" value="option5">Extended <div class="text-muted" style="width: 300px;">This option has some useful help text associated with it that elaborates on the state or purpose.</div></label>
 </div>
 [/preview]
 
@@ -450,7 +456,7 @@ This is the native browser multi-select. `Ctrl+click` (or `cmd+click`) toggles s
 
 [pattern]
 ### Rich text editor
-The rich text editor allows for text input with additional formatting and inline images/links. Only include the necessary functionality/buttons/tools for the intended data.
+The rich text editor allows for text input with additional formatting and inline images/links. Only include the functionality/buttons/tools necessary for the specific purpose.
 [preview]
 <div class="container-fluid" style="max-width: 450px; margin: 0;">
     <div class="row">
