@@ -157,12 +157,15 @@ module.exports = function (grunt) {
         // Compiles LESS to CSS and generates necessary files if requested
         less: {
             theme: {
+                options: {
+                    compress: true,
+                },
                 files: [{
                     expand: true,
                     cwd: 'less',
                     src: ['usptostrap.less'],
                     dest: 'dist',
-                    ext: '.css'
+                    ext: '.min.css'
                 }]
             },
             dist: {
@@ -376,7 +379,7 @@ module.exports = function (grunt) {
         },
 
         zip: {
-            'dist/usptostrap-<%= pkg.version %>-dist.zip': ['dist/usptostrap.css', 'less/**/*.less']
+            'dist/usptostrap-<%= pkg.version %>-dist.zip': ['dist/usptostrap.min.css', 'less/**/*.less']
         },
 
         // Run some tasks in parallel to speed up build process
@@ -384,7 +387,6 @@ module.exports = function (grunt) {
             server: [
                 // 'lesslint',
                 'jshint',
-                'less:theme',
                 'less:server',
                 'patterns',
                 'template',
@@ -394,7 +396,8 @@ module.exports = function (grunt) {
             dist: [
                 // 'lesslint',
                 'jshint',
-                'less',
+                'less:dist',
+                'less:theme',
                 // 'patterns',
                 'copy:styles',
                 'copy:imagesDist',
@@ -425,9 +428,9 @@ module.exports = function (grunt) {
         'useminPrepare',
         'concurrent:dist',
         'autoprefixer',
-        'concat',
-        'cssmin',
-        'uglify',
+        'concat:generated',
+        'cssmin:generated',
+        'uglify:generated',
         'copy:dist',
         'rev',
         'usemin',
