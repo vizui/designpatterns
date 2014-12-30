@@ -420,7 +420,7 @@ This is the native browser multi-select. `Ctrl+click` (or `cmd+click`) toggles s
 
 [pattern]
 ### Slider
-<span class="text-muted">Example uses HTML5 input range/slider for demo purposes (IE10+).</span>
+<span class="text-muted">Example uses https://github.com/seiyria/bootstrap-slider for demo purposes.</span>
 [preview]
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
     <div class="row">
@@ -428,13 +428,13 @@ This is the native browser multi-select. `Ctrl+click` (or `cmd+click`) toggles s
             <div class="form-group">
                 <label for="se15" class="col-sm-3 control-label">Normal</label>
                 <div class="col-sm-9">
-                    <input class="form-control" type="range">
+                    <input class="slider">
                 </div>
             </div>
             <div class="form-group">
                 <label for="se16" class="col-sm-3 control-label">Disabled</label>
                 <div class="col-sm-9">
-                    <input class="form-control" type="range" disabled>
+                    <input class="slider" disabled data-slider-enabled="false">
                 </div>
             </div>
         </form>
@@ -446,5 +446,54 @@ This is the native browser multi-select. `Ctrl+click` (or `cmd+click`) toggles s
 
 ```
 
+[/pattern]
+
+[pattern]
+### Rich text editor
+Only use toolbar buttons relevant to the intended data.
+[preview]
+<div class="container-fluid" style="max-width: 450px; margin: 0;">
+    <div class="row">
+        <form role="form" class="col-sm-12 form-horizontal">
+            <div class="form-group">
+                <div class="col-sm-12">
+                    <div>
+                        <div style="background: #f9f9f9; border: 1px solid #ccc; border-bottom:0;" class="btn-toolbar btn-toolbar-hover">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-default btn-hover dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                                    Arial <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li class="active"><a href="#">Arial</a></li>
+                                    <li><a href="#">Georgia</a></li>
+                                    <li><a href="#">Courier</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group">
+                                <button data-toggle="tooltip" data-placement="top" title="Bold" class="btn btn-hover btn-icon-only"><i class="fa fa-bold"></i><span class="sr-only">Bold</span></button>
+                                <button data-toggle="tooltip" data-placement="top" title="Italicize" class="btn btn-hover active btn-icon-only"><i class="fa fa-italic"></i><span class="sr-only">Italicize</span></button>
+                                <button data-toggle="tooltip" data-placement="top" title="Underline" class="btn btn-hover btn-icon-only"><i class="fa fa-underline"></i><span class="sr-only">Underline</span></button>
+                            </div>
+                            <div class="btn-group">
+                                <button data-toggle="tooltip" data-placement="top" title="Ordered list" class="btn btn-hover btn-icon-only"><i class="fa fa-list-ol"></i><span class="sr-only">Ordered list</span></button>
+                                <button data-toggle="tooltip" data-placement="top" title="Unordered list" class="btn btn-hover btn-icon-only"><i class="fa fa-list-ul"></i><span class="sr-only">Unordered list</span></button>
+                            </div>
+                            <div class="btn-group">
+                                <button data-toggle="tooltip" data-placement="top" title="Indent" class="btn btn-hover btn-icon-only"><i class="fa fa-indent"></i><span class="sr-only">Indent</span></button>
+                                <button data-toggle="tooltip" data-placement="top" title="Outdent" class="btn btn-hover btn-icon-only"><i class="fa fa-outdent"></i><span class="sr-only">Outdent</span></button>
+                            </div>
+                            <div class="btn-group">
+                                <button data-toggle="tooltip" data-placement="top" title="Insert link" class="btn btn-hover btn-icon-only"><i class="fa fa-chain"></i><span class="sr-only">Insert link</span></button>
+                                <button data-toggle="tooltip" data-placement="top" title="Insert image" class="btn btn-hover btn-icon-only"><i class="fa fa-image"></i><span class="sr-only">Insert image</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <textarea name="" id="" cols="30" rows="10" class="form-control" style="border-top-left-radius: 0; border-top-right-radius: 0;" placeholder="Enter note here..."></textarea>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+[/preview]
 [/pattern]
 

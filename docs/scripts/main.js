@@ -176,4 +176,11 @@ $('#exampleProgressBar').each(function() {
 });
 
 
+/* enable popovers */
 $('[data-toggle="popover"]').popover();
+
+
+/* enable sliders */
+$('input.slider').slider({
+    tooltip: 'hide'
+});

@@ -8,7 +8,7 @@
 
 // improve checkbox/radio positioning
 input[type="radio"], input[type="checkbox"] {
-    margin: .15em 0 0;
+    margin: .2em 0 0;
 }
 
 label {
@@ -68,7 +68,7 @@ form:not(.form-horizontal) {
 
 // adds required asterisk before label
 .form-horizontal {
-    @media(min-width: 768px) {
+    @media(min-width: @screen-sm) {
         label.required::before {
             position: relative;
             content: "*";
@@ -103,5 +103,21 @@ form:not(.form-horizontal) {
 }
 .input-icon+input {
     padding-left: 28px;
+}
+
+.form-control-width-xs {
+    max-width: 75px;
+}
+.form-control-width-sm {
+    max-width: 150px;
+}
+.form-control-width-md {
+    max-width: 250px;
+}
+.form-control-width-lg {
+    max-width: 350px;
+}
+.form-control-width-fill {
+    max-width: 100%;
 }
 

@@ -127,10 +127,9 @@ Labels are to the left of the input, right justified.
 [/pattern]
 [pattern]
 ### Required fields
-Required fields are generally marked with an asterisk. For external, public facing forms, you may want to put a `* indicates required` message. For internal applications, this is generally not necessary.
+Required fields are generally marked with an asterisk. For external, public facing forms, put a `* indicates required` message. For internal applications containing many forms or targeting power users, the `* indicates required` may not be necessary. Ensure that required fields are [validated](#form-validation) with appropriate feedback.
 
-If the majority of the fields are required, consider adding `(optional)` to the minority optional fields.
-
+If the majority of the fields are required, consider adding `(optional)` to the optional fields instead of asterisks on the required field. 
 
 #### Top aligned labels
 When the fields are top aligned, the asterisk is placed on the right.
@@ -223,8 +222,8 @@ For input fields that are cramped, you may need to resort to using a popover err
 
 __Do__
 - Scroll to and focus the first field with an error when the submit button is pressed.
-- Provide validation feedback as soon as possible, either 500ms after a key is pressed, when the field is blurred, or (if all else fails) when the form is submitted.
-- Provide inline level validation for fields that are known to be invalid
+- Provide validation feedback as soon as possible, either 500ms after a key is pressed, when the field loses focus, or (if all else fails) when the form is submitted.
+- Provide field level validation for fields that are known to be invalid
 - Provide form level validation for large forms, or when the system doesn't know exactly which field is invalid
 - Describe _why_ an error occurred. `Email is already in use` rather than `There was an error`
 - Describe/imply what the user should do to fix the error
