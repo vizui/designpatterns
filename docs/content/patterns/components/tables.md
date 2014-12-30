@@ -184,6 +184,44 @@ A borderless table removes all borders, decreasing clutter for simple tables.
 </div>
 [/preview]
 
+#### Row hover
+Rows can have a hover effect to indicate click interactions.
+[preview]
+<div style="padding: 40px; background: #fff;">
+    <table class="table table-borderless table-hover">
+        <thead>
+            <tr>
+                <th>Project name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Invoice</td>
+                <td><span >Add invoice confirmation</span></td>
+                <td><span >$4,500</span></td>
+            </tr>
+            <tr>
+                <td>Templates</td>
+                <td><span >Refactor templates to use the new templating library</span></td>
+                <td><span >$9,000</span></td>
+            </tr>
+            <tr>
+                <td>Payments</td>
+                <td><span >Process payments using third party api</span></td>
+                <td><span >$5,400</span></td>
+            </tr>
+            <tr>
+                <td>Account Management</td>
+                <td><span >Improve account management workflow</span></td>
+                <td><span >$6,000</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+[/preview]
+
 #### Condensed
 Use the condensed style, which reduces cell padding, for very large amounts of data.
 [preview]
