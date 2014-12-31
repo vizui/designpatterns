@@ -106,7 +106,6 @@ module.exports = function(grunt) {
                     nav[category][subCategory] = nav[category][subCategory] || [];
                     nav[category][subCategory].push(contentMap[filePath]);
                 }
-                // console.log(category, subCategory);
             });
         });
 
