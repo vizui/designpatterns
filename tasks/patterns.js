@@ -98,6 +98,7 @@ module.exports = function(grunt) {
                     subCategory: subCategory,
                     content: md.html,
                     subNav: h3s,
+                    env: options.variables.env,
                     globals: options.variables
                 };
 

@@ -75,9 +75,20 @@ module.exports = function (grunt) {
         },
 
         template: {
-            dist: {
+            server: {
                 engine: 'ejs',
                 variables: { globals: config, pkg: pkg },
+                files: [{
+                    expand: true,
+                    cwd: '<%= paths.tmp %>',
+                    dest: '<%= paths.tmp %>',
+                    src: '{index,resources,changelog,example-preexam}.tpl.ejs',
+                    ext: '.html'
+                }]
+            },
+            dist: {
+                engine: 'ejs',
+                variables: { globals: config, pkg: pkg, env: 'prod' },
                 files: [{
                     expand: true,
                     cwd: '<%= paths.tmp %>',
@@ -313,7 +324,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 options: {
-                    variables: _.extend({}, config, { env: 'prod' }),
+                    variables: _.extend({ env: 'prod' }, config),
                     patternRoot: '<%= paths.app %>/content',
                     urlRoot: '',
                     template: '<%= paths.tmp %>/pattern.tpl.ejs'
@@ -414,7 +425,7 @@ module.exports = function (grunt) {
                 'jshint',
                 'less:server',
                 'patterns:server',
-                'template',
+                'template:server',
                 'copy:styles',
                 'copy:images'
             ],
@@ -460,7 +471,7 @@ module.exports = function (grunt) {
         'rev',
         'usemin',
         'patterns:dist',
-        'template',
+        'template:dist',
         'htmlmin',
         'zip',
         'copy:release'
