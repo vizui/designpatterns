@@ -20,7 +20,7 @@ This pagination pattern provides a few variations of the following features:
 
 The features should be chosen based on the user's needs, the data, and the space available. Don't include pagination features that aren't necessary. If your users have no need to adjust the paging size or jump to a manually entered page for a particular type of data, don't include those features.
 
-<div><span class="label label-warning">TODO</span> Infinite scrolling and 'Load more'</div>
+<!-- <div><span class="label label-warning">TODO</span> Infinite scrolling and 'Load more'</div> -->
 
 &nbsp;
 
