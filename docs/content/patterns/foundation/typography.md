@@ -42,26 +42,26 @@ title: "Typography"
     <tbody>
         <tr>
             <td>Display 3</td>
-            <td><div class="display3">Regular 56px</div></td>
+            <td><div class="display3">Light 56px</div></td>
         </tr>
         <tr>
-            <td>Display 2</td>
-            <td><div class="display2">Regular 45px</div></td>
+            <td>h1, Display 2</td>
+            <td><div class="display2">Light 45px</div></td>
         </tr>
         <tr>
-            <td>Display 1</td>
-            <td><div class="display1">Regular 34px</div></td>
+            <td>h2, Display 1</td>
+            <td><div class="display1">Light 34px</div></td>
         </tr>
         <tr>
-            <td>Headline</td>
+            <td>h3, Headline</td>
             <td><div class="headline">Regular 24px</div></td>
         </tr>
         <tr>
-            <td>Title</td>
-            <td><div class="title">Semi-bold 18px</div></td>
+            <td>h4, Title</td>
+            <td><div class="title">Regular 18px</div></td>
         </tr>
         <tr>
-            <td>Subhead</td>
+            <td>h5, Subhead</td>
             <td><div class="subhead">Regular 15px</div></td>
         </tr>
         <tr>
@@ -82,11 +82,13 @@ title: "Typography"
 #### Pairings
 [preview]
 <div style="max-width: 600px;">
-    <h3>Display 1</h3>
+    <h3>Headline using the headline style</h3>
+    <h4>A smaller title</h4>
     <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
-    <h4>Title</h4>
+    <h4>Smaller title</h4>
+    <h5>Subheading</h5>
     <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
-    <h5>Subhead</h5>
+    <h5>Another subheading</h5>
     <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
 
 </div>
