@@ -53,7 +53,7 @@ module.exports = function (grunt) {
             //     tasks: ['template']
             // },
             less: {
-                files: ['less/**.less', '<%= paths.app %>/styles/**.less'],
+                files: ['less/**/*.less', '<%= paths.app %>/styles/**/*.less'],
                 tasks: ['less:server', 'autoprefixer']
             },
             styles: {
@@ -130,7 +130,7 @@ module.exports = function (grunt) {
         },
 
         lesslint: {
-            src: ['less/_*.less', '<%= paths.app %>/styles/_*.less'],
+            src: ['less/**/_*.less', '<%= paths.app %>/styles/**/_*.less'],
             options: {
                 csslint: {
                     'box-model': false,
