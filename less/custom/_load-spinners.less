@@ -1,26 +1,20 @@
-
-// IE9
-.loading-background {
-    background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%20300%20300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%3E%3Cpath%20d%3D%22M%20150%2C0%20a%20150%2C150%200%200%2C1%20106.066%2C256.066%20l%20-35.355%2C-35.355%20a%20-100%2C-100%200%200%2C0%20-70.711%2C-170.711%20z%22%20fill%3D%22%23004c97%22%3E%20%3CanimateTransform%20attributeName%3D%22transform%22%20attributeType%3D%22XML%22%20type%3D%22rotate%22%20from%3D%220%20150%20150%22%20to%3D%22360%20150%20150%22%20begin%3D%220s%22%20dur%3D%221s%22%20fill%3D%22freeze%22%20repeatCount%3D%22indefinite%22%20%2F%3E%20%3C%2Fpath%3E%20%3C%2Fsvg%3E');
+.loading-background,
+.loading-icon {
+    background-image: url(data:image/gif;base64,R0lGODlhFAAUAJEDAMzMzLOzs39/f////yH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgADACwAAAAAFAAUAAACPJyPqcuNItyCUJoQBo0ANIxpXOctYHaQpYkiHfM2cUrCNT0nqr4uudsz/IC5na/2Mh4Hu+HR6YBaplRDAQAh+QQFCgADACwEAAIADAAGAAACFpwdcYupC8BwSogR46xWZHl0l8ZYQwEAIfkEBQoAAwAsCAACAAoACgAAAhccMKl2uHxGCCvO+eTNmishcCCYjWEZFgAh+QQFCgADACwMAAQABgAMAAACFxwweaebhl4K4VE6r61DiOd5SfiN5VAAACH5BAUKAAMALAgACAAKAAoAAAIYnD8AeKqcHIwwhGntEWLkO3CcB4biNEIFACH5BAUKAAMALAQADAAMAAYAAAIWnDSpAHa4GHgohCHbGdbipnBdSHphAQAh+QQFCgADACwCAAgACgAKAAACF5w0qXa4fF6KUoVQ75UaA7Bs3yeNYAkWACH5BAUKAAMALAIABAAGAAwAAAIXnCU2iMfaRghqTmMp1moAoHyfIYIkWAAAOw==);
     background-repeat: no-repeat;
     background-position: center;
     color: transparent !important;
 }
 
 .loading-icon {
-    background-repeat: no-repeat;
-    background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%20300%20300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%3E%3Cpath%20d%3D%22M%20150%2C0%20a%20150%2C150%200%200%2C1%20106.066%2C256.066%20l%20-35.355%2C-35.355%20a%20-100%2C-100%200%200%2C0%20-70.711%2C-170.711%20z%22%20fill%3D%22%23004c97%22%3E%20%3CanimateTransform%20attributeName%3D%22transform%22%20attributeType%3D%22XML%22%20type%3D%22rotate%22%20from%3D%220%20150%20150%22%20to%3D%22360%20150%20150%22%20begin%3D%220s%22%20dur%3D%221s%22%20fill%3D%22freeze%22%20repeatCount%3D%22indefinite%22%20%2F%3E%20%3C%2Fpath%3E%20%3C%2Fsvg%3E');
-    background-position: center;
     width: 16px;
     height: 16px;
     display: inline-block;
     vertical-align: middle;
-    margin-right: 6px;
-    margin-top: -4px;
-}
 
-.loading-inverse {
-    background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%20300%20300%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%3E%3Cpath%20d%3D%22M%20150%2C0%20a%20150%2C150%200%200%2C1%20106.066%2C256.066%20l%20-35.355%2C-35.355%20a%20-100%2C-100%200%200%2C0%20-70.711%2C-170.711%20z%22%20fill%3D%22%23ffffff%22%3E%20%3CanimateTransform%20attributeName%3D%22transform%22%20attributeType%3D%22XML%22%20type%3D%22rotate%22%20from%3D%220%20150%20150%22%20to%3D%22360%20150%20150%22%20begin%3D%220s%22%20dur%3D%221s%22%20fill%3D%22freeze%22%20repeatCount%3D%22indefinite%22%20%2F%3E%20%3C%2Fpath%3E%20%3C%2Fsvg%3E');
+    .btn > & {
+        margin: -3px 0 0 0;
+    }
 }
 
 .loading-overlay {
@@ -34,14 +28,9 @@
     margin-left: -16px;
     border-radius: 32px;
     background: #fff;
-    opacity: .9;
-    padding: 8px;
+    padding: 5px;
     box-shadow: 0px 1px 4px rgba(0,0,0,.5);
     color: transparent;
-
-    > .loading-icon {
-        // background-image: url('data:image/svg+xml;utf8,<svg width="16" height="16" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" version="1.1"><path d="M 150,0 a 150,150 0 0,1 106.066,256.066 l -35.355,-35.355 a -100,-100 0 0,0 -70.711,-170.711 z" fill="%23ffffff"> <animateTransform attributeName="transform" attributeType="XML" type="rotate" from="0 150 150" to="360 150 150" begin="0s" dur="1s" fill="freeze" repeatCount="indefinite" /> </path> </svg>');
-    }
 }
 
 .loading {
@@ -52,7 +41,7 @@
     border-radius: 32px;
     background: #fff;
     opacity: .9;
-    padding: 8px;
+    padding: 5px;
     box-shadow: 0px 0px 0px 1px rgba(0,0,0,.2);
     color: transparent;
 }
