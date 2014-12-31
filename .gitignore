@@ -1,6 +1,7 @@
 node_modules
 .tmp
 docs/dist
+dist
 bower_components
 test/bower_components
 .DS_Store

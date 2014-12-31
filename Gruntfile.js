@@ -355,6 +355,12 @@ module.exports = function (grunt) {
                     cwd: '<%= paths.app %>/vendor/html5shiv/',
                     src: ['html5shiv.min.js'],
                     dest: '<%= paths.dist %>/vendor/html5shiv/'
+                }, {
+                    dot: true,
+                    expand: true,
+                    cwd: 'dist',
+                    src: ['*.*'],
+                    dest: '<%= paths.dist %>/dist/'
                 }]
             },
             styles: {
