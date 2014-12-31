@@ -10,6 +10,8 @@ module.exports = function (grunt) {
     // Time how long tasks take. Can help when optimizing build times
     require('time-grunt')(grunt);
 
+    var _ = require('lodash');
+
     // Configurable paths
     var paths = {
         tmp: '.tmp',
@@ -46,7 +48,7 @@ module.exports = function (grunt) {
             },
             patterns: {
                 files: ['<%= paths.app %>/*.ejs', '<%= paths.app %>/content/**/*.md'],
-                tasks: ['copy:tpl', 'template', 'patterns']
+                tasks: ['copy:tpl', 'template', 'patterns:server']
             },
             // template: {
             //     files: ['<%= paths.app %>/{,*/}*.html'],
@@ -308,6 +310,20 @@ module.exports = function (grunt) {
                     src: '**/*.md',
                     dest: '<%= paths.tmp %>'
                 }]
+            },
+            dist: {
+                options: {
+                    variables: _.extend({}, config, { env: 'prod' }),
+                    patternRoot: '<%= paths.app %>/content',
+                    urlRoot: '',
+                    template: '<%= paths.tmp %>/pattern.tpl.ejs'
+                },
+                files: [{
+                    expand: true,
+                    cwd: '<%= paths.app %>/content',
+                    src: '**/*.md',
+                    dest: '<%= paths.tmp %>'
+                }]
             }
         },
 
@@ -397,7 +413,7 @@ module.exports = function (grunt) {
                 // 'lesslint',
                 'jshint',
                 'less:server',
-                'patterns',
+                'patterns:server',
                 'template',
                 'copy:styles',
                 'copy:images'
@@ -443,7 +459,7 @@ module.exports = function (grunt) {
         'copy:dist',
         'rev',
         'usemin',
-        'patterns',
+        'patterns:dist',
         'template',
         'htmlmin',
         'zip',
