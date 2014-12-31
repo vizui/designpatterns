@@ -862,11 +862,3 @@ This dialog provides the ability to show/hide columns as desired.
 </div>
 [/preview]
 [/pattern]
-
-
-[pattern]
-### Expandable rows
-[preview]
-[/preview]
-[/pattern]
-
