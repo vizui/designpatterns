@@ -355,13 +355,14 @@ module.exports = function (grunt) {
                     cwd: '<%= paths.app %>/vendor/html5shiv/',
                     src: ['html5shiv.min.js'],
                     dest: '<%= paths.dist %>/vendor/html5shiv/'
-                }, {
-                    dot: true,
-                    expand: true,
-                    cwd: 'dist',
-                    src: ['*.*'],
-                    dest: '<%= paths.dist %>/dist/'
                 }]
+            },
+            release: {
+                dot: true,
+                expand: true,
+                cwd: 'dist',
+                src: ['*.*'],
+                dest: '<%= paths.dist %>/dist/'
             },
             styles: {
                 expand: true,
@@ -445,7 +446,8 @@ module.exports = function (grunt) {
         'patterns',
         'template',
         'htmlmin',
-        'zip'
+        'zip',
+        'copy:release'
     ]);
 
     grunt.registerTask('default', [
