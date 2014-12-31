@@ -16,19 +16,54 @@ __Don't__
 - Use placeholders as the only label
 - Place unrelated inputs on the same line
 
+&nbsp;
 
-This is an evolving document. Here are some things that are still being worked on:
-
-<span class="label label-warning">TODO</span> Field width guidelines<br>
+<!-- This is an evolving document. Here are some things that are still being worked on:
 <span class="label label-warning">TODO</span> Advanced options<br>
 <span class="label label-warning">TODO</span> Dynamic/evolving forms<br>
 <span class="label label-warning">TODO</span> Input/format parsing<br>
 <span class="label label-warning">TODO</span> Add/remove fields (e.g., multiple phone numbers)<br>
-<span class="label label-warning">TODO</span> More examples<br>
+<span class="label label-warning">TODO</span> More examples<br>-->
 
-&nbsp;
+[/pattern]
 
-
+[pattern]
+### Field widths
+Field widths should communicate the expected or max length of content. Use consistent, non-arbitrary widths to help with alignment. These widths apply to similar controls like selects, date inputs, dropdowns, and sliders. These widths may not be appropriate in some situations or layouts.
+[preview]
+<form role="form" class="form-horizontal" style="max-width: 600px;">
+  <div class="form-group">
+    <label class="col-sm-3 control-label" for="fw1">Extra small</label>
+    <div class="col-sm-9">
+        <input type="text" class="form-control-width-xs form-control" value="75px" id="fw1">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-3 control-label" for="fw2">Small</label>
+    <div class="col-sm-9">
+        <input type="text" class="form-control-width-sm form-control" value="150px" id="fw2" >
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-3 control-label" for="fw2">Medium (default)</label>
+    <div class="col-sm-9">
+        <input type="text" class="form-control-width-md form-control" id="fw2" value="250px" >
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-3 control-label" for="fw2">Large</label>
+    <div class="col-sm-9">
+        <input type="text" class="form-control-width-lg form-control" value="350px" id="fw2" >
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-3 control-label" for="fw2">Fill</label>
+    <div class="col-sm-9">
+        <input type="text" class="form-control-width-fill form-control" value="100%" id="fw2" >
+    </div>
+  </div>
+</form>
+[/preview]
 [/pattern]
 
 [pattern]
@@ -54,14 +89,14 @@ Labels are placed above the inputs, left justified.
 
 [preview]
 <div class="row">
-    <form role="form" class="col-sm-10 col-md-8 col-lg-6">
+    <form role="form" class="" style="max-width: 450px;">
       <div class="form-group col-sm-offset-3">
         <label class="control-label" for="emailInput">Email</label>
-        <input type="email" class="form-control" id="emailInput">
+        <input type="email" class="form-control form-control-width-md" id="emailInput">
       </div>
       <div class="form-group col-sm-offset-3">
         <label class="control-label" for="passwordInput">Password</label>
-        <input type="password" class="form-control" id="passwordInput" >
+        <input type="password" class="form-control form-control-width-md" id="passwordInput" >
       </div>
     </form>
 </div>
@@ -71,11 +106,11 @@ Labels are placed above the inputs, left justified.
 <form role="form">
   <div class="form-group col-sm-offset-3">
     <label class="control-label" for="emailInput">Email</label>
-    <input type="email" class="form-control" id="emailInput">
+    <input type="email" class="form-control form-control-width-md" id="emailInput">
   </div>
   <div class="form-group col-sm-offset-3">
     <label class="control-label" for="passwordInput">Password</label>
-    <input type="password" class="form-control" id="passwordInput" >
+    <input type="password" class="form-control form-control-width-md" id="passwordInput" >
   </div>
 </form>
 ```
@@ -87,17 +122,17 @@ Labels are to the left of the input, right justified.
 
 [preview]
 <div class="row">
-  <form class="form-horizontal col-sm-10 col-md-8 col-lg-6" role="form">
+  <form class="form-horizontal " style="max-width: 450px;" role="form">
     <div class="form-group">
       <label for="emailInput2" class="col-sm-3 control-label">Email</label>
       <div class="col-sm-9">
-        <input type="email" class="form-control" id="emailInput2">
+        <input type="email" class="form-control form-control-width-md" id="emailInput2">
       </div>
     </div>
     <div class="form-group">
       <label for="passwordInput2" class="col-sm-3 control-label">Password</label>
       <div class="col-sm-9">
-        <input type="password" class="form-control" id="passwordInput2" >
+        <input type="password" class="form-control form-control-width-md" id="passwordInput2" >
       </div>
     </div>
   </form>
@@ -107,17 +142,17 @@ Labels are to the left of the input, right justified.
 
 
 ```html
-<form class="form-horizontal col-sm-10 col-md-8 col-lg-6" role="form">
+<form class="form-horizontal " style="max-width: 450px;" role="form">
   <div class="form-group">
     <label for="emailInput2" class="col-sm-3 control-label">Email</label>
     <div class="col-sm-9">
-      <input type="email" class="form-control" id="emailInput2">
+      <input type="email" class="form-control form-control-width-md" id="emailInput2">
     </div>
   </div>
   <div class="form-group">
     <label for="passwordInput2" class="col-sm-3 control-label">Password</label>
     <div class="col-sm-9">
-      <input type="password" class="form-control" id="passwordInput2" >
+      <input type="password" class="form-control form-control-width-md" id="passwordInput2" >
     </div>
   </div>
 </form>
@@ -135,34 +170,34 @@ If the majority of the fields are required, consider adding `(optional)` to the 
 When the fields are top aligned, the asterisk is placed on the right.
 [preview]
 <div class="row">
-  <form class="col-sm-10 col-md-8 col-lg-6" role="form">
+  <form class="" style="max-width: 450px;" role="form">
     <div class="form-group col-sm-offset-3">
-        <span class="help-block text-right">* indicates required</span>
+        <span class="help-block form-control-width-md text-right">* indicates required</span>
     </div>
     <div class="form-group col-sm-offset-3">
       <label for="nameInput3" class="control-label required">Name</label>
-      <input type="text" class="form-control" id="nameInput3" required>
+      <input type="text" class="form-control form-control-width-md" id="nameInput3" required>
     </div>
     <div class="form-group col-sm-offset-3">
       <label for="emailInput3" class="control-label">Email</label>
-      <input type="email" class="form-control" id="emailInput3">
+      <input type="email" class="form-control form-control-width-md" id="emailInput3">
     </div>
   </form>
 </div>
 [/preview]
 
 ```html
-<form class="form-horizontal col-sm-10 col-md-8 col-lg-6" role="form">
+<form class="form-horizontal " style="max-width: 450px;" role="form">
   <div class="form-group">
     <label for="nameInput5" class="col-sm-3 control-label required">Name</label>
     <div class="col-sm-9">
-      <input type="text" class="form-control" id="nameInput5" required>
+      <input type="text" class="form-control form-control-width-md" id="nameInput5" required>
     </div>
   </div>
   <div class="form-group">
     <label for="emailInput5" class="col-sm-3 control-label">Email</label>
     <div class="col-sm-9">
-      <input type="email" class="form-control" id="emailInput5">
+      <input type="email" class="form-control form-control-width-md" id="emailInput5">
     </div>
   </div>
 </form>
@@ -174,17 +209,17 @@ When the fields are left aligned, the asterisk is placed to the left.
 
 [preview]
 <div class="row">
-  <form class="form-horizontal col-sm-10 col-md-8 col-lg-6" role="form">
+  <form class="form-horizontal " style="max-width: 450px;" role="form">
     <div class="form-group">
       <label for="nm7" class="col-sm-3 control-label required">Name</label>
       <div class="col-sm-9">
-        <input type="text" class="form-control" id="nm7" required>
+        <input type="text" class="form-control form-control-width-md" id="nm7" required>
       </div>
     </div>
     <div class="form-group">
       <label for="em7" class="col-sm-3 control-label">Email</label>
       <div class="col-sm-9">
-        <input type="email" class="form-control" id="em7">
+        <input type="email" class="form-control form-control-width-md" id="em7">
       </div>
     </div>
   </form>
@@ -192,17 +227,17 @@ When the fields are left aligned, the asterisk is placed to the left.
 [/preview]
 
 ```html
-<form class="form-horizontal col-sm-10 col-md-8 col-lg-6" role="form">
+<form class="form-horizontal " style="max-width: 450px;" role="form">
   <div class="form-group">
     <label for="em7" class="col-sm-3 control-label required">Email</label>
     <div class="col-sm-9">
-      <input type="email" class="form-control" id="em7">
+      <input type="email" class="form-control form-control-width-md" id="em7">
     </div>
   </div>
   <div class="form-group">
     <label for="pw7" class="col-sm-3 control-label">Password</label>
     <div class="col-sm-9">
-      <input type="password" class="form-control" id="pw7">
+      <input type="password" class="form-control form-control-width-md" id="pw7">
     </div>
   </div>
 </form>
@@ -225,7 +260,7 @@ __Do__
 - Provide validation feedback as soon as possible, either 500ms after a key is pressed, when the field loses focus, or (if all else fails) when the form is submitted.
 - Provide field level validation for fields that are known to be invalid
 - Provide form level validation for large forms, or when the system doesn't know exactly which field is invalid
-- Describe _why_ an error occurred. `Email is already in use` rather than `There was an error`
+- Describe _why_ an error occurred (e.g., `Email is already in use` rather than `There was an error`)
 - Describe/imply what the user should do to fix the error
 
 __Don't__
@@ -234,25 +269,24 @@ __Don't__
 
 [preview]
 <div class="row">
-  <form class="form-horizontal col-sm-10 col-md-8 col-lg-6" role="form">
+  <form class="form-horizontal " style="max-width: 450px;" role="form">
     <div class="form-group has-error">
-      <label for="em9" class="col-sm-3 control-label required">Email</label>
+      <label for="em9" class="col-sm-3 control-label required">Invalid</label>
       <div class="col-sm-9">
-        <input type="email" class="form-control" id="em9" value="john.smith@gmail">
+        <input type="email" class="form-control form-control-width-md" id="em9" value="john.smith@gmail">
         <span class="help-block">This email address is not valid.<span>
       </div>
     </div>
     <div class="form-group has-error">
-      <label for="pw9" class="col-sm-3 control-label required">Password</label>
+      <label for="pw9" class="col-sm-3 control-label required">Required</label>
       <div class="col-sm-9">
-        <input type="password" class="form-control" id="pw9" >
+        <input type="text" class="form-control form-control-width-md" id="pw9" >
         <span class="help-block">This field is required.<span>
       </div>
     </div>
     <div class="form-group">
       <div class="col-sm-offset-3 col-sm-9">
-        <button type="submit" class="btn btn-primary">Sign in</button>
-        <a class="pull-right" style="padding: 7px 0; display: inline-block; cursor: pointer;">Forgot password?</a> <!-- todo: inline style -->
+        <button type="submit" class="btn btn-primary">Submit</button>
       </div>
     </div>
   </form>
@@ -264,14 +298,14 @@ __Don't__
   <div class="form-group has-error">
     <label for="em9" class="col-sm-3 control-label required">Email</label>
     <div class="col-sm-9">
-      <input type="email" class="form-control" id="em9" value="john.smith@gmail">
+      <input type="email" class="form-control form-control-width-md" id="em9" value="john.smith@gmail">
       <span class="help-block">This email address is not valid.<span>
     </div>
   </div>
   <div class="form-group has-error">
     <label for="pw9" class="col-sm-3 control-label required">Password</label>
     <div class="col-sm-9">
-      <input type="password" class="form-control" id="pw9" >
+      <input type="password" class="form-control form-control-width-md" id="pw9" >
       <span class="help-block">This field is required.<span>
     </div>
   </div>
@@ -286,7 +320,7 @@ __Don't__
 
 [preview]
 <div class="row">
-  <form class="form-horizontal col-sm-10 col-md-8 col-lg-6" role="form">
+  <form class="form-horizontal " style="max-width: 450px;" role="form">
     <div class="form-group">
         <div class="col-sm-offset-3 col-sm-9">
             <div class="alert alert-danger" style="margin: 0;">
@@ -309,7 +343,6 @@ __Don't__
     <div class="form-group">
       <div class="col-sm-offset-3 col-sm-9">
         <button type="submit" class="btn btn-primary">Sign in</button>
-        <a style="padding: 7px 0; display: inline-block; cursor: pointer;" class="pull-right">Forgot password?</a> <!-- todo: inline style -->
       </div>
     </div>
   </form>
@@ -321,20 +354,20 @@ __Don't__
   <div class="form-group has-error">
     <label for="em10" class="col-sm-2 control-label">Email</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" id="em10">
+      <input type="email" class="form-control form-control-width-md" id="em10">
       <span class="help-block">Email is not valid.<span>
     </div>
   </div>
   <div class="form-group">
     <label for="pw10" class="col-sm-2 control-label">Password</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" id="pw10" >
+      <input type="password" class="form-control form-control-width-md" id="pw10" >
     </div>
   </div>
   <div class="form-group has-error">
     <label for="passwordInput4" class="col-sm-2 control-label">Confirm password</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" id="passwordInput4">
+      <input type="password" class="form-control form-control-width-md" id="passwordInput4">
       <span class="help-block">Passwords do not match.</span>
     </div>
   </div>
@@ -360,30 +393,30 @@ Help text can be placed at the top of the form, under the heading of a form grou
 [preview]
 
 <div class="row">
-    <form class="form-horizontal col-sm-10 col-md-8 col-lg-6" role="form">
+    <form class="form-horizontal " style="max-width: 450px;" role="form">
         <div class="form-group">
             <div class="col-sm-9 col-sm-offset-3">
                 <h4>Public profile</h4>
-                <span class="help-block">This information will be visible on your public profile page.</span>
+                <span class="help-block">This information will appear on your public profile.</span>
             </div>
         </div>
         <div class="form-group">
             <label for="ht3" class="col-sm-3 control-label">Full name</label>
             <div class="col-sm-9">
-                <input class="form-control" type="text" id="ht3">
+                <input class="form-control form-control-width-md" type="text" id="ht3">
             </div>
         </div>
         <div class="form-group">
             <label for="ht4" class="col-sm-3 control-label">Email</label>
             <div class="col-sm-9">
-                <input class="form-control" type="text" id="ht4">
+                <input class="form-control form-control-width-md" type="text" id="ht4">
                 <span class="help-block">This is how people will contact you.</span>
             </div>
         </div>
         <div class="form-group">
             <label for="po1" class="col-sm-3 control-label">Popover</label>
             <div class="col-sm-9">
-                <input class="form-control" type="password" id="po1" data-html="true" data-toggle="popover" data-container="body" data-trigger="focus" data-content="Use at least 8 characters. Don’t use a password from another site, or something too obvious like your pet’s name. <a href=''>Why?</a>">
+                <input class="form-control form-control-width-md" type="password" id="po1" data-html="true" data-toggle="popover" data-container="body" data-trigger="focus" data-content="Use at least 8 characters. Don’t use a password from another site, or something too obvious like your pet’s name. <a href=''>Why?</a>">
             </div>
         </div>
     </form>
@@ -402,20 +435,20 @@ Help text can be placed at the top of the form, under the heading of a form grou
     <div class="form-group">
         <label for="ht3" class="col-sm-3 control-label">Full name</label>
         <div class="col-sm-9">
-            <input class="form-control" type="text" id="ht3">
+            <input class="form-control form-control-width-md" type="text" id="ht3">
         </div>
     </div>
     <div class="form-group">
         <label for="ht4" class="col-sm-3 control-label">Email</label>
         <div class="col-sm-9">
-            <input class="form-control" type="text" id="ht4">
+            <input class="form-control form-control-width-md" type="text" id="ht4">
             <span class="help-block">This will be public</span>
         </div>
     </div>
     <div class="form-group">
         <label for="ht1" class="col-sm-3 control-label">Email</label>
         <div class="col-sm-9">
-            <input class="form-control" type="text" id="ht1">
+            <input class="form-control form-control-width-md" type="text" id="ht1">
         </div>
     </div>
 </form>
@@ -425,38 +458,37 @@ Help text can be placed at the top of the form, under the heading of a form grou
 
 [pattern]
 ### Form groups
-
-If you have many fields, consider organizing related fields into titled groups. 
+If you have many fields, consider organizing related fields into groups. Groups can have a title.
 
 [preview]
 <div class="row">
-    <form class="form-horizontal col-sm-10 col-md-8 col-lg-6" role="form">
+    <form class="form-horizontal " style="max-width: 450px;" role="form">
         <div class="form-group">
             <div class="col-sm-9 col-sm-offset-3">
-                <h4>Personal Information</h4>
+                <h4>Personal information</h4>
             </div>
         </div>
         <div class="form-group">
             <label for="fg1" class="col-sm-3 control-label required">Email</label>
             <div class="col-sm-9">
-              <input type="email" class="form-control" id="fg1">
+              <input type="email" class="form-control form-control-width-md" id="fg1">
             </div>
         </div>
         <div class="form-group">
             <label for="fg2" class="col-sm-3 control-label required">Full name</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="fg2">
+              <input type="text" class="form-control-width-md form-control" id="fg2">
             </div>
         </div>
         <div class="form-group">
             <div class="col-sm-9 col-sm-offset-3">
-                <h4 style="margin-top: 40px;">Shipping Details</h4>
+                <h4 style="margin-top: 40px;">Shipping details</h4>
             </div>
         </div>
         <div class="form-group">
             <label for="fg3" class="col-sm-3 control-label required">Address line 1</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="fg3">
+              <input type="text" class="form-control form-control-width-md" id="fg3">
             </div>
         </div>
     </form>
@@ -465,7 +497,7 @@ If you have many fields, consider organizing related fields into titled groups.
 
 ```html
 <div class="row">
-    <form class="form-horizontal col-sm-10 col-md-8 col-lg-6" role="form">
+    <form class="form-horizontal " style="max-width: 450px;" role="form">
         <div class="form-group">
             <div class="col-sm-9 col-sm-offset-3">
                 <h4>Personal Information</h4>
@@ -474,13 +506,13 @@ If you have many fields, consider organizing related fields into titled groups.
         <div class="form-group">
             <label for="fg1" class="col-sm-3 control-label required">Email</label>
             <div class="col-sm-9">
-              <input type="email" class="form-control" id="fg1">
+              <input type="email" class="form-control form-control-width-md" id="fg1">
             </div>
         </div>
         <div class="form-group">
             <label for="fg2" class="col-sm-3 control-label required">Full name</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="fg2">
+              <input type="text" class="form-control form-control-width-md" id="fg2">
             </div>
         </div>
         <div class="form-group">
@@ -491,7 +523,7 @@ If you have many fields, consider organizing related fields into titled groups.
         <div class="form-group">
             <label for="fg3" class="col-sm-3 control-label required">Address line 1</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control" id="fg3">
+              <input type="text" class="form-control form-control-width-md" id="fg3">
             </div>
         </div>
     </form>
@@ -516,25 +548,25 @@ __Text area__
 
 [preview]
 <div class="row">
-    <form class="form-horizontal col-sm-10 col-md-8 col-lg-6" role="form">
+    <form class="form-horizontal " style="max-width: 450px;" role="form">
         <div class="form-group has-error">
             <label for="ta1" class="col-sm-3 control-label">Description</label>
             <div class="col-sm-9">
-                <textarea id="ta1" rows="3" class="form-control">This textfield has exceed the character limit by 10 characters. The user can still continue to type after reaching the limit, but the field is invalid.</textarea>
+                <textarea id="ta1" rows="3" class="form-control form-control-width-fill">This textfield has exceed the character limit by 10 characters. The user can still continue to type after reaching the limit, but the field is invalid.</textarea>
                 <span class="help-block pull-right"><strong>150/140</strong> character limit</span>
             </div>
         </div>
         <div class="form-group">
             <label for="ta2" class="col-sm-3 control-label">Description</label>
             <div class="col-sm-9">
-                <textarea id="ta2" rows="3" class="form-control"></textarea>
+                <textarea id="ta2" rows="3" class="form-control form-control-width-fill"></textarea>
                 <span class="help-block pull-right">0/140 character limit</span>
             </div>
         </div>
         <div class="form-group">
             <label for="ml1" class="col-sm-3 control-label">Max 25</label>
             <div class="col-sm-9">
-                <input id="ml1" type="text" class="form-control" maxlength="25">
+                <input id="ml1" type="text" class="form-control form-control-width-md" maxlength="25">
             </div>
         </div>
     </form>
@@ -546,21 +578,21 @@ __Text area__
     <div class="form-group has-error">
         <label for="ta1" class="col-sm-3 control-label">Description</label>
         <div class="col-sm-9">
-            <textarea id="ta1" rows="3" class="form-control">This textfield has exceed the character limit by 10 characters. The user can still continue to type after reaching the limit, but the field is invalid.</textarea>
+            <textarea id="ta1" rows="3" class="form-control form-control-width-fill">This textfield has exceed the character limit by 10 characters. The user can still continue to type after reaching the limit, but the field is invalid.</textarea>
             <span class="help-block pull-right"><strong>150/140</strong> character limit</span>
         </div>
     </div>
     <div class="form-group">
         <label for="ta2" class="col-sm-3 control-label">Description</label>
         <div class="col-sm-9">
-            <textarea id="ta2" rows="3" class="form-control"></textarea>
+            <textarea id="ta2" rows="3" class="form-control form-control-width-fill"></textarea>
             <span class="help-block pull-right">0/140 character limit</span>
         </div>
     </div>
     <div class="form-group">
         <label for="ml1" class="col-sm-3 control-label">Limit 25</label>
         <div class="col-sm-9">
-            <input id="ml1" type="text" class="form-control" maxlength="25">
+            <input id="ml1" type="text" class="form-control form-control-width-fill" maxlength="25">
         </div>
     </div>
 </form>
@@ -578,18 +610,37 @@ These examples show various form configurations.
 
 [preview]
 <div class="row">
-    <form class="form-horizontal col-sm-10 col-md-8 col-lg-6" role="form">
+    <form class="form-horizontal " style="max-width: 450px;" role="form">
       <div class="form-group">
         <label for="em12" class="col-sm-3 control-label required">Email</label>
         <div class="col-sm-9">
-          <input type="email" class="form-control" id="em12">
+          <input type="email" class="form-control form-control-width-md" id="em12">
           <span class="help-block">Your email will be used to log in.</span>
         </div>
       </div>
       <div class="form-group">
         <label for="n12" class="col-sm-3 control-label required">Name</label>
         <div class="col-sm-9">
-          <input type="email" class="form-control" id="n12">
+          <input type="text" class="form-control-width-md form-control" id="n12">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="ci12" class="col-sm-3 control-label required">City</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control-width-md form-control" id="ci12">
+        </div>
+       </div>
+       <div class="form-group">
+        <label for="si12" class="col-sm-3 control-label required">State</label>
+        <div class="col-sm-9">
+            <select id="si12" class="form-control-width-xs select2 form-control">
+              <option>AL</option>
+              <option>AK</option>
+              <option>AZ</option>
+              <option>AR</option>
+              <option>CA</option>
+              <option>WA</option>
+            </select>
         </div>
       </div>
       <div class="form-group">
@@ -607,34 +658,8 @@ These examples show various form configurations.
         </div>
       </div>
       <div class="form-group">
-        <label for="ci12" class="col-sm-3 control-label required">City</label>
-        <div class="col-sm-4">
-          <input type="email" class="form-control" id="ci12">
-        </div>
-        <label for="si12" class="col-sm-2 control-label required">State</label>
-        <div class="col-sm-3">
-            <select id="si12" class="select2 form-control">
-              <option>AL</option>
-              <option>AK</option>
-              <option>AZ</option>
-              <option>AR</option>
-              <option>CA</option>
-            </select>
-        </div>
-      </div>
-      <div class="form-group">
         <div class="col-sm-offset-3 col-sm-9">
-            <div class="checkbox">
-              <label>
-                <input type="checkbox"> Send me notifications via email
-              </label>
-            </div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="col-sm-offset-3 col-sm-9">
-          <button type="submit" class="btn btn-default">Back</button>
-          <button type="submit" class="btn btn-primary pull-right ">Next</button>
+          <button type="submit" class="btn btn-primary">Send</button>
         </div>
       </div>
     </form>
@@ -643,18 +668,36 @@ These examples show various form configurations.
 
 ```html
 <div class="row">
-    <form class="form-horizontal col-sm-10 col-md-8 col-lg-6" role="form">
+    <form class="form-horizontal " style="max-width: 450px;" role="form">
       <div class="form-group">
         <label for="em12" class="col-sm-3 control-label required">Email</label>
         <div class="col-sm-9">
-          <input type="email" class="form-control" id="em12">
+          <input type="email" class="form-control form-control-width-md" id="em12">
           <span class="help-block">Your email will be used to log in.</span>
         </div>
       </div>
       <div class="form-group">
         <label for="n12" class="col-sm-3 control-label required">Name</label>
         <div class="col-sm-9">
-          <input type="email" class="form-control" id="n12">
+          <input type="text" class="form-control form-control-width-md" id="n12">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="ci12" class="col-sm-3 control-label required">City</label>
+        <div class="col-sm-9">
+          <input type="email" class="form-control form-control-width-md" id="ci12">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="si12" class="col-sm-3 control-label required">State</label>
+        <div class="col-sm-9">
+            <select id="si12" class="form-control form-control-width-md">
+              <option>AL</option>
+              <option>AK</option>
+              <option>AZ</option>
+              <option>AR</option>
+              <option>CA</option>
+            </select>
         </div>
       </div>
       <div class="form-group">
@@ -669,22 +712,6 @@ These examples show various form configurations.
           <div class="radio">
             <label><input type="radio" name="opr2" id="opr23" value="option3">USPS</label>
           </div>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="ci12" class="col-sm-3 control-label required">City</label>
-        <div class="col-sm-4">
-          <input type="email" class="form-control" id="ci12">
-        </div>
-        <label for="si12" class="col-sm-2 control-label required">State</label>
-        <div class="col-sm-3">
-            <select id="si12" class="form-control">
-              <option>AL</option>
-              <option>AK</option>
-              <option>AZ</option>
-              <option>AR</option>
-              <option>CA</option>
-            </select>
         </div>
       </div>
       <div class="form-group">
@@ -708,7 +735,7 @@ These examples show various form configurations.
 
 [preview]
 <div class="row">
-    <div class="col-sm-10 col-md-8 col-lg-6">
+    <div class="" style="max-width: 450px;">
         <form role="form" class="col-sm-offset-3" style="max-width: 350px;">
           <div class="form-group">
             <div class="alert alert-danger">
@@ -727,11 +754,13 @@ These examples show various form configurations.
           </div>
           <div class="form-group">
             <label class="control-label required" for="t12">Title</label>
-            <select class="select2 form-control" id="t12">
-              <option value="Mr.">Mr.</option>
-              <option value="Mrs.">Mrs.</option>
-              <option value="Miss">Miss</option>
-            </select>
+            <div>
+                <select class="select2 form-control-width-sm form-control" id="t12">
+                  <option value="Mr.">Mr.</option>
+                  <option value="Mrs.">Mrs.</option>
+                  <option value="Miss">Miss</option>
+                </select>
+            </div>
           </div>
           <div class="form-group">
             <label class="control-label required" for="fn12">First name</label>
