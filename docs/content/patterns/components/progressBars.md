@@ -50,7 +50,7 @@ Load spinners should be used when there is an indeterminate amount of time/progr
 For buttons with text, the load spinner can appear where the icon would appear. The text may change to reflect the current state.
 [preview]
 <button class="btn btn-default">Load more</button>
-<button class="btn btn-default" disabled><i class="loading-icon"></i>Loading...</button>
+<button class="btn btn-default" disabled><i class="loading-icon"></i> Loading...</button>
 [/preview]
 
 #### Loading button with icon only
