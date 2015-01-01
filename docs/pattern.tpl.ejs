@@ -44,7 +44,7 @@
                     <li class="category"><%= subCategory.toUpperCase() %></li>
                     <% nav[category][subCategory].forEach(function(l) { %>
                         <% if (!l.meta.draft) { %>
-                            <li class="<%= l.title == meta.title ? 'active' : '' %>"><a href="<%= l.url %>"><%- l.meta.preview ? '<i title="This document is a preview." class="fa fa-fw fa-exclamation pull-right"></i>' : '' %><%= l.title %> </a>
+                            <li class="<%= l.title == meta.title ? 'active' : '' %>"><a href="<%= l.url %>"><%= l.title %> </a>
                                 <% if (l.title === meta.title && l.subNav && l.subNav.length) { %>
                                     <ul class="nav nav-stacked">
                                         <%l.subNav.forEach(function(s) { %>
