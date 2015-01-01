@@ -59,9 +59,6 @@
             </ul>
         </nav>
         <section class="pl-content <%= meta.sidebar == false ? 'container' : '' %>">
-            <% if (meta.preview) { %>
-                <div class="pl-preview-header">This document is a preview.</div>
-            <% } %>
             <%- content %>
             <% if (locals.subCategory) { %>
                 <div class="pl-footer">
