@@ -8,7 +8,7 @@ title: "Typography"
         <div style="max-width: 100%; width: 600px; margin: auto;">
             <h1>Segoe UI</h1>
             <h2>Grumpy wizards make toxic brew for the evil Queen and Jack.</h2>
-            <p class="subhead">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
+            <p style="font-size: 16px;">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
             <blockquote>"The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked."</blockquote>
         </div>
     </div>
@@ -82,10 +82,10 @@ title: "Typography"
 #### Pairings
 [preview]
 <div style="max-width: 600px;">
-    <h2>Large display2 heading</h2>
+    <h2>Large display 1 heading</h2>
     <h3>A headline</h3>
     <p style="margin-bottom: 32px;">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
-    <h4>A smaller title</h4>
+    <h4>Smaller title</h4>
     <h5>Subhead</h5>
     <p style="margin-bottom: 32px;">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
     <h5>Another subhead</h5>
