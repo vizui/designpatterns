@@ -403,14 +403,14 @@ module.exports = function (grunt) {
                 dot: true,
                 cwd: 'images',
                 dest: '<%= paths.tmp %>/images/',
-                src: '*.*'
+                src: '**/*.*'
             },
             imagesDist: {
                 expand: true,
                 dot: true,
                 cwd: 'images',
                 dest: '<%= paths.dist %>/images/',
-                src: '*.*'
+                src: '**/*.*'
             }
         },
 
