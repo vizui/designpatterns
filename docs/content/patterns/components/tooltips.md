@@ -49,7 +49,7 @@ The content of a tooltip can vary. It's best to keep it to a few words.
 <div style="width: 120px;">
     <button type="button" class="btn btn-block btn-default" data-toggle="tooltip" data-placement="right" title="Print">Short</button>
     <button type="button" class="btn btn-block btn-default" data-toggle="tooltip" data-placement="right" data-html="true" title='Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper volutpat ultrices. Mauris lobortis lacus vel ullamcorper vestibulum.'>Wrapping</button>
-    <button type="button" class="btn btn-block btn-default" data-toggle="tooltip" data-placement="right" data-html="true" title='<i class="fa fa-1x fa-calendar-o"></i> &nbsp; <strong>January 21</strong>, 2014'>Rich content</button>
+    <button type="button" class="btn btn-block btn-default" data-toggle="tooltip" data-placement="right" data-html="true" title='<i class="icon icon-inverse icon-calendar-o"></i> &nbsp; <strong>January 21</strong>, 2014'>Rich content</button>
 </div>
 [/preview]
 

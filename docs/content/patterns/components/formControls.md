@@ -216,6 +216,65 @@ Users need to specify which option(s) from a set are applicable/valid/true based
 
 [/pattern]
 
+[pattern]
+### Toggle switches
+
+#### Purpose
+Users need to toggle an option between on/off or yes/no. 
+
+#### Description
+Use a toggle switch for a binary option where the change occurs _immediately_. Use a checkbox instead if the user has to perform other actions for the change to be effective (e.g., pressing Save or Submit).
+
+[preview]
+<div class="form-group">
+    <div class="switch">
+        <input type="checkbox" id="t1">
+        <label for="t1" data-on="ON" data-off="OFF">Access</label>
+    </div>
+</div>
+<div class="form-group">
+    <div class="switch">
+        <input type="checkbox" id="t2" checked>
+        <label for="t2" data-on="ON" data-off="OFF">Access</label>
+    </div>
+</div>
+<hr>
+<div class="form-group">
+    <div class="switch">
+        <input type="checkbox" id="t4">
+        <label for="t4" data-on="YES" data-off="NO">Send alerts</label>
+    </div>
+</div>
+<div class="form-group">
+    <div class="switch">
+        <input type="checkbox" id="t5" checked>
+        <label for="t5" data-on="YES" data-off="NO">Send alerts</label>
+    </div>
+</div>
+<hr>
+<div class="form-group">
+    <div class="switch">
+        <input type="checkbox" id="t6" checked disabled>
+        <label for="t6" data-on="ON" data-off="OFF">Disabled on</label>
+    </div>
+</div>
+<div class="form-group">
+    <div class="switch">
+        <input type="checkbox" id="t7" disabled>
+        <label for="t7" data-on="ON" data-off="OFF">Disabled off</label>
+    </div>
+</div>
+[/preview]
+
+```html
+<div class="switch">
+    <input type="checkbox" id="t1">
+    <label for="t1" data-on="ON" data-off="OFF">Access</label>
+</div>
+```
+
+[/pattern]
+
 
 [pattern]
 ### Select
@@ -338,7 +397,16 @@ The user needs to choose an option from a predefined set.
 [/preview]
 
 ```html
-
+<div class="form-group">
+    <label for="se17" class="col-sm-3 control-label">Normal</label>
+    <div class="col-sm-9">
+        <select id="se17" class="form-control select2">
+            <option value="A">Option A</option>
+            <option value="B">Option B</option>
+            <option value="C">Option C</option>
+        </select>
+    </div>
+</div>
 ```
 
 [/pattern]
@@ -378,7 +446,17 @@ This is the native browser multi-select. `Ctrl+click` (or `cmd+click`) toggles s
 [/preview]
 
 ```html
-
+<div class="form-group">
+    <label for="se16" class="col-sm-3 control-label">Disabled</label>
+    <div class="col-sm-9">
+        <select multiple id="se16" disabled class="form-control">
+            <option value="A">Option A</option>
+            <option value="B">Option B</option>
+            <option value="C">Option C</option>
+            <option value="D">Option D</option>
+        </select>
+    </div>
+</div>
 ```
 
 [/pattern]
@@ -392,7 +470,7 @@ This is the native browser multi-select. `Ctrl+click` (or `cmd+click`) toggles s
             <div class="form-group">
                 <label for="dp1" class="col-sm-3 control-label">When</label>
                 <div class="col-sm-9">
-                    <span class="input-icon fa fa-calendar-o"></span>
+                    <span class="input-icon icon icon-calendar-o"></span>
                     <input id="dp1" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'" type="text" class="datepicker form-control" >
                 </div>
             </div>
@@ -401,11 +479,11 @@ This is the native browser multi-select. `Ctrl+click` (or `cmd+click`) toggles s
                 <div class="col-sm-9">
                     <div class="row">
                         <div class="col-sm-6">
-                            <span class="input-icon fa fa-calendar-o"></span>
+                            <span class="input-icon icon icon-calendar-o"></span>
                             <input id="dp2" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'" type="text" class="datepicker form-control" >
                         </div>
                         <div class="col-sm-6">
-                            <span class="input-icon fa fa-calendar-o"></span>
+                            <span class="input-icon icon icon-calendar-o"></span>
                             <input id="dp3" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'" type="text" class="datepicker form-control" >
                         </div>
                     </div>
@@ -418,7 +496,13 @@ This is the native browser multi-select. `Ctrl+click` (or `cmd+click`) toggles s
 [/preview]
 
 ```html
-
+<div class="form-group">
+    <label for="dp1" class="col-sm-3 control-label">When</label>
+    <div class="col-sm-9">
+        <span class="input-icon icon icon-calendar-o"></span>
+        <input id="dp1" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'" type="text" class="datepicker form-control" >
+    </div>
+</div>
 ```
 
 [/pattern]
@@ -449,7 +533,12 @@ This is the native browser multi-select. `Ctrl+click` (or `cmd+click`) toggles s
 [/preview]
 
 ```html
-
+<div class="form-group">
+    <label for="se15" class="col-sm-3 control-label">Normal</label>
+    <div class="col-sm-9">
+        <input class="slider">
+    </div>
+</div>
 ```
 
 [/pattern]
@@ -476,21 +565,21 @@ The rich text editor allows for text input with additional formatting and inline
                                 </ul>
                             </div>
                             <div class="btn-group">
-                                <button data-toggle="tooltip" data-placement="top" title="Bold" class="btn btn-hover btn-icon-only"><i class="fa fa-bold"></i><span class="sr-only">Bold</span></button>
-                                <button data-toggle="tooltip" data-placement="top" title="Italicize" class="btn btn-hover active btn-icon-only"><i class="fa fa-italic"></i><span class="sr-only">Italicize</span></button>
-                                <button data-toggle="tooltip" data-placement="top" title="Underline" class="btn btn-hover btn-icon-only"><i class="fa fa-underline"></i><span class="sr-only">Underline</span></button>
+                                <button data-toggle="tooltip" data-placement="top" title="Bold" class="btn btn-hover btn-icon-only"><i class="icon icon-bold"></i><span class="sr-only">Bold</span></button>
+                                <button data-toggle="tooltip" data-placement="top" title="Italicize" class="btn btn-hover active btn-icon-only"><i class="icon icon-italic"></i><span class="sr-only">Italicize</span></button>
+                                <button data-toggle="tooltip" data-placement="top" title="Underline" class="btn btn-hover btn-icon-only"><i class="icon icon-underline"></i><span class="sr-only">Underline</span></button>
                             </div>
                             <div class="btn-group">
-                                <button data-toggle="tooltip" data-placement="top" title="Ordered list" class="btn btn-hover btn-icon-only"><i class="fa fa-list-ol"></i><span class="sr-only">Ordered list</span></button>
-                                <button data-toggle="tooltip" data-placement="top" title="Unordered list" class="btn btn-hover btn-icon-only"><i class="fa fa-list-ul"></i><span class="sr-only">Unordered list</span></button>
+                                <button data-toggle="tooltip" data-placement="top" title="Ordered list" class="btn btn-hover btn-icon-only"><i class="icon icon-list-ol"></i><span class="sr-only">Ordered list</span></button>
+                                <button data-toggle="tooltip" data-placement="top" title="Unordered list" class="btn btn-hover btn-icon-only"><i class="icon icon-list-ul"></i><span class="sr-only">Unordered list</span></button>
                             </div>
                             <div class="btn-group">
-                                <button data-toggle="tooltip" data-placement="top" title="Indent" class="btn btn-hover btn-icon-only"><i class="fa fa-indent"></i><span class="sr-only">Indent</span></button>
-                                <button data-toggle="tooltip" data-placement="top" title="Outdent" class="btn btn-hover btn-icon-only"><i class="fa fa-outdent"></i><span class="sr-only">Outdent</span></button>
+                                <button data-toggle="tooltip" data-placement="top" title="Indent" class="btn btn-hover btn-icon-only"><i class="icon icon-indent"></i><span class="sr-only">Indent</span></button>
+                                <button data-toggle="tooltip" data-placement="top" title="Outdent" class="btn btn-hover btn-icon-only"><i class="icon icon-dedent"></i><span class="sr-only">Outdent</span></button>
                             </div>
                             <div class="btn-group">
-                                <button data-toggle="tooltip" data-placement="top" title="Insert link" class="btn btn-hover btn-icon-only"><i class="fa fa-chain"></i><span class="sr-only">Insert link</span></button>
-                                <button data-toggle="tooltip" data-placement="top" title="Insert image" class="btn btn-hover btn-icon-only"><i class="fa fa-image"></i><span class="sr-only">Insert image</span></button>
+                                <button data-toggle="tooltip" data-placement="top" title="Insert link" class="btn btn-hover btn-icon-only"><i class="icon icon-chain"></i><span class="sr-only">Insert link</span></button>
+                                <button data-toggle="tooltip" data-placement="top" title="Insert image" class="btn btn-hover btn-icon-only"><i class="icon icon-image"></i><span class="sr-only">Insert image</span></button>
                             </div>
                         </div>
                     </div>

@@ -23,13 +23,11 @@
 
     }
 
-    &[aria-expanded="false"] > .fa {
-        // content: "\f105";
+    [aria-expanded="false"] > .icon {
         transition: transform .2s;
         transform: rotate(0deg);
     }
-    &[aria-expanded="true"] > .fa {
-        // content: "\f107";
+    [aria-expanded="true"] > .icon {
         transition: transform .2s;
         transform: rotate(90deg);
     }

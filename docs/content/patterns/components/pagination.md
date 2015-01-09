@@ -58,7 +58,7 @@ These show possible configurations for layouts with large amounts of screen real
         </ul>
     </div>
 </div> <div class="btn-group">
-  <a class="btn btn-default" href="#"><i class="fa fa-angle-left"></i></a>
+  <a class="btn btn-default" href="#"><i class="icon icon-angle-left"></i></a>
   <a class="btn btn-default" href="#">1</a>
   <a class="btn btn-default" disabled href="#">...</a>
   <a class="btn btn-default" href="#">13</a>
@@ -68,7 +68,7 @@ These show possible configurations for layouts with large amounts of screen real
   <a class="btn btn-default" href="#">17</a>
   <a class="btn btn-default" disabled href="#">...</a>
   <a class="btn btn-default" href="#">25</a>
- <a class="btn btn-default" href="#"><i class="fa fa-angle-right"></i></a>
+ <a class="btn btn-default" href="#"><i class="icon icon-angle-right"></i></a>
 </div>
 [/preview]
 [preview]
@@ -95,8 +95,8 @@ These show possible configurations for layouts with large amounts of screen real
         </ul>
     </div>
 </div> <div class="btn-group">
-  <a href="#" class="btn btn-default"><i class="fa fa-angle-left"></i></a>
-  <a href="#" class="btn btn-default"><i class="fa fa-angle-right"></i></a>
+  <a href="#" class="btn btn-default"><i class="icon icon-angle-left"></i></a>
+  <a href="#" class="btn btn-default"><i class="icon icon-angle-right"></i></a>
 </div>
 [/preview]
 
@@ -114,8 +114,8 @@ These show possible configurations for layouts with limited screen real estate.
         </li>
     </ul>
 </div> <div class="btn-group">
-  <a href="#" class="btn btn-default"><i class="fa fa-angle-left"></i></a>
-  <a href="#" class="btn btn-default"><i class="fa fa-angle-right"></i></a>
+  <a href="#" class="btn btn-default"><i class="icon icon-angle-left"></i></a>
+  <a href="#" class="btn btn-default"><i class="icon icon-angle-right"></i></a>
 </div>
 [/preview]
 [preview]
@@ -130,8 +130,8 @@ These show possible configurations for layouts with limited screen real estate.
         </li>
     </ul>
 </div> <div class="btn-group">
-  <a href="#" class="btn btn-default"><i class="fa fa-angle-left"></i></a>
-  <a href="#" class="btn btn-default"><i class="fa fa-angle-right"></i></a>
+  <a href="#" class="btn btn-default"><i class="icon icon-angle-left"></i></a>
+  <a href="#" class="btn btn-default"><i class="icon icon-angle-right"></i></a>
 </div>
 [/preview]
 [preview]
@@ -145,9 +145,9 @@ These show possible configurations for layouts with limited screen real estate.
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
         </ul>
     </div> <div class="btn-group dropdown">
-  <a href="#" class="btn btn-default"><i class="fa fa-angle-left"></i></a>
+  <a href="#" class="btn btn-default"><i class="icon icon-angle-left"></i></a>
   <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="">15/25 <span class="caret"></span></a>
-  <a href="#" class="btn btn-default"><i class="fa fa-angle-right"></i></a>
+  <a href="#" class="btn btn-default"><i class="icon icon-angle-right"></i></a>
   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu4">
         <li role="presentation" class="dropdown-header">Jump to page</li>
         <li style="padding: 6px 18px;" role="presentation">
@@ -164,9 +164,9 @@ A possible configuration for very narrow/confined layouts.
 
 [preview]
 <div class="btn-group dropdown">
-  <a href="#" class="btn btn-default"><i class="fa fa-angle-left"></i></a>
+  <a href="#" class="btn btn-default"><i class="icon icon-angle-left"></i></a>
   <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="">15/25 <span class="caret"></span></a>
-  <a href="#" class="btn btn-default"><i class="fa fa-angle-right"></i></a>
+  <a href="#" class="btn btn-default"><i class="icon icon-angle-right"></i></a>
   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu4">
         <li role="presentation" class="dropdown-header">Jump to page</li>
         <li style="padding: 6px 18px;" role="presentation">

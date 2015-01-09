@@ -324,7 +324,7 @@ __Don't__
     <div class="form-group">
         <div class="col-sm-offset-3 col-sm-9">
             <div class="alert alert-danger" style="margin: 0;">
-                <i class="alert-icon fa fa-times-circle"></i> The email or password you entered is incorrect.
+                <i class="alert-icon icon icon-times-circle"></i> The email or password you entered is incorrect.
             </div>
         </div>
     </div>
@@ -739,7 +739,7 @@ These examples show various form configurations.
         <form role="form" class="col-sm-offset-3" style="max-width: 350px;">
           <div class="form-group">
             <div class="alert alert-danger">
-              <i class="alert-icon fa fa-times-circle"></i>Please fix the 3 errors.
+              <i class="alert-icon icon icon-times-circle"></i>Please fix the 3 errors.
             </div>
           </div>
           <div class="form-group has-error">

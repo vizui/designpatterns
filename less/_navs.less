@@ -109,14 +109,12 @@
         }
     }
 
-    > li .expander.expanded:before {
-        font-family: "FontAwesome";
-        content: "\f107";
+    > li .expander.expanded:after {
+        &:extend(.icon:after, .icon-angle-down:after);
     }
 
-    > li .expander.collapsed:before {
-        font-family: "FontAwesome";
-        content: "\f105";
+    > li .expander.collapsed:after {
+        &:extend(.icon:after, .icon-angle-right:after);
         margin-left: 2px;
     }
 }

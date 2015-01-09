@@ -502,19 +502,19 @@ If the content of the table is self-explanatory for your users, it may not need 
         <tbody>
             <tr>
                 <td class="vert-align"><strong>CSS is 20 years old today!</strong><br><span >13 points and 4 comments - 2 days ago</span></td>
-                <td class="vert-align text-center" style="width: 70px;"><span class="text-success semi-bold"><i class="fa fa-1x fa-angle-up"></i> 3.4%</span></td>
+                <td class="vert-align text-center" style="width: 70px;"><span class="text-success semi-bold"><i class="icon icon-angle-up"></i> 3.4%</span></td>
             </tr>
             <tr>
                 <td class="vert-align"><strong>Motion Experiments</strong><br><span >31 points and 7 comments - 11 hours ago</span></td>
-                <td class="vert-align text-center" style="width: 70px;"><span class="text-success semi-bold"><i class="fa fa-1x fa-angle-up"></i> 2.5%</span></td>
+                <td class="vert-align text-center" style="width: 70px;"><span class="text-success semi-bold"><i class="icon icon-angle-up"></i> 2.5%</span></td>
             </tr>
             <tr>
                 <td class="vert-align"><strong>Is everyone a designer? </strong><br><span >15 points and 3 comments - 3 days ago</span></td>
-                <td class="vert-align text-center" style="width: 70px;"><span class="text-primary semi-bold"><i class="fa fa-1x fa-angle-right"></i> 0.0%</span></td>
+                <td class="vert-align text-center" style="width: 70px;"><span class="text-primary semi-bold"><i class="icon icon-angle-right"></i> 0.0%</span></td>
             </tr>
             <tr>
                 <td class="vert-align"><strong>Introducing GIFV</strong><br><span >24 points and 9 comments - 5 days ago</span></td>
-                <td class="vert-align text-center" style="width: 70px;"><span class="text-danger semi-bold"><i class="fa fa-1x fa-angle-down"></i> 0.1%</span></td>
+                <td class="vert-align text-center" style="width: 70px;"><span class="text-danger semi-bold"><i class="icon icon-angle-down"></i> 0.1%</span></td>
             </tr>
         </tbody>
     </table>
@@ -533,7 +533,7 @@ Clicking a header cell sets that column as the currently sorted column. The firs
     <table class="table table-sortable table-bordered table-striped">
         <thead>
             <tr>
-                <th class="sortable active">Project name <i class="fa fa-caret-down fa-1x text-muted"></i></th>
+                <th class="sortable active">Project name <i class="icon icon-caret-down text-muted"></i></th>
                 <th class="sortable">Description</th>
                 <th>Price</th>
             </tr>
@@ -573,8 +573,8 @@ Performing a `shift+click` on a header cell should add that column to the sorted
     <table class="table table-sortable table-bordered table-striped">
         <thead>
             <tr>
-                <th class="sortable active">Event <i class="fa fa-caret-down fa-1x text-muted"></i> <sup >1</sup></th>
-                <th class="sortable active">Date <i class="fa fa-caret-up fa-1x text-muted"></i> <sup >2</sup></th>
+                <th class="sortable active">Event <i class="icon icon-caret-down text-muted"></i> <sup >1</sup></th>
+                <th class="sortable active">Date <i class="icon icon-caret-up text-muted"></i> <sup >2</sup></th>
                 <th>Module</th>
             </tr>
         </thead>
@@ -672,10 +672,10 @@ Buttons with the `btn-hover` and `btn-icon-only` classes.
                 <td class="vert-align">
                     <div class="pull-right">
                         <button class="btn btn-hover btn-icon-only" title="Delete">
-                            <i class="fa fa-1x text-muted fa-times"></i>
+                            <i class="icon text-muted icon-close"></i>
                         </button>
                         <button class="btn btn-hover btn-icon-only" title="More options">
-                            <i class="fa fa-1x text-muted fa-ellipsis-v"></i>
+                            <i class="icon text-muted icon-ellipsis-v"></i>
                         </button>
                     </div>
                 </td>
@@ -687,10 +687,10 @@ Buttons with the `btn-hover` and `btn-icon-only` classes.
                 <td class="vert-align">
                     <div class="pull-right">
                         <button class="btn btn-hover btn-icon-only" title="Delete">
-                            <i class="fa fa-1x text-muted fa-times"></i>
+                            <i class="icon text-muted icon-close"></i>
                         </button>
                         <button class="btn btn-hover btn-icon-only" title="More options">
-                            <i class="fa fa-1x text-muted fa-ellipsis-v"></i>
+                            <i class="icon text-muted icon-ellipsis-v"></i>
                         </button>
                     </div>
                 </td>
@@ -702,10 +702,10 @@ Buttons with the `btn-hover` and `btn-icon-only` classes.
                 <td class="vert-align">
                     <div class="pull-right">
                         <button class="btn btn-hover btn-icon-only" title="Delete">
-                            <i class="fa fa-1x text-muted fa-times"></i>
+                            <i class="icon text-muted icon-close"></i>
                         </button>
                         <button class="btn btn-hover btn-icon-only" title="More options">
-                            <i class="fa fa-1x text-muted fa-ellipsis-v"></i>
+                            <i class="icon text-muted icon-ellipsis-v"></i>
                         </button>
                     </div>
                 </td>
@@ -717,10 +717,10 @@ Buttons with the `btn-hover` and `btn-icon-only` classes.
                 <td class="vert-align">
                     <div class="pull-right">
                         <button class="btn btn-hover btn-icon-only" title="Delete">
-                            <i class="fa fa-1x text-muted fa-times"></i>
+                            <i class="icon text-muted icon-close"></i>
                         </button>
                         <button class="btn btn-hover btn-icon-only" title="More options">
-                            <i class="fa fa-1x text-muted fa-ellipsis-v"></i>
+                            <i class="icon text-muted icon-ellipsis-v"></i>
                         </button>
                     </div>
                 </td>
@@ -742,7 +742,7 @@ To provide column customization, add an icon to the top right corner of the tabl
                 <th>Project name</th>
                 <th>Description</th>
                 <th>Price</th>
-                <th class="table-config-column"><button type="button"><i class="fa fa-ellipsis-h fa-1x"></i></button></th>
+                <th class="table-config-column"><button type="button"><i class="icon icon-ellipsis-h"></i></button></th>
             </tr>
         </thead>
         <tbody>
@@ -832,17 +832,17 @@ This dialog provides the ability to show/hide columns as desired.
     <table class="table table-sortable table-bordered">
         <thead>
             <tr>
-                <th style="width: 200px;" class="sortable active">Module <i class="fa fa-caret-down fa-1x text-muted"></i> <sup >1</sup></th>
-                <th class="sortable active">Event <i class="fa fa-caret-down fa-1x text-muted"></i> <sup >2</sup></th>
-                <th class="sortable active">Date <i class="fa fa-caret-up fa-1x text-muted"></i> <sup >3</sup></th>
+                <th style="width: 200px;" class="sortable active">Module <i class="icon icon-caret-down text-muted"></i> <sup >1</sup></th>
+                <th class="sortable active">Event <i class="icon icon-caret-down text-muted"></i> <sup >2</sup></th>
+                <th class="sortable active">Date <i class="icon icon-caret-up text-muted"></i> <sup >3</sup></th>
             </tr>
         </thead>
         <tbody>
             <tr >
-                <td class="" style="background: #fff;" colspan="3"><i class="fa fa-1x text-muted fa-angle-down" style="margin-right: 6px;"></i><strong>Module:</strong> User <span style="color: #aaa;">(2)</span></td>
+                <td class="" style="background: #fff;" colspan="3"><i class="icon text-muted icon-angle-down" style="margin-right: 6px;"></i><strong>Module:</strong> User <span style="color: #aaa;">(2)</span></td>
             </tr>
             <tr>
-                <td class="" style="background: #fff; padding-left: 20px;" colspan="3"><i class="fa fa-1x text-muted fa-angle-down" style="margin-right: 6px;"></i><strong>Event:</strong> Create <span style="color: #aaa;">(2)</span></td>
+                <td class="" style="background: #fff; padding-left: 20px;" colspan="3"><i class="icon text-muted icon-angle-down" style="margin-right: 6px;"></i><strong>Event:</strong> Create <span style="color: #aaa;">(2)</span></td>
             </tr>
             <tr>
                 <td><span >Users</span></td>
@@ -855,7 +855,7 @@ This dialog provides the ability to show/hide columns as desired.
                 <td><span >10/19/14</span></td>
             </tr>
             <tr>
-                <td class="" style="background: #fff; padding-left: 20px;" colspan="4"><i class="fa fa-1x text-muted fa-angle-right" style="margin-right: 6px;"></i><strong>Event:</strong> Register <span style="color: #aaa;">(2)</span></td>
+                <td class="" style="background: #fff; padding-left: 20px;" colspan="4"><i class="icon text-muted icon-angle-right" style="margin-right: 6px;"></i><strong>Event:</strong> Register <span style="color: #aaa;">(2)</span></td>
             </tr>
         </tbody>
     </table>

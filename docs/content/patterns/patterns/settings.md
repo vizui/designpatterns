@@ -99,7 +99,7 @@ Use tabs if there are 5 or less sections of settings without nesting, otherwise 
       </div>
       <div style="width: 200px; min-height: 400px; border-right: 1px solid #ddd; float: left; padding-bottom: 14px;">
         <div style="padding: 8px 8px 8px 8px; border-bottom: 1px solid #ddd;" >
-            <div class="input-icon fa fa-search" style="margin-top: 6px;"></div>
+            <div class="input-icon icon icon-search" style="margin-top: 4px;"></div>
             <input type="text" class="form-control input-search input-sm" placeholder="">
         </div>
         <ul class="nav nav-stacked nav-tree" role="tab-list">

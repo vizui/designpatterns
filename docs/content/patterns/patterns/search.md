@@ -9,7 +9,7 @@ preview: true
     <div class="input-group">
         <input type="text" placeholder="Search" class="form-control">
         <span class="input-group-btn">
-            <button class="btn btn-info btn-search"><i class="fa fa-search"></i></button>
+            <button class="btn btn-info btn-search"><i class="icon icon-inverse icon-search"></i></button>
         </span>
     </div>
 </div>
@@ -19,7 +19,7 @@ preview: true
     <div class="input-group">
         <input type="text" placeholder="Search" class="form-control">
         <span class="input-group-btn">
-            <button class="btn btn-info btn-search"><i class="fa fa-search"></i></button>
+            <button class="btn btn-info btn-search"><i class="icon icon-inverse icon-search"></i></button>
         </span>
     </div>
     <div class="help-block">
@@ -39,7 +39,7 @@ preview: true
         </div>
         <input type="text" placeholder="Search" class="form-control">
         <span class="input-group-btn">
-            <button class="btn btn-info btn-search"><i class="fa fa-search"></i></button>
+            <button class="btn btn-info btn-search"><i class="icon icon-inverse icon-search"></i></button>
         </span>
     </div>
 </div>

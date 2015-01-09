@@ -68,7 +68,7 @@ These are the primary colors used for UI elements. The primary colors have seman
 [/pattern]
 [pattern]
 ### Full brand palette
-This is the full USPTO color palette. Only a handful the handful above are frequently used in UI elements.
+This is the full USPTO color palette. Only the handful above are frequently used in UI elements.
 <div class="pl-palette">
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="background-color: #643335;"></div>

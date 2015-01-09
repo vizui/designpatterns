@@ -30,8 +30,8 @@ Menus appear relative to the control or interaction that triggered the menu. Cli
   <li role="presentation"><a href="">Italic <span style="" class="pull-right text-muted">Ctrl+I</span></a></li>
   <li role="presentation"><a href="">Underline <span style="" class="pull-right text-muted">Ctrl+U</span></a></li>
   <li role="presentation" class="divider"></li>
-  <li role="presentation"><a href="">Font <i style=" line-height: 18px;" class="fa fa-caret-right text-muted pull-right fa-1x"></i></a></li>
-  <li role="presentation"><a href="">Font size <i style=" line-height: 18px;" class="fa fa-caret-right text-muted pull-right fa-1x"></i></a></li>
+  <li role="presentation"><a href="">Font <i style=" line-height: 18px;" class="icon icon-caret-right text-muted pull-right icon-1x"></i></a></li>
+  <li role="presentation"><a href="">Font size <i style=" line-height: 18px;" class="icon icon-caret-right text-muted pull-right icon-1x"></i></a></li>
   <li role="presentation" class="divider"></li>
   <li role="presentation" class="disabled"><a>Conditional formatting...</a></li>
   <li role="presentation" class="divider"></li>
@@ -51,8 +51,8 @@ Menus appear relative to the control or interaction that triggered the menu. Cli
 Submenus help organize menu items.
 [preview]
 <ul style="display: inline-block; position: relative; float: none; width: 200px;" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
-  <li role="presentation"><a href="">Submenu item <i style=" line-height: 18px;" class="fa fa-caret-right text-muted pull-right fa-1x"></i></a></li>
-  <li role="presentation" class="disabled"><a href="">Disabled submenu item <i style=" line-height: 18px;" class="fa fa-caret-right text-muted pull-right fa-1x"></i></a></li>
+  <li role="presentation"><a href="">Submenu item <i style=" line-height: 18px;" class="icon icon-caret-right text-muted pull-right icon-1x"></i></a></li>
+  <li role="presentation" class="disabled"><a href="">Disabled submenu item <i style=" line-height: 18px;" class="icon icon-caret-right text-muted pull-right icon-1x"></i></a></li>
 </ul>
 [/preview]
 [/pattern]
@@ -65,10 +65,10 @@ If you have an icon in a menu, ensure that all menu items are aligned appropriat
 
 [preview]
 <ul style="display: inline-block; position: relative; float: none; width: 200px;" class="dropdown-menu has-icon" role="menu" aria-labelledby="dropdownMenu2">
-  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x fa-star dropdown-menu-icon"></i> Star</a></li>
+  <li role="presentation"><a href=""><i class="icon icon-fw icon-star dropdown-menu-icon"></i> Star</a></li>
   <li role="presentation"><a href="">Share...</a></li>
   <li class="divider" role="presentation"></li>
-  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x fa-trash-o dropdown-menu-icon"></i> Remove</a></li>
+  <li role="presentation"><a href=""><i class="icon icon-fw icon-trash-o dropdown-menu-icon"></i> Remove</a></li>
 </ul>
 [/preview]
 [/pattern]
@@ -79,14 +79,14 @@ Sometimes menus can contain form elements like checkboxes. Use checkboxes for bo
 [preview]
 <ul style="display: inline-block; position: relative; float: none; width: 200px;" class="dropdown-menu has-icon" role="menu" aria-labelledby="dropdownMenu2">
   <li class="dropdown-header">Single-select</li>
-  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x dropdown-menu-icon"></i> 1.0</a></li>
-  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x fa-check dropdown-menu-icon"></i> 1.5</a></li>
-  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x dropdown-menu-icon"></i> 2.0</a></li>
+  <li role="presentation"><a href=""><i class="icon icon-fw dropdown-menu-icon"></i> 1.0</a></li>
+  <li role="presentation"><a href=""><i class="icon icon-fw icon-check dropdown-menu-icon"></i> 1.5</a></li>
+  <li role="presentation"><a href=""><i class="icon icon-fw dropdown-menu-icon"></i> 2.0</a></li>
   <li class="divider" role="presentation"></li>
   <li class="dropdown-header">Multi-select</li>
-  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x fa-check dropdown-menu-icon"></i> Grid lines</a></li>
-  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x fa-check dropdown-menu-icon"></i> Rulers</a></li>
-  <li role="presentation"><a href=""><i class="fa fa-fw fa-1x dropdown-menu-icon"></i> Margins</a></li>
+  <li role="presentation"><a href=""><i class="icon icon-fw icon-check dropdown-menu-icon"></i> Grid lines</a></li>
+  <li role="presentation"><a href=""><i class="icon icon-fw icon-check dropdown-menu-icon"></i> Rulers</a></li>
+  <li role="presentation"><a href=""><i class="icon icon-fw dropdown-menu-icon"></i> Margins</a></li>
   
 </ul>
 [/preview]

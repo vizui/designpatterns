@@ -54,16 +54,16 @@ Use vertical steps when there are 5 or more steps, when there are nested steps, 
                     <p>Add and configure new alerts for an environment.</p>
                 </div>
                 <ul class="nav nav-stacked nav-tree" role="tab-list">
-                    <li role="presentation"><a role="tab" href="#"><span style="margin-left: -10px; position: relative; top: 1px;" class="fa fa-1x fa-fw fa-check text-success"></span> Criteria</a></li>
-                    <li class="active" role="presentation"><a role="tab" href="#"><i style="margin-left: -10px; position: relative; top: 1px;" class="fa fa-1x fa-fw fa-times-circle text-danger"></i> Recipients</a>
+                    <li role="presentation"><a role="tab" href="#"><span style="margin-left: -10px; position: relative; top: 1px;" class="icon icon-check text-success"></span> Criteria</a></li>
+                    <li class="active" role="presentation"><a role="tab" href="#"><i style="margin-left: -10px; position: relative; top: 1px;" class="icon icon-times-circle text-danger"></i> Recipients</a>
                     </li>
-                    <li class="disabled" role="presentation"><a role="tab"><i style="margin-left: -10px; position: relative; top: 1px;" class="fa fa-1x fa-fw"></i> Configure</a>
+                    <li class="disabled" role="presentation"><a role="tab"><i style="margin-left: -10px; position: relative; top: 1px; width: 14px; display: inline-block;"></i> Configure</a>
                         <ul class="nav nav-stacked nav-tree" role="tab-list">
-                            <li class="disabled" role="presentation"><a href=""><i style="margin-left: -10px; position: relative; top: 1px;" class="fa fa-1x fa-fw"></i>Instances</a></li>
-                            <li class="disabled" role="presentation"><a href=""><i style="margin-left: -10px; position: relative; top: 1px;" class="fa fa-1x fa-fw"></i>Monitoring</a></li>
+                            <li class="disabled" role="presentation"><a href=""><i style="margin-left: -10px; position: relative; top: 1px; width: 14px; display: inline-block;"></i>Instances</a></li>
+                            <li class="disabled" role="presentation"><a href=""><i style="margin-left: -10px; position: relative; top: 1px; width: 14px; display: inline-block;"></i>Monitoring</a></li>
                         </ul>
                     </li>
-                    <li class="disabled" role="presentation"><a role="tab"><i style="margin-left: -10px; position: relative; top: 1px;" class="fa fa-1x fa-fw"></i> Review</a></li>
+                    <li class="disabled" role="presentation"><a role="tab"><i style="margin-left: -10px; position: relative; top: 1px; width: 14px; display: inline-block;"></i> Review</a></li>
                 </ul>
             </div>
             <div class="panel panel-default" style="margin-left: 200px; height: 400px; max-height: 400px; overflow: auto; position: relative;">
@@ -71,17 +71,17 @@ Use vertical steps when there are 5 or more steps, when there are nested steps, 
                     <h4>Recipients <span class="pull-right" style="font-size: 13px;"><span class="text-primary">Step 2 of 6</span></span></h4>
                     <p>When the alert criteria is met, each recipient will receive an email notification.</p>
                     <hr>
-                    <div class="alert alert-danger"><i class="alert-icon fa fa-times-circle"></i>Fix the 1 error below.</div> 
+                    <div class="alert alert-danger"><i class="alert-icon icon icon-times-circle"></i>Fix the 1 error below.</div> 
                     <div class="form-group" style="">
                         <div class="input-group">
                             <input type="text" class="form-control" value="jsmith@corp.com">
-                            <div class="input-group-btn"><button class="btn btn-default"><i class="fa fa-times"></i></button></div>
+                            <div class="input-group-btn"><button class="btn btn-default"><i class="icon icon-times"></i></button></div>
                         </div>
                     </div>
                     <div class="form-group has-error" style="">
                         <div class="input-group">
                             <input type="text" class="form-control" value="aharrison@corp">
-                            <div class="input-group-btn"><button class="btn btn-default"><i class="fa fa-times"></i></button></div>
+                            <div class="input-group-btn"><button class="btn btn-default"><i class="icon icon-times"></i></button></div>
                         </div>
                         <p class="help-block">Invalid email address.</p>
                     </div>
@@ -153,8 +153,8 @@ Use horizontal steps when there are 4 or less steps.
                 </div>
             </div>
 <!--             <div style="display: inline-block; width: 100%; text-align: center; padding: 15px; margin-bottom: 10px;">
-                <button class="btn btn-default pull-left"><div class="pull-left" style="background: #ccc; padding: 6px; color: #fff; text-align: center;margin-top: 2px;margin-right: 8px; margin-left: -4px; "><i class="fa fa-arrow-left fa-fw"></i></div><div style="margin-left: 4px; float: left;text-align: left;"><div class="text-muted small">PREVIOUS</div>Account</div></button>
-                <button class="btn btn-default pull-right"><div class="pull-right" style="background: #004c97; padding: 6px; color: #fff; text-align: center;margin-top: 2px;margin-left: 8px; margin-right: -2;"><i class="fa fa-arrow-right fa-fw"></i></div><div style="margin-right: 4px; float: right;text-align: right;"><div class="text-muted small">NEXT</div>Customize</div></button>
+                <button class="btn btn-default pull-left"><div class="pull-left" style="background: #ccc; padding: 6px; color: #fff; text-align: center;margin-top: 2px;margin-right: 8px; margin-left: -4px; "><i class="icon icon-arrow-left "></i></div><div style="margin-left: 4px; float: left;text-align: left;"><div class="text-muted small">PREVIOUS</div>Account</div></button>
+                <button class="btn btn-default pull-right"><div class="pull-right" style="background: #004c97; padding: 6px; color: #fff; text-align: center;margin-top: 2px;margin-left: 8px; margin-right: -2;"><i class="icon icon-arrow-right "></i></div><div style="margin-right: 4px; float: right;text-align: right;"><div class="text-muted small">NEXT</div>Customize</div></button>
             </div>
  -->        </div>
     </div>

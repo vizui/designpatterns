@@ -13,7 +13,7 @@ draft: true
       <div class="accordion-panel">
         <div class="accordion-header" role="tab" id="headingOne">
             <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              <i class="fa fa-1x fa-fw fa-angle-right"></i> Add a Wi-Fi network
+              <i class="icon icon-angle-right"></i> Add a Wi-Fi network
             </a>
         </div>
         <div id="collapseOne" class="accordion-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
@@ -25,7 +25,7 @@ draft: true
       <div class="accordion-panel">
         <div class="accordion-header" role="tab" id="headingTwo">
             <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-              <i class="fa fa-1x fa-fw fa-angle-right"></i> Remove a Wi-Fi network
+              <i class="icon icon-angle-right"></i> Remove a Wi-Fi network
             </a>
         </div>
         <div id="collapseTwo" class="accordion-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -37,7 +37,7 @@ draft: true
       <div class="accordion-panel">
         <div class="accordion-header" role="tab" id="headingThree">
             <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-              <i class="fa fa-1x fa-fw fa-angle-right"></i> Add a Wi-Fi network
+              <i class="icon icon-angle-right"></i> Add a Wi-Fi network
             </a>
         </div>
         <div id="collapseThree" class="accordion-collapse collapse" role="tabpanel" aria-labelledby="headingThree">

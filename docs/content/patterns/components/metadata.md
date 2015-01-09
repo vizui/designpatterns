@@ -36,7 +36,7 @@ Useful for shorter labels/values.
             <dt>Confirmation #</dt>
             <dd>1662</dd>
             <dt>Publication #</dt>
-            <dd><a href="">32132132132 <i class="fa fa-external-link-square fa-1x"></i></a></dd>
+            <dd><a href="">32132132132 <i class="icon icon-external-link"></i></a></dd>
             <dt>Patent #</dt>
             <dd>&mdash;</dd>
             <dt>Attorney docket #</dt>
@@ -74,7 +74,7 @@ Useful for longer labels/values.
             <dt>Confirmation #</dt>
             <dd>1662</dd>
             <dt>Publication #</dt>
-            <dd><a href="">32132132132 <i class="fa fa-external-link-square fa-1x"></i></a></dd>
+            <dd><a href="">32132132132 <i class="icon icon-external-link"></i></a></dd>
         </dl>
     </div>
 </div>

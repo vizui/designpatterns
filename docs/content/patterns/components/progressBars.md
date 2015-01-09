@@ -56,9 +56,9 @@ For buttons with text, the load spinner can appear where the icon would appear. 
 #### Loading button with icon only
 If a simple action is initiated from an icon-only button, the icon can be replaced with the load spinner until the action is complete.
 [preview]
-<button class="btn btn-default btn-icon-only"><i class="fa fa-star-o"></i></button>
-<button class="btn btn-default btn-icon-only loading-background" disabled><i class="fa fa-star-o"></i></button>
-<button class="btn btn-default btn-icon-only"><i class="fa fa-star"></i></button>
+<button class="btn btn-default btn-icon-only"><i class="icon icon-star-o"></i></button>
+<button class="btn btn-default btn-icon-only loading-background" disabled><i style="visibility: hidden;" class="icon icon-star-o"></i></button>
+<button class="btn btn-default btn-icon-only"><i class="icon icon-star"></i></button>
 [/preview]
 
 #### Loading overlay

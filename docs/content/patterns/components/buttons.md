@@ -15,7 +15,7 @@ All button labels are sentence case. They should be as short as possible while c
 [pattern]
 ### Styles
 
-There are 4 button styles:
+There are 6 button styles:
 - __Default__, the general button style.
 - __Primary__, indicates the critical, or most important action on a form/page.
 - __Danger__, indicates a dangerous, generally destructive action, such as deleting.
@@ -199,14 +199,14 @@ Use `btn-icon-only` for buttons with only an icon in it. This optimizes the padd
 For an icon without chrome, use a `btn-hover`.
 
 [preview]
-<button type="button" class="btn btn-default"><i class="fa fa-comment"></i> &nbsp;Comment</button> <button type="button" class="btn btn-icon-only btn-default"><i class="fa fa-print"></i></button> <button type="button" class="btn btn-icon-only btn-primary"><i class="fa fa-save"></i></button> <button type="button" class="btn btn-icon-only btn-hover"><i class="fa fa-calendar-o"></i></button> <button type="button" class="btn btn-default">Lock&nbsp; <i class="fa fa-arrow-right"></i></button>
+<button type="button" class="btn btn-default"><i class="icon icon-comment"></i> &nbsp;Comment</button> <button type="button" class="btn btn-icon-only btn-default"><i class="icon icon-print"></i></button> <button type="button" class="btn btn-icon-only btn-primary"><i class="icon icon-inverse icon-floppy-o"></i></button> <button type="button" class="btn btn-icon-only btn-hover"><i class="icon icon-calendar-o"></i></button> <button type="button" class="btn btn-default">Lock&nbsp; <i class="icon icon-arrow-right"></i></button>
 [/preview]
 ```html
-<button type="button" class="btn btn-default"><i class="fa fa-comment"></i> &nbsp;Comment</button>
-<button type="button" class="btn btn-icon-only btn-default"><i class="fa fa-print"></i></button>
-<button type="button" class="btn btn-icon-only btn-primary"><i class="fa fa-save"></i></button>
-<button type="button" class="btn btn-icon-only btn-hover"><i class="fa fa-calendar-o"></i></button>
-<button type="button" class="btn btn-default">Lock&nbsp; <i class="fa fa-arrow-right"></i></button>
+<button type="button" class="btn btn-default"><i class="icon icon-comment"></i> &nbsp;Comment</button>
+<button type="button" class="btn btn-icon-only btn-default"><i class="icon icon-print"></i></button>
+<button type="button" class="btn btn-icon-only btn-primary"><i class="icon icon-inverse icon-floppy-o"></i></button>
+<button type="button" class="btn btn-icon-only btn-hover"><i class="icon icon-calendar-o"></i></button>
+<button type="button" class="btn btn-default">Lock&nbsp; <i class="icon icon-arrow-right"></i></button>
 ```
 [/pattern]
 

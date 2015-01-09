@@ -33,11 +33,11 @@ When filters are frequently used or there are many filters, place them to the le
         <div style="width: 275px;" class="panel panel-default pull-left">
             <form class="filters">
                 <div class="filter-heading">
-                    Filter by <a href="" class="filters-clear">Clear</a>
+                    Refine by <a href="" class="filters-clear">Clear</a>
                 </div>
                 <div class="filter-list">
                     <div data-toggle="collapse" data-target="#filterGroup8" class="filter-group-title">
-                        Year <i class="fa fa-angle-right pull-right text-muted fa-1x"></i>
+                        Year <i class="icon icon-angle-right pull-right"></i>
                     </div>
                     <div id="filterGroup8" class="collapse in">
                         <div class="filter-group-content">
@@ -52,7 +52,7 @@ When filters are frequently used or there are many filters, place them to the le
                         </div>
                     </div>
                     <div data-toggle="collapse" data-target="#filterGroup2" class="filter-group-title">
-                        <i class="fa fa-angle-down pull-right text-muted fa-1x"></i> Conveyance type 
+                        <i class="icon icon-angle-right pull-right"></i> Conveyance type 
                     </div>
                     <div id="filterGroup2" class="collapse in">
                         <div class="filter-group-content">
@@ -77,24 +77,24 @@ When filters are frequently used or there are many filters, place them to the le
                         </div>
                     </div>
                     <div data-toggle="collapse" data-target="#filterGroup1" class="filter-group-title">
-                        <i class="fa fa-angle-right pull-right text-muted fa-1x"></i> Date range 
+                        <i class="icon icon-angle-right pull-right"></i> Date range 
                     </div>
                     <div id="filterGroup1" class="collapse in">
                         <div class="filter-group-content">
                             <div class="row">
                                 <div class="form-group col-sm-6">
-                                    <span class="input-icon fa fa-calendar-o"></span>
+                                    <span class="input-icon icon icon-calendar-o"></span>
                                     <input type="text" placeholder="Start" class="datepicker form-control" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'">
                                 </div>
                                 <div class="form-group col-sm-6">
-                                    <span class="input-icon fa fa-calendar-o"></span>
+                                    <span class="input-icon icon icon-calendar-o"></span>
                                     <input type="text" placeholder="End" class="datepicker form-control" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'">
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div data-toggle="collapse" data-target="#filterGroup5" class="filter-group-title">
-                        <i class="fa fa-angle-right pull-right text-muted fa-1x"></i> Distance 
+                        <i class="icon icon-angle-right pull-right"></i> Distance 
                     </div>
                     <div id="filterGroup5" class="collapse in">
                         <div class="filter-group-content">
@@ -108,19 +108,19 @@ When filters are frequently used or there are many filters, place them to the le
                         </div>
                     </div>
                     <div data-toggle="collapse" data-target="#filterGroup6" class="filter-group-title">
-                        <i class="fa fa-angle-right pull-right text-muted fa-1x"></i> Name 
+                        <i class="icon icon-angle-right pull-right"></i> Name 
                     </div>
                     <div id="filterGroup6" class="collapse in">
                         <div class="filter-group-content">
                             <div class="form-group">
                                 <label for="serange" class="sr-only control-label">Range</label>
-                                <span class="input-icon fa fa-search"></span>
+                                <span class="input-icon icon icon-search"></span>
                                 <input type="text" class="form-control" placeholder="Search">
                             </div>
                         </div>
                     </div>
                     <div data-toggle="collapse" data-target="#filterGroup3" class="filter-group-title">
-                        Colors <i class="fa fa-angle-right pull-right text-muted fa-1x"></i>
+                        Colors <i class="icon icon-angle-right pull-right"></i>
                     </div>
                     <div id="filterGroup3" class="collapse in">
                         <div class="filter-group-content">
@@ -135,14 +135,14 @@ When filters are frequently used or there are many filters, place them to the le
                         </div>
                     </div>
                     <div data-toggle="collapse" data-target="#filterGroup7" class="filter-group-title">
-                        Tags <i class="fa fa-angle-right pull-right text-muted fa-1x"></i>
+                        Tags <i class="icon icon-angle-right pull-right"></i>
                     </div>
                     <div id="filterGroup7" class="collapse in">
                         <div class="filter-group-content">
                             <div class="form-group">
                                 <ul class="list-unstyled">
-                                    <li class="filter-value">Assignment <i class="pull-right fa fa-times"></i></li>
-                                    <li class="filter-value">Change of name <i class="pull-right fa fa-times"></i></li>
+                                    <li class="filter-value">Assignment <i class="pull-right icon icon-close icon-muted"></i></li>
+                                    <li class="filter-value">Change of name <i class="pull-right icon icon-close icon-muted"></i></li>
                                 </ul>
                                 <div class="input-group">
                                   <input class="form-control" type="email" placeholder="Enter tag">
@@ -165,7 +165,12 @@ When filters are frequently used or there are many filters, place them to the le
                             <li role="presentation" class="dropdown-header">Jump to page</li>
                             <li style="padding: 0 16px;" role="presentation">
                                 <form action="">
-                                    <input type="text" placeholder="15" class="form-control"/>
+                                    <div class="input-group input-group-sm">
+                                        <input type="text" placeholder="15" class="form-control"/>
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-default">Go</button>
+                                        </div>
+                                    </div>
                                 </form>
                             </li>
                             <li class="divider"></li>
@@ -176,17 +181,17 @@ When filters are frequently used or there are many filters, place them to the le
                             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
                         </ul>
                     </div> <div class="btn-group">
-                      <a href="#" class="btn btn-default"><i class="fa fa-angle-left"></i></a>
-                     <a href="#" class="btn btn-default"><i class="fa fa-angle-right"></i></a>
+                      <a href="#" class="btn btn-default"><i class="icon icon-angle-left"></i></a>
+                     <a href="#" class="btn btn-default"><i class="icon icon-angle-right"></i></a>
                     </div>
                 </div>
                 <span class="toolbar-text">
                     Filtered by
                     <ul class="filter-applied-list">
-                        <li>Assignment <i class="fa fa-times-circle fa-1x"></i></li>
-                        <li>2014 <i class="fa fa-times-circle fa-1x"></i></li>
-                        <li>Orange <i class="fa fa-times-circle fa-1x"></i></li>
-                        <li>Within 5 miles <i class="fa fa-times-circle fa-1x"></i></li>
+                        <li>Assignment <i class="icon icon-close icon-muted"></i></li>
+                        <li>2014 <i class="icon icon-close icon-muted"></i></li>
+                        <li>Orange <i class="icon icon-close icon-muted"></i></li>
+                        <li>Within 5 miles <i class="icon icon-close icon-muted"></i></li>
                     </ul>
                 </span>
             </div>
@@ -203,13 +208,13 @@ When filters are frequently used or there are many filters, place them to the le
 [preview]
 <div class="container-fluid" style="margin-top: 8px;">
     <form class="filters filters-horizontal">
-        <div class="filter-heading">Filter by</div>
+        <div class="filter-heading">Refine by</div>
         <div style="display: inline-block; vertical-align: top;">
             <button class="btn btn-link">
                 Date range <span class="caret"></span>
             </button>
             <ul class="list-unstyled">
-                <li class="filter-value">4/01/2014 - 5/01/2014 <i class="pull-right fa fa-times"></i></li>
+                <li class="filter-value">4/01/2014 - 5/01/2014 <i class="pull-right icon icon-close icon-muted"></i></li>
             </ul>
         </div>
         <div style="display: inline-block; vertical-align: top;">
@@ -217,8 +222,8 @@ When filters are frequently used or there are many filters, place them to the le
                 Conveyance type <span class="caret"></span>
             </button>
             <ul class="list-unstyled">
-                <li class="filter-value">Assignment <i class="pull-right fa fa-times"></i></li>
-                <li class="filter-value">Change of name <i class="pull-right fa fa-times"></i></li>
+                <li class="filter-value">Assignment <i class="pull-right icon icon-close icon-muted"></i></li>
+                <li class="filter-value">Change of name <i class="pull-right icon icon-close icon-muted"></i></li>
             </ul>
         </div>
         <div style="display: inline-block; vertical-align: top;">
@@ -226,7 +231,7 @@ When filters are frequently used or there are many filters, place them to the le
                 Color <span class="caret"></span>
             </button>
             <ul class="list-unstyled">
-                <li class="filter-value">4 colors <i class="pull-right fa fa-times"></i></li>
+                <li class="filter-value">4 colors <i class="pull-right icon icon-close icon-muted"></i></li>
             </ul>
         </div>
         <button class="btn btn-link">
@@ -239,7 +244,7 @@ When filters are frequently used or there are many filters, place them to the le
 [preview]
 <div class="container-fluid" style="margin-top: 8px;">
     <form class="filters filters-horizontal">
-        <div class="filter-heading">Filter by</div>
+        <div class="filter-heading">Refine by</div>
         <button class="btn btn-link">
             4/01/2014 - 5/01/2014 <span class="caret"></span>
         </button>
