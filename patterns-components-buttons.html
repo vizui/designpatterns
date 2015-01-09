@@ -16,7 +16,7 @@
 
         <link rel="stylesheet" href="styles/f2dd75fb.vendor.css">
 
-        <link rel="stylesheet" href="styles/02db4ead.main.css">
+        <link rel="stylesheet" href="styles/704244dd.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -28,9 +28,9 @@
             <div class="navbar-header">
                 <a href="index.html" class="navbar-brand"><strong>USPTO</strong> <span class="light">Design</span></a>
                 
-                <button type="button" class="nav-collapse btn btn-link"><i class="fa fa-1x fa-bars"></i></button>
+                <button type="button" class="nav-collapse btn btn-link"><i class="icon icon-inverse icon-bars"></i></button>
                 
-                <button data-toggle="collapse" data-target="#pl-navbar-collapse" type="button" class="btn navbar-toggle collapsed"><i class="fa fa-1x fa-angle-down"></i></button>
+                <button data-toggle="collapse" data-target="#pl-navbar-collapse" type="button" class="btn navbar-toggle collapsed"><i class="icon icon-inverse icon-angle-down"></i></button>
             </div>
             <div class="navbar-collapse collapse" id="pl-navbar-collapse">
                 <ul class="nav navbar-nav">
@@ -45,9 +45,9 @@
                     </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <!-- <a ><i class="fa fa-1x fa-warning"></i><span class="count">3</span></a> -->
+                    <!-- <a ><i class="icon icon-inverse icon-warning"></i><span class="count">3</span></a> -->
                     <li>
-                        <a href="http://github.com/uspto/designpatterns" title="View on Github"><i class="fa fa-1x fa-github"></i> &nbsp; View on Github</a>
+                        <a href="http://github.com/uspto/designpatterns" title="View on Github"><i class="icon icon-inverse icon-github"></i> &nbsp; View on Github</a>
                     </li>
                 </ul>
             </div>
@@ -58,7 +58,7 @@
             <h4><strong>Patterns</strong> - Buttons</h4>
         </div>
         <div class="pull-right">
-            <button type="button" title="Edit this page on Github" class="btn btn-sm btn-default"> <i class="fa fa-pencil"></i></button>
+            <button type="button" title="Edit this page on Github" class="btn btn-sm btn-default"> <i class="icon icon-pencil"></i></button>
         </div>
     </div> -->
     <div class="pl-container">
@@ -260,8 +260,8 @@ Buttons are used as triggers for actions. Depending on the use case, buttons con
 <p> </p>
 </div>
 <div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="styles" href="#styles"><i class="fa fa-link"></i></a> Styles</h3></p>
-<p>There are 4 button styles:</p>
+<p><h3><a class="pl-heading-link" id="styles" href="#styles"><i class="icon icon-link"></i></a> Styles</h3></p>
+<p>There are 6 button styles:</p>
 <ul>
 <li><strong>Default</strong>, the general button style.</li>
 <li><strong>Primary</strong>, indicates the critical, or most important action on a form/page.</li>
@@ -271,7 +271,7 @@ Buttons are used as triggers for actions. Depending on the use case, buttons con
 <li><strong>Link</strong>, used for non-critical actions. Useful for keeping the interface simple.</li>
 </ul>
 <p>All buttons are prefixed with the <code>btn</code> class. The <code>btn</code> class can be applied to any element. Try to use <code>&lt;button&gt;</code> elements when an action won't change the URL/route, and <code>&lt;a&gt;</code> elements when the action will change the URL/route.</p>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code" style="opacity: .5"></i></div>
 <button type="button" class="btn btn-default">Default</button> <button type="button" class="btn btn-primary">Primary</button> <button type="button" class="btn btn-danger">Danger</button> <button type="button" class="btn btn-success">Success</button> <button type="button" class="btn btn-warning">Warning</button> <button type="button" class="btn btn-link">Link</button>
 </div>
 <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span>&gt;</span>Default<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
@@ -282,14 +282,14 @@ Buttons are used as triggers for actions. Depending on the use case, buttons con
 </code></pre>
 </div>
 <div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="button-states" href="#button-states"><i class="fa fa-link"></i></a> Button states</h3></p>
+<p><h3><a class="pl-heading-link" id="button-states" href="#button-states"><i class="icon icon-link"></i></a> Button states</h3></p>
 <p>There are 3 different button states:</p>
 <ul>
 <li><strong>Normal</strong>, the available, clickable state.</li>
 <li><strong>Active</strong>, the active, non-clickable state. Add the <code>active</code> class.</li>
 <li><strong>Disabled</strong>, the disabled, non-clickable state. Add the <code>disabled</code> attrbitue or class.</li>
 </ul>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code" style="opacity: .5"></i></div>
 <button type="button" class="btn btn-primary">Normal</button> <button type="button" class="btn btn-primary active">Active</button> <button type="button" class="btn btn-primary" disabled="disabled">Disabled</button>
 </div>
 <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary"</span>&gt;</span>Normal<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
@@ -298,7 +298,7 @@ Buttons are used as triggers for actions. Depending on the use case, buttons con
 </code></pre>
 </div>
 <div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="button-sizes" href="#button-sizes"><i class="fa fa-link"></i></a> Button sizes</h3></p>
+<p><h3><a class="pl-heading-link" id="button-sizes" href="#button-sizes"><i class="icon icon-link"></i></a> Button sizes</h3></p>
 <p>There are 4 different button sizes:</p>
 <ul>
 <li><strong>Large</strong>, use the <code>btn-lg</code> class.</li>
@@ -306,7 +306,7 @@ Buttons are used as triggers for actions. Depending on the use case, buttons con
 <li><strong>Small</strong>, use the <code>btn-sm</code> class.</li>
 <li><strong>Extra small</strong>, use the <code>btn-xs</code> class.</li>
 </ul>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code" style="opacity: .5"></i></div>
 <button type="button" class="btn btn-lg btn-default">Button</button> <button type="button" class="btn btn-default">Button</button> <button type="button" class="btn btn-sm btn-default">Button</button> <button type="button" class="btn btn-xs btn-default">Button</button>
 </div>
 <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-lg btn-default"</span>&gt;</span>Button<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
@@ -316,7 +316,7 @@ Buttons are used as triggers for actions. Depending on the use case, buttons con
 </code></pre>
 <h4>Block level buttons</h4>
 <p>Use the <code>btn-block</code> class for buttons that fill the width of their container. These are useful for narrow containers and cleaning up alignment.</p>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code" style="opacity: .5"></i></div>
 <div style="width: 280px">
     <button type="button" class="btn btn-primary btn-block">Block level</button>
     <button type="button" class="btn btn-default btn-block">Block level</button>
@@ -326,9 +326,9 @@ Buttons are used as triggers for actions. Depending on the use case, buttons con
 </code></pre>
 </div>
 <div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="button-groups" href="#button-groups"><i class="fa fa-link"></i></a> Button groups</h3></p>
+<p><h3><a class="pl-heading-link" id="button-groups" href="#button-groups"><i class="icon icon-link"></i></a> Button groups</h3></p>
 <p>Related buttons can be grouped together to show associations and improve clarity. Button groups can be sized using the <code>btn-group-lg</code>, <code>btn-group-sm</code>, and <code>btn-group-xs</code> classes.</p>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code" style="opacity: .5"></i></div>
 <div class="btn-group">
   <button type="button" class="btn btn-default">Left</button>
   <button type="button" class="btn btn-default">Middle</button>
@@ -343,9 +343,9 @@ Buttons are used as triggers for actions. Depending on the use case, buttons con
 </code></pre>
 </div>
 <div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="toggle-buttons" href="#toggle-buttons"><i class="fa fa-link"></i></a> Toggle buttons</h3></p>
+<p><h3><a class="pl-heading-link" id="toggle-buttons" href="#toggle-buttons"><i class="icon icon-link"></i></a> Toggle buttons</h3></p>
 <p>Add the <code>active</code> class to the active button.</p>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code" style="opacity: .5"></i></div>
 <button type="button" class="btn btn-default active">Active</button> <button type="button" class="btn btn-default">Normal</button> <div class="btn-group">
     <button type="button" class="btn btn-default">Left</button>
     <button type="button" class="btn btn-default active">Active</button>
@@ -354,9 +354,9 @@ Buttons are used as triggers for actions. Depending on the use case, buttons con
 </div>
 </div>
 <div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="dropdown-buttons" href="#dropdown-buttons"><i class="fa fa-link"></i></a> Dropdown buttons</h3>
+<p><h3><a class="pl-heading-link" id="dropdown-buttons" href="#dropdown-buttons"><i class="icon icon-link"></i></a> Dropdown buttons</h3>
 Dropdown buttons can provide a menu or popover when clicked.</p>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code" style="opacity: .5"></i></div>
 <div class="btn-group">
   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
     Dropdown <span class="caret"></span>
@@ -372,9 +372,9 @@ Dropdown buttons can provide a menu or popover when clicked.</p>
 </div>
 </div>
 <div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="split-buttons" href="#split-buttons"><i class="fa fa-link"></i></a> Split buttons</h3></p>
+<p><h3><a class="pl-heading-link" id="split-buttons" href="#split-buttons"><i class="icon icon-link"></i></a> Split buttons</h3></p>
 <p>Split buttons contain both a button and a dropdown. Clicking the button performs the action. Clicking the dropdown reveals other actions. Generally, the button is the primary or most common action, and items in the dropdown are secondary or less common actions.</p>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code" style="opacity: .5"></i></div>
 <div class="btn-group">
   <button type="button" class="btn btn-default">Action</button>
   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
@@ -407,18 +407,18 @@ Dropdown buttons can provide a menu or popover when clicked.</p>
 </code></pre>
 </div>
 <div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="icon-buttons" href="#icon-buttons"><i class="fa fa-link"></i></a> Icon buttons</h3></p>
+<p><h3><a class="pl-heading-link" id="icon-buttons" href="#icon-buttons"><i class="icon icon-link"></i></a> Icon buttons</h3></p>
 <p>Icon buttons are buttons with an icon inside. An icon button may or may not have text. Icon buttons can help save space or improve the ability to scan/find buttons quickly.</p>
 <p>Use <code>btn-icon-only</code> for buttons with only an icon in it. This optimizes the padding.</p>
 <p>For an icon without chrome, use a <code>btn-hover</code>.</p>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="fa fa-code"></i></div>
-<button type="button" class="btn btn-default"><i class="fa fa-comment"></i> &nbsp;Comment</button> <button type="button" class="btn btn-icon-only btn-default"><i class="fa fa-print"></i></button> <button type="button" class="btn btn-icon-only btn-primary"><i class="fa fa-save"></i></button> <button type="button" class="btn btn-icon-only btn-hover"><i class="fa fa-calendar-o"></i></button> <button type="button" class="btn btn-default">Lock&nbsp; <i class="fa fa-arrow-right"></i></button>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code" style="opacity: .5"></i></div>
+<button type="button" class="btn btn-default"><i class="icon icon-comment"></i> &nbsp;Comment</button> <button type="button" class="btn btn-icon-only btn-default"><i class="icon icon-print"></i></button> <button type="button" class="btn btn-icon-only btn-primary"><i class="icon icon-inverse icon-floppy-o"></i></button> <button type="button" class="btn btn-icon-only btn-hover"><i class="icon icon-calendar-o"></i></button> <button type="button" class="btn btn-default">Lock&nbsp; <i class="icon icon-arrow-right"></i></button>
 </div>
-<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fa fa-comment"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span> &amp;nbsp;Comment<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-icon-only btn-default"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fa fa-print"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-icon-only btn-primary"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fa fa-save"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-icon-only btn-hover"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fa fa-calendar-o"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span>&gt;</span>Lock&amp;nbsp; <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"fa fa-arrow-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-comment"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span> &amp;nbsp;Comment<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-icon-only btn-default"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-print"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-icon-only btn-primary"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-inverse icon-floppy-o"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-icon-only btn-hover"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-calendar-o"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span>&gt;</span>Lock&amp;nbsp; <span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon icon-arrow-right"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
 </code></pre>
 </div>
 
