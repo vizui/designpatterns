@@ -210,7 +210,7 @@
         return false;
     }
 
-    if (window._gaq) {
+    if (window.__gaTracker) {
         var ext = 'xls,xlsx,doc,docx,ppt,pptx,pdf,txt,zip';
         ext += ',rar,7z,exe,wma,mov,avi,wmv,mp3,csv,tsv';
         ext = ext.split(',');
@@ -220,7 +220,7 @@
             if (el.href) {
                 var match = _checkFile.call(null, el.href, ext);
                 if (match) {
-                    window._gaq.push(['_trackEvent', 'Download', match, el.href]);
+                    window.__gaTracker.push(['_trackEvent', 'Download', match, el.href]);
                 }
             }
         });
