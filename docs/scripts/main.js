@@ -220,7 +220,7 @@
             if (el.href) {
                 var match = _checkFile.call(null, el.href, ext);
                 if (match) {
-                    window.__gaTracker.push(['_trackEvent', 'Download', match, el.href]);
+                    window.__gaTracker('patternLibrary.send', 'event', 'Download', match, el.href);
                 }
             }
         });
