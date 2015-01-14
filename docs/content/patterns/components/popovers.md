@@ -30,8 +30,8 @@ Use a popover instead of a tooltip or dialog when:
     <textarea placeholder="Enter note here" class="form-control" name="" id="" rows="3"></textarea>
   </div>
   <div class="popover-toolbar">
-        <button class="btn btn-hover btn-icon-only"><i class="icon icon-image"></i></button>
-        <button class="btn btn-hover btn-icon-only"><i class="icon icon-chain"></i></button>
+        <button class="btn btn-hover btn-icon-only"><i class="icon icon-image"></i><span class="sr-only">Add image</span></button>
+        <button class="btn btn-hover btn-icon-only"><i class="icon icon-chain"></i><span class="sr-only">Add link</span></button>
         <button class="btn btn-primary pull-right">Add</button>
   </div>
 </div>
