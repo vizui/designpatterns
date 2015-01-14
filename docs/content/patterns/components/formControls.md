@@ -468,7 +468,7 @@ This is the native browser multi-select. `Ctrl+click` (or `cmd+click`) toggles s
     <div class="row">
         <form role="form" class="col-sm-12 form-horizontal">
             <div class="form-group">
-                <label for="dp1" class="col-sm-3 control-label">When</label>
+                <label for="dp1" class="col-sm-3 control-label">Date</label>
                 <div class="col-sm-9">
                     <span class="input-icon icon icon-calendar-o"></span>
                     <input id="dp1" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'" type="text" class="datepicker form-control" >
