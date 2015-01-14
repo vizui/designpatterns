@@ -199,13 +199,13 @@ Use `btn-icon-only` for buttons with only an icon in it. This optimizes the padd
 For an icon without chrome, use a `btn-hover`.
 
 [preview]
-<button type="button" class="btn btn-default"><i class="icon icon-comment"></i> &nbsp;Comment</button> <button type="button" class="btn btn-icon-only btn-default"><i class="icon icon-print"></i></button> <button type="button" class="btn btn-icon-only btn-primary"><i class="icon icon-inverse icon-floppy-o"></i></button> <button type="button" class="btn btn-icon-only btn-hover"><i class="icon icon-calendar-o"></i></button> <button type="button" class="btn btn-default">Lock&nbsp; <i class="icon icon-arrow-right"></i></button>
+<button type="button" class="btn btn-default"><i class="icon icon-comment"></i> &nbsp;Comment</button> <button type="button" class="btn btn-icon-only btn-default"><i class="icon icon-print"></i><span class="sr-only">Print</span></button> <button type="button" class="btn btn-icon-only btn-primary"><i class="icon icon-inverse icon-floppy-o"></i><span class="sr-only">Save</span></button> <button type="button" class="btn btn-icon-only btn-hover"><i class="icon icon-calendar-o"></i><span class="sr-only">Calendar</span></button> <button type="button" class="btn btn-default">Lock&nbsp; <i class="icon icon-arrow-right"></i></button>
 [/preview]
 ```html
-<button type="button" class="btn btn-default"><i class="icon icon-comment"></i> &nbsp;Comment</button>
-<button type="button" class="btn btn-icon-only btn-default"><i class="icon icon-print"></i></button>
-<button type="button" class="btn btn-icon-only btn-primary"><i class="icon icon-inverse icon-floppy-o"></i></button>
-<button type="button" class="btn btn-icon-only btn-hover"><i class="icon icon-calendar-o"></i></button>
+<button type="button" class="btn btn-default"><i class="icon icon-comment"></i> &nbsp;Comment</button> 
+<button type="button" class="btn btn-icon-only btn-default"><i class="icon icon-print"></i><span class="sr-only">Print</span></button> 
+<button type="button" class="btn btn-icon-only btn-primary"><i class="icon icon-inverse icon-floppy-o"></i><span class="sr-only">Save</span></button> 
+<button type="button" class="btn btn-icon-only btn-hover"><i class="icon icon-calendar-o"></i><span class="sr-only">Calendar</span></button> 
 <button type="button" class="btn btn-default">Lock&nbsp; <i class="icon icon-arrow-right"></i></button>
 ```
 [/pattern]
