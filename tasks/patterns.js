@@ -32,7 +32,7 @@ module.exports = function(grunt) {
         var result;
         while ((result = re.exec(text)) !== null) {
             var escapedTitle = result[1].toLowerCase().replace(/[^\w]+/g, '-');
-            text = text.replace(result[0], '<h3><a class="pl-heading-link" id="' + escapedTitle + '" href="#' + escapedTitle + '"><i class="icon icon-link"></i></a> ' + result[1] + '</h3>');
+            text = text.replace(result[0], '<h3><a class="pl-heading-link" id="' + escapedTitle + '" href="#' + escapedTitle + '"><i class="icon icon-link"></i></a>' + result[1].trim() + '</h3>');
         }
         return text;
     };

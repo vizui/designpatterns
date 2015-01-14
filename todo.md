@@ -17,8 +17,8 @@ __Pagination__
 - Time picker
 - Notes
 - Image/text zoom
-- Toggle switch
 - Writing style
 - Gadget framework
 - Image gallery
 - Tree
+- Help and help indicators
