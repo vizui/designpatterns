@@ -42,27 +42,31 @@ title: "Typography"
     <tbody>
         <tr>
             <td>Display 3</td>
-            <td><div class="display3">Light 56px</div></td>
+            <td><h1 class="display3">Light 56px</h1></td>
         </tr>
         <tr>
-            <td>h1, Display 2</td>
-            <td><div class="display2">Light 45px</div></td>
+            <td>h1. Display 2</td>
+            <td><h1>Light 45px</h1></td>
         </tr>
         <tr>
-            <td>h2, Display 1</td>
-            <td><div class="display1">Light 34px</div></td>
+            <td>h2. Display 1</td>
+            <td><h2>Light 34px</h2></td>
         </tr>
         <tr>
-            <td>h3, Headline</td>
-            <td><div class="headline">Semi-bold 24px</div></td>
+            <td>h3. Headline</td>
+            <td><h3 class="headline">Semi-bold 24px</h3></td>
         </tr>
         <tr>
-            <td>h4, Title</td>
-            <td><div class="title">Semi-bold 18px</div></td>
+            <td>h4. Title</td>
+            <td><h4>Semi-bold 18px</h4></td>
         </tr>
         <tr>
-            <td>h5, Subhead</td>
-            <td><div class="subhead">Semi-bold 15px</div></td>
+            <td>h5. Subhead</td>
+            <td><h5>Semi-bold 15px</h5></td>
+        </tr>
+        <tr>
+            <td>h6.</td>
+            <td><h6>Semi-bold 13px</h6></td>
         </tr>
         <tr>
             <td>Body</td>
