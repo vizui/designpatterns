@@ -480,11 +480,11 @@ This is the native browser multi-select. `Ctrl+click` (or `cmd+click`) toggles s
                     <div class="row">
                         <div class="col-sm-6">
                             <span class="input-icon icon icon-calendar-o"></span>
-                            <input id="dp2" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'" type="text" class="datepicker form-control" >
+                            <input id="dp2" placeholder="From" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'" type="text" class="datepicker form-control" >
                         </div>
                         <div class="col-sm-6">
                             <span class="input-icon icon icon-calendar-o"></span>
-                            <input id="dp3" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'" type="text" class="datepicker form-control" >
+                            <input id="dp3" placeholder="To" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'" type="text" class="datepicker form-control" >
                         </div>
                     </div>
                 </div>
