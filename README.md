@@ -1,9 +1,9 @@
-USPTO Design Patterns
+USPTO Design Guide
 ==============
 
 This project is a work in progress.
 
-- [View Pattern Library](https://uspto.github.io/designpatterns/)
+- [View Design Guide](https://uspto.github.io/designpatterns/)
 - [Contributing](CONTRIBUTING.md)
 - [Terms](TERMS.md)
 - [License](LICENSE)
