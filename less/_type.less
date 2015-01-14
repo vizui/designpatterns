@@ -7,39 +7,39 @@ Semilight to an appropriate font-weight.
 @font-face {
     font-family: "Segoe UI";
     font-weight: 200;
-    src: local("Segoe UI Light");
+    src: local("Segoe UI Light"), local("SegoeUI-Light"), local("Segoe UI"), local("SegoeUI");
 }
 @font-face {
     font-family: "Segoe UI";
     font-weight: 300;
-    src: local("Segoe UI Semilight");
+    src: local("Segoe UI Semilight"), local("SegoeUI-Semilight"), local("Segoe UI"), local("SegoeUI");
 }
 @font-face {
     font-family: "Segoe UI";
     font-weight: 400;
-    src: local("Segoe UI");
+    src: local("Segoe UI"), local("SegoeUI");
 }
 @font-face {
     font-family: "Segoe UI";
     font-weight: 600;
-    src: local("Segoe UI Semibold");
+    src: local("Segoe UI Semibold"), local("SegoeUI-Semibold"), local("Segoe UI"), local("SegoeUI");
 }
 @font-face {
     font-family: "Segoe UI";
     font-weight: 700;
-    src: local("Segoe UI Bold");
+    src: local("Segoe UI"), local("SegoeUI");
 }
 @font-face {
     font-family: "Segoe UI";
     font-style: italic;
     font-weight: 400;
-    src: local("Segoe UI Italic");
+    src: local("Segoe UI Italic"), local("SegoeUI-Italic"), local("Segoe UI"), local("SegoeUI");
 }
 @font-face {
     font-family: "Segoe UI";
     font-style: italic;
     font-weight: 700;
-    src: local("Segoe UI Bold Italic");
+    src: local("Segoe UI Bold Italic"),local("SegoeUI-Bold-Italic"), local("Segoe UI"), local("SegoeUI");
 }
 
 body {
@@ -114,6 +114,11 @@ h1,h2,h3,h4,h5,h6,
 .h1,.h2,.h3,.h4,.h5,.h6,
 .subhead, .title, .headline, .display1, .display2, .display3 {
     color: @headings-color;
+}
+
+h6, .h6 {
+    font-weight: 600;
+    font-size: 13px;
 }
 
 .caption {
