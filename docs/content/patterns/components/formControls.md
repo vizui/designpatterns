@@ -565,21 +565,21 @@ The rich text editor allows for text input with additional formatting and inline
                                 </ul>
                             </div>
                             <div class="btn-group">
-                                <button data-toggle="tooltip" data-placement="top" title="Bold" class="btn btn-hover btn-icon-only"><i class="icon icon-bold"></i><span class="sr-only">Bold</span></button>
-                                <button data-toggle="tooltip" data-placement="top" title="Italicize" class="btn btn-hover active btn-icon-only"><i class="icon icon-italic"></i><span class="sr-only">Italicize</span></button>
-                                <button data-toggle="tooltip" data-placement="top" title="Underline" class="btn btn-hover btn-icon-only"><i class="icon icon-underline"></i><span class="sr-only">Underline</span></button>
+                                <button type="button" data-toggle="tooltip" data-placement="top" title="Bold" class="btn btn-hover btn-icon-only"><i class="icon icon-bold"></i><span class="sr-only">Bold</span></button>
+                                <button type="button" data-toggle="tooltip" data-placement="top" title="Italicize" class="btn btn-hover active btn-icon-only"><i class="icon icon-italic"></i><span class="sr-only">Italicize</span></button>
+                                <button type="button" data-toggle="tooltip" data-placement="top" title="Underline" class="btn btn-hover btn-icon-only"><i class="icon icon-underline"></i><span class="sr-only">Underline</span></button>
                             </div>
                             <div class="btn-group">
-                                <button data-toggle="tooltip" data-placement="top" title="Ordered list" class="btn btn-hover btn-icon-only"><i class="icon icon-list-ol"></i><span class="sr-only">Ordered list</span></button>
-                                <button data-toggle="tooltip" data-placement="top" title="Unordered list" class="btn btn-hover btn-icon-only"><i class="icon icon-list-ul"></i><span class="sr-only">Unordered list</span></button>
+                                <button type="button" data-toggle="tooltip" data-placement="top" title="Ordered list" class="btn btn-hover btn-icon-only"><i class="icon icon-list-ol"></i><span class="sr-only">Ordered list</span></button>
+                                <button type="button" data-toggle="tooltip" data-placement="top" title="Unordered list" class="btn btn-hover btn-icon-only"><i class="icon icon-list-ul"></i><span class="sr-only">Unordered list</span></button>
                             </div>
                             <div class="btn-group">
-                                <button data-toggle="tooltip" data-placement="top" title="Indent" class="btn btn-hover btn-icon-only"><i class="icon icon-indent"></i><span class="sr-only">Indent</span></button>
-                                <button data-toggle="tooltip" data-placement="top" title="Outdent" class="btn btn-hover btn-icon-only"><i class="icon icon-dedent"></i><span class="sr-only">Outdent</span></button>
+                                <button type="button" data-toggle="tooltip" data-placement="top" title="Indent" class="btn btn-hover btn-icon-only"><i class="icon icon-indent"></i><span class="sr-only">Indent</span></button>
+                                <button type="button" data-toggle="tooltip" data-placement="top" title="Outdent" class="btn btn-hover btn-icon-only"><i class="icon icon-dedent"></i><span class="sr-only">Outdent</span></button>
                             </div>
                             <div class="btn-group">
-                                <button data-toggle="tooltip" data-placement="top" title="Insert link" class="btn btn-hover btn-icon-only"><i class="icon icon-chain"></i><span class="sr-only">Insert link</span></button>
-                                <button data-toggle="tooltip" data-placement="top" title="Insert image" class="btn btn-hover btn-icon-only"><i class="icon icon-image"></i><span class="sr-only">Insert image</span></button>
+                                <button type="button" data-toggle="tooltip" data-placement="top" title="Insert link" class="btn btn-hover btn-icon-only"><i class="icon icon-chain"></i><span class="sr-only">Insert link</span></button>
+                                <button type="button" data-toggle="tooltip" data-placement="top" title="Insert image" class="btn btn-hover btn-icon-only"><i class="icon icon-image"></i><span class="sr-only">Insert image</span></button>
                             </div>
                         </div>
                     </div>
