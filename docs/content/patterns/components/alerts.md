@@ -39,7 +39,7 @@ __Rules:__
     </div>
     <div class="alert alert-warning">
         <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <i class="icon icon-exclamation-triangle alert-icon"></i>There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
+        <i class="icon icon-exclamation-triangle alert-icon"></i> There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
     </div>
     <div class="alert alert-danger">
         <button class="btn btn-sm btn-link alert-link pull-right">Retry</button>
