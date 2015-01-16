@@ -18,13 +18,6 @@ __Don't__
 
 &nbsp;
 
-<!-- This is an evolving document. Here are some things that are still being worked on:
-<span class="label label-warning">TODO</span> Advanced options<br>
-<span class="label label-warning">TODO</span> Dynamic/evolving forms<br>
-<span class="label label-warning">TODO</span> Input/format parsing<br>
-<span class="label label-warning">TODO</span> Add/remove fields (e.g., multiple phone numbers)<br>
-<span class="label label-warning">TODO</span> More examples<br>-->
-
 [/pattern]
 
 [pattern]
@@ -176,7 +169,7 @@ When the fields are top aligned, the asterisk is placed on the right.
     </div>
     <div class="form-group col-sm-offset-3">
       <label for="nameInput3" class="control-label required">Name</label>
-      <input type="text" class="form-control form-control-width-md" id="nameInput3" required>
+      <input type="text" class="form-control form-control-width-md" id="nameInput3" required aria-required="true">
     </div>
     <div class="form-group col-sm-offset-3">
       <label for="emailInput3" class="control-label">Email</label>
@@ -191,7 +184,7 @@ When the fields are top aligned, the asterisk is placed on the right.
   <div class="form-group">
     <label for="nameInput5" class="col-sm-3 control-label required">Name</label>
     <div class="col-sm-9">
-      <input type="text" class="form-control form-control-width-md" id="nameInput5" required>
+      <input type="text" class="form-control form-control-width-md" id="nameInput5" required aria-required="true">
     </div>
   </div>
   <div class="form-group">
@@ -213,7 +206,7 @@ When the fields are left aligned, the asterisk is placed to the left.
     <div class="form-group">
       <label for="nm7" class="col-sm-3 control-label required">Name</label>
       <div class="col-sm-9">
-        <input type="text" class="form-control form-control-width-md" id="nm7" required>
+        <input type="text" class="form-control form-control-width-md" id="nm7" required aria-required="true">
       </div>
     </div>
     <div class="form-group">
@@ -231,7 +224,7 @@ When the fields are left aligned, the asterisk is placed to the left.
   <div class="form-group">
     <label for="em7" class="col-sm-3 control-label required">Email</label>
     <div class="col-sm-9">
-      <input type="email" class="form-control form-control-width-md" id="em7">
+      <input type="email" class="form-control form-control-width-md" id="em7" required aria-required="true">
     </div>
   </div>
   <div class="form-group">
@@ -273,14 +266,14 @@ __Don't__
     <div class="form-group has-error">
       <label for="em9" class="col-sm-3 control-label required">Invalid</label>
       <div class="col-sm-9">
-        <input type="email" class="form-control form-control-width-md" id="em9" value="john.smith@gmail">
+        <input type="email" class="form-control form-control-width-md" id="em9" value="john.smith@gmail" required aria-required="true">
         <span class="help-block">This email address is not valid.<span>
       </div>
     </div>
     <div class="form-group has-error">
       <label for="pw9" class="col-sm-3 control-label required">Required</label>
       <div class="col-sm-9">
-        <input type="text" class="form-control form-control-width-md" id="pw9" >
+        <input type="text" class="form-control form-control-width-md" required aria-required="true" id="pw9" >
         <span class="help-block">This field is required.<span>
       </div>
     </div>
@@ -298,14 +291,14 @@ __Don't__
   <div class="form-group has-error">
     <label for="em9" class="col-sm-3 control-label required">Email</label>
     <div class="col-sm-9">
-      <input type="email" class="form-control form-control-width-md" id="em9" value="john.smith@gmail">
+      <input type="email" class="form-control form-control-width-md" id="em9" value="john.smith@gmail" required aria-required="true">
       <span class="help-block">This email address is not valid.<span>
     </div>
   </div>
   <div class="form-group has-error">
     <label for="pw9" class="col-sm-3 control-label required">Password</label>
     <div class="col-sm-9">
-      <input type="password" class="form-control form-control-width-md" id="pw9" >
+      <input type="password" class="form-control form-control-width-md" id="pw9" required aria-required="true">
       <span class="help-block">This field is required.<span>
     </div>
   </div>
@@ -331,13 +324,13 @@ __Don't__
     <div class="form-group">
       <label for="em10" class="col-sm-3 control-label required">Email</label>
       <div class="col-sm-9">
-        <input type="email" class="form-control" id="em10" value="john.smith@gmail.com">
+        <input type="email" class="form-control" id="em10" value="john.smith@gmail.com" required aria-required="true">
       </div>
     </div>
     <div class="form-group">
       <label for="pw10" class="col-sm-3 control-label required">Password</label>
       <div class="col-sm-9">
-        <input type="password" class="form-control" id="pw10" >
+        <input type="password" class="form-control" id="pw10" required aria-required="true">
       </div>
     </div>
     <div class="form-group">
@@ -471,13 +464,13 @@ If you have many fields, consider organizing related fields into groups. Groups 
         <div class="form-group">
             <label for="fg1" class="col-sm-3 control-label required">Email</label>
             <div class="col-sm-9">
-              <input type="email" class="form-control form-control-width-md" id="fg1">
+              <input type="email" class="form-control form-control-width-md" id="fg1" required aria-required="true">
             </div>
         </div>
         <div class="form-group">
             <label for="fg2" class="col-sm-3 control-label required">Full name</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control-width-md form-control" id="fg2">
+              <input type="text" class="form-control-width-md form-control" id="fg2" required aria-required="true">
             </div>
         </div>
         <div class="form-group">
@@ -488,7 +481,7 @@ If you have many fields, consider organizing related fields into groups. Groups 
         <div class="form-group">
             <label for="fg3" class="col-sm-3 control-label required">Address line 1</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control form-control-width-md" id="fg3">
+              <input type="text" class="form-control form-control-width-md" id="fg3" required aria-required="true">
             </div>
         </div>
     </form>
@@ -506,13 +499,13 @@ If you have many fields, consider organizing related fields into groups. Groups 
         <div class="form-group">
             <label for="fg1" class="col-sm-3 control-label required">Email</label>
             <div class="col-sm-9">
-              <input type="email" class="form-control form-control-width-md" id="fg1">
+              <input type="email" class="form-control form-control-width-md" id="fg1" required aria-required="true">
             </div>
         </div>
         <div class="form-group">
             <label for="fg2" class="col-sm-3 control-label required">Full name</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control form-control-width-md" id="fg2">
+              <input type="text" class="form-control form-control-width-md" id="fg2" required aria-required="true">
             </div>
         </div>
         <div class="form-group">
@@ -523,7 +516,7 @@ If you have many fields, consider organizing related fields into groups. Groups 
         <div class="form-group">
             <label for="fg3" class="col-sm-3 control-label required">Address line 1</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control form-control-width-md" id="fg3">
+              <input type="text" class="form-control form-control-width-md" id="fg3" required aria-required="true">
             </div>
         </div>
     </form>
@@ -614,26 +607,26 @@ These examples show various form configurations.
       <div class="form-group">
         <label for="em12" class="col-sm-3 control-label required">Email</label>
         <div class="col-sm-9">
-          <input type="email" class="form-control form-control-width-md" id="em12">
+          <input type="email" class="form-control form-control-width-md" id="em12" required aria-required="true">
           <span class="help-block">Your email will be used to log in.</span>
         </div>
       </div>
       <div class="form-group">
         <label for="n12" class="col-sm-3 control-label required">Name</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control-width-md form-control" id="n12">
+          <input type="text" class="form-control-width-md form-control" id="n12" required aria-required="true">
         </div>
       </div>
       <div class="form-group">
         <label for="ci12" class="col-sm-3 control-label required">City</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control-width-md form-control" id="ci12">
+          <input type="text" class="form-control-width-md form-control" id="ci12" required aria-required="true">
         </div>
        </div>
        <div class="form-group">
         <label for="si12" class="col-sm-3 control-label required">State</label>
         <div class="col-sm-9">
-            <select id="si12" class="form-control-width-xs select2 form-control">
+            <select id="si12" required aria-required="true" class="form-control-width-xs select2 form-control">
               <option>AL</option>
               <option>AK</option>
               <option>AZ</option>
@@ -644,7 +637,7 @@ These examples show various form configurations.
         </div>
       </div>
       <div class="form-group">
-        <label class="col-sm-3 control-label required">Shipping</label>
+        <label class="col-sm-3 control-label">Shipping</label>
         <div class="col-sm-9">
           <div class="radio">
             <label><input type="radio" name="opr2" id="opr21" value="option1" checked>UPS</label>
@@ -670,7 +663,7 @@ These examples show various form configurations.
 <div class="row">
     <form class="form-horizontal " style="max-width: 450px;" role="form">
       <div class="form-group">
-        <label for="em12" class="col-sm-3 control-label required">Email</label>
+        <label for="em12" class="col-sm-3 control-label">Email</label>
         <div class="col-sm-9">
           <input type="email" class="form-control form-control-width-md" id="em12">
           <span class="help-block">Your email will be used to log in.</span>
@@ -679,19 +672,19 @@ These examples show various form configurations.
       <div class="form-group">
         <label for="n12" class="col-sm-3 control-label required">Name</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control form-control-width-md" id="n12">
+          <input required aria-required="true" type="text" class="form-control form-control-width-md" id="n12">
         </div>
       </div>
       <div class="form-group">
         <label for="ci12" class="col-sm-3 control-label required">City</label>
         <div class="col-sm-9">
-          <input type="email" class="form-control form-control-width-md" id="ci12">
+          <input required aria-required="true" type="email" class="form-control form-control-width-md" id="ci12">
         </div>
     </div>
     <div class="form-group">
         <label for="si12" class="col-sm-3 control-label required">State</label>
         <div class="col-sm-9">
-            <select id="si12" class="form-control form-control-width-md">
+            <select required aria-required="true" id="si12" class="form-control form-control-width-md">
               <option>AL</option>
               <option>AK</option>
               <option>AZ</option>
@@ -701,7 +694,7 @@ These examples show various form configurations.
         </div>
       </div>
       <div class="form-group">
-        <label class="col-sm-3 control-label required">Shipping</label>
+        <label class="col-sm-3 control-label">Shipping</label>
         <div class="col-sm-9">
           <div class="radio">
             <label><input type="radio" name="opr2" id="opr21" value="option1" checked>UPS</label>
@@ -744,18 +737,18 @@ These examples show various form configurations.
           </div>
           <div class="form-group has-error">
             <label class="control-label required" for="em12">USPTO email address</label>
-            <input type="email" class="form-control" id="em12" value="john.smith@gmail.com">
+            <input type="email" class="form-control" id="em12" value="john.smith@gmail.com" required aria-required="true">
             <span class="help-block">Email must end with uspto.gov.</span>
           </div>
           <div class="form-group has-error" >
             <label class="control-label required" for="eid12">Employee ID</label> <a href="#" class="pull-right">Find my Employee ID</a>
-            <input type="text" class="form-control" id="eid12" value="238942a">
+            <input type="text" class="form-control" id="eid12" value="238942a" required aria-required="true">
             <span class="help-block">Employee ID must be numeric.</span>
           </div>
           <div class="form-group">
             <label class="control-label required" for="t12">Title</label>
             <div>
-                <select class="select2 form-control-width-sm form-control" id="t12">
+                <select class="select2 form-control-width-sm form-control" id="t12" required aria-required="true">
                   <option value="Mr.">Mr.</option>
                   <option value="Mrs.">Mrs.</option>
                   <option value="Miss">Miss</option>
@@ -764,20 +757,20 @@ These examples show various form configurations.
           </div>
           <div class="form-group">
             <label class="control-label required" for="fn12">First name</label>
-            <input type="text" class="form-control" id="fn12" value="John">
+            <input type="text" class="form-control" id="fn12" value="John" required aria-required="true">
           </div>
           <div class="form-group has-error">
             <label class="control-label required" for="mn12">Middle name</label>
-            <input type="text" class="form-control" id="mn12">
+            <input type="text" class="form-control" id="mn12" required aria-required="true">
             <span class="help-block">This field is required.</span>
           </div>
           <div class="form-group">
             <label class="control-label required" for="ln12">Last name</label>
-            <input type="text" class="form-control" id="ln12" value="Smith">
+            <input type="text" class="form-control" id="ln12" value="Smith" required aria-required="true">
           </div>
           <div class="form-group">
             <label class="control-label required" for="phone12">Telephone number</label>
-            <input type="text" class="form-control" id="phone12">
+            <input type="text" class="form-control" id="phone12" required aria-required="true">
           </div>
           <div class="form-group">
             <br>
@@ -785,33 +778,33 @@ These examples show various form configurations.
           </div>
           <div class="form-group">
             <label class="control-label required" for="country12">Country</label>
-            <select class="select2 form-control" id="country12">
+            <select class="select2 form-control" id="country12" required aria-required="true">
               <option value="Mr.">United States</option>
             </select>
           </div>
           <div class="form-group">
             <label class="control-label required" for="adline1">Address line 1</label>
-            <input type="text" class="form-control" id="adline1">
+            <input type="text" class="form-control" id="adline1" required aria-required="true">
           </div>
           <div class="form-group">
             <label class="control-label required" for="adline2">Address line 2</label>
-            <input type="text" class="form-control" id="adline2">
+            <input type="text" class="form-control" id="adline2" required aria-required="true">
           </div>
           <div class="form-group">
             <label class="control-label required" for="city12">City</label>
-            <input type="text" class="form-control" id="city12">
+            <input type="text" class="form-control" id="city12" required aria-required="true">
           </div>
           <div class="row">
             <div class="col-sm-6">
               <div class="form-group">
                 <label class="control-label required" for="state12">State</label>
-                <input type="text" class="form-control" id="state12">
+                <input type="text" class="form-control" id="state12" required aria-required="true">
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
                 <label class="control-label required" for="zipcode12">Zip code</label>
-                <input type="text" class="form-control" id="zipcode12">
+                <input type="text" class="form-control" id="zipcode12" required aria-required="true">
               </div>
             </div>
           </div>
@@ -831,17 +824,17 @@ These examples show various form configurations.
       </div>
       <div class="form-group has-error">
         <label class="control-label required" for="em12">USPTO email address</label>
-        <input type="email" class="form-control" id="em12" value="john.smith@gmail.com">
+        <input type="email" class="form-control" id="em12" value="john.smith@gmail.com" required aria-required="true">
         <span class="help-block">Email must end with uspto.gov.</span>
       </div>
       <div class="form-group has-error" >
         <label class="control-label required" for="eid12">Employee ID</label> <a href="#" class="pull-right">Find my Employee ID</a>
-        <input type="text" class="form-control" id="eid12" value="238942a">
+        <input type="text" class="form-control" id="eid12" value="238942a" required aria-required="true">
         <span class="help-block">Employee ID must be numeric.</span>
       </div>
       <div class="form-group">
         <label class="control-label required" for="t12">Title</label>
-        <select class="form-control" id="t12">
+        <select class="form-control" id="t12" required aria-required="true">
           <option value="Mr.">Mr.</option>
           <option value="Mrs.">Mrs.</option>
           <option value="Miss">Miss</option>
@@ -849,20 +842,20 @@ These examples show various form configurations.
       </div>
       <div class="form-group">
         <label class="control-label required" for="fn12">First name</label>
-        <input type="text" class="form-control" id="fn12" value="John">
+        <input type="text" class="form-control" id="fn12" value="John" required aria-required="true">
       </div>
       <div class="form-group has-error">
         <label class="control-label required" for="mn12">Middle name</label>
-        <input type="text" class="form-control" id="mn12">
+        <input type="text" class="form-control" id="mn12" required aria-required="true">
         <span class="help-block">This field is required.</span>
       </div>
       <div class="form-group">
         <label class="control-label required" for="ln12">Last name</label>
-        <input type="text" class="form-control" id="ln12" value="Smith">
+        <input type="text" class="form-control" id="ln12" value="Smith" required aria-required="true">
       </div>
       <div class="form-group">
         <label class="control-label required" for="phone12">Telephone number</label>
-        <input type="text" class="form-control" id="phone12">
+        <input type="text" class="form-control" id="phone12" required aria-required="true">
       </div>
       <div class="form-group">
         <br>
@@ -870,33 +863,33 @@ These examples show various form configurations.
       </div>
       <div class="form-group">
         <label class="control-label required" for="country12">Country</label>
-        <select class="form-control" id="country12">
+        <select class="form-control" id="country12" required aria-required="true">
           <option value="Mr.">United States</option>
         </select>
       </div>
       <div class="form-group">
         <label class="control-label required" for="adline1">Address line 1</label>
-        <input type="text" class="form-control" id="adline1">
+        <input type="text" class="form-control" id="adline1" required aria-required="true">
       </div>
       <div class="form-group">
         <label class="control-label required" for="adline2">Address line 2</label>
-        <input type="text" class="form-control" id="adline2">
+        <input type="text" class="form-control" id="adline2" required aria-required="true">
       </div>
       <div class="form-group">
         <label class="control-label required" for="city12">City</label>
-        <input type="text" class="form-control" id="city12">
+        <input type="text" class="form-control" id="city12" required aria-required="true">
       </div>
       <div class="row">
         <div class="col-sm-6">
           <div class="form-group">
             <label class="control-label required" for="state12">State</label>
-            <input type="text" class="form-control" id="state12">
+            <input type="text" class="form-control" id="state12" required aria-required="true">
           </div>
         </div>
         <div class="col-sm-6">
           <div class="form-group">
             <label class="control-label required" for="zipcode12">Zip code</label>
-            <input type="text" class="form-control" id="zipcode12">
+            <input type="text" class="form-control" id="zipcode12" required aria-required="true">
           </div>
         </div>
       </div>
