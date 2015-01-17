@@ -3,7 +3,7 @@ title: "Metadata"
 ---
 
 [pattern]
-### General
+<h3>Metadata</h3>
 The metadata pattern can be used for showing label/value pairs.
 
 __Do__
@@ -79,6 +79,14 @@ Useful for longer labels/values.
     </div>
 </div>
 [/preview]
+```html
+<dl>
+    <dt>Examiner</dt>
+    <dd>IP, Sikyin / 69776 / 1742</dd>
+    <dt>SPE (multiple)</dt>
+    <dd>John Olaskey</dd>
+</dl>
+```
 
 #### Inline
 Useful for few labels/values.
@@ -96,6 +104,16 @@ Useful for few labels/values.
     </div>
 </div>
 [/preview]
+```html
+<dl class="dl-inline">
+    <dt>Created</dt>
+    <dd>Mar 5, 2014</dd>
+    <dt>Views</dt>
+    <dd>1,662</dd>
+    <dt>Status</dt>
+    <dd>Approved</dd>
+</dl>
+```
 
 [/pattern]
 

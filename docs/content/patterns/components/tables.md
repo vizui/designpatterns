@@ -69,6 +69,9 @@ A standard table has subtle row borders.
     </table>
 </div>
 [/preview]
+```html
+<table class="table"> ... </table>
+```
 
 #### Striped
 A striped table adds an alternating row background color, increasing usability for wider tables.
@@ -107,6 +110,9 @@ A striped table adds an alternating row background color, increasing usability f
     </table>
 </div>
 [/preview]
+```html
+<table class="table table-striped"> ... </table>
+```
 
 #### Bordered
 A bordered table adds column and row borders, increasing usability for content-dense tables.
@@ -145,6 +151,9 @@ A bordered table adds column and row borders, increasing usability for content-d
     </table>
 </div>
 [/preview]
+```html
+<table class="table table-bordered"> ... </table>
+```
 
 #### Borderless
 A borderless table removes all borders, decreasing clutter for simple tables.
@@ -183,6 +192,9 @@ A borderless table removes all borders, decreasing clutter for simple tables.
     </table>
 </div>
 [/preview]
+```html
+<table class="table table-borderless"> ... </table>
+```
 
 #### Row hover
 Rows can have a hover effect to indicate click interactions.
@@ -221,6 +233,9 @@ Rows can have a hover effect to indicate click interactions.
     </table>
 </div>
 [/preview]
+```html
+<table class="table table-borderless table-hover"> ... </table>
+```
 
 #### Condensed
 Use the condensed style, which reduces cell padding, for very large amounts of data.
@@ -259,6 +274,10 @@ Use the condensed style, which reduces cell padding, for very large amounts of d
     </table>
 </div>
 [/preview]
+```html
+<table class="table table-bordered table-condensed"> ... </table>
+```
+
 #### Comfortable
 Use the comfortable style, which increases cell padding, for making simple data breathe more. 
 [preview]
@@ -296,6 +315,9 @@ Use the comfortable style, which increases cell padding, for making simple data 
     </table>
 </div>
 [/preview]
+```html
+<table class="table table-outline table-comfortable"> ... </table>
+```
 
 #### Colored headers
 For text heavy pages (e.g., FAQ, APIs, Documentation, Pricing), or pages where there is one primary grid, a colored header may be appropriate. For tables immediately surrounded by other distinguishing elements, a clear header may be appropriate.
@@ -337,6 +359,9 @@ Similar to other components, the available styles are `.table-{primary, success,
     </table>
 </div>
 [/preview]
+```html
+<table class="table table-striped table-info"> ... </table>
+```
 
 [/pattern]
 
@@ -381,6 +406,18 @@ A normal header scrolls with the data.
     </table>
 </div>
 [/preview]
+```html
+<table class="table"> 
+    <thead>
+        <tr>
+            <th>Project name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody> ... </tbody>
+</table>
+```
 
 #### Fixed
 
@@ -501,25 +538,32 @@ If the content of the table is self-explanatory for your users, it may not need 
     <table class="table table-valign table-bordered table-striped">
         <tbody>
             <tr>
-                <td class="vert-align"><strong>CSS is 20 years old today!</strong><br><span >13 points and 4 comments - 2 days ago</span></td>
+                <td><strong>CSS is 20 years old today!</strong><br><span >13 points and 4 comments - 2 days ago</span></td>
                 <td class="vert-align text-center" style="width: 70px;"><span class="text-success semi-bold"><i class="icon icon-angle-up"></i> 3.4%</span></td>
             </tr>
             <tr>
-                <td class="vert-align"><strong>Motion Experiments</strong><br><span >31 points and 7 comments - 11 hours ago</span></td>
+                <td><strong>Motion Experiments</strong><br><span >31 points and 7 comments - 11 hours ago</span></td>
                 <td class="vert-align text-center" style="width: 70px;"><span class="text-success semi-bold"><i class="icon icon-angle-up"></i> 2.5%</span></td>
             </tr>
             <tr>
-                <td class="vert-align"><strong>Is everyone a designer? </strong><br><span >15 points and 3 comments - 3 days ago</span></td>
+                <td><strong>Is everyone a designer? </strong><br><span >15 points and 3 comments - 3 days ago</span></td>
                 <td class="vert-align text-center" style="width: 70px;"><span class="text-primary semi-bold"><i class="icon icon-angle-right"></i> 0.0%</span></td>
             </tr>
             <tr>
-                <td class="vert-align"><strong>Introducing GIFV</strong><br><span >24 points and 9 comments - 5 days ago</span></td>
+                <td><strong>Introducing GIFV</strong><br><span >24 points and 9 comments - 5 days ago</span></td>
                 <td class="vert-align text-center" style="width: 70px;"><span class="text-danger semi-bold"><i class="icon icon-angle-down"></i> 0.1%</span></td>
             </tr>
         </tbody>
     </table>
 </div>
 [/preview]
+```html
+<table class="table"> 
+    <tbody> ... </tbody>
+</table>
+```
+
+
 [/pattern]
 
 [pattern]
@@ -533,7 +577,7 @@ Clicking a header cell sets that column as the currently sorted column. The firs
     <table class="table table-sortable table-bordered table-striped">
         <thead>
             <tr>
-                <th class="sortable active">Project name <i class="icon icon-caret-down text-muted"></i></th>
+                <th class="sortable active">Project name <i class="icon icon-caret-down"></i></th>
                 <th class="sortable">Description</th>
                 <th>Price</th>
             </tr>
@@ -563,6 +607,18 @@ Clicking a header cell sets that column as the currently sorted column. The firs
     </table>
 </div>
 [/preview]
+```html
+<table class="table table-sortable table-bordered table-striped">
+    <thead>
+        <tr>
+            <th class="sortable active">Project name <i class="icon icon-caret-down"></i></th>
+            <th class="sortable">Description</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    ...
+</table>
+```
 
 #### Multi sorting
 When a table is sorted by multiple columns, the sort order is indicated by the superscript numbers.
@@ -603,6 +659,18 @@ Performing a `shift+click` on a header cell should add that column to the sorted
     </table>
 </div>
 [/preview]
+```html
+<table class="table table-sortable table-bordered table-striped">
+    <thead>
+        <tr>
+            <th class="sortable active">Event <i class="icon icon-caret-down"></i> <sup >1</sup></th>
+            <th class="sortable active">Date <i class="icon icon-caret-up"></i> <sup >2</sup></th>
+            <th>Module</th>
+        </tr>
+    </thead>
+    ...
+</table>
+```
 
 [/pattern]
 
@@ -656,6 +724,26 @@ Checkboxes are generally the best way to facilitate multi-row selection, especia
     </table>
 </div>
 [/preview]
+```html
+ <table class="table">
+    <thead>
+        <tr>
+            <th style="width: 28px;"><input type="checkbox"></th>
+            <th>Project name</th>
+            <th>Description</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><input type="checkbox"></td>
+            <td>Payments</td>
+            <td><span >Process payments using third party api</span></td>
+            <td><span >$5,400</span></td>
+        </tr>
+    </tbody>
+</table>
+```
 [/pattern]
 
 [pattern]
@@ -666,69 +754,81 @@ Buttons with the `btn-hover` and `btn-icon-only` classes.
     <table class="table table-outline table-valign table-striped">
         <tbody>
             <tr>
-                <td class="vert-align">
+                <td>
                     <strong>IMG_234.jpg</strong><br><span >2 days ago</span>
                 </td>
-                <td class="vert-align">
-                    <div class="pull-right">
-                        <button class="btn btn-hover btn-icon-only" title="Delete">
-                            <i class="icon text-muted icon-close"></i>
-                        </button>
-                        <button class="btn btn-hover btn-icon-only" title="More options">
-                            <i class="icon text-muted icon-ellipsis-v"></i>
-                        </button>
-                    </div>
+                <td class="text-right">
+                    <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
+                        <i class="icon text-muted icon-close"></i> <span class="sr-only">Delete</span>
+                    </button>
+                    <button class="btn btn-hover btn-icon-only" title="More options" data-toggle="tooltip">
+                        <i class="icon text-muted icon-ellipsis-v"></i> <span class="sr-only">More</span>
+                    </button>
                 </td>
             </tr>
             <tr>
-                <td class="vert-align">
+                <td>
                     <strong>IMG_235.jpg</strong><br><span >2 days ago</span>
                 </td>
-                <td class="vert-align">
-                    <div class="pull-right">
-                        <button class="btn btn-hover btn-icon-only" title="Delete">
-                            <i class="icon text-muted icon-close"></i>
-                        </button>
-                        <button class="btn btn-hover btn-icon-only" title="More options">
-                            <i class="icon text-muted icon-ellipsis-v"></i>
-                        </button>
-                    </div>
+                <td class="text-right">
+                    <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
+                        <i class="icon text-muted icon-close"></i> <span class="sr-only">Delete</span>
+                    </button>
+                    <button class="btn btn-hover btn-icon-only" title="More options" data-toggle="tooltip">
+                        <i class="icon text-muted icon-ellipsis-v"></i> <span class="sr-only">More</span>
+                    </button>
                 </td>
             </tr>
             <tr>
-                <td class="vert-align">
+                <td>
                     <strong>IMG_236.jpg</strong><br><span >2 days ago</span>
                 </td>
-                <td class="vert-align">
-                    <div class="pull-right">
-                        <button class="btn btn-hover btn-icon-only" title="Delete">
-                            <i class="icon text-muted icon-close"></i>
-                        </button>
-                        <button class="btn btn-hover btn-icon-only" title="More options">
-                            <i class="icon text-muted icon-ellipsis-v"></i>
-                        </button>
-                    </div>
+                <td class="text-right">
+                    <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
+                        <i class="icon text-muted icon-close"></i> <span class="sr-only">Delete</span>
+                    </button>
+                    <button class="btn btn-hover btn-icon-only" title="More options" data-toggle="tooltip">
+                        <i class="icon text-muted icon-ellipsis-v"></i> <span class="sr-only">More</span>
+                    </button>
                 </td>
             </tr>
             <tr>
-                <td class="vert-align">
+                <td>
                     <strong>IMG_237.jpg</strong><br><span >2 days ago</span>
                 </td>
-                <td class="vert-align">
-                    <div class="pull-right">
-                        <button class="btn btn-hover btn-icon-only" title="Delete">
-                            <i class="icon text-muted icon-close"></i>
-                        </button>
-                        <button class="btn btn-hover btn-icon-only" title="More options">
-                            <i class="icon text-muted icon-ellipsis-v"></i>
-                        </button>
-                    </div>
+                <td class="text-right">
+                    <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
+                        <i class="icon text-muted icon-close"></i> <span class="sr-only">Delete</span>
+                    </button>
+                    <button class="btn btn-hover btn-icon-only" title="More options" data-toggle="tooltip">
+                        <i class="icon text-muted icon-ellipsis-v"></i> <span class="sr-only">More</span>
+                    </button>
                 </td>
             </tr>
         </tbody>
     </table>
 </div>
 [/preview]
+```html
+<table class="table table-outline table-valign table-striped">
+    <tbody>
+        <tr>
+            <td>
+                <strong>IMG_234.jpg</strong><br><span >2 days ago</span>
+            </td>
+            <td class="text-right">
+                <button class="btn btn-hover btn-icon-only" title="Delete" data-toggle="tooltip">
+                    <i class="icon text-muted icon-close"></i> <span class="sr-only">Delete</span>
+                </button>
+                <button class="btn btn-hover btn-icon-only" title="More options" data-toggle="tooltip">
+                    <i class="icon text-muted icon-ellipsis-v"></i> <span class="sr-only">More</span>
+                </button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+```
+
 [/pattern]
 
 [pattern]
@@ -742,7 +842,7 @@ To provide column customization, add an icon to the top right corner of the tabl
                 <th>Project name</th>
                 <th>Description</th>
                 <th>Price</th>
-                <th class="table-config-column"><button type="button"><i class="icon icon-ellipsis-h"></i></button></th>
+                <th class="table-config-column"><button type="button" data-container="body" title="Show and hide columns" data-toggle="tooltip"><i class="icon icon-ellipsis-h"></i></button></th>
             </tr>
         </thead>
         <tbody>
@@ -770,6 +870,19 @@ To provide column customization, add an icon to the top right corner of the tabl
     </table>
 </div>
 [/preview]
+```html
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Project name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th class="table-config-column"><button type="button" data-container="body" title="Show and hide columns" data-toggle="tooltip"><i class="icon icon-ellipsis-h"></i></button></th>
+        </tr>
+    </thead>
+    ...
+</table>
+```
 
 #### Show and hide columns dialog
 This dialog provides the ability to show/hide columns as desired.

@@ -9,7 +9,7 @@ title: "Pagination"
 Users need to navigate through pages of items.
 
 #### Description
-Collections of data are often split into multiple pages for performance reasons. Either the size of the data is too much to download at once, or the size of the data would take too longer to render. Pagination controls allow for the user to retrieve or view pages of data in a performant matter.
+Collections of data are often split into multiple pages for performance reasons. Either the size of the data is too much to download at once, or the size of the data would take too long to render all at once. Pagination controls allow for the user to retrieve or view pages of data in a performant matter.
 
 #### Basic functionality
 This pagination pattern provides a few variations of the following features:
@@ -19,8 +19,6 @@ This pagination pattern provides a few variations of the following features:
 - Adjusting the number of items per page
 
 The features should be chosen based on the user's needs, the data, and the space available. Don't include pagination features that aren't necessary. If your users have no need to adjust the paging size or jump to a manually entered page for a particular type of data, don't include those features.
-
-<!-- <div><span class="label label-warning">TODO</span> Infinite scrolling and 'Load more'</div> -->
 
 &nbsp;
 
@@ -71,6 +69,7 @@ These show possible configurations for layouts with large amounts of screen real
  <a class="btn btn-default" href="#"><i class="icon icon-angle-right"></i></a>
 </div>
 [/preview]
+
 [preview]
 <div class="btn-group">
     <div class="dropdown" style="display: inline-block">

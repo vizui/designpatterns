@@ -43,14 +43,24 @@ Use a popover instead of a tooltip or dialog when:
     <a href="">Learn more</a>
   </div>
 </div>
-[/preview]
 
-```html
+<hr/>
 
-```
-
-[preview]
 <button class="btn btn-default" data-html="true" data-toggle="popover" data-container="body" data-trigger="focus" data-content="<p>Simple search: Type a term in the search field and select the search button.</p>
     <p>Advanced  search: Advanced boolean operators may be used. The default operator when searching multiple terms is “AND”.</p> <a href=''>Learn more</a>">Show popover</button>
 [/preview]
+```html
+<div class="popover left">
+    <div class="arrow"></div>
+    <h3 class="popover-title">Add note</h3>
+    <div class="popover-content">
+        <textarea placeholder="Enter note here" class="form-control" name="" id="" rows="3"></textarea>
+    </div>
+    <div class="popover-toolbar">
+        <button class="btn btn-hover btn-icon-only"><i class="icon icon-image"></i><span class="sr-only">Add image</span></button>
+        <button class="btn btn-hover btn-icon-only"><i class="icon icon-chain"></i><span class="sr-only">Add link</span></button>
+        <button class="btn btn-primary pull-right">Add</button>
+    </div>
+</div>
+```
 [/pattern]

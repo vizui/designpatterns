@@ -27,6 +27,12 @@ Use tooltips for:
     <div class="tooltip-arrow"></div>
 </div>
 [/preview]
+```html
+<div class="tooltip fade in right">
+    <div class="tooltip-inner">I'm a tooltip!</div>
+    <div class="tooltip-arrow"></div>
+</div>
+```
 [/pattern]
 
 [pattern]

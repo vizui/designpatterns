@@ -39,26 +39,6 @@ All buttons are prefixed with the `btn` class. The `btn` class can be applied to
 [/pattern]
 
 [pattern]
-### Button states
-
-There are 3 different button states:
-- __Normal__, the available, clickable state.
-- __Active__, the active, non-clickable state. Add the `active` class.
-- __Disabled__, the disabled, non-clickable state. Add the `disabled` attrbitue or class.
-
-[preview]
-<button type="button" class="btn btn-primary">Normal</button> <button type="button" class="btn btn-primary active">Active</button> <button type="button" class="btn btn-primary" disabled>Disabled</button>
-[/preview]
-
-```html
-<button type="button" class="btn btn-primary">Normal</button>
-<button type="button" class="btn btn-primary active">Active</button>
-<button type="button" disabled class="btn btn-primary">Disabled</button>
-```
-[/pattern]
-
-
-[pattern]
 ### Button sizes
 
 There are 4 different button sizes:
@@ -117,16 +97,24 @@ Related buttons can be grouped together to show associations and improve clarity
 [pattern]
 ### Toggle buttons
 
-Add the `active` class to the active button.
+Similar to a checkbox, toggle buttons can be toggled between active or not active.
+
+Add the `active` class and the `aria-pressed="true"` attribute to a button.
 
 [preview]
-<button type="button" class="btn btn-default active">Active</button> <button type="button" class="btn btn-default">Normal</button> <div class="btn-group">
+<button type="button" class="btn btn-default active" aria-pressed="true">Active</button> <button type="button" class="btn btn-default">Normal</button> <div class="btn-group">
     <button type="button" class="btn btn-default">Left</button>
-    <button type="button" class="btn btn-default active">Active</button>
+    <button type="button" class="btn btn-default active" aria-pressed="true">Active</button>
     <button type="button" class="btn btn-default">Right</button>
 </div>
 [/preview]
-
+```html
+<button type="button" class="btn btn-default active" aria-pressed="true">Active</button> <button type="button" class="btn btn-default">Normal</button> <div class="btn-group">
+    <button type="button" class="btn btn-default">Left</button>
+    <button type="button" class="btn btn-default active" aria-pressed="true">Active</button>
+    <button type="button" class="btn btn-default">Right</button>
+</div>
+```
 [/pattern]
 
 [pattern]
@@ -146,6 +134,20 @@ Dropdown buttons can provide a menu or popover when clicked.
   </ul>
 </div>
 [/preview]
+```html
+<div class="btn-group">
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    Dropdown <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
+```
 [/pattern]
 
 [pattern]
@@ -184,7 +186,20 @@ Split buttons contain both a button and a dropdown. Clicking the button performs
 [/preview]
 
 ```html
-
+<div class="btn-group">
+  <button type="button" class="btn btn-default">Action</button>
+  <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu" role="menu">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+    <li><a href="#">Something else here</a></li>
+    <li class="divider"></li>
+    <li><a href="#">Separated link</a></li>
+  </ul>
+</div>
 ```
 
 [/pattern]

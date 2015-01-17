@@ -30,7 +30,7 @@ The selected tab color should be the same color as the tab content.
 <ul class="nav nav-tabs" role="tablist">
   <li class="active"><a href="#" role="tab" data-toggle="tab">Active</a></li>
   <li><a href="#" role="tab" data-toggle="tab">Normal</a></li>
-  <li class="disabled"><a href="#" role="tab">Disabled</a></li>
+  <li class="disabled"><a role="tab">Disabled</a></li>
   <li class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">
           Dropdown <span class="caret"></span>
@@ -48,6 +48,13 @@ The selected tab color should be the same color as the tab content.
     </div>
 </div>
 [/preview]
+```html
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#" role="tab" data-toggle="tab">Active</a></li>
+    <li><a href="#" role="tab" data-toggle="tab">Normal</a></li>
+    <li class="disabled"><a role="tab">Disabled</a></li>
+</ul>
+```
 [/pattern]
 
 [pattern]
@@ -57,7 +64,7 @@ Use when the tabs need less emphasis in relation to other navigational elements.
 <ul class="nav nav-tabs nav-tabs-light" role="tablist">
   <li class="active"><a href="#" role="tab" data-toggle="tab">Active</a></li>
   <li><a href="#" role="tab" data-toggle="tab">Normal</a></li>
-  <li class="disabled"><a href="#" role="tab">Disabled</a></li>
+  <li class="disabled"><a role="tab">Disabled</a></li>
   <li class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">
           Dropdown <span class="caret"></span>
@@ -70,6 +77,13 @@ Use when the tabs need less emphasis in relation to other navigational elements.
   </li>
 </ul>
 [/preview]
+```html
+<ul class="nav nav-tabs nav-tabs-light" role="tablist">
+    <li class="active"><a href="#" role="tab" data-toggle="tab">Active</a></li>
+    <li><a href="#" role="tab" data-toggle="tab">Normal</a></li>
+    <li class="disabled"><a role="tab">Disabled</a></li>
+</ul>
+```
 [/pattern]
 
 [pattern]
@@ -79,7 +93,7 @@ Use when the tabs need even less emphasis in relation to other navigational elem
 <ul class="nav nav-pills" role="tablist">
   <li class="active"><a href="#" role="tab" data-toggle="tab">Active</a></li>
   <li><a href="#" role="tab" data-toggle="tab">Normal</a></li>
-  <li class="disabled"><a href="#" role="tab">Disabled</a></li>
+  <li class="disabled"><a role="tab">Disabled</a></li>
   <li class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">
           Dropdown <span class="caret"></span>
@@ -92,6 +106,14 @@ Use when the tabs need even less emphasis in relation to other navigational elem
   </li>
 </ul>
 [/preview]
+```html
+<ul class="nav nav-pills" role="tablist">
+    <li class="active"><a href="#" role="tab" data-toggle="tab">Active</a></li>
+    <li><a href="#" role="tab" data-toggle="tab">Normal</a></li>
+    <li class="disabled"><a role="tab">Disabled</a></li>
+</ul>
+```
+
 [/pattern]
 
 [pattern]
@@ -112,6 +134,21 @@ Use when the tabs need even less emphasis in relation to other navigational elem
     </div>
 </div>
 [/preview]
+```html
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#" role="tab" data-toggle="tab">Template</a></li>
+    <li><a href="#" role="tab" data-toggle="tab">History</a></li>
+    <li><a href="#" role="tab" data-toggle="tab">Analytics</a></li>
+</ul>
+<div style="border-top: none; border-radius: 0;" class="panel panel-default">
+    <ul class="nav nav-tabs nav-tabs-light" role="tablist">
+        <li><a href="#" role="tab" data-toggle="tab">HTML</a></li>
+        <li class="active"><a href="#" role="tab" data-toggle="tab">Preview</a></li>
+    </ul>
+    <div class="panel-body">
+    </div>
+</div>
+```
 [/pattern]
 
 [pattern]
@@ -121,7 +158,8 @@ Evenly sized tabs distributed among the width of the container. This can improve
 [preview]
 <div style="width: 300px;">
     <ul class="nav nav-tabs nav-justified text-center" role="tablist">
-      <li class="active"><a href="#" role="tab" data-toggle="tab">Recent</a></li>
+      <li class="active"><a href="#" role="tab" data-toggle="tab">Activity</a></li>
+      <li><a href="#" role="tab" data-toggle="tab">Info</a></li>
       <li><a href="#" role="tab" data-toggle="tab">Notes</a></li>
     </ul>
     <div style="border-top: none; border-radius: 0;" class="panel panel-default">
@@ -131,8 +169,11 @@ Evenly sized tabs distributed among the width of the container. This can improve
     </div>
 </div>
 [/preview]
-
 ```html
-
+<ul class="nav nav-tabs nav-justified" role="tablist">
+    <li class="active"><a href="#" role="tab" data-toggle="tab">Activity</a></li>
+    <li><a href="#" role="tab" data-toggle="tab">Info</a></li>
+    <li><a href="#" role="tab" data-toggle="tab">Notes</a></li>
+</ul>
 ```
 [/pattern]

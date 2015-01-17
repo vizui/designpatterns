@@ -141,9 +141,20 @@ Users must choose between two or more mutually exclusive options.
     <label><input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>Disabled</label>
 </div>
 <div class="radio">
-  <label><input type="radio" name="optionsRadios" id="optionsRadios4" value="option5">Extended <div class="text-muted" style="width: 300px;">This option has some useful help text associated with it that elaborates on the state or purpose.</div></label>
+  <label><input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">Extended <div class="text-muted" style="width: 300px;">This option has some useful help text associated with it that elaborates on the state or purpose.</div></label>
 </div>
 [/preview]
+```html
+<div class="radio">
+    <label><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Checked</label>
+</div>
+<div class="radio">
+  <label>
+    <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">Extended 
+    <div class="text-muted">This option has some useful help text associated with it that elaborates on the state or purpose.</div>
+  </label>
+</div>
+```
 
 #### Inline
 [preview]
@@ -160,7 +171,12 @@ Users must choose between two or more mutually exclusive options.
 [/preview]
 
 ```html
-
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked> Checked
+</label>
+<label class="radio-inline">
+  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Normal
+</label>
 ```
 
 [/pattern]
@@ -195,9 +211,21 @@ Users need to specify which option(s) from a set are applicable/valid/true based
   <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes3" value="option3" disabled>Disabled</label>
 </div>
 <div class="checkbox">
-  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes4" value="option5">Extended <div class="text-muted" style="width: 300px;">This option has some useful help text associated with it that elaborates on the state or purpose.</div></label>
+  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes4" value="option4">Extended <div class="text-muted" style="width: 300px;">This option has some useful help text associated with it that elaborates on the state or purpose.</div></label>
 </div>
 [/preview]
+```html
+<div class="checkbox">
+  <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes1" value="option1" checked>Checked</label>
+</div>
+<div class="checkbox">
+  <label>
+    <input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes4" value="option4">
+    Extended 
+    <div class="text-muted">This option has some useful help text associated with it that elaborates on the state or purpose.</div>
+  </label>
+</div>
+```
 
 #### Inline
 [preview]
@@ -211,7 +239,12 @@ Users need to specify which option(s) from a set are applicable/valid/true based
 [/preview]
 
 ```html
-
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1" checked> Checked
+</label> 
+<label class="checkbox-inline">
+  <input type="checkbox" id="inlineCheckbox2" value="option2"> Normal
+</label>
 ```
 
 [/pattern]
@@ -497,14 +530,28 @@ This is the native browser multi-select. `Ctrl+click` (or `cmd+click`) toggles s
 
 ```html
 <div class="form-group">
-    <label for="dp1" class="col-sm-3 control-label">When</label>
+    <label for="dp1" class="col-sm-3 control-label">Date</label>
     <div class="col-sm-9">
         <span class="input-icon icon icon-calendar-o"></span>
         <input id="dp1" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'" type="text" class="datepicker form-control" >
     </div>
 </div>
+<div class="form-group">
+    <label for="dp2" class="col-sm-3 control-label">Range</label>
+    <div class="col-sm-9">
+        <div class="row">
+            <div class="col-sm-6">
+                <span class="input-icon icon icon-calendar-o"></span>
+                <input id="dp2" placeholder="From" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'" type="text" class="datepicker form-control" >
+            </div>
+            <div class="col-sm-6">
+                <span class="input-icon icon icon-calendar-o"></span>
+                <input id="dp3" placeholder="To" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'" type="text" class="datepicker form-control" >
+            </div>
+        </div>
+    </div>
+</div>
 ```
-
 [/pattern]
 
 
@@ -518,13 +565,13 @@ This is the native browser multi-select. `Ctrl+click` (or `cmd+click`) toggles s
             <div class="form-group">
                 <label for="se15" class="col-sm-3 control-label">Normal</label>
                 <div class="col-sm-9">
-                    <input class="slider">
+                    <input class="slider" type="number">
                 </div>
             </div>
             <div class="form-group">
                 <label for="se16" class="col-sm-3 control-label">Disabled</label>
                 <div class="col-sm-9">
-                    <input class="slider" disabled data-slider-enabled="false">
+                    <input class="slider" disabled data-slider-enabled="false" type="number">
                 </div>
             </div>
         </form>
@@ -536,7 +583,7 @@ This is the native browser multi-select. `Ctrl+click` (or `cmd+click`) toggles s
 <div class="form-group">
     <label for="se15" class="col-sm-3 control-label">Normal</label>
     <div class="col-sm-9">
-        <input class="slider">
+        <input class="slider" type="number">
     </div>
 </div>
 ```
@@ -547,48 +594,72 @@ This is the native browser multi-select. `Ctrl+click` (or `cmd+click`) toggles s
 ### Rich text editor
 The rich text editor allows for text input with additional formatting and inline images/links. Only include the functionality/buttons/tools necessary for the specific purpose.
 [preview]
-<div class="container-fluid" style="max-width: 450px; margin: 0;">
-    <div class="row">
-        <form role="form" class="col-sm-12 form-horizontal">
-            <div class="form-group">
-                <div class="col-sm-12">
-                    <div>
-                        <div style="background: #f9f9f9; border: 1px solid #ccc; border-bottom:0;" class="btn-toolbar btn-toolbar-hover">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default btn-hover dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                    Arial <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu" role="menu">
-                                    <li class="active"><a href="#">Arial</a></li>
-                                    <li><a href="#">Georgia</a></li>
-                                    <li><a href="#">Courier</a></li>
-                                </ul>
-                            </div>
-                            <div class="btn-group">
-                                <button type="button" data-toggle="tooltip" data-placement="top" title="Bold" class="btn btn-hover btn-icon-only"><i class="icon icon-bold"></i><span class="sr-only">Bold</span></button>
-                                <button type="button" data-toggle="tooltip" data-placement="top" title="Italicize" class="btn btn-hover active btn-icon-only"><i class="icon icon-italic"></i><span class="sr-only">Italicize</span></button>
-                                <button type="button" data-toggle="tooltip" data-placement="top" title="Underline" class="btn btn-hover btn-icon-only"><i class="icon icon-underline"></i><span class="sr-only">Underline</span></button>
-                            </div>
-                            <div class="btn-group">
-                                <button type="button" data-toggle="tooltip" data-placement="top" title="Ordered list" class="btn btn-hover btn-icon-only"><i class="icon icon-list-ol"></i><span class="sr-only">Ordered list</span></button>
-                                <button type="button" data-toggle="tooltip" data-placement="top" title="Unordered list" class="btn btn-hover btn-icon-only"><i class="icon icon-list-ul"></i><span class="sr-only">Unordered list</span></button>
-                            </div>
-                            <div class="btn-group">
-                                <button type="button" data-toggle="tooltip" data-placement="top" title="Indent" class="btn btn-hover btn-icon-only"><i class="icon icon-indent"></i><span class="sr-only">Indent</span></button>
-                                <button type="button" data-toggle="tooltip" data-placement="top" title="Outdent" class="btn btn-hover btn-icon-only"><i class="icon icon-dedent"></i><span class="sr-only">Outdent</span></button>
-                            </div>
-                            <div class="btn-group">
-                                <button type="button" data-toggle="tooltip" data-placement="top" title="Insert link" class="btn btn-hover btn-icon-only"><i class="icon icon-chain"></i><span class="sr-only">Insert link</span></button>
-                                <button type="button" data-toggle="tooltip" data-placement="top" title="Insert image" class="btn btn-hover btn-icon-only"><i class="icon icon-image"></i><span class="sr-only">Insert image</span></button>
-                            </div>
-                        </div>
-                    </div>
-                    <textarea name="" id="" cols="30" rows="10" class="form-control" style="border-top-left-radius: 0; border-top-right-radius: 0;" placeholder="Enter note here..."></textarea>
-                </div>
-            </div>
-        </form>
+<div style="max-width: 425px; margin: 0;">
+    <div style="background: #f9f9f9; border: 1px solid #ccc; border-bottom:0;" class="btn-toolbar btn-toolbar-hover">
+        <div class="btn-group">
+            <button type="button" class="btn btn-default btn-hover dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                Arial <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li class="active"><a href="#">Arial</a></li>
+                <li><a href="#">Georgia</a></li>
+                <li><a href="#">Courier</a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button type="button" data-toggle="tooltip" data-placement="top" title="Bold" class="btn btn-hover btn-icon-only"><i class="icon icon-bold"></i><span class="sr-only">Bold</span></button>
+            <button type="button" data-toggle="tooltip" data-placement="top" title="Italicize" class="btn btn-hover active btn-icon-only"><i class="icon icon-italic"></i><span class="sr-only">Italicize</span></button>
+            <button type="button" data-toggle="tooltip" data-placement="top" title="Underline" class="btn btn-hover btn-icon-only"><i class="icon icon-underline"></i><span class="sr-only">Underline</span></button>
+        </div>
+        <div class="btn-group">
+            <button type="button" data-toggle="tooltip" data-placement="top" title="Ordered list" class="btn btn-hover btn-icon-only"><i class="icon icon-list-ol"></i><span class="sr-only">Ordered list</span></button>
+            <button type="button" data-toggle="tooltip" data-placement="top" title="Unordered list" class="btn btn-hover btn-icon-only"><i class="icon icon-list-ul"></i><span class="sr-only">Unordered list</span></button>
+        </div>
+        <div class="btn-group">
+            <button type="button" data-toggle="tooltip" data-placement="top" title="Indent" class="btn btn-hover btn-icon-only"><i class="icon icon-indent"></i><span class="sr-only">Indent</span></button>
+            <button type="button" data-toggle="tooltip" data-placement="top" title="Outdent" class="btn btn-hover btn-icon-only"><i class="icon icon-dedent"></i><span class="sr-only">Outdent</span></button>
+        </div>
+        <div class="btn-group">
+            <button type="button" data-toggle="tooltip" data-placement="top" title="Insert link" class="btn btn-hover btn-icon-only"><i class="icon icon-chain"></i><span class="sr-only">Insert link</span></button>
+            <button type="button" data-toggle="tooltip" data-placement="top" title="Insert image" class="btn btn-hover btn-icon-only"><i class="icon icon-image"></i><span class="sr-only">Insert image</span></button>
+        </div>
     </div>
+    <textarea name="" id="" cols="30" rows="10" class="form-control" style="border-top-left-radius: 0; border-top-right-radius: 0;" placeholder="Enter note here..."></textarea>
 </div>
 [/preview]
+```html
+<div style="max-width: 425px; margin: 0;">
+    <div style="background: #f9f9f9; border: 1px solid #ccc; border-bottom:0;" class="btn-toolbar btn-toolbar-hover">
+        <div class="btn-group">
+            <button type="button" class="btn btn-default btn-hover dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                Arial <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li class="active"><a href="#">Arial</a></li>
+                <li><a href="#">Georgia</a></li>
+                <li><a href="#">Courier</a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button type="button" data-toggle="tooltip" data-placement="top" title="Bold" class="btn btn-hover btn-icon-only"><i class="icon icon-bold"></i><span class="sr-only">Bold</span></button>
+            <button type="button" data-toggle="tooltip" data-placement="top" title="Italicize" class="btn btn-hover active btn-icon-only"><i class="icon icon-italic"></i><span class="sr-only">Italicize</span></button>
+            <button type="button" data-toggle="tooltip" data-placement="top" title="Underline" class="btn btn-hover btn-icon-only"><i class="icon icon-underline"></i><span class="sr-only">Underline</span></button>
+        </div>
+        <div class="btn-group">
+            <button type="button" data-toggle="tooltip" data-placement="top" title="Ordered list" class="btn btn-hover btn-icon-only"><i class="icon icon-list-ol"></i><span class="sr-only">Ordered list</span></button>
+            <button type="button" data-toggle="tooltip" data-placement="top" title="Unordered list" class="btn btn-hover btn-icon-only"><i class="icon icon-list-ul"></i><span class="sr-only">Unordered list</span></button>
+        </div>
+        <div class="btn-group">
+            <button type="button" data-toggle="tooltip" data-placement="top" title="Indent" class="btn btn-hover btn-icon-only"><i class="icon icon-indent"></i><span class="sr-only">Indent</span></button>
+            <button type="button" data-toggle="tooltip" data-placement="top" title="Outdent" class="btn btn-hover btn-icon-only"><i class="icon icon-dedent"></i><span class="sr-only">Outdent</span></button>
+        </div>
+        <div class="btn-group">
+            <button type="button" data-toggle="tooltip" data-placement="top" title="Insert link" class="btn btn-hover btn-icon-only"><i class="icon icon-chain"></i><span class="sr-only">Insert link</span></button>
+            <button type="button" data-toggle="tooltip" data-placement="top" title="Insert image" class="btn btn-hover btn-icon-only"><i class="icon icon-image"></i><span class="sr-only">Insert image</span></button>
+        </div>
+    </div>
+    <textarea name="" id="" cols="30" rows="10" class="form-control" style="border-top-left-radius: 0; border-top-right-radius: 0;" placeholder="Enter note here..."></textarea>
+</div>
+```
 [/pattern]
 

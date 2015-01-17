@@ -25,13 +25,13 @@ Menus appear relative to the control or interaction that triggered the menu. Cli
 - Use sentence case for menu items
 
 [preview]
-<ul style="display: inline-block; position: relative; float: none; width: 200px;" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
-  <li role="presentation"><a href="">Bold <span style="" class="pull-right text-muted">Ctrl+B</span></a></li>
-  <li role="presentation"><a href="">Italic <span style="" class="pull-right text-muted">Ctrl+I</span></a></li>
-  <li role="presentation"><a href="">Underline <span style="" class="pull-right text-muted">Ctrl+U</span></a></li>
+<ul style="display: inline-block; position: relative; float: none; width: 200px;" class="dropdown-menu" role="menu">
+  <li role="presentation"><a href="">Bold <span class="pull-right text-muted">Ctrl+B</span></a></li>
+  <li role="presentation"><a href="">Italic <span class="pull-right text-muted">Ctrl+I</span></a></li>
+  <li role="presentation"><a href="">Underline <span class="pull-right text-muted">Ctrl+U</span></a></li>
   <li role="presentation" class="divider"></li>
-  <li role="presentation"><a href="">Font <i style=" line-height: 18px;" class="icon icon-caret-right text-muted pull-right icon-1x"></i></a></li>
-  <li role="presentation"><a href="">Font size <i style=" line-height: 18px;" class="icon icon-caret-right text-muted pull-right icon-1x"></i></a></li>
+  <li role="presentation"><a href="">Font <i class="icon icon-caret-right pull-right"></i></a></li>
+  <li role="presentation"><a href="">Font size <i class="icon icon-caret-right pull-right"></i></a></li>
   <li role="presentation" class="divider"></li>
   <li role="presentation" class="disabled"><a>Conditional formatting...</a></li>
   <li role="presentation" class="divider"></li>
@@ -40,7 +40,18 @@ Menus appear relative to the control or interaction that triggered the menu. Cli
 [/preview]
 
 ```html
-
+<ul class="dropdown-menu" role="menu">
+  <li role="presentation"><a href="">Bold <span class="pull-right text-muted">Ctrl+B</span></a></li>
+  <li role="presentation"><a href="">Italic <span class="pull-right text-muted">Ctrl+I</span></a></li>
+  <li role="presentation"><a href="">Underline <span class="pull-right text-muted">Ctrl+U</span></a></li>
+  <li role="presentation" class="divider"></li>
+  <li role="presentation"><a href="">Font <i class="icon icon-caret-right pull-right"></i></a></li>
+  <li role="presentation"><a href="">Font size <i class="icon icon-caret-right pull-right"></i></a></li>
+  <li role="presentation" class="divider"></li>
+  <li role="presentation" class="disabled"><a>Conditional formatting...</a></li>
+  <li role="presentation" class="divider"></li>
+  <li role="presentation"><a href="">Clear formatting</a></li>
+</ul>
 ```
 
 [/pattern]
@@ -50,11 +61,17 @@ Menus appear relative to the control or interaction that triggered the menu. Cli
 ### Submenus
 Submenus help organize menu items.
 [preview]
-<ul style="display: inline-block; position: relative; float: none; width: 200px;" class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
-  <li role="presentation"><a href="">Submenu item <i style=" line-height: 18px;" class="icon icon-caret-right text-muted pull-right icon-1x"></i></a></li>
-  <li role="presentation" class="disabled"><a href="">Disabled submenu item <i style=" line-height: 18px;" class="icon icon-caret-right text-muted pull-right icon-1x"></i></a></li>
+<ul style="display: inline-block; position: relative; float: none; width: 200px;" class="dropdown-menu" role="menu">
+  <li role="presentation"><a href="">Submenu item <i class="icon icon-caret-right pull-right"></i></a></li>
+  <li role="presentation" class="disabled"><a href="">Disabled submenu item <i class="icon icon-caret-right pull-right"></i></a></li>
 </ul>
 [/preview]
+```html
+<ul class="dropdown-menu" role="menu">
+  <li role="presentation"><a href="">Submenu item <i class="icon icon-caret-right pull-right"></i></a></li>
+  <li role="presentation" class="disabled"><a href="">Disabled submenu item <i class="icon icon-caret-right pull-right"></i></a></li>
+</ul>
+```
 [/pattern]
 
 [pattern]
@@ -64,20 +81,28 @@ Use icons for menu items that have a common, easily recognizable icon. You don't
 If you have an icon in a menu, ensure that all menu items are aligned appropriately.
 
 [preview]
-<ul style="display: inline-block; position: relative; float: none; width: 200px;" class="dropdown-menu has-icon" role="menu" aria-labelledby="dropdownMenu2">
+<ul style="display: inline-block; position: relative; float: none; width: 200px;" class="dropdown-menu has-icon" role="menu">
   <li role="presentation"><a href=""><i class="icon icon-fw icon-star dropdown-menu-icon"></i> Star</a></li>
   <li role="presentation"><a href="">Share...</a></li>
   <li class="divider" role="presentation"></li>
   <li role="presentation"><a href=""><i class="icon icon-fw icon-trash-o dropdown-menu-icon"></i> Remove</a></li>
 </ul>
 [/preview]
+```html
+<ul class="dropdown-menu has-icon" role="menu">
+  <li role="presentation"><a href=""><i class="icon icon-fw icon-star dropdown-menu-icon"></i> Star</a></li>
+  <li role="presentation"><a href="">Share...</a></li>
+  <li class="divider" role="presentation"></li>
+  <li role="presentation"><a href=""><i class="icon icon-fw icon-trash-o dropdown-menu-icon"></i> Remove</a></li>
+</ul>
+```
 [/pattern]
 
 [pattern]
 ### Form controls
 Sometimes menus can contain form elements like checkboxes. Use checkboxes for both single and multi-select options. When dealing with a multi-selectable collection of checkboxes, it's likely beneficial to keep the menu open after items are checked. Otherwise, menus should close after items are clicked.
 [preview]
-<ul style="display: inline-block; position: relative; float: none; width: 200px;" class="dropdown-menu has-icon" role="menu" aria-labelledby="dropdownMenu2">
+<ul style="display: inline-block; position: relative; float: none; width: 200px;" class="dropdown-menu has-icon" role="menu">
   <li class="dropdown-header">Single-select</li>
   <li role="presentation"><a href=""><i class="icon icon-fw dropdown-menu-icon"></i> 1.0</a></li>
   <li role="presentation"><a href=""><i class="icon icon-fw icon-check dropdown-menu-icon"></i> 1.5</a></li>
@@ -87,7 +112,19 @@ Sometimes menus can contain form elements like checkboxes. Use checkboxes for bo
   <li role="presentation"><a href=""><i class="icon icon-fw icon-check dropdown-menu-icon"></i> Grid lines</a></li>
   <li role="presentation"><a href=""><i class="icon icon-fw icon-check dropdown-menu-icon"></i> Rulers</a></li>
   <li role="presentation"><a href=""><i class="icon icon-fw dropdown-menu-icon"></i> Margins</a></li>
-  
 </ul>
 [/preview]
+```html
+<ul class="dropdown-menu has-icon" role="menu">
+  <li class="dropdown-header">Single-select</li>
+  <li role="presentation"><a href=""><i class="icon icon-fw dropdown-menu-icon"></i> 1.0</a></li>
+  <li role="presentation"><a href=""><i class="icon icon-fw icon-check dropdown-menu-icon"></i> 1.5</a></li>
+  <li role="presentation"><a href=""><i class="icon icon-fw dropdown-menu-icon"></i> 2.0</a></li>
+  <li class="divider" role="presentation"></li>
+  <li class="dropdown-header">Multi-select</li>
+  <li role="presentation"><a href=""><i class="icon icon-fw icon-check dropdown-menu-icon"></i> Grid lines</a></li>
+  <li role="presentation"><a href=""><i class="icon icon-fw icon-check dropdown-menu-icon"></i> Rulers</a></li>
+  <li role="presentation"><a href=""><i class="icon icon-fw dropdown-menu-icon"></i> Margins</a></li>
+</ul>
+```
 [/pattern]

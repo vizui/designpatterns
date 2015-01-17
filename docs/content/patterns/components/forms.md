@@ -57,6 +57,15 @@ Field widths should communicate the expected or max length of content. Use consi
   </div>
 </form>
 [/preview]
+```html
+<input type="text" class="form-control-width-xs form-control" value="75px">
+<input type="text" class="form-control-width-sm form-control" value="150px" >
+<input type="text" class="form-control-width-sm form-control" value="150px" >
+<input type="text" class="form-control-width-md form-control" value="250px" >
+<input type="text" class="form-control-width-lg form-control" value="350px" >
+<input type="text" class="form-control-width-fill form-control" value="100%" >
+```
+
 [/pattern]
 
 [pattern]
