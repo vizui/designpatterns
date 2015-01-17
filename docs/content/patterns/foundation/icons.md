@@ -3,7 +3,7 @@ title: "Icons"
 ---
 [pattern]
 <h3>Icons</h3>
-Application icons are created to be crisp at 14x14 with some minor variation in width. These icons are derived from [Font Awesome](http://fortawesome.github.io/Font-Awesome/).
+Application icons are created to be crisp at 14x14 with some minor variation in width. These icons are derived from [Font Awesome](http://fortawesome.github.io/Font-Awesome/) 4.2.0.
 
 Due to some organizations blocking web font downloads, these icons are being presented as an SVG sprite. The source SVG files are on Github. Your application and audience may benefit from other methods of serving icons.
 
