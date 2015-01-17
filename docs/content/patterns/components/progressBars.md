@@ -11,8 +11,8 @@ Progress bars should be used when there is a determinate amount of time/progress
 #### Determinate progress bar
 [preview]
 <div style="max-width: 200px;">
-    <div style="margin-bottom: 6px;" class="clearfix">
-        <div class="pull-left">Importing...</div>
+    <div class="progress-label">
+        Importing...
         <span id="exampleProgressBarValue" class="pull-right text-muted">60%</span>
     </div>
     <div class="progress">
@@ -21,13 +21,23 @@ Progress bars should be used when there is a determinate amount of time/progress
     </div>
 </div>
 [/preview]
+```html
+<div class="progress-labels">
+    Importing...
+    <span id="exampleProgressBarValue" class="pull-right text-muted">60%</span>
+</div>
+<div class="progress">
+    <div id="exampleProgressBar" class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+    </div>
+</div>
+```
 
 #### Indeterminate progress bar
 [preview]
 <div style="max-width: 200px;">
-    <div style="margin-bottom: 6px;" class="clearfix">
-        <div class="pull-left">Finalizing...</div>
-        <span class="pull-right text-muted">100%</span>
+    <div class="progress-label">
+        Finalizing...
+        <span id="exampleProgressBarValue" class="pull-right text-muted">100%</span>
     </div>
     <div class="progress">
       <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
@@ -37,7 +47,14 @@ Progress bars should be used when there is a determinate amount of time/progress
 [/preview]
 
 ```html
-
+<div class="progress-label">
+    Finalizing...
+    <span id="exampleProgressBarValue" class="pull-right text-muted">100%</span>
+</div>
+<div class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
+    </div>
+</div>
 ```
 [/pattern]
 
@@ -52,6 +69,10 @@ For buttons with text, the load spinner can appear where the icon would appear. 
 <button class="btn btn-default">Load more</button>
 <button class="btn btn-default" disabled><i class="loading-icon"></i> Loading...</button>
 [/preview]
+```html
+<button class="btn btn-default">Load more</button>
+<button class="btn btn-default" disabled><i class="loading-icon"></i> Loading...</button>
+```
 
 #### Loading button with icon only
 If a simple action is initiated from an icon-only button, the icon can be replaced with the load spinner until the action is complete.
@@ -60,6 +81,11 @@ If a simple action is initiated from an icon-only button, the icon can be replac
 <button class="btn btn-default btn-icon-only loading-background" disabled><i style="visibility: hidden;" class="icon icon-star-o"></i></button>
 <button class="btn btn-default btn-icon-only"><i class="icon icon-star"></i></button>
 [/preview]
+```html
+<button class="btn btn-default btn-icon-only"><i class="icon icon-star-o"></i></button>
+<button class="btn btn-default btn-icon-only loading-background" disabled><i style="visibility: hidden;" class="icon icon-star-o"></i></button>
+<button class="btn btn-default btn-icon-only"><i class="icon icon-star"></i></button>
+```
 
 #### Loading overlay
 In some situations during the process of loading, it may be desired to overlay and block functionality until loading is complete.
@@ -101,6 +127,11 @@ In some situations during the process of loading, it may be desired to overlay a
     </div>
 </div>
 [/preview]
+```html
+<div class="loading-overlay">
+    <i class="loading-icon"></i><div>Loading...</div>
+</div>
+```
 
 
 #### Loading standalone
@@ -109,7 +140,13 @@ When loading data for the first time or loading additional data, use a flat load
 <div class="loading">
     <i class="loading-icon"></i>
 </div>
-<div class="text-center  text-muted">Loading cases...</div>
+<div class="text-center text-muted">Loading cases...</div>
 [/preview]
+```html
+<div class="loading">
+    <i class="loading-icon"></i>
+</div>
+<div class="text-center text-muted">Loading cases...</div>
+```
 
 [/pattern]
