@@ -1,7 +1,7 @@
 @import "../../less/usptostrap.less";
 @import "pattern-library-hjs-github";
 
-@pl-background-color: #d6d7da;
+@pl-background-color: #F3F4F5;
 // @navbar-height: 42px;
 @pl-header-bg: @brand-primary;
 @pl-sidebar-width: 200px;
@@ -20,6 +20,7 @@ html, body {
 body {
     position: relative;
     overflow-y: auto;
+    background-color: @pl-background-color;
 }
 
 .pl-palette-color {
@@ -295,19 +296,23 @@ body {
         }
 
         .pl-preview+pre {
-            margin-top: 20px;
+            margin: 0 -60px 0 -60px;
+            padding: 20px 60px;
+            border-bottom: 1px solid #eee;
+            background: #fafafb;
         }
 
         pre {
             display: none;
             border-radius: 0;
             border: 0;
-            background: none;
             padding: 0;
         }
 
-        hljs {
-            margin-bottom: 20px;
+        .hljs {
+            padding: 0;
+            word-wrap: normal;
+            white-space: pre;
         }
 
     }
