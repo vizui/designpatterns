@@ -18,23 +18,23 @@ title: "Typography"
 [pattern]
 ### Weights
 
-<div class="text-muted">Windows 7 may not have Segoe UI Thin if <a href="http://support.microsoft.com/kb/2729094">KB2729094</a> has not been applied.</div>
+<div class="text-muted">Windows 7 may not have Segoe UI Semilight if <a href="http://support.microsoft.com/kb/2729094">KB2729094</a> has not been applied.</div>
 
 [preview]
 <div style="font-size: 15px">
     <p style="font-weight: 700">700 - Bold: The quick brown fox jumps over the lazy dog</p>
-    <p style="font-weight: 600">600 - Semi-bold: The quick brown fox jumps over the lazy dog</p>
+    <p style="font-weight: 600">600 - Semibold: The quick brown fox jumps over the lazy dog</p>
     <p style="font-weight: 400">400 - Regular: The quick brown fox jumps over the lazy dog</p>
-    <p style="font-weight: 300">300 - Light: The quick brown fox jumps over the lazy dog</p>
-    <p style="font-weight: 200">200 - Thin: The quick brown fox jumps over the lazy dog</p>
+    <p style="font-weight: 300">300 - Semilight: The quick brown fox jumps over the lazy dog</p>
+    <p style="font-weight: 200">200 - Light/thin: The quick brown fox jumps over the lazy dog</p>
 </div>
 [/preview]
 ```html
 <p style="font-weight: 700">700 - Bold: The quick brown fox jumps over the lazy dog</p>
-<p style="font-weight: 600">600 - Semi-bold: The quick brown fox jumps over the lazy dog</p>
+<p style="font-weight: 600">600 - Semibold: The quick brown fox jumps over the lazy dog</p>
 <p style="font-weight: 400">400 - Regular: The quick brown fox jumps over the lazy dog</p>
-<p style="font-weight: 300">300 - Light: The quick brown fox jumps over the lazy dog</p>
-<p style="font-weight: 200">200 - Thin: The quick brown fox jumps over the lazy dog</p>
+<p style="font-weight: 300">300 - Semilight: The quick brown fox jumps over the lazy dog</p>
+<p style="font-weight: 200">200 - Light: The quick brown fox jumps over the lazy dog</p>
 ```
 
 [/pattern]
