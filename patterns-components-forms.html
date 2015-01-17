@@ -16,7 +16,7 @@
 
         <link rel="stylesheet" href="styles/f2dd75fb.vendor.css">
 
-        <link rel="stylesheet" href="styles/cc9784cf.main.css">
+        <link rel="stylesheet" href="styles/437b7f0a.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -271,12 +271,6 @@
 <li>Place unrelated inputs on the same line</li>
 </ul>
 <p> </p>
-<!-- This is an evolving document. Here are some things that are still being worked on:
-<span class="label label-warning">TODO</span> Advanced options<br>
-<span class="label label-warning">TODO</span> Dynamic/evolving forms<br>
-<span class="label label-warning">TODO</span> Input/format parsing<br>
-<span class="label label-warning">TODO</span> Add/remove fields (e.g., multiple phone numbers)<br>
-<span class="label label-warning">TODO</span> More examples<br>-->
 </div>
 <div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="field-widths" href="#field-widths"><i class="icon icon-link"></i></a>Field widths</h3>
@@ -315,6 +309,13 @@ Field widths should communicate the expected or max length of content. Use consi
   </div>
 </form>
 </div>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control-width-xs form-control"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"75px"</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control-width-sm form-control"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"150px"</span> &gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control-width-sm form-control"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"150px"</span> &gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control-width-md form-control"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"250px"</span> &gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control-width-lg form-control"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"350px"</span> &gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control-width-fill form-control"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"100%"</span> &gt;</span>
+</code></pre>
 </div>
 <div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="labels" href="#labels"><i class="icon icon-link"></i></a>Labels</h3></p>
@@ -409,7 +410,7 @@ Required fields are generally marked with an asterisk. For external, public faci
     </div>
     <div class="form-group col-sm-offset-3">
       <label for="nameInput3" class="control-label required">Name</label>
-      <input type="text" class="form-control form-control-width-md" id="nameInput3" required="">
+      <input type="text" class="form-control form-control-width-md" id="nameInput3" required="" aria-required="true">
     </div>
     <div class="form-group col-sm-offset-3">
       <label for="emailInput3" class="control-label">Email</label>
@@ -422,7 +423,7 @@ Required fields are generally marked with an asterisk. For external, public faci
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"nameInput5"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-3 control-label required"</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-9"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control form-control-width-md"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"nameInput5"</span> <span class="hljs-attribute">required</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control form-control-width-md"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"nameInput5"</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
@@ -441,7 +442,7 @@ Required fields are generally marked with an asterisk. For external, public faci
     <div class="form-group">
       <label for="nm7" class="col-sm-3 control-label required">Name</label>
       <div class="col-sm-9">
-        <input type="text" class="form-control form-control-width-md" id="nm7" required="">
+        <input type="text" class="form-control form-control-width-md" id="nm7" required="" aria-required="true">
       </div>
     </div>
     <div class="form-group">
@@ -457,7 +458,7 @@ Required fields are generally marked with an asterisk. For external, public faci
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"em7"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-3 control-label required"</span>&gt;</span>Email<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-9"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control form-control-width-md"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"em7"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control form-control-width-md"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"em7"</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
@@ -497,14 +498,14 @@ Required fields are generally marked with an asterisk. For external, public faci
     <div class="form-group has-error">
       <label for="em9" class="col-sm-3 control-label required">Invalid</label>
       <div class="col-sm-9">
-        <input type="email" class="form-control form-control-width-md" id="em9" value="john.smith@gmail">
+        <input type="email" class="form-control form-control-width-md" id="em9" value="john.smith@gmail" required="" aria-required="true">
         <span class="help-block">This email address is not valid.<span>
       </span></span></div>
     </div>
     <div class="form-group has-error">
       <label for="pw9" class="col-sm-3 control-label required">Required</label>
       <div class="col-sm-9">
-        <input type="text" class="form-control form-control-width-md" id="pw9">
+        <input type="text" class="form-control form-control-width-md" required="" aria-required="true" id="pw9">
         <span class="help-block">This field is required.<span>
       </span></span></div>
     </div>
@@ -520,14 +521,14 @@ Required fields are generally marked with an asterisk. For external, public faci
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group has-error"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"em9"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-3 control-label required"</span>&gt;</span>Email<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-9"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control form-control-width-md"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"em9"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"john.smith@gmail"</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control form-control-width-md"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"em9"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"john.smith@gmail"</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"help-block"</span>&gt;</span>This email address is not valid.<span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group has-error"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"pw9"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-3 control-label required"</span>&gt;</span>Password<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-9"</span>&gt;</span>
-      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"password"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control form-control-width-md"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"pw9"</span> &gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"password"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control form-control-width-md"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"pw9"</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"help-block"</span>&gt;</span>This field is required.<span class="hljs-tag">&lt;<span class="hljs-title">span</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
   <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
@@ -552,13 +553,13 @@ Required fields are generally marked with an asterisk. For external, public faci
     <div class="form-group">
       <label for="em10" class="col-sm-3 control-label required">Email</label>
       <div class="col-sm-9">
-        <input type="email" class="form-control" id="em10" value="john.smith@gmail.com">
+        <input type="email" class="form-control" id="em10" value="john.smith@gmail.com" required="" aria-required="true">
       </div>
     </div>
     <div class="form-group">
       <label for="pw10" class="col-sm-3 control-label required">Password</label>
       <div class="col-sm-9">
-        <input type="password" class="form-control" id="pw10">
+        <input type="password" class="form-control" id="pw10" required="" aria-required="true">
       </div>
     </div>
     <div class="form-group">
@@ -681,13 +682,13 @@ If you have many fields, consider organizing related fields into groups. Groups 
         <div class="form-group">
             <label for="fg1" class="col-sm-3 control-label required">Email</label>
             <div class="col-sm-9">
-              <input type="email" class="form-control form-control-width-md" id="fg1">
+              <input type="email" class="form-control form-control-width-md" id="fg1" required="" aria-required="true">
             </div>
         </div>
         <div class="form-group">
             <label for="fg2" class="col-sm-3 control-label required">Full name</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control-width-md form-control" id="fg2">
+              <input type="text" class="form-control-width-md form-control" id="fg2" required="" aria-required="true">
             </div>
         </div>
         <div class="form-group">
@@ -698,7 +699,7 @@ If you have many fields, consider organizing related fields into groups. Groups 
         <div class="form-group">
             <label for="fg3" class="col-sm-3 control-label required">Address line 1</label>
             <div class="col-sm-9">
-              <input type="text" class="form-control form-control-width-md" id="fg3">
+              <input type="text" class="form-control form-control-width-md" id="fg3" required="" aria-required="true">
             </div>
         </div>
     </form>
@@ -714,13 +715,13 @@ If you have many fields, consider organizing related fields into groups. Groups 
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"fg1"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-3 control-label required"</span>&gt;</span>Email<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-9"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control form-control-width-md"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"fg1"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control form-control-width-md"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"fg1"</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"fg2"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-3 control-label required"</span>&gt;</span>Full name<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-9"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control form-control-width-md"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"fg2"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control form-control-width-md"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"fg2"</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
@@ -731,7 +732,7 @@ If you have many fields, consider organizing related fields into groups. Groups 
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"fg3"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-3 control-label required"</span>&gt;</span>Address line 1<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-9"</span>&gt;</span>
-              <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control form-control-width-md"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"fg3"</span>&gt;</span>
+              <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control form-control-width-md"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"fg3"</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">form</span>&gt;</span>
@@ -813,26 +814,26 @@ If you have many fields, consider organizing related fields into groups. Groups 
       <div class="form-group">
         <label for="em12" class="col-sm-3 control-label required">Email</label>
         <div class="col-sm-9">
-          <input type="email" class="form-control form-control-width-md" id="em12">
+          <input type="email" class="form-control form-control-width-md" id="em12" required="" aria-required="true">
           <span class="help-block">Your email will be used to log in.</span>
         </div>
       </div>
       <div class="form-group">
         <label for="n12" class="col-sm-3 control-label required">Name</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control-width-md form-control" id="n12">
+          <input type="text" class="form-control-width-md form-control" id="n12" required="" aria-required="true">
         </div>
       </div>
       <div class="form-group">
         <label for="ci12" class="col-sm-3 control-label required">City</label>
         <div class="col-sm-9">
-          <input type="text" class="form-control-width-md form-control" id="ci12">
+          <input type="text" class="form-control-width-md form-control" id="ci12" required="" aria-required="true">
         </div>
        </div>
        <div class="form-group">
         <label for="si12" class="col-sm-3 control-label required">State</label>
         <div class="col-sm-9">
-            <select id="si12" class="form-control-width-xs select2 form-control">
+            <select id="si12" required="" aria-required="true" class="form-control-width-xs select2 form-control">
               <option>AL</option>
               <option>AK</option>
               <option>AZ</option>
@@ -843,7 +844,7 @@ If you have many fields, consider organizing related fields into groups. Groups 
         </div>
       </div>
       <div class="form-group">
-        <label class="col-sm-3 control-label required">Shipping</label>
+        <label class="col-sm-3 control-label">Shipping</label>
         <div class="col-sm-9">
           <div class="radio">
             <label><input type="radio" name="opr2" id="opr21" value="option1" checked="checked">UPS</label>
@@ -867,7 +868,7 @@ If you have many fields, consider organizing related fields into groups. Groups 
 <pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">form</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-horizontal "</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"max-width: 450px;"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"form"</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"em12"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-3 control-label required"</span>&gt;</span>Email<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"em12"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-3 control-label"</span>&gt;</span>Email<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-9"</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control form-control-width-md"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"em12"</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"help-block"</span>&gt;</span>Your email will be used to log in.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
@@ -876,19 +877,19 @@ If you have many fields, consider organizing related fields into groups. Groups 
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"n12"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-3 control-label required"</span>&gt;</span>Name<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-9"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control form-control-width-md"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"n12"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control form-control-width-md"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"n12"</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"ci12"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-3 control-label required"</span>&gt;</span>City<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-9"</span>&gt;</span>
-          <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control form-control-width-md"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"ci12"</span>&gt;</span>
+          <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control form-control-width-md"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"ci12"</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
     <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"si12"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-3 control-label required"</span>&gt;</span>State<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-9"</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"si12"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control form-control-width-md"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"si12"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control form-control-width-md"</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>AL<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>AK<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
               <span class="hljs-tag">&lt;<span class="hljs-title">option</span>&gt;</span>AZ<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
@@ -898,7 +899,7 @@ If you have many fields, consider organizing related fields into groups. Groups 
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-3 control-label required"</span>&gt;</span>Shipping<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-3 control-label"</span>&gt;</span>Shipping<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-9"</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"radio"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">label</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"radio"</span> <span class="hljs-attribute">name</span>=<span class="hljs-value">"opr2"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"opr21"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"option1"</span> <span class="hljs-attribute">checked</span>&gt;</span>UPS<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
@@ -940,18 +941,18 @@ If you have many fields, consider organizing related fields into groups. Groups 
           </div>
           <div class="form-group has-error">
             <label class="control-label required" for="em12">USPTO email address</label>
-            <input type="email" class="form-control" id="em12" value="john.smith@gmail.com">
+            <input type="email" class="form-control" id="em12" value="john.smith@gmail.com" required="" aria-required="true">
             <span class="help-block">Email must end with uspto.gov.</span>
           </div>
           <div class="form-group has-error">
             <label class="control-label required" for="eid12">Employee ID</label> <a href="#" class="pull-right">Find my Employee ID</a>
-            <input type="text" class="form-control" id="eid12" value="238942a">
+            <input type="text" class="form-control" id="eid12" value="238942a" required="" aria-required="true">
             <span class="help-block">Employee ID must be numeric.</span>
           </div>
           <div class="form-group">
             <label class="control-label required" for="t12">Title</label>
             <div>
-                <select class="select2 form-control-width-sm form-control" id="t12">
+                <select class="select2 form-control-width-sm form-control" id="t12" required="" aria-required="true">
                   <option value="Mr.">Mr.</option>
                   <option value="Mrs.">Mrs.</option>
                   <option value="Miss">Miss</option>
@@ -960,20 +961,20 @@ If you have many fields, consider organizing related fields into groups. Groups 
           </div>
           <div class="form-group">
             <label class="control-label required" for="fn12">First name</label>
-            <input type="text" class="form-control" id="fn12" value="John">
+            <input type="text" class="form-control" id="fn12" value="John" required="" aria-required="true">
           </div>
           <div class="form-group has-error">
             <label class="control-label required" for="mn12">Middle name</label>
-            <input type="text" class="form-control" id="mn12">
+            <input type="text" class="form-control" id="mn12" required="" aria-required="true">
             <span class="help-block">This field is required.</span>
           </div>
           <div class="form-group">
             <label class="control-label required" for="ln12">Last name</label>
-            <input type="text" class="form-control" id="ln12" value="Smith">
+            <input type="text" class="form-control" id="ln12" value="Smith" required="" aria-required="true">
           </div>
           <div class="form-group">
             <label class="control-label required" for="phone12">Telephone number</label>
-            <input type="text" class="form-control" id="phone12">
+            <input type="text" class="form-control" id="phone12" required="" aria-required="true">
           </div>
           <div class="form-group">
             <br>
@@ -981,33 +982,33 @@ If you have many fields, consider organizing related fields into groups. Groups 
           </div>
           <div class="form-group">
             <label class="control-label required" for="country12">Country</label>
-            <select class="select2 form-control" id="country12">
+            <select class="select2 form-control" id="country12" required="" aria-required="true">
               <option value="Mr.">United States</option>
             </select>
           </div>
           <div class="form-group">
             <label class="control-label required" for="adline1">Address line 1</label>
-            <input type="text" class="form-control" id="adline1">
+            <input type="text" class="form-control" id="adline1" required="" aria-required="true">
           </div>
           <div class="form-group">
             <label class="control-label required" for="adline2">Address line 2</label>
-            <input type="text" class="form-control" id="adline2">
+            <input type="text" class="form-control" id="adline2" required="" aria-required="true">
           </div>
           <div class="form-group">
             <label class="control-label required" for="city12">City</label>
-            <input type="text" class="form-control" id="city12">
+            <input type="text" class="form-control" id="city12" required="" aria-required="true">
           </div>
           <div class="row">
             <div class="col-sm-6">
               <div class="form-group">
                 <label class="control-label required" for="state12">State</label>
-                <input type="text" class="form-control" id="state12">
+                <input type="text" class="form-control" id="state12" required="" aria-required="true">
               </div>
             </div>
             <div class="col-sm-6">
               <div class="form-group">
                 <label class="control-label required" for="zipcode12">Zip code</label>
-                <input type="text" class="form-control" id="zipcode12">
+                <input type="text" class="form-control" id="zipcode12" required="" aria-required="true">
               </div>
             </div>
           </div>
@@ -1026,17 +1027,17 @@ If you have many fields, consider organizing related fields into groups. Groups 
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group has-error"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"control-label required"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"em12"</span>&gt;</span>USPTO email address<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"em12"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"john.smith@gmail.com"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"email"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"em12"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"john.smith@gmail.com"</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"help-block"</span>&gt;</span>Email must end with uspto.gov.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group has-error"</span> &gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"control-label required"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"eid12"</span>&gt;</span>Employee ID<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"pull-right"</span>&gt;</span>Find my Employee ID<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"eid12"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"238942a"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"eid12"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"238942a"</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"help-block"</span>&gt;</span>Employee ID must be numeric.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"control-label required"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"t12"</span>&gt;</span>Title<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"t12"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"t12"</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Mr."</span>&gt;</span>Mr.<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Mrs."</span>&gt;</span>Mrs.<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Miss"</span>&gt;</span>Miss<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
@@ -1044,20 +1045,20 @@ If you have many fields, consider organizing related fields into groups. Groups 
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"control-label required"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"fn12"</span>&gt;</span>First name<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"fn12"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"John"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"fn12"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"John"</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group has-error"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"control-label required"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"mn12"</span>&gt;</span>Middle name<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"mn12"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"mn12"</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"help-block"</span>&gt;</span>This field is required.<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"control-label required"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"ln12"</span>&gt;</span>Last name<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"ln12"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Smith"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"ln12"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Smith"</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"control-label required"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"phone12"</span>&gt;</span>Telephone number<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"phone12"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"phone12"</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">br</span>&gt;</span>
@@ -1065,33 +1066,33 @@ If you have many fields, consider organizing related fields into groups. Groups 
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"control-label required"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"country12"</span>&gt;</span>Country<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"country12"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">select</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"country12"</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">option</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"Mr."</span>&gt;</span>United States<span class="hljs-tag">&lt;/<span class="hljs-title">option</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">select</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"control-label required"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"adline1"</span>&gt;</span>Address line 1<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"adline1"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"adline1"</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"control-label required"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"adline2"</span>&gt;</span>Address line 2<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"adline2"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"adline2"</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"control-label required"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"city12"</span>&gt;</span>City<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"city12"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"city12"</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"row"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-6"</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"control-label required"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"state12"</span>&gt;</span>State<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"state12"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"state12"</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"col-sm-6"</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-group"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-title">label</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"control-label required"</span> <span class="hljs-attribute">for</span>=<span class="hljs-value">"zipcode12"</span>&gt;</span>Zip code<span class="hljs-tag">&lt;/<span class="hljs-title">label</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"zipcode12"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"form-control"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"zipcode12"</span> <span class="hljs-attribute">required</span> <span class="hljs-attribute">aria-required</span>=<span class="hljs-value">"true"</span>&gt;</span>
           <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>

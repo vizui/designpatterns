@@ -16,7 +16,7 @@
 
         <link rel="stylesheet" href="styles/f2dd75fb.vendor.css">
 
-        <link rel="stylesheet" href="styles/cc9784cf.main.css">
+        <link rel="stylesheet" href="styles/437b7f0a.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -270,7 +270,7 @@ The selected tab color should be the same color as the tab content.</p>
 <ul class="nav nav-tabs" role="tablist">
   <li class="active"><a href="#" role="tab" data-toggle="tab">Active</a></li>
   <li><a href="#" role="tab" data-toggle="tab">Normal</a></li>
-  <li class="disabled"><a href="#" role="tab">Disabled</a></li>
+  <li class="disabled"><a role="tab">Disabled</a></li>
   <li class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">
           Dropdown <span class="caret"></span>
@@ -288,6 +288,12 @@ The selected tab color should be the same color as the tab content.</p>
     </div>
 </div>
 </div>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav nav-tabs"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tablist"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Active<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Normal<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"disabled"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
 </div>
 <div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="light-tabs" href="#light-tabs"><i class="icon icon-link"></i></a>Light tabs</h3>
@@ -296,7 +302,7 @@ Use when the tabs need less emphasis in relation to other navigational elements.
 <ul class="nav nav-tabs nav-tabs-light" role="tablist">
   <li class="active"><a href="#" role="tab" data-toggle="tab">Active</a></li>
   <li><a href="#" role="tab" data-toggle="tab">Normal</a></li>
-  <li class="disabled"><a href="#" role="tab">Disabled</a></li>
+  <li class="disabled"><a role="tab">Disabled</a></li>
   <li class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">
           Dropdown <span class="caret"></span>
@@ -309,6 +315,12 @@ Use when the tabs need less emphasis in relation to other navigational elements.
   </li>
 </ul>
 </div>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav nav-tabs nav-tabs-light"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tablist"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Active<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Normal<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"disabled"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
 </div>
 <div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="pill-tabs" href="#pill-tabs"><i class="icon icon-link"></i></a>Pill tabs</h3>
@@ -317,7 +329,7 @@ Use when the tabs need even less emphasis in relation to other navigational elem
 <ul class="nav nav-pills" role="tablist">
   <li class="active"><a href="#" role="tab" data-toggle="tab">Active</a></li>
   <li><a href="#" role="tab" data-toggle="tab">Normal</a></li>
-  <li class="disabled"><a href="#" role="tab">Disabled</a></li>
+  <li class="disabled"><a role="tab">Disabled</a></li>
   <li class="dropdown">
       <a class="dropdown-toggle" data-toggle="dropdown" href="#">
           Dropdown <span class="caret"></span>
@@ -330,6 +342,12 @@ Use when the tabs need even less emphasis in relation to other navigational elem
   </li>
 </ul>
 </div>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav nav-pills"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tablist"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Active<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Normal<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"disabled"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
 </div>
 <div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="nested-tabs" href="#nested-tabs"><i class="icon icon-link"></i></a>Nested tabs</h3></p>
@@ -349,6 +367,20 @@ Use when the tabs need even less emphasis in relation to other navigational elem
     </div>
 </div>
 </div>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav nav-tabs"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tablist"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Template<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>History<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Analytics<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"border-top: none; border-radius: 0;"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel panel-default"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav nav-tabs nav-tabs-light"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tablist"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>HTML<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Preview<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-body"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
 </div>
 <div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="justified-tabs" href="#justified-tabs"><i class="icon icon-link"></i></a>Justified tabs</h3>
@@ -356,7 +388,8 @@ Evenly sized tabs distributed among the width of the container. This can improve
 <div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code" style="opacity: .5"></i></div>
 <div style="width: 300px">
     <ul class="nav nav-tabs nav-justified text-center" role="tablist">
-      <li class="active"><a href="#" role="tab" data-toggle="tab">Recent</a></li>
+      <li class="active"><a href="#" role="tab" data-toggle="tab">Activity</a></li>
+      <li><a href="#" role="tab" data-toggle="tab">Info</a></li>
       <li><a href="#" role="tab" data-toggle="tab">Notes</a></li>
     </ul>
     <div style="border-top: none; border-radius: 0" class="panel panel-default">
@@ -366,7 +399,11 @@ Evenly sized tabs distributed among the width of the container. This can improve
     </div>
 </div>
 </div>
-<pre><code class="hljs html">
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav nav-tabs nav-justified"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tablist"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Activity<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Notes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
 </code></pre>
 </div>
 

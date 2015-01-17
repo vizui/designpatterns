@@ -16,7 +16,7 @@
 
         <link rel="stylesheet" href="styles/f2dd75fb.vendor.css">
 
-        <link rel="stylesheet" href="styles/cc9784cf.main.css">
+        <link rel="stylesheet" href="styles/437b7f0a.main.css">
     </head>
     <body>
     <!--[if lt IE 9]>
@@ -87,8 +87,6 @@
                                     <ul class="nav nav-stacked">
                                         
                                             <li><a title="Styles" href="#styles">Styles</a></li>
-                                        
-                                            <li><a title="Button states" href="#button-states">Button states</a></li>
                                         
                                             <li><a title="Button sizes" href="#button-sizes">Button sizes</a></li>
                                         
@@ -282,22 +280,6 @@ Buttons are used as triggers for actions. Depending on the use case, buttons con
 </code></pre>
 </div>
 <div class="pl-pattern">
-<p><h3><a class="pl-heading-link" id="button-states" href="#button-states"><i class="icon icon-link"></i></a>Button states</h3></p>
-<p>There are 3 different button states:</p>
-<ul>
-<li><strong>Normal</strong>, the available, clickable state.</li>
-<li><strong>Active</strong>, the active, non-clickable state. Add the <code>active</code> class.</li>
-<li><strong>Disabled</strong>, the disabled, non-clickable state. Add the <code>disabled</code> attrbitue or class.</li>
-</ul>
-<div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code" style="opacity: .5"></i></div>
-<button type="button" class="btn btn-primary">Normal</button> <button type="button" class="btn btn-primary active">Active</button> <button type="button" class="btn btn-primary" disabled="disabled">Disabled</button>
-</div>
-<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary"</span>&gt;</span>Normal<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary active"</span>&gt;</span>Active<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">disabled</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-primary"</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
-</code></pre>
-</div>
-<div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="button-sizes" href="#button-sizes"><i class="icon icon-link"></i></a>Button sizes</h3></p>
 <p>There are 4 different button sizes:</p>
 <ul>
@@ -344,14 +326,21 @@ Buttons are used as triggers for actions. Depending on the use case, buttons con
 </div>
 <div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="toggle-buttons" href="#toggle-buttons"><i class="icon icon-link"></i></a>Toggle buttons</h3></p>
-<p>Add the <code>active</code> class to the active button.</p>
+<p>Similar to a checkbox, toggle buttons can be toggled between active or not active.</p>
+<p>Add the <code>active</code> class and the <code>aria-pressed=&quot;true&quot;</code> attribute to a button.</p>
 <div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code" style="opacity: .5"></i></div>
-<button type="button" class="btn btn-default active">Active</button> <button type="button" class="btn btn-default">Normal</button> <div class="btn-group">
+<button type="button" class="btn btn-default active" aria-pressed="true">Active</button> <button type="button" class="btn btn-default">Normal</button> <div class="btn-group">
     <button type="button" class="btn btn-default">Left</button>
-    <button type="button" class="btn btn-default active">Active</button>
+    <button type="button" class="btn btn-default active" aria-pressed="true">Active</button>
     <button type="button" class="btn btn-default">Right</button>
 </div>
 </div>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default active"</span> <span class="hljs-attribute">aria-pressed</span>=<span class="hljs-value">"true"</span>&gt;</span>Active<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span>&gt;</span>Normal<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn-group"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span>&gt;</span>Left<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default active"</span> <span class="hljs-attribute">aria-pressed</span>=<span class="hljs-value">"true"</span>&gt;</span>Active<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span>&gt;</span>Right<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
 </div>
 <div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="dropdown-buttons" href="#dropdown-buttons"><i class="icon icon-link"></i></a>Dropdown buttons</h3>
@@ -370,6 +359,19 @@ Dropdown buttons can provide a menu or popover when clicked.</p>
   </ul>
 </div>
 </div>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn-group"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default dropdown-toggle"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"dropdown"</span> <span class="hljs-attribute">aria-expanded</span>=<span class="hljs-value">"false"</span>&gt;</span>
+    Dropdown <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"caret"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown-menu"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"menu"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Separated link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
 </div>
 <div class="pl-pattern">
 <p><h3><a class="pl-heading-link" id="split-buttons" href="#split-buttons"><i class="icon icon-link"></i></a>Split buttons</h3></p>
@@ -403,7 +405,20 @@ Dropdown buttons can provide a menu or popover when clicked.</p>
   </ul>
 </div>
 </div>
-<pre><code class="hljs html">
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn-group"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">button</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"button"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"btn btn-default dropdown-toggle"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"dropdown"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"caret"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"sr-only"</span>&gt;</span>Toggle Dropdown<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">button</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"dropdown-menu"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"menu"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Another action<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Something else here<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"divider"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span>&gt;</span>Separated link<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
 </code></pre>
 </div>
 <div class="pl-pattern">
