@@ -15,8 +15,9 @@ module.exports = function (grunt) {
     // Configurable paths
     var paths = {
         tmp: '.tmp',
-        app: 'docs',
-        dist: 'docs/dist'
+        docs: 'docs',
+        docsDist: 'docs/dist',
+        libDist: 'dist'
     };
 
     var pkg = grunt.file.readJSON('package.json');
@@ -37,7 +38,7 @@ module.exports = function (grunt) {
                 tasks: ['bowerInstall']
             },
             js: {
-                files: ['<%= paths.app %>/scripts/{,*/}*.js'],
+                files: ['<%= paths.docs %>/scripts/{,*/}*.js'],
                 tasks: ['jshint'],
                 options: {
                     livereload: true
@@ -47,19 +48,15 @@ module.exports = function (grunt) {
                 files: ['Gruntfile.js']
             },
             patterns: {
-                files: ['<%= paths.app %>/*.ejs', '<%= paths.app %>/content/**/*.md'],
+                files: ['<%= paths.docs %>/*.ejs', '<%= paths.docs %>/content/**/*.md'],
                 tasks: ['copy:tpl', 'template', 'patterns:server']
             },
-            // template: {
-            //     files: ['<%= paths.app %>/{,*/}*.html'],
-            //     tasks: ['template']
-            // },
             less: {
-                files: ['less/**/*.less', '<%= paths.app %>/styles/**/*.less'],
+                files: ['less/**/*.less', '<%= paths.docs %>/styles/**/*.less'],
                 tasks: ['less:server', 'autoprefixer']
             },
             styles: {
-                files: ['<%= paths.app %>/styles/{,*/}*.css'],
+                files: ['<%= paths.docs %>/styles/{,*/}*.css'],
                 tasks: ['newer:copy:styles', 'autoprefixer']
             },
             livereload: {
@@ -69,7 +66,7 @@ module.exports = function (grunt) {
                 files: [
                     '<%= paths.tmp %>/{,*/}*.html',
                     '<%= paths.tmp %>/styles/{,*/}*.css',
-                    '<%= paths.app %>/images/{,*/}*'
+                    '<%= paths.docs %>/images/{,*/}*'
                 ]
             }
         },
@@ -105,7 +102,6 @@ module.exports = function (grunt) {
                 port: grunt.option('port') || 9000,
                 open: true,
                 livereload: 35729,
-                // Change this to '0.0.0.0' to access the server from outside
                 hostname: '0.0.0.0'
             },
             livereload: {
@@ -114,14 +110,14 @@ module.exports = function (grunt) {
                         return [
                             connect.static(paths.tmp),
                             connect().use('/bower_components', connect.static('./bower_components')),
-                            connect.static(paths.app)
+                            connect.static(paths.docs)
                         ];
                     }
                 }
             },
             dist: {
                 options: {
-                    base: '<%= paths.dist %>',
+                    base: '<%= paths.docsDist %>',
                     livereload: false
                 }
             }
@@ -134,8 +130,9 @@ module.exports = function (grunt) {
                     dot: true,
                     src: [
                         '<%= paths.tmp %>',
-                        '<%= paths.dist %>/*',
-                        '!<%= paths.dist %>/.git*'
+                        '<%= paths.libDist %>',
+                        '<%= paths.docsDist %>/*',
+                        '!<%= paths.docsDist %>/.git*'
                     ]
                 }]
             },
@@ -143,7 +140,7 @@ module.exports = function (grunt) {
         },
 
         lesslint: {
-            src: ['less/**/_*.less', '<%= paths.app %>/styles/**/_*.less'],
+            src: ['less/**/_*.less', '<%= paths.docs %>/styles/**/_*.less'],
             options: {
                 csslint: {
                     'box-model': false,
@@ -164,8 +161,8 @@ module.exports = function (grunt) {
             },
             all: [
                 'Gruntfile.js',
-                '<%= paths.app %>/scripts/{,*/}*.js',
-                '!<%= paths.app %>/scripts/vendor/*'
+                '<%= paths.docs %>/scripts/{,*/}*.js',
+                '!<%= paths.docs %>/scripts/vendor/*'
             ]
         },
 
@@ -179,14 +176,14 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: 'less',
                     src: ['usptostrap.less'],
-                    dest: 'dist',
+                    dest: '<%= paths.libDist %>/css/',
                     ext: '.min.css'
                 }]
             },
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '<%= paths.app %>/styles',
+                    cwd: '<%= paths.docs %>/styles',
                     src: ['pattern-library.less'],
                     dest: '<%= paths.tmp %>/styles',
                     ext: '.css'
@@ -195,7 +192,7 @@ module.exports = function (grunt) {
             server: {
                 files: [{
                     expand: true,
-                    cwd: '<%= paths.app %>/styles',
+                    cwd: '<%= paths.docs %>/styles',
                     src: ['pattern-library.less'],
                     dest: '<%= paths.tmp %>/styles',
                     ext: '.css'
@@ -221,11 +218,11 @@ module.exports = function (grunt) {
         // Automatically inject Bower components into the HTML file
         bowerInstall: {
             app: {
-                src: ['<%= paths.app %>/header.ejs', '<%= paths.app %>/footer.ejs'],
+                src: ['<%= paths.docs %>/header.ejs', '<%= paths.docs %>/footer.ejs'],
                 exclude: ['bower_components/bootstrap/js/bootstrap.js', 'bower_components/bootstrap/dist/css/bootstrap.css', 'bower_components/bootstrap/dist/js/bootstrap.js']
             },
             less: {
-                src: ['<%= paths.app %>/styles/{,*/}*.{less}']
+                src: ['<%= paths.docs %>/styles/{,*/}*.{less}']
             }
         },
 
@@ -234,11 +231,11 @@ module.exports = function (grunt) {
             dist: {
                 files: {
                     src: [
-                        '<%= paths.dist %>/scripts/{,*/}*.js',
-                        '<%= paths.dist %>/styles/{,*/}*.css',
-                        '<%= paths.dist %>/images/{,*/}*.*',
-                        '<%= paths.dist %>/styles/fonts/{,*/}*.*',
-                        '<%= paths.dist %>/*.{ico,png}'
+                        '<%= paths.docsDist %>/scripts/{,*/}*.js',
+                        '<%= paths.docsDist %>/styles/{,*/}*.css',
+                        '<%= paths.docsDist %>/images/{,*/}*.*',
+                        '<%= paths.docsDist %>/styles/fonts/{,*/}*.*',
+                        '<%= paths.docsDist %>/*.{ico,png}'
                     ]
                 }
             }
@@ -249,7 +246,7 @@ module.exports = function (grunt) {
         // additional tasks can operate on them
         useminPrepare: {
             options: {
-                dest: '<%= paths.dist %>'
+                dest: '<%= paths.docsDist %>'
             },
             html: ['<%= paths.tmp %>/**/*.ejs']
         },
@@ -257,10 +254,10 @@ module.exports = function (grunt) {
         // Performs rewrites based on rev and the useminPrepare configuration
         usemin: {
             options: {
-                assetsDirs: ['<%= paths.dist %>', '<%= paths.dist %>/images']
+                assetsDirs: ['<%= paths.docsDist %>', '<%= paths.docsDist %>/images']
             },
             html: ['<%= paths.tmp %>/**/*.ejs'],
-            css: ['<%= paths.dist %>/styles/{,*/}*.css']
+            css: ['<%= paths.docsDist %>/styles/{,*/}*.css']
         },
 
         // The following *-min tasks produce minified files in the dist folder
@@ -268,23 +265,24 @@ module.exports = function (grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '<%= paths.app %>/images',
+                    cwd: 'images',
                     src: '{,*/}*.{gif,jpeg,jpg,png}',
-                    dest: '<%= paths.dist %>/images'
+                    dest: '<%= paths.libDist %>/images'
                 }]
             }
         },
 
-        svgmin: {
-            dist: {
-                files: [{
-                    expand: true,
-                    cwd: '<%= paths.app %>/images',
-                    src: '{,*/}*.svg',
-                    dest: '<%= paths.dist %>/images'
-                }]
-            }
-        },
+        // was breaking svg sprite
+        // svgmin: {
+        //     dist: {
+        //         files: [{
+        //             expand: true,
+        //             cwd: 'images',
+        //             src: '{,*/}*.svg',
+        //             dest: '<%= paths.libDist %>/images'
+        //         }]
+        //     }
+        // },
 
         htmlmin: {
             dist: {
@@ -302,7 +300,7 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: '.tmp',
                     src: '{,*/}*.html',
-                    dest: '<%= paths.dist %>'
+                    dest: '<%= paths.docsDist %>'
                 }]
             }
         },
@@ -311,13 +309,13 @@ module.exports = function (grunt) {
             server: {
                 options: {
                     variables: config,
-                    patternRoot: '<%= paths.app %>/content',
+                    patternRoot: '<%= paths.docs %>/content',
                     urlRoot: '',
                     template: '<%= paths.tmp %>/pattern.tpl.ejs'
                 },
                 files: [{
                     expand: true,
-                    cwd: '<%= paths.app %>/content',
+                    cwd: '<%= paths.docs %>/content',
                     src: '**/*.md',
                     dest: '<%= paths.tmp %>'
                 }]
@@ -325,13 +323,13 @@ module.exports = function (grunt) {
             dist: {
                 options: {
                     variables: _.extend({ env: 'prod' }, config),
-                    patternRoot: '<%= paths.app %>/content',
+                    patternRoot: '<%= paths.docs %>/content',
                     urlRoot: '',
                     template: '<%= paths.tmp %>/pattern.tpl.ejs'
                 },
                 files: [{
                     expand: true,
-                    cwd: '<%= paths.app %>/content',
+                    cwd: '<%= paths.docs %>/content',
                     src: '**/*.md',
                     dest: '<%= paths.tmp %>'
                 }]
@@ -346,76 +344,69 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     dot: true,
-                    cwd: '<%= paths.app %>',
+                    cwd: '<%= paths.docs %>',
                     dest: '<%= paths.tmp %>',
                     src: '*.ejs'
                 }]
             },
+
             dist: {
-                files: [{
-                    expand: true,
-                    dot: true,
-                    cwd: '<%= paths.app %>',
-                    dest: '<%= paths.dist %>',
-                    src: [
-                        '*.{ico,png,txt}',
-                        '.htaccess',
-                        'images/{,*/}*.webp',
-                        '{,*/}*.html',
-                        'styles/fonts/{,*/}*.*'
-                    ]
-                }, {
-                    expand: true,
-                    dot: true,
-                    cwd: '.',
-                    src: ['bower_components/bootstrap/vendor/assets/fonts/bootstrap/*.*'],
-                    dest: '<%= paths.dist %>'
-                }, {
+                files: [{ // htmlshiv to docsDist for < IE9
                     dot: true,
                     expand: true,
-                    cwd: 'bower_components/font-awesome/fonts/',
-                    src: ['*.*'],
-                    dest: '<%= paths.dist %>/fonts/'
-                }, {
-                    dot: true,
-                    expand: true,
-                    cwd: '<%= paths.app %>/vendor/html5shiv/',
+                    cwd: '<%= paths.docs %>/vendor/html5shiv/',
+                    dest: '<%= paths.docsDist %>/vendor/html5shiv/',
                     src: ['html5shiv.min.js'],
-                    dest: '<%= paths.dist %>/vendor/html5shiv/'
+                }, { // icon sprite to docsDist folder
+                    expand: true,
+                    dot: true,
+                    cwd: 'images',
+                    dest: '<%= paths.docsDist %>/images/icons',
+                    src: '*.svg'
+                }, { // src less to libDist folder
+                    dot: true,
+                    expand: true,
+                    cwd: 'less',
+                    dest: '<%= paths.libDist %>/less',
+                    src: ['**/*.less']
+                }, { // icons to libDist folder
+                    dot: true,
+                    expand: true,
+                    dest: '<%= paths.libDist %>',
+                    src: ['images/**/*.svg'],
+                }, { // icons to docDist folder
+                    dot: true,
+                    expand: true,
+                    dest: '<%= paths.docsDist %>',
+                    src: ['images/**/*.svg'],
                 }]
             },
-            release: {
+            release: { // move the libDist folder under the docsDist folder for access from io page
                 dot: true,
                 expand: true,
-                cwd: 'dist',
+                cwd: '<%= paths.libDist %>',
                 src: ['*.*'],
-                dest: '<%= paths.dist %>/dist/'
+                dest: '<%= paths.docsDist %>/dist/'
             },
-            styles: {
+            styles: { // copy non-less files to tmp
                 expand: true,
                 dot: true,
-                cwd: '<%= paths.app %>/styles',
+                cwd: '<%= paths.docs %>/styles',
                 dest: '<%= paths.tmp %>/styles/',
                 src: '{,*/}*.css'
             },
-            images: {
+            images: { // copy root images to tmp for serving
                 expand: true,
                 dot: true,
                 cwd: 'images',
                 dest: '<%= paths.tmp %>/images/',
                 src: '**/*.*'
-            },
-            imagesDist: {
-                expand: true,
-                dot: true,
-                cwd: 'images',
-                dest: '<%= paths.dist %>/images/',
-                src: '**/*.*'
             }
         },
 
+        // zips up src less files, images, and minified css
         zip: {
-            'dist/usptostrap-<%= pkg.version %>.zip': ['dist/usptostrap.min.css', 'less/**/*.less']
+            '<%= paths.libDist %>/usptostrap-<%= pkg.version %>.zip': ['<%= paths.libDist %>/**/*']
         },
 
         // Run some tasks in parallel to speed up build process
@@ -434,11 +425,9 @@ module.exports = function (grunt) {
                 'jshint',
                 'less:dist',
                 'less:theme',
-                // 'patterns',
                 'copy:styles',
-                'copy:imagesDist',
-                'imagemin',
-                'svgmin'
+                'imagemin'
+                // 'svgmin'
             ]
         }
     });
