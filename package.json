@@ -1,6 +1,6 @@
 {
   "name": "USPTOPatternLibrary",
-  "version": "1.0.0-RC1",
+  "version": "1.0.0-RC1.0.1",
   "devDependencies": {
     "ejs": "~1.0.0",
     "grunt": "~0.4.1",
