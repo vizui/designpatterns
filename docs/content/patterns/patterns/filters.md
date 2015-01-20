@@ -1,6 +1,6 @@
 ---
 title: "Filters"
-preview: true
+draft: true
 ---
 
 [pattern]

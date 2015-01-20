@@ -1,6 +1,6 @@
 ---
 title: "File upload"
-preview: true
+draft: true
 ---
 [pattern]
 ### Single file upload

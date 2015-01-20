@@ -1,6 +1,6 @@
 ---
 title: "Settings"
-preview: true
+draft: true
 ---
 
 [pattern]

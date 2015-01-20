@@ -1,6 +1,6 @@
 ---
 title: "Search"
-preview: true
+draft: true
 ---
 
 [pattern]

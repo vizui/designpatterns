@@ -1,6 +1,6 @@
 ---
 title: "Wizards"
-preview: true
+draft: true
 ---
 
 [pattern]
