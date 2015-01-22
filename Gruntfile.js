@@ -12,6 +12,10 @@ module.exports = function (grunt) {
 
     var _ = require('lodash');
 
+    var pkg = grunt.file.readJSON('package.json');
+
+    var config = grunt.file.readYAML('./config.yaml');
+
     // Configurable paths
     var paths = {
         tmp: '.tmp',
@@ -19,10 +23,6 @@ module.exports = function (grunt) {
         docsDist: 'docs/dist',
         libDist: 'dist'
     };
-
-    var pkg = grunt.file.readJSON('package.json');
-
-    var config = grunt.file.readYAML('./config.yaml');
 
     // Define the configuration for all the tasks
     grunt.initConfig({
@@ -231,11 +231,11 @@ module.exports = function (grunt) {
             dist: {
                 files: {
                     src: [
-                        '<%= paths.docsDist %>/scripts/{,*/}*.js',
-                        '<%= paths.docsDist %>/styles/{,*/}*.css',
-                        '<%= paths.docsDist %>/images/{,*/}*.*',
-                        '<%= paths.docsDist %>/styles/fonts/{,*/}*.*',
-                        '<%= paths.docsDist %>/*.{ico,png}'
+                        '<%= paths.docsDist %>/draft/scripts/{,*/}*.js',
+                        '<%= paths.docsDist %>/draft/styles/{,*/}*.css',
+                        '<%= paths.docsDist %>/draft/images/{,*/}*.*',
+                        '<%= paths.docsDist %>/draft/styles/fonts/{,*/}*.*',
+                        '<%= paths.docsDist %>/draft/*.{ico,png}'
                     ]
                 }
             }
@@ -246,7 +246,7 @@ module.exports = function (grunt) {
         // additional tasks can operate on them
         useminPrepare: {
             options: {
-                dest: '<%= paths.docsDist %>'
+                dest: '<%= paths.docsDist %>/draft'
             },
             html: ['<%= paths.tmp %>/**/*.ejs']
         },
@@ -254,10 +254,10 @@ module.exports = function (grunt) {
         // Performs rewrites based on rev and the useminPrepare configuration
         usemin: {
             options: {
-                assetsDirs: ['<%= paths.docsDist %>', '<%= paths.docsDist %>/images']
+                assetsDirs: ['<%= paths.docsDist %>/draft', '<%= paths.docsDist %>/draft/images']
             },
             html: ['<%= paths.tmp %>/**/*.ejs'],
-            css: ['<%= paths.docsDist %>/styles/{,*/}*.css']
+            css: ['<%= paths.docsDist %>/draft/styles/{,*/}*.css']
         },
 
         // The following *-min tasks produce minified files in the dist folder
@@ -267,7 +267,7 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: '<%= paths.docs %>/images',
                     src: '{,*/}*.{gif,jpeg,jpg,png}',
-                    dest: '<%= paths.docsDist %>/images'
+                    dest: '<%= paths.docsDist %>/draft/images'
                 }]
             }
         },
@@ -300,7 +300,7 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: '.tmp',
                     src: '{,*/}*.html',
-                    dest: '<%= paths.docsDist %>'
+                    dest: '<%= paths.docsDist %>/draft'
                 }]
             }
         },
@@ -355,13 +355,13 @@ module.exports = function (grunt) {
                     dot: true,
                     expand: true,
                     cwd: '<%= paths.docs %>/vendor/html5shiv/',
-                    dest: '<%= paths.docsDist %>/vendor/html5shiv/',
+                    dest: '<%= paths.docsDist %>/draft/vendor/html5shiv/',
                     src: ['html5shiv.min.js'],
                 }, { // icon sprite to docsDist folder
                     expand: true,
                     dot: true,
                     cwd: 'images',
-                    dest: '<%= paths.docsDist %>/images/icons',
+                    dest: '<%= paths.docsDist %>/draft/images/icons',
                     src: '*.svg'
                 }, { // src less to libDist folder
                     dot: true,
@@ -377,22 +377,22 @@ module.exports = function (grunt) {
                 }, { // icons to docDist folder
                     dot: true,
                     expand: true,
-                    dest: '<%= paths.docsDist %>',
+                    dest: '<%= paths.docsDist %>/draft',
                     src: ['images/**/*.svg'],
                 }]
             },
-            release: { // move the libDist folder under the docsDist folder for access from io page
+            docsResources: { // move the libDist folder under the docsDist folder for access from io page
                 dot: true,
                 expand: true,
                 cwd: '<%= paths.libDist %>',
-                src: ['*.*'],
-                dest: '<%= paths.docsDist %>/dist/'
+                src: '**/*.*',
+                dest: '<%= paths.docsDist %>/draft/resources'
             },
             styles: { // copy non-less files to tmp
                 expand: true,
                 dot: true,
                 cwd: '<%= paths.docs %>/styles',
-                dest: '<%= paths.tmp %>/styles/',
+                dest: '<%= paths.tmp %>/styles',
                 src: '{,*/}*.css'
             },
             images: { // copy root images to tmp for serving
@@ -401,6 +401,21 @@ module.exports = function (grunt) {
                 cwd: 'images',
                 dest: '<%= paths.tmp %>/images/',
                 src: '**/*.*'
+            },
+            release: { // copy draft folder into versioned folder and root
+                files: [{ // latest stable to versioned folder
+                    dot: true,
+                    expand: true,
+                    cwd: '<%= paths.docsDist %>/draft/',
+                    src: '**/*.*',
+                    dest: '<%= paths.docsDist %>/<%= pkg.version %>'
+                }, { // latest stable to root
+                    dot: true,
+                    expand: true,
+                    cwd: '<%= paths.docsDist %>/draft/',
+                    src: '**/*.*',
+                    dest: '<%= paths.docsDist %>'
+                }]
             }
         },
 
@@ -463,6 +478,11 @@ module.exports = function (grunt) {
         'template:dist',
         'htmlmin',
         'zip',
+        'copy:docsResources'
+    ]);
+
+    grunt.registerTask('release', [
+        'build',
         'copy:release'
     ]);
 
