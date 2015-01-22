@@ -79,7 +79,7 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: '<%= paths.tmp %>',
                     dest: '<%= paths.tmp %>',
-                    src: '{index,resources,changelog,example-preexam}.tpl.ejs',
+                    src: '{index,resources,changelog,example-*}.tpl.ejs',
                     ext: '.html'
                 }]
             },
@@ -90,7 +90,7 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: '<%= paths.tmp %>',
                     dest: '<%= paths.tmp %>',
-                    src: '{index,resources,changelog,example-preexam}.tpl.ejs',
+                    src: '{index,resources,changelog,example-*}.tpl.ejs',
                     ext: '.html'
                 }]
             }
