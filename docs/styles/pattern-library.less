@@ -103,14 +103,6 @@ body {
         font-weight: 700;
         border: 2px solid @pl-header-bg;
     }
-
-    .form-control {
-        border: none;
-        padding: 4px 8px;
-        height: 26px;
-        margin-top: 3px;
-        font-weight: 400;
-    }
 }
 
 .pl-collapsed-nav {
@@ -490,6 +482,20 @@ body {
     }
 }
 
+.pl-heading-fancy {
+    color: @brand-success;
+    &:after {
+        display: block;
+        content: "";
+        height: 1px;
+        background: mix(@brand-success, #fff, 75%);
+        width: 60px;
+        margin-top: 8px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+
 .pl-about {
     background: #fff;
     padding-top: 50px;
@@ -499,17 +505,6 @@ body {
 
     h4 {
         margin-top: 21px;
-
-        // &:after {
-        //     display: block;
-        //     content: "";
-        //     height: 1px;
-        //     background: @brand-primary;
-        //     width: 60px;
-        //     margin-top: 20px;
-        //     margin-left: 0;
-        //     margin-bottom: 20px;
-        // }
     }
 
     .pl-padded-col {
