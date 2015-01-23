@@ -3,38 +3,41 @@ title: "Typography"
 ---
 
 [pattern]
-<div class="container-fluid">
-    <div class="row">
-        <div style="max-width: 100%; width: 600px; margin: auto;">
-            <h1>Segoe UI</h1>
-            <h2>Grumpy wizards make toxic brew for the evil Queen and Jack.</h2>
-            <p style="font-size: 16px;">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
-            <blockquote>"The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked."</blockquote>
-        </div>
-    </div>
-</div>
+### Fonts
+
+#### Internal/private applications
+Font load and fallback order is: __Calibri, Helvetica Neue, Helvetica, Arial, sans-serif__
+
+
+#### External/public applications
+Font load and fallback order: __Helvetica Neue (web font), Helvetica, Arial, sans-serif__
+
+#### Font availability
+<dl>
+    <dt>Calibri</dt>
+    <dd>Ships with Windows Vista and newer. Calibri Light available on Windows 8+. Ships with Office for Mac.</dd>
+    <dt>Helvetica Neue / Helvetica</dt>
+    <dd>Ships with OSX.</dd>
+    <dt>Arial</dt>
+    <dd>Ships with most operating systems.</dd>
+</dl>
+
+&nbsp;
+
 [/pattern]
 
 [pattern]
 ### Weights
 
-<div class="text-muted">Windows 7 may not have Segoe UI Semilight if <a href="http://support.microsoft.com/kb/2729094">KB2729094</a> has not been applied.</div>
-
 [preview]
 <div style="font-size: 15px">
     <p style="font-weight: 700">700 - Bold: The quick brown fox jumps over the lazy dog</p>
-    <p style="font-weight: 600">600 - Semibold: The quick brown fox jumps over the lazy dog</p>
     <p style="font-weight: 400">400 - Regular: The quick brown fox jumps over the lazy dog</p>
-    <p style="font-weight: 300">300 - Semilight: The quick brown fox jumps over the lazy dog</p>
-    <p style="font-weight: 200">200 - Light/thin: The quick brown fox jumps over the lazy dog</p>
 </div>
 [/preview]
 ```html
 <p style="font-weight: 700">700 - Bold: The quick brown fox jumps over the lazy dog</p>
-<p style="font-weight: 600">600 - Semibold: The quick brown fox jumps over the lazy dog</p>
 <p style="font-weight: 400">400 - Regular: The quick brown fox jumps over the lazy dog</p>
-<p style="font-weight: 300">300 - Semilight: The quick brown fox jumps over the lazy dog</p>
-<p style="font-weight: 200">200 - Light: The quick brown fox jumps over the lazy dog</p>
 ```
 
 [/pattern]
@@ -47,31 +50,31 @@ title: "Typography"
     <tbody>
         <tr>
             <td>Display 3</td>
-            <td><h1 class="display3">Light 56px</h1></td>
+            <td><h1 class="display3">Regular 56px</h1></td>
         </tr>
         <tr>
             <td>h1. Display 2</td>
-            <td><h1>Light 45px</h1></td>
+            <td><h1>Regular 45px</h1></td>
         </tr>
         <tr>
             <td>h2. Display 1</td>
-            <td><h2>Light 34px</h2></td>
+            <td><h2>Regular 34px</h2></td>
         </tr>
         <tr>
             <td>h3. Headline</td>
-            <td><h3 class="headline">Semi-bold 24px</h3></td>
+            <td><h3 class="headline">Bold 24px</h3></td>
         </tr>
         <tr>
             <td>h4. Title</td>
-            <td><h4>Semi-bold 18px</h4></td>
+            <td><h4>Bold 18px</h4></td>
         </tr>
         <tr>
             <td>h5. Subhead</td>
-            <td><h5>Semi-bold 15px</h5></td>
+            <td><h5>Bold 15px</h5></td>
         </tr>
         <tr>
             <td>h6.</td>
-            <td><h6>Semi-bold 13px</h6></td>
+            <td><h6>Bold 13px</h6></td>
         </tr>
         <tr>
             <td>Body</td>
