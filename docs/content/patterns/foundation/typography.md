@@ -6,7 +6,7 @@ title: "Typography"
 ### Fonts
 
 #### Internal/private applications
-Font load and fallback order is: __Calibri, Helvetica Neue, Helvetica, Arial, sans-serif__
+Font load and fallback order: __Calibri, Helvetica Neue, Helvetica, Arial, sans-serif__
 
 
 #### External/public applications
@@ -15,7 +15,7 @@ Font load and fallback order: __Helvetica Neue (web font), Helvetica, Arial, san
 #### Font availability
 <dl>
     <dt>Calibri</dt>
-    <dd>Ships with Windows Vista and newer. Calibri Light available on Windows 8+. Ships with Office for Mac.</dd>
+    <dd>Ships with Windows Vista and newer. Ships with Office for Mac. Calibri Light available on Windows 8+.</dd>
     <dt>Helvetica Neue / Helvetica</dt>
     <dd>Ships with OSX.</dd>
     <dt>Arial</dt>
