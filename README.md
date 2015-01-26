@@ -1,21 +1,27 @@
 USPTO Design Guide
 ==============
 
-This project is a work in progress.
-
-- [View Design Guide](https://uspto.github.io/designpatterns/)
+- [View the Design Guide](https://uspto.github.io/designpatterns/)
 - [Contributing](CONTRIBUTING.md)
 - [Terms](TERMS.md)
 - [License](LICENSE)
 
-### Want to contribute?
+Have feedback or questions about the design guide? [Create an issue!](https://github.com/USPTO/designpatterns/issues)
+
+#### About this repository
+
+This is the source code repository for the [USPTO Design Guide](https://uspto.github.io/designpatterns/). This source code generates the documentation, CSS, and other resources. The generated site is then pushed to the [gh-pages](https://github.com/USPTO/designpatterns/tree/gh-pages) branch.
+
+#### Want to contribute?
 See our [CONTRIBUTING.md](CONTRIBUTING.md) file for contribution guidelines.
 
-### Building & Running Locally
+---
+
+### Building & running locally
 
 If you want to build and run the documentation locally, here's what you need to do:
 
-#### Prerequisites
+##### Prerequisites
 You will first need to have [Node.js](http://nodejs.org/download/) installed. Node.js powers the popular front-end build and dependency management tools [Grunt](http://gruntjs.com/) and [Bower](http://bower.io/).
 
 Once Node.js is installed, ensure you have Grunt and Bower installed globally with:
@@ -30,7 +36,7 @@ npm install
 bower install
 ```
 
-#### Running Docs
+##### Running documentation
 Run the project with Grunt:
 ```
 grunt serve
@@ -38,7 +44,7 @@ grunt serve
 This processes the content Markdown files, LESS files, and starts a local server. 
 
 
-#### Distribution Builds
+##### Distribution Builds
 To test the distribution build, do:
 ```
 grunt serve:dist
