@@ -74,29 +74,29 @@ Font load and fallback order: __Helvetica Neue (web font), Helvetica, Arial, san
         </tr>
         <tr>
             <td>h6.</td>
-            <td><h6>Bold 13px</h6></td>
+            <td><h6>Bold 14px</h6></td>
         </tr>
         <tr>
             <td>Body</td>
-            <td><div class="body">Regular 13px</div></td>
+            <td><div class="body">Regular 14px</div></td>
         </tr>
         <tr>
             <td>Caption</td>
-            <td><div class="caption">Regular 12px</div></td>
+            <td><div class="caption">Regular 13px</div></td>
         </tr>
     </tbody>
 </table>
 
 [/preview]
 ```html
-<h1 class="display3">Light 56px</h1>
-<h1>Light 45px</h1>
-<h2>Light 34px</h2>
-<h3>Semi-bold 24px</h3>
-<h4>Semi-bold 18px</h4>
-<h5>Semi-bold 15px</h5>
-<h6>Semi-bold 13px</h6>
-<div class="caption">Regular 12px</div>
+<h1 class="display3">Regular 56px</h1>
+<h1>Regular 45px</h1>
+<h2>Regular 34px</h2>
+<h3>Bold 24px</h3>
+<h4>Bold 18px</h4>
+<h5>Bold 15px</h5>
+<h6>Bold 14px</h6>
+<div class="caption">Regular 13px</div>
 ```
 
 &nbsp;
