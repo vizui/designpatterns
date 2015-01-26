@@ -85,9 +85,9 @@ __Don't__
 - Use colons after labels
 
 
-#### Top aligned labels
+#### Vertically aligned labels
 
-Labels are placed above the inputs, left justified.
+Labels are placed above the inputs, left aligned.
 
 [preview]
 <div class="row">
@@ -118,9 +118,9 @@ Labels are placed above the inputs, left justified.
 ```
 
 
-#### Left aligned labels
+#### Horizontally aligned labels
 
-Labels are to the left of the input, right justified. 
+Labels are to the left of the input, right aligned. 
 
 [preview]
 <div class="row">
@@ -168,8 +168,8 @@ Required fields are generally marked with an asterisk. For external, public faci
 
 If the majority of the fields are required, consider adding `(optional)` to the optional fields instead of asterisks on the required field. 
 
-#### Top aligned labels
-When the fields are top aligned, the asterisk is placed on the right.
+#### Vertically aligned labels
+When labels are vertically aligned, the asterisk is placed on the right.
 [preview]
 <div class="row">
   <form class="" style="max-width: 450px;" role="form">
@@ -206,8 +206,8 @@ When the fields are top aligned, the asterisk is placed on the right.
 ```
 
 
-#### Left aligned labels
-When the fields are left aligned, the asterisk is placed to the left.
+#### Horizontally aligned labels
+When the labels are horizontally aligned, the asterisk is placed to the left.
 
 [preview]
 <div class="row">
