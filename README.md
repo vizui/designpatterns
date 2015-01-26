@@ -50,10 +50,23 @@ To test the distribution build, do:
 grunt serve:dist
 ```
 
-To build the project for distribution, do:
+To build a draft version for distribution, do:
 ```
 grunt build
 ```
+
+To build a release version, do
+```
+grunt release
+```
+which ouputs to:
+```
+docs/dist/{version}/
+docs/dist/draft/
+docs/dist/
+```
+
+
 
 ## License
 
