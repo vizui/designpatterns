@@ -425,7 +425,7 @@ A fixed header remains visible as the table body is scrolled. This is useful for
 
 [preview]
 <div style="padding: 40px; background: #fff;">
-    <table class="table" style="margin: 0;">
+    <table aria-hidden class="table" style="margin: 0;">
         <thead>
             <tr>
                 <th style="width: 25%">Project name</th>
@@ -436,7 +436,7 @@ A fixed header remains visible as the table body is scrolled. This is useful for
     </table>
     <div style="overflow: auto; max-height: 200px; border-top: none;">
         <table class="table table-striped " style="border: none; margin-bottom: 0; border-top: none;">
-            <thead style="visibility: hidden; border: none;height: 0; overflow: hidden;">
+            <thead style="border: none;height: 0; overflow: hidden;">
                 <tr>
                     <th style="width: 25%; height: 0; line-height: 0; font-size: 0; padding: 0; border: 0;">Project name</th>
                     <th style="width: 50%; height: 0; line-height: 0; font-size: 0; padding: 0; border: 0;">Description</th>
@@ -574,12 +574,12 @@ Clicking a header cell sets that column as the currently sorted column. The firs
 
 [preview]
 <div style="padding: 40px; background: #fff;">
-    <table class="table table-sortable table-bordered table-striped">
+    <table role="grid" class="table table-sortable table-bordered table-striped">
         <thead>
-            <tr>
-                <th class="sortable active">Project name <i class="icon icon-caret-down"></i></th>
-                <th class="sortable">Description</th>
-                <th>Price</th>
+            <tr role="row">
+                <th scope="col" role="columnheader" aria-sort="ascending" class="sortable active">Project name <i class="icon icon-caret-down"></i></th>
+                <th scope="col" role="columnheader" aria-sort="none" class="sortable">Description</th>
+                <th scope="col" role="columnheader" aria-sort="none">Price</th>
             </tr>
         </thead>
         <tbody>
@@ -608,11 +608,11 @@ Clicking a header cell sets that column as the currently sorted column. The firs
 </div>
 [/preview]
 ```html
-<table class="table table-sortable table-bordered table-striped">
+<table role="grid" class="table table-sortable table-bordered table-striped">
     <thead>
-        <tr>
-            <th class="sortable active">Project name <i class="icon icon-caret-down"></i></th>
-            <th class="sortable">Description</th>
+        <tr role="row">
+            <th scope="col" role="columnheader" aria-sort="ascending" class="sortable active" >Project name <i class="icon icon-caret-down"></i></th>
+            <th scope="col" role="columnheader" aria-sort="none" class="sortable">Description</th>
             <th>Price</th>
         </tr>
     </thead>
@@ -626,11 +626,11 @@ When a table is sorted by multiple columns, the sort order is indicated by the s
 Performing a `shift+click` on a header cell should add that column to the sorted list. A second `shift+click` on the same header cell should toggle the sort direction. A third `shift+click` on the same header cell should remove that column from the sort list. A left click should clear the sort list and then behave as a single sort.
 [preview]
 <div style="padding: 40px; background: #fff;">
-    <table class="table table-sortable table-bordered table-striped">
+    <table role="grid" class="table table-sortable table-bordered table-striped">
         <thead>
-            <tr>
-                <th class="sortable active">Event <i class="icon icon-caret-down text-muted"></i> <sup >1</sup></th>
-                <th class="sortable active">Date <i class="icon icon-caret-up text-muted"></i> <sup >2</sup></th>
+            <tr role="row">
+                <th scope="col" role="columnheader" aria-sort="other" class="sortable active" >Event <i class="icon icon-caret-down text-muted"></i> <sup>1</sup></th>
+                <th scope="col" role="columnheader" aria-sort="none" class="sortable active">Date <i class="icon icon-caret-up text-muted"></i> <sup >2</sup></th>
                 <th>Module</th>
             </tr>
         </thead>
@@ -660,11 +660,11 @@ Performing a `shift+click` on a header cell should add that column to the sorted
 </div>
 [/preview]
 ```html
-<table class="table table-sortable table-bordered table-striped">
+<table role="grid" class="table table-sortable table-bordered table-striped">
     <thead>
-        <tr>
-            <th class="sortable active">Event <i class="icon icon-caret-down"></i> <sup >1</sup></th>
-            <th class="sortable active">Date <i class="icon icon-caret-up"></i> <sup >2</sup></th>
+        <tr role="row">
+            <th scope="col" role="columnheader" aria-sort="other" class="sortable active">Event <i class="icon icon-caret-down"></i> <sup >1</sup></th>
+            <th scope="col" role="columnheader" aria-sort="none" class="sortable active">Date <i class="icon icon-caret-up"></i> <sup >2</sup></th>
             <th>Module</th>
         </tr>
     </thead>
