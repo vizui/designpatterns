@@ -132,9 +132,6 @@ module.exports = function(grunt) {
                     obj = contentMap[arr[x+1]];
                 }
                 c.next = obj;
-                if (c.next == c) {
-                    console.log("wtf", c.title, x, i);
-                }
             }
 
             var output = renderTemplate(c.template, c, options.template);
