@@ -1,16 +1,16 @@
-USPTO Design Guide
+USPTO UI Design Library
 ==============
 
-- [View the Design Guide](https://uspto.github.io/designpatterns/)
+- [View the UI Design Library](https://uspto.github.io/designpatterns/)
 - [Contributing](CONTRIBUTING.md)
 - [Terms](TERMS.md)
 - [License](LICENSE)
 
-Have feedback or questions about the design guide? [Create an issue!](https://github.com/USPTO/designpatterns/issues)
+Have feedback or questions about the UI Design Library? [Create an issue!](https://github.com/USPTO/designpatterns/issues)
 
 #### About this repository
 
-This is the source code repository for the [USPTO Design Guide](https://uspto.github.io/designpatterns/). This source code generates the documentation, CSS, and other resources. The generated site is then pushed to the [gh-pages](https://github.com/USPTO/designpatterns/tree/gh-pages) branch.
+This is the source code repository for the [USPTO UI Design Library](https://uspto.github.io/designpatterns/). This source code generates the documentation, CSS, and other resources. The generated site is then pushed to the [gh-pages](https://github.com/USPTO/designpatterns/tree/gh-pages) branch.
 
 #### Want to contribute?
 See our [CONTRIBUTING.md](CONTRIBUTING.md) file for contribution guidelines.
