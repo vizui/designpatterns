@@ -425,7 +425,7 @@ A fixed header remains visible as the table body is scrolled. This is useful for
 
 [preview]
 <div style="padding: 40px; background: #fff;">
-    <table aria-hidden class="table" style="margin: 0;">
+    <table aria-hidden="true" class="table" style="margin: 0;">
         <thead>
             <tr>
                 <th style="width: 25%">Project name</th>
