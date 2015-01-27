@@ -19,7 +19,7 @@ module.exports = function(grunt) {
 
     // converts [preview] and [pattern] tags to properly classed divs
     var replaceMarkup = function (text) {
-        text = text.replace(/\[preview\]/g, '<div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code" style="opacity: .5;"></i></div>\n');
+        text = text.replace(/\[preview\]/g, '<div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code"></i> View source</div>\n');
         text = text.replace(/\[\/preview\]/g, '</div>\n');
         text = text.replace(/\[pattern\]/g, '<div class="pl-pattern">\n');
         text = text.replace(/\[\/pattern\]/g, '</div>\n');
