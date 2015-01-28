@@ -5,22 +5,20 @@ title: "Alerts and notifications"
 [pattern]
 ### Contextual alerts
 
-Contextual alerts are positioned in relation to an area or form on the page. They may or may not contain action buttons, depending on the situation.
+#### Purpose
+Users need to be aware of important information related to their current activity.
 
-__When to use:__
-- An event has occurred __related to user interaction__
-- There __is__ a related element or form to attach the alert to
+#### Description
+
+- Contextual alerts are positioned above the area or form they relate to
+- They are often triggered by a user interaction
+- They can be closable and can have other action buttons or links.
 
 __Types:__
 - __Info__ alerts should be used when there are tips or information that a user can benefit from. 
 - __Success__ alerts should be used when an action was performed successfully.
 - __Warning__ alerts should be used when an action is out of the ordinary or might not be desired.
 - __Danger__ alerts should be used when the system has failed to perform an action, or when the user has made an error. 
-
-__Rules:__
-- If the alert pertains to the entire application or website, the alert should appear at the very top of the entire page.
-- If the alert pertains to a section on the page, the alert should appear at the very top of the section.
-- If the alert pertains to a form, the alert should appear at the top of the form. If there is an error in the form, a danger alert should appear at the top of the form, while the form field with the error is highlighted in red.
 
 [preview]
 <div style="max-width: 450px;">
@@ -80,23 +78,24 @@ __Rules:__
 [/pattern]
 
 [pattern]
-### System alerts
+### System notifications
 
-System alerts aren't placed in relation with any particular context and float in one corner of the screen (usually the top right).
+#### Purpose
+Users need to be aware of important information related to the system.
 
-__When to use:__
-- An event has occurred __unrelated to any user interaction__
-- There __is no__ related element/form to attach the alert to
+#### Description
+
+- System notifications appear in in the top right corner of the screen
+- They are usually triggered by events _unrelated_ to the user's interactions
+- They can be closable and can have other action buttons or links.
+- Notifications with low importance (info or success) can close automatically after 5 seconds
+- Notifications with high importance (warning or danger) should not close automatically, unless the situation has been resolved in some other way
 
 __Types:__
-- __Info__ alerts can be used for general messages that aren't particularly critical
-- __Success__ alerts can be used for positive messages that don't have a context to associate it with
-- __Warning__ alerts can be used for messages that likely require attention
-- __Danger__ alerts can be used for critical messages that require immediate attention
-
-__Behavior:__
-- Alerts with low importance, like `info` or `success` alerts, can close automatically after 5 seconds (if desired).
-- Alerts with high importance, like `warning` or `danger`, should not close automatically unless the situation has been resolved in some other way.
+- __Info__ notifications can be used for general messages that aren't particularly critical
+- __Success__ notifications can be used for positive messages that don't have a context to associate it with
+- __Warning__ notifications can be used for messages that likely require attention
+- __Danger__ notifications can be used for critical messages that require immediate attention
 
 [preview]
 
@@ -145,7 +144,7 @@ __Behavior:__
     </div>
 </div>
 
-<button type="button" data-toast-target="#example-toasts" class="btn btn-default show-toasts">Toggle alerts</button>
+<button type="button" data-toast-target="#example-toasts" class="btn btn-default show-toasts">Toggle notifications</button>
 <div class="toast-list pl-closable-toasts" style="display: none; width: 400px; padding: 9px;" id="example-toasts">
     <div class="toast toast-success">
         <div class="toast-content">
