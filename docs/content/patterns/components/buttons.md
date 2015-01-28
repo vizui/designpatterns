@@ -109,7 +109,9 @@ Add the `active` class and the `aria-pressed="true"` attribute to a button.
 </div>
 [/preview]
 ```html
-<button type="button" class="btn btn-default active" aria-pressed="true">Active</button> <button type="button" class="btn btn-default">Normal</button> <div class="btn-group">
+<button type="button" class="btn btn-default active" aria-pressed="true">Active</button>
+<button type="button" class="btn btn-default">Normal</button> 
+<div class="btn-group">
     <button type="button" class="btn btn-default">Left</button>
     <button type="button" class="btn btn-default active" aria-pressed="true">Active</button>
     <button type="button" class="btn btn-default">Right</button>
