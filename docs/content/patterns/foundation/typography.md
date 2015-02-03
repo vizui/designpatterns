@@ -45,8 +45,9 @@ Font load and fallback order: __Helvetica Neue (web font), Helvetica, Arial, san
 [pattern]
 ### Styles
 
+#### Calibri
 [preview]
-<table class="table table-borderless table-valign">
+<table class="table table-borderless table-valign" style="width: 550px;">
     <tbody>
         <tr>
             <td>Display 3</td>
@@ -86,7 +87,10 @@ Font load and fallback order: __Helvetica Neue (web font), Helvetica, Arial, san
         </tr>
     </tbody>
 </table>
-
+[/preview]
+#### Helvetica Neue
+[preview]
+<img src="https://cloud.githubusercontent.com/assets/848347/6025825/4834108e-ab8a-11e4-9fd0-2129c15a9bd5.png">
 [/preview]
 ```html
 <h1 class="display3">Regular 56px</h1>
