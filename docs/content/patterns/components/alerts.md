@@ -13,6 +13,9 @@ Users need to be aware of important information related to their current activit
 - Contextual alerts are positioned above the area or form they relate to
 - They are often triggered by a user interaction
 - They can be closable and can have other action buttons or links.
+- Alerts with low importance (info or success) can close automatically after 5 seconds (if desired)
+- Alerts with high importance (warning or danger) should not close automatically, unless the situation has been resolved in some other way
+
 
 __Types:__
 - __Info__ alerts should be used when there are tips or information that a user can benefit from. 
@@ -88,7 +91,7 @@ Users need to be aware of important information related to the system.
 - System notifications appear in in the top right corner of the screen
 - They are usually triggered by events _unrelated_ to the user's interactions
 - They can be closable and can have other action buttons or links.
-- Notifications with low importance (info or success) can close automatically after 5 seconds
+- Notifications with low importance (info or success) can close automatically after 5 seconds (if desired)
 - Notifications with high importance (warning or danger) should not close automatically, unless the situation has been resolved in some other way
 
 __Types:__
