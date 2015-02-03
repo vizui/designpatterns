@@ -90,18 +90,16 @@ __Don't__
 Labels are placed above the inputs, left aligned.
 
 [preview]
-<div class="row">
-    <form role="form" class="" style="max-width: 450px;">
-      <div class="form-group col-sm-offset-3">
+<form role="form" class="" style="max-width: 450px;">
+    <div class="form-group col-sm-offset-3">
         <label class="control-label" for="emailInput">Email</label>
         <input type="email" class="form-control form-control-width-md" id="emailInput">
-      </div>
-      <div class="form-group col-sm-offset-3">
+    </div>
+    <div class="form-group col-sm-offset-3">
         <label class="control-label" for="passwordInput">Password</label>
         <input type="password" class="form-control form-control-width-md" id="passwordInput" >
-      </div>
-    </form>
-</div>
+    </div>
+</form>
 [/preview]
 
 ```html
@@ -123,8 +121,7 @@ Labels are placed above the inputs, left aligned.
 Labels are to the left of the input, right aligned. 
 
 [preview]
-<div class="row">
-  <form class="form-horizontal " style="max-width: 450px;" role="form">
+<form class="form-horizontal" style="max-width: 450px;" role="form">
     <div class="form-group">
       <label for="emailInput2" class="col-sm-3 control-label">Email</label>
       <div class="col-sm-9">
@@ -137,14 +134,10 @@ Labels are to the left of the input, right aligned.
         <input type="password" class="form-control form-control-width-md" id="passwordInput2" >
       </div>
     </div>
-  </form>
-</div>
+</form>
 [/preview]
-
-
-
 ```html
-<form class="form-horizontal " style="max-width: 450px;" role="form">
+<form class="form-horizontal" role="form">
   <div class="form-group">
     <label for="emailInput2" class="col-sm-3 control-label">Email</label>
     <div class="col-sm-9">
@@ -171,8 +164,7 @@ If the majority of the fields are required, consider adding `(optional)` to the 
 #### Vertically aligned labels
 When labels are vertically aligned, the asterisk is placed on the right.
 [preview]
-<div class="row">
-  <form class="" style="max-width: 450px;" role="form">
+<form class="" style="max-width: 450px;" role="form">
     <div class="form-group col-sm-offset-3">
         <span class="help-block form-control-width-md text-right">* indicates required</span>
     </div>
@@ -184,12 +176,11 @@ When labels are vertically aligned, the asterisk is placed on the right.
       <label for="emailInput3" class="control-label">Email</label>
       <input type="email" class="form-control form-control-width-md" id="emailInput3">
     </div>
-  </form>
-</div>
+</form>
 [/preview]
 
 ```html
-<form class="form-horizontal " style="max-width: 450px;" role="form">
+<form class="form-horizontal" role="form">
   <div class="form-group">
     <label for="nameInput5" class="col-sm-3 control-label required">Name</label>
     <div class="col-sm-9">
@@ -210,8 +201,7 @@ When labels are vertically aligned, the asterisk is placed on the right.
 When the labels are horizontally aligned, the asterisk is placed to the left.
 
 [preview]
-<div class="row">
-  <form class="form-horizontal " style="max-width: 450px;" role="form">
+<form class="form-horizontal" style="max-width: 450px;" role="form">
     <div class="form-group">
       <label for="nm7" class="col-sm-3 control-label required">Name</label>
       <div class="col-sm-9">
@@ -224,12 +214,11 @@ When the labels are horizontally aligned, the asterisk is placed to the left.
         <input type="email" class="form-control form-control-width-md" id="em7">
       </div>
     </div>
-  </form>
-</div>
+</form>
 [/preview]
 
 ```html
-<form class="form-horizontal " style="max-width: 450px;" role="form">
+<form class="form-horizontal" role="form">
   <div class="form-group">
     <label for="em7" class="col-sm-3 control-label required">Email</label>
     <div class="col-sm-9">
@@ -270,8 +259,7 @@ __Don't__
 - Include technical jargon in errors
 
 [preview]
-<div class="row">
-  <form class="form-horizontal " style="max-width: 450px;" role="form">
+<form class="form-horizontal" style="max-width: 450px;" role="form">
     <div class="form-group has-error">
       <label for="em9" class="col-sm-3 control-label required">Invalid</label>
       <div class="col-sm-9">
@@ -291,38 +279,35 @@ __Don't__
         <button type="submit" class="btn btn-primary">Submit</button>
       </div>
     </div>
-  </form>
-</div>
+</form>
 [/preview]
 
 ```html
 <form class="form-horizontal" role="form">
-  <div class="form-group has-error">
-    <label for="em9" class="col-sm-3 control-label required">Email</label>
-    <div class="col-sm-9">
-      <input type="email" class="form-control form-control-width-md" id="em9" value="john.smith@gmail" required aria-required="true">
-      <span class="help-block">This email address is not valid.<span>
+    <div class="form-group has-error">
+      <label for="em9" class="col-sm-3 control-label required">Invalid</label>
+      <div class="col-sm-9">
+        <input type="email" class="form-control form-control-width-md" id="em9" value="john.smith@gmail" required aria-required="true">
+        <span class="help-block">This email address is not valid.<span>
+      </div>
     </div>
-  </div>
-  <div class="form-group has-error">
-    <label for="pw9" class="col-sm-3 control-label required">Password</label>
-    <div class="col-sm-9">
-      <input type="password" class="form-control form-control-width-md" id="pw9" required aria-required="true">
-      <span class="help-block">This field is required.<span>
+    <div class="form-group has-error">
+      <label for="pw9" class="col-sm-3 control-label required">Required</label>
+      <div class="col-sm-9">
+        <input type="text" class="form-control form-control-width-md" required aria-required="true" id="pw9" >
+        <span class="help-block">This field is required.<span>
+      </div>
     </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-3 col-sm-9">
-      <a style="padding: 7px 0; display: inline-block; cursor: pointer;">Forgot password?</a> <!-- todo: inline style -->
-      <button type="submit" class="btn btn-primary pull-right">Sign in</button>
+    <div class="form-group">
+      <div class="col-sm-offset-3 col-sm-9">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
     </div>
-  </div>
 </form>
 ```
 
 [preview]
-<div class="row">
-  <form class="form-horizontal " style="max-width: 450px;" role="form">
+<form class="form-horizontal" style="max-width: 450px;" role="form">
     <div class="form-group">
         <div class="col-sm-offset-3 col-sm-9">
             <div class="alert alert-danger" style="margin: 0;">
@@ -347,8 +332,7 @@ __Don't__
         <button type="submit" class="btn btn-primary">Sign in</button>
       </div>
     </div>
-  </form>
-</div>
+</form>
 [/preview]
 
 ```html
@@ -389,41 +373,39 @@ Help text can be placed at the top of the form, under the heading of a form grou
 
 - Place help text at the top of the form to give information that relates to the entire form
 - Place help text under the heading of a form group to give information that relates to that form group alone
-- Place short help text under an individual form field that relates to that field alone
+- Place help text beside or under an individual form field that relates to that field alone
 - Use a popover on an input field (text box, text area, or select) for help text that is lengthy, complex, non-critical, or when screen real estate is limited. Too much help text can make a form look and feel busy and difficult. 
 
 [preview]
-
-<div class="row">
-    <form class="form-horizontal " style="max-width: 450px;" role="form">
-        <div class="form-group">
-            <div class="col-sm-9 col-sm-offset-3">
+<form class="form-horizontal" style="max-width: 450px;" role="form">
+    <div class="form-group">
+        <div class="col-sm-12">
+            <div class="form-group-heading">
                 <h4>Public profile</h4>
-                <span class="help-block">This information will appear on your public profile.</span>
+                <p class="help-block">This information will appear on your public profile.</p>
             </div>
         </div>
-        <div class="form-group">
-            <label for="ht3" class="col-sm-3 control-label">Full name</label>
-            <div class="col-sm-9">
-                <input class="form-control form-control-width-md" type="text" id="ht3">
-            </div>
+    </div>
+    <div class="form-group">
+        <label for="ht3" class="col-sm-3 control-label">Full name</label>
+        <div class="col-sm-9">
+            <input class="form-control form-control-width-md" type="text" id="ht3">
         </div>
-        <div class="form-group">
-            <label for="ht4" class="col-sm-3 control-label">Email</label>
-            <div class="col-sm-9">
-                <input class="form-control form-control-width-md" type="text" id="ht4">
-                <span class="help-block">This is how people will contact you.</span>
-            </div>
+    </div>
+    <div class="form-group">
+        <label for="ht4" class="col-sm-3 control-label">Email</label>
+        <div class="col-sm-9">
+            <input class="form-control form-control-width-md" type="text" id="ht4">
+            <p class="help-block">This is how people will contact you.</p>
         </div>
-        <div class="form-group">
-            <label for="po1" class="col-sm-3 control-label">Popover</label>
-            <div class="col-sm-9">
-                <input class="form-control form-control-width-md" type="password" id="po1" data-html="true" data-toggle="popover" data-container="body" data-trigger="focus" data-content="Use at least 8 characters. Don’t use a password from another site, or something too obvious like your pet’s name. <a href=''>Why?</a>">
-            </div>
+    </div>
+    <div class="form-group">
+        <label for="po1" class="col-sm-3 control-label">Popover</label>
+        <div class="col-sm-9">
+            <input class="form-control form-control-width-md" type="password" id="po1" data-html="true" data-toggle="popover" data-container="body" data-trigger="focus" data-content="Use at least 8 characters. Don’t use a password from another site, or something too obvious like your pet’s name. <a href=''>Why?</a>">
         </div>
-    </form>
-</div>
-
+    </div>
+</form>
 [/preview]
 
 ```html
@@ -463,73 +445,73 @@ Help text can be placed at the top of the form, under the heading of a form grou
 If you have many fields, consider organizing related fields into groups. Groups can have a title.
 
 [preview]
-<div class="row">
-    <form class="form-horizontal " style="max-width: 450px;" role="form">
-        <div class="form-group">
-            <div class="col-sm-9 col-sm-offset-3">
+<form class="form-horizontal" style="max-width: 450px;" role="form">
+    <div class="form-group">
+        <div class="col-sm-12">
+            <div class="form-group-heading">
                 <h4>Personal information</h4>
+                <p class="help-block">Some other help text and information.</p>
             </div>
         </div>
-        <div class="form-group">
-            <label for="fg1" class="col-sm-3 control-label required">Email</label>
-            <div class="col-sm-9">
-              <input type="email" class="form-control form-control-width-md" id="fg1" required aria-required="true">
+    </div>
+    <div class="form-group">
+        <label for="fg1" class="col-sm-3 control-label required">Email</label>
+        <div class="col-sm-9">
+          <input type="email" class="form-control form-control-width-md" id="fg1" required aria-required="true">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="fg2" class="col-sm-3 control-label required">Full name</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control-width-md form-control" id="fg2" required aria-required="true">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-12">
+            <div class="form-group-heading">
+                <h4>Shipping details</h4>
             </div>
         </div>
-        <div class="form-group">
-            <label for="fg2" class="col-sm-3 control-label required">Full name</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control-width-md form-control" id="fg2" required aria-required="true">
-            </div>
+    </div>
+    <div class="form-group">
+        <label for="fg3" class="col-sm-3 control-label required">Address line 1</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control form-control-width-md" id="fg3" required aria-required="true">
         </div>
-        <div class="form-group">
-            <div class="col-sm-9 col-sm-offset-3">
-                <h4 style="margin-top: 40px;">Shipping details</h4>
-            </div>
-        </div>
-        <div class="form-group">
-            <label for="fg3" class="col-sm-3 control-label required">Address line 1</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control form-control-width-md" id="fg3" required aria-required="true">
-            </div>
-        </div>
-    </form>
-</div>
+    </div>
+</form>
 [/preview]
-
 ```html
-<div class="row">
-    <form class="form-horizontal " style="max-width: 450px;" role="form">
-        <div class="form-group">
-            <div class="col-sm-9 col-sm-offset-3">
-                <h4>Personal Information</h4>
-            </div>
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <div class="col-sm-9 col-sm-offset-3">
+            <h4>Personal Information</h4>
         </div>
-        <div class="form-group">
-            <label for="fg1" class="col-sm-3 control-label required">Email</label>
-            <div class="col-sm-9">
-              <input type="email" class="form-control form-control-width-md" id="fg1" required aria-required="true">
-            </div>
+    </div>
+    <div class="form-group">
+        <label for="fg1" class="col-sm-3 control-label required">Email</label>
+        <div class="col-sm-9">
+          <input type="email" class="form-control form-control-width-md" id="fg1" required aria-required="true">
         </div>
-        <div class="form-group">
-            <label for="fg2" class="col-sm-3 control-label required">Full name</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control form-control-width-md" id="fg2" required aria-required="true">
-            </div>
+    </div>
+    <div class="form-group">
+        <label for="fg2" class="col-sm-3 control-label required">Full name</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control form-control-width-md" id="fg2" required aria-required="true">
         </div>
-        <div class="form-group">
-            <div class="col-sm-9 col-sm-offset-3">
-                <h4>Shipping Details</h4>
-            </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-9 col-sm-offset-3">
+            <h4>Shipping Details</h4>
         </div>
-        <div class="form-group">
-            <label for="fg3" class="col-sm-3 control-label required">Address line 1</label>
-            <div class="col-sm-9">
-              <input type="text" class="form-control form-control-width-md" id="fg3" required aria-required="true">
-            </div>
+    </div>
+    <div class="form-group">
+        <label for="fg3" class="col-sm-3 control-label required">Address line 1</label>
+        <div class="col-sm-9">
+          <input type="text" class="form-control form-control-width-md" id="fg3" required aria-required="true">
         </div>
-    </form>
-</div>
+    </div>
+</form>
 ```
 
 [/pattern]
@@ -549,30 +531,28 @@ __Text area__
   - Allow the user to keep typing past the indicator, but provide obvious indications that the limit has been exceeded.
 
 [preview]
-<div class="row">
-    <form class="form-horizontal " style="max-width: 450px;" role="form">
-        <div class="form-group has-error">
-            <label for="ta1" class="col-sm-3 control-label">Description</label>
-            <div class="col-sm-9">
-                <textarea id="ta1" rows="3" class="form-control form-control-width-fill">This textfield has exceed the character limit by 10 characters. The user can still continue to type after reaching the limit, but the field is invalid.</textarea>
-                <span class="help-block pull-right"><strong>150/140</strong> character limit</span>
-            </div>
+<form class="form-horizontal" style="max-width: 450px;" role="form">
+    <div class="form-group has-error">
+        <label for="ta1" class="col-sm-3 control-label">Description</label>
+        <div class="col-sm-9">
+            <textarea id="ta1" rows="3" class="form-control form-control-width-fill">This textfield has exceed the character limit by 10 characters. The user can still continue to type after reaching the limit, but the field is invalid.</textarea>
+            <span class="help-block pull-right"><strong>150/140</strong> character limit</span>
         </div>
-        <div class="form-group">
-            <label for="ta2" class="col-sm-3 control-label">Description</label>
-            <div class="col-sm-9">
-                <textarea id="ta2" rows="3" class="form-control form-control-width-fill"></textarea>
-                <span class="help-block pull-right">0/140 character limit</span>
-            </div>
+    </div>
+    <div class="form-group">
+        <label for="ta2" class="col-sm-3 control-label">Description</label>
+        <div class="col-sm-9">
+            <textarea id="ta2" rows="3" class="form-control form-control-width-fill"></textarea>
+            <span class="help-block pull-right">0/140 character limit</span>
         </div>
-        <div class="form-group">
-            <label for="ml1" class="col-sm-3 control-label">Max 25</label>
-            <div class="col-sm-9">
-                <input id="ml1" type="text" class="form-control form-control-width-md" maxlength="25">
-            </div>
+    </div>
+    <div class="form-group">
+        <label for="ml1" class="col-sm-3 control-label">Max 25</label>
+        <div class="col-sm-9">
+            <input id="ml1" type="text" class="form-control form-control-width-md" maxlength="25">
         </div>
-    </form>
-</div>
+    </div>
+</form>
 [/preview]
 
 ```html
@@ -611,224 +591,132 @@ These examples show various form configurations.
 #### Various form elements
 
 [preview]
-<div class="row">
-    <form class="form-horizontal " style="max-width: 450px;" role="form">
-      <div class="form-group">
-        <label for="em12" class="col-sm-3 control-label required">Email</label>
-        <div class="col-sm-9">
-          <input type="email" class="form-control form-control-width-md" id="em12" required aria-required="true">
-          <span class="help-block">Your email will be used to log in.</span>
-        </div>
+<form class="form-horizontal" style="max-width: 450px;" role="form">
+  <div class="form-group">
+    <label for="em12" class="col-sm-3 control-label required">Email</label>
+    <div class="col-sm-9">
+      <input type="email" class="form-control form-control-width-md" id="em12" required aria-required="true">
+      <span class="help-block">Your email will be used to log in.</span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="n12" class="col-sm-3 control-label required">Name</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control-width-md form-control" id="n12" required aria-required="true">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="ci12" class="col-sm-3 control-label required">City</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control-width-md form-control" id="ci12" required aria-required="true">
+    </div>
+   </div>
+   <div class="form-group">
+    <label for="si12" class="col-sm-3 control-label required">State</label>
+    <div class="col-sm-9">
+        <select id="si12" required aria-required="true" class="form-control-width-xs select2 form-control">
+          <option>AL</option>
+          <option>AK</option>
+          <option>AZ</option>
+          <option>AR</option>
+          <option>CA</option>
+          <option>WA</option>
+        </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-3 control-label">Shipping</label>
+    <div class="col-sm-9">
+      <div class="radio">
+        <label><input type="radio" name="opr2" id="opr21" value="option1" checked>UPS</label>
       </div>
-      <div class="form-group">
-        <label for="n12" class="col-sm-3 control-label required">Name</label>
-        <div class="col-sm-9">
-          <input type="text" class="form-control-width-md form-control" id="n12" required aria-required="true">
-        </div>
+      <div class="radio">
+        <label><input type="radio" name="opr2" id="opr22" value="option2">FedEx</label>
       </div>
-      <div class="form-group">
-        <label for="ci12" class="col-sm-3 control-label required">City</label>
-        <div class="col-sm-9">
-          <input type="text" class="form-control-width-md form-control" id="ci12" required aria-required="true">
-        </div>
-       </div>
-       <div class="form-group">
-        <label for="si12" class="col-sm-3 control-label required">State</label>
-        <div class="col-sm-9">
-            <select id="si12" required aria-required="true" class="form-control-width-xs select2 form-control">
-              <option>AL</option>
-              <option>AK</option>
-              <option>AZ</option>
-              <option>AR</option>
-              <option>CA</option>
-              <option>WA</option>
-            </select>
-        </div>
+      <div class="radio">
+        <label><input type="radio" name="opr2" id="opr23" value="option3">USPS</label>
       </div>
-      <div class="form-group">
-        <label class="col-sm-3 control-label">Shipping</label>
-        <div class="col-sm-9">
-          <div class="radio">
-            <label><input type="radio" name="opr2" id="opr21" value="option1" checked>UPS</label>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="opr2" id="opr22" value="option2">FedEx</label>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="opr2" id="opr23" value="option3">USPS</label>
-          </div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="col-sm-offset-3 col-sm-9">
-          <button type="submit" class="btn btn-primary">Send</button>
-        </div>
-      </div>
-    </form>
-</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-9">
+      <button type="submit" class="btn btn-primary">Send</button>
+    </div>
+  </div>
+</form>
 [/preview]
 
 ```html
-<div class="row">
-    <form class="form-horizontal " style="max-width: 450px;" role="form">
-      <div class="form-group">
-        <label for="em12" class="col-sm-3 control-label">Email</label>
-        <div class="col-sm-9">
-          <input type="email" class="form-control form-control-width-md" id="em12">
-          <span class="help-block">Your email will be used to log in.</span>
-        </div>
+<form class="form-horizontal" role="form">
+  <div class="form-group">
+    <label for="em12" class="col-sm-3 control-label">Email</label>
+    <div class="col-sm-9">
+      <input type="email" class="form-control form-control-width-md" id="em12">
+      <span class="help-block">Your email will be used to log in.</span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="n12" class="col-sm-3 control-label required">Name</label>
+    <div class="col-sm-9">
+      <input required aria-required="true" type="text" class="form-control form-control-width-md" id="n12">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="ci12" class="col-sm-3 control-label required">City</label>
+    <div class="col-sm-9">
+      <input required aria-required="true" type="email" class="form-control form-control-width-md" id="ci12">
+    </div>
+</div>
+<div class="form-group">
+    <label for="si12" class="col-sm-3 control-label required">State</label>
+    <div class="col-sm-9">
+        <select required aria-required="true" id="si12" class="form-control form-control-width-md">
+          <option>AL</option>
+          <option>AK</option>
+          <option>AZ</option>
+          <option>AR</option>
+          <option>CA</option>
+        </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="col-sm-3 control-label">Shipping</label>
+    <div class="col-sm-9">
+      <div class="radio">
+        <label><input type="radio" name="opr2" id="opr21" value="option1" checked>UPS</label>
       </div>
-      <div class="form-group">
-        <label for="n12" class="col-sm-3 control-label required">Name</label>
-        <div class="col-sm-9">
-          <input required aria-required="true" type="text" class="form-control form-control-width-md" id="n12">
-        </div>
+      <div class="radio">
+        <label><input type="radio" name="opr2" id="opr22" value="option2">FedEx</label>
       </div>
-      <div class="form-group">
-        <label for="ci12" class="col-sm-3 control-label required">City</label>
-        <div class="col-sm-9">
-          <input required aria-required="true" type="email" class="form-control form-control-width-md" id="ci12">
+      <div class="radio">
+        <label><input type="radio" name="opr2" id="opr23" value="option3">USPS</label>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-9">
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Send me notifications via email
+          </label>
         </div>
     </div>
-    <div class="form-group">
-        <label for="si12" class="col-sm-3 control-label required">State</label>
-        <div class="col-sm-9">
-            <select required aria-required="true" id="si12" class="form-control form-control-width-md">
-              <option>AL</option>
-              <option>AK</option>
-              <option>AZ</option>
-              <option>AR</option>
-              <option>CA</option>
-            </select>
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="col-sm-3 control-label">Shipping</label>
-        <div class="col-sm-9">
-          <div class="radio">
-            <label><input type="radio" name="opr2" id="opr21" value="option1" checked>UPS</label>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="opr2" id="opr22" value="option2">FedEx</label>
-          </div>
-          <div class="radio">
-            <label><input type="radio" name="opr2" id="opr23" value="option3">USPS</label>
-          </div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="col-sm-offset-3 col-sm-9">
-            <div class="checkbox">
-              <label>
-                <input type="checkbox"> Send me notifications via email
-              </label>
-            </div>
-        </div>
-      </div>
-      <div class="form-group">
-        <div class="col-sm-offset-3 col-sm-9">
-          <button type="submit" class="btn btn-default">Back</button>
-          <button type="submit" class="btn btn-primary pull-right ">Submit</button>
-        </div>
-      </div>
-    </form>
-</div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-3 col-sm-9">
+      <button type="submit" class="btn btn-default">Back</button>
+      <button type="submit" class="btn btn-primary pull-right ">Submit</button>
+    </div>
+  </div>
+</form>
 ```
 
 [preview]
-<div class="row">
-    <div class="" style="max-width: 450px;">
-        <form role="form" class="col-sm-offset-3" style="max-width: 350px;">
-          <div class="form-group">
-            <div class="alert alert-danger">
-              <i class="alert-icon icon icon-times-circle"></i>Please fix the 3 errors.
-            </div>
-          </div>
-          <div class="form-group has-error">
-            <label class="control-label required" for="em12">USPTO email address</label>
-            <input type="email" class="form-control" id="em12" value="john.smith@gmail.com" required aria-required="true">
-            <span class="help-block">Email must end with uspto.gov.</span>
-          </div>
-          <div class="form-group has-error" >
-            <label class="control-label required" for="eid12">Employee ID</label> <a href="#" class="pull-right">Find my Employee ID</a>
-            <input type="text" class="form-control" id="eid12" value="238942a" required aria-required="true">
-            <span class="help-block">Employee ID must be numeric.</span>
-          </div>
-          <div class="form-group">
-            <label class="control-label required" for="t12">Title</label>
-            <div>
-                <select class="select2 form-control-width-sm form-control" id="t12" required aria-required="true">
-                  <option value="Mr.">Mr.</option>
-                  <option value="Mrs.">Mrs.</option>
-                  <option value="Miss">Miss</option>
-                </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label class="control-label required" for="fn12">First name</label>
-            <input type="text" class="form-control" id="fn12" value="John" required aria-required="true">
-          </div>
-          <div class="form-group has-error">
-            <label class="control-label required" for="mn12">Middle name</label>
-            <input type="text" class="form-control" id="mn12" required aria-required="true">
-            <span class="help-block">This field is required.</span>
-          </div>
-          <div class="form-group">
-            <label class="control-label required" for="ln12">Last name</label>
-            <input type="text" class="form-control" id="ln12" value="Smith" required aria-required="true">
-          </div>
-          <div class="form-group">
-            <label class="control-label required" for="phone12">Telephone number</label>
-            <input type="text" class="form-control" id="phone12" required aria-required="true">
-          </div>
-          <div class="form-group">
-            <br>
-            <h4>Address</h4>
-          </div>
-          <div class="form-group">
-            <label class="control-label required" for="country12">Country</label>
-            <select class="select2 form-control" id="country12" required aria-required="true">
-              <option value="Mr.">United States</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label class="control-label required" for="adline1">Address line 1</label>
-            <input type="text" class="form-control" id="adline1" required aria-required="true">
-          </div>
-          <div class="form-group">
-            <label class="control-label required" for="adline2">Address line 2</label>
-            <input type="text" class="form-control" id="adline2" required aria-required="true">
-          </div>
-          <div class="form-group">
-            <label class="control-label required" for="city12">City</label>
-            <input type="text" class="form-control" id="city12" required aria-required="true">
-          </div>
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label class="control-label required" for="state12">State</label>
-                <input type="text" class="form-control" id="state12" required aria-required="true">
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="form-group">
-                <label class="control-label required" for="zipcode12">Zip code</label>
-                <input type="text" class="form-control" id="zipcode12" required aria-required="true">
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn btn-default">Cancel</button>
-          <button type="submit" disabled class="btn btn-primary pull-right">Next</button>
-        </form>
-    </div>
-</div>
-[/preview]
-```html
-<div class="row">
-    <form role="form" class="col-xs-12 col-sm-offset-2" style="max-width: 350px;">
+<div class="" style="max-width: 450px;">
+    <form role="form" class="col-sm-offset-3" style="max-width: 350px;">
       <div class="form-group">
         <div class="alert alert-danger">
-          <strong>Woops!</strong> Please fix the 3 errors.
+          <i class="alert-icon icon icon-times-circle"></i>Please fix the 3 errors.
         </div>
       </div>
       <div class="form-group has-error">
@@ -843,11 +731,13 @@ These examples show various form configurations.
       </div>
       <div class="form-group">
         <label class="control-label required" for="t12">Title</label>
-        <select class="form-control" id="t12" required aria-required="true">
-          <option value="Mr.">Mr.</option>
-          <option value="Mrs.">Mrs.</option>
-          <option value="Miss">Miss</option>
-        </select>
+        <div>
+            <select class="select2 form-control-width-sm form-control" id="t12" required aria-required="true">
+              <option value="Mr.">Mr.</option>
+              <option value="Mrs.">Mrs.</option>
+              <option value="Miss">Miss</option>
+            </select>
+        </div>
       </div>
       <div class="form-group">
         <label class="control-label required" for="fn12">First name</label>
@@ -867,12 +757,13 @@ These examples show various form configurations.
         <input type="text" class="form-control" id="phone12" required aria-required="true">
       </div>
       <div class="form-group">
-        <br>
-        <h4>Address</h4>
+        <div class="form-group-heading">
+          <h4>Address</h4>
+        </div>
       </div>
       <div class="form-group">
         <label class="control-label required" for="country12">Country</label>
-        <select class="form-control" id="country12" required aria-required="true">
+        <select class="select2 form-control" id="country12" required aria-required="true">
           <option value="Mr.">United States</option>
         </select>
       </div>
@@ -906,6 +797,89 @@ These examples show various form configurations.
       <button type="submit" disabled class="btn btn-primary pull-right">Next</button>
     </form>
 </div>
+[/preview]
+```html
+<form role="form">
+  <div class="form-group">
+    <div class="alert alert-danger">
+      <i class="alert-icon icon icon-times-circle"></i>Please fix the 3 errors.
+    </div>
+  </div>
+  <div class="form-group has-error">
+    <label class="control-label required" for="em12">USPTO email address</label>
+    <input type="email" class="form-control" id="em12" value="john.smith@gmail.com" required aria-required="true">
+    <span class="help-block">Email must end with uspto.gov.</span>
+  </div>
+  <div class="form-group has-error" >
+    <label class="control-label required" for="eid12">Employee ID</label> <a href="#" class="pull-right">Find my Employee ID</a>
+    <input type="text" class="form-control" id="eid12" value="238942a" required aria-required="true">
+    <span class="help-block">Employee ID must be numeric.</span>
+  </div>
+  <div class="form-group">
+    <label class="control-label required" for="t12">Title</label>
+    <select class="form-control" id="t12" required aria-required="true">
+      <option value="Mr.">Mr.</option>
+      <option value="Mrs.">Mrs.</option>
+      <option value="Miss">Miss</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label class="control-label required" for="fn12">First name</label>
+    <input type="text" class="form-control" id="fn12" value="John" required aria-required="true">
+  </div>
+  <div class="form-group has-error">
+    <label class="control-label required" for="mn12">Middle name</label>
+    <input type="text" class="form-control" id="mn12" required aria-required="true">
+    <span class="help-block">This field is required.</span>
+  </div>
+  <div class="form-group">
+    <label class="control-label required" for="ln12">Last name</label>
+    <input type="text" class="form-control" id="ln12" value="Smith" required aria-required="true">
+  </div>
+  <div class="form-group">
+    <label class="control-label required" for="phone12">Telephone number</label>
+    <input type="text" class="form-control" id="phone12" required aria-required="true">
+  </div>
+  <div class="form-group">
+    <div class="form-group-heading">
+        <h4>Address</h4>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label required" for="country12">Country</label>
+    <select class="form-control" id="country12" required aria-required="true">
+      <option value="Mr.">United States</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label class="control-label required" for="adline1">Address line 1</label>
+    <input type="text" class="form-control" id="adline1" required aria-required="true">
+  </div>
+  <div class="form-group">
+    <label class="control-label required" for="adline2">Address line 2</label>
+    <input type="text" class="form-control" id="adline2" required aria-required="true">
+  </div>
+  <div class="form-group">
+    <label class="control-label required" for="city12">City</label>
+    <input type="text" class="form-control" id="city12" required aria-required="true">
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label class="control-label required" for="state12">State</label>
+        <input type="text" class="form-control" id="state12" required aria-required="true">
+      </div>
+    </div>
+    <div class="col-sm-6">
+      <div class="form-group">
+        <label class="control-label required" for="zipcode12">Zip code</label>
+        <input type="text" class="form-control" id="zipcode12" required aria-required="true">
+      </div>
+    </div>
+  </div>
+  <button type="button" class="btn btn-default">Cancel</button>
+  <button type="submit" disabled class="btn btn-primary pull-right">Next</button>
+</form>
 ```
 
 [/pattern]
