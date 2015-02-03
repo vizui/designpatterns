@@ -88,10 +88,6 @@ Font load and fallback order: __Helvetica Neue (web font), Helvetica, Arial, san
     </tbody>
 </table>
 [/preview]
-#### Helvetica Neue
-[preview]
-<img src="https://cloud.githubusercontent.com/assets/848347/6025825/4834108e-ab8a-11e4-9fd0-2129c15a9bd5.png">
-[/preview]
 ```html
 <h1 class="display3">Regular 56px</h1>
 <h1>Regular 45px</h1>
@@ -100,6 +96,23 @@ Font load and fallback order: __Helvetica Neue (web font), Helvetica, Arial, san
 <h4>Bold 18px</h4>
 <h5>Bold 15px</h5>
 <h6>Bold 14px</h6>
+<p>Regular 14px</p>
+<div class="caption">Regular 13px</div>
+```
+
+#### Helvetica Neue
+[preview]
+<img src="https://cloud.githubusercontent.com/assets/848347/6025825/4834108e-ab8a-11e4-9fd0-2129c15a9bd5.png">
+[/preview]
+```html
+<h1 class="display3">Light 56px</h1>
+<h1>Light 45px</h1>
+<h2>Light 34px</h2>
+<h3>Bold 24px</h3>
+<h4>Bold 18px</h4>
+<h5>Bold 15px</h5>
+<h6>Bold 14px</h6>
+<p>Regular 13px</p>
 <div class="caption">Regular 13px</div>
 ```
 
