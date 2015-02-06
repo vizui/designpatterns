@@ -6,7 +6,7 @@
      */
     $('.pl-toggle-code').on('click', function () {
         // toggle the sibling pre element
-        $(this).parent().next('.pl-preview+pre').toggle(250);
+        $(this).parent().next('.pl-preview+pre').slideToggle(250);
         $(this).toggleClass('active');
     });
 
