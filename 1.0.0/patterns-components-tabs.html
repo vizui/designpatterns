@@ -1,0 +1,425 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Tabs - Components - USPTO UI Design Library</title>
+
+        <meta name="description" content="An open source UI style guide, pattern library, and Bootstrap theme.">
+        <meta name="keywords" contnet="html, css, js, javascript, uspto, design, guide, library, design guide, user interface, design library, frontend, bootstrap, united states patent and trademark office, open source, github">
+        <meta name="viewport" content="width=device-width">
+        <meta name="theme-color" content="#004c97">
+
+        <meta property="og:title" content="Tabs - Components - USPTO UI Design Library">
+        <meta property="og:description" content="An open source UI style guide, pattern library, and Bootstrap theme.">
+
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <!--[if lt IE 9]>
+            <script src="vendor/html5shiv/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <link rel="stylesheet" href="styles/f2dd75fb.vendor.css">
+
+        <link rel="stylesheet" href="styles/fac64934.main.css">
+    </head>
+    <body>
+    <!--[if lt IE 9]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header class="pl-header navbar navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand"><strong>USPTO</strong> <span class="light">Design</span></a>
+                
+                <button type="button" class="nav-collapse btn btn-link"><i class="icon icon-inverse icon-bars"></i></button>
+                
+                <button data-toggle="collapse" data-target="#pl-navbar-collapse" type="button" class="btn navbar-toggle collapsed"><i class="icon icon-inverse icon-angle-down"></i></button>
+            </div>
+            <div class="navbar-collapse collapse" id="pl-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="patterns-index.html">Library</a>
+                    </li>
+                    <li>
+                        <a href="resources.html">Resources</a>
+                    </li>
+                    <li>
+                        <a href="changelog.html">Changelog</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <a ><i class="icon icon-inverse icon-warning"></i><span class="count">3</span></a> -->
+                    <li>
+                        <a href="http://github.com/uspto/designpatterns" title="View on Github"><i class="icon icon-inverse icon-github"></i> &nbsp; View on Github</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+<!--     <div class="pl-sub-header">
+        <div class="pull-left">
+            <h4><strong>Patterns</strong> - Tabs</h4>
+        </div>
+        <div class="pull-right">
+            <button type="button" title="Edit this page on Github" class="btn btn-sm btn-default"> <i class="icon icon-pencil"></i></button>
+        </div>
+    </div> -->
+    <div class="pl-container">
+        <nav class="pl-sidebar">
+            <ul class="nav nav-stacked">
+                
+                    <li class="category">COMPONENTS</li>
+                    
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-alerts.html">Alerts and notifications </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-breadcrumbs.html">Breadcrumbs </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-buttons.html">Buttons </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-dialogs.html">Dialogs </a>
+                                
+                            </li>
+                        
+                    
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-formControls.html">Form controls </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-forms.html">Forms </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-labelsAndBadges.html">Labels and badges </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-menus.html">Menus </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-metadata.html">Metadata </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-pagination.html">Pagination </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-popovers.html">Popovers </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-progressBars.html">Progress and loading </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-tables.html">Tables </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class="active"><a href="patterns-components-tabs.html">Tabs </a>
+                                
+                                    <ul class="nav nav-stacked">
+                                        
+                                            <li><a title="Normal tabs" href="#normal-tabs">Normal tabs</a></li>
+                                        
+                                            <li><a title="Light tabs" href="#light-tabs">Light tabs</a></li>
+                                        
+                                            <li><a title="Pill tabs" href="#pill-tabs">Pill tabs</a></li>
+                                        
+                                            <li><a title="Nested tabs" href="#nested-tabs">Nested tabs</a></li>
+                                        
+                                            <li><a title="Justified tabs" href="#justified-tabs">Justified tabs</a></li>
+                                        
+                                    </ul>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-tooltips.html">Tooltips </a>
+                                
+                            </li>
+                        
+                    
+                
+                    <li class="category">FOUNDATION</li>
+                    
+                        
+                            <li class=""><a href="patterns-foundation-colors.html">Colors </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-foundation-grid.html">Grid </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-foundation-icons.html">Icons </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-foundation-typography.html">Typography </a>
+                                
+                            </li>
+                        
+                    
+                        
+                    
+                
+                    <li class="category">PATTERNS</li>
+                    
+                        
+                            <li class=""><a href="patterns-patterns-dataFormats.html">Data formats </a>
+                                
+                            </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+            </ul>
+        </nav>
+        <section class="pl-content">
+            <div class="pl-pattern">
+<p><h3>Tabs</h3></p>
+<h4>Purpose</h4>
+<p>User's need to flip between multiple focused panes/views of content.</p>
+<h4>Description</h4>
+<p>Tabs manage stacked panes of content, giving the users the ability to view only the content pane they are interested in. Each tab button has a corresponding content pane. Tabs build on a real world metaphor. The selected state is reinforced with the tab metaphor of a folder physically in front of the others in the set.</p>
+<h4>Basic functionality</h4>
+<ul>
+<li>You have multiple categories/views/panes of content, but there is the need to only show one pane at a time.</li>
+<li>Tabs are listed in a horizontal row.</li>
+<li>Avoid overflowing tabs to new lines.</li>
+<li>Tab titles should be short and predictable.</li>
+<li>Tab buttons can contain icons, text, both, and even dropdowns.</li>
+</ul>
+<p> </p>
+</div>
+<div class="pl-pattern">
+<p><h3><a class="pl-heading-link" id="normal-tabs" href="#normal-tabs"><i class="icon icon-link"></i></a>Normal tabs</h3>
+The selected tab color should be the same color as the tab content.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code"></i> View source</div>
+<ul class="nav nav-tabs" role="tablist">
+  <li class="active"><a href="#" role="tab" data-toggle="tab">Active</a></li>
+  <li><a href="#" role="tab" data-toggle="tab">Normal</a></li>
+  <li class="disabled"><a role="tab">Disabled</a></li>
+  <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          Dropdown <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <li role="presentation"><a href="#">Item 1</a></li>
+          <li role="presentation"><a href="#">Item 2</a></li>
+          <li role="presentation"><a href="#">Item 3</a></li>
+        </ul>
+  </li>
+</ul>
+<div style="border-top: none; border-radius: 0" class="panel panel-default">
+    <div class="panel-body">
+        <p></p><p></p>
+    </div>
+</div>
+</div>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav nav-tabs"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tablist"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Active<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Normal<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"disabled"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+</div>
+<div class="pl-pattern">
+<p><h3><a class="pl-heading-link" id="light-tabs" href="#light-tabs"><i class="icon icon-link"></i></a>Light tabs</h3>
+Use when the tabs need less emphasis in relation to other navigational elements.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code"></i> View source</div>
+<ul class="nav nav-tabs nav-tabs-light" role="tablist">
+  <li class="active"><a href="#" role="tab" data-toggle="tab">Active</a></li>
+  <li><a href="#" role="tab" data-toggle="tab">Normal</a></li>
+  <li class="disabled"><a role="tab">Disabled</a></li>
+  <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          Dropdown <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <li role="presentation"><a href="#">Item 1</a></li>
+          <li role="presentation"><a href="#">Item 2</a></li>
+          <li role="presentation"><a href="#">Item 3</a></li>
+        </ul>
+  </li>
+</ul>
+</div>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav nav-tabs nav-tabs-light"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tablist"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Active<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Normal<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"disabled"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+</div>
+<div class="pl-pattern">
+<p><h3><a class="pl-heading-link" id="pill-tabs" href="#pill-tabs"><i class="icon icon-link"></i></a>Pill tabs</h3>
+Use when the tabs need even less emphasis in relation to other navigational elements.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code"></i> View source</div>
+<ul class="nav nav-pills" role="tablist">
+  <li class="active"><a href="#" role="tab" data-toggle="tab">Active</a></li>
+  <li><a href="#" role="tab" data-toggle="tab">Normal</a></li>
+  <li class="disabled"><a role="tab">Disabled</a></li>
+  <li class="dropdown">
+      <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+          Dropdown <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu" role="menu">
+          <li role="presentation"><a href="#">Item 1</a></li>
+          <li role="presentation"><a href="#">Item 2</a></li>
+          <li role="presentation"><a href="#">Item 3</a></li>
+        </ul>
+  </li>
+</ul>
+</div>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav nav-pills"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tablist"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Active<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Normal<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"disabled"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span>&gt;</span>Disabled<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+</div>
+<div class="pl-pattern">
+<p><h3><a class="pl-heading-link" id="nested-tabs" href="#nested-tabs"><i class="icon icon-link"></i></a>Nested tabs</h3></p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code"></i> View source</div>
+<ul class="nav nav-tabs" role="tablist">
+  <li class="active"><a href="#" role="tab" data-toggle="tab">Template</a></li>
+  <li><a href="#" role="tab" data-toggle="tab">History</a></li>
+  <li><a href="#" role="tab" data-toggle="tab">Analytics</a></li>
+</ul>
+<div style="border-top: none; border-radius: 0" class="panel panel-default">
+    <ul class="nav nav-tabs nav-tabs-light" role="tablist">
+      <li><a href="#" role="tab" data-toggle="tab">HTML</a></li>
+      <li class="active"><a href="#" role="tab" data-toggle="tab">Preview</a></li>
+    </ul>
+    <div class="panel-body">
+        <p></p><p></p>
+    </div>
+</div>
+</div>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav nav-tabs"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tablist"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Template<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>History<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Analytics<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">style</span>=<span class="hljs-value">"border-top: none; border-radius: 0;"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel panel-default"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav nav-tabs nav-tabs-light"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tablist"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>HTML<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Preview<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"panel-body"</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+</div>
+<div class="pl-pattern">
+<p><h3><a class="pl-heading-link" id="justified-tabs" href="#justified-tabs"><i class="icon icon-link"></i></a>Justified tabs</h3>
+Evenly sized tabs distributed among the width of the container. This can improve alignment when the tabs are otherwise close to filling the width of the container.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code"></i> View source</div>
+<div style="width: 300px">
+    <ul class="nav nav-tabs nav-justified text-center" role="tablist">
+      <li class="active"><a href="#" role="tab" data-toggle="tab">Activity</a></li>
+      <li><a href="#" role="tab" data-toggle="tab">Info</a></li>
+      <li><a href="#" role="tab" data-toggle="tab">Notes</a></li>
+    </ul>
+    <div style="border-top: none; border-radius: 0" class="panel panel-default">
+        <div class="panel-body">
+            <p></p><p></p>
+        </div>
+    </div>
+</div>
+</div>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">ul</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"nav nav-tabs nav-justified"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tablist"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"active"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Activity<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Info<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">li</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">a</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"#"</span> <span class="hljs-attribute">role</span>=<span class="hljs-value">"tab"</span> <span class="hljs-attribute">data-toggle</span>=<span class="hljs-value">"tab"</span>&gt;</span>Notes<span class="hljs-tag">&lt;/<span class="hljs-title">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">li</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">ul</span>&gt;</span>
+</code></pre>
+</div>
+
+            
+                <div class="pl-footer">
+                    
+                        <a class="pl-footer-previous btn btn-link" style="text-align: left" href="patterns-components-tables.html">
+                            <div class="text-muted" style="font-size: 11px">PREVIOUS</div>
+                            Tables
+                        </a>
+                    
+                    
+                        <a class="pl-footer-next pull-right btn btn-link" style="text-align: right" href="patterns-components-tooltips.html">
+                            <div class="text-muted" style="font-size: 11px">NEXT</div>
+                            Tooltips
+                        </a>
+                    
+                </div>
+            
+        </section>
+    </div>
+
+
+        <script src="scripts/be0fac57.vendor.js"></script>
+
+        <script src="scripts/f0759cc3.plugins.js"></script>
+
+        
+        <script src="//components.uspto.gov/js/ais/2-4-pattern-library.js"></script>
+        
+
+        <script src="scripts/0c2354d6.main.js"></script>
+    </body>
+</html>

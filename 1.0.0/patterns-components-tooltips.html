@@ -1,0 +1,313 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Tooltips - Components - USPTO UI Design Library</title>
+
+        <meta name="description" content="An open source UI style guide, pattern library, and Bootstrap theme.">
+        <meta name="keywords" contnet="html, css, js, javascript, uspto, design, guide, library, design guide, user interface, design library, frontend, bootstrap, united states patent and trademark office, open source, github">
+        <meta name="viewport" content="width=device-width">
+        <meta name="theme-color" content="#004c97">
+
+        <meta property="og:title" content="Tooltips - Components - USPTO UI Design Library">
+        <meta property="og:description" content="An open source UI style guide, pattern library, and Bootstrap theme.">
+
+        <link rel="shortcut icon" href="favicon.ico">
+
+        <!--[if lt IE 9]>
+            <script src="vendor/html5shiv/html5shiv.min.js"></script>
+        <![endif]-->
+
+        <link rel="stylesheet" href="styles/f2dd75fb.vendor.css">
+
+        <link rel="stylesheet" href="styles/fac64934.main.css">
+    </head>
+    <body>
+    <!--[if lt IE 9]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <header class="pl-header navbar navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand"><strong>USPTO</strong> <span class="light">Design</span></a>
+                
+                <button type="button" class="nav-collapse btn btn-link"><i class="icon icon-inverse icon-bars"></i></button>
+                
+                <button data-toggle="collapse" data-target="#pl-navbar-collapse" type="button" class="btn navbar-toggle collapsed"><i class="icon icon-inverse icon-angle-down"></i></button>
+            </div>
+            <div class="navbar-collapse collapse" id="pl-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="patterns-index.html">Library</a>
+                    </li>
+                    <li>
+                        <a href="resources.html">Resources</a>
+                    </li>
+                    <li>
+                        <a href="changelog.html">Changelog</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- <a ><i class="icon icon-inverse icon-warning"></i><span class="count">3</span></a> -->
+                    <li>
+                        <a href="http://github.com/uspto/designpatterns" title="View on Github"><i class="icon icon-inverse icon-github"></i> &nbsp; View on Github</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+<!--     <div class="pl-sub-header">
+        <div class="pull-left">
+            <h4><strong>Patterns</strong> - Tooltips</h4>
+        </div>
+        <div class="pull-right">
+            <button type="button" title="Edit this page on Github" class="btn btn-sm btn-default"> <i class="icon icon-pencil"></i></button>
+        </div>
+    </div> -->
+    <div class="pl-container">
+        <nav class="pl-sidebar">
+            <ul class="nav nav-stacked">
+                
+                    <li class="category">COMPONENTS</li>
+                    
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-alerts.html">Alerts and notifications </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-breadcrumbs.html">Breadcrumbs </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-buttons.html">Buttons </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-dialogs.html">Dialogs </a>
+                                
+                            </li>
+                        
+                    
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-formControls.html">Form controls </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-forms.html">Forms </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-labelsAndBadges.html">Labels and badges </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-menus.html">Menus </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-metadata.html">Metadata </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-pagination.html">Pagination </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-popovers.html">Popovers </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-progressBars.html">Progress and loading </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-tables.html">Tables </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-components-tabs.html">Tabs </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class="active"><a href="patterns-components-tooltips.html">Tooltips </a>
+                                
+                                    <ul class="nav nav-stacked">
+                                        
+                                            <li><a title="Positioning" href="#positioning">Positioning</a></li>
+                                        
+                                            <li><a title="Content" href="#content">Content</a></li>
+                                        
+                                    </ul>
+                                
+                            </li>
+                        
+                    
+                
+                    <li class="category">FOUNDATION</li>
+                    
+                        
+                            <li class=""><a href="patterns-foundation-colors.html">Colors </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-foundation-grid.html">Grid </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-foundation-icons.html">Icons </a>
+                                
+                            </li>
+                        
+                    
+                        
+                            <li class=""><a href="patterns-foundation-typography.html">Typography </a>
+                                
+                            </li>
+                        
+                    
+                        
+                    
+                
+                    <li class="category">PATTERNS</li>
+                    
+                        
+                            <li class=""><a href="patterns-patterns-dataFormats.html">Data formats </a>
+                                
+                            </li>
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                        
+                    
+                
+            </ul>
+        </nav>
+        <section class="pl-content">
+            <div class="pl-pattern">
+<p><h3>Tooltips</h3></p>
+<h4>Purpose</h4>
+<p>Users need additional, potentially optional information on demand.</p>
+<h4>Description</h4>
+<p>Tooltips provide information when an element is hovered over.</p>
+<ul>
+<li>Tooltips are attached to an element and appear when the element is hovered over</li>
+<li>The show and hide delays of a tooltip may vary depending on the need, but the default is 200ms to show and 0ms to hide</li>
+<li>Tooltips cannot be interacted with</li>
+</ul>
+<p>Use tooltips for:</p>
+<ul>
+<li>Icon/button descriptions</li>
+<li>Expanding shortened date/time stamps</li>
+</ul>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code"></i> View source</div>
+<div class="tooltip fade in right" style="display: inline-block; position: relative; width: auto">
+    <div class="tooltip-inner">I'm a tooltip!</div>
+    <div class="tooltip-arrow"></div>
+</div>
+</div>
+<pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tooltip fade in right"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tooltip-inner"</span>&gt;</span>I'm a tooltip!<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"tooltip-arrow"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span>
+</code></pre>
+</div>
+<div class="pl-pattern">
+<p><h3><a class="pl-heading-link" id="positioning" href="#positioning"><i class="icon icon-link"></i></a>Positioning</h3>
+Tooltips can be positioned either above, below, to the left, or to the right of target element. In many situations, tooltips should be positioned dynamically based on the available space around the target element.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code"></i> View source</div>
+<div style="width: 120px">
+    <button type="button" class="btn btn-block btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip above">Position above</button>
+    <button type="button" class="btn btn-block btn-default" data-toggle="tooltip" data-placement="left" title="Tooltip to left">Position left</button>
+    <button type="button" class="btn btn-block btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip to right">Position right</button>
+    <button type="button" class="btn btn-block btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip below">Position below</button>
+</div>
+</div>
+</div>
+<div class="pl-pattern">
+<p><h3><a class="pl-heading-link" id="content" href="#content"><i class="icon icon-link"></i></a>Content</h3>
+The content of a tooltip can vary. It's best to keep it to a few words.</p>
+<div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code"></i> View source</div>
+<div style="width: 120px">
+    <button type="button" class="btn btn-block btn-default" data-toggle="tooltip" data-placement="right" title="Print">Short</button>
+    <button type="button" class="btn btn-block btn-default" data-toggle="tooltip" data-placement="right" data-html="true" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In semper volutpat ultrices. Mauris lobortis lacus vel ullamcorper vestibulum.">Wrapping</button>
+    <button type="button" class="btn btn-block btn-default" data-toggle="tooltip" data-placement="right" data-html="true" title="<i class=&quot;icon icon-inverse icon-calendar-o&quot;></i> &nbsp; <strong>January 21</strong>, 2014">Rich content</button>
+</div>
+</div>
+<pre><code class="hljs html">
+</code></pre>
+</div>
+
+            
+                <div class="pl-footer">
+                    
+                        <a class="pl-footer-previous btn btn-link" style="text-align: left" href="patterns-components-tabs.html">
+                            <div class="text-muted" style="font-size: 11px">PREVIOUS</div>
+                            Tabs
+                        </a>
+                    
+                    
+                        <a class="pl-footer-next pull-right btn btn-link" style="text-align: right" href="patterns-foundation-colors.html">
+                            <div class="text-muted" style="font-size: 11px">NEXT</div>
+                            Colors
+                        </a>
+                    
+                </div>
+            
+        </section>
+    </div>
+
+
+        <script src="scripts/be0fac57.vendor.js"></script>
+
+        <script src="scripts/f0759cc3.plugins.js"></script>
+
+        
+        <script src="//components.uspto.gov/js/ais/2-4-pattern-library.js"></script>
+        
+
+        <script src="scripts/0c2354d6.main.js"></script>
+    </body>
+</html>
