@@ -4,6 +4,7 @@ title: "Buttons"
 
 [pattern]
 <h3>Buttons</h3>
+
 Buttons are used as triggers for actions. Depending on the use case, buttons contain a label and/or an icon. There are a variety of styles, sizes, and variations that can be used for different situations.
 
 All button labels are sentence case. They should be as short as possible while clearly explaining what will happen when the button is clicked.

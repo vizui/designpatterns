@@ -336,6 +336,8 @@ Dialogs can prevent the user from performing actions behind/around the dialog if
 - __Modeless__: A modeless dialog __allows__ the user interact with all other areas of the application without dismissing the dialog. 
 - __Mixed-modal__: A mixed-modal dialog may block __some__ areas of the application, but not others. E.g., a dialog pertaining to one document, but not another visible document.
 
+&nbsp;
+
 [/pattern]
 
 [pattern]
