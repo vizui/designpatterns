@@ -19,9 +19,9 @@ module.exports = function(grunt) {
 
     // converts [preview] and [pattern] tags to properly classed divs
     var replaceMarkup = function (text) {
-        text = text.replace(/\[preview\]/g, '<div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code"></i> View source</div>\n');
+        text = text.replace(/\[preview\]/g, '<div class="pl-preview"><div class="pl-toggle-code"><i class="icon icon-code"></i> View source</div>');
         text = text.replace(/\[\/preview\]/g, '</div>\n');
-        text = text.replace(/\[pattern\]/g, '<div class="pl-pattern">\n');
+        text = text.replace(/\[pattern\]/g, '<div class="pl-pattern">');
         text = text.replace(/\[\/pattern\]/g, '</div>\n');
         return text;
     };
@@ -32,7 +32,7 @@ module.exports = function(grunt) {
         var result;
         while ((result = re.exec(text)) !== null) {
             var escapedTitle = result[1].toLowerCase().replace(/[^\w]+/g, '-');
-            text = text.replace(result[0], '<h3><a class="pl-heading-link" id="' + escapedTitle + '" href="#' + escapedTitle + '"><i class="icon icon-link"></i></a>' + result[1].trim() + '</h3>');
+            text = text.replace(result[0], '<h3><a class="pl-heading-link" id="' + escapedTitle + '" href="#' + escapedTitle + '"><span class="pl-heading-link-hash">#</span>' + result[1].trim() + '</a></h3>');
         }
         return text;
     };

@@ -5,6 +5,7 @@ preview: true
 
 [pattern]
 <h3>Popovers</h3>
+
 #### Purpose
 Users need to be able to access additional related information or functionality without a change in context.
 

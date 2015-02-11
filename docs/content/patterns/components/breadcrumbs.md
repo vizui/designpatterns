@@ -5,6 +5,7 @@ preview: true
 
 [pattern]
 <h3>Breadcrumbs</h3>
+
 #### Purpose
 Users need to understand their current location and navigate within a hierarchical navigation scheme.
 

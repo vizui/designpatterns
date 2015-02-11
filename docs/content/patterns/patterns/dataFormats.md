@@ -5,6 +5,7 @@ preview: true
 
 [pattern]
 ### Date and time
+
 #### Formats
 <table class="table table-bordered" style="max-width: 600px;">
     <colgroup>
@@ -94,6 +95,7 @@ For dates/times associated with user generated data (e.g., notes, documents), us
 
 [pattern]
 ### File sizes
+
 - 340 KB (round to nearest KB)
 - 4.13 MB (two decimal max)
 - 3.22 GB (two decimal max)

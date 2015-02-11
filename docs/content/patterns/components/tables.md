@@ -4,6 +4,7 @@ title: "Tables"
 
 [pattern]
 <h3>Tables</h3>
+
 #### Purpose
 Users need to see structured data in a manner that makes the data readable, scannable, and comparable.
 

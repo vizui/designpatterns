@@ -79,6 +79,7 @@ Input masks ensure that the user understands the input format required, in addit
 
 [pattern]
 ### Text area
+
 #### Purpose
 Users need to input an extended, potentially multi-line text value.
 
@@ -311,6 +312,7 @@ Use a toggle switch for a binary option where the change occurs _immediately_. U
 
 [pattern]
 ### Select
+
 #### Purpose
 The user needs to choose an option from a predefined set.
 

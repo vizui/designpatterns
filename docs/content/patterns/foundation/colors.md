@@ -3,10 +3,12 @@ title: "Colors"
 ---
 
 [pattern]
-
 ### Primary UI colors
+
 These are the primary colors used for UI elements. The primary colors have semantic meanings associated with them.
+
 #### Colors
+
 <div class="pl-palette">
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="background-color:#004c97;"></div>
@@ -65,10 +67,14 @@ These are the primary colors used for UI elements. The primary colors have seman
     </div>
 </div>
 
+&nbsp;
+
 [/pattern]
 [pattern]
 ### Full brand palette
-This is the full USPTO color palette. Only the handful above are frequently used in UI elements.
+
+This is the full USPTO color palette. However, many of these are rarely used for UI elements.
+
 <div class="pl-palette">
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="background-color: #643335;"></div>
@@ -177,4 +183,7 @@ This is the full USPTO color palette. Only the handful above are frequently used
         <div class="pl-palette-value">#D9D9D6</div>
     </div>
 </div>
+
+&nbsp;
+
 [/pattern]
