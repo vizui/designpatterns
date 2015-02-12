@@ -1,6 +1,5 @@
 ## Todo list
 
-
 ### Existing patterns
 __Forms__
 - Advanced options expansion
@@ -14,6 +13,12 @@ __Pagination__
 - Load more
 
 ### Future patterns
+- Layouts
+- Navigation
+- Lists (and list controls: checkboxes, action buttons, drag handles, expand/collapse, icons, groups & subheaders)
+- Accordions
+- Tags
+- Cards
 - Time picker
 - Notes
 - Image/text zoom
@@ -22,3 +27,4 @@ __Pagination__
 - Image gallery
 - Tree
 - Help and help indicators
+- Carousels
