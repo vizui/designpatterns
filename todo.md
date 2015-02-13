@@ -12,8 +12,11 @@ __Pagination__
 - Infinite scrolling
 - Load more
 
+__Buttons__
+- Button mouseover
+
 ### Future patterns
-- Layouts
+__v1.0 Releases__
 - Navigation
 - Lists (and list controls: checkboxes, action buttons, drag handles, expand/collapse, icons, groups & subheaders)
 - Accordions
@@ -26,5 +29,14 @@ __Pagination__
 - Gadget framework
 - Image gallery
 - Tree
-- Help and help indicators
+- Help and help indicators (seamless.com menu item mouseover indicator, maybe?)
 - Carousels
+- Notifications section (like Facebook?)
+- Filters (See CVS.com for one example that may work)
+
+__v2.0 Releases__
+- Mobile-specific patterns
+- UI Layouts
+
+__Other__
+- Fix buttons on homepage so they are more responsive (block level buttons maybe?)
