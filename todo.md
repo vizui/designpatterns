@@ -37,6 +37,7 @@ __v1.0 Releases__
 __v2.0 Releases__
 - Mobile-specific patterns
 - UI Layouts
+- Password strength and criteria-met indicators (?)
 
 __Other__
 - Fix buttons on homepage so they are more responsive (block level buttons maybe?)
