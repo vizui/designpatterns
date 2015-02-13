@@ -13,34 +13,34 @@ __Pagination__
 - Load more
 
 __Buttons__
-- Button mouseover (see Wacom.com for one idea)
+- Button mouseover  (see Wacom.com for one idea)
 
 ### Future patterns
 __To be scheduled__
 - Time picker
-- Navigation
-- Lists (and list controls: checkboxes, action buttons, drag handles, expand/collapse, icons, groups & subheaders)
-- Tags
 - Cards
 - Notes
 - Image/text zoom
 - Writing style
-- Gadget framework
 - Image gallery
-- Tree
 - Carousels
 - Notifications section (like Facebook?)
-- Password strength and criteria-met indicators (?)
 
 __v1.1 Releases__
 - Filters (See CVS.com for one example that may work)
+- Wizards
 - Accordions
 - Expandable Rows (pay special attention to 508 issues here)
 - Help and help indicators (seamless.com menu item mouseover indicator, maybe?)
 - UI Layouts (General, and loosely guide mobile)
+- Navigation
 
 __v1.2 Releases__
-
+- Lists (and list controls: checkboxes, action buttons, drag handles, expand/collapse, icons, groups & subheaders)
+- Tags
+- Tree
+- Password strength and criteria-met indicators (?)
+- Gadget framework
 
 __v2.0 Releases__
 - Mobile-specific patterns
