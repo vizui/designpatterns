@@ -16,28 +16,34 @@ __Buttons__
 - Button mouseover
 
 ### Future patterns
-__v1.0 Releases__
+__To be scheduled__
+- Time picker
 - Navigation
 - Lists (and list controls: checkboxes, action buttons, drag handles, expand/collapse, icons, groups & subheaders)
-- Accordions
 - Tags
 - Cards
-- Time picker
 - Notes
 - Image/text zoom
 - Writing style
 - Gadget framework
 - Image gallery
 - Tree
-- Help and help indicators (seamless.com menu item mouseover indicator, maybe?)
 - Carousels
 - Notifications section (like Facebook?)
+- Password strength and criteria-met indicators (?)
+
+__v1.1 Releases__
 - Filters (See CVS.com for one example that may work)
+- Accordions
+- Expandable Rows (pay special attention to 508 issues here)
+- Help and help indicators (seamless.com menu item mouseover indicator, maybe?)
+- UI Layouts (General, and loosely guide mobile)
+
+__v1.2 Releases__
+
 
 __v2.0 Releases__
 - Mobile-specific patterns
-- UI Layouts
-- Password strength and criteria-met indicators (?)
 
 __Other__
 - Fix buttons on homepage so they look good on mobile and low-res (block level buttons maybe?)
