@@ -13,7 +13,7 @@ __Pagination__
 - Load more
 
 __Buttons__
-- Button mouseover
+- Button mouseover (see Wacom.com for one idea)
 
 ### Future patterns
 __To be scheduled__
