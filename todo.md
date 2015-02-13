@@ -40,3 +40,4 @@ __v2.0 Releases__
 
 __Other__
 - Fix buttons on homepage so they are more responsive (block level buttons maybe?)
+- Make the working library accessible for comments and pull requests
