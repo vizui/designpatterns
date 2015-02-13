@@ -40,5 +40,5 @@ __v2.0 Releases__
 - Password strength and criteria-met indicators (?)
 
 __Other__
-- Fix buttons on homepage so they are more responsive (block level buttons maybe?)
+- Fix buttons on homepage so they look good on mobile and low-res (block level buttons maybe?)
 - Make the working library accessible for comments and pull requests
