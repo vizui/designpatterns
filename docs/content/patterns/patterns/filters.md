@@ -5,13 +5,13 @@ draft: true
 
 [pattern]
 <h3>Filters</h3>
+
 #### Purpose
-Users may need filter a collection of items or search results to find items of interest.
+Users need filter a collection of items or search results to find items of interest.
 
 #### Description
-Filters provide a set of controls to reduce items in a collection based on characteristics or attributes that a user is targeting. For example, showing all notes created last year.
+Filters provide a set of controls to reduce items in a collection based on characteristics or attributes that a user is targeting. For example, filtering a collection of items by date or by tag.
 
-#### Basic functionality
 Filters can provide the following functionality:
 - A list of interesting attributes common to items in a collection, and 
 possible values to filter by
@@ -155,47 +155,6 @@ When filters are frequently used or there are many filters, place them to the le
                     </div>
                 </div>
             </form>
-        </div>
-        <div style="margin-left: 290px;" class="panel panel-default">
-            <div class="filter-criteria" style="display: inline-block; width: 100%; float; left;">
-                <div class="pull-right">
-                    <div class="dropdown" style="display: inline-block">
-                        <button type="button" id="dropdownMenu3" class="btn btn-link dropdown-toggle" data-toggle="dropdown"><span class="text-muted normal">Showing</span> 150-160 <span class="text-muted normal">of</span> 305 <span class="caret"></span></button>
-                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
-                            <li role="presentation" class="dropdown-header">Jump to page</li>
-                            <li style="padding: 0 16px;" role="presentation">
-                                <form action="">
-                                    <div class="input-group input-group-sm">
-                                        <input type="text" placeholder="15" class="form-control"/>
-                                        <div class="input-group-btn">
-                                            <button class="btn btn-default">Go</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </li>
-                            <li class="divider"></li>
-                            <li role="presentation" class="dropdown-header">Show up to</li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
-                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
-                        </ul>
-                    </div> <div class="btn-group">
-                      <a href="#" class="btn btn-default"><i class="icon icon-angle-left"></i></a>
-                     <a href="#" class="btn btn-default"><i class="icon icon-angle-right"></i></a>
-                    </div>
-                </div>
-                <span class="toolbar-text">
-                    Filtered by
-                    <ul class="filter-applied-list">
-                        <li>Assignment <i class="icon icon-close icon-muted"></i></li>
-                        <li>2014 <i class="icon icon-close icon-muted"></i></li>
-                        <li>Orange <i class="icon icon-close icon-muted"></i></li>
-                        <li>Within 5 miles <i class="icon icon-close icon-muted"></i></li>
-                    </ul>
-                </span>
-            </div>
-            <h5 style="margin: 0;"></h5>
         </div>
     </div>
 </div>
