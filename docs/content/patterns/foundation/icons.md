@@ -2,10 +2,42 @@
 title: "Icons"
 ---
 [pattern]
-<h3>Icons</h3>
-Application icons are created to be crisp at 14x14 with some minor variation in width. These icons are derived from [Font Awesome](http://fortawesome.github.io/Font-Awesome/) 4.2.0.
+### Overview
 
-Due to some organizations blocking web font downloads, these icons are being presented as an SVG sprite. The source SVG files are on Github. Your application and audience may benefit from other methods of serving icons.
+
+
+#### Colors
+
+<div class="row" style="max-width: 800px;">
+    <div class="col-sm-6">
+        <ul>
+            <li>System icons should always be one solid color</li>
+            <li>System icons should either be black, white, or any other primary UI color</li>
+            <li>System icons can be placed in colored circles</li>
+        </ul>
+    </div>
+    <div class="col-sm-6">
+        <div style="margin-left: 20px;">
+            <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #008139; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="icon icon-thumbs-up icon-inverse"></i></div>
+            <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #004c97; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="icon icon-bell icon-inverse"></i></div>
+            <div style="display: inline-block; padding: 3px; margin: 4px; background-color: #eee; width: 30px; height: 30px; text-align: center; border-radius: 50%;"><i class="icon icon-comment"></i></div>
+        </div>
+    </div>
+</div>
+
+#### Sizes
+- Icons can vary in size
+- When scaling icons, ensure the sizes used appear sharp on standard and high DPI screens
+
+#### Usage
+- Due to some organizations and browser configurations blocking web font downloads, the design library serves icons as an svg sprite
+- Your application and audience may benefit from other methods of serving icons
+- The method used for dynamically scaling icons is dependent on the method used for serving icons
+- The method used for coloring icons is dependent on the method used for serving icons
+- For performance, create icon bundles containing only used icons
+- The source SVG files are available on Github
+
+<span class="text-muted">These icons are derived from [Font Awesome](http://fortawesome.github.io/Font-Awesome/) 4.2.0.</span>
 
 &nbsp;
 
@@ -578,7 +610,7 @@ Due to some organizations blocking web font downloads, these icons are being pre
 [/pattern]
 
 [pattern]
-### Video player ucons
+### Video player icons
 
 <div class="row pl-icon-list">
     <div class="col-md-3 col-sm-4"><i class="icon icon-arrows-alt"></i> icon-arrows-alt</div>
