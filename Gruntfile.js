@@ -5,23 +5,20 @@ module.exports = function (grunt) {
     // Load grunt tasks automatically
     require('load-grunt-tasks')(grunt);
 
-    require('./grunt/patterns')(grunt);
-
     // Time how long tasks take. Can help when optimizing build times
     require('time-grunt')(grunt);
 
-    var _ = require('lodash');
+    // var _ = require('lodash');
 
     var pkg = grunt.file.readJSON('package.json');
 
-    var config = grunt.file.readYAML('./config.yaml');
+    // var config = grunt.file.readYAML('./config.yaml');
 
     // Configurable paths
     var paths = {
         tmp: '.tmp',
-        docs: 'docs',
-        docsDist: 'docs/dist',
-        libDist: 'dist'
+        assets: 'generated',
+        downloads: 'downloads'
     };
 
     // Define the configuration for all the tasks
@@ -33,93 +30,13 @@ module.exports = function (grunt) {
 
         // Watches files for changes and runs tasks based on the changed files
         watch: {
-            bower: {
-                files: ['bower.json'],
-                tasks: ['bowerInstall']
-            },
             js: {
-                files: ['<%= paths.docs %>/scripts/{,*/}*.js'],
-                tasks: ['jshint'],
-                options: {
-                    livereload: true
-                }
-            },
-            gruntfile: {
-                files: ['Gruntfile.js']
-            },
-            patterns: {
-                files: ['<%= paths.docs %>/*.ejs', '<%= paths.docs %>/content/**/*.md'],
-                tasks: ['copy:tpl', 'template', 'patterns:server']
+                files: ['front/scripts/{,*/}*.js'],
+                tasks: ['jshint', 'concat:mainjs']
             },
             less: {
-                files: ['less/**/*.less', '<%= paths.docs %>/styles/**/*.less'],
-                tasks: ['less:server', 'autoprefixer']
-            },
-            styles: {
-                files: ['<%= paths.docs %>/styles/{,*/}*.css'],
-                tasks: ['newer:copy:styles', 'autoprefixer']
-            },
-            livereload: {
-                options: {
-                    livereload: '<%= connect.options.livereload %>'
-                },
-                files: [
-                    '<%= paths.tmp %>/{,*/}*.html',
-                    '<%= paths.tmp %>/styles/{,*/}*.css',
-                    '<%= paths.docs %>/images/{,*/}*'
-                ]
-            }
-        },
-
-        template: {
-            server: {
-                engine: 'ejs',
-                variables: { globals: config, pkg: pkg },
-                files: [{
-                    expand: true,
-                    cwd: '<%= paths.tmp %>',
-                    dest: '<%= paths.tmp %>',
-                    src: '{index,resources,changelog,example-*}.tpl.ejs',
-                    ext: '.html'
-                }]
-            },
-            dist: {
-                engine: 'ejs',
-                variables: { globals: config, pkg: pkg, env: 'prod' },
-                files: [{
-                    expand: true,
-                    cwd: '<%= paths.tmp %>',
-                    dest: '<%= paths.tmp %>',
-                    src: '{index,resources,changelog,example-*}.tpl.ejs',
-                    ext: '.html'
-                }]
-            }
-        },
-
-        // The actual grunt server settings
-        connect: {
-            options: {
-                port: grunt.option('port') || 9000,
-                open: true,
-                livereload: 35729,
-                hostname: '0.0.0.0'
-            },
-            livereload: {
-                options: {
-                    middleware: function(connect) {
-                        return [
-                            connect.static(paths.tmp),
-                            connect().use('/bower_components', connect.static('./bower_components')),
-                            connect.static(paths.docs)
-                        ];
-                    }
-                }
-            },
-            dist: {
-                options: {
-                    base: '<%= paths.docsDist %>',
-                    livereload: false
-                }
+                files: ['usptostrap/less/**/*.less', 'front/styles/**/*.less'],
+                tasks: ['less', 'concat:maincss', 'autoprefixer']
             }
         },
 
@@ -130,17 +47,15 @@ module.exports = function (grunt) {
                     dot: true,
                     src: [
                         '<%= paths.tmp %>',
-                        '<%= paths.libDist %>',
-                        '<%= paths.docsDist %>/*',
-                        '!<%= paths.docsDist %>/.git*'
+                        '<%= paths.assets %>',
+                        '<%= paths.downloads %>/*'
                     ]
                 }]
             },
-            server: '.tmp'
         },
 
         lesslint: {
-            src: ['less/**/_*.less', '<%= paths.docs %>/styles/**/_*.less'],
+            src: ['usptostrap/less/**/*.less', 'front/styles/**/*.less'],
             options: {
                 csslint: {
                     'box-model': false,
@@ -161,40 +76,24 @@ module.exports = function (grunt) {
             },
             all: [
                 'Gruntfile.js',
-                '<%= paths.docs %>/scripts/{,*/}*.js',
-                '!<%= paths.docs %>/scripts/vendor/*'
+                'front/scripts{,*/}*.js'
             ]
         },
 
         // Compiles LESS to CSS and generates necessary files if requested
         less: {
-            theme: {
-                options: {
-                    compress: true,
-                },
+            dist: {
                 files: [{
                     expand: true,
                     cwd: 'less',
                     src: ['usptostrap.less'],
-                    dest: '<%= paths.libDist %>/css/',
-                    ext: '.min.css'
-                }]
-            },
-            dist: {
-                files: [{
-                    expand: true,
-                    cwd: '<%= paths.docs %>/styles',
-                    src: ['pattern-library.less'],
-                    dest: '<%= paths.tmp %>/styles',
+                    dest: '<%= paths.downloads %>/css/',
                     ext: '.css'
-                }]
-            },
-            server: {
-                files: [{
+                }, {
                     expand: true,
-                    cwd: '<%= paths.docs %>/styles',
+                    cwd: 'front/styles',
                     src: ['pattern-library.less'],
-                    dest: '<%= paths.tmp %>/styles',
+                    dest: '<%= paths.assets %>/styles',
                     ext: '.css'
                 }]
             }
@@ -208,56 +107,11 @@ module.exports = function (grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '<%= paths.tmp %>/styles/',
+                    cwd: '<%= paths.assets %>/styles/',
                     src: '{,*/}*.css',
-                    dest: '<%= paths.tmp %>/styles/'
+                    dest: '<%= paths.assets %>/styles/'
                 }]
             }
-        },
-
-        // Automatically inject Bower components into the HTML file
-        bowerInstall: {
-            app: {
-                src: ['<%= paths.docs %>/header.ejs', '<%= paths.docs %>/footer.ejs'],
-                exclude: ['bower_components/bootstrap/js/bootstrap.js', 'bower_components/bootstrap/dist/css/bootstrap.css', 'bower_components/bootstrap/dist/js/bootstrap.js']
-            },
-            less: {
-                src: ['<%= paths.docs %>/styles/{,*/}*.{less}']
-            }
-        },
-
-        // Renames files for browser caching purposes
-        rev: {
-            dist: {
-                files: {
-                    src: [
-                        '<%= paths.docsDist %>/draft/scripts/{,*/}*.js',
-                        '<%= paths.docsDist %>/draft/styles/{,*/}*.css',
-                        '<%= paths.docsDist %>/draft/images/{,*/}*.*',
-                        '<%= paths.docsDist %>/draft/styles/fonts/{,*/}*.*',
-                        '<%= paths.docsDist %>/draft/*.{ico,png}'
-                    ]
-                }
-            }
-        },
-
-        // Reads HTML for usemin blocks to enable smart builds that automatically
-        // concat, minify and revision files. Creates configurations in memory so
-        // additional tasks can operate on them
-        useminPrepare: {
-            options: {
-                dest: '<%= paths.docsDist %>/draft'
-            },
-            html: ['<%= paths.tmp %>/**/*.ejs']
-        },
-
-        // Performs rewrites based on rev and the useminPrepare configuration
-        usemin: {
-            options: {
-                assetsDirs: ['<%= paths.docsDist %>/draft', '<%= paths.docsDist %>/draft/images']
-            },
-            html: ['<%= paths.tmp %>/**/*.ejs'],
-            css: ['<%= paths.docsDist %>/draft/styles/{,*/}*.css']
         },
 
         // The following *-min tasks produce minified files in the dist folder
@@ -265,225 +119,114 @@ module.exports = function (grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: '<%= paths.docs %>/images',
+                    cwd: 'front/images',
                     src: '{,*/}*.{gif,jpeg,jpg,png}',
-                    dest: '<%= paths.docsDist %>/draft/images'
+                    dest: '<%= paths.assets %>/images'
                 }]
             }
         },
 
-        // was breaking svg sprite
-        // svgmin: {
-        //     dist: {
-        //         files: [{
-        //             expand: true,
-        //             cwd: 'images',
-        //             src: '{,*/}*.svg',
-        //             dest: '<%= paths.libDist %>/images'
-        //         }]
-        //     }
-        // },
-
-        htmlmin: {
-            dist: {
-                options: {
-                    // collapseBooleanAttributes: true,
-                    // collapseWhitespace: true,
-                    // removeAttributeQuotes: true,
-                    // removeCommentsFromCDATA: true,
-                    // removeEmptyAttributes: true,
-                    // removeOptionalTags: true,
-                    // removeRedundantAttributes: true,
-                    // useShortDoctype: true
-                },
-                files: [{
-                    expand: true,
-                    cwd: '.tmp',
-                    src: '{,*/}*.html',
-                    dest: '<%= paths.docsDist %>/draft'
-                }]
-            }
-        },
-
-        patterns: {
-            server: {
-                options: {
-                    variables: config,
-                    patternRoot: '<%= paths.docs %>/content',
-                    urlRoot: '',
-                    template: '<%= paths.tmp %>/pattern.tpl.ejs'
-                },
-                files: [{
-                    expand: true,
-                    cwd: '<%= paths.docs %>/content',
-                    src: '**/*.md',
-                    dest: '<%= paths.tmp %>'
-                }]
+        concat: {
+            // bootstrap plugins to single js file
+            pluginsjs: {
+                src: ['bower_components/bootstrap/js/affix.js',
+                    'bower_components/bootstrap/js/alert.js',
+                    'bower_components/bootstrap/js/dropdown.js',
+                    'bower_components/bootstrap/js/tooltip.js',
+                    'bower_components/bootstrap/js/modal.js',
+                    'bower_components/bootstrap/js/transition.js',
+                    'bower_components/bootstrap/js/button.js',
+                    'bower_components/bootstrap/js/popover.js',
+                    'bower_components/bootstrap/js/carousel.js',
+                    'bower_components/bootstrap/js/scrollspy.js',
+                    'bower_components/bootstrap/js/collapse.js',
+                    'bower_components/bootstrap/js/tab.js'],
+                dest: '<%= paths.assets %>/scripts/plugins.js'
             },
-            dist: {
-                options: {
-                    variables: _.extend({ env: 'prod' }, config),
-                    patternRoot: '<%= paths.docs %>/content',
-                    urlRoot: '',
-                    template: '<%= paths.tmp %>/pattern.tpl.ejs'
-                },
-                files: [{
-                    expand: true,
-                    cwd: '<%= paths.docs %>/content',
-                    src: '**/*.md',
-                    dest: '<%= paths.tmp %>'
-                }]
+            // misc vendor to js file
+            vendorjs: {
+                src: ['bower_components/modernizr/modernizr.js',
+                    'bower_components/jquery/dist/jquery.js',
+                    'bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.js',
+                    'bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.extensions.js',
+                    'bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.date.extensions.js',
+                    'bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.numeric.extensions.js',
+                    'bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.phone.extensions.js',
+                    'bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.regex.extensions.js',
+                    'bower_components/select2/select2.js',
+                    'bower_components/jquery-bridget/jquery.bridget.js',
+                    'bower_components/seiyria-bootstrap-slider/js/bootstrap-slider.js',
+                    'front/vendor/jquery-ui-1.11.1.custom/jquery-ui.js'],
+                dest: '<%= paths.assets %>/scripts/vendor.js'
+            },
+            // main js
+            mainjs: {
+                src: ['front/scripts/main.js'],
+                dest: '<%= paths.assets %>/scripts/main.js'
+            },
+            // vendor css
+            vendorcss: {
+                src: [
+                    'front/vendor/jquery-ui-1.11.1.custom/jquery-ui.structure.css',
+                    'bower_components/font-awesome/css/font-awesome.css',
+                    'bower_components/select2/select2.css',
+                    'bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.css'
+                ],
+                dest: '<%= paths.assets %>/styles/vendor.css'
+            },
+            // main css
+            maincss: {
+                src: ['<%= paths.assets %>/styles/pattern-library.css'],
+                dest: '<%= paths.assets %>/styles/main.css'
             }
         },
 
         // Copies remaining files to places other tasks can use
         copy: {
-
-            // copy the tpl to the tmp folder so we can usemin it
-            tpl: {
-                files: [{
-                    expand: true,
-                    dot: true,
-                    cwd: '<%= paths.docs %>',
-                    dest: '<%= paths.tmp %>',
-                    src: '*.ejs'
-                }]
-            },
-
             dist: {
-                files: [{ // htmlshiv to docsDist for < IE9
+                files: [{ // htmlshiv to assets for < IE9
                     dot: true,
                     expand: true,
-                    cwd: '<%= paths.docs %>/vendor/html5shiv/',
-                    dest: '<%= paths.docsDist %>/draft/vendor/html5shiv/',
+                    cwd: 'front/vendor/html5shiv/',
                     src: ['html5shiv.min.js'],
-                }, { // icon sprite to docsDist folder
-                    expand: true,
-                    dot: true,
-                    cwd: 'images',
-                    dest: '<%= paths.docsDist %>/draft/images/icons',
-                    src: '*.svg'
-                }, { // src less to libDist folder
+                    dest: '<%= paths.assets %>/vendor/html5shiv/'
+                }, { // icon sprite to assets folder
                     dot: true,
                     expand: true,
-                    cwd: 'less',
-                    dest: '<%= paths.libDist %>/less',
-                    src: ['**/*.less']
-                }, { // icons to libDist folder
+                    cwd: 'usptostrap/images/icons',
+                    src: '*.svg',
+                    dest: '<%= paths.assets %>/images/icons'
+                }, { // favicon sprite to assets folder
                     dot: true,
                     expand: true,
-                    dest: '<%= paths.libDist %>',
-                    src: ['images/**/*.svg'],
-                }, { // icons to docDist folder
+                    cwd: 'front/',
+                    src: 'favicon.ico',
+                    dest: '<%= paths.assets %>/'
+                }, { // usptostrap src to downloads folder
                     dot: true,
                     expand: true,
-                    dest: '<%= paths.docsDist %>/draft',
-                    src: ['images/**/*.svg'],
-                }]
-            },
-            docsResources: { // move the libDist folder under the docsDist folder for access from io page
-                dot: true,
-                expand: true,
-                cwd: '<%= paths.libDist %>',
-                src: '**/*.*',
-                dest: '<%= paths.docsDist %>/draft/resources'
-            },
-            styles: { // copy non-less files to tmp
-                expand: true,
-                dot: true,
-                cwd: '<%= paths.docs %>/styles',
-                dest: '<%= paths.tmp %>/styles',
-                src: '{,*/}*.css'
-            },
-            images: { // copy root images to tmp for serving
-                expand: true,
-                dot: true,
-                cwd: 'images',
-                dest: '<%= paths.tmp %>/images/',
-                src: '**/*.*'
-            },
-            release: { // copy draft folder into versioned folder and root
-                files: [{ // latest stable to versioned folder
-                    dot: true,
-                    expand: true,
-                    cwd: '<%= paths.docsDist %>/draft/',
-                    src: '**/*.*',
-                    dest: '<%= paths.docsDist %>/<%= pkg.version %>'
-                }, { // latest stable to root
-                    dot: true,
-                    expand: true,
-                    cwd: '<%= paths.docsDist %>/draft/',
-                    src: '**/*.*',
-                    dest: '<%= paths.docsDist %>'
+                    src: 'usptostrap',
+                    dest: '<%= paths.downloads %>/usptostrap'
                 }]
             }
         },
 
         // zips up src less files, images, and minified css
         zip: {
-            '<%= paths.libDist %>/usptostrap-<%= pkg.version %>.zip': ['<%= paths.libDist %>/**/*']
-        },
-
-        // Run some tasks in parallel to speed up build process
-        concurrent: {
-            server: [
-                // 'lesslint',
-                'jshint',
-                'less:server',
-                'patterns:server',
-                'template:server',
-                'copy:styles',
-                'copy:images'
-            ],
-            dist: [
-                // 'lesslint',
-                'jshint',
-                'less:dist',
-                'less:theme',
-                'copy:styles',
-                'imagemin'
-                // 'svgmin'
-            ]
-        }
-    });
-
-    grunt.registerTask('serve', function (target) {
-        if (target === 'dist') {
-            return grunt.task.run(['build', 'connect:dist:keepalive']);
+            '<%= paths.downloads %>/usptostrap-<%= pkg.version %>.zip': ['<%= paths.downloads %>/**/*']
         }
 
-        grunt.task.run([
-            'clean:server',
-            'copy:tpl',
-            'concurrent:server',
-            'autoprefixer',
-            'connect:livereload',
-            'watch'
-        ]);
     });
 
     grunt.registerTask('build', [
         'clean:dist',
-        'copy:tpl',
-        'useminPrepare',
-        'concurrent:dist',
+        'jshint',
+        'less',
+        'imagemin',
+        'concat',
         'autoprefixer',
-        'concat:generated',
-        'cssmin:generated',
-        'uglify:generated',
         'copy:dist',
-        'rev',
-        'usemin',
-        'patterns:dist',
-        'template:dist',
-        'htmlmin',
-        'zip',
-        'copy:docsResources'
-    ]);
-
-    grunt.registerTask('release', [
-        'build',
-        'copy:release'
+        'zip'
     ]);
 
     grunt.registerTask('default', [

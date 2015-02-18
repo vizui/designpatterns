@@ -1,0 +1,71 @@
+{% include header.html %}
+    <header class="pl-header navbar navbar-fixed-top navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a href="{{site.baseurl}}/index.html" class="navbar-brand"><strong>USPTO</strong> <span class="light">Design</span></a>
+                <button type="button" class="nav-collapse btn btn-link"><i class="icon icon-inverse icon-bars"></i></button>
+                <button data-toggle="collapse" data-target="#pl-navbar-collapse" type="button" class="btn navbar-toggle collapsed"><i class="icon icon-inverse icon-angle-down"></i></button>
+            </div>
+            <div class="navbar-collapse collapse" id="pl-navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="{{site.baseurl}}/index.html">About</a>
+                    </li>
+                    <li>
+                        <a href="{{site.baseurl}}/docs/index.html">Library</a>
+                    </li>
+                    <li>
+                        <a href="{{site.baseurl}}/resources.html">Resources</a>
+                    </li>
+                    <li>
+                        <a href="{{site.baseurl}}/changelog.html">Changelog</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="{{ site.repository.url }}" title="View on Github" ><i class="icon icon-inverse icon-github"></i> &nbsp; View on Github</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="pl-container">
+        <nav class="pl-sidebar">
+            <ul class="nav nav-stacked">
+                {% for c in site.types %}
+                    <li class="category">{{c}}</li>
+                    {% for p in site.pages %}
+                        {% if p.url contains c %}
+                            {% if p.draft != true %}
+                                <li>
+                                    <a {% if p.url == page.url %} class="active" {% endif %} href="{{site.baseurl}}{{ p.url }}"> {{ p.title }} </a>
+                                </li>
+                            {% endif %}
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+            </ul>
+            <!-- <ul class="nav nav-stacked">
+                <% Object.keys(nav[category] || {}).forEach(function (subCategory) { %>
+                    <li class="category"><%= subCategory.toUpperCase() %></li>
+                    <% nav[category][subCategory].forEach(function(l) { %>
+                        <% if (!l.meta.draft) { %>
+                            <li class="<%= l.title == meta.title ? 'active' : '' %>"><a href="<%= l.url %>"><%= l.title %> </a>
+                                <% if (l.title === meta.title && l.subNav && l.subNav.length) { %>
+                                    <ul class="nav nav-stacked">
+                                        <%l.subNav.forEach(function(s) { %>
+                                            <li><a title="<%= s %>" href="#<%= s.toLowerCase().replace(/[^\w]+/g, '-') %>"><%= s %></a></li>
+                                        <%});%>
+                                    </ul>
+                                <%}%>
+                            </li>
+                        <%}%>
+                    <% });%>
+                <% });%>
+            </ul> -->
+        </nav>
+        <section class="pl-content">
+            {{ content }}
+        </section>
+    </div>
+{% include footer.html %}

@@ -1,0 +1,45 @@
+exclude:
+  - CONTRIBUTING.md
+  - README.md
+  - TERMS.md
+  - todo.md
+  - front
+  - node_modules
+  - bower_components
+  - usptostrap
+
+permalink: /:title
+markdown: kramdown
+
+baseurl: '/designpatterns'
+
+repository:
+  name: uspto/designpatterns
+  url: https://github.com/uspto/designpatterns
+
+contactemail: contactUXD@uspto.gov?subject=USPTO UI Design Library
+
+version: 1.0.0
+
+kramdown:
+  auto_ids: true
+  parse_block_html: true
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "pattern"
+
+primarynav:
+- title: About
+  url: index.html
+- title: Resources
+  url: resources.html
+- title: Changelog
+  url: changelog.html
+
+types:
+  - foundation
+  - components
+  - patterns
