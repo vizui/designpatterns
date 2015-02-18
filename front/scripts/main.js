@@ -18,6 +18,22 @@
         }
     });
 
+    /*
+     * Add subnav
+     */
+    var activeSubNav = $('.pl-sidebar > .nav > .active');
+    var newList = $('<ul class="nav nav-stacked"></ul>');
+    $('.pl-pattern > h3').each(function () {
+        var el = $(this);
+        if (el.attr('id')) {
+            var li = $('<li><a href="#'+ el.attr('id') +'">'+ el.text() +'</a></li>');
+            newList.append(li);
+
+        }
+    });
+    if (newList.children().length) {
+        activeSubNav.append(newList);
+    }
 
     var autoCollapsed = false;
     $('.nav-collapse').on('click', function () {
