@@ -15,6 +15,7 @@ Tables provide customizable views of tabular data with features including sortin
 Tables list a collection of items in rows that have similar attributes, usually with headers to label each attribute. 
 
 The following functionality can be provided by tables:
+
 - Sorting by columns
 - Resizing columns
 - Showing and hiding columns

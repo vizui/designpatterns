@@ -11,13 +11,12 @@ Users need additional, potentially optional information on demand.
 #### Description
 Tooltips provide information when an element is hovered over.
 
-
 - Tooltips are attached to an element and appear when the element is hovered over
 - The show and hide delays of a tooltip may vary depending on the need, but the default is 200ms to show and 0ms to hide
 - Tooltips cannot be interacted with
 
-
 Use tooltips for:
+
 - Icon/button descriptions
 - Expanding shortened date/time stamps
 

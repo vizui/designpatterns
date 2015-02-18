@@ -19,6 +19,7 @@ Users need to be able to access additional related information or functionality 
 - Popovers should be positioned based on the screen space available, 
 
 Use a popover instead of a tooltip or dialog when:
+
 - You want a contextual relationship that a dialog can't provide
 - You need to provide relatively simple interactions
 - You have more text/content than can comfortably fit in a tooltip

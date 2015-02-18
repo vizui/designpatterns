@@ -13,6 +13,7 @@ Collections of data are often split into multiple pages for performance reasons.
 
 #### Basic functionality
 This pagination pattern provides a few variations of the following features:
+
 - Navigating to prev/next pages
 - Navigating to first/last pages
 - Jumping to a manually entered page/item
