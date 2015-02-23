@@ -8,10 +8,18 @@ layout: general
         <h3 class="text-center">An open source UI style guide, pattern library, and Bootstrap theme.</h3>
         <div class="row">
             <div class="col-sm-12 text-center">
-                <div style="margin-top: 30px; margin-bottom: 40px;">
-                    <a href="{{site.baseurl}}/resources.html" class="btn btn-lg btn-primary">Download </a>
-                    <a href="{{site.baseurl}}/docs/index.html" class="btn btn-lg btn-default">View Library</a>
-                    <p class="small bold" style="color: #fff; opacity: .3; margin-top: 18px;">v{{ site.version }}</p>
+                <div style="margin-top: 30px; margin-bottom: 15px;">
+                    <a href="{{site.baseurl}}/{{site.version}}/docs/index.html" class="btn btn-lg btn-default">View Library</a>
+                    <a href="{{site.baseurl}}/{{site.version}}/docs/resources.html" class="btn btn-lg btn-primary">Download </a>
+                    <div class="small" style="opacity: .5; margin-top: 30px; color: #fff;">Current version: {{site.version}}</div>
+                    <div class="small" style="color: #fff;">
+                        <span style="opacity: .5;">Other versions:</span>
+                            {% for v in site.versions %}
+                                {% if v.name != site.version %}
+                                    <a href="{{v.url}}" style="color: #fff;">{{v.name}}</a> &nbsp;
+                                {% endif %}
+                            {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>

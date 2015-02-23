@@ -3,7 +3,7 @@ title: "Accordions"
 draft: true
 ---
 
-[pattern]
+<div class="pl-pattern">
 <h3>Accordions</h3>
 
 #### Purpose
@@ -13,7 +13,9 @@ Users need to see only relevant content.
 Accordions provide users with the ability to expand and collapse content as needed. Accordions can simplify the interface by hiding content until it is needed.
 
 #### Bordered
-[preview]
+
+{::nomarkdown}
+<div class="pl-preview">
 <div style="max-width: 800px; padding: 40px; background: #fff;" class="panel panel-default panel-body">
     <p>Once you've connected to a network, it will show up in your Saved networks list. If you have trouble connecting to Wi-Fi, try the following steps:</p>
     <div class="accordion-group accordion-" id="accordion" role="tablist" aria-multiselectable="true">
@@ -120,13 +122,17 @@ Accordions provide users with the ability to expand and collapse content as need
         </div>
     </div>
 </div>
-[/preview]
+</div>
+{:/nomarkdown}
 
 
 #### Borderless
-[preview]
+
+{::nomarkdown}
+<div class="pl-preview">
 <div style="max-width: 800px; padding: 40px; background: #fff;" class="">
     <p>Once you've connected to a network, it will show up in your Saved networks list. If you have trouble connecting to Wi-Fi, try the following steps:</p>
 </div>
-[/preview]
-[/pattern]
+</div>
+{:/nomarkdown}
+</div>

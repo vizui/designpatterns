@@ -3,7 +3,7 @@ title: "Wizards"
 draft: true
 ---
 
-[pattern]
+<div class="pl-pattern">
 <h3>Wizards</h3>
 
 #### Purpose
@@ -11,12 +11,14 @@ Users need guidance filling out a complex form.
 
 #### Description
 Splitting a complex form into multiple steps accomplishes a few things:
+
 - Reduces cognitive overhead by organizing and presenting related input fields
 - Facilitates a potentially linear or evolving process
 - Can provide improved contextual or evolving help 
 
 #### Basic functionality
 A wizard is usually composed of:
+
 - A list of steps, either horizontally or vertically
 - A collection of form controls and help text organized into steps
 - Buttons for navigation
@@ -24,9 +26,9 @@ A wizard is usually composed of:
 
 &nbsp;
 
-[/pattern]
+</div>
 
-[pattern]
+<div class="pl-pattern">
 ### Steps
 
 In many cases it's beneficial to show the list of steps a wizard will have. Depending on the number of steps and space available, steps can be listed vertically or horizontally.
@@ -44,7 +46,9 @@ In many cases it's beneficial to show the list of steps a wizard will have. Depe
 #### Vertical steps
 Use vertical steps when there are 5 or more steps, when there are nested steps, or when steps are categorized.
 
-[preview]
+
+{::nomarkdown}
+<div class="pl-preview">
 <div class="">
     <div class="" style="max-width: 700px;">
         <div class="" style="display: inline-block; width: 100%;">
@@ -100,14 +104,17 @@ Use vertical steps when there are 5 or more steps, when there are nested steps, 
         </div>
     </div>
 </div>
-[/preview]
+</div>
+{:/nomarkdown}
 
 &nbsp;
 
 #### Horizontal steps
 Use horizontal steps when there are 4 or less steps.
 
-[preview]
+
+{::nomarkdown}
+<div class="pl-preview">
 <div class="">
     <div class="" style="max-width: 450px;">
         <div class="panel panel-default" style="overflow: auto; position: relative;">
@@ -159,14 +166,17 @@ Use horizontal steps when there are 4 or less steps.
  -->        </div>
     </div>
 </div>
-[/preview]
+</div>
+{:/nomarkdown}
 
-[/pattern]
+</div>
 
-[pattern]
+<div class="pl-pattern">
 ### Buttons
 Buttons for a wizard can vary depending on the need. The primary actions should be on the right, the secondary actions should be on the left.
-[preview]
+
+{::nomarkdown}
+<div class="pl-preview">
 <div style="max-width: 450px; display: inline-block; width: 100%;">
     <div class="btn-toolbar">
         <button class="btn btn-primary pull-right">Continue</button>
@@ -189,5 +199,6 @@ Buttons for a wizard can vary depending on the need. The primary actions should 
     </div>
     <p style="margin-top: 10px;" class="pull-right text-muted"> Last saved 09/19/14 10:45 AM</p>
 </div>
-[/preview]
-[/pattern]
+</div>
+{:/nomarkdown}
+</div>

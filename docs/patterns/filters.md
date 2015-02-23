@@ -3,7 +3,8 @@ title: "Filters"
 draft: true
 ---
 
-[pattern]
+<div class="pl-pattern">
+
 <h3>Filters</h3>
 
 #### Purpose
@@ -13,6 +14,7 @@ Users need filter a collection of items or search results to find items of inter
 Filters provide a set of controls to reduce items in a collection based on characteristics or attributes that a user is targeting. For example, filtering a collection of items by date or by tag.
 
 Filters can provide the following functionality:
+
 - A list of interesting attributes common to items in a collection, and 
 possible values to filter by
 - An indication of the currently applied filters
@@ -21,13 +23,16 @@ possible values to filter by
 
 &nbsp;
 
-[/pattern]
+</div>
 
-[pattern]
+<div class="pl-pattern">
+
 ### Side filters
 When filters are frequently used or there are many filters, place them to the left. This provides more space and makes filters easier to access. If there are more than 5 filter groups, consider making them collapsible and even collapsing them by default.
 
-[preview]
+
+{::nomarkdown}
+<div class="pl-preview">
 <div class="container-fluid" style="margin-top: 8px;">
     <div class="row">
         <div style="width: 275px;" class="panel panel-default pull-left">
@@ -158,13 +163,17 @@ When filters are frequently used or there are many filters, place them to the le
         </div>
     </div>
 </div>
-[/preview]
-[/pattern]
+</div>
+{:/nomarkdown}
+</div>
 
-[pattern]
+<div class="pl-pattern">
+
 ### Top filters
 
-[preview]
+
+{::nomarkdown}
+<div class="pl-preview">
 <div class="container-fluid" style="margin-top: 8px;">
     <form class="filters filters-horizontal">
         <div class="filter-heading">Refine by</div>
@@ -198,9 +207,12 @@ When filters are frequently used or there are many filters, place them to the le
         </button>
    </form>
 </div>
-[/preview]
+</div>
+{:/nomarkdown}
 
-[preview]
+
+{::nomarkdown}
+<div class="pl-preview">
 <div class="container-fluid" style="margin-top: 8px;">
     <form class="filters filters-horizontal">
         <div class="filter-heading">Refine by</div>
@@ -218,6 +230,7 @@ When filters are frequently used or there are many filters, place them to the le
         </button>
    </form>
 </div>
-[/preview]
+</div>
+{:/nomarkdown}
 
-[/pattern]
+</div>

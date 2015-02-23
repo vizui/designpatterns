@@ -3,8 +3,10 @@ title: "Search"
 draft: true
 ---
 
-[pattern]
-[preview]
+<div class="pl-pattern">
+
+{::nomarkdown}
+<div class="pl-preview">
 <div style="width: 400px">
     <div class="input-group">
         <input type="text" placeholder="Search" class="form-control">
@@ -13,8 +15,11 @@ draft: true
         </span>
     </div>
 </div>
-[/preview]
-[preview]
+</div>
+{:/nomarkdown}
+
+{::nomarkdown}
+<div class="pl-preview">
 <div style="width: 400px">
     <div class="input-group">
         <input type="text" placeholder="Search" class="form-control">
@@ -26,8 +31,11 @@ draft: true
         <a href="">Show advanced search</a>
     </div>
 </div>
-[/preview]
-[preview]
+</div>
+{:/nomarkdown}
+
+{::nomarkdown}
+<div class="pl-preview">
 <div style="width: 400px">
     <div class="input-group">
         <div class="input-group-btn">
@@ -43,5 +51,6 @@ draft: true
         </span>
     </div>
 </div>
-[/preview]
-[/pattern]
+</div>
+{:/nomarkdown}
+</div>

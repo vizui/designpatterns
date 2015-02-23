@@ -9986,6 +9986,16 @@ body {
   position: relative;
   height: 100%;
 }
+.pl-panel,
+.pl-content .pl-pattern {
+  display: block;
+  margin: 40px;
+  padding: 40px;
+  line-height: 1.8;
+  background: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.025);
+}
 .pl-content {
   margin-left: 200px;
   position: relative;
@@ -10003,14 +10013,7 @@ body {
   padding: 0 30px 30px 30px;
 }
 .pl-content .pl-pattern {
-  margin-top: 0px;
-  display: block;
-  background: #fff;
   padding: 40px 40px 0 40px;
-  margin: 40px;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.025);
-  border: 1px solid #ddd;
-  line-height: 1.8;
 }
 @media (max-width: 767px) {
   .pl-content .pl-pattern {
@@ -10060,7 +10063,7 @@ body {
   background: #f0f0f0;
 }
 .pl-content .pl-pattern .pl-preview {
-  background: #fafafa;
+  background: #fefefe;
   position: relative;
   margin: 20px -40px 0 -40px;
   padding: 30px 40px;
@@ -10094,7 +10097,7 @@ body {
   margin: 0 -40px;
   position: relative;
   z-index: 2;
-  background: #fafafa;
+  background: #fefefe;
   border-bottom: 1px solid #eee;
 }
 .pl-content .pl-pattern pre {
@@ -10206,7 +10209,6 @@ body {
 .pl-hero {
   background-color: #004c97;
   padding-bottom: 75px;
-  padding-top: 50px;
   background-image: url(../images/hero-mockup.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -10218,6 +10220,13 @@ body {
   border: 2px solid #fff;
   box-shadow: none;
   background: #004c97;
+}
+@media (max-width: 767px) {
+  .pl-hero .btn {
+    display: block;
+    margin: 10px auto;
+    max-width: 300px;
+  }
 }
 .pl-hero .btn-default {
   color: #004c97;
@@ -10282,9 +10291,6 @@ body {
 .pl-about .pl-padded-col p {
   text-align: left;
 }
-.pl-version-list {
-  margin-top: 40px;
-}
 .pl-uspto-logo {
   background-image: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB2aWV3Qm94PSIwIDAgMTY5LjUgNTkuMSIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTY5LjUgNTkuMSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+CjxnPgoJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTE0Mi42LDE4LjdjLTEuOSwwLTMuNSwwLjYtNC43LDEuOWMtMiwyLTIuMiw1LjQtMi4yLDguOWMwLDMuNSwwLjMsNi45LDIuMiw4LjljMS4yLDEuMiwyLjgsMS45LDQuNywxLjkKCQljMS45LDAsMy42LTAuNyw0LjgtMS45YzItMiwyLjItNS40LDIuMi04LjljMC0zLjUtMC4zLTYuOS0yLjItOC45QzE0Ni4yLDE5LjMsMTQ0LjUsMTguNywxNDIuNiwxOC43eiIvPgoJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTkxLjMsNDAuM2M1LjksMCw2LjctNS4xLDYuNy0xMC44YzAtNS44LTAuOC0xMC44LTYuNy0xMC44Yy02LDAtNi44LDUtNi44LDEwLjgKCQlDODQuNSwzNS4yLDg1LjMsNDAuMyw5MS4zLDQwLjN6Ii8+Cgk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMTYyLjksMGgtNDQuMnYxMy4yaDYuM3Y1aC02LjN2MTguMmMwLDIuNCwxLjIsMy44LDMuNiwzLjhoMi43djUuNmgtMy45Yy02LjEsMC04LjktNC40LTguOS05VjE4LjJoLTMuNwoJCXYtNWgzLjdWMEg2LjdDMywwLDAsMywwLDYuN3Y0NS44YzAsMy43LDMsNi43LDYuNyw2LjdINzhWMTMuMmg2LjR2My41YzIuNC0zLDUuMS0zLjksOC42LTMuOWMzLjMsMCw2LjIsMS4xLDgsMi45CgkJYzMuMSwzLjIsMy43LDguNCwzLjcsMTMuN2MwLDUuMy0wLjUsMTAuNi0zLjcsMTMuOGMtMS44LDEuOC00LjYsMi45LTcuOSwyLjljLTMuNSwwLTYuMi0wLjgtOC41LTMuN3YxNi43aDc4LjQKCQljMy43LDAsNi43LTMsNi43LTYuN1Y2LjdDMTY5LjUsMywxNjYuNSwwLDE2Mi45LDB6IE0zOS43LDQ1LjhoLTYuNHYtMy4zYy0yLjIsMi40LTUuNCwzLjctOC43LDMuN2MtMy4zLDAtNi4xLTEuMS04LTMKCQljLTIuNS0yLjQtMy4zLTUuNS0zLjMtOS4yVjEzLjJoNi41djE5LjhjMCw1LjEsMi45LDcuMyw2LjUsNy4zYzMuNywwLDYuNy0yLjIsNi43LTcuM1YxMy4yaDYuNVY0NS44eiBNNTguNyw0Ni4xCgkJYy01LjMsMC05LjgtMC45LTEzLjctNC43bDQuMy00LjNjMi42LDIuNyw2LjIsMy40LDkuNCwzLjRjNCwwLDcuMS0xLjQsNy4xLTQuNWMwLTIuMi0xLjItMy41LTQuNC0zLjlsLTUuMi0wLjQKCQljLTYuMi0wLjYtOS42LTMuMy05LjYtOWMwLTYuNCw1LjUtOS45LDEyLjMtOS45YzQuOSwwLDksMSwxMi4xLDMuN2wtNC4xLDQuMmMtMi4xLTEuNy00LjktMi40LTgtMi40Yy00LDAtNS45LDEuNy01LjksNC4yCgkJYzAsMi4yLDEuMywzLjQsNC41LDMuN2w0LjYsMC40YzYuNywwLjYsMTAuMywzLjUsMTAuMyw5LjJDNzIuMiw0Mi42LDY2LjUsNDYuMSw1OC43LDQ2LjF6IE0xNTIuMyw0Mi4zYy0yLjEsMi4yLTUuMywzLjktOS44LDMuOQoJCWMtNC40LDAtNy42LTEuNy05LjctMy45Yy0zLjEtMy4yLTMuOS03LjMtMy45LTEyLjhjMC01LjUsMC44LTkuNiwzLjktMTIuOGMyLjEtMi4yLDUuMy0zLjksOS43LTMuOWM0LjQsMCw3LjYsMS43LDkuOCwzLjkKCQljMy4xLDMuMiwzLjksNy4zLDMuOSwxMi44QzE1Ni4yLDM1LDE1NS40LDM5LjEsMTUyLjMsNDIuM3oiLz4KPC9nPgo8L3N2Zz4=);
   background-size: fit;
@@ -10292,19 +10298,4 @@ body {
   height: 1em;
   display: inline-block;
   vertical-align: bottom;
-}
-.pl-version {
-  margin-bottom: 50px;
-  font-size: 14px;
-}
-.pl-version h3 {
-  font-weight: 300;
-  font-size: 28px;
-  margin-bottom: 16px;
-}
-.pl-version ul {
-  padding-left: 2.2em;
-}
-.pl-version .panel-body {
-  padding: 20px 40px;
 }

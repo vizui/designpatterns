@@ -2,10 +2,13 @@
 title: "File upload"
 draft: true
 ---
-[pattern]
+<div class="pl-pattern">
 ### Single file upload
 Single file upload, where the file is uploaded when the form is submitted. 
-[preview]
+
+
+{::nomarkdown}
+<div class="pl-preview">
 <form action="" class="form-horizontal" style="max-width: 400px;">
     <div class="form-group">
         <label class="col-sm-3 control-label">File</label>
@@ -31,13 +34,17 @@ Single file upload, where the file is uploaded when the form is submitted.
         </div>
     </div>
 </form>
-[/preview]
-[/pattern]
+</div>
+{:/nomarkdown}
+</div>
 
-[pattern]
+<div class="pl-pattern">
 ### Multi file upload
 This shows how to facilitate uploading multiple files to the same field (e.g., an attachments field), where the files are uploaded as soon as they're selected rather than when the form is submitted. 
-[preview]
+
+
+{::nomarkdown}
+<div class="pl-preview">
 <form action="" class="form-horizontal" style="max-width: 400px;">
     <div class="form-group">
         <label class="col-sm-3 control-label">Attachments</label>
@@ -46,8 +53,12 @@ This shows how to facilitate uploading multiple files to the same field (e.g., a
         </div>
     </div>
 </form>
-[/preview]
-[preview]
+</div>
+{:/nomarkdown}
+
+
+{::nomarkdown}
+<div class="pl-preview">
 <form action="" class="form-horizontal" style="max-width: 400px;">
     <div class="form-group">
         <label class="col-sm-3 control-label">Attachments</label>
@@ -91,8 +102,12 @@ This shows how to facilitate uploading multiple files to the same field (e.g., a
         </div>
     </div>
 </form>
-[/preview]
-[preview]
+</div>
+{:/nomarkdown}
+
+
+{::nomarkdown}
+<div class="pl-preview">
 <form action="" class="form-horizontal" style="max-width: 400px;">
     <div class="form-group">
         <label class="col-sm-3 control-label">Attachments</label>
@@ -122,5 +137,6 @@ This shows how to facilitate uploading multiple files to the same field (e.g., a
         </div>
     </div>
 </form>
-[/preview]
-[/pattern]
+</div>
+{:/nomarkdown}
+</div>

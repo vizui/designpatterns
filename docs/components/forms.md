@@ -566,12 +566,14 @@ If you have many fields, consider organizing related fields into groups. Groups 
 Most input fields have technical character limits. The system should handle this gracefully in all scenarios. 
 
 __Text box__
+
 - In most cases, simply ignore key presses that exceed the limit
 
 __Text area__
+
 - If the limit is low or the expected input size is unknown, include a limit indicator
-  - Update the limit indicator on each key press
-  - Allow the user to keep typing past the indicator, but provide obvious indications that the limit has been exceeded.
+- Update the limit indicator on each key press
+- Allow the user to keep typing past the indicator, but provide obvious indications that the limit has been exceeded.
 
 
 {::nomarkdown}
