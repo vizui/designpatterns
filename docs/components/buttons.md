@@ -16,7 +16,7 @@ All button labels are sentence case. They should be as short as possible while c
 
 <div class="pl-pattern">
 
-### Styles
+### Button styles
 
 There are 6 button styles:
 
