@@ -8,14 +8,21 @@ title: Cards
 Cards are blocked content showing a description about a single thing.
 
 
+
 {::nomarkdown}
 <div class="pl-preview">
-    <div class="panel panel-default">my panel</div>
+    <button type="button" class="btn btn-lg btn-default">Button</button>
+    <button type="button" class="btn btn-default">Button</button>
+    <button type="button" class="btn btn-sm btn-default">Button</button>
+    <button type="button" class="btn btn-xs btn-default">Button</button>
 </div>
-{:/normarkdown}
+{:/nomarkdown}
 
 {% highlight html %}
-    <div class="panel panel-default"> content here </div>
+<button type="button" class="btn btn-lg btn-default">Button</button>
+<button type="button" class="btn btn-default">Button</button>
+<button type="button" class="btn btn-sm btn-default">Button</button>
+<button type="button" class="btn btn-xs btn-default">Button</button>
 {% endhighlight %}
 
 </div>
