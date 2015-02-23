@@ -41,7 +41,7 @@ At the top of each markdown file is [YAML metadata](http://jekyllrb.com/docs/fro
 - `draft: false` True to hide the pattern from the navigation, false to show
 
 #### Starting pattern template
-In the markdown files, sections are added with specific markup.  This template shows which 
+In the markdown files, sections are added with specific markup.  This template includes the necessary markup to get started.
 ```
 ---
 title: Buttons
