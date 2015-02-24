@@ -40,7 +40,7 @@ module.exports = function (grunt) {
                     src: [
                         '<%= paths.tmp %>',
                         '<%= paths.assets %>',
-                        '<%= paths.downloads %>/*'
+                        '<%= paths.downloads %>'
                     ]
                 }]
             },
@@ -78,10 +78,10 @@ module.exports = function (grunt) {
             dist: {
                 files: [{
                     expand: true,
-                    cwd: 'less',
+                    cwd: 'usptostrap/less',
                     src: ['usptostrap.less'],
                     dest: '<%= paths.downloads %>/css/',
-                    ext: '.css'
+                    ext: '.min.css'
                 }, {
                     expand: true,
                     cwd: 'front/styles',
@@ -197,10 +197,13 @@ module.exports = function (grunt) {
                     src: 'favicon.ico',
                     dest: '<%= paths.assets %>/'
                 }, { // usptostrap src to downloads folder
-                    dot: true,
+                    dot: false,
                     expand: true,
-                    src: 'usptostrap',
-                    dest: '<%= paths.downloads %>/usptostrap'
+                    cwd: 'usptostrap',
+                    src: '**/*',
+                    dest: '<%= paths.downloads %>/'
+                }, { // minified css to downloads folders
+
                 }]
             }
         },
