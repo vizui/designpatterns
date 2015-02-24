@@ -59,7 +59,7 @@ There are 5 button styles
 <div class="pl-preview">
     // INSERT HTML FOR EXAMPLE
 </div>
-{:/normarkdown}
+{:/nomarkdown}
 
 {% highlight html %}
     // INSERT HTML FOR SOURCE CODE
