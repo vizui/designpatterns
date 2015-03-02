@@ -44,7 +44,3 @@ __v1.2 Releases__
 
 __v2.0 Releases__
 - Mobile-specific patterns
-
-__Other__
-- Fix buttons on homepage so they look good on mobile and low-res (block level buttons maybe?)
-- Make the working library accessible for comments and pull requests
