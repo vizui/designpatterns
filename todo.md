@@ -27,7 +27,7 @@ __To be scheduled__
 - Notifications section (like Facebook?)
 
 __v1.1 Releases__
-- Filters (See CVS.com for one example that may work)
+- Filters (More usage scenerios, add sliders, drop-down filter pattern)
 - Wizards
 - Accordions
 - Expandable Rows (pay special attention to 508 issues here)
@@ -44,7 +44,8 @@ __v1.2 Releases__
 
 __v2.0 Releases__
 - Mobile-specific patterns
+- Writing style guide (mod OCCO's for pattern library - See https://design.atlassian.com/2.1/product/foundations/writing-style)
 
 __Other__
-- Fix buttons on homepage so they look good on mobile and low-res (block level buttons maybe?)
-- Make the working library accessible for comments and pull requests
+- Add Section 508 guidance
+- Add To Do list in the library interface
