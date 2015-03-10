@@ -1,6 +1,5 @@
 ---
 title: "Breadcrumbs"
-preview: true
 ---
 
 <div class="pl-pattern">

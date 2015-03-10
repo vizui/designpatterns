@@ -1,6 +1,5 @@
 ---
 title: "Tabs"
-preview: true
 ---
 
 <div class="pl-pattern">

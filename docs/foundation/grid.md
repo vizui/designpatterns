@@ -1,6 +1,5 @@
 ---
 title: "Grid"
-preview: true
 ---
 
 <div class="pl-pattern">

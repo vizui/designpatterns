@@ -1,6 +1,5 @@
 ---
 title: "Data formats"
-preview: true
 ---
 
 <div class="pl-pattern">

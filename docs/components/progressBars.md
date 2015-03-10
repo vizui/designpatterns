@@ -1,6 +1,5 @@
 ---
 title: "Progress and loading"
-preview: true
 ---
 
 <div class="pl-pattern">

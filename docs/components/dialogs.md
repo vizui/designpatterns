@@ -1,6 +1,5 @@
 ---
 title: "Dialogs"
-preview: true
 ---
 
 <div class="pl-pattern">

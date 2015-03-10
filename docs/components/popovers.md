@@ -1,6 +1,5 @@
 ---
 title: "Popovers"
-preview: true
 ---
 
 <div class="pl-pattern">
