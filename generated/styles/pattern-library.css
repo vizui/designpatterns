@@ -4301,6 +4301,9 @@ table th[class*="col-"] {
 .table-striped > tbody > tr:nth-child(even) {
   background-color: #f8f9fa;
 }
+.panel > .panel-collapse > .table {
+  border-top: 1px solid #dddddd;
+}
 .table-hover > tbody > tr:hover {
   background-color: #eef8fc;
 }
@@ -4335,11 +4338,11 @@ table th[class*="col-"] {
   padding: 12.8px 16px;
 }
 .table > thead > tr {
-  background: #f1f2f3;
+  background: #f5f5f5;
 }
 .table > thead > tr > th {
   border-bottom-color: #e9eaeb;
-  border-bottom-width: 1px;
+  border-bottom-width: 2px;
   font-weight: 600;
 }
 .table > thead > tr > .table-config-column {
@@ -9268,51 +9271,35 @@ input[type=range]:focus::-ms-fill-upper {
   box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
   color: transparent;
 }
-.accordion-group > .accordion-panel > .accordion-header > a {
-  padding: 5px 10px;
-  color: #444444;
-  text-decoration: none;
-  font-weight: 600;
-  display: block;
+.panel-group[role="tablist"] > .panel > .panel-heading {
+  cursor: pointer;
 }
-.accordion-group > .accordion-panel > .accordion-header > a > .icon {
-  margin-right: 5px;
+.panel-group[role="tablist"] > .panel > .panel-heading .icon {
+  margin-right: 10px;
 }
-.accordion-group > .accordion-panel > .accordion-header > a[aria-expanded="false"] > .icon::after {
+.panel-group[role="tablist"] > .panel > .panel-heading[aria-expanded="false"] .icon::after {
   transition: -webkit-transform .2s;
   transition: transform .2s;
   -webkit-transform: rotate(0deg);
   transform: rotate(0deg);
 }
-.accordion-group > .accordion-panel > .accordion-header > a[aria-expanded="true"] > .icon::after {
+.panel-group[role="tablist"] > .panel > .panel-heading[aria-expanded="true"] .icon::after {
   transition: -webkit-transform .2s;
   transition: transform .2s;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
-.accordion-group > .accordion-panel .accordion-collapse > .accordion-body {
-  padding: 5px 23px;
-}
-.accordion-group > .accordion-panel .accordion-panel > .accordion-header > a {
-  background: #f4f4f4;
-}
-.accordion-group > .accordion-panel .accordion-panel .accordion-panel > .accordion-header > a {
-  background: #efefef;
-}
-.accordion-group.accordion-group-icon-right > .accordion-panel > .accordion-header > a > .icon {
-  float: right;
-  margin-left: 5px;
-  margin-right: 0;
-}
-.accordion-group.accordion-group-bordered > .accordion-panel {
-  border: 1px solid #ddd;
+.panel-group > .panel + .panel {
   margin-top: -1px;
 }
-.accordion-group.accordion-group-bordered > .accordion-panel:first-child {
-  margin-top: 0;
+.panel-group .panel:not(.panel-default) > .panel-heading + .panel-collapse > .panel-body {
+  border-top: none;
 }
-.accordion-group.accordion-group-bordered > .accordion-panel > .accordion-collapse {
-  border-top: 1px solid #ddd;
+.panel-group .panel:not(.panel-default) {
+  box-shadow: none;
+}
+.panel-group .panel:not(.panel-default) + .panel {
+  border-top: 1px solid #eee;
 }
 .clearfix:before,
 .clearfix:after,
