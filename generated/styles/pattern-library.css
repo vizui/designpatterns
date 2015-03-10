@@ -7313,7 +7313,7 @@ a.badge:focus {
 }
 .badge {
   padding-top: 2px;
-  padding-bottom: 4px;
+  padding-bottom: 3px;
 }
 .jumbotron {
   padding: 30px 15px;
@@ -9029,29 +9029,31 @@ button.close {
   margin: 0;
   vertical-align: middle;
 }
-.filters-horizontal ul {
-  display: block;
-  border: 1px solid #eee;
+.filters-horizontal ul > li {
+  float: left;
+  clear: both;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.filter-value {
+  padding: 2px 8px;
   border-radius: 2px;
-  background: #fafafa;
-  margin: 0 12px;
+  background-color: #eee;
+  border: none;
+  margin: 0 5px 5px 0;
+  display: inline-block;
 }
-.filters-horizontal .filter-value {
-  padding: 2px 6px;
-  width: 100%;
-  display: block;
-  font-size: 13px;
-  color: #999;
-  border-top: 1px solid #eee;
+.filter-value:hover,
+.filter-value:focus {
+  background: #ddd;
+  cursor: pointer;
 }
-.filters-horizontal .filter-value i {
-  position: relative;
-  top: -1px;
-  margin-left: 4px;
-  opacity: .5;
+.filter-value:hover i,
+.filter-value:focus i {
+  opacity: 1;
 }
-.filters-horizontal .filter-value:first-child {
-  border-top: none;
+.filter-value i {
+  margin-left: 5px;
 }
 .filters .filter-group-title {
   padding: 8px 14px;
@@ -9081,8 +9083,6 @@ button.close {
 }
 .filters-horizontal .filter-heading {
   display: inline;
-  position: relative;
-  top: 2px;
 }
 .filters .filters-clear {
   font-size: 14px;
