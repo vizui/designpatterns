@@ -92,7 +92,15 @@ Input masks ensure that the user understands the input format required, in addit
 Users need to input an extended, potentially multi-line text value.
 
 #### Description
-Text areas allow the user to input extended, multi-line text values. 
+Text areas allow the user to input extended, multi-line text values.
+
+#### Sizing and resizing
+
+Text areas can either
+
+- have a fixed, static height
+- automatically grow/shrink based on the input, from a minimum number of lines (e.g., 3) to a maxmimum number of lines (e.g., 10) to ensure that space is optimally used
+- have a resize handle, allowing for manual vertical and/or horizontal resizing
 
 
 {::nomarkdown}
