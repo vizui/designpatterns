@@ -7,10 +7,10 @@ title: "Data formats"
 
 #### Formats
 {::nomarkdown}
-<table class="table table-bordered" style="max-width: 600px;">
+<table class="table table-bordered" style="max-width: 700px;">
     <colgroup>
-        <col style="width: 60%">
-        <col style="width: 40%;">
+        <col style="width: 50%">
+        <col style="width: 50%;">
     </colgroup>
     <tbody>
         <tr>
@@ -19,41 +19,59 @@ title: "Data formats"
         </tr>
         <tr>
             <td><code>short date</code></td>
-            <td> Jan 11</td>
+            <td>Jan 11</td>
         </tr>
         <tr>
             <td><code>long date</code></td>
-            <td> Apr 23, 2010</td>
+            <td>Apr 23, 2010</td>
         </tr>
         <tr>
-            <td><code>short date, time</code></td>
-            <td> Feb 5, 8:00 AM</td>
+            <td><code>condensed long date</code></td>
+            <td>MM/DD/YYYY, DD/MM/YYYY, or YYYY/MM/DD</td>
         </tr>
         <tr>
-            <td><code>long date, time</code></td>
-            <td> Feb 8, 2014, 1:00 PM</td>
+            <td><code>short date and time</code></td>
+            <td>Feb 5, 8:00 AM</td>
         </tr>
         <tr>
-            <td><code>day of week, time</code></td>
-            <td> Mon, 7:30 AM</td>
+            <td><code>long date and time</code></td>
+            <td>Feb 8, 2014, 1:00 PM</td>
         </tr>
         <tr>
-            <td><code>day of week, short date, time</code></td>
-            <td> Mon, Mar 15, 3:25 PM</td>
+            <td><code>day of week and time</code></td>
+            <td>Mon, 7:30 AM</td>
+        </tr>
+        <tr>
+            <td><code>day of week, short date and time</code></td>
+            <td>Mon, Mar 15, 3:25 PM</td>
         </tr>
     </tbody>
 </table>
 {:/nomarkdown}
 
+
+#### Condensed long date usage
+
+The condensed version of the long date format has 3 variations:
+
+- `MM/DD/YYYY` (05/12/2015)
+- `DD/MM/YYYY` (12/05/2015)
+- `YYYY/MM/DD` (2015/12/05)
+
+`MM/DD/YYYY` is the format most used in the US, whereas `DD/MM/YYYY` is used most outside the US. Depending on the date, the format, and the geographical location or customs of the user, a date has the potential for being misinterpreted if the format is not what the user is expecting. The only non-ambiguous format is `YYYY/MM/DD`.
+
+Depending on your target audience, determine which format makes the most sense for your application.
+
+
 #### Smart format
 
-For dates/times associated with user generated data (e.g., notes, documents), use the `smart format`, which changes depending on the current date and the date to display.
+For dates/times associated with user generated data (e.g., notes, documents), use the `smart format`, which changes relative to the current date.
 
 {::nomarkdown}
-<table class="table table-bordered" style="max-width: 600px;">
+<table class="table table-bordered" style="max-width: 700px;">
     <colgroup>
-        <col style="width: 60%">
-        <col style="width: 40%;">
+        <col style="width: 50%">
+        <col style="width: 50%;">
     </colgroup>
     <tbody>
         <tr>
@@ -75,10 +93,10 @@ For dates/times associated with user generated data (e.g., notes, documents), us
 #### Other
 
 {::nomarkdown}
-<table class="table table-bordered" style="max-width: 600px">
+<table class="table table-bordered" style="max-width: 700px">
     <colgroup>
-        <col style="width: 60%">
-        <col style="width: 40%;">
+        <col style="width: 50%">
+        <col style="width: 50%;">
     </colgroup>
     <tbody>
         <tr>
