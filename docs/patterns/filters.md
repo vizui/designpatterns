@@ -11,7 +11,7 @@ draft: true
 Users need filter a collection of items or search results to find items of interest.
 
 #### Description
-Filters provide a set of controls to reduce items in a collection based on characteristics or attributes that a user is targeting. For example, filtering a collection of items by date or by tag.
+Filters provide a set of controls to reduce items in a collection based on attributes the user is interested in (e.g., filtering items by creation date).
 
 Filters can provide the following functionality:
 
@@ -21,6 +21,17 @@ possible values to filter by
 - A way to clear the currently applied filters
 - Predefined filters
 
+
+#### Common filter types
+
+- Single-select and categorical refinement
+- Multi-select
+- Date range
+- Sliders
+- Single-select dropdown
+- Single search and/or autocomplete
+- Multi search and/or autocomplete
+
 &nbsp;
 
 </div>
@@ -28,8 +39,14 @@ possible values to filter by
 <div class="pl-pattern">
 
 ### Side filters
-When filters are frequently used or there are many filters, place them to the left. This provides more space and makes filters easier to access. If there are more than 5 filter groups, consider making them collapsible and even collapsing them by default.
 
+Filters can be placed on the left side if:
+
+- You have many filters
+- Filtering is a primary interaction, meaning users are very likely to use them in each session
+- You have enough horizontal screen real estate 
+
+If there are more than 5 filter groups, consider making them collapsible and even collapsing them by default.
 
 {::nomarkdown}
 <div class="pl-preview">
@@ -104,7 +121,7 @@ When filters are frequently used or there are many filters, place them to the le
                     <div id="filterGroup5" class="collapse in">
                         <div class="filter-group-content">
                             <div class="form-group">
-                                <label for="serange" class="sr-only control-label">Range</label>
+                                <label for="serange" class="sr-only control-label">Distance</label>
                                 <select name="" id="serange" class="form-control select2">
                                     <option value="5">Within 5 miles</option>
                                     <option value="255">Within 25 miles</option>
@@ -169,8 +186,74 @@ When filters are frequently used or there are many filters, place them to the le
 
 <div class="pl-pattern">
 
+### Dropdown filters
+
+Filters can be collapsed to a single dropdown if:
+
+- Screen real estate is limited due to constrained or dense layouts
+- Filtering is not a primary interaction, meaning collapsing and obfuscating the filtering functionality is acceptable
+
+{::nomarkdown}
+<div class="pl-preview">
+    <div class="dropdown">
+        <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="badge" style="margin-right: 5px;">3</span>Filters <span class="caret"></span></button>
+        <div class="dropdown-menu" role="menu" style="padding: 0; width: 500px;">
+            <form class="clearfix" role="form">
+                <div style="width: 200px; min-height: 300px; border-right: 1px solid #ddd; float: left;">
+                    <ul class="nav nav-stacked" role="tab-list" style="margin-top: 10px">
+                        <li role="presentation" class="active"><a role="tab" href="#">Applied filters <span class="badge pull-right">3</span></a></li>
+                        <li role="presentation" class="divider"></li>
+                        <li role="presentation"><a role="tab" href="#">Year</a></li>
+                        <li role="presentation"><a role="tab" href="#">Conveyance type <span class="badge pull-right">2</span></a></li>
+                        <li role="presentation"><a role="tab" href="#">Date range</a></li>
+                        <li role="presentation"><a role="tab" href="#">Distance</a></li>
+                        <li role="presentation"><a role="tab" href="#">Name <span class="badge pull-right">1</span></a></li>
+                        <li role="presentation"><a role="tab" href="#">Colors</a></li>
+                        <li role="presentation"><a role="tab" href="#">Tags</a></li>
+                    </ul>
+                </div>
+                <div style="margin-left: 200px; max-height: 300px; overflow: auto;">
+                    <div style="opacity: 1; display: inline-block; width: 100%;">
+                        <div class="modal-body">
+                            <a href="" class="pull-right">Clear</a>
+                            <div class="form-group">
+                                <label class="control-label">Conveyance type </label>
+                                <div class="">
+                                    <ul class="list-unstyled">
+                                        <li><button class="filter-value">Assignment <i class="pull-right icon icon-close icon-muted"></i></button></li>
+                                        <li><button class="filter-value">Change of name <a href=""><i class="pull-right icon icon-close icon-muted"></i></a></button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Name</label>
+                                <div class="">
+                                    <ul class="list-unstyled">
+                                        <li><button class="filter-value">Jane Doe <i class="pull-right icon icon-close icon-muted"></i></button></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{:/nomarkdown}
+
+</div>
+
+<div class="pl-pattern">
+
 ### Top filters
 
+Filters can be listed horizontally if:
+
+- You have less than 5 filters
+- You have plenty of horizontal space above your collection
+
+If you allow multi-selection in filters, the currently applied filters can be listed below each dropdown:
 
 {::nomarkdown}
 <div class="pl-preview">
@@ -210,6 +293,9 @@ When filters are frequently used or there are many filters, place them to the le
 </div>
 {:/nomarkdown}
 
+&nbsp;
+
+If you allow single-selection for each filter, the currently applied filter can replace the label for the dropdown:
 
 {::nomarkdown}
 <div class="pl-preview">
