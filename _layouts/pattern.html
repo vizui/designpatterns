@@ -45,24 +45,6 @@
                     {% endfor %}
                 {% endfor %}
             </ul>
-            <!-- <ul class="nav nav-stacked">
-                <% Object.keys(nav[category] || {}).forEach(function (subCategory) { %>
-                    <li class="category"><%= subCategory.toUpperCase() %></li>
-                    <% nav[category][subCategory].forEach(function(l) { %>
-                        <% if (!l.meta.draft) { %>
-                            <li class="<%= l.title == meta.title ? 'active' : '' %>"><a href="<%= l.url %>"><%= l.title %> </a>
-                                <% if (l.title === meta.title && l.subNav && l.subNav.length) { %>
-                                    <ul class="nav nav-stacked">
-                                        <%l.subNav.forEach(function(s) { %>
-                                            <li><a title="<%= s %>" href="#<%= s.toLowerCase().replace(/[^\w]+/g, '-') %>"><%= s %></a></li>
-                                        <%});%>
-                                    </ul>
-                                <%}%>
-                            </li>
-                        <%}%>
-                    <% });%>
-                <% });%>
-            </ul> -->
         </nav>
         <section class="pl-content">
             {{ content }}
