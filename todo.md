@@ -27,7 +27,7 @@ __To be scheduled__
 - Notifications section (like Facebook?)
 
 __v1.1 Releases__
-- Filters (More usage scenerios, add sliders, drop-down filter pattern)
+- Filters (More usage scenerios, add sliders, drop-down filter pattern, clearable single selects)
 - Wizards
 - Accordions
 - Expandable Rows (pay special attention to 508 issues here)
