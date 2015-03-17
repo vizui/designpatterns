@@ -48,7 +48,7 @@ Filters can be:
 
 - Collapsible (some or all filters can be collapsed or expanded by default)
 - Grouped under subheadings
-- Clearable (or resettable, if default filters are applicable)
+- Clearable (or resettable if default filters are applicable)
 
 
 {::nomarkdown}
@@ -379,7 +379,7 @@ For simple filters, they can be presented as a standard form.
                 <div style="max-height: 300px; overflow: auto;">
                     <div style="opacity: 1; display: inline-block; width: 100%;">
                         <div class="modal-body">
-                            <a href="" class="pull-right">Clear all</a>
+                            <a href="" class="pull-right" style="margin-bottom: 8px;">Clear all</a>
                             <div class="form-horizontal" style="clear: both;">
                                 <div class="form-group">
                                     <label for="im1" class="col-sm-4 control-label">Name contains</label>
