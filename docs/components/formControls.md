@@ -547,6 +547,18 @@ This is the native browser multi-select. `ctrl+click` (or `cmd+click`) toggles s
 </div>
 <div class="pl-pattern">
 ### Date picker
+
+Depending on the JS library used for the date picker, functionality may vary.
+
+Date pickers can provide:
+
+- Navigating years and months via previous/next arrows and/or other dropdowns.
+- Multi-calendar views
+- Range highlighting
+- Min and max allowable dates
+- Highlighting/disabling of days/rows/columns (e.g., disable weekends or highlight bi-week)
+- Ability to type date as well as use 
+
 <span class="text-muted">Example uses jQuery UI for demo purposes.</span>
 
 {::nomarkdown}
@@ -613,6 +625,16 @@ This is the native browser multi-select. `ctrl+click` (or `cmd+click`) toggles s
 
 <div class="pl-pattern">
 ### Slider
+
+Depending on the JS library used for the slider, functionality may vary.
+
+Sliders can provide:
+
+- Min and max allowable values
+- Visible ticks
+- Step increments
+- Multi-handle range
+
 <span class="text-muted">Example uses https://github.com/seiyria/bootstrap-slider for demo purposes.</span>
 
 {::nomarkdown}
