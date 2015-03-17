@@ -7,6 +7,6 @@
     "font-awesome": "~4.2.0",
     "bootstrap": "~3.3.2",
     "select2": "~3.5.1",
-    "seiyria-bootstrap-slider": "~4.3.0"
+    "seiyria-bootstrap-slider": "4.5.1"
   }
 }
