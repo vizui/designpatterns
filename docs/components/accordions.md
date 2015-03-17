@@ -27,7 +27,7 @@ Accordions can operate as either single-select or multi-select.
 
 #### Standard 
 
-The standard style provides more definition between the panel and internal/surrounding content. This is useful for more complex layouts.
+The standard style provides more distinction between the panel and internal/surrounding content. This is useful for more complex layouts.
 
 {::nomarkdown}
 <div class="pl-preview">
