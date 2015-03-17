@@ -41,6 +41,14 @@
     }
 }
 
+.filters > h5 {
+    color: @gray-light;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+
 .filters .filter-group-title {
     padding: 8px 14px;
     // text-transform: uppercase;
@@ -49,27 +57,35 @@
     // margin: 0;
     font-weight: 600;
     cursor: pointer;
-
-    i {
-        position: relative;
-        top: 2px;
-    }
+    border-top: 1px solid #f4f4f4;
 
     &:hover {
+        color: #000;
+        .icon-angle-right {
+            opacity: 1;
+        }
     }
 
-    &:before {
+    .icon {
         position: relative;
-        top: -7px;
-        height: 1px;
-        content: "";
-        display: block;
-        background: #eee;
+        top: 0px;
+        margin-left: 8px;
+        opacity: .5;
+    }
+
+    &[aria-expanded="false"] .icon-angle-right::after {
+        transition: transform .2s;
+        transform: rotate(0deg);
+    }
+    &[aria-expanded="true"] .icon-angle-right::after {
+        transition: transform .2s;
+        transform: rotate(90deg);
     }
 }
 
 .filters .filter-group-content {
     padding: 2px 14px 0px 14px;
+    .clearfix;
 }
 
 .filters .filter-heading {
