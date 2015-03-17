@@ -1006,11 +1006,11 @@ This dialog provides the ability to show/hide columns as desired.
             </tr>
         </thead>
         <tbody>
-            <tr >
-                <td class="" style="background: #fff;" colspan="3"><i class="icon text-muted icon-angle-down" style="margin-right: 6px;"></i><strong>Module:</strong> User <span style="color: #aaa;">(2)</span></td>
+            <tr class="table-group">
+                <td class="" colspan="3"><i class="icon text-muted icon-angle-down" style="margin-right: 6px;"></i><strong>Module:</strong> User <span style="color: #aaa;">(2)</span></td>
             </tr>
-            <tr>
-                <td class="" style="background: #fff; padding-left: 20px;" colspan="3"><i class="icon text-muted icon-angle-down" style="margin-right: 6px;"></i><strong>Event:</strong> Create <span style="color: #aaa;">(2)</span></td>
+            <tr class="table-group">
+                <td class="" style="padding-left: 20px;" colspan="3"><i class="icon text-muted icon-angle-down" style="margin-right: 6px;"></i><strong>Event:</strong> Create <span style="color: #aaa;">(2)</span></td>
             </tr>
             <tr>
                 <td><span >Users</span></td>
@@ -1022,8 +1022,8 @@ This dialog provides the ability to show/hide columns as desired.
                 <td>Create</td>
                 <td><span >10/19/14</span></td>
             </tr>
-            <tr>
-                <td class="" style="background: #fff; padding-left: 20px;" colspan="4"><i class="icon text-muted icon-angle-right" style="margin-right: 6px;"></i><strong>Event:</strong> Register <span style="color: #aaa;">(2)</span></td>
+            <tr class="table-group">
+                <td class="" style="padding-left: 20px;" colspan="4"><i class="icon text-muted icon-angle-right" style="margin-right: 6px;"></i><strong>Event:</strong> Register <span style="color: #aaa;">(2)</span></td>
             </tr>
         </tbody>
     </table>
