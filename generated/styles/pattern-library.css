@@ -6186,7 +6186,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   float: left;
 }
 .nav-pills > li > a {
-  border-radius: 2px;
+  border-radius: 100px;
 }
 .nav-pills > li + li {
   margin-left: 2px;
@@ -7307,8 +7307,8 @@ a.badge:focus {
 }
 .list-group-item.active > .badge,
 .nav-pills > .active > a > .badge {
-  color: #004c97;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #004c97;
 }
 .list-group-item > .badge {
   float: right;
