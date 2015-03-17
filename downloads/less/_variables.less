@@ -63,7 +63,7 @@
 @popover-border-color:              rgba(0,0,0,.05);
 
 @table-border-color:                #e9eaeb;
-@table-bg-header:                   #f1f2f3;
+@table-bg-header:                   @panel-default-heading-bg;
 @table-bg-accent:                   #f8f9fa;
 @table-bg-hover:                    @state-info-bg;
 @table-condensed-cell-padding:      4px;
@@ -123,6 +123,6 @@
 //
 // These variables don't exist in Bootstrap.
 
-@table-header-bg:                   #f5f6f7;
-@table-header-sortable-active-bg:    darken(@table-header-bg, 3%);
-@table-header-sortable-hover-bg:    darken(@table-header-bg, 6%);
+@table-bg-header:                   @panel-default-heading-bg;
+@table-header-sortable-active-bg:    darken(@table-bg-header, 3%);
+@table-header-sortable-hover-bg:    darken(@table-bg-header, 6%);
