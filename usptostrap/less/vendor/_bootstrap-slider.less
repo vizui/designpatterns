@@ -48,6 +48,23 @@
         filter: none;
         background-color: @progress-bg;
         border-radius: 2px;
+
+        .slider-tick {
+            margin: 0;
+            margin-top: 8px;
+            margin-left: -1px;
+            background-image: none;
+            box-shadow: none;
+            border: none;
+            width: 1px;
+            height: 6px;
+            background-color: @gray-light;
+        }
+    }
+
+    &.slider-horizontal .slider-tick-label-container .slider-tick-label {
+        margin-top: 26px;
+        color: @gray-light;
     }
 
     .slider-selection {
