@@ -1,9 +1,19 @@
 ---
 title: "Search"
-draft: true
+preview: true
 ---
 
 <div class="pl-pattern">
+
+### Search
+
+#### Purpose
+
+Users need to search for data.
+ 
+&nbsp;
+
+##### Basic
 
 {::nomarkdown}
 <div class="pl-preview">
@@ -17,6 +27,10 @@ draft: true
 </div>
 </div>
 {:/nomarkdown}
+
+&nbsp;
+
+##### With advanced
 
 {::nomarkdown}
 <div class="pl-preview">
@@ -33,6 +47,10 @@ draft: true
 </div>
 </div>
 {:/nomarkdown}
+
+&nbsp;
+
+##### Scoped
 
 {::nomarkdown}
 <div class="pl-preview">
