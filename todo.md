@@ -25,6 +25,7 @@ __To be scheduled__
 - Image gallery
 - Carousels
 - Notifications section (like Facebook?)
+- Search
 
 __v1.1 Releases__
 - Filters (More usage scenerios, add sliders, drop-down filter pattern, clearable single selects)
