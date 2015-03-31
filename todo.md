@@ -12,38 +12,36 @@ __Pagination__
 - Infinite scrolling
 - Load more
 
-__Buttons__
-- Button mouseover  (see Wacom.com for one idea)
-
 ### Future patterns
 __To be scheduled__
 - Time picker
 - Cards
 - Notes
 - Image/text zoom
-- Writing style
 - Image gallery
 - Carousels
-- Notifications section (like Facebook?)
+- Notification center
 - Search
 
-__v1.1 Releases__
-- Filters (More usage scenerios, add sliders, drop-down filter pattern, clearable single selects)
+__v1.1 Releases (Apr 6)__
+- Filters
 - Wizards
 - Accordions
-- Expandable Rows (pay special attention to 508 issues here)
-- Help and help indicators (seamless.com menu item mouseover indicator, maybe?)
-- UI Layouts (General, and loosely guide mobile)
-- Navigation
+- Expandable table rows
+- UI Layouts
+  - Navigation
+- Help and help indicators
 
-__v1.2 Releases__
-- Lists (and list controls: checkboxes, action buttons, drag handles, expand/collapse, icons, groups & subheaders)
+__v1.2 Releases (Apr 13)__
+
 - Tags
 - Tree
 - Password strength and criteria-met indicators (?)
-- Gadget framework
+- Lists
+- File upload
 
-__v2.0 Releases__
+__v2.0 Releases (TBD)__
+- Gadget framework
 - Mobile-specific patterns
 - Writing style guide (mod OCCO's for pattern library - See https://design.atlassian.com/2.1/product/foundations/writing-style)
 
