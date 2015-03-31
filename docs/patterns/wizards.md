@@ -116,45 +116,36 @@ Use horizontal steps when there are 4 or less steps.
 {::nomarkdown}
 <div class="pl-preview">
 <div class="">
-    <div class="" style="max-width: 450px;">
-        <div class="panel panel-default" style="overflow: auto; position: relative;">
-            <div class="panel-heading" style="background-color: transparent;">
-                <h4 class="text-center">Create your account</h4>
-                <br>
-                <ol class="nav-steps">
-                    <li  style="width:33.3%">
-                        <span>Account</span>
-                    </li>
-                    <li class="active" style="width:33.3%">
-                        <span>Personal</span>
-                    </li>
-                    <li class="" style="width:33.3%">
-                        <span>Customize</span>
-                    </li>
-                </ol>
-            </div>
-            <div class="panel-body">
+    <div class="" style="max-width: 700px; margin-auto;">
+        <div style="padding: 50px; overflow: auto; position: relative;">
+            <ol class="nav-steps">
+                <li  style="width:33.3%">
+                    <span>Applicant information</span>
+                </li>
+                <li class="active" style="width:33.3%">
+                    <span>Mark information</span>
+                </li>
+                <li class="" style="width:33.3%">
+                    <span>Goods and services</span>
+                </li>
+            </ol>
+            <h4 style="margin: 36px 0;" class="text-center">So far so good. Now, let's talk about your mark.</h4>
+            <h5>First, what type of mark is this?</h5>
+            <div style="margin: 18px 0;">
                 <form class="" role="form">
                     <div class="form-group">
-                      <label for="name1" class="control-label required">Name</label>
-                      <div class="">
-                        <input type="text" class="form-control" style="" id="name1">
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="location1" class="control-label required">Location</label>
-                      <div class="">
-                        <input type="text" class="form-control" style="" id="location1" >
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label for="bio1" class=" control-label">Bio</label>
-                      <div class="">
-                        <textarea id="bio1" class="form-control" style="" rows="4"></textarea>
-                      </div>
+                        <div class="radio">
+                            <label><input type="radio" name="optionsRadios" id="optionsRadios1" checked value="option1">Standard characters <div class="text-muted">Use this option to register a mark that is comprised of word(s), letter(s), number(s), or any combination thereof with no design element or stylization. <a href="#">Learn more.</a></div></label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Special form <div class="text-muted">Use this option if you wish to register a mark that is comprised of stylized word(s), letter(s), and/or number(s), and/or a design element. <a href="#">Learn more.</a></div></label>
+                        </div>
+                        <div class="radio">
+                            <label><input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Sound mark <div class="text-muted">A non-visual mark may be a sound, a scent, or otherwise non-visual mark. <a href="#">Learn more.</a></div></label>
+                        </div>
                     </div>
                 </form>
-                <div class="text-right" style="margin-top: 16px;">
+                <div class="text-right" style="margin-top: 24px;">
                     <button class="btn btn-default pull-left">Back</button>
                     <button class="btn btn-primary">Continue</button>
                 </div>
