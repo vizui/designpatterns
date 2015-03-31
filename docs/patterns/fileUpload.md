@@ -1,5 +1,6 @@
 ---
 title: "File upload"
+preview: true
 ---
 <div class="pl-pattern">
 ### Single file upload
