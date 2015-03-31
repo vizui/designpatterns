@@ -6331,7 +6331,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-right: 8px;
   color: #808080;
   font-size: 14px;
-  margin-top: -1px;
   border: none;
   background: transparent;
   outline: none;
@@ -9352,6 +9351,26 @@ input[type=range]:focus::-ms-fill-upper {
 .panel-group .panel:not(.panel-default) + .panel {
   border-top: 1px solid #eee;
 }
+.tag {
+  padding: 2px 8px;
+  border-radius: 2px;
+  background-color: #eeeeee;
+  border: none;
+  margin: 0 5px 5px 0;
+  display: inline-block;
+}
+.tag:hover,
+.tag:focus {
+  background: #e2e2e2;
+  cursor: pointer;
+}
+.tag:hover i,
+.tag:focus i {
+  opacity: 1;
+}
+.tag i {
+  margin-left: 5px;
+}
 .clearfix:before,
 .clearfix:after,
 .dl-horizontal dd:before,
@@ -10335,4 +10354,31 @@ body {
   height: 1em;
   display: inline-block;
   vertical-align: bottom;
+}
+table[data-pl-expandable-rows] tbody > tr:not([data-pl-detail-row]) {
+  cursor: pointer;
+}
+table[data-pl-expandable-rows] tr[data-pl-detail-row] td:first-child {
+  box-shadow: inset 3px 0 0 #eee;
+  background: #f6f6f6;
+}
+table[data-pl-expandable-rows] [aria-expanded="false"] .icon-angle-right::after {
+  transition: -webkit-transform .05s;
+  transition: transform .05s;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+table[data-pl-expandable-rows] [aria-expanded="true"] .icon-angle-right::after {
+  transition: -webkit-transform .05s;
+  transition: transform .05s;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.pl-pattern-layouts img {
+  float: left;
+  padding: 4px;
+  border: 2px solid #ddd;
+  border-radius: 2px;
+  margin: 0 18px 18px 0;
+  vertical-align: middle;
 }

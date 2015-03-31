@@ -6363,7 +6363,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   padding-right: 8px;
   color: #808080;
   font-size: 14px;
-  margin-top: -1px;
   border: none;
   background: transparent;
   outline: none;
@@ -9410,6 +9409,26 @@ input[type=range]:focus::-ms-fill-upper {
 }
 .panel-group .panel:not(.panel-default) + .panel {
   border-top: 1px solid #eee;
+}
+.tag {
+  padding: 2px 8px;
+  border-radius: 2px;
+  background-color: #eeeeee;
+  border: none;
+  margin: 0 5px 5px 0;
+  display: inline-block;
+}
+.tag:hover,
+.tag:focus {
+  background: #e2e2e2;
+  cursor: pointer;
+}
+.tag:hover i,
+.tag:focus i {
+  opacity: 1;
+}
+.tag i {
+  margin-left: 5px;
 }
 .clearfix:before,
 .clearfix:after,
