@@ -217,6 +217,12 @@
         tooltip: 'hide'
     });
 
+    /* expandable rows */
+    $('table[data-pl-expandable-rows] > tbody > tr').on('click', function () {
+        var val = $(this).attr('aria-expanded') === 'true';
+        $(this).attr('aria-expanded', !val);
+        $(this).next('tr[data-pl-detail-row]').toggle();
+    });
 
 
     /* google analytics download tracking */

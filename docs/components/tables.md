@@ -994,6 +994,8 @@ This dialog provides the ability to show/hide columns as desired.
 <div class="pl-pattern">
 ### Grouping
 
+Row grouping allows users to show and hide sets of rows that share a similar attribute. 
+
 {::nomarkdown}
 <div class="pl-preview">
 <div style="padding: 40px; background: #fff;">
@@ -1024,6 +1026,75 @@ This dialog provides the ability to show/hide columns as desired.
             </tr>
             <tr class="table-group">
                 <td class="" style="padding-left: 20px;" colspan="4"><i class="icon text-muted icon-angle-right" style="margin-right: 6px;"></i><strong>Event:</strong> Register <span style="color: #aaa;">(2)</span></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+{:/nomarkdown}
+</div>
+
+
+
+
+<div class="pl-pattern">
+### Expandable rows
+
+Expandable rows provide additional information about a row on demand.
+
+{::nomarkdown}
+<div class="pl-preview">
+<div style="padding: 40px; background: #fff;">
+    <table data-pl-expandable-rows role="grid" style="table-layout: fixed;" class="table table-bordered ">
+        <thead>
+            <tr role="row">
+                <th scope="col" role="columnheader" aria-sort="none">Project name</th>
+                <th scope="col" role="columnheader" aria-sort="none">Description</th>
+                <th scope="col" role="columnheader" aria-sort="none">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><i class="icon icon-angle-right"></i> &nbsp;Invoice</td>
+                <td><span >Add invoice confirmation</span></td>
+                <td><span >$4,500</span></td>
+            </tr>
+            <tr data-pl-detail-row style="display: none;">
+                <td colspan="3" >
+                    <dl class="dl-horizontal" style="margin-bottom: 0;">
+                        <dt>Examiner</dt>
+                        <dd>IP, Sikyin / 69776 / 1742</dd>
+                        <dt>SPE (multiple)</dt>
+                        <dd>John Olaskey</dd>
+                        <dt>Applicants</dt>
+                        <dd>Roman Amirpur</dd>
+                        <dt>Inventors</dt>
+                        <dd>Disney Dale</dd>
+                        <dt>Law firm</dt>
+                        <dd>Clayton & Clayton Associates</dd>
+                    </dl>
+                </td>
+            </tr>
+            <tr aria-expanded="true">
+                <td><i class="icon icon-angle-right"></i> &nbsp;Payments</td>
+                <td><span >Process payments using third party api</span></td>
+                <td><span >$5,400</span></td>
+            </tr>
+            <tr data-pl-detail-row style="display: table-row;">
+                <td colspan="3" >
+                    <dl class="dl-horizontal" style="margin-bottom: 0;">
+                        <dt>Examiner</dt>
+                        <dd>IP, Sikyin / 69776 / 1742</dd>
+                        <dt>SPE (multiple)</dt>
+                        <dd>John Olaskey</dd>
+                        <dt>Applicants</dt>
+                        <dd>Roman Amirpur</dd>
+                        <dt>Inventors</dt>
+                        <dd>Disney Dale</dd>
+                        <dt>Law firm</dt>
+                        <dd>Clayton & Clayton Associates</dd>
+                    </dl>
+                </td>
             </tr>
         </tbody>
     </table>
