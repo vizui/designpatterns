@@ -19,7 +19,7 @@ There are three types of layouts.
 
 ##### Fixed
 
-The fixed width page layout constrains the width of the page to 
+The fixed width page layout deliberately constrains the overall width of the content and horizontally centers it on the page. This gives the designer more control and can be useful for when a more predictable layout with easy to read line lengths are needed. Conversely, it constrains the amount of space available to content and takes away control over presentation from the user.
 {: .clearfix}
 
 

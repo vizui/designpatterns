@@ -129,8 +129,8 @@ Use horizontal steps when there are 4 or less steps.
                     <span>Goods and services</span>
                 </li>
             </ol>
-            <h4 style="margin: 36px 0;" class="text-center">So far so good. Now, let's talk about your mark.</h4>
-            <h5>First, what type of mark is this?</h5>
+            <h2 style="margin: 36px 0;" class="text-center">So far so good. Now, let's talk about your mark.</h2>
+            <h4>First, what type of mark is this?</h4>
             <div style="margin: 18px 0;">
                 <form class="" role="form">
                     <div class="form-group">

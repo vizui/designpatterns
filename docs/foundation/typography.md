@@ -36,6 +36,7 @@ Font load and fallback order: __Helvetica Neue (web font), Helvetica, Arial, san
 <div class="pl-preview">
 <div style="font-size: 15px">
     <p style="font-weight: 700">700 - Bold: The quick brown fox jumps over the lazy dog</p>
+    <p style="font-weight: 600">600 - Semibold: The quick brown fox jumps over the lazy dog</p>
     <p style="font-weight: 400">400 - Regular: The quick brown fox jumps over the lazy dog</p>
 </div>
 </div>
@@ -43,6 +44,7 @@ Font load and fallback order: __Helvetica Neue (web font), Helvetica, Arial, san
 
 {% highlight html %}
 <p style="font-weight: 700">700 - Bold: The quick brown fox jumps over the lazy dog</p>
+<p style="font-weight: 600">600 - Semibold: The quick brown fox jumps over the lazy dog</p>
 <p style="font-weight: 400">400 - Regular: The quick brown fox jumps over the lazy dog</p>
 {% endhighlight %}
 
@@ -62,35 +64,35 @@ Font load and fallback order: __Helvetica Neue (web font), Helvetica, Arial, san
         </tr>
         <tr>
             <td>h1. Display 2</td>
-            <td><h1>Regular 45px</h1></td>
+            <td><h1>Regular 36px</h1></td>
         </tr>
         <tr>
             <td>h2. Display 1</td>
-            <td><h2>Regular 34px</h2></td>
+            <td><h2>Regular 26px</h2></td>
         </tr>
         <tr>
             <td>h3. Headline</td>
-            <td><h3 class="headline">Bold 24px</h3></td>
+            <td><h3 class="headline">Semibold 18px</h3></td>
         </tr>
         <tr>
             <td>h4. Title</td>
-            <td><h4>Bold 18px</h4></td>
+            <td><h4>Bold 16px</h4></td>
         </tr>
         <tr>
             <td>h5. Subhead</td>
-            <td><h5>Bold 15px</h5></td>
+            <td><h5>Bold 13px</h5></td>
         </tr>
         <tr>
             <td>h6.</td>
-            <td><h6>Bold 14px</h6></td>
+            <td><h6>Bold 12px</h6></td>
         </tr>
         <tr>
             <td>Body</td>
-            <td><div class="body">Regular 14px</div></td>
+            <td><div class="body">Regular 13px/14px</div></td>
         </tr>
         <tr>
             <td>Caption</td>
-            <td><div class="caption">Regular 13px</div></td>
+            <td><div class="caption">Regular 12px/13px</div></td>
         </tr>
     </tbody>
 </table>
@@ -99,33 +101,14 @@ Font load and fallback order: __Helvetica Neue (web font), Helvetica, Arial, san
 
 {% highlight html %}
 <h1 class="display3">Regular 56px</h1>
-<h1>Regular 45px</h1>
-<h2>Regular 34px</h2>
-<h3>Bold 24px</h3>
-<h4>Bold 18px</h4>
-<h5>Bold 15px</h5>
-<h6>Bold 14px</h6>
-<p>Regular 14px</p>
-<div class="caption">Regular 13px</div>
-{% endhighlight %}
-
-#### Helvetica Neue
-{::nomarkdown}
-<div class="pl-preview">
-<img src="https://cloud.githubusercontent.com/assets/848347/6025825/4834108e-ab8a-11e4-9fd0-2129c15a9bd5.png">
-</div>
-{:/nomarkdown}
-
-{% highlight html %}
-<h1 class="display3">Light 56px</h1>
-<h1>Light 45px</h1>
-<h2>Light 34px</h2>
-<h3>Bold 24px</h3>
-<h4>Bold 18px</h4>
-<h5>Bold 15px</h5>
-<h6>Bold 14px</h6>
-<p>Regular 13px</p>
-<div class="caption">Regular 13px</div>
+<h1>Regular 36px</h1>
+<h2>Regular 26px</h2>
+<h3>Bold 18px</h3>
+<h4>Bold 16px</h4>
+<h5>Bold 13px</h5>
+<h6>Bold 12px</h6>
+<p>Regular 13px/14px</p>
+<div class="caption">Regular 12px/13px</div>
 {% endhighlight %}
 
 &nbsp;
