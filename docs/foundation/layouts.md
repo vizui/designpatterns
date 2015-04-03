@@ -52,12 +52,16 @@ These content types are used within fixed, fluid, or hybrid layouts.
 
 ##### Content only
 
+[View example](layouts/type-content-only.html){:target="_blank"}
+
 The content only layout maximizes the space available for content. It provides more horizontal space than the other layouts, and is therefore ideal for displaying wide tables and other large user interface elements. Conversely, it doesn't provide any structure for grouping and separating elements.
 {: .clearfix}
 
 ![Navigation and content](layouts/images/type-content-navigation.png)
 
 ##### Navigation and content
+
+[View example](layouts/type-content-navigation.html){:target="_blank"}
 
 The navigation and content layout has a column for vertical navigation to the left of the content area, which is useful for when a long list of navigation links is necessary. See Vertical navigation and Horizontal navigation for more detail.
 {: .clearfix}
@@ -66,6 +70,8 @@ The navigation and content layout has a column for vertical navigation to the le
 
 ##### Content and right sidebar
 
+[View example](layouts/type-content-sidebar.html){:target="_blank"}
+
 The content and sidebar layout has a column to the right of the content area. The sidebar is used for supplementary content, which would otherwise interrupt the flow of content in the main content area.
 {: .clearfix}
 
@@ -73,12 +79,16 @@ The content and sidebar layout has a column to the right of the content area. Th
 
 ##### Navigation, content, and right sidebar
 
+[View example](layouts/type-navigation-content-sidebar.html){:target="_blank"}
+
 The navigation, content and sidebar layout is a combination of the three layouts mentioned above. This layout can be used when a vertical navigation is required as well as a two column structure in the content area.
 {: .clearfix}
 
 ![Focused](layouts/images/type-focused.png)
 
 ##### Focused task
+
+[View example](layouts/type-focused.html){:target="_blank"}
 
 The focused task layout has a smaller, fixed width content area that is horizontally centered on the page regardless of which layout type is used.
 {: .clearfix}
