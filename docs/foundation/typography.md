@@ -5,19 +5,14 @@ title: "Typography"
 <div class="pl-pattern">
 ### Fonts
 
-#### Internal/private applications
-Font load and fallback order: __Calibri, Helvetica Neue, Helvetica, Arial, sans-serif__
-
-
-#### External/public applications
-Font load and fallback order: __Helvetica Neue (web font), Helvetica, Arial, sans-serif__
+Font load and fallback order: __Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif__
 
 #### Font availability
 
 {::nomarkdown}
 <dl>
-    <dt>Calibri</dt>
-    <dd>Ships with Windows Vista and newer. Ships with Office for Mac. Calibri Light available on Windows 8+.</dd>
+    <dt>Segoe UI</dt>
+    <dd>Ships with Windows Vista and newer and Microsoft Office</dd>
     <dt>Helvetica Neue / Helvetica</dt>
     <dd>Ships with OSX.</dd>
     <dt>Arial</dt>
@@ -53,7 +48,7 @@ Font load and fallback order: __Helvetica Neue (web font), Helvetica, Arial, san
 <div class="pl-pattern">
 ### Styles
 
-#### Calibri
+#### Segoe UI
 {::nomarkdown}
 <div class="pl-preview">
 <table class="table table-borderless table-valign" style="width: 550px;">
