@@ -3351,7 +3351,7 @@ h6,
 h6,
 .h6 {
   font-weight: 700;
-  font-size: 11px;
+  font-size: 12px;
 }
 .caption {
   font-size: 12px;
@@ -6365,7 +6365,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav.nav-stacked > .category {
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
   border-left: 3px solid transparent;
   padding: 3px 15px;
   margin-top: 18px;
