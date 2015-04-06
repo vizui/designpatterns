@@ -1,0 +1,44 @@
+---
+title: "Navigation, content, and sidebar"
+layout: null
+hidden: true
+---
+{% include header.html %}
+<div style="background: #fff;">
+    {% include universalHeader.html title="Navigation, content, and sidebar" containerClass="container"%}
+    <div class="container">
+        <div style="width: 250px; float: left; padding-top: 30px;">
+            <ul class="nav nav-stacked nav-tree" role="tab-list">
+                <li role="presentation" class="category">General</li>
+                <li class="active" role="presentation"><a role="tab" href="#">Profile</a></li>
+                <li role="presentation"><a role="tab" href="#">Deployments</a></li>
+                <li role="presentation"><a role="tab" href="#">Billing</a></li>
+                <li role="presentation" class="category">System</li>
+                <li role="presentation"><a role="tab" href="#">Notifications</a></li>
+                <li role="presentation"><a role="tab" href="#">Emails</a></li>
+                <li role="presentation"><a role="tab" href="#">SSH keys</a></li>
+            </ul>
+        </div>
+        <div style="border-left: 1px solid #eee; margin-left: 250px;">
+            <div style="font-size: 14px; line-height: 1.8; display: table;">
+                <div style="padding: 40px; padding-right: 40px; display: table-cell;">
+                    {% include content.html %}
+                </div>
+                <div style="border-left: 1px solid #eee; padding-left: 40px; display: table-cell; width: 250px;" >
+                    <h3>Help center</h3>
+                    <h6 class="text-uppercase text-muted">Resources</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="">Search existing trademarks</a></li>
+                        <li><a href="">Instructional videos</a></li>
+                    </ul>
+                    <h6 class="text-uppercase text-muted">Faq</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="">What is a mark?</a></li>
+                        <li><a href="">Can I change my mark later?</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% include footer.html %}
