@@ -6,7 +6,7 @@ hidden: true
 {% include header.html %}
 <div style="">
     {% include universalHeader.html title="Content and navigation" containerClass="container-fluid"%}
-    <div style="width: 250px; float: left;">
+    <div style="width: 250px;" class="pull-left">
         <ul class="nav nav-stacked nav-tree" role="tab-list">
             <li role="presentation" class="category">General</li>
             <li class="active" role="presentation"><a role="tab" href="#">Profile</a></li>
@@ -18,10 +18,8 @@ hidden: true
             <li role="presentation"><a role="tab" href="#">SSH keys</a></li>
         </ul>
     </div>
-    <div class="keyline-left" style="background: #fff; margin-left: 250px;">
-        <div class="container-fluid" style="display: inline-block; width: 100%; padding: 40px 50px 50px 50px;">
-            {% include content.html %}
-        </div>
+    <div class="keyline-left padding-4" style="background: #fff; margin-left: 250px;">
+        {% include content.html %}
     </div>
 </div>
 {% include footer.html %}
