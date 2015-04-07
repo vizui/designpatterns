@@ -7337,7 +7337,6 @@ a.label:focus {
 }
 .label {
   display: inline-block;
-  padding: .3em .6em;
 }
 .label-default.subtle {
   color: #444444;
@@ -7413,6 +7412,9 @@ a.badge:focus {
 }
 .nav-pills > li > a > .badge {
   margin-left: 3px;
+}
+.badge {
+  padding: 3px 7px 4px 7px;
 }
 .jumbotron {
   padding: 30px 15px;
@@ -9254,10 +9256,8 @@ button.close {
   clear: both;
 }
 .filters .filter-heading {
-  color: #808080;
-  font-size: 16px;
   padding: 6px 14px;
-  font-weight: 400;
+  margin-top: 0;
 }
 .filters-horizontal .filter-heading {
   display: inline;
