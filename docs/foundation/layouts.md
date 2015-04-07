@@ -11,6 +11,10 @@ preview: true
 
 Consistent and predictable layouts allow users to navigate and understand applications easier. 
 
+#### Description
+
+These layout and content types cover most use-cases for standard web pages. Web applications often have more complex needs, but should still be able to follow similar styles and layouts. 
+
 #### Layout types
 
 There are three types of layouts.
@@ -68,7 +72,7 @@ The navigation and content layout has a column for vertical navigation to the le
 
 ![Content and right sidebar](layouts/images/type-content-sidebar.png)
 
-##### Content and right sidebar
+##### Content with right sidebar
 
 [View example](layouts/type-content-sidebar.html){:target="_blank"}
 
@@ -77,7 +81,7 @@ The content and sidebar layout has a column to the right of the content area. Th
 
 ![Navigation, content, and right sidebar](layouts/images/type-navigation-content-sidebar.png)
 
-##### Navigation, content, and right sidebar
+##### Navigation and content with right sidebar
 
 [View example](layouts/type-navigation-content-sidebar.html){:target="_blank"}
 

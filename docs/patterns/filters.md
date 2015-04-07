@@ -323,7 +323,7 @@ For many or complex filters, you may want to organize them with a menu along the
         <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="badge" style="margin-right: 5px;">3</span>Filters <span class="caret"></span></button>
         <div class="dropdown-menu" role="menu" style="padding: 0; width: 500px;">
             <form class="clearfix" role="form">
-                <div style="width: 200px; min-height: 300px; border-right: 1px solid #ddd; float: left;">
+                <div class="keyline-right" style="width: 200px; min-height: 300px; float: left;">
                     <ul class="nav nav-stacked" role="tab-list" style="margin-top: 10px">
                         <li role="presentation" class="active"><a role="tab" data-toggle="tab" href="#">Applied filters <span class="badge pull-right">3</span></a></li>
                         <li role="presentation" class="divider"></li>

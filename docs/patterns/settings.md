@@ -50,7 +50,7 @@ Use tabs if there are 5 or less sections of settings without nesting, otherwise 
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <h4 class="modal-title">Settings</h4>
       </div>
-      <div style="width: 200px; min-height: 400px; border-right: 1px solid #ddd; float: left;">
+      <div class="keyline-right" style="width: 200px; min-height: 400px; float: left;">
         <ul class="nav nav-stacked nav-tree" role="tab-list">
             <li role="presentation" class="category">General</li>
             <li class="active" role="presentation"><a role="tab" href="#">Profile</a></li>

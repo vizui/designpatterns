@@ -1,11 +1,11 @@
 ---
-title: "Navigation, content, and sidebar"
+title: "Navigation and content with sidebar"
 layout: null
 hidden: true
 ---
 {% include header.html %}
 <div style="background: #fff;">
-    {% include universalHeader.html title="Navigation, content, and sidebar" containerClass="container"%}
+    {% include universalHeader.html title="Navigation and content with sidebar" containerClass="container"%}
     <div class="container">
         <div style="width: 220px; float: left; padding-top: 30px;">
             <ul class="nav nav-stacked nav-tree" role="tab-list">
@@ -19,12 +19,12 @@ hidden: true
                 <li role="presentation"><a role="tab" href="#">SSH keys</a></li>
             </ul>
         </div>
-        <div style="border-left: 1px solid #ddd; margin-left: 220px;">
+        <div class="keyline-left" style="margin-left: 220px;">
             <div style="display: table;">
-                <div style="font-size: 14px; line-height: 1.8; padding: 40px; padding-right: 40px; display: table-cell;">
+                <div style="padding: 40px; padding-right: 40px; display: table-cell;">
                     {% include content.html %}
                 </div>
-                <div style="border-left: 1px solid #ddd; padding-left: 40px; display: table-cell; width: 250px;" >
+                <div class="keyline-left" style="padding-left: 40px; display: table-cell; width: 250px;" >
                     <h3>Help center</h3>
                     <h6 class="text-uppercase text-muted">Resources</h6>
                     <ul class="list-unstyled">
