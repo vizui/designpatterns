@@ -79,7 +79,7 @@ There are two primary ways to help:
 - Versions are referenced in `/_config.yml` , which is used to list versions/links on the landing page
 - By default, all committed changes to guides are automatically compiled by Github/Jekyll and served as the 'future' version
 
-## Adding and modifing patterns and guides
+## Adding and modifying patterns and guides
 
 ##### Modifying a guide
 - Find the `.md` file you'd like to edit
