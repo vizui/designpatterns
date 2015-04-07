@@ -57,9 +57,9 @@ Filters can be:
     <div class="row">
         <div style="width: 275px; margin: 5px;" class="panel panel-default pull-left">
             <form class="filters">
-                <div class="filter-heading">
+                <h3 class="filter-heading">
                     Refine by <a href="" class="filters-clear">Clear</a>
-                </div>
+                </h3>
                 <div class="filter-list">
                     <div aria-expanded="true" data-toggle="collapse" data-target="#filterGroup8" class="filter-group-title">
                         Year <i class="icon icon-angle-right pull-right"></i>
@@ -183,9 +183,9 @@ Filters can be:
         </div>
         <div style="width: 275px; margin: 5px;" class="panel panel-default pull-left">
             <form class="filters">
-                <div class="filter-heading">
+                <h3 class="filter-heading">
                     Refine by <a href="" class="filters-clear">Clear</a>
-                </div>
+                </h3>
                 <h5 style="margin-left: 15px; color: #888;">ASSIGNMENT</h5>
                 <div class="filter-list">
                     <div data-toggle="collapse" data-target="#2filterGroup8" class="filter-group-title">
@@ -441,7 +441,6 @@ If you allow multi-selection in filters, the currently applied filters can be li
 <div class="pl-preview">
 <div class="container-fluid" style="margin-top: 8px;">
     <form class="filters filters-horizontal">
-        <div class="filter-heading">Refine by</div>
         <div style="display: inline-block; vertical-align: top;">
             <button class="btn btn-link">
                 Date range <span class="caret"></span>
@@ -483,7 +482,6 @@ If you allow single-selection for each filter, the currently applied filter can 
 <div class="pl-preview">
 <div class="container-fluid" style="margin-top: 8px;">
     <form class="filters filters-horizontal">
-        <div class="filter-heading">Refine by</div>
         <button class="btn btn-link">
             4/01/2014 - 5/01/2014 <span class="caret"></span>
         </button>
