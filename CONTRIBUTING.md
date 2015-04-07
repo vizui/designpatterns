@@ -62,7 +62,7 @@ There are two primary ways to help:
 - Jekyll is configured via `/_config.yml`
 - Side navigation categories and other variables are stored in `/_config.yml` under `doctypes`
 - Guides are located in the `/docs` folder, and are organized into sub-folders (e.g., foundation, components, patterns, examples). Those sub folders correspond to the `doctypes` variable in `/_config.yml`, which drives the side navigation
-- Each guide is a [markdown]((https://guides.github.com/features/mastering-markdown/) file that includes the descriptions, examples, and source code.
+- Each guide is a [markdown](https://guides.github.com/features/mastering-markdown/) file that includes the descriptions, examples, and source code.
 - Each markdown file has YAML metadata at the top. [Learn more](http://jekyllrb.com/docs/frontmatter/).
   - `title: Buttons` : The title of the guide
   - `hidden: true` : Whether the guide should be hidden from the navigation (If it’s a WIP or if it should just be excluded for some reason
