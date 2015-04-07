@@ -15,7 +15,7 @@ There are two primary ways to help:
     - [Releasing](#releasing)
 - [Code architecture overview](#code-architecture-overview)
     - [Guides](#guide-architecture)
-    - [LESS/CSS/JS/Images](#lesscssjsimages-architecture)
+    - [LESS/CSS/JS/Images](#lesscssjsimage-architecture)
     - [Versioning](#versioning-overview)
 - [Adding and modifying patterns and guides](#adding-and-modifying-patterns-and-guides)
     - [Modifying a guide](#modifying-a-guide)
