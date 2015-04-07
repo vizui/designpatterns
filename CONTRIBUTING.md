@@ -8,12 +8,12 @@ There are two primary ways to help:
  - Changing the code-base.
 
 
-#### Contents
-- [Contributing overview](#contributing-overview)
+#### Table of contents
+- [Contributing OVERVIEW](#contributing-overview)
     - [Creating an managing issues](#creating-and-managing-issues)
     - [Making changes](#making-changes-to-the-repository)
     - [Releasing](#releasing)
-- [Code architecture overview](#code-architecture-overview)
+- [Code architecture OVERVIEW](#code-architecture-overview)
     - [Guides](#guide-architecture)
     - [LESS/CSS/JS/Images](#lesscssjsimage-architecture)
     - [Versioning](#versioning-overview)
@@ -22,6 +22,7 @@ There are two primary ways to help:
     - [Adding a new guide](#adding-a-new-guide)
 - [Adding and modifying the LESS files](#adding-and-modifying-the-less-files)
 - [Adding and modifying the icons](#adding-and-modifying-the-icons)
+- [Performing a versioned release](#performing-a-versioned-release)
 
 
 ## Contributing overview
@@ -133,7 +134,20 @@ There are two primary ways to help:
 - `/uspotstrap/less/usptostrap.less` imports all the individual components
 - Custom components that are not in Bootstrap are placed in `/usptostrap/less/custom/`
 - Ensure that all changes are consistent with the style and practices used elsewhere in the code
+- Run `grunt build` to build the LESS files
+- Commit your changes, including the `/generated` folder (which is where compiled assets go). [Learn how](https://help.github.com/articles/making-changes/).
 
 ## Adding and modifying the icons
 - Since the method for serving icons is often dependent on the target audience, the design library provides a set of individual `.svg` files in `/usptostrap/images/icons/` that users can consume and modify to meet their needs.
 - If an icon is added or modified, use [icomoon.io](https://icomoon.io/) to compile the individual icons into black and white sprite sheets. You will need to update `/usptostrap/less/_icons.less` with the generated css. 
+
+## Performing a versioned release
+- Update the `version` property in `/_config.yml` to your new version
+- Update the `baseurl` property in `/_config.yml` to `/designpatterns/your-version` (e.g., `/designpatterns/1.1.0)`
+- Update the `versions` property in `/_config.yml` to include your new version
+- Run `grunt build` to build all the LESS/JS files
+- Run `jekyll build` from the cmd line to build the documentation
+- Rename the newly compiled `/_site` folder to your new version (e.g., `/1.1.0`)
+- Revert the `baseurl` property in `/_config.yml` back to `/designpatterns` for local development
+- Commit your changes. [Learn how](https://help.github.com/articles/making-changes/)
+
