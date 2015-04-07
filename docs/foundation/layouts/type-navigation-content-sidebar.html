@@ -4,10 +4,10 @@ layout: null
 hidden: true
 ---
 {% include header.html %}
-<div style="background: #fff;">
-    {% include universalHeader.html title="Navigation and content with sidebar" containerClass="container"%}
-    <div class="container">
-        <div style="width: 220px;" class="pull-left padding-top-4">
+<div >
+    {% include universalHeader.html title="Navigation and content with sidebar" containerClass="container-fluid"%}
+    <div class="container-fluid padding-0">
+        <div style="width: 250px;" class="pull-left">
             <ul class="nav nav-stacked nav-tree" role="tab-list">
                 <li role="presentation" class="category">General</li>
                 <li class="active" role="presentation"><a role="tab" href="#">Profile</a></li>
@@ -19,7 +19,7 @@ hidden: true
                 <li role="presentation"><a role="tab" href="#">SSH keys</a></li>
             </ul>
         </div>
-        <div class="keyline-left" style="margin-left: 220px;">
+        <div class="keyline-left" style="background: #fff; margin-left: 250px;">
             <div style="display: table;">
                 <div class="padding-4" style="display: table-cell;">
                     {% include content.html %}
