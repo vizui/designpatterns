@@ -34,7 +34,7 @@ There are two primary ways to help:
     - Add ‘browser’ labels for issues that are specific to a certain browser
     - Add ‘needs’ labels for issues that need detail, feedback, or work
     - Add ‘type’ labels to categorize issues by defects, improvements, or questions
-    - Add ‘state’ labels to indicate whether it is ready to be worked on or in progress. State labels are synced with [waffle.io]((https://waffle.io/USPTO/designpatterns), which can _optionally_ be used to manage and view issues. 
+    - Add ‘state’ labels to indicate whether it is ready to be worked on or in progress. State labels are synced with [waffle.io](https://waffle.io/USPTO/designpatterns), which can _optionally_ be used to manage and view issues. 
     - Update the 'needs' and 'state' labels for an issue as a state progresses through opened/in-progress/closed.
 - Assign an issue or pull request to a user if desired. [Learn how](https://help.github.com/articles/assigning-issues-and-pull-requests-to-other-github-users/).
 
