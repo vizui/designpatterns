@@ -23,7 +23,11 @@ Tags usually represent a category or label of an object. Sometimes they are clic
 {:/nomarkdown}
 
 {% highlight html %}
-// HTML
+<ul class="list-unstyled">
+    <li class="tag">News <i class="icon icon-close icon-muted"></i></li>
+    <li class="tag">Patents <i class="icon icon-close icon-muted"></i></li>
+    <li class="tag">Trademarks</i></li>
+</ul>
 {% endhighlight %}
 
 </div>
