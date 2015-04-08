@@ -4212,14 +4212,14 @@ table th[class*="col-"] {
 .table > thead > tr.active > th,
 .table > tbody > tr.active > th,
 .table > tfoot > tr.active > th {
-  background-color: #eef8fc;
+  background-color: #fdfbe4;
 }
 .table-hover > tbody > tr > td.active:hover,
 .table-hover > tbody > tr > th.active:hover,
 .table-hover > tbody > tr.active:hover > td,
 .table-hover > tbody > tr:hover > .active,
 .table-hover > tbody > tr.active:hover > th {
-  background-color: #d8eff9;
+  background-color: #fbf7cc;
 }
 .table > thead > tr > td.success,
 .table > tbody > tr > td.success,
