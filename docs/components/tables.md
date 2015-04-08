@@ -729,7 +729,7 @@ Checkboxes are generally the best way to facilitate multi-row selection, especia
 <div class="pl-preview">
 <div style="padding: 40px; background: #fff;">
     <span class="help-block" style="color: #ccc;">Note: checkboxes are disabled for demo purposes.</span>
-    <table class="table">
+    <table class="table table-outline">
         <thead>
             <tr>
                 <th style="width: 28px;"><input indeterminate type="checkbox" disabled></th>
@@ -745,13 +745,13 @@ Checkboxes are generally the best way to facilitate multi-row selection, especia
                 <td><span >Process payments using third party api</span></td>
                 <td><span >$5,400</span></td>
             </tr>
-            <tr class="info">
+            <tr class="active">
                 <td><input type="checkbox" disabled checked></td>
                 <td>Invoice</td>
                 <td><span >Add invoice confirmation</span></td>
                 <td><span >$4,500</span></td>
             </tr>
-            <tr class="info">
+            <tr class="active">
                 <td><input type="checkbox" disabled checked></td>
                 <td>Templates</td>
                 <td><span >Refactor templates to use the new templating library</span></td>
