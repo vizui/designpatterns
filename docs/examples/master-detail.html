@@ -7,10 +7,10 @@ layout: null
     {% include universalHeader.html title="Master detail" containerClass="container-fluid"%}
     <div class="padding-0 valign-top" style="display: table; width: 100%;">
         <div style="width: 200px; display: table-cell; vertical-align: top;">
-            <button style="width: 150px;" class="margin-top-2 margin-bottom-2 center-block btn btn-default">Save filter</button>
+            <button style="width: 150px;" class="margin-top-2 margin-bottom-2 center-block btn btn-default">New issue</button>
             <ul class="nav nav-stacked keyline-top" role="tab-list">
                 <li role="presentation" class="category">Shared filters</li>
-                <li role="presentation"><a role="tab" href="#">All notes</a></li>
+                <li role="presentation"><a role="tab" href="#">All issues</a></li>
                 <li role="presentation"><a role="tab" href="#">Todo</a></li>
                 <li role="presentation" class="category">My filters</li>
                 <li role="presentation"><a role="tab" href="#">In progress</a></li>
@@ -30,7 +30,7 @@ layout: null
         </div>
         <div class="keyline-left" style="display: table-cell; vertical-align: top;">
             <div class="padding-2 keyline-bottom clearfix">
-                <h2 class="pull-left margin-0">Search notes</h2>
+                <h2 class="pull-left margin-0">Issues</h2>
                 <div class="pull-right">
                     <button class="btn btn-default btn-hover"><i class="icon icon-share"></i> Share</button>
                     <button class="btn btn-default btn-hover"><i class="icon icon-download"></i> Export</button>
@@ -48,7 +48,6 @@ layout: null
                     <button class="btn btn-default btn-hover">
                         Color <span class="caret"></span>
                     </button>
-                    <input type="text" style="display: inline-block; vertical-align: middle;" class="form-control form-control-width-sm" placeholder="Contains text">
                     <button class="btn btn-default btn-hover">
                         Clear
                     </button>
@@ -56,6 +55,10 @@ layout: null
             </div>
             <div style="display: table; width: 100%; background: #fff; height: 900px;">
                 <div class="keyline-right" style="display: table-cell; vertical-align: top; width: 350px;">
+                    <div class="clearfix keyline-bottom" style="padding: 2px 2px 2px 9px;">
+                        <button class="pull-left btn btn-sm btn-default btn-hover">Order by <span class="caret"></span></button>
+                        <button class="pull-right btn btn-sm btn-default btn-hover"><i class="icon icon-angle-double-left"></i></button>
+                    </div>
                     <table class="table table-comfortable margin-bottom-0 table-striped" style="table-layout: fixed;">
                         <tbody>
                             <tr>
