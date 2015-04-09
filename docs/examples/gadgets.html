@@ -8,17 +8,47 @@ layout: null
     /* Styles specific for this example */
     .ex-sub-header {
         background: #282930;
-        height: 34px;
+        height: 38px;
         top: 34px;
         left: 0px;
         right: 0;
         position: absolute;
         padding-left: 4px;
         color: #fff;
+        padding-right: 4px;
+    }
+
+    .ex-sub-header .btn {
+        border-radius: 2px;
+        margin: 4px 0;
+        padding: 6px;
+    }
+
+    .ex-header--icon-badge {
+        color: #fff;
+        background: #fb8300;
+        padding: 2px;
+        border-radius: 20px;
+        text-align: center;
+        font-weight: 700;
+        margin-left: -6px;
+        margin-top: -6px;
+        border: 2px solid #004c97;
+        display: inline-block;
+        line-height: 11px;
+        font-size: 11px;
+        width: 20px;
+        height: 20px;
+        vertical-align: top;
+        position: relative;
     }
 
     .ex-sub-header--gadgets .btn {
-        width: 28px;
+        width: 34px;
+    }
+
+    .ex-sub-header--gadgets .ex-btn__inverse__active {
+        background: rgba(255,255,255,.05);
     }
 
     .ex-sub-header--gadgets .btn .icon {
@@ -31,7 +61,7 @@ layout: null
 
     .ex-container {
         position: absolute;
-        top: 68px;
+        top: 72px;
         left: 0;
         bottom: 0;
         right: 0;
@@ -65,6 +95,21 @@ layout: null
         padding: 8px 8px;
         vertical-align: middle;
         border-radius: 0;
+        text-align: center;
+    }
+
+    .ex-form-control__inverse,
+    .ex-form-control__inverse:focus {
+        border: none;
+        background: rgba(0,0,0,.5);
+        display: inline-block;
+        width: 200px;
+        margin-top: 4px;
+        height: 30px;
+        padding: 5px 12px;
+        padding-right: 28px;
+        vertical-align: middle;
+        color: #fff;
     }
 
     .ex-btn__inverse.btn:hover {
@@ -73,7 +118,7 @@ layout: null
     }
 
     .ex-sub-header--text {
-        padding: 8px 12px;
+        padding: 10px 12px;
     }
     .ex-sub-header--text__border-left {
         border-left: 1px solid rgba(0,0,0,.4);
@@ -95,11 +140,11 @@ layout: null
     }
     .ex-gadget-container--tabs > .nav-tabs > li > a {
         border-color: #ccc;
-        background-color: rgba(255,255,255,.2);
+        background-color: rgba(255,255,255,.35);
         color: #222;
     }
     .ex-gadget-container--tabs > .nav-tabs > li > a:hover {
-        background-color: rgba(255,255,255,.5);
+        background-color: rgba(255,255,255,.6);
     }
     .ex-gadget-container--tabs > .nav-tabs > li.active > a,
     .ex-gadget-container--tabs > .nav-tabs > li.active > a:hover {
@@ -108,6 +153,18 @@ layout: null
         background: #f5f5f5;
         border-bottom-color: #f5f5f5;
     }
+
+    .ex-gadget-container--tabs--close {
+        position: relative;
+        top: 1px;
+        opacity: .5;
+        right: -3px;
+    }
+
+    .ex-gadget-container--tabs--close:after {
+        transform: scale(.8);
+    }
+
     .ex-gadget-container--tabs > .nav-tabs > li.active > a:hover {
         background: #f5f5f5;
     }
@@ -155,13 +212,15 @@ layout: null
             <button class="btn ex-btn__inverse">Prior art search <span class="caret"></span></button>
         </div>
         <div class="pull-right">
-            <button class="btn ex-btn__inverse">Hello, Beth Woodward <span class="caret"></span></button>
+            <button class="btn ex-btn__inverse" style="padding-right: 0px;"><i class="icon icon-warning icon-inverse"></i><div class="ex-header--icon-badge">2</div></button>
+            <button class="btn ex-btn__inverse"><i class="icon icon-gears icon-inverse"></i></button>
+            <button class="btn ex-btn__inverse"><i class="icon icon-user margin-right-1 icon-inverse"></i>Beth Woodward <span class="caret"></span></button>
         </div>
     </div>
 </div>
 <div class="ex-sub-header clearfix">
     <div class="ex-sub-header--gadgets pull-left">
-        <button class="btn ex-btn__inverse">
+        <button class="btn ex-btn__inverse  ex-btn__inverse__active">
             <i class="icon icon-search icon-inverse"></i>
         </button>
         <button class="btn ex-btn__inverse ex-btn__inverse__active">
@@ -179,32 +238,25 @@ layout: null
         <button class="btn ex-btn__inverse">
             <i class="icon icon-file-text icon-inverse"></i>
         </button>
-        <button class="btn ex-btn__inverse ex-btn__inverse__active">
+        <button class="btn ex-btn__inverse">
             <i class="icon icon-star icon-inverse"></i>
         </button>
     </div>
     <div class="pull-left ex-sub-header--text ex-sub-header--text__border-left">
         Case <strong>90/493,212</strong>
     </div>
-    <div class="pull-right">
-        <button class="btn ex-btn__inverse">
-            Import...
-        </button>
-        <button class="btn ex-btn__inverse">
-            Open...
-        </button>
-        <button class="btn ex-btn__inverse">
-            Close
-        </button>
+    <div class="pull-right" style="position: relative;">
+        <input type="text" class="form-control ex-form-control__inverse" placeholder="Open by case #">
+        <i style="right: 10px; top: 3px;" class="icon input-icon icon-search icon-inverse"></i>
     </div>
 </div>
 <div class="ex-container">
     <div class="ex-gadget-container pull-left" style="width: 400px; height: 100%;">
         <div class="ex-gadget-container--tabs">
             <ul class="nav nav-tabs">
-                <li class="active"><a href="">Documents</a></li>
-                <li><a href="">Search</a></li>
-                <li><a href="">Search history</a></li>
+                <li class="active"><a href="">Documents <i class="icon icon-times ex-gadget-container--tabs--close"></i></a></li>
+                <li><a href="">Search <i class="icon icon-times ex-gadget-container--tabs--close"></i></a></li>
+                <li><a href="">Search history <i class="icon icon-times ex-gadget-container--tabs--close"></i></a></li>
             </ul>
         </div>
         <div class="ex-gadget-container--panel">
@@ -255,17 +307,20 @@ layout: null
         <div class="ex-gadget-container--panel">
             <div class="ex-gadget-toolbar clearfix">
                 <div class="pull-left">
-                    <button class="btn btn-default"><i class="icon icon-search"></i></button>
+                    <button class="btn btn-default btn-icon-only"><i class="icon icon-search"></i></button>
+                    <button class="btn btn-default btn-icon-only"><i class="icon icon-info"></i></button>
                     <div class="btn-group">
-                        <button class="btn btn-default"><i class="icon icon-photo"></i></button>
-                        <button class="btn btn-default active"><i class="icon icon-file-text-o"></i></button>
+                        <button class="btn btn-default btn-icon-only"><i class="icon icon-photo"></i></button>
+                        <button class="btn btn-default btn-icon-only active"><i class="icon icon-file-text-o"></i></button>
                     </div>
                     <button class="btn btn-default"><i class="icon icon-paint-brush"></i> <span style="vertical-align: top; box-shadow: inset 0px 1px 1px rgba(0,0,0,.1); display: inline-block; height: 11px; margin-left: 4px; margin-top: 4px; border-radius: 11px; width: 11px; background-color: #1596D1; margin-right: -3px;"></span></button>
                 </div>
                 <div class="pull-right">
                     <div class="btn-group">
+                        <div class="btn btn-default"><i class="icon icon-cog"></i> <span class="caret"></span></div>
+                    </div>
+                    <div class="btn-group">
                         <a href="#" class="btn btn-default"><i class="icon icon-angle-left"></i></a>
-                        <a class="btn btn-default" href="">1/25 <span class="caret"></span></a>
                         <a href="#" class="btn btn-default"><i class="icon icon-angle-right"></i></a>
                     </div>
                 </div>
@@ -279,7 +334,7 @@ layout: null
                         <button style="margin: 2px;" class="pull-right btn btn-default btn-sm btn-hover">
                             <i class="icon icon-angle-double-right"></i>
                         </button>
-                        <h6 class="pull-left text-uppercase text-muted margin-1">NOTES</h6>
+                        <h6 class="pull-left text-uppercase text-muted margin-top-1 margin-left-1 margin-bottom-0">NOTES</h6>
                     </div>
                     <div class="ex-notes padding-2" style="margin-left: -1px; position: relative;">
                         <div style="border-left: 4px solid #1596D1; margin-top: 150px;" class="ex-notes--note padding-2 panel panel-default">
