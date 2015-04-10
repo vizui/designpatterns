@@ -37,7 +37,7 @@ These show possible configurations for layouts with large amounts of screen real
 {::nomarkdown}
 <div class="pl-preview">
 <div class="btn-group">
-    <div class="dropdown" style="display: inline-block">
+    <div class="btn-group dropdown">
         <button type="button" id="dropdownMenu1" class="btn-link btn dropdown-toggle" data-toggle="dropdown">10 per page <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
             <li role="presentation" class="dropdown-header">Show up to</li>
@@ -47,38 +47,41 @@ These show possible configurations for layouts with large amounts of screen real
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
         </ul>
     </div>
-    <div class="dropdown" style="display: inline-block">
+    <div class="btn-group dropdown">
         <button type="button" id="dropdownMenu2" class="btn-link btn dropdown-toggle" data-toggle="dropdown">Page 15 of 25 <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
             <li role="presentation" class="dropdown-header">Jump to page</li>
-            <li style="padding: 6px 18px;" role="presentation">
+            <li class="padding-left-2 padding-right-2 padding-top-1 padding-bottom-1" role="presentation">
                 <form action="">
-                    <input type="text" placeholder="15" class="form-control"/>
+                    <div class="input-group">
+                        <input type="text" placeholder="15" class="form-control"/>
+                        <div class="input-group-btn">
+                            <button class="btn btn-default">Go</button>
+                        </div>
+                    </div>
                 </form>
             </li>
         </ul>
     </div>
 </div> <div class="btn-group">
-  <a class="btn btn-default" href="#"><i class="icon icon-angle-left"></i></a>
-  <a class="btn btn-default" href="#">1</a>
-  <a class="btn btn-default" disabled href="#">...</a>
-  <a class="btn btn-default" href="#">13</a>
-  <a class="btn btn-default" href="#">14</a>
-  <a class="btn btn-default active" href="#">15</a>
-  <a class="btn btn-default" href="#">16</a>
-  <a class="btn btn-default" href="#">17</a>
-  <a class="btn btn-default" disabled href="#">...</a>
-  <a class="btn btn-default" href="#">25</a>
- <a class="btn btn-default" href="#"><i class="icon icon-angle-right"></i></a>
+    <a class="btn btn-default" href="#"><i class="icon icon-angle-left"></i></a>
+    <a class="btn btn-default" href="#">1</a>
+    <a class="btn btn-default" disabled href="#">...</a>
+    <a class="btn btn-default" href="#">13</a>
+    <a class="btn btn-default" href="#">14</a>
+    <a class="btn btn-default active" href="#">15</a>
+    <a class="btn btn-default" href="#">16</a>
+    <a class="btn btn-default" href="#">17</a>
+    <a class="btn btn-default" disabled href="#">...</a>
+    <a class="btn btn-default" href="#">25</a>
+    <a class="btn btn-default" href="#"><i class="icon icon-angle-right"></i></a>
 </div>
 </div>
 {:/nomarkdown}
 
-
-{::nomarkdown}
-<div class="pl-preview">
+{% highlight html %}
 <div class="btn-group">
-    <div class="dropdown" style="display: inline-block">
+    <div class="btn-group dropdown">
         <button type="button" id="dropdownMenu1" class="btn-link btn dropdown-toggle" data-toggle="dropdown">10 per page <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
             <li role="presentation" class="dropdown-header">Show up to</li>
@@ -88,13 +91,64 @@ These show possible configurations for layouts with large amounts of screen real
             <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
         </ul>
     </div>
-    <div class="dropdown" style="display: inline-block">
+    <div class="btn-group dropdown">
         <button type="button" id="dropdownMenu2" class="btn-link btn dropdown-toggle" data-toggle="dropdown">Page 15 of 25 <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
             <li role="presentation" class="dropdown-header">Jump to page</li>
-            <li style="padding: 6px 18px;" role="presentation">
+            <li class="padding-left-2 padding-right-2 padding-top-1 padding-bottom-1" role="presentation">
                 <form action="">
+                    <div class="input-group">
                         <input type="text" placeholder="15" class="form-control"/>
+                        <div class="input-group-btn">
+                            <button class="btn btn-default">Go</button>
+                        </div>
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+</div> 
+<div class="btn-group">
+    <a class="btn btn-default" href="#"><i class="icon icon-angle-left"></i></a>
+    <a class="btn btn-default" href="#">1</a>
+    <a class="btn btn-default" disabled href="#">...</a>
+    <a class="btn btn-default" href="#">13</a>
+    <a class="btn btn-default" href="#">14</a>
+    <a class="btn btn-default active" href="#">15</a>
+    <a class="btn btn-default" href="#">16</a>
+    <a class="btn btn-default" href="#">17</a>
+    <a class="btn btn-default" disabled href="#">...</a>
+    <a class="btn btn-default" href="#">25</a>
+    <a class="btn btn-default" href="#"><i class="icon icon-angle-right"></i></a>
+</div>
+{% endhighlight %}
+
+
+{::nomarkdown}
+<div class="pl-preview">
+<div class="btn-group">
+    <div class="btn-group dropdown">
+        <button type="button" id="dropdownMenu9" class="btn-link btn dropdown-toggle" data-toggle="dropdown">10 per page <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu9">
+            <li role="presentation" class="dropdown-header">Show up to</li>
+            <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
+        </ul>
+    </div>
+    <div class="btn-group dropdown">
+        <button type="button" id="dropdownMenu10" class="btn-link btn dropdown-toggle" data-toggle="dropdown">Page 15 of 25 <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu10">
+            <li role="presentation" class="dropdown-header">Jump to page</li>
+            <li class="padding-left-2 padding-right-2 padding-top-1 padding-bottom-1" role="presentation">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" placeholder="15" class="form-control"/>
+                        <div class="input-group-btn">
+                            <button class="btn btn-default">Go</button>
+                        </div>
+                    </div>
                 </form>
             </li>
         </ul>
@@ -105,19 +159,59 @@ These show possible configurations for layouts with large amounts of screen real
 </div>
 </div>
 {:/nomarkdown}
+
+{% highlight html %}
+<div class="btn-group">
+    <div class="btn-group dropdown">
+        <button type="button" id="dropdownMenu9" class="btn-link btn dropdown-toggle" data-toggle="dropdown">10 per page <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu9">
+            <li role="presentation" class="dropdown-header">Show up to</li>
+            <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
+            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
+        </ul>
+    </div>
+    <div class="btn-group dropdown">
+        <button type="button" id="dropdownMenu10" class="btn-link btn dropdown-toggle" data-toggle="dropdown">Page 15 of 25 <span class="caret"></span></button>
+        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu10">
+            <li role="presentation" class="dropdown-header">Jump to page</li>
+            <li class="padding-left-2 padding-right-2 padding-top-1 padding-bottom-1" role="presentation">
+                <form action="">
+                    <div class="input-group">
+                        <input type="text" placeholder="15" class="form-control"/>
+                        <div class="input-group-btn">
+                            <button class="btn btn-default">Go</button>
+                        </div>
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="btn-group">
+    <a href="#" class="btn btn-default"><i class="icon icon-angle-left"></i></a>
+    <a href="#" class="btn btn-default"><i class="icon icon-angle-right"></i></a>
+</div>
+{% endhighlight %}
 
 #### Medium
 These show possible configurations for layouts with limited screen real estate. 
 
 {::nomarkdown}
 <div class="pl-preview">
-<div class="dropdown" style="display: inline-block">
+<div class="btn-group dropdown">
     <button type="button" id="dropdownMenu3" class="btn btn-link dropdown-toggle" data-toggle="dropdown">Showing 150-160 of 305 <span class="caret"></span></button>
     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
         <li role="presentation" class="dropdown-header">Jump to item</li>
-        <li style="padding: 6px 18px;" role="presentation">
+        <li class="padding-left-2 padding-right-2 padding-top-1 padding-bottom-1" role="presentation">
             <form action="">
-                <input type="text" placeholder="150" class="form-control"/>
+                <div class="input-group">
+                    <input type="text" placeholder="15" class="form-control"/>
+                    <div class="input-group-btn">
+                        <button class="btn btn-default">Go</button>
+                    </div>
+                </div>
             </form>
         </li>
     </ul>
@@ -128,15 +222,43 @@ These show possible configurations for layouts with limited screen real estate.
 </div>
 {:/nomarkdown}
 
-{::nomarkdown}
-<div class="pl-preview">
-<div class="dropdown" style="display: inline-block">
-    <button type="button" id="dropdownMenu3" class="btn btn-link dropdown-toggle" data-toggle="dropdown">Page 15 of 25 <span class="caret"></span></button>
+{% highlight html %}
+<div class="btn-group dropdown">
+    <button type="button" id="dropdownMenu3" class="btn btn-link dropdown-toggle" data-toggle="dropdown">Showing 150-160 of 305 <span class="caret"></span></button>
     <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu3">
-        <li role="presentation" class="dropdown-header">Jump to page</li>
-        <li style="padding: 6px 18px;" role="presentation">
+        <li role="presentation" class="dropdown-header">Jump to item</li>
+        <li class="padding-left-2 padding-right-2 padding-top-1 padding-bottom-1" role="presentation">
             <form action="">
-                <input type="text" placeholder="15" class="form-control"/>
+                <div class="input-group">
+                    <input type="text" placeholder="15" class="form-control"/>
+                    <div class="input-group-btn">
+                        <button class="btn btn-default">Go</button>
+                    </div>
+                </div>
+            </form>
+        </li>
+    </ul>
+</div>
+<div class="btn-group">
+    <a href="#" class="btn btn-default"><i class="icon icon-angle-left"></i></a>
+<a href="#" class="btn btn-default"><i class="icon icon-angle-right"></i></a>
+</div>
+{% endhighlight %}
+
+{::nomarkdown}
+<div class="pl-preview">
+<div class="btn-group dropdown">
+    <button type="button" id="dropdownMenu8" class="btn btn-link dropdown-toggle" data-toggle="dropdown">Page 15 of 25 <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu8">
+        <li role="presentation" class="dropdown-header">Jump to page</li>
+        <li class="padding-left-2 padding-right-2 padding-top-1 padding-bottom-1" role="presentation">
+            <form action="">
+                <div class="input-group">
+                    <input type="text" placeholder="15" class="form-control"/>
+                    <div class="input-group-btn">
+                        <button class="btn btn-default">Go</button>
+                    </div>
+                </div>
             </form>
         </li>
     </ul>
@@ -147,9 +269,32 @@ These show possible configurations for layouts with limited screen real estate.
 </div>
 {:/nomarkdown}
 
+{% highlight html %}
+<div class="btn-group dropdown">
+    <button type="button" id="dropdownMenu8" class="btn btn-link dropdown-toggle" data-toggle="dropdown">Page 15 of 25 <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu8">
+        <li role="presentation" class="dropdown-header">Jump to page</li>
+        <li class="padding-left-2 padding-right-2 padding-top-1 padding-bottom-1" role="presentation">
+            <form action="">
+                <div class="input-group">
+                    <input type="text" placeholder="15" class="form-control"/>
+                    <div class="input-group-btn">
+                        <button class="btn btn-default">Go</button>
+                    </div>
+                </div>
+            </form>
+        </li>
+    </ul>
+</div>
+<div class="btn-group">
+    <a href="#" class="btn btn-default"><i class="icon icon-angle-left"></i></a>
+    <a href="#" class="btn btn-default"><i class="icon icon-angle-right"></i></a>
+</div>
+{% endhighlight %}
+
 {::nomarkdown}
 <div class="pl-preview">
-<div class="dropdown" style="display: inline-block">
+<div class="btn-group dropdown">
         <button type="button" id="dropdownMenu1" class="btn-link btn dropdown-toggle" data-toggle="dropdown">10 per page <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
             <li role="presentation" class="dropdown-header">Show up to</li>
@@ -160,19 +305,55 @@ These show possible configurations for layouts with limited screen real estate.
         </ul>
     </div> <div class="btn-group dropdown">
   <a href="#" class="btn btn-default"><i class="icon icon-angle-left"></i></a>
-  <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="">15/25 <span class="caret"></span></a>
+  <a id="dropdownMenu7" class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="">15/25 <span class="caret"></span></a>
   <a href="#" class="btn btn-default"><i class="icon icon-angle-right"></i></a>
-  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu4">
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu7">
         <li role="presentation" class="dropdown-header">Jump to page</li>
-        <li style="padding: 6px 18px;" role="presentation">
+        <li class="padding-left-2 padding-right-2 padding-top-1 padding-bottom-1" role="presentation">
             <form action="">
-                <input type="text" placeholder="15" class="form-control"/>
+                <div class="input-group">
+                    <input type="text" placeholder="15" class="form-control"/>
+                    <div class="input-group-btn">
+                        <button class="btn btn-default">Go</button>
+                    </div>
+                </div>
             </form>
         </li>
     </ul>
 </div>
 </div>
 {:/nomarkdown}
+
+{% highlight html %}
+<div class="btn-group dropdown">
+    <button type="button" id="dropdownMenu1" class="btn-link btn dropdown-toggle" data-toggle="dropdown">10 per page <span class="caret"></span></button>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+        <li role="presentation" class="dropdown-header">Show up to</li>
+        <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
+    </ul>
+</div>
+<div class="btn-group dropdown">
+    <a href="#" class="btn btn-default"><i class="icon icon-angle-left"></i></a>
+    <a id="dropdownMenu7" class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="">15/25 <span class="caret"></span></a>
+    <a href="#" class="btn btn-default"><i class="icon icon-angle-right"></i></a>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu7">
+        <li role="presentation" class="dropdown-header">Jump to page</li>
+        <li class="padding-left-2 padding-right-2 padding-top-1 padding-bottom-1" role="presentation">
+            <form action="">
+                <div class="input-group">
+                    <input type="text" placeholder="15" class="form-control"/>
+                    <div class="input-group-btn">
+                        <button class="btn btn-default">Go</button>
+                    </div>
+                </div>
+            </form>
+        </li>
+    </ul>
+</div>
+{% endhighlight %}
 
 #### Small
 A possible configuration for very narrow/confined layouts. 
@@ -182,13 +363,18 @@ A possible configuration for very narrow/confined layouts.
 <div class="pl-preview">
 <div class="btn-group dropdown">
   <a href="#" class="btn btn-default"><i class="icon icon-angle-left"></i></a>
-  <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="">15/25 <span class="caret"></span></a>
+  <a class="btn btn-default dropdown-toggle" id="dropdownMenu6" data-toggle="dropdown" href="">15/25 <span class="caret"></span></a>
   <a href="#" class="btn btn-default"><i class="icon icon-angle-right"></i></a>
-  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu4">
+  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu6">
         <li role="presentation" class="dropdown-header">Jump to page</li>
-        <li style="padding: 6px 18px;" role="presentation">
+        <li class="padding-left-2 padding-right-2 padding-top-1 padding-bottom-1" role="presentation">
             <form action="">
-                <input type="text" placeholder="15" class="form-control"/>
+                <div class="input-group">
+                    <input type="text" placeholder="15" class="form-control"/>
+                    <div class="input-group-btn">
+                        <button class="btn btn-default">Go</button>
+                    </div>
+                </div>
             </form>
         </li>
         <li class="divider"></li>
@@ -202,7 +388,32 @@ A possible configuration for very narrow/confined layouts.
 </div>
 {:/nomarkdown}
 
-
+{% highlight html %}
+<div class="btn-group dropdown">
+    <a href="#" class="btn btn-default"><i class="icon icon-angle-left"></i></a>
+    <a class="btn btn-default dropdown-toggle" id="dropdownMenu6" data-toggle="dropdown" href="">15/25 <span class="caret"></span></a>
+    <a href="#" class="btn btn-default"><i class="icon icon-angle-right"></i></a>
+    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu6">
+        <li role="presentation" class="dropdown-header">Jump to page</li>
+        <li class="padding-left-2 padding-right-2 padding-top-1 padding-bottom-1" role="presentation">
+            <form action="">
+                <div class="input-group">
+                    <input type="text" placeholder="15" class="form-control"/>
+                    <div class="input-group-btn">
+                        <button class="btn btn-default">Go</button>
+                    </div>
+                </div>
+            </form>
+        </li>
+        <li class="divider"></li>
+        <li role="presentation" class="dropdown-header">Show up to</li>
+        <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
+    </ul>
+</div>
+{% endhighlight %}
 
 </div>
 
