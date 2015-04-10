@@ -3281,6 +3281,22 @@ dd {
     margin-bottom: 0px;
   }
 }
+.dl-inline:before,
+.dl-inline:after {
+  content: " ";
+  display: table;
+}
+.dl-inline:after {
+  clear: both;
+}
+.dl-inline:before,
+.dl-inline:after {
+  content: " ";
+  display: table;
+}
+.dl-inline:after {
+  clear: both;
+}
 .dl-inline dd,
 .dl-inline dt {
   font-weight: 400;
@@ -3291,6 +3307,7 @@ dd {
 .dl-inline dd,
 .dl-inline dt {
   margin-right: 4px;
+  margin-bottom: 0;
 }
 .dl-inline dt:after {
   content: ":";
