@@ -86,7 +86,7 @@ Use "Learn more" links to provide additional help text only when the user needs 
 &nbsp;
 
 ##### "Information" icons
-Use "Information" icons to provide elaborations and explanations nearby content.
+Use "Information" icons to provide explanations and elaborations for titles and panels.
 
 {::nomarkdown}
 <div class="pl-preview">
