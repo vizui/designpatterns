@@ -24,7 +24,7 @@ Some of the ways help can be provided are:
 &nbsp;
 
 ##### Dotted underlines
-Use this when a term may not be obvious to your target audience.
+Use this for term definitions when a term may not be obvious to your target audience.
 
 {::nomarkdown}
 <div class="pl-preview">
