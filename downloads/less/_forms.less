@@ -52,11 +52,12 @@ textarea {
 }
 
 // bumps up z-index for input-group-btns to make sure borders are clean.
-.input-group .input-group-btn {
+.input-group-btn > .btn,
+.input-group-btn > .btn-group {
     z-index: 2;
 }
 
-.input-group .form-control:focus {
+.input-group > .form-control:focus {
     z-index: 3;
 }
 
