@@ -9124,6 +9124,12 @@ button.close {
   display: none;
   content: none;
 }
+.noUi-value-horizontal {
+  padding-top: 14px;
+}
+.noUi-marker-horizontal.noUi-marker-large {
+  height: 10px;
+}
 .filters-horizontal {
   padding: 8px;
 }

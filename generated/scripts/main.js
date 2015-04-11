@@ -245,7 +245,8 @@
 
         if (el.attr('data-pips')) {
             el.noUiSlider_pips({
-                mode: 'steps',
+                mode: 'count',
+                values: 6,
                 density: 10
             });
         }
