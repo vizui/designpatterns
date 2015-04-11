@@ -132,6 +132,32 @@ Filters can be:
                             </div>
                         </div>
                     </div>
+                    <div aria-expanded="true" data-toggle="collapse" data-target="#filterGroup9" class="filter-group-title">
+                        <i class="icon icon-angle-right pull-right"></i> Price 
+                    </div>
+                    <div id="filterGroup9" class="collapse in">
+                        <div class="filter-group-content">
+                            <div class="form-group clearfix padding-left-1 padding-right-1">
+                                <div style="text-align: center; margin-bottom: -5px;">
+                                  From <span class="bold">$</span><span class="bold" id="sl6-lower"></span> to <span class="bold">$</span><span class="bold" id="sl6-upper"></span>
+                                </div>
+                                <div id="sl6" data-nouislider data-link-lower="#sl6-lower" data-link-upper="#sl6-upper" data-min="0" data-pips="10" data-max="50" data-step="5" data-start="10" data-start-b="40"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div aria-expanded="true" data-toggle="collapse" data-target="#filterGroup10" class="filter-group-title">
+                        <i class="icon icon-angle-right pull-right"></i> Amount 
+                    </div>
+                    <div id="filterGroup10" class="collapse in">
+                        <div class="filter-group-content">
+                            <div class="form-group clearfix padding-left-1 padding-right-1">
+                                <div style="text-align: center; margin-bottom: -5px;">
+                                  <span class="bold" id="sl7-lower"></span>
+                                </div>
+                                <div id="sl7" data-nouislider data-link-lower="#sl7-lower" data-min="0" data-max="10" data-step="1" data-start="10"></div>
+                            </div>
+                        </div>
+                    </div>
                     <div aria-expanded="true" data-toggle="collapse" data-target="#filterGroup6" class="filter-group-title">
                         <i class="icon icon-angle-right pull-right"></i> Name 
                     </div>

@@ -1,5 +1,43 @@
 @import "../../bower_components/bootstrap/less/type.less";
 
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 200;
+    src: local("Segoe UI Light");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 300;
+    src: local("Segoe UI Semilight");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 400;
+    src: local("Segoe UI");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 600;
+    src: local("Segoe UI Semibold");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-weight: 700;
+    src: local("Segoe UI Bold");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-style: italic;
+    font-weight: 400;
+    src: local("Segoe UI Italic");
+}
+@font-face {
+    font-family: "Segoe UI";
+    font-style: italic;
+    font-weight: 700;
+    src: local("Segoe UI Bold Italic");
+}
+
 body {
     -webkit-font-smoothing: antialiased;
     -webkit-text-size-adjust: 100%;
@@ -44,6 +82,7 @@ dd {
 }
 
 .dl-inline {
+    .clearfix();
     dd, dt {
         font-weight: 400;
         float: left;
@@ -52,6 +91,7 @@ dd {
     }
     dd, dt {
         margin-right: 4px;
+        margin-bottom: 0;
     }
     dt:after {
         content: ":";
@@ -74,35 +114,56 @@ h1,h2,h3,h4,h5,h6,
     color: @headings-color;
 }
 
+h1, h2, h3,
+.h1, .h2, .h3,
+.display2, .display1, .headline {
+    margin-top: 32px;
+    margin-bottom: 9px;
+}
+
+h4, h5, h6,
+.h4, .h5, .h6,
+.title, .subhead {
+    margin-top: 18px;
+    margin-bottom: 9px;
+}
+
+
 h6, .h6 {
     font-weight: 700;
-    font-size: @font-size-base;
+    font-size: @font-size-base - 1;
 }
 
 .caption {
     font-size: @font-size-base - 1;
+    color: @gray-light;
 }
 .subhead, h5, .h5 {
-    font-size: 15px;
+    font-size: @font-size-base;
     font-weight: 700;
 }
 .title, h4, .h4 {
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 600;
 }
 .headline, h3, .h3 {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 18px;
+    font-weight: 600;
 }
 .display1, h2, .h2 {
-    font-size: 34px;
+    font-size: 26px;
     font-weight: 400;
 }
 .display2, h1, .h1 {
-    font-size: 45px;
+    font-size: 36px;
     font-weight: 400;
 }
 .display3 {
     font-size: 56px;
     font-weight: 400;
+}
+
+.prose {
+    font-size: @font-size-base + 1;
+    line-height: 1.8;
 }
