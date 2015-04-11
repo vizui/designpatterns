@@ -552,12 +552,12 @@ Depending on the JS library used for the date picker, functionality may vary.
 
 Date pickers can provide:
 
-- Navigating years and months via previous/next arrows and/or other dropdowns.
+- Navigating years and months via previous/next arrows and/or other dropdowns
 - Multi-calendar views
 - Range highlighting
 - Min and max allowable dates
 - Highlighting/disabling of days/rows/columns (e.g., disable weekends or highlight bi-week)
-- Ability to type date as well as use 
+- Ability to type date as well as use a calendar dropdown
 
 <span class="text-muted">Example uses jQuery UI for demo purposes.</span>
 
@@ -631,11 +631,11 @@ Depending on the JS library used for the slider, functionality may vary.
 Sliders can provide:
 
 - Min and max allowable values
-- Visible ticks
+- Visible ticks (or pips)
 - Step increments
 - Multi-handle range
 
-<span class="text-muted">Example uses https://github.com/seiyria/bootstrap-slider for demo purposes.</span>
+<span class="text-muted">Example uses https://github.com/leongersen/noUiSlider for demo purposes.</span>
 
 {::nomarkdown}
 <div class="pl-preview">
@@ -643,15 +643,43 @@ Sliders can provide:
     <div class="row">
         <form role="form" class="col-sm-12 form-horizontal">
             <div class="form-group">
-                <label for="se15" class="col-sm-3 control-label">Normal</label>
+                <label for="sl1" class="col-sm-3 control-label">Basic</label>
                 <div class="col-sm-9">
-                    <input class="slider" type="number">
+                    <div id="sl1" data-nouislider data-min="0" data-max="50" data-step="10" data-start="10"></div>
                 </div>
             </div>
             <div class="form-group">
-                <label for="se16" class="col-sm-3 control-label">Disabled</label>
+                <label for="sl2" class="col-sm-3 control-label">Ticks</label>
                 <div class="col-sm-9">
-                    <input class="slider" disabled data-slider-enabled="false" type="number">
+                    <div id="sl2" data-nouislider data-pips="true" data-min="0" data-max="50" data-step="10" data-start="20"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sl3" class="col-sm-3 control-label">Range</label>
+                <div class="col-sm-9">
+                    <div id="sl3" data-nouislider data-pips="true" data-min="0" data-max="50" data-step="10" data-start="0" data-start-b="30"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sl5" class="col-sm-3 control-label">Value</label>
+                <div class="col-sm-9">
+                    <strong style="display: block; margin-bottom: -5px; margin-top: 7px;" id="sl5-lower"></strong>
+                    <div id="sl5" data-nouislider data-link-lower="#sl5-lower" data-min="0" data-max="50" data-step="10" data-start="50"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sl6" class="col-sm-3 control-label">Values</label>
+                <div class="col-sm-9">
+                    <div class="clearfix" style="margin-bottom: -5px; margin-top: 7px;">
+                      <strong style="" id="sl6-lower"></strong> to <strong style="" id="sl6-upper"></strong>
+                    </div>
+                    <div id="sl6" data-nouislider data-link-lower="#sl6-lower" data-link-upper="#sl6-upper" data-min="0" data-max="50" data-step="10" data-start="10" data-start-b="40"></div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sl7" class="col-sm-3 control-label">Disabled</label>
+                <div class="col-sm-9">
+                    <div id="sl7" data-nouislider disabled data-min="0" data-max="50" data-step="10" data-start="30"></div>
                 </div>
             </div>
         </form>

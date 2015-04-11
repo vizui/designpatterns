@@ -134,13 +134,12 @@ module.exports = function (grunt) {
                     'bower_components/bootstrap/js/carousel.js',
                     'bower_components/bootstrap/js/scrollspy.js',
                     'bower_components/bootstrap/js/collapse.js',
-                    'bower_components/bootstrap/js/tab.js'],
+                    'bower_components/bootstrap/js/tab.js',],
                 dest: '<%= paths.assets %>/scripts/plugins.js'
             },
             // misc vendor
             vendorjs: {
-                src: ['bower_components/modernizr/modernizr.js',
-                    'bower_components/jquery/dist/jquery.js',
+                src: ['bower_components/jquery/dist/jquery.js',
                     'bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.js',
                     'bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.extensions.js',
                     'bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.date.extensions.js',
@@ -148,8 +147,7 @@ module.exports = function (grunt) {
                     'bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.phone.extensions.js',
                     'bower_components/jquery.inputmask/dist/inputmask/jquery.inputmask.regex.extensions.js',
                     'bower_components/select2/select2.js',
-                    'bower_components/jquery-bridget/jquery.bridget.js',
-                    'bower_components/seiyria-bootstrap-slider/js/bootstrap-slider.js',
+                    'bower_components/nouislider/distribute/jquery.nouislider.all.min.js',
                     'front/vendor/jquery-ui-1.11.1.custom/jquery-ui.js'],
                 dest: '<%= paths.assets %>/scripts/vendor.js'
             },
@@ -164,7 +162,8 @@ module.exports = function (grunt) {
                     'front/vendor/jquery-ui-1.11.1.custom/jquery-ui.structure.css',
                     'bower_components/font-awesome/css/font-awesome.css',
                     'bower_components/select2/select2.css',
-                    'bower_components/seiyria-bootstrap-slider/dist/css/bootstrap-slider.css'
+                    'bower_components/nouislider/distribute/jquery.nouislider.min.css',
+                    'bower_components/nouislider/distribute/jquery.nouislider.pips.min.css'
                 ],
                 dest: '<%= paths.assets %>/styles/vendor.css'
             },
