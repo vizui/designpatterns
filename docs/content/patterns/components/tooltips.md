@@ -18,7 +18,7 @@ Tooltips provide information when an element is hovered over.
 
 
 Use tooltips for:
-- Icon/button descriptions
+- Icon and button descriptions
 - Expanding shortened date/time stamps
 
 [preview]
