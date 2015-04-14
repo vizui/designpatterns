@@ -339,7 +339,7 @@
             <div class="uspto-header__bottom__collapsible">
                 <ul class="uspto-header__bottom__links uspto-header__bottom__links--left">
                     <li><a href="#">Manage</a></li>
-                    <li><a href="#">Search <span class="uspto-caret uspto-caret--down"></span></a></li>
+                    <li><a href="#">Search</span></a></li>
                 </ul>
                 <ul class="uspto-header__bottom__links uspto-header__bottom__links--right">
                     <li><a href="#">Help</a></li>
@@ -350,7 +350,7 @@
     </div>
 </div>
 <script>
-    (function () {
+(function () {
 
         /* indexOf polyfill  */
         function indexOf(collection, item) {
@@ -382,7 +382,7 @@
             window.mozRequestAnimationFrame ||
             window.oRequestAnimationFrame ||
             window.msRequestAnimationFrame ||
-            function(callback, element) {
+            function(callback) {
                 window.setTimeout(callback, 16.666666667);
             };
 
@@ -409,7 +409,7 @@
                         animationQueue.splice(indexOf(animationQueue, el), 1);
                         cb();
                     }
-                }
+                };
                 raf(anim);
             }
         }
@@ -445,7 +445,7 @@
 
         /* Add toggle functionality for an element and a target */
         function setToggleHandler(toggleEl, targetEl) {
-            addEventListener(toggleEl, 'click', function(e) {
+            addEventListener(toggleEl, 'click', function() {
                 toggle(targetEl);
                 toggleClass(toggleEl, 'uspto--toggled');
                 return false;
