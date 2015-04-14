@@ -44,12 +44,11 @@ Filters can be stacked vertically on the left side if:
 - You have many filters
 - You have enough horizontal screen real estate
 
-Filters can be:
+Filters can optionally be:
 
 - Collapsible (some or all filters can be collapsed or expanded by default)
 - Grouped under subheadings
 - Clearable (or resettable if default filters are applicable)
-
 
 {::nomarkdown}
 <div class="pl-preview">

@@ -1048,6 +1048,7 @@ Expandable rows provide additional information about a row on demand.
     <table data-pl-expandable-rows role="grid" style="table-layout: fixed;" class="table table-bordered ">
         <thead>
             <tr role="row">
+                <th scope="col" role="columnheader" style="width: 36px;"><input indeterminate type="checkbox" disabled></th>
                 <th scope="col" role="columnheader" aria-sort="none">Project name</th>
                 <th scope="col" role="columnheader" aria-sort="none">Description</th>
                 <th scope="col" role="columnheader" aria-sort="none">Price</th>
@@ -1055,12 +1056,13 @@ Expandable rows provide additional information about a row on demand.
         </thead>
         <tbody>
             <tr>
+                <td><input type="checkbox" disabled></td>
                 <td><i class="icon icon-angle-right"></i> &nbsp;Invoice</td>
                 <td><span >Add invoice confirmation</span></td>
                 <td><span >$4,500</span></td>
             </tr>
             <tr data-pl-detail-row style="display: none;">
-                <td colspan="3" >
+                <td colspan="4" >
                     <dl class="dl-horizontal" style="margin-bottom: 0;">
                         <dt>Examiner</dt>
                         <dd>IP, Sikyin / 69776 / 1742</dd>
@@ -1076,12 +1078,13 @@ Expandable rows provide additional information about a row on demand.
                 </td>
             </tr>
             <tr aria-expanded="true">
+                <td><input type="checkbox" disabled></td>
                 <td><i class="icon icon-angle-right"></i> &nbsp;Payments</td>
                 <td><span >Process payments using third party api</span></td>
                 <td><span >$5,400</span></td>
             </tr>
             <tr data-pl-detail-row style="display: table-row;">
-                <td colspan="3" >
+                <td colspan="4" >
                     <dl class="dl-horizontal" style="margin-bottom: 0;">
                         <dt>Examiner</dt>
                         <dd>IP, Sikyin / 69776 / 1742</dd>
