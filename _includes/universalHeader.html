@@ -417,8 +417,16 @@
             });
         }
 
+        function attachEvent = function (el, evt, cb) {
+            if (el.addEventListener) {
+                el.addEventListener(evt, cb, false);
+            } else {
+                el.attachEvent("on" + evt, cb);
+            }
+        }
+
         function setClickHandler(toggleEl, targetEl) {
-            toggleEl.addEventListener('click', function(e) {
+            attachEvent(toggleEl, 'click', function(e) {
                 toggle(targetEl);
                 toggleClass(toggleEl, 'uspto--toggled');
                 return false;
