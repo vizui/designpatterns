@@ -358,7 +358,13 @@
 
         function toggleClass(el, className) {
             var classes = el.className.split(" "),
-                idx = classes.indexOf(className);
+                idx = -1;
+            for (i = 0; i < classes.length; i++) {
+                if (classes[i] == className) {
+                    idx = i;
+                    break;
+                }
+            }
             if (idx > -1) {
                 classes.splice(idx, 1);
             } else {

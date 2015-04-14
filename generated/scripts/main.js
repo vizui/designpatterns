@@ -284,8 +284,12 @@
         var ext = src.split('?')[0];
         ext = ext.split('.');
         ext = ext[ext.length - 1];
-        if (ext && extensions.indexOf(ext)) {
-            return ext;
+        if (ext) {
+            for (var i = 0; i < extensions.length; i++) {
+                if (extensions[i] === ext) {
+                    return ext;
+                }
+            }
         }
         return false;
     }
