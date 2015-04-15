@@ -144,11 +144,11 @@ There are two primary ways to help:
 ## Performing a versioned release
 - Update the `version` property in `/package.json` to your new version
 - Update the `version` property in `/_config.yml` to your new version
-- Update the `baseurl` property in `/_config.yml` to `/designpatterns/your-version` (e.g., `/designpatterns/1.1.0)`
+- Update the `baseurl` property in `/_config.yml` to `/designpatterns/1.x` (for a major bump, it would be `/designpatterns/2.x`)
 - Update the `versions` property in `/_config.yml` to include your new version
 - Run `grunt build` to build all the LESS/JS files
 - Run `jekyll build` from the cmd line to build the documentation
-- Rename the newly compiled `/_site` folder to your new version (e.g., `/1.1.0`)
-- Revert the `baseurl` property in `/_config.yml` back to `/designpatterns` for local development
-- Commit your changes. [Learn how](https://help.github.com/articles/making-changes/)
-
+- Delete the nested version folders under `/_site`
+- Rename the newly created `/_site` folder to your new version (e.g., `/1.x` or `/2.x`)
+- Revert the `baseurl` property in `/_config.yml` back to `/designpatterns`
+- Commit your changes.
