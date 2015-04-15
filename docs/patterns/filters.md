@@ -1,6 +1,5 @@
 ---
 title: "Filters"
-preview: true
 ---
 
 <div class="pl-pattern">

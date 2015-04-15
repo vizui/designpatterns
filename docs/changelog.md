@@ -6,6 +6,31 @@ layout: pattern
 {::nomarkdown}
 <div class="pl-versions">
     <div class="pl-panel">
+        <h4>1.1.0 - Apr 14, 2015</h4>
+        <span class="label subtle label-info">NEW</span>
+        <ul>
+            <li>Added Inspiration section with examples of design pattern usage</li> 
+            <li>Added Accordion component</li>
+            <li>Added Layout guides</li>
+            <li>Added Filters pattern</li>
+            <li>Added Help pattern</li>
+            <li>Added Settings pattern</li>
+            <li>Added Wizards pattern</li>
+            <li>Switched to Segoe UI</li>
+            <li>Added pill style to Tabs component</li>
+            <li>Added utility CSS classes for margin, padding, and borders</li>
+        </ul>
+        <span class="label subtle label-success">IMPROVED</span>
+        <ul>
+            <li>Improved Slider component</li>
+            <li>Improved Table component</li>
+            <li>Improved Typography guides and examples</li>
+            <li>Improved accessibility in examples</li>
+            <li>Added an additional date format</li>
+            <li>Fixed various style and alignment issues</li>
+        </ul>
+    </div>
+    <div class="pl-panel">
         <h4>1.0.0 - Feb 5, 2015</h4>
         <span class="label subtle label-info">NEW</span>
         <ul>

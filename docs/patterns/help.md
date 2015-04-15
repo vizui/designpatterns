@@ -1,6 +1,5 @@
 ---
 title: "Help"
-preview: true
 ---
 
 <div class="pl-pattern">

@@ -1,6 +1,5 @@
 ---
 title: "Settings"
-preview: true
 ---
 
 <div class="pl-pattern">

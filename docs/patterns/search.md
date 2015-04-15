@@ -1,6 +1,7 @@
 ---
 title: "Search"
 preview: true
+hidden: true
 ---
 
 <div class="pl-pattern">

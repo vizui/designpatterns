@@ -1,5 +1,7 @@
 ---
 title: "Tags"
+preview: true
+hidden: true
 ---
 
 <div class="pl-pattern">

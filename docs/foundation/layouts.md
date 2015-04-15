@@ -1,6 +1,5 @@
 ---
 title: "Layouts"
-preview: true
 ---
 
 <div class="pl-pattern pl-pattern-layouts">

@@ -1,7 +1,7 @@
 ---
 title: "Writing style"
 preview: true
-draft: true
+hidden: true
 ---
 
 <div class="pl-pattern">

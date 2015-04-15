@@ -1,6 +1,5 @@
 ---
 title: "Wizards"
-preview: true
 ---
 
 <div class="pl-pattern">

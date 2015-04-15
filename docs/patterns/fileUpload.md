@@ -1,6 +1,7 @@
 ---
 title: "File upload"
 preview: true
+hidden: true
 ---
 <div class="pl-pattern">
 ### Single file upload
