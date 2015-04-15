@@ -142,6 +142,7 @@ There are two primary ways to help:
 - If an icon is added or modified, use [icomoon.io](https://icomoon.io/) to compile the individual icons into black and white sprite sheets. You will need to update `/usptostrap/less/_icons.less` with the generated css. 
 
 ## Performing a versioned release
+- Update changelog.md with your latest changes
 - Update the `version` property in `/package.json` to your new version
 - Update the `version` property in `/_config.yml` to your new version
 - Update the `baseurl` property in `/_config.yml` to `/designpatterns/1.x` (for a major bump, it would be `/designpatterns/2.x`)
