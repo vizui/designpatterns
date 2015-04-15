@@ -1,10 +1,9 @@
 npmdeps:
   cmd.run:
-    - name: npm install
+    - name: npm install && /vagrant/node_modules/.bin/bower install
     - user: vagrant
     - group: vagrant
     - cwd: /vagrant
-
 
 devaliases:
   file.append:

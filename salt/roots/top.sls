@@ -5,3 +5,5 @@ base:
     - ruby
     - jekyll
     - node
+    - git
+    - npm
