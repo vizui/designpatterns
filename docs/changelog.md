@@ -6,7 +6,7 @@ layout: pattern
 {::nomarkdown}
 <div class="pl-versions">
     <div class="pl-panel">
-        <h4>1.1.0 - Apr 14, 2015</h4>
+        <h4>1.1.0 - Apr 14, 2015 <a href="{{site.repository.url}}/releases/tag/v1.1.0">(Download)</a></h4>
         <span class="label subtle label-info">NEW</span>
         <ul>
             <li>Added Inspiration section with examples of design pattern usage</li> 
@@ -31,7 +31,7 @@ layout: pattern
         </ul>
     </div>
     <div class="pl-panel">
-        <h4>1.0.0 - Feb 5, 2015</h4>
+        <h4>1.0.0 - Feb 5, 2015 <a href="{{site.repository.url}}/releases/tag/v1.0.0">(Download)</a></h4>
         <span class="label subtle label-info">NEW</span>
         <ul>
             <li>v1.0.0 release</li>
