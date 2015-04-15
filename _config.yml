@@ -11,6 +11,8 @@ exclude:
   - bower.json
   - package.json
   - LICENSE
+  - salt
+  - Vagrantfile
 
 # Markdown parsing configuration
 markdown: kramdown
