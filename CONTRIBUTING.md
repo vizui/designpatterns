@@ -153,3 +153,4 @@ There are two primary ways to help:
 - Rename the newly created `/_site` folder to your new version (e.g., `/1.x` or `/2.x`)
 - Revert the `baseurl` property in `/_config.yml` back to `/designpatterns`
 - Commit your changes.
+- Add the release to https://github.com/USPTO/designpatterns/releases

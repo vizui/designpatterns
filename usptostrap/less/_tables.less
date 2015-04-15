@@ -153,6 +153,28 @@
     }
 }
 
+
+// Expandable tables
+
+.table[data-pl-expandable-rows] {
+    > tbody > tr:not([data-pl-detail-row]) {
+        cursor: pointer;
+    }
+    > tbody > tr[data-pl-detail-row] > td:first-child {
+        box-shadow: inset 3px 0 0 #eee;
+        background: #f6f6f6;
+    }
+    > tbody > tr[aria-expanded="false"] > td > .icon-angle-right::after {
+        transition: transform .05s;
+        transform: rotate(0deg);
+    }
+    > tbody > tr[aria-expanded="true"] > td > .icon-angle-right::after {
+        transition: transform .05s;
+        transform: rotate(90deg);
+    }
+}
+
+
 // Contextual backgrounds
 
 .table-variant(@color) {

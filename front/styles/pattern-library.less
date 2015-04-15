@@ -501,26 +501,6 @@ body {
     vertical-align: bottom;
 }
 
-table[data-pl-expandable-rows] {
-    tbody > tr:not([data-pl-detail-row]) {
-        cursor: pointer;
-    }
-    tr[data-pl-detail-row] {
-        td:first-child {
-            box-shadow: inset 3px 0 0 #eee;
-            background: #f6f6f6;
-        }
-    }
-    [aria-expanded="false"] .icon-angle-right::after {
-        transition: transform .05s;
-        transform: rotate(0deg);
-    }
-    [aria-expanded="true"] .icon-angle-right::after {
-        transition: transform .05s;
-        transform: rotate(90deg);
-    }
-}
-
 .pl-pattern-layouts {
     img {
         float: left;
