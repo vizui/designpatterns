@@ -9,5 +9,5 @@ devaliases:
   file.append:
     - name: /home/vagrant/.bashrc
     - text:
-      - "alias gulp='node /vagrant/node_modules/.bin/gulp'"
+      - "alias grunt='node /vagrant/node_modules/.bin/grunt'"
       - "alias bower='node /vagrant/node_modules/.bin/bower'"
