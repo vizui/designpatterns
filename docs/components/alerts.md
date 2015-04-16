@@ -29,27 +29,27 @@ __Types:__
 <div style="max-width: 450px;">
     <div class="alert alert-info">
         <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <i class="icon icon-info-circle alert-icon"></i> Press the <strong>'A'</strong> key to automatically assign a case.
+        <i class="alert-icon alert-icon-info"></i> Press the <strong>'A'</strong> key to automatically assign a case.
     </div>
     <div class="alert alert-success">
         <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
         <button class="btn btn-sm btn-link alert-link pull-right">Undo</button>
-        <i class="icon icon-check alert-icon"></i> Case assigned to <strong>Jerry</strong>.
+        <i class="alert-icon alert-icon-success"></i> Case assigned to <strong>Jerry</strong>.
     </div>
     <div class="alert alert-success">
         <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <i class="icon icon-check alert-icon"></i> Case assigned to <strong>Jerry</strong>.
+        <i class="alert-icon alert-icon-success"></i> Case assigned to <strong>Jerry</strong>.
     </div>
     <div class="alert alert-warning">
         <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <i class="icon icon-exclamation-triangle alert-icon"></i> There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
+        <i class="alert-icon-warning alert-icon"></i> There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
     </div>
     <div class="alert alert-danger">
         <button class="btn btn-sm btn-link alert-link pull-right">Retry</button>
-        <i class="icon icon-times-circle alert-icon"></i> There was a network error assigning case <strong>90/934,382</strong>. 
+        <i class="alert-icon-danger alert-icon"></i> There was a network error assigning case <strong>90/934,382</strong>. 
     </div>
     <div class="alert alert-danger">
-        <i class="icon icon-times-circle alert-icon"></i> Please fix the 3 errors.
+        <i class="alert-icon-danger alert-icon"></i> Please fix the 3 errors.
     </div>
 </div>
 </div>
@@ -58,27 +58,27 @@ __Types:__
 {% highlight html %}
 <div class="alert alert-info">
     <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-    <i class="icon icon-info-circle alert-icon"></i> Press the <strong>'A'</strong> key to automatically assign a case.
+    <i class="alert-icon-info alert-icon"></i> Press the <strong>'A'</strong> key to automatically assign a case.
 </div>
 <div class="alert alert-success">
     <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
     <button class="btn btn-sm btn-link alert-link pull-right">Undo</button>
-    <i class="icon icon-check alert-icon"></i> Case assigned to <strong>Jerry</strong>.
+    <i class="alert-icon-success alert-icon"></i> Case assigned to <strong>Jerry</strong>.
 </div>
 <div class="alert alert-success">
     <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-    <i class="icon icon-check alert-icon"></i> Case assigned to <strong>Jerry</strong>.
+    <i class="alert-icon-success alert-icon"></i> Case assigned to <strong>Jerry</strong>.
 </div>
 <div class="alert alert-warning">
     <button type="button" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-    <i class="icon icon-exclamation-triangle alert-icon"></i> There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
+    <i class="alert-icon-warning alert-icon"></i> There are more than <strong>10</strong> cases assigned to <strong>John</strong>.
 </div>
 <div class="alert alert-danger">
     <button class="btn btn-sm btn-link alert-link pull-right">Retry</button>
-    <i class="icon icon-times-circle alert-icon"></i> There was a network error assigning case <strong>90/934,382</strong>. 
+    <i class="alert-icon-danger alert-icon"></i> There was a network error assigning case <strong>90/934,382</strong>. 
 </div>
 <div class="alert alert-danger">
-    <i class="icon icon-times-circle alert-icon"></i> Please fix the 3 errors.
+    <i class="alert-icon-danger alert-icon"></i> Please fix the 3 errors.
 </div>
 {% endhighlight %}
 </div>

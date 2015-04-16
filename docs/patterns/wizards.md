@@ -57,8 +57,8 @@ Use vertical steps when there are 5 or more steps, when there are nested steps, 
                     <p>Add and configure new alerts for an environment.</p>
                 </div>
                 <ul class="nav nav-stacked nav-tree" role="tab-list">
-                    <li role="presentation"><a role="tab" href="#"><span style="margin-left: -10px; position: relative; top: 1px;" class="icon icon-check text-success"></span> Criteria</a></li>
-                    <li class="active" role="presentation"><a role="tab" href="#"><i style="margin-left: -10px; position: relative; top: 1px;" class="icon icon-times-circle text-danger"></i> Recipients</a>
+                    <li role="presentation"><a role="tab" href="#"><span style="margin-left: -10px;" class="alert-icon-success"></span> Criteria</a></li>
+                    <li class="active" role="presentation"><a role="tab" href="#"><i style="margin-left: -10px;" class="alert-icon-danger"></i> Recipients</a>
                     </li>
                     <li class="disabled" role="presentation"><a role="tab"><i style="margin-left: -10px; position: relative; top: 1px; width: 14px; display: inline-block;"></i> Configure</a>
                         <ul class="nav nav-stacked nav-tree" role="tab-list">
@@ -74,7 +74,7 @@ Use vertical steps when there are 5 or more steps, when there are nested steps, 
                     <h4>Recipients <span class="pull-right" style="font-size: 13px;"><span class="text-primary">Step 2 of 6</span></span></h4>
                     <p>When the alert criteria is met, each recipient will receive an email notification.</p>
                     <hr>
-                    <div class="alert alert-danger"><i class="alert-icon icon icon-times-circle"></i>Fix the 1 error below.</div> 
+                    <div class="alert alert-danger"><i class="alert-icon alert-icon-danger"></i>Fix the 1 error below.</div> 
                     <div class="form-group" style="">
                         <div class="input-group">
                             <input type="text" class="form-control" value="jsmith@corp.com">
