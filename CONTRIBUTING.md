@@ -66,7 +66,7 @@ There are two primary ways to help:
 - Each guide is a [markdown](https://guides.github.com/features/mastering-markdown/) file that includes the descriptions, examples, and source code.
 - Each markdown file has YAML metadata at the top. [Learn more](http://jekyllrb.com/docs/frontmatter/).
   - `title: Buttons` : The title of the guide
-  - `hidden: true` : Whether the guide should be hidden from the navigation (If it’s a WIP or if it should just be excluded for some reason
+  - `hidden: true` : Whether the guide should be hidden from the navigation (if it’s a work in progress or if it should just be excluded for some reason)
 
 ##### LESS/CSS/JS/Image architecture
 - LESS files for the 'usptostrap' Bootstrap theme are in `/usptostrap/less`
@@ -76,7 +76,7 @@ There are two primary ways to help:
 - Compiled assets are also placed and zipped for distribution via Grunt into the `/downloads` folder
 
 ##### Versioning overview
-- Versions are compiled to static files, then the static files are placed in a versioned folder (e.g., `/1.0.0`)
+- Versions are compiled to static files, then the static files are placed in a versioned folder (e.g., `/1.x`)
 - Versions are referenced in `/_config.yml` , which is used to list versions/links on the landing page
 - By default, all committed changes to guides are automatically compiled by Github/Jekyll and served as the 'future' version
 
