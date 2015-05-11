@@ -26,9 +26,9 @@ These are the primary colors used for UI elements. The primary colors have seman
         <div class="pl-palette-value">#1596D1</div>
     </div>
     <div class="pl-palette-color">
-        <div class="pl-palette-preview" style="background-color:#F2A900;"></div>
+        <div class="pl-palette-preview" style="background-color:#c88242;"></div>
         <div class="pl-palette-variable">@brand-warning</div>
-        <div class="pl-palette-value">#F2A900</div>
+        <div class="pl-palette-value">#C88242</div>
     </div>
     <div class="pl-palette-color">
         <div class="pl-palette-preview" style="background-color:#ac2b37;"></div>
