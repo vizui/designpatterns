@@ -22,6 +22,7 @@ __To be scheduled__
 - Carousels
 - Notification center
 - Search
+- Form field length: Do we make form fields indicative of the length of answers or visually left and right justified? How would the first option behave responsively?
 
 __v1.1 Releases (Apr 6)__
 - Filters
@@ -31,6 +32,10 @@ __v1.1 Releases (Apr 6)__
 - UI Layouts
   - Navigation
 - Help and help indicators
+ 
+__v1.1.1 Releases (May 13-15)__
+- Change gold to match USPTO style guide
+- Edit accessibility issues in alerts and notifications
 
 __v1.2 Releases (Apr 13)__
 
