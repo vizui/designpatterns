@@ -11,7 +11,7 @@
 @brand-primary: #004C97;
 @brand-success: #008139;
 @brand-danger: #AC2B37;
-@brand-warning: #C88242;
+@brand-warning: #f3d54e;
 @brand-info: #1596D1;
 
 @text-color:                        #444;
@@ -30,6 +30,8 @@
 
 @btn-default-bg:                    #f9f9f9;
 @btn-default-color:                 @text-color;
+
+@btn-warning-color: 				@text-color;
 
 @border-radius-base:                2px;
 @border-radius-small:               2px;
@@ -80,34 +82,34 @@
 @breadcrumb-separator:              "\f105";
 
 @state-success-text:                @brand-success;
-@state-success-bg:                  saturate(mix(@brand-success, #fff, 7%), 5%);
-@state-success-border:              mix(@brand-success, #fff, 40%);
+@state-success-bg:                  mix(#88A620, #fff, 15%);
+@state-success-border:              mix(@state-success-bg, #000, 90%);
 
 @state-info-text:                   @brand-info;
-@state-info-bg:                     saturate(mix(@brand-info, #fff, 7%), 5%);
-@state-info-border:                 mix(@brand-info, #fff, 50%);
+@state-info-bg:                     mix(@brand-info, #fff, 10%);
+@state-info-border:                 mix(@state-info-bg, #000, 90%);
 
-@state-warning-text:                @brand-warning;
-@state-warning-bg:                  saturate(mix(@brand-warning, #fff, 7%), 5%);
-@state-warning-border:              mix(@brand-warning, #fff, 55%);
+@state-warning-text:                #F2A900;
+@state-warning-bg:                  mix(@brand-warning, #fff, 20%);
+@state-warning-border:              mix(@state-warning-bg, #000, 90%);
 
 @state-danger-text:                 @brand-danger;
-@state-danger-bg:                   saturate(mix(@brand-danger, #fff, 7%), 5%);
-@state-danger-border:               mix(@brand-danger, #fff, 40%);
+@state-danger-bg:                   mix(@brand-danger, #fff, 15%);
+@state-danger-border:               mix(@state-danger-bg, #000, 90%);
 
-@alert-success-text:                @state-success-text;
+@alert-success-text:                @text-color;
 @alert-success-bg:                  @state-success-bg;
 @alert-success-border:              @state-success-border;
 
-@alert-info-text:                   @state-info-text;
+@alert-info-text:                   @text-color;
 @alert-info-bg:                     @state-info-bg;
 @alert-info-border:                 @state-info-border;
 
-@alert-warning-text:                @state-warning-text;
+@alert-warning-text:                @text-color;
 @alert-warning-bg:                  @state-warning-bg;
 @alert-warning-border:              @state-warning-border;
 
-@alert-danger-text:                 @state-danger-text;
+@alert-danger-text:                 @text-color;
 @alert-danger-bg:                   @state-danger-bg;
 @alert-danger-border:               @state-danger-border;
 
