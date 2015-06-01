@@ -59,27 +59,27 @@ Font load and fallback order: __Segoe UI, Helvetica Neue, Helvetica, Arial, sans
         </tr>
         <tr>
             <td>h1. Display 2</td>
-            <td><h1>Regular 36px</h1></td>
+            <td><h1>Regular 40px</h1></td>
         </tr>
         <tr>
             <td>h2. Display 1</td>
-            <td><h2>Regular 26px</h2></td>
+            <td><h2>Semibold 25px</h2></td>
         </tr>
         <tr>
             <td>h3. Headline</td>
-            <td><h3 class="headline">Semibold 18px</h3></td>
+            <td><h3 class="headline">Semibold 20px</h3></td>
         </tr>
         <tr>
             <td>h4. Title</td>
-            <td><h4>Semibold 16px</h4></td>
+            <td><h4>Semibold 18px</h4></td>
         </tr>
         <tr>
             <td>h5. Subhead</td>
-            <td><h5>Bold 13px</h5></td>
+            <td><h5>Semibold 16px</h5></td>
         </tr>
         <tr>
             <td>h6.</td>
-            <td><h6>Bold 12px</h6></td>
+            <td><h6>Semibold 14px</h6></td>
         </tr>
         <tr>
             <td>Body</td>
@@ -96,12 +96,12 @@ Font load and fallback order: __Segoe UI, Helvetica Neue, Helvetica, Arial, sans
 
 {% highlight html %}
 <h1 class="display3">Regular 56px</h1>
-<h1>Regular 36px</h1>
-<h2>Regular 26px</h2>
-<h3>Bold 18px</h3>
-<h4>Bold 16px</h4>
-<h5>Bold 13px</h5>
-<h6>Bold 12px</h6>
+<h1>Regular 40px</h1>
+<h2>Regular 25px</h2>
+<h3>Bold 20px</h3>
+<h4>Bold 18px</h4>
+<h5>Bold 16px</h5>
+<h6>Bold 14px</h6>
 <p>Regular 13px/14px</p>
 <div class="caption">Regular 12px/13px</div>
 {% endhighlight %}
