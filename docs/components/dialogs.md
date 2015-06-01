@@ -269,12 +269,12 @@ A confirmation dialog is short, simple dialog that ensures the user is performin
     <div class="modal-content">
       <div class="modal-body">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="text-warning">Give Owner permission?</h4>
-        <p>Giving someone Owner permission will allow them to see your billing information.</p>
+        <h4>Abandon changes?</h4>
+        <p>You have unsaved changes. Your changes will be lost.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="pull-left btn btn-default">Cancel</button>
-        <button type="button" class="btn btn-warning">Grant permission</button>
+        <button type="button" class="pull-left btn btn-default">Leave this page</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Stay on this page</button>
       </div>
     </div>
   </div>
@@ -288,12 +288,12 @@ A confirmation dialog is short, simple dialog that ensures the user is performin
     <div class="modal-content">
       <div class="modal-body">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="text-warning">Give Owner permission?</h4>
-        <p>Giving someone Owner permission will allow them to see your billing information.</p>
+        <h4>Abandon changes?</h4>
+        <p>You have unsaved changes. Your changes will be lost.</p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="pull-left btn btn-default">Cancel</button>
-        <button type="button" class="btn btn-warning">Grant permission</button>
+        <button type="button" class="pull-left btn btn-default">Leave this page</button>
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Stay on this page</button>
       </div>
     </div>
   </div>
