@@ -7630,6 +7630,7 @@ a.thumbnail.active {
 .alert .btn {
   margin: -4px;
   margin-left: 10px;
+  text-decoration: underline;
 }
 .toast-list .toast {
   border: 1px solid #ddd;
