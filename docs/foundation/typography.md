@@ -5,17 +5,17 @@ title: "Typography"
 <div class="pl-pattern">
 ### Fonts
 
-Font load and fallback order: __Segoe UI, Helvetica Neue, Helvetica, Arial, sans-serif__
+Font load and fallback order: __Segoe UI, Helvetica Neue, Tahoma, Arial, sans-serif__
 
 #### Font availability
 
 {::nomarkdown}
 <dl>
     <dt>Segoe UI</dt>
-    <dd>Ships with Windows Vista and newer and Microsoft Office</dd>
-    <dt>Helvetica Neue / Helvetica</dt>
+    <dd>Ships with Windows Vista and newer and Microsoft Office.</dd>
+    <dt>Helvetica Neue</dt>
     <dd>Ships with OSX.</dd>
-    <dt>Arial</dt>
+    <dt>Tahoma, Arial</dt>
     <dd>Ships with most operating systems.</dd>
 </dl>
 {:/nomarkdown}
