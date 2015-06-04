@@ -147,10 +147,12 @@ There are two primary ways to help:
 - Update the `version` property in `/_config.yml` to your new version
 - Update the `baseurl` property in `/_config.yml` to `/designpatterns/1.x` (for a major bump, it would be `/designpatterns/2.x`)
 - Update the `versions` property in `/_config.yml` to include your new version
+- Update the `includePreviews` property in `/_config.yml` to be `false`
 - Run `grunt build` to build all the LESS/JS files
 - Run `jekyll build` from the cmd line to build the documentation
 - Delete the nested version folders under `/_site`
 - Rename the newly created `/_site` folder to your new version (e.g., `/1.x` or `/2.x`)
 - Revert the `baseurl` property in `/_config.yml` back to `/designpatterns`
+- Revert the `includePreviews` property in `/_config.yml` back to `true`
 - Commit your changes.
 - Add the release to https://github.com/USPTO/designpatterns/releases
