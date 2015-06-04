@@ -2779,7 +2779,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  font-family: "Segoe UI", Helvetica Neue, Tahoma, Arial, sans-serif;
   font-size: 13px;
   line-height: 1.4;
   color: #444444;
@@ -2879,7 +2879,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  font-family: "Segoe UI", Helvetica Neue, Tahoma, Arial, sans-serif;
   font-weight: 500;
   line-height: 1.1;
   color: #222222;
@@ -8494,7 +8494,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  font-family: "Segoe UI", Helvetica Neue, Tahoma, Arial, sans-serif;
   font-size: 12px;
   font-weight: normal;
   line-height: 1.4;
@@ -8605,7 +8605,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  font-family: "Segoe UI", Helvetica Neue, Tahoma, Arial, sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1.4;
