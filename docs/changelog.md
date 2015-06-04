@@ -6,6 +6,15 @@ layout: pattern
 {::nomarkdown}
 <div class="pl-versions">
     <div class="pl-panel">
+        <h4>1.2.0 - Jun 4, 2015 <a href="{{site.repository.url}}/releases/tag/v1.2.0">(Download)</a></h4>
+        <span class="label subtle label-success">IMPROVED</span>
+        <ul>
+            <li>Updated yellow/gold/warning colors</li>
+            <li>Updated font sizes, weights, and fallbacks</li>
+            <li>Updated alert styles</li>
+        </ul>
+    </div>
+    <div class="pl-panel">
         <h4>1.1.0 - Apr 14, 2015 <a href="{{site.repository.url}}/releases/tag/v1.1.0">(Download)</a></h4>
         <span class="label subtle label-info">NEW</span>
         <ul>
