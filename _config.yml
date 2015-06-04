@@ -15,7 +15,7 @@ exclude:
   - Vagrantfile
 
 # Whether or not to include docs that are marked as preview
-includePreviews: true
+includePreviews: false
 
 # Markdown parsing configuration
 markdown: kramdown
@@ -24,7 +24,7 @@ kramdown:
   parse_block_html: true
 
 # All links in the design library will start with this baseurl
-baseurl: "/designpatterns"
+baseurl: "/designpatterns/1.x"
 
 # The url for the home page of the design library
 homeurl: "/designpatterns"
@@ -45,11 +45,11 @@ repository:
   url: https://github.com/uspto/designpatterns
 
 # The latest stable version
-version: 1.1.0
+version: 1.2.0
 
 # The list of all versions, which are referenced on the home page
 versions:
-  - name: 1.1.0
+  - name: 1.2.0
     url: /designpatterns/1.x/docs
   - name: future
     url: /designpatterns/docs
