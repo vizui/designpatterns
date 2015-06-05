@@ -7360,6 +7360,9 @@ a.label:focus {
 .label {
   display: inline-block;
 }
+.label-warning {
+  color: #444444;
+}
 .label-default.subtle {
   color: #444444;
   background-color: #f1f1f1;
@@ -7376,7 +7379,7 @@ a.label:focus {
   border: 1px solid #d0dce1;
 }
 .label-warning.subtle {
-  color: #f2a900;
+  color: #444444;
   background-color: #fdf7dc;
   border: 1px solid #e3dec6;
 }
