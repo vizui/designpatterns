@@ -15,7 +15,7 @@ exclude:
   - Vagrantfile
 
 # Whether or not to include docs that are marked as preview
-includePreviews: false
+includePreviews: true
 
 # Markdown parsing configuration
 markdown: kramdown
@@ -24,7 +24,7 @@ kramdown:
   parse_block_html: true
 
 # All links in the design library will start with this baseurl
-baseurl: "/designpatterns/1.x"
+baseurl: "/designpatterns"
 
 # The url for the home page of the design library
 homeurl: "/designpatterns"
