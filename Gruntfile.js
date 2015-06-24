@@ -75,6 +75,9 @@ module.exports = function (grunt) {
 
         // LESS -> CSS
         less: {
+            options: {
+                paths: ['usptostrap/less', 'bower_components']
+            },
             dist: {
                 files: [{
                     expand: true,
