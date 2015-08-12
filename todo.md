@@ -29,6 +29,7 @@ __To be scheduled__
 - Tags
 - Lists
 - File upload
+- Add visual guide for notification placement
 - Writing style guide (mod OCCO's for pattern library - See https://design.atlassian.com/2.1/product/foundations/writing-style)
 
 __v2.0 Releases (TBD)__
