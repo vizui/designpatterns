@@ -178,11 +178,12 @@ module.exports = function (grunt) {
             }
         },
 
+        // Add a banner to the top of the generated LESS file.
         usebanner: {
             taskName: {
                 options: {
                     position: 'top',
-                    banner: '/* usptostrap v<%= config.version %> */\n\n',
+                    banner: '/* usptostrap v<%= config.version %> | <%= config.repository.url %> */\n\n',
                     linebreak: true
                 },
                 files: {
