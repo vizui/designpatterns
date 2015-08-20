@@ -11,6 +11,7 @@ layout: pattern
         <ul>
             <li>Updated to latest brand colors</li>
             <li>Darkened muted text color from #808080 to #707070 to meet 508 contrast ratio requirements</li>
+            <li>Added examples of disabled states to button component</li>
         </ul>
     </div>
     <div class="pl-panel">
