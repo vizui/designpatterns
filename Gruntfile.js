@@ -28,7 +28,7 @@ module.exports = function (grunt) {
             },
             less: {
                 files: ['usptostrap/less/**/*.less', 'front/styles/**/*.less'],
-                tasks: ['less', 'concat:maincss', 'autoprefixer']
+                tasks: ['less', 'usebanner', 'concat:maincss', 'autoprefixer']
             }
         },
 
