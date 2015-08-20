@@ -6,6 +6,14 @@ layout: pattern
 {::nomarkdown}
 <div class="pl-versions">
     <div class="pl-panel">
+        <h4>1.3.0 - Aug 21, 2015 <a href="{{site.repository.url}}/releases/tag/v1.3.0">(Download)</a></h4>
+        <span class="label subtle label-success">IMPROVED</span>
+        <ul>
+            <li>Updated to latest brand colors</li>
+            <li>Darkened muted text color from #808080 to #707070 to meet 508 contrast ratio requirements</li>
+        </ul>
+    </div>
+    <div class="pl-panel">
         <h4>1.2.0 - Jun 4, 2015 <a href="{{site.repository.url}}/releases/tag/v1.2.0">(Download)</a></h4>
         <span class="label subtle label-success">IMPROVED</span>
         <ul>
