@@ -76,7 +76,8 @@ module.exports = function (grunt) {
         // LESS -> CSS
         less: {
             options: {
-                paths: ['usptostrap/less', 'bower_components']
+                paths: ['usptostrap/less', 'bower_components'],
+                compress: true
             },
             dist: {
                 files: [{
@@ -177,6 +178,19 @@ module.exports = function (grunt) {
             }
         },
 
+        usebanner: {
+            taskName: {
+                options: {
+                    position: 'top',
+                    banner: '/* usptostrap v<%= config.version %> */\n\n',
+                    linebreak: true
+                },
+                files: {
+                    src: ['<%= paths.downloads %>/css/usptostrap.min.css'],
+                }
+            }
+        },
+
         // Copies remaining files to places other tasks can use
         copy: {
             dist: {
@@ -222,6 +236,7 @@ module.exports = function (grunt) {
         'jshint',
         'less',
         'imagemin',
+        'usebanner',
         'concat',
         'autoprefixer',
         'copy:dist',
