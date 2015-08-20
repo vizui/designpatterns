@@ -1,6 +1,10 @@
 {
   "name": "USPTOPatternLibrary",
   "version": "1.2.0",
+  "repository": {
+    "type:": "git",
+    "url": "https://github.com/uspto/designpatterns.git"
+  },
   "devDependencies": {
     "bower": "^1.4.1",
     "ejs": "~1.0.0",
