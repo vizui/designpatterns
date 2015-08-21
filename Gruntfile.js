@@ -99,7 +99,7 @@ module.exports = function (grunt) {
         // Add vendor prefixed styles to CSS
         autoprefixer: {
             options: {
-                browsers: ['last 1 version']
+                browsers: ['> 4%']
             },
             dist: {
                 files: [{
@@ -107,6 +107,11 @@ module.exports = function (grunt) {
                     cwd: '<%= paths.assets %>/styles/',
                     src: '{,*/}*.css',
                     dest: '<%= paths.assets %>/styles/'
+                }, {
+                    expand: true,
+                    cwd: '<%= paths.downloads %>/css/',
+                    src: 'usptostrap.min.css',
+                    dest: '<%= paths.downloads %>/css/',
                 }]
             }
         },
