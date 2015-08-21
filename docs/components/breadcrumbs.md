@@ -43,25 +43,4 @@ Depending on the complexity of the navigational hierarchy and the type of page o
 </ol>
 {% endhighlight %}
 
-&nbsp;
-
-Breadcrumbs can also be wrapped in a `well`.
-
-{::nomarkdown}
-<div class="pl-preview">
-<ol class="breadcrumb well">
-  <li><a href="#">Home</a></li>
-  <li><a href="#">Library</a></li>
-  <li class="active">Data</li>
-</ol>
-</div>
-{:/nomarkdown}
-
-{% highlight html %}
-<ol class="breadcrumb well">
-  <li><a href="#">Home</a></li>
-  <li><a href="#">Library</a></li>
-  <li class="active">Data</li>
-</ol>
-{% endhighlight %}
 </div>
