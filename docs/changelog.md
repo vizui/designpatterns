@@ -7,11 +7,17 @@ layout: pattern
 <div class="pl-versions">
     <div class="pl-panel">
         <h4>1.3.0 - Aug 21, 2015 <a href="{{site.repository.url}}/releases/tag/v1.3.0">(Download)</a></h4>
+        <span class="label subtle label-info">NEW</span>
+        <ul>
+            <li>Add Tours pattern</li>
+            <li>Add Marketing inspiration page</li>
+        </ul>
         <span class="label subtle label-success">IMPROVED</span>
         <ul>
             <li>Updated to latest brand colors</li>
             <li>Darkened muted text color from #808080 to #707070 to meet 508 contrast ratio requirements</li>
             <li>Added examples of disabled states to button component</li>
+            <li>Added version number to minified CSS builds</li>
         </ul>
     </div>
     <div class="pl-panel">
