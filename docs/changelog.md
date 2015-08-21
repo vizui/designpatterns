@@ -9,8 +9,9 @@ layout: pattern
         <h4>1.3.0 - Aug 21, 2015 <a href="{{site.repository.url}}/releases/tag/v1.3.0">(Download)</a></h4>
         <span class="label subtle label-info">NEW</span>
         <ul>
-            <li>Add Tours pattern</li>
-            <li>Add Marketing inspiration page</li>
+            <li>Added Tours pattern</li>
+            <li>Added Step indicator component</li>
+            <li>Added Marketing inspiration page</li>
         </ul>
         <span class="label subtle label-success">IMPROVED</span>
         <ul>
