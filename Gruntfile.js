@@ -99,7 +99,7 @@ module.exports = function (grunt) {
         // Add vendor prefixed styles to CSS
         autoprefixer: {
             options: {
-                browsers: ['> 4%']
+                browsers: ['> 4%', 'last 4 versions']
             },
             dist: {
                 files: [{
