@@ -1,11 +1,16 @@
 {
   "name": "USPTOPatternLibrary",
   "version": "1.2.0",
+  "repository": {
+    "type:": "git",
+    "url": "https://github.com/uspto/designpatterns.git"
+  },
   "devDependencies": {
     "bower": "^1.4.1",
     "ejs": "~1.0.0",
     "grunt": "~0.4.1",
     "grunt-autoprefixer": "~0.7.2",
+    "grunt-banner": "^0.5.0",
     "grunt-bower-install": "~1.4.0",
     "grunt-cli": "^0.1.13",
     "grunt-concurrent": "~0.5.0",

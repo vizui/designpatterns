@@ -48,6 +48,29 @@ All buttons are prefixed with the `btn` class. The `btn` class can be applied to
 <button type="button" class="btn btn-link">Link</button>
 {% endhighlight %}
 
+&nbsp;
+
+##### Disabled state
+
+{::nomarkdown}
+<div class="pl-preview">
+    <button disabled type="button" class="btn btn-default">Default</button> 
+    <button disabled type="button" class="btn btn-primary">Primary</button>
+    <button disabled type="button" class="btn btn-danger">Danger</button>
+    <button disabled type="button" class="btn btn-success">Success</button>
+    <button disabled type="button" class="btn btn-warning">Warning</button>
+    <button disabled type="button" class="btn btn-link">Link</button>
+</div>
+{:/nomarkdown}
+
+{% highlight html %}
+<button disabled type="button" class="btn btn-default">Default</button>
+<button disabled type="button" class="btn btn-primary">Primary</button>
+<button disabled type="button" class="btn btn-danger">Danger</button>
+<button disabled type="button" class="btn btn-warning">Warning</button>
+<button disabled type="button" class="btn btn-link">Link</button>
+{% endhighlight %}
+
 </div>
 
 <div class="pl-pattern">
