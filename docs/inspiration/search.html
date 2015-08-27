@@ -1,16 +1,16 @@
 ---
 title: "Search results"
-hidden: true
 layout: null
 ---
-{% include header.html %}
+{% include header.html title="Search" fluid="true" %}
 <div>
-    {% include universalHeader.html title="Search" fluid="true" %}
+    {% include appHeader.html %}
     <div >
         <div class="panel panel-default" style="display: inline-block; width: 100%; border-radius: 0; border-top: none; border-left: none; border-right: none;">
             <div class="keyline-bottom" style="background: #f4f4f4;">
                 <div class="container-fluid">
                     <div class="padding-left-1 padding-top-2 padding-bottom-2">
+                    <h2 class="margin-top-0">Find applications</h2>
                         <div style="width: 400px">
                             <div class="input-group">
                                 <input type="text" placeholder="Search all fields" class="form-control">
@@ -19,7 +19,7 @@ layout: null
                                 </span>
                             </div>
                             <div class="help-block" style="margin-bottom: 0;">
-                                <a href="">Show advanced search</a>
+                                <a href="#void"><span class="icon icon-angle-right" style="font-size: 14px;"></span> Show advanced search</a>
                             </div>
                         </div>
                     </div>
@@ -34,7 +34,7 @@ layout: null
                         <h5 style="margin-left: 15px; color: #888;">ASSIGNMENT</h5>
                         <div class="filter-list">
                             <div data-toggle="collapse" data-target="#2filterGroup8" class="filter-group-title">
-                                Execution year <i class="icon icon-angle-right pull-right"></i>
+                                Filing year <i class="icon icon-angle-right pull-right"></i>
                             </div>
                             <div id="2filterGroup8" class="collapse">
                                 <div class="filter-group-content">
@@ -49,7 +49,7 @@ layout: null
                                 </div>
                             </div>
                             <div data-toggle="collapse" data-target="#2filterGroup1" class="filter-group-title">
-                                <i class="icon icon-angle-right pull-right"></i> Execution date range
+                                <i class="icon icon-angle-right pull-right"></i> Filing date range
                             </div>
                             <div id="2filterGroup1" class="collapse">
                                 <div class="filter-group-content">
@@ -66,7 +66,7 @@ layout: null
                                 </div>
                             </div>
                             <div data-toggle="collapse" data-target="#2filterGroup2" class="filter-group-title">
-                                <i class="icon icon-angle-right pull-right"></i> <span class="badge pull-right">1</span> Conveyance type
+                                <i class="icon icon-angle-right pull-right"></i> <span class="badge pull-right">1</span> Application type
                             </div>
                             <div id="2filterGroup2" class="collapse">
                                 <div class="filter-group-content">
@@ -91,7 +91,7 @@ layout: null
                                 </div>
                             </div>
                             <div data-toggle="collapse" data-target="#2filterGroup5" class="filter-group-title">
-                                <i class="icon icon-angle-right pull-right"></i> <span class="badge pull-right">1</span> Correspondent
+                                <i class="icon icon-angle-right pull-right"></i> <span class="badge pull-right">1</span> Applicant
                             </div>
                             <div id="2filterGroup5" class="collapse">
                                 <div class="filter-group-content">
@@ -163,9 +163,9 @@ layout: null
                             <table data-pl-expandable-rows role="grid" style="table-layout: fixed;" class="table table-outline table-inverse">
                                 <thead>
                                     <tr role="row">
-                                        <th scope="col" role="columnheader" aria-sort="ascending" class="sortable">Project name <i class="icon icon-caret-down icon-inverse"></i></th>
+                                        <th scope="col" role="columnheader" aria-sort="ascending" class="sortable">Application title <i class="icon icon-caret-down icon-inverse"></i></th>
                                         <th scope="col" role="columnheader" aria-sort="none" class="sortable">Description</th>
-                                        <th scope="col" role="columnheader" aria-sort="none">Price</th>
+                                        <th scope="col" role="columnheader" aria-sort="none">Fees</th>
                                     </tr>
                                 </thead>
                                 <tbody>
