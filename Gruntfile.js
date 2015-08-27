@@ -77,7 +77,8 @@ module.exports = function (grunt) {
         less: {
             options: {
                 paths: ['usptostrap/less', 'bower_components'],
-                compress: true
+                sourceMap: true
+                //compress: true
             },
             dist: {
                 files: [{
@@ -90,6 +91,12 @@ module.exports = function (grunt) {
                     expand: true,
                     cwd: 'front/styles',
                     src: ['pattern-library.less'],
+                    dest: '<%= paths.assets %>/styles',
+                    ext: '.css'
+                }, {
+                    expand: true,
+                    cwd: 'front/styles/ex-templates',
+                    src: ['ex-templates.less'],
                     dest: '<%= paths.assets %>/styles',
                     ext: '.css'
                 }]
