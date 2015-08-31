@@ -24,6 +24,41 @@
         <link href="{{site.baseurl}}/generated/styles/main.css" rel="stylesheet"/>
         <link href="{{site.baseurl}}/generated/styles/ex-templates.css" rel="stylesheet"/>
 
+        <style type="text/css">
+            body {
+                background-color: #FFF;
+            }
+            
+            .row-grid {
+                display: table;        
+                table-layout: fixed;
+                width: 100%;
+            }
+
+            .col, .sidebar, .main-content, aside {
+                display: table-cell;
+                vertical-align: top;
+            }
+
+            .main-wrapper {
+                background-color: #FFF;
+            }
+            
+            .sidebar {
+                width: 200px;
+            }
+                
+            aside {
+                background-color: #FFF;
+                width: 225px;
+            }
+            
+            .table-recentApps td:last-child {
+                white-space: nowrap;
+            }                
+
+        </style>
+
     </head>
     <body>
     <!--[if lt IE 9]>
