@@ -1,0 +1,71 @@
+---
+title: "Create new account"
+layout: null
+hidden: false
+---
+{% include head.html %}
+{% include header-external.html %}
+
+<main class="form-createAcct container">
+    <div class="row">
+        <div class="col-md-12">
+        <h1 class="h2"><small>Application Monitor</small>Create new account</h1>
+            <ol class="nav-steps">
+                <li class="active" style="width:33.3%">
+                    <span>Verify employee status</span>
+                </li>
+                <li style="width:33.3%">
+                    <span>Enter contact information</span>
+                </li>
+                <li style="width:33.3%" class="">
+                    <span>Confirm system access</span>
+                </li>
+            </ol>
+            <form role="form">
+                <div class="form-group">
+                    <div class="form-group-heading">
+                        <h4>USPTO employee credentials</h4>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label required" for="em12">USPTO email address</label>
+                    <input type="email" class="form-control" id="em12" value="john.smith@gmail.com" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label class="control-label required" for="eid12">Employee ID</label> <a href="#" class="pull-right">Find my Employee ID</a>
+                    <input type="text" class="form-control" id="eid12" value="238942a" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <div class="form-group-heading">
+                        <h4>Username and password</h4>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label required" for="txt-username">Username</label>
+                    <input type="text" class="form-control" id="txt-username" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label class="control-label required" for="txt-pwd">Password</label>
+                    <input type="text" class="form-control" id="txt-pwd" required aria-required="true">
+                    <span class="help-block">(Minimum of 10 characters)</span>
+                </div>
+                <div class="form-group">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox" name="useragreement" id="chk-agree">I accept the <a href="#void">User Agreement</a> and <a href="#void">Privacy Policy</a>.</label>
+                    </div>
+                </div>
+            </form>
+            <div class="form-ft keyline-top">
+                <a class="btn btn-default" href="login.html">Cancel</a>
+                <div class="pull-right">
+                    <button class="btn btn-primary" disabled="disabled">Setup account and continue</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% include appFooter.html %}
+
+
