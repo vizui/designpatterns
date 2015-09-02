@@ -1,0 +1,107 @@
+---
+title: "Create new account"
+layout: null
+hidden: true
+---
+{% include head.html %}
+{% include header-external.html %}
+<main class="form-createAcct container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="h2"><small>Application Monitor</small>Create new account</h1>
+            <ol class="nav-steps">
+                <li style="width:33.3%">
+                    <span>Verify employee status</span>
+                </li>
+                <li class="active" style="width:33.3%">
+                    <span>Enter contact information</span>
+                </li>
+                <li style="width:33.3%" class="">
+                    <span>Confirm system access</span>
+                </li>
+            </ol>
+            <form role="form">
+                <div class="form-group">
+                    <div class="alert alert-danger">
+                        <i class="alert-icon alert-icon-danger"></i>Please provide the required information.
+                    </div>
+                </div>                
+                <div class="form-group">
+                    <div class="form-group-heading">
+                        <h4>Contact Information</h4>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="t12">Title</label>
+                    <select class="form-control" id="t12">
+                        <option value="Mr.">Mr.</option>
+                        <option value="Mrs.">Mrs.</option>
+                        <option value="Miss">Miss</option>
+                    </select>
+                </div>                
+                <div class="form-group has-error">
+                    <label class="control-label required" for="fn12">First name</label>
+                    <input type="text" class="form-control" id="fn12" value="John" required aria-required="true">
+                    <span class="help-block">This field is required.</span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="mn12">Middle name</label>
+                    <input type="text" class="form-control" id="mn12">                    
+                </div>
+                <div class="form-group has-error">
+                    <label class="control-label required" for="ln12">Last name</label>
+                    <input type="text" class="form-control" id="ln12" value="Smith" required aria-required="true">
+                    <span class="help-block">This field is required.</span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label required" for="phone12">Telephone number</label>
+                    <input type="text" class="form-control" id="phone12" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <div class="form-group-heading">
+                        <h4>Address</h4>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label required" for="country12">Country</label>
+                    <select class="form-control" id="country12" required aria-required="true">
+                        <option value="Mr.">United States</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label required" for="adline1">Address line 1</label>
+                    <input type="text" class="form-control" id="adline1" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label class="control-label required" for="adline2">Address line 2</label>
+                    <input type="text" class="form-control" id="adline2" required aria-required="true">
+                </div>
+                <div class="form-group">
+                    <label class="control-label required" for="city12">City</label>
+                    <input type="text" class="form-control" id="city12" required aria-required="true">
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="control-label required" for="state12">State</label>
+                            <input type="text" class="form-control" id="state12" required aria-required="true">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label class="control-label required" for="zipcode12">Zip code</label>
+                            <input type="text" class="form-control" id="zipcode12" required aria-required="true">
+                        </div>
+                    </div>
+                </div>
+                
+            </form>
+            <div class="form-ft keyline-top">
+                    <a class="btn btn-default" href="createAcct-step1.html">Back</a>
+                    <a class="btn btn-primary pull-right" href="createAcct-step3.html">Continue</a>
+                </div>
+        </div>
+    </div>
+</main>
+
+{% include footer.html %}
