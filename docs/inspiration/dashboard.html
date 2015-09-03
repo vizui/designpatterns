@@ -142,13 +142,14 @@ layout: null
                         <li><a href="">How to file a patent</a></li>
                     </ul>                
                 </aside>
+                {% include modal-appSettings.html %}
             </div>
         </div>
     </div>
 </main>
    
 
-{% include footer.html %}
+{% include app-footerScripts.html %}
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
@@ -206,14 +207,9 @@ new Morris.Area({
     }
 });
 
-$('.btn-fixed').click(function() {
-    $('[data-toggle="tooltip"]').tooltip('hide');
-    $('header .container-fluid, main').addClass('container').removeClass('container-fluid');        
-});
 
-$('.btn-fluid').click(function() {
-    $('[data-toggle="tooltip"]').tooltip('hide');
-    $('header .container, main').addClass('container-fluid').removeClass('container');    
+$('.btn-appSettings').click(function() {
+    $('#modal-appSettings').modal({keyboard: true});
 });
 
 </script>
