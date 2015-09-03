@@ -1,6 +1,9 @@
 'use strict';
 
 (function() {
+	/* enable tooltips */
+    $('[data-toggle="tooltip"]').tooltip({container: 'body', delay: { show: 200, hide: 0 } });
+	
     /* enable masks */
     $(':input').inputmask();
 
