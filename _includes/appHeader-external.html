@@ -1,6 +1,6 @@
-<header class="uspto-header">
+<header class="uspto-header uspto-header--external">
     <div class="uspto-header__top">
-        <div class="uspto-container {% if include.fluid %}uspto-container--fluid{% endif %} uspto-header">
+        <div class="container {% if include.fluid %}container--fluid{% endif %} uspto-header">
             <div class="uspto-header__top__logo uspto-logo-svg"></div>
             <ul class="uspto-header__top__links">
                 <li><a href="#">About Us</a></li>
@@ -10,23 +10,9 @@
         </div>
     </div>
     <div class="uspto-header__middle">
-        <div class="uspto-container {% if include.fluid %}uspto-container--fluid{% endif %}">
-            <h1 class="uspto-header__middle__title">{{include.title}}</h1>
-        </div>
-    </div>
-    <div class="uspto-header__bottom">
-        <div class="uspto-container {% if include.fluid %}uspto-container--fluid{% endif %}">
-            <a href="#" data-uspto-toggle=".uspto-header__bottom__collapsible" class="uspto-header__bottom__toggle-collapse"><span class="uspto-sr-only">Toggle menu</span></a>
-            <div class="uspto-header__bottom__collapsible">
-                <ul class="uspto-header__bottom__links uspto-header__bottom__links--left">
-                    <li><a href="#">Manage</a></li>
-                    <li><a href="#">Search</span></a></li>
-                </ul>
-                <ul class="uspto-header__bottom__links uspto-header__bottom__links--right">
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
+        <div class="container {% if include.fluid %}container--fluid{% endif %}">
+            <!-- <h1 class="uspto-header__middle__title">{{include.title}}</h1> -->
+            <h1 class="h2 uspto-header__middle__title"><small>{{ include.pgTitle }}</small>{{ include.subTitle }}</h1>
         </div>
     </div>
 </header>

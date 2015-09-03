@@ -1,12 +1,19 @@
 'use strict';
 
-(function(){
-	$('#chk-agree').click(function() {
-	    $('.btn-primary').attr('disabled', !this.checked);
-	});
+(function() {
+	/* enable masks */
+    $(':input').inputmask();
+    
+	/* select2 things */
+    $('.select2').select2({
+        minimumResultsForSearch: 4
+    });
 
-	$('.btn-primary').click(function() {
-	    location.href = 'createAcct-step2.html';
-	});
+    $('#chk-agree').click(function() {
+        $('.btn-primary').attr('disabled', !this.checked);
+    });
+
+    $('.btn-primary').click(function() {
+        location.href = 'createAcct-step2.html';
+    });
 })();
-
