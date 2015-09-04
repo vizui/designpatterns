@@ -1,4 +1,4 @@
-<header>
+<header class="app-header">
     <nav class="navbar navbar-inverse">
         <div class="container-fluid container-switch">
             <div class="navbar-header">
@@ -8,8 +8,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a href="dashboard.html" class="navbar-brand">
-                    <span class="uspto-header__top__logo uspto-logo-svg margin-right-2"></span> Application Monitor</a>
+                <h1 class="margin-top-0"><a class="navbar-brand" href="dashboard.html">
+                    <span class="uspto-header__top__logo uspto-logo-svg margin-right-2"></span> Application Monitor</a></h1>
             </div>
             <div class="navbar-collapse collapse" id="navbar">
                 <ul class="nav navbar-nav navbar-right">
@@ -29,7 +29,7 @@
     </nav>
     <div class="ex-sub-header clearfix">
         <div class="container-fluid container-switch">
-            <div class="ex-sub-header--gadgets pull-left">
+            <div class="ex-sub-header--gadgets">
                 <a class="btn ex-btn__inverse  ex-btn__inverse__active" href="dashboard.html" data-toggle="tooltip" data-placement="bottom" title="Dashboard">
                     <i class="icon icon-home icon-inverse"></i>
                 </a>
@@ -55,9 +55,11 @@
                     <i class="icon icon-star icon-inverse"></i>
                 </button>
             </div>            
-            <div class="pull-right" style="position: relative;">
-                <input type="text" class="form-control ex-form-control__inverse" placeholder="Application Number">
-                <a class="btn btn-sm" href="search.html"><i class="icon icon-search icon-inverse"></i></a>
+            <div class="search">
+                <label for="txt-search" class="sr-only">Find application</label>
+                <input id="txt-search" type="text" class="form-control ex-form-control__inverse" placeholder="Application Number">
+                <a class="btn-search btn btn-default btn-sm" href="search.html"><i class="icon icon-search"></i></a>
+                
             </div>
         </div>
     </div>

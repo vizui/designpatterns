@@ -8,8 +8,7 @@ body {
     width: 100%;
 }
 
-.col,
-.main-content {
+.col {
     display: table-cell;
     vertical-align: top;
 }
@@ -34,6 +33,16 @@ header .container-fluid {
 
 .main-wrapper {
     background-color: #FFF;
+}
+
+.main-content {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .main-content {
+        display: table-cell;
+    }
 }
 
 .table-recentApps td:last-child {
