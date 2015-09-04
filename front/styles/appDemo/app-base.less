@@ -1,0 +1,43 @@
+body {
+    background-color: #FFF;
+}
+
+.row-grid {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.col,
+.main-content {
+    display: table-cell;
+    vertical-align: top;
+}
+
+header .container {
+    min-width: 240px;
+}
+
+main,
+header .container-fluid {
+    width: 100%;
+}
+
+main {
+    &.container, &.container-fluid {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.container-switch {
+    transition: width 0.5s;
+}
+
+.main-wrapper {
+    background-color: #FFF;
+}
+
+.table-recentApps td:last-child {
+                white-space: nowrap;
+            }                
