@@ -23,7 +23,11 @@ hidden: true
                 <div class="form-group">
                     <div class="col-sm-12">
                         <div class="alert alert-danger">
-                            <i class="alert-icon alert-icon-danger"></i>Please provide the required information.
+                            <i class="alert-icon alert-icon-danger"></i>There are 2 fields missing required information.
+                            <ul>
+                                <li><a class="link-errField" href="#fn12">First name can not be empty</a></li>
+                                <li><a class="link-errField" href="#phone12">Phone number can not be empty</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -43,6 +47,7 @@ hidden: true
                     <label class="control-label col-sm-3" for="s2id_autogen1">Title</label>
                     <div class="col-sm-9">
                         <select class="form-control select2 form-control-width-md" id="t12">
+                            <option value="">Select</option>
                             <option value="Mr.">Mr.</option>
                             <option value="Mrs.">Mrs.</option>
                             <option value="Miss">Miss</option>
@@ -52,7 +57,7 @@ hidden: true
                 <div class="form-group has-error">
                     <label class="control-label col-sm-3 required" for="fn12">First name</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control form-control-width-md" id="fn12" value="John" required aria-required="true">
+                        <input type="text" class="form-control form-control-width-md" id="fn12" required aria-required="true">
                         <span class="help-block">This field is required.</span>
                     </div>
                 </div>
@@ -62,18 +67,18 @@ hidden: true
                         <input type="text" class="form-control form-control-width-md" id="mn12">
                     </div>
                 </div>
-                <div class="form-group has-error">
+                <div class="form-group">
                     <label class="control-label col-sm-3 required" for="ln12">Last name</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control form-control-width-md" id="ln12" value="Smith" required aria-required="true">
-                        <span class="help-block">This field is required.</span>
+                        <input type="text" class="form-control form-control-width-md" id="ln12" required aria-required="true">                        
                     </div>
                 </div>
-                <div class="form-group">
-                    <label class="control-label col-sm-3 required" for="phone12">Telephone number</label>
+                <div class="form-group has-error">
+                    <label class="control-label col-sm-3 required" for="phone12">Phone number</label>
                     <div class="col-sm-9">
                         <input type="text" class="form-control form-control-width-md" id="phone12" required aria-required="true" aria-describedby="help-phone" data-inputmask="'mask': '999-999-9999', 'placeholder': 'ˍ'">
                         <span id="help-phone" class="help-block">(format: 202-999-9999)</span>
+                        <span class="help-block">This field is required.</span>
                     </div>
                 </div>
                 <div class="form-group">

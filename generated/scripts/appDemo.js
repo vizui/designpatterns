@@ -1,9 +1,15 @@
 'use strict';
 
 (function() {
-	/* enable tooltips */
-    $('[data-toggle="tooltip"]').tooltip({container: 'body', delay: { show: 200, hide: 0 } });
-	
+    /* enable tooltips */
+    $('[data-toggle="tooltip"]').tooltip({
+        container: 'body',
+        delay: {
+            show: 200,
+            hide: 0
+        }
+    });
+
     /* enable masks */
     $(':input').inputmask();
 
@@ -38,5 +44,12 @@
     /* Create Account terms agreement button */
     $('.btn-primary').click(function() {
         location.href = 'createAcct-step2.html';
+    });
+
+    $('.link-errField').click(function(e) {
+        var id = $(this).attr('href');
+
+        e.preventDefault();
+        $(id).focus();
     });
 })();
