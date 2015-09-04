@@ -22,7 +22,8 @@
 
         <link href="{{site.baseurl}}/generated/styles/vendor.css" rel="stylesheet"/>
         <link href="{{site.baseurl}}/generated/styles/main.css" rel="stylesheet"/>
-        <link href="{{site.baseurl}}/generated/styles/appDemo.css" rel="stylesheet"/>
+<<<<<<< Updated upstream
+        <link href="{{site.baseurl}}/generated/styles/ex-templates.css" rel="stylesheet"/>
 
         <style type="text/css">
             body {
@@ -35,40 +36,31 @@
                 width: 100%;
             }
 
-            .col, .main-content {
+            .col, .sidebar, .main-content, aside {
                 display: table-cell;
                 vertical-align: top;
-            }
-
-            header .container {                
-                min-width: 736px;
-            }
-
-            main, header .container-fluid {
-                /*-webkit-transition: all 0.5s;
-                -moz-transition: all 0.5s;
-                -o-transition: all 0.5s;
-                transition: width 0.5s;*/
-                width: 100%;
-            }
-
-            .container-switch {
-                transition: width 0.5s;
             }
 
             .main-wrapper {
                 background-color: #FFF;
             }
             
-            
+            .sidebar {
+                width: 200px;
+            }
                 
-            
+            aside {
+                background-color: #FFF;
+                width: 225px;
+            }
             
             .table-recentApps td:last-child {
                 white-space: nowrap;
             }                
 
         </style>
+=======
+>>>>>>> Stashed changes
 
     </head>
     <body>
