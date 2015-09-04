@@ -1,5 +1,13 @@
 /* Fluid and fixed width content sizing and media queries. Matches Bootstrap 3.0 breakpoints */
 
+.app-header {
+    height: 130px;
+    position: relative;
+    @media (min-width: 640px) {
+        height: auto;
+    }
+}
+
 .uspto-container {
     margin-right: auto;
     margin-left: auto;
@@ -33,7 +41,9 @@
     clear: both;
 }
 
-
+.navbar-brand {
+    font-weight: 600;
+}
 
 .uspto-logo-svg {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAAAXCAYAAAC/F5msAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAllJREFUeNrsWO1RwkAQTRj/mw5MB14HHBWIFRA7gAqIFYAVgBUEKghUAB0kVhCsIG703bied/lgEgfG7MxO4D52995ldx+4eZ4Lx3EiUt+5fNm5rjsqPlDceVs2SWcu2UuuBISugPi0O7giELoUOegx+JIeCMiNZXxGeiSdkAaG+RGeC1KhzW1It6QpvnukQ9jx2Lo16Sv2z0lfULgcpOtcS9sZm+cx6DGeYHvL/D9YzvEtuVkk5kLTJNsba1NBiR+vKMxsbYhxgc5l2hPpMRnW8BgPpL5lnSTNLOfN2wRiwQ4cwWmGNQHpSjMTMjs+5mM8PTbOJa64QL/C3vgvgCjdYxAOxKHkwHFNIFZsLimxl5iC6aJYnposRlroqSHVLZLsa5raqxQwUALJUmbTpFieIxMQniU5LYraGON3OKiw7PMs40IrjlWSVtjzsea9ayCKOvBGzyWBcUTX+VGsQOW9jjuhuAQeUbQ8VSBj1Itp8ZoTODu0wK4lbZNHnJXvPCe15z3pE4Gx5kWtwsexoU+/Agjl57bJGyFKCsv6DOBU+/qVFkij1PDjStka1gRiCHs7Qxwp/PDLqUWoeLsZo70lvCcbWlvA+jdvUZEiTFhjap8CtjJtvafFlWlEKma+MsYXBOwkmj3ZlEdYWSJngQyIzMb8tMNmBmbplzDLlSGuaQWz9Gr6rw1EjkAkM7RQ5AmqE6EIty5xmxJv1MpGqBj1Vft87Imr4oLqthMUaP4WhGUgFOK2/AdHE3mmvA0BdNz/DO//j7g8IE49DE46ANv7z2AUZ3/8EGAA+vX0k8tdeekAAAAASUVORK5CYII=);
@@ -142,6 +152,13 @@
     position: relative;
 }
 
+.ex-sub-header--gadgets {
+    float: left;
+     // @media (min-width: 640px) { 
+     //    float: left;
+     // }
+}
+
 .ex-sub-header--gadgets .btn {
     width: 34px;
 }
@@ -158,15 +175,47 @@
     opacity: 1;
 }
 
-.ex-sub-header .search {
-    float: left;
-}
+.search {    
+    background-color: #f2f2f2;
+    bottom: 0;
+    left: 0;
+    padding: 5px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
 
-@media (min-width: 768px) {
-    .ex-sub-header .search {
+    input {
+        background-color: #fff;
+        border: 1px solid #ccc;
+    } 
+    .btn-search {
+        width: 3em;
+    }
+
+    @media (min-width: 640px) {
+        background-color: transparent;
         float: right;
+        padding: 0;
+        position: static;
+        text-align: right;
+        width: auto;
+        .btn-search {
+             .ex-btn__inverse();
+             background: rgba(255, 255, 255, 0.05) none repeat scroll 0 0;
+             padding: 6px
+             
+        }
+        .icon.icon-search::after {
+            background-image: url("../images/icons/white.svg");
+        }
     }
 }
+
+// @media (min-width: 640px) {
+//     .ex-sub-header .search {
+//         float: right;
+//     }
+// }
 
 .ex-container {
     position: absolute;

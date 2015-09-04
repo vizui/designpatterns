@@ -1,11 +1,12 @@
-aside {
+.aside-dashboard {
     background-color: #FFF;
-    display: none;
+    display: block;
+    float: left;
     width: 225px;
-}
-
-@media (min-width: 768px) {
-	aside { 
+    @media (min-width: 768px) {
 		display: table-cell;
+		float: none;
 	}
 }
+
+
