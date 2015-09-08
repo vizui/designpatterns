@@ -186,6 +186,12 @@
                         
                     
                         
+                    
+                        
+                    
+                        
+                    
+                        
                             
                         
                     
@@ -343,6 +349,8 @@
                         
                     
                         
+                    
+                        
                             
                                 
                                     <li  >
@@ -408,6 +416,16 @@
                             
                                 
                                     <li  >
+                                        <a  href="/designpatterns/1.x/docs/components/stepIndicators.html"> Step indicators </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
                                         <a  href="/designpatterns/1.x/docs/components/tables.html"> Tables </a>
                                     </li>
                                 
@@ -438,6 +456,8 @@
                                     </li>
                                 
                             
+                        
+                    
                         
                     
                         
@@ -560,6 +580,8 @@
                         
                     
                         
+                    
+                        
                             
                                 
                             
@@ -581,6 +603,18 @@
                     
                         
                     
+                        
+                    
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
+                                        <a  href="/designpatterns/1.x/docs/patterns/tours.html"> Tours </a>
+                                    </li>
+                                
+                            
                         
                     
                         
@@ -678,6 +712,16 @@
                             
                                 
                                     <li  >
+                                        <a  target="_blank"  href="/designpatterns/1.x/docs/inspiration/marketing.html"> Marketing </a>
+                                    </li>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                    <li  >
                                         <a  target="_blank"  href="/designpatterns/1.x/docs/inspiration/master-detail.html"> Master detail </a>
                                     </li>
                                 
@@ -718,6 +762,10 @@
                                     </li>
                                 
                             
+                        
+                    
+                        
+                    
                         
                     
                         
@@ -790,7 +838,7 @@
     <li><strong>Link</strong>, used for non-critical actions. Useful for keeping the interface simple.</li>
   </ul>
 
-  <p>All buttons are prefixed with the <code>btn</code> class. The <code>btn</code> class can be applied to any element. Try to use <code>&lt;button&gt;</code> elements when an action won’t change the URL/route, and <code>&lt;a&gt;</code> elements when the action will change the URL/route. </p>
+  <p>All buttons are prefixed with the <code>btn</code> class. The <code>btn</code> class can be applied to any element. Try to use <code>&lt;button&gt;</code> elements when an action won’t change the URL/route, and <code>&lt;a&gt;</code> elements when the action will change the URL/route.</p>
 
 <div class="pl-preview">
     <button type="button" class="btn btn-default">Default</button> 
@@ -809,6 +857,27 @@
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-link&quot;</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span></code></pre>
   </div>
 
+  <p> </p>
+
+  <h5 id="disabled-state">Disabled state</h5>
+
+<div class="pl-preview">
+    <button disabled type="button" class="btn btn-default">Default</button> 
+    <button disabled type="button" class="btn btn-primary">Primary</button>
+    <button disabled type="button" class="btn btn-danger">Danger</button>
+    <button disabled type="button" class="btn btn-success">Success</button>
+    <button disabled type="button" class="btn btn-warning">Warning</button>
+    <button disabled type="button" class="btn btn-link">Link</button>
+</div>
+
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;button</span> <span class="na">disabled</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-default&quot;</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">disabled</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-primary&quot;</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">disabled</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-danger&quot;</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">disabled</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-warning&quot;</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">disabled</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-link&quot;</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span></code></pre>
+  </div>
+
 </div>
 
 <div class="pl-pattern">
@@ -821,7 +890,7 @@
     <li><strong>Large</strong>, use the <code>btn-lg</code> class.</li>
     <li><strong>Normal</strong>, no extra classes necessary.</li>
     <li><strong>Small</strong>, use the <code>btn-sm</code> class.</li>
-    <li><strong>Extra small</strong>, use the <code>btn-xs</code> class. </li>
+    <li><strong>Extra small</strong>, use the <code>btn-xs</code> class.</li>
   </ul>
 
 <div class="pl-preview">
@@ -1004,7 +1073,7 @@
 
   <p>Icon buttons are buttons with an icon inside. An icon button may or may not have text. Icon buttons can help save space or improve the ability to scan/find buttons quickly.</p>
 
-  <p>Use <code>btn-icon-only</code> for buttons with only an icon in it. This optimizes the padding. </p>
+  <p>Use <code>btn-icon-only</code> for buttons with only an icon in it. This optimizes the padding.</p>
 
   <p>For an icon without chrome, use a <code>btn-hover</code>.</p>
 

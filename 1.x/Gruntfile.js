@@ -28,7 +28,7 @@ module.exports = function (grunt) {
             },
             less: {
                 files: ['usptostrap/less/**/*.less', 'front/styles/**/*.less'],
-                tasks: ['less', 'concat:maincss', 'autoprefixer']
+                tasks: ['less', 'usebanner', 'concat:maincss', 'autoprefixer']
             }
         },
 
@@ -75,6 +75,10 @@ module.exports = function (grunt) {
 
         // LESS -> CSS
         less: {
+            options: {
+                paths: ['usptostrap/less', 'bower_components'],
+                compress: true
+            },
             dist: {
                 files: [{
                     expand: true,
@@ -95,7 +99,7 @@ module.exports = function (grunt) {
         // Add vendor prefixed styles to CSS
         autoprefixer: {
             options: {
-                browsers: ['last 1 version']
+                browsers: ['> 4%', 'last 4 versions']
             },
             dist: {
                 files: [{
@@ -103,6 +107,11 @@ module.exports = function (grunt) {
                     cwd: '<%= paths.assets %>/styles/',
                     src: '{,*/}*.css',
                     dest: '<%= paths.assets %>/styles/'
+                }, {
+                    expand: true,
+                    cwd: '<%= paths.downloads %>/css/',
+                    src: 'usptostrap.min.css',
+                    dest: '<%= paths.downloads %>/css/',
                 }]
             }
         },
@@ -174,6 +183,20 @@ module.exports = function (grunt) {
             }
         },
 
+        // Add a banner to the top of the generated LESS file.
+        usebanner: {
+            taskName: {
+                options: {
+                    position: 'top',
+                    banner: '/* usptostrap v<%= config.version %> | <%= config.repository.url %> */\n\n',
+                    linebreak: true
+                },
+                files: {
+                    src: ['<%= paths.downloads %>/css/usptostrap.min.css'],
+                }
+            }
+        },
+
         // Copies remaining files to places other tasks can use
         copy: {
             dist: {
@@ -219,6 +242,7 @@ module.exports = function (grunt) {
         'jshint',
         'less',
         'imagemin',
+        'usebanner',
         'concat',
         'autoprefixer',
         'copy:dist',
