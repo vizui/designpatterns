@@ -10,6 +10,7 @@ layout: null
 <main class="container-fluid container-full container-switch">
     <div class="main-wrapper row-grid">
         <nav class="app-sidebar">
+            <!-- <a class="link-closeSidebar" href="#void">Close</a> -->
             <ul class="nav nav-stacked" role="tab-list">
                 <li role="presentation" class="category"><i class="icon icon-dashboard"></i> Dashboards</li>
                 <li role="presentation" class="active"><a role="tab" href="#">Systems Summary</a></li>
@@ -28,18 +29,19 @@ layout: null
                 <div class="main-content col keyline-left">
                     <div class="padding-2 keyline-bottom clearfix">
                         <div class="pull-left">
+                        <a class="link-dashboards" href="#void"><i class="icon icon-columns"></i> Dashboards &amp; Reports</a>
                             <h2 class="margin-top-0">Systems Summary</h2>
                             <dl class="dl-inline clearfix" style="margin-bottom: -4px;">
                                 <dt>Status</dt>
-                                <dd>Approved</dd>
-                                <dt>Type</dt>
-                                <dd><span class="label label-success subtle">Business</span></dd>
+                                <dd>3 systems reporting</dd>
+                                <dt>Data</dt>
+                                <dd><span class="label label-success subtle">Complete</span></dd>
                             </dl>
                         </div>
-                        <div class="pull-right text-right">
-                            <div class="margin-top-0 text-muted">Filed applications</div>
+                        <!-- <div class="meta-filedApps">
+                            <div class="margin-top-0 text-muted">Dec. filings</div>
                             <span class="h1 margin-0">4,201</span>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="padding-2">
                         <h3 class="margin-top-0">Filing history <span class="small">for the year 2015</span></h3>
@@ -206,6 +208,20 @@ new Morris.Area({
     dateFormat: function(x) {
         return new Date(x).toString().split(' ')[1];
     }
+});
+
+$('.link-dashboards').click(function(e) {
+    e.preventDefault();
+    $('.app-sidebar').toggleClass('open');
+});
+
+// $('.link-closeSidebar').click(function(e) {
+//     e.preventDefault();
+//     $('.app-sidebar').removeClass('open');
+// });
+
+$(window).on('resize', function(){
+    $('.app-sidebar').removeClass('open');
 });
 
 </script>

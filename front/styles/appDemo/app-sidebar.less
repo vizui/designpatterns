@@ -1,21 +1,25 @@
-.app-sidebar {    
-    display: none;
+.app-sidebar {
+    display: table-cell;    
+    overflow: hidden;
+    transition: width 0.5s;
     vertical-align: top;
-    width: 200px;
-}
+    width: 0;
+    &.open {
+    	width: 175px;
+    	&+.col {
+	    	overflow: hidden;
+	    	white-space: nowrap;	    	
+	    }
+    }
 
-@media (min-width: 768px) {
-	.app-sidebar {    
-	    display: table-cell;	    
-	}
+    @media (min-width: 768px) {
+        width: 175px;
+        // .link-closeSidebar {
+        // 	display: none;
+        // }
+    }
 }
 
 .ex-sub-header .btn-sidebar {
-	margin-right: 10px;
-}
-
-@media (min-width: 768px) {
-	.btn-sidebar {
-		display: none;
-	}
+    margin-right: 10px;
 }
