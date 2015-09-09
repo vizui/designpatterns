@@ -1,22 +1,30 @@
 .app-sidebar {
-    display: table-cell;    
+    display: table-cell;
     overflow: hidden;
     transition: width 0.5s;
     vertical-align: top;
     width: 0;
     &.open {
-    	width: 175px;
-    	&+.col {
-	    	overflow: hidden;
-	    	white-space: nowrap;	    	
-	    }
+        &+.col {
+            overflow: hidden;
+            white-space: nowrap;
+        }
     }
-
-    @media (min-width: 768px) {
-        width: 175px;
-        // .link-closeSidebar {
-        // 	display: none;
-        // }
+    &.dashboards {
+        &.open {
+            width: 175px;
+        }
+        @media (min-width: 768px) {
+            width: 175px;
+        }
+    }
+    &.filters {
+        &.open {
+            width: 250px;
+        }
+        @media (min-width: 768px) {
+            width: 250px;
+        }
     }
 }
 
