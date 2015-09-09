@@ -9,7 +9,7 @@ layout: null
 
 <main class="container-fluid container-full container-switch">
     <div class="main-wrapper row-grid">
-        <nav class="app-sidebar">
+        <nav class="app-sidebar dashboards">
             <!-- <a class="link-closeSidebar" href="#void">Close</a> -->
             <ul class="nav nav-stacked" role="tab-list">
                 <li role="presentation" class="category"><i class="icon icon-dashboard"></i> Dashboards</li>
@@ -215,13 +215,5 @@ $('.link-dashboards').click(function(e) {
     $('.app-sidebar').toggleClass('open');
 });
 
-// $('.link-closeSidebar').click(function(e) {
-//     e.preventDefault();
-//     $('.app-sidebar').removeClass('open');
-// });
-
-$(window).on('resize', function(){
-    $('.app-sidebar').removeClass('open');
-});
 
 </script>

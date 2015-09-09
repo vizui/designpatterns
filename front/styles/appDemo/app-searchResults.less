@@ -1,8 +1,52 @@
+.input-search {
+	width: 320px;
+	@media (min-width: 640px) {
+    	width: 400px;
+    }
+}
+
+.results-header {
+    line-height: 24px;
+    margin-bottom: 6px;
+}
+
+.pg-actions {
+    position: relative;
+}
+
+.link-filters {
+    display: inline-block;
+    @media (min-width: 768px) {
+    	display: none;
+    }
+}
+
+.btn-pgActions {
+    position: absolute;
+    right: 0;
+    top: -27px;
+    .dropdown-menu {
+	    left: auto;
+	    right: 0;
+	}
+	@media (min-width: 640px) {
+    	float: right;
+    	position: static;
+    }
+}
+
+.table-actions {
+	margin-bottom: 10px;
+}
+
 .table-searchResults {
-	th:first-child {
-		width: 500px;
-	}
-	th:nth-child(2) {
-		width: 700px;
-	}
+    th {
+        white-space: nowrap;
+    }
+    th:first-child {
+        width: 500px;
+    }
+    th:nth-child(2) {
+        width: 700px;
+    }
 }

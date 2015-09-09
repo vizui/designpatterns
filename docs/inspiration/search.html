@@ -10,25 +10,23 @@ layout: null
         <div class="keyline-bottom" style="background: #f4f4f4;">
             <div class="container-fluid">
                 <div class="padding-left-1 padding-top-2 padding-bottom-2">
-                    <h2 class="margin-top-0">Find applications</h2>
-                    <div style="width: 400px">
-                        <div class="input-group">
-                            <input type="text" placeholder="Search all fields" class="form-control">
-                            <span class="input-group-btn">
-                                    <button class="btn btn-info btn-search"><i class="icon icon-inverse icon-search"></i></button>
-                                </span>
-                        </div>
-                        <div class="help-block" style="margin-bottom: 0;">
-                            <a href="#void"><span class="icon icon-angle-right" style="font-size: 14px;"></span> Show advanced search</a>
-                        </div>
+                    <h2 class="margin-top-0">Find applications</h2>                    
+                    <div class="input-search input-group">
+                        <input type="text" placeholder="Search all fields" class="form-control">
+                        <span class="input-group-btn">
+                                <button class="btn btn-info"><i class="icon icon-inverse icon-search"></i></button>
+                            </span>
                     </div>
+                    <div class="help-block" style="margin-bottom: 0;">
+                        <a href="#void"><span class="icon icon-angle-right" style="font-size: 14px;"></span> Show advanced search</a>
+                    </div>                    
                 </div>
             </div>
         </div>
-        <div class="container-fluid padding-0">
-            <div class="row-grid">
-                <div class="col" style="width: 250px;">
-                    <form class="filters margin-bottom-2 margin-top-2">
+        
+        <div class="main-wrapper row-grid">
+                <div class="app-sidebar filters">
+                    <form class="margin-bottom-2 margin-top-2">
                         <h4 class="filter-heading">
                                 Refine by <a href="" class="filters-clear">Clear</a>
                             </h4>
@@ -150,42 +148,45 @@ layout: null
                     </form>
                 </div>
                 <div class="col keyline-left" style="margin-left: 250px;">
-                    <div style="display: inline-block; width: 100%;">
-                        <div class="panel-body">
-                            <div style="line-height: 24px; margin-bottom: 6px; display: inline-block; width: 100%;">
-                                <div class="pull-right">
-                                    <button class="btn btn-default"><i class="icon icon-print"></i></button>
-                                    <button class="btn btn-default">Actions &nbsp;<span class="caret"></span></button>
+                    <div class="panel-body">
+                            <div class="results-header">
+                                <a class="link-filters" href="#void"><i class="icon icon-gear"></i> Refine</a>
+                                <div class="pg-actions clearfix">                                
+                                    <h4 class="pull-left margin-top-1"><span style="font-weight: 400">900 results for </span>application</h4>
+                                    <div class="btn-pgActions btn-group">
+                                        <button id="btn-pgActions" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actions <span class="caret"></span></button>
+                                        <ul class="dropdown-menu" aria-labelledby="btn-pgActions">
+                                            <li role="presentation"><a href="#">Print</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li role="presentation"><a href="#">Download Excel</a></li>
+                                            <li role="presentation"><a href="#">Download CSV</a></li>                                                                                
+                                        </ul>
+                                    </div>
                                 </div>
-                                <h4 class="margin-top-1"><span style="font-weight: 400">900 results for </span>application</h4>
-                                <div>
-                                    <ul class="list-unstyled margin-bottom-0">
-                                        <li class="filter-value">Conveyance type: Assignment <i class="pull-right icon icon-close icon-muted"></i></li>
-                                        <li class="filter-value">Correspondent: JANE LLC <i class="pull-right icon icon-close icon-muted"></i></li>
-                                    </ul>
-                                </div>
+                                <ul class="list-unstyled margin-bottom-0">
+                                    <li class="filter-value">Conveyance type: Assignment <i class="pull-right icon icon-close icon-muted"></i></li>
+                                    <li class="filter-value">Correspondent: JANE LLC <i class="pull-right icon icon-close icon-muted"></i></li>
+                                </ul>                                
                             </div>
-                            <div class="row">
-                                <div class="col-sm-6">
+                            <div class="table-actions row">
+                                <div class="col-xs-6">
                                     <a class="btn btn-link" style="display: inline-block; margin-right: 5px; position: relative; top: 5px;"><i class="icon icon-angle-right"></i> Expand/collapse all</a>
                                 </div>
-                                <div class="btn-group col-sm-6">
-                                    <div class="pull-right">
-                                        <div class="btn-group dropdown">
-                                            <button type="button" id="dropdownMenu1" class="btn btn-default dropdown-toggle" data-toggle="dropdown">10 per page <span class="caret"></span></button>
-                                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                                                <li role="presentation" class="dropdown-header">Show up to</li>
-                                                <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
-                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
-                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
-                                                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
-                                            </ul>
-                                        </div>
+                                <div class="col-xs-6">
+                                    <div class="btn-group dropdown pull-right">
+                                        <button id="btn-displayOpts" type="button" class="btn-displayOpts btn btn-default dropdown-toggle" data-toggle="dropdown">10 per page <span class="caret"></span></button>
+                                        <ul class="dropdown-menu" role="menu" aria-labelledby="btn-displayOpts">
+                                            <li role="presentation" class="dropdown-header">Show up to</li>
+                                            <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
+                                            <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="table-responsive">
-                                <table class="table-searchResults table table-inverse table-sortable table-outline margin-top-1" data-pl-expandable-rows role="grid">
+                                <table class="table-searchResults table table-inverse table-sortable table-outline" data-pl-expandable-rows role="grid">
                                     <thead>
                                         <tr role="row">
                                             <th class="sortable" scope="col" role="columnheader" aria-sort="none">Application title</th>
@@ -448,7 +449,7 @@ layout: null
                                 </table>
                             </div>
                             <div class="text-center">
-                                <div class="btn-group">
+                                <!-- <div class="pager--select btn-group">
                                     <div class="btn-group dropdown">
                                         <button type="button" id="dropdownMenu2" class="btn-link btn dropdown-toggle" data-toggle="dropdown">Page 1 of 9 <span class="caret"></span></button>
                                         <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu2">
@@ -465,8 +466,8 @@ layout: null
                                             </li>
                                         </ul>
                                     </div>
-                                </div>
-                                <div class="btn-group">
+                                </div> -->
+                                <div class="pager btn-group">
                                     <a class="btn btn-default" href="#" disabled><i class="icon icon-angle-left"></i></a>
                                     <a class="btn btn-default active" href="#">1</a>
                                     <a class="btn btn-default" href="#">2</a>
@@ -477,13 +478,19 @@ layout: null
                                 </div>
                             </div>
                         </div>
-                    </div>
                 </div>
             </div>
-        </div>
     </div>
 </main>
 
 
 
 {% include appDemo/app-footerScripts.html %}
+
+<script>
+    $('.link-filters').click(function(e) {
+        e.preventDefault();        
+        $('.app-sidebar').toggleClass('open');
+        $('.btn-pgActions, .btn-displayOpts, .icon-close').toggleClass('hide');
+    });    
+</script>
