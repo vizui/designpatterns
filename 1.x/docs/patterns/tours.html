@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Wizards - USPTO UI Design Library</title>
+        <title>Tours - USPTO UI Design Library</title>
 
         <meta name="description" content="">
         <meta name="keywords" contnet="">
@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width">
         <meta name="theme-color" content="#004c97">
 
-        <meta property="og:title" content="Wizards">
+        <meta property="og:title" content="Tours">
         <meta property="og:description" content="">
 
         <link rel="shortcut icon" href="/designpatterns/1.x/generated/favicon.ico">
@@ -610,7 +610,7 @@
                         
                             
                                 
-                                    <li  >
+                                    <li  class="active"  >
                                         <a  href="/designpatterns/1.x/docs/patterns/tours.html"> Tours </a>
                                     </li>
                                 
@@ -634,7 +634,7 @@
                         
                             
                                 
-                                    <li  class="active"  >
+                                    <li  >
                                         <a  href="/designpatterns/1.x/docs/patterns/wizards.html"> Wizards </a>
                                     </li>
                                 
@@ -812,197 +812,128 @@
         <section class="pl-content">
             
             <div class="pl-pattern">
-  <h3>Wizards</h3>
+  <h3>Tours</h3>
 
   <h4 id="purpose">Purpose</h4>
-  <p>Users need guidance filling out a complex form.</p>
+  <p>Users need to a guided overview of functionality that they may not be familiar with yet.</p>
 
   <h4 id="description">Description</h4>
-  <p>Splitting a complex form into multiple steps accomplishes a few things:</p>
-
   <ul>
-    <li>Reduces cognitive overhead by organizing and presenting related input fields</li>
-    <li>Facilitates a potentially linear or evolving process</li>
-    <li>Can provide improved contextual or evolving help</li>
+    <li>Tours can appear in the center of the screen or next to a related element</li>
+    <li>Tours can contain text, forms, images, or videos</li>
+    <li>Optional step indicators can be added to indicate where the user is within the tour</li>
+    <li>An optional close (x) button can be added if the user is able to skip the tour</li>
+    <li>The background can optionally be grayed out while highlighting a related element</li>
   </ul>
-
-  <h4 id="basic-functionality">Basic functionality</h4>
-  <p>A wizard is usually composed of:</p>
-
-  <ul>
-    <li>A list of steps, either horizontally or vertically</li>
-    <li>A collection of form controls and help text organized into steps</li>
-    <li>Buttons for navigation</li>
-    <li>Validation</li>
-  </ul>
-
-  <p> </p>
-
-</div>
-
-<div class="pl-pattern">
-  <h3 id="steps">Steps</h3>
-
-  <p>In many cases it’s beneficial to show the list of steps a wizard will have. Depending on the number of steps and space available, steps can be listed vertically or horizontally.</p>
-
-  <h4 id="validation">Validation</h4>
-  <ul>
-    <li>Indicate a step’s validity
-      <ul>
-        <li>Show a check icon when valid (only if the user has left/submitted the form with valid input)</li>
-        <li>Show a warning icon when invalid (only if the user has left/submitted the form with errors)</li>
-      </ul>
-    </li>
-  </ul>
-
-  <h4 id="navigation">Navigation</h4>
-  <ul>
-    <li>Allow for navigating to previous steps when possible</li>
-    <li>In some cases, skipping ahead is applicable</li>
-    <li>Navigation may evolve depending on previous steps</li>
-  </ul>
-
-  <h4 id="vertical-steps">Vertical steps</h4>
-  <p>Use vertical steps when there are 5 or more steps, when there are nested steps, or when steps are categorized.</p>
 
 <div class="pl-preview">
-<div class="">
-    <div class="" style="max-width: 700px;">
-        <div class="" style="display: inline-block; width: 100%;">
-            <div style="width: 200px; min-height: 400px; float: left;">
-                <div class="panel-body">
-                    <h4>New alert</h4>
-                    <p>Add and configure new alerts for an environment.</p>
-                </div>
-                <ul class="nav nav-stacked nav-tree" role="tab-list">
-                    <li role="presentation"><a role="tab" href="#"><span style="margin-left: -10px;" class="alert-icon-success"></span> Criteria</a></li>
-                    <li class="active" role="presentation"><a role="tab" href="#"><i style="margin-left: -10px;" class="alert-icon-danger"></i> Recipients</a>
-                    </li>
-                    <li class="disabled" role="presentation"><a role="tab"><i style="margin-left: -10px; position: relative; top: 1px; width: 14px; display: inline-block;"></i> Configure</a>
-                        <ul class="nav nav-stacked nav-tree" role="tab-list">
-                            <li class="disabled" role="presentation"><a href=""><i style="margin-left: -10px; position: relative; top: 1px; width: 14px; display: inline-block;"></i>Instances</a></li>
-                            <li class="disabled" role="presentation"><a href=""><i style="margin-left: -10px; position: relative; top: 1px; width: 14px; display: inline-block;"></i>Monitoring</a></li>
-                        </ul>
-                    </li>
-                    <li class="disabled" role="presentation"><a role="tab"><i style="margin-left: -10px; position: relative; top: 1px; width: 14px; display: inline-block;"></i> Review</a></li>
-                </ul>
-            </div>
-            <div class="panel panel-default" style="margin-left: 200px; height: 400px; max-height: 400px; overflow: auto; position: relative;">
-                <div class="panel-body">
-                    <h4>Recipients <span class="pull-right" style="font-size: 13px;"><span class="text-primary">Step 2 of 6</span></span></h4>
-                    <p>When the alert criteria is met, each recipient will receive an email notification.</p>
-                    <hr>
-                    <div class="alert alert-danger"><i class="alert-icon alert-icon-danger"></i>Fix the 1 error below.</div> 
-                    <div class="form-group" style="">
-                        <div class="input-group">
-                            <input type="text" class="form-control" value="jsmith@corp.com">
-                            <div class="input-group-btn"><button class="btn btn-default"><i class="icon icon-times"></i></button></div>
-                        </div>
-                    </div>
-                    <div class="form-group has-error" style="">
-                        <div class="input-group">
-                            <input type="text" class="form-control" value="aharrison@corp">
-                            <div class="input-group-btn"><button class="btn btn-default"><i class="icon icon-times"></i></button></div>
-                        </div>
-                        <p class="help-block">Invalid email address.</p>
-                    </div>
-                    <div class="form-group" style="">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Enter an email address">
-                            <div class="input-group-btn"><button class="btn btn-default">Add</button></div>
-                        </div>
-                    </div>
-                        <div class="text-right" style="position: absolute; padding: 15px; bottom: 0; right: 0; left: 0;">
-                        <button class="btn btn-default pull-left">Back</button>
-                        <button class="btn btn-primary">Continue</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<div class="popover left" style="width: 400px; z-index: 1; max-width: 100%; position: relative; display: block; margin-left: 0;">
+  <div class="arrow"></div>
+  <div class="popover-content padding-2">
+    <h3 class="margin-top-0 margin-bottom-2">Welcome! <span class="close pull-right">&times;</span></h3>
+    <p>Any images placed within /app/images will be automatically copied to the build/images directory. If running gulp prod, they will also be compressed via imagemin.</p>
+  </div>
+  <div class="popover-toolbar btn-toolbar">
+    <ol class="nav-dots pull-left margin-top-1 margin-bottom-0 margin-left-1">
+      <li class="active">
+          <a href="">Step 1</a>
+      </li>
+      <li>
+          <a href="">Step 2</a>
+      </li>
+      <li>
+          <a href="">Step 3</a>
+      </li>
+    </ol>
+      <button class="btn btn-primary pull-right">Start the tour</button>
+      <button class="btn btn-default pull-right">Skip</button>
+  </div>
 </div>
 
-  <p> </p>
+<hr>
 
-  <h4 id="horizontal-steps">Horizontal steps</h4>
-  <p>Use horizontal steps when there are 4 or less steps.</p>
-
-<div class="pl-preview">
-<div class="">
-    <div class="" style="max-width: 700px; margin-auto;">
-        <div style="padding: 50px; overflow: auto; position: relative;">
-            <ol class="nav-steps">
-                <li  style="width:33.3%">
-                    <span>Applicant information</span>
-                </li>
-                <li class="active" style="width:33.3%">
-                    <span>Mark information</span>
-                </li>
-                <li class="" style="width:33.3%">
-                    <span>Goods and services</span>
-                </li>
-            </ol>
-            <h2 style="margin: 36px 0;" class="text-center">So far so good. Now, let's talk about your mark.</h2>
-            <h4>First, what type of mark is this?</h4>
-            <div style="margin: 18px 0;">
-                <form class="" role="form">
-                    <div class="form-group">
-                        <div class="radio">
-                            <label><input type="radio" name="optionsRadios" id="optionsRadios1" checked value="option1">Standard characters <div class="text-muted">Use this option to register a mark that is comprised of word(s), letter(s), number(s), or any combination thereof with no design element or stylization. <a href="#">Learn more.</a></div></label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Special form <div class="text-muted">Use this option if you wish to register a mark that is comprised of stylized word(s), letter(s), and/or number(s), and/or a design element. <a href="#">Learn more.</a></div></label>
-                        </div>
-                        <div class="radio">
-                            <label><input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Sound mark <div class="text-muted">A non-visual mark may be a sound, a scent, or otherwise non-visual mark. <a href="#">Learn more.</a></div></label>
-                        </div>
-                    </div>
-                </form>
-                <div class="text-right" style="margin-top: 24px;">
-                    <button class="btn btn-default pull-left">Back</button>
-                    <button class="btn btn-primary">Continue</button>
-                </div>
-            </div>
-<!--             <div style="display: inline-block; width: 100%; text-align: center; padding: 15px; margin-bottom: 10px;">
-                <button class="btn btn-default pull-left"><div class="pull-left" style="background: #ccc; padding: 6px; color: #fff; text-align: center;margin-top: 2px;margin-right: 8px; margin-left: -4px; "><i class="icon icon-arrow-left "></i></div><div style="margin-left: 4px; float: left;text-align: left;"><div class="text-muted small">PREVIOUS</div>Account</div></button>
-                <button class="btn btn-default pull-right"><div class="pull-right" style="background: #004c97; padding: 6px; color: #fff; text-align: center;margin-top: 2px;margin-left: 8px; margin-right: -2;"><i class="icon icon-arrow-right "></i></div><div style="margin-right: 4px; float: right;text-align: right;"><div class="text-muted small">NEXT</div>Customize</div></button>
-            </div>
- -->        </div>
-    </div>
+<div class="popover left" style="width: 400px; z-index: 1; max-width: 100%; position: relative; display: block; margin-left: 0;">
+  <div class="arrow"></div>
+  <div class="popover-content padding-2">
+    <h3 class="margin-top-0 margin-bottom-2">Searching for documents <span class="close pull-right">&times;</span></h3>
+    <p>Any images placed within /app/images will be automatically copied to the build/images directory. If running gulp prod, they will also be compressed via imagemin.</p>
+    <p>
+      <a href="">Learn more</a>
+    </p>
+  </div>
+  <div class="popover-toolbar btn-toolbar">
+    <ol class="nav-dots pull-left margin-top-1 margin-bottom-0 margin-left-1">
+      <li>
+          <a href="">Step 1</a>
+      </li>
+      <li class="active">
+          <a href="">Step 2</a>
+      </li>
+      <li>
+          <a href="">Step 3</a>
+      </li>
+    </ol>
+      <button class="btn btn-primary pull-right">Next</button>
+      <button class="btn btn-default pull-right">Back</button>
+  </div>
 </div>
+
+<hr>
+
+<div class="popover" style="width: 400px; z-index: 1; max-width: 100%; position: relative; display: block; margin-left: 0;">
+  <div class="arrow"></div>
+  <div class="popover-content padding-2">
+    <h3 class="margin-top-0 margin-bottom-2">Ready to sign up? <span class="close pull-right">&times;</span></h3>
+    <p>Signing up lets you save your searches for later. You can also opt-in for email alerts whenever your search results change.</p>
+    <form role="form" class="margin-top-2">
+      <div class="form-group">
+          <label class="control-label required" requiredfor="emailInput">Email</label>
+          <input type="email" class="form-control" id="emailInput">
+      </div>
+      <div class="form-group">
+          <label class="control-label required" for="passwordInput">Password</label>
+          <input type="password" class="form-control" id="passwordInput" >
+      </div>
+      <div class="form-group">
+          <label class="control-label required" for="passwordInput2">Confirm password</label>
+          <input type="password" class="form-control" id="passwordInput2" >
+      </div>
+  </form>
+  </div>
+  <div class="popover-toolbar btn-toolbar">
+    <ol class="nav-dots pull-left margin-top-1 margin-bottom-0 margin-left-1">
+      <li>
+          <a href="">Step 1</a>
+      </li>
+      <li>
+          <a href="">Step 2</a>
+      </li>
+      <li class="active">
+          <a href="">Step 3</a>
+      </li>
+    </ol>
+      <button class="btn btn-primary pull-right">Submit</button>
+      <button class="btn btn-default pull-right">Maybe later</button>
+  </div>
 </div>
 
 </div>
 
-<div class="pl-pattern">
-  <h3 id="buttons">Buttons</h3>
-  <p>Buttons for a wizard can vary depending on the need. The primary actions should be on the right, the secondary actions should be on the left.</p>
+  <div class="highlight">
+    <pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;popover left&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;arrow&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">&quot;popover-title&quot;</span><span class="nt">&gt;</span>Add note<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;popover-content&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;textarea</span> <span class="na">placeholder=</span><span class="s">&quot;Enter note here&quot;</span> <span class="na">class=</span><span class="s">&quot;form-control&quot;</span> <span class="na">name=</span><span class="s">&quot;&quot;</span> <span class="na">id=</span><span class="s">&quot;&quot;</span> <span class="na">rows=</span><span class="s">&quot;3&quot;</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&quot;popover-toolbar&quot;</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-hover btn-icon-only&quot;</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">&quot;icon icon-image&quot;</span><span class="nt">&gt;&lt;/i&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;sr-only&quot;</span><span class="nt">&gt;</span>Add image<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-hover btn-icon-only&quot;</span><span class="nt">&gt;&lt;i</span> <span class="na">class=</span><span class="s">&quot;icon icon-chain&quot;</span><span class="nt">&gt;&lt;/i&gt;&lt;span</span> <span class="na">class=</span><span class="s">&quot;sr-only&quot;</span><span class="nt">&gt;</span>Add link<span class="nt">&lt;/span&gt;&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">&quot;btn btn-primary pull-right&quot;</span><span class="nt">&gt;</span>Add<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+  </div>
 
-<div class="pl-preview">
-<div style="max-width: 450px; display: inline-block; width: 100%;">
-    <div class="btn-toolbar">
-        <button class="btn btn-primary pull-right">Continue</button>
-    </div>
-    <hr>
-    <div class="btn-toolbar">
-        <button class="btn btn-default">Back</button>
-        <button class="btn btn-primary pull-right">Continue</button>
-    </div>
-    <hr>
-    <div class="btn-toolbar">
-        <button class="btn btn-default">Back</button><button class="btn btn-default">Cancel</button>
-        <button class="btn btn-primary pull-right">Continue</button>
-    </div>
-    <hr>
-    <div class="btn-toolbar">
-        <button class="btn btn-default">Back</button><button class="btn btn-default">Cancel</button>
-        <button class="btn btn-primary pull-right">Continue</button>
-        <button class="btn btn-default pull-right">Save</button>
-    </div>
-    <p style="margin-top: 10px;" class="pull-right text-muted"> Last saved 09/19/14 10:45 AM</p>
-</div>
-</div>
 </div>
 
         </section>

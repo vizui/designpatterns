@@ -1,6 +1,6 @@
 ---
 title: "Tours"
-preview: true
+preview: false
 ---
 
 <div class="pl-pattern">

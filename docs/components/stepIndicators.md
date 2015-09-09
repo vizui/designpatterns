@@ -1,6 +1,6 @@
 ---
 title: "Step indicators"
-preview: true
+preview: false
 ---
 
 <div class="pl-pattern">
