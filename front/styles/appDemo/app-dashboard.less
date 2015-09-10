@@ -1,3 +1,18 @@
+/* ========================================================================
+ * Dashboard styles
+ * ======================================================================== */
+
+.aside-dashboard {
+    background-color: #FFF;
+    display: block;
+    float: left;
+    width: 225px;
+    @media (min-width: 768px) {
+		display: table-cell;
+		float: none;
+	}
+}
+
 .link-dashboards {
 	display: inline-block;
 	margin-bottom: 10px;
@@ -5,3 +20,8 @@
 		display: none;
 	}
 }
+
+.table-recentApps td:last-child {
+    white-space: nowrap;
+}
+
