@@ -45,7 +45,7 @@ layout: null
                     </div>
                     <div class="padding-2">
                         <h3 class="margin-top-0">Filing history <span class="small">for the year 2015</span></h3>
-                        <div id="balance-chart" style="overflow: hidden; height: 200px;"></div>
+                        <div class="morrisChart" id="balance-chart" style="overflow: hidden; height: 200px;"></div>
                     </div>
                     <div class="padding-2 keyline-top">
                         <h3 class="margin-top-0">Recent applications</h3>
@@ -214,10 +214,5 @@ $('.link-dashboards').click(function(e) {
     e.preventDefault();
     $('.app-sidebar').toggleClass('open');
 });
-
-
-// $(window).on('resize', function(){
-//     $('.app-sidebar').removeClass('open');
-// });
 
 </script>
