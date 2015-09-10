@@ -491,9 +491,19 @@ layout: null
 {% include appDemo/app-footerScripts.html %}
 
 <script>
-    $(window).on('resize', function(){
-        $('.app-sidebar').removeClass('open');
-        $('.btn-pgActions, .btn-displayOpts, .pager').removeClass('hide');
+    
+    var windowWidth = $(window).width();
+
+    $(window).resize(function(){        
+        if ($(window).width() != windowWidth) {
+
+            windowWidth = $(window).width();
+
+            $(window).on('resize', function(){
+                $('.app-sidebar').removeClass('open');
+                $('.btn-pgActions, .btn-displayOpts, .pager').removeClass('hide');
+            });
+        }
     });
 
 
