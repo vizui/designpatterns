@@ -26,7 +26,10 @@ layout: null
         
         <div class="main-wrapper row-grid">
                 <div class="app-sidebar filters">
-                    <form class="margin-bottom-2 margin-top-2">
+                    <form class="margin-bottom-2">
+                        <div class="filters-close">
+                            <button class="btn-closeFilters btn btn-default btn-xs" type="button"><i class="icon icon-close"></i> Close</button>
+                        </div>
                         <h4 class="filter-heading">
                                 Refine by <a href="" class="filters-clear">Clear</a>
                             </h4>
@@ -150,7 +153,7 @@ layout: null
                 <div class="col keyline-left" style="margin-left: 250px;">
                     <div class="panel-body">
                             <div class="results-header">
-                                <a class="link-filters" href="#void"><i class="icon icon-gear"></i> Refine</a>
+                                <a class="link-refine" href="#void"><i class="icon icon-gear"></i> Refine</a>
                                 <div class="pg-actions clearfix">                                
                                     <h4 class="pull-left margin-top-1"><span style="font-weight: 400">900 results for </span>application</h4>
                                     <div class="btn-pgActions btn-group">
@@ -164,13 +167,13 @@ layout: null
                                     </div>
                                 </div>
                                 <ul class="list-unstyled margin-bottom-0">
-                                    <li class="filter-value">Conveyance type: Assignment <i class="pull-right icon icon-close icon-muted"></i></li>
-                                    <li class="filter-value">Correspondent: JANE LLC <i class="pull-right icon icon-close icon-muted"></i></li>
+                                    <li class="filter-value"><span>Conveyance type: Assignment</span> <i class="icon icon-close icon-muted"></i></li>
+                                    <li class="filter-value"><span>Correspondent: JANE LLC</span> <i class="icon icon-close icon-muted"></i></li>
                                 </ul>                                
                             </div>
                             <div class="table-actions row">
                                 <div class="col-xs-6">
-                                    <a class="btn btn-link" style="display: inline-block; margin-right: 5px; position: relative; top: 5px;"><i class="icon icon-angle-right"></i> Expand/collapse all</a>
+                                    <a class="btn btn-link"><i class="icon icon-angle-right"></i> Expand/collapse all</a>
                                 </div>
                                 <div class="col-xs-6">
                                     <div class="btn-group dropdown pull-right">
@@ -488,9 +491,21 @@ layout: null
 {% include appDemo/app-footerScripts.html %}
 
 <script>
-    $('.link-filters').click(function(e) {
+    $(window).on('resize', function(){
+        $('.app-sidebar').removeClass('open');
+        $('.btn-pgActions, .btn-displayOpts, .pager').removeClass('hide');
+    });
+
+
+    $('.link-refine').click(function(e) {
         e.preventDefault();        
         $('.app-sidebar').toggleClass('open');
-        $('.btn-pgActions, .btn-displayOpts, .icon-close').toggleClass('hide');
-    });    
+        $('.btn-pgActions, .btn-displayOpts, .pager').toggleClass('hide');
+    });
+
+    $('.btn-closeFilters').click(function(e) {
+        e.preventDefault();        
+        $('.app-sidebar').removeClass('open');
+        $('.btn-pgActions, .btn-displayOpts, .pager').removeClass('hide');
+    });     
 </script>
