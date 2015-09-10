@@ -1,7 +1,11 @@
+/* ========================================================================
+ * Search results styles
+ * ======================================================================== */
+
 .input-search {
-	width: auto;
-	@media (min-width: 640px) {
-    	width: 400px;
+    width: auto;
+    @media (min-width: 640px) {
+        width: 400px;
     }
 }
 
@@ -15,30 +19,30 @@
 }
 
 .filters {
-	form {
-		margin-top: 18px;
-	}
+    form {
+        margin-top: 18px;
+    }
 }
 
 .link-refine {
     display: inline-block;
     @media (min-width: 768px) {
-    	display: none;
+        display: none;
     }
 }
 
 .filters-close {
-	border-bottom: 1px solid #f2f2f2;
-	display: block;
-	padding: 0 14px 9px;
-	text-align: center;	
-	@media (min-width: 768px) {
-    	display: none;
+    border-bottom: 1px solid #f2f2f2;
+    display: block;
+    padding: 0 14px 9px;
+    text-align: center;
+    @media (min-width: 768px) {
+        display: none;
     }
 }
 
 .btn-closeFilters {
-	margin-top: -10px;
+    margin-top: -10px;
 }
 
 .btn-pgActions {
@@ -46,28 +50,30 @@
     right: 0;
     top: -27px;
     .dropdown-menu {
-	    left: auto;
-	    right: 0;
-	}
-	
-	@media (min-width: 640px) {
-    	float: right;
-    	position: static;
+        left: auto;
+        right: 0;
+    }
+    @media (min-width: 640px) {
+        float: right;
+        position: static;
     }
 }
 
-.table-actions {
-	margin-bottom: 10px;
-	.btn-link {
-		 display: inline-block; 
-		 margin-right: 5px; 
-		 padding-left: 6px;
-		 position: relative; 
-		 top: 5px;		 
-	}
+.table-sortable .table-actions {
+    margin-bottom: 10px;
+    .btn-link {
+        display: inline-block;
+        margin-right: 5px;
+        padding-left: 6px;
+        position: relative;
+        top: 5px;
+    }
 }
 
 .table-searchResults {
+    & > thead > tr > .sortable:hover {
+        background-color: #666;
+    }
     th {
         white-space: nowrap;
     }
