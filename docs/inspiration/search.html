@@ -26,7 +26,7 @@ layout: null
         
         <div class="main-wrapper row-grid">
                 <div class="app-sidebar filters">
-                    <form class="margin-bottom-2">
+                    <form>
                         <div class="filters-close">
                             <button class="btn-closeFilters btn btn-default btn-xs" type="button"><i class="icon icon-close"></i> Close</button>
                         </div>
@@ -153,7 +153,7 @@ layout: null
                 <div class="col keyline-left" style="margin-left: 250px;">
                     <div class="panel-body">
                             <div class="results-header">
-                                <a class="link-refine" href="#void"><i class="icon icon-gear"></i> Refine</a>
+                                <a class="link-sidebar" href="#void"><i class="icon icon-gear"></i> Refine</a>
                                 <div class="pg-actions clearfix">                                
                                     <h4 class="pull-left margin-top-1"><span style="font-weight: 400">900 results for </span>application</h4>
                                     <div class="btn-pgActions btn-group">
@@ -505,7 +505,7 @@ layout: null
     });
 
 
-    $('.link-refine').click(function(e) {
+    $('.link-sidebar').click(function(e) {
         e.preventDefault();        
         $('.app-sidebar').toggleClass('open');
         $('.btn-pgActions, .btn-displayOpts, .pager').toggleClass('hide');

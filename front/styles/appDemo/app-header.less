@@ -1,3 +1,7 @@
+/* ========================================================================
+ * Application header/banner styles
+ * ======================================================================== */
+
 /* Fluid and fixed width content sizing and media queries. Matches Bootstrap 3.0 breakpoints */
 
 // .app-header {
@@ -245,6 +249,9 @@
              background: rgba(255, 255, 255, 0.05) none repeat scroll 0 0;
              padding: 6px;
              width: 3em;
+             &:active:focus {
+                background-color: #666;
+             }
         }        
         .icon.icon-search::after {
             background-image: url("../images/icons/white.svg");
