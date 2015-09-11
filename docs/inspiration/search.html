@@ -27,8 +27,8 @@ layout: null
         <div class="main-wrapper row-grid">
                 <div class="app-sidebar filters">
                     <form>
-                        <div class="filters-close">
-                            <button class="btn-closeFilters btn btn-default btn-xs" type="button"><i class="icon icon-close"></i> Close</button>
+                        <div class="close-sidebar keyline-bottom clearfix">
+                            <button class="btn-closeSidebar pull-right btn btn-sm btn-default btn-hover"><i class="icon icon-angle-double-left"></i> <span class="sr-only">Hide sidebar</span></button>
                         </div>
                         <h4 class="filter-heading">
                                 Refine by <a href="" class="filters-clear">Clear</a>
@@ -511,7 +511,7 @@ layout: null
         $('.btn-pgActions, .btn-displayOpts, .pager').toggleClass('hide');
     });
 
-    $('.btn-closeFilters').click(function(e) {
+    $('.btn-closeSidebar').click(function(e) {
         e.preventDefault();        
         $('.app-sidebar').removeClass('open');
         $('.btn-pgActions, .btn-displayOpts, .pager').removeClass('hide');

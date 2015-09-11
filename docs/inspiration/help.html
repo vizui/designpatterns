@@ -9,7 +9,9 @@ hidden: false
 <main class="container-full container-switch container">
     <div class="main-wrapper row-grid">
         <nav class="app-sidebar help-topics">
-            <!-- <a class="link-closeSidebar" href="#void">Close</a> -->
+            <div class="close-sidebar keyline-bottom clearfix">
+                <button class="btn-closeSidebar pull-right btn btn-sm btn-default btn-hover"><i class="icon icon-angle-double-left"></i> <span class="sr-only">Hide sidebar</span></button>
+            </div>
             <ul role="tab-list" class="nav nav-stacked nav-tree">
                 <li class="category" role="presentation">General</li>                
                 <li role="presentation"><button class="expander expanded"></button> <a href="#" role="tab">Dashboard</a>
@@ -166,6 +168,12 @@ hidden: false
         e.preventDefault();        
         $('.app-sidebar').toggleClass('open'); 
         $('.link-top').addClass('hide');
+    });
+
+    $('.btn-closeSidebar').click(function(e) {
+        e.preventDefault();        
+        $('.app-sidebar').removeClass('open');
+        $('.link-top').removeClass('hide');
     });
 
     $('.btn-fixed, .btn-fluid').addClass('hide');
