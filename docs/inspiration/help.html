@@ -37,7 +37,7 @@ hidden: false
             <div class="row-grid">
                 <div class="main-content col keyline-left">
                     <div class="padding-2 keyline-bottom clearfix">
-                    <a class="link-sidebar" href="#void"><i class="icon icon-columns"></i> Topics</a>
+                    <a class="link-sidebar" href="#void"><i class="icon icon-columns"></i>Topics</a>
                         <div class="pull-left">
                             <a id="#top"></a>
                             <ol class="breadcrumb">
@@ -108,6 +108,19 @@ hidden: false
 
                     
                 </div>                
+                <aside class="aside padding-2 keyline-left">                    
+                    <h3 class="margin-top-0">Help center</h3>
+                    <h4 class="h6 text-uppercase text-muted">Resources</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="">Integrating Foster Analytics</a></li>
+                        <li><a href="">Instructional videos</a></li>
+                    </ul>
+                    <h4 class="h6 text-uppercase text-muted"><abbr title="Frequently Asked Questions">Faq</abbr></h4>
+                    <ul class="list-unstyled">
+                        <li><a href="">What is a L-chart?</a></li>
+                        <li><a href="">How do I change a report theme?</a></li>
+                    </ul>                                
+                </aside>
             </div>
         </div>
     </div>    
@@ -145,12 +158,15 @@ hidden: false
             windowWidth = $(window).width();
 
             $('.app-sidebar').removeClass('open');
-
+            $('.link-top').removeClass('hide');
         }
     });
 
     $('.link-sidebar').click(function(e) {
         e.preventDefault();        
-        $('.app-sidebar').toggleClass('open');    
+        $('.app-sidebar').toggleClass('open'); 
+        $('.link-top').addClass('hide');
     });
+
+    $('.btn-fixed, .btn-fluid').addClass('hide');
 </script>
