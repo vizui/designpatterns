@@ -52,4 +52,36 @@
         e.preventDefault();
         $(id).focus();
     });
+
+    function resizeTabNav() {
+
+        if (window.matchMedia('(min-width: 640px)').matches) {
+            $('.nav-settings').find('.dropdown-menu').toggleClass('dropdown-menu nav nav-tabs');
+            $('.nav-settings').find('.btn').addClass('hide');
+        } else {
+            $('.nav-settings').find('.nav-tabs').toggleClass('dropdown-menu nav nav-tabs');
+            $('.nav-settings').find('.btn').removeClass('hide');
+        }
+    }
+
+    function resizedWindow() {
+
+        var windowWidth = $(window).width();
+
+        window.onresize = function() {
+
+            if ($(window).width() !== windowWidth) {
+
+                windowWidth = $(window).width();
+
+                resizeTabNav();
+            }
+
+        };
+    }
+
+    if ($('#modal-appSettings').length > 0) {
+        resizeTabNav();
+        resizedWindow();
+    }
 })();
