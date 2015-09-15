@@ -152,17 +152,17 @@ hidden: false
       resize: true
     });
 
-    // var windowWidth = $(window).width();
+    var windowWidth = $(window).width();
 
-    // $(window).resize(function(){        
-    //     if ($(window).width() != windowWidth) {
+    $(window).resize(function(){        
+        if ($(window).width() != windowWidth) {
 
-    //         windowWidth = $(window).width();
+            windowWidth = $(window).width();
 
-    //         $('.app-sidebar').removeClass('open');
-    //         $('.link-top').removeClass('hide');
-    //     }
-    // });
+            $('.app-sidebar').removeClass('open');
+            $('.link-top').removeClass('hide');
+        }
+    });
 
     $('.link-sidebar').click(function(e) {
         e.preventDefault();        
