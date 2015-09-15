@@ -5,34 +5,43 @@
     vertical-align: top;
     width: 0;
     &.open {
-        &+.col {
-            overflow: hidden;
-            text-overflow: clip;
-            white-space: nowrap;
-        }
+        width: 305px;
+        // &+.col {
+        //     overflow: hidden;
+        //     text-overflow: clip;
+        //     white-space: nowrap;
+        // }
     }
     &.dashboards, &.help-topics {
-        &.open {
-            width: 175px;
-        }
+        // &.open {
+        //     width: 175px;
+        // }
         @media (min-width: 768px) {
             width: 175px;
         }
     }
-    &.userSettings {
-        &.open {
-            width: 200px;
-        }
+    &.userSettings, &.master-list {
+        // &.open {
+        //     width: 200px;
+        // }
         @media (min-width: 768px) {
             width: 200px;
         }
     }
     &.filters {
-        &.open {
-            width: 250px;
-        }
+        // &.open {
+        //     width: 250px;
+        // }
         @media (min-width: 768px) {
             width: 250px;
+        }
+    }
+    &.master-list {
+        // &.open {
+        //     width: 200px;
+        // }
+        @media (min-width: 768px) {
+            width: 350px;
         }
     }
 }

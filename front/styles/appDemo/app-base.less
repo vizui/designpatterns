@@ -60,3 +60,35 @@ main {
 abbr[title], abbr[data-original-title] {
     border-bottom-width: 0;
 }
+
+.pg-header {
+    padding: 18px 9px 9px;
+    h2 {
+        float: none;
+        margin: 0 0 5px;
+        small {
+            color: #808080;
+            display: block;
+            font-weight: 400;
+            margin: 3px 0 0; 
+        }
+    }
+    .actions, .share {
+        margin: 10px 0 15px;
+    }
+    @media (min-width: 768px) {
+        h2 {
+            float: left;
+        }
+        .actions, .share {
+            float: right;            
+        }
+        .share {
+            margin: 0;            
+        }
+    }
+}
+
+.pg-actions {
+    position: relative;
+}
