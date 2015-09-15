@@ -1,0 +1,155 @@
+---
+title: "Favorites"
+layout: null
+---
+{% include appDemo/app-head.html title="Search" fluid="true" %}
+
+    {% include appDemo/appHeader.html %}
+    <main class="container-fluid container-full container-switch">
+    <div class="panel panel-default" style="display: inline-block; width: 100%; border-radius: 0; border-top: none; border-left: none; border-right: none; box-shadow: none;">
+        <div class="keyline-bottom" style="background: #f4f4f4;">
+            <div class="container-fluid">
+                <div class="pg-header clearfix">
+                    <h2>Favorites</h2>
+                    <div class="share">
+                        <button class="btn btn-default btn-hover"><i class="icon icon-share"></i> Share</button>
+                        <button class="btn btn-default btn-hover"><i class="icon icon-download"></i> Export</button>
+                        <button class="btn btn-default btn-hover"><i class="icon icon-cog"></i> Tools <span class="caret"></span></button>
+                    </div>                    
+                </div>
+            </div>
+        </div>
+        <form class="filters filters-horizontal keyline-bottom">
+                    <button class="btn btn-default btn-hover">
+                        4/01/2014 - 5/01/2014 <span class="caret"></span>
+                    </button>
+                    <button class="btn btn-default btn-hover">
+                        Type <span class="caret"></span>
+                    </button>
+                    <button class="btn btn-default btn-hover">
+                        Status <span class="caret"></span>
+                    </button>
+                    <button class="btn btn-default btn-hover">
+                        Clear
+                    </button>
+               </form>
+        <div class="main-wrapper row-grid">
+                <div class="app-sidebar master-list">
+                <div class="close-sidebar clearfix">
+                    <button class="btn-closeSidebar pull-right btn btn-sm btn-default btn-hover"><i class="icon icon-angle-double-left"></i> Close</button>
+                </div>
+                    <table class="table-masterList table table-comfortable margin-bottom-0 table-striped">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#void"><i class="icon icon-bug margin-right-1"></i>PE2E-15</a>
+                                    <p class="desc">Update technical data</p>
+                                </td>
+                            </tr>
+                            <tr class="active">
+                                <td>
+                                    <a href="#void"><i class="icon icon-lightbulb-o margin-right-1"></i>PE2E-16</a>
+                                    <p class="desc">Permit for testing on public land</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#void"><i class="icon icon-question margin-right-1"></i>PE2E-17</a>
+                                    <p class="desc">Addendum to Code 83.1a</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#void"><i class="icon icon-bug margin-right-1"></i>PE2E-18</a>
+                                    <p class="desc">Request for evaluation</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#void"><i class="icon icon-lightbulb-o margin-right-1"></i>PE2E-19</a>
+                                    <p class="desc">Request for change of ownership</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#void"><i class="icon icon-question margin-right-1"></i>PE2E-20</a>
+                                    <p class="desc">New development within private bandwidth</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col keyline-left">
+                    <div class="panel-body">
+                            <div class="results-header">
+                                <a class="link-sidebar" href="#void"><i class="icon icon-gear"></i>Refine</a>
+                                <div class="pg-actions clearfix">                                
+                                    <h3 class="h2 pull-left margin-top-1">PE2E-16 - Permit for testing on public land</h3>
+                                    <div class="btn-pgActions btn-group">
+                                        <button id="btn-pgActions" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actions <span class="caret"></span></button>
+                                        <ul class="dropdown-menu" aria-labelledby="btn-pgActions">
+                                            <li role="presentation"><a href="#">Print</a></li>
+                                            <li role="separator" class="divider"></li>
+                                            <li role="presentation"><a href="#">Download Excel</a></li>
+                                            <li role="presentation"><a href="#">Download CSV</a></li>                                                                                
+                                        </ul>
+                                    </div>                                    
+                                </div>
+                                <dl class="dl-inline clearfix margin-bottom-0">
+                                    <dt>Created</dt>
+                                    <dd>May 3, 2015</dd>
+                                    <dt>Views</dt>
+                                    <dd>1,662</dd>
+                                    <dt>Status</dt>
+                                    <dd><span class="label label-success subtle">Submitted</span></dd>
+                                    <dt>Type</dt>
+                                    <dd>Feature</dd>
+                                </dl>
+                            </div>
+                            <hr>
+                            <h4 class="h3 margin-top-0">Testing on Public Land (TOPL)</h4>
+                            <p>The Testing on Public Land (TOPL) system provides customers a safe, simple, and secure way to test and evaluate products in development for future product approval.</p>
+                            <p><a href="">Visit TOPL</a></p>
+                            
+                            <h5 class="h6 text-uppercase text-muted margin-top-4">Attachments</h5>
+                            <ul class="list-unstyled margin-top-1 margin-bottom-1">
+                                <li class="padding-top-1"><a href=""><i class="icon icon-file-image-o margin-right-1"></i>product-interface.jpeg</a></li>
+                                <li class="padding-top-1"><a href=""><i class="icon icon-file-movie-o margin-right-1"></i>product-noiseEmission.mp4</a></li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+    </div>
+</main>
+
+
+
+{% include appDemo/app-footerScripts.html %}
+
+<script>
+    
+    var windowWidth = $(window).width();
+
+    $(window).resize(function(){
+        if ($(window).width() !== windowWidth) {
+
+            windowWidth = $(window).width();
+
+            $('.app-sidebar').removeClass('open');
+            $('.btn-pgActions, .btn-displayOpts, .pager').removeClass('hide');
+        }
+    });
+
+
+    $('.link-sidebar').click(function(e) {
+        e.preventDefault();        
+        $('.app-sidebar').toggleClass('open');
+        $('.btn-pgActions, .btn-displayOpts, .pager').toggleClass('hide');
+    });
+
+    $('.btn-closeSidebar').click(function(e) {
+        e.preventDefault();        
+        $('.app-sidebar').removeClass('open');
+        $('.btn-pgActions, .btn-displayOpts, .pager').removeClass('hide');
+    });     
+</script>
