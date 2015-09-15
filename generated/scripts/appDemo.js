@@ -42,10 +42,11 @@
     });
 
     /* Create Account terms agreement button */
-    $('.btn-primary').click(function() {
+    $('.form-createAcct').find('.btn-primary').click(function() {
         location.href = 'createAcct-step2.html';
     });
 
+    /* Create Account jump to error field */
     $('.link-errField').click(function(e) {
         var id = $(this).attr('href');
 
@@ -53,6 +54,7 @@
         $(id).focus();
     });
 
+    /* Settings modal responsive tabs */
     function resizeTabNav() {
 
         if (window.matchMedia('(min-width: 640px)').matches) {
