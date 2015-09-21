@@ -4,6 +4,10 @@
 
 .table-masterList {
     table-layout: fixed;
+    td:last-child {
+        text-align: center;
+        width: 35px;
+    }
     a {
     	font-weight: 600;
     }
@@ -15,5 +19,21 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        &:hover { 
+            overflow: visible;
+            white-space: normal;
+        }
+    }
+}
+
+.btn-favActions {
+    float: none;
+    margin-bottom: 10px;
+    @media (min-width: 768px) {
+        float: right;
+        .dropdown-menu {
+            left: auto;
+            right: 0;
+        }
     }
 }
