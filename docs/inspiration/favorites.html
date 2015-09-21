@@ -10,7 +10,7 @@ layout: null
         <div class="keyline-bottom" style="background: #f4f4f4;">
             <div class="container-fluid">
                 <div class="pg-header clearfix">
-                    <h2>Saved applications</h2>
+                    <h2>Favorites <small class="h5">Saved applications</small></h2>                    
                     <div class="share">
                         <button class="btn btn-default btn-hover"><i class="icon icon-share"></i> Share</button>
                         <button class="btn btn-default btn-hover"><i class="icon icon-download"></i> Export</button>
@@ -34,47 +34,65 @@ layout: null
                     </button>
                </form>
         <div class="main-wrapper row-grid">
-                <div class="app-sidebar master-list open">
+                <div class="app-sidebar master-list">
                 <div class="close-sidebar clearfix">
                     <button class="btn-closeSidebar pull-right btn btn-sm btn-default btn-hover"><i class="icon icon-angle-double-left"></i> Close</button>
                 </div>
-                    <table class="table-masterList table table-comfortable margin-bottom-0 table-striped">
+                    <table class="table-masterList table table-comfortable table-hover table-striped margin-bottom-0">
                         <tbody>
                             
                             <tr class="active">
                                 <td>
-                                    <a href="#void"><i class="icon icon-lightbulb-o margin-right-1"></i>PE2E-16</a>
+                                    <a href="#void"><i class="icon icon-lightbulb-o margin-right-1"></i>AMAN-16</a>
                                     <p class="desc">Permit for testing on public land</p>
                                 </td>
+                                <td>
+                                    <a href="#void" title="Remove" data-toggle="tooltip" data-placement="top"><i class="icon icon-remove"></i></a>
+                                </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#void"><i class="icon icon-question margin-right-1"></i>PE2E-17</a>
+                                    <a href="#void"><i class="icon icon-question margin-right-1"></i>AMAN-17</a>
                                     <p class="desc">Addendum to Code 83.1a</p>
                                 </td>
+                                <td>
+                                    <a href="#void" title="Remove" data-toggle="tooltip" data-placement="top"><i class="icon icon-remove"></i></a>
+                                </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#void"><i class="icon icon-bug margin-right-1"></i>PE2E-18</a>
+                                    <a href="#void"><i class="icon icon-bug margin-right-1"></i>AMAN-18</a>
                                     <p class="desc">Request for evaluation</p>
                                 </td>
+                                <td>
+                                    <a href="#void" title="Remove" data-toggle="tooltip" data-placement="top"><i class="icon icon-remove"></i></a>
+                                </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#void"><i class="icon icon-lightbulb-o margin-right-1"></i>PE2E-19</a>
+                                    <a href="#void"><i class="icon icon-lightbulb-o margin-right-1"></i>AMAN-19</a>
                                     <p class="desc">Request for change of ownership</p>
                                 </td>
-                            </tr>
-                            <tr>
                                 <td>
-                                    <a href="#void"><i class="icon icon-question margin-right-1"></i>PE2E-20</a>
-                                    <p class="desc">New development within private bandwidth</p>
+                                    <a href="#void" title="Remove" data-toggle="tooltip" data-placement="top"><i class="icon icon-remove"></i></a>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <a href="#void"><i class="icon icon-bug margin-right-1"></i>PE2E-18</a>
+                                    <a href="#void"><i class="icon icon-question margin-right-1"></i>AMAN-20</a>
+                                    <p class="desc">New development within private bandwidth</p>
+                                </td>
+                                <td>
+                                    <a href="#void" title="Remove" data-toggle="tooltip" data-placement="top"><i class="icon icon-remove"></i></a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#void"><i class="icon icon-bug margin-right-1"></i>AMAN-18</a>
                                     <p class="desc">Update technical data</p>
+                                </td>
+                                <td>
+                                    <a href="#void" title="Remove" data-toggle="tooltip" data-placement="top"><i class="icon icon-remove"></i></a>
                                 </td>
                             </tr>
                         </tbody>
@@ -83,17 +101,19 @@ layout: null
                 <div class="col keyline-left">
                     <div class="panel-body">
                             <div class="results-header">
-                                <a class="link-sidebar" href="#void"><i class="icon icon-gear"></i>Application List</a>
-                                <div class="pg-actions clearfix">                                
-                                    <h3 class="h2 pull-left margin-top-1">PE2E-16 - Permit for testing on public land</h3>
-                                    <div class="btn-pgActions btn-group hide">
-                                        <button id="btn-pgActions" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actions <span class="caret"></span></button>
-                                        <ul class="dropdown-menu" aria-labelledby="btn-pgActions">
-                                            <li role="presentation"><a href="#">Print</a></li>
-                                            <li role="separator" class="divider"></li>
-                                            <li role="presentation"><a href="#">Download PDF</a></li>
-                                            <li role="presentation"><a href="#">Download DOC</a></li>                                                                                
-                                        </ul>
+                                <a class="link-sidebar" href="#void"><i class="icon icon-gear"></i>Saved applications</a>
+                                <div class="row">                                
+                                    <div class="col-sm-9"><h3 class="h2 margin-top-1">AMAN-16 - Permit for testing on public land</h3></div>
+                                    <div class="col-sm-3">
+                                        <div class="btn-group btn-favActions">
+                                            <button id="btn-pgActions" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actions <span class="caret"></span></button>
+                                            <ul class="dropdown-menu" aria-labelledby="btn-pgActions">
+                                                <li role="presentation"><a href="#">Print</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li role="presentation"><a href="#">Download PDF</a></li>
+                                                <li role="presentation"><a href="#">Download DOC</a></li>                                                                                
+                                            </ul>
+                                        </div>
                                     </div>                                    
                                 </div>
                                 <dl class="dl-inline clearfix margin-bottom-0">
@@ -111,12 +131,14 @@ layout: null
                             <h4 class="h3 margin-top-0">Testing on Public Land (TOPL)</h4>
                             <p>The Testing on Public Land (TOPL) system provides customers a safe, simple, and secure way to test and evaluate products in development for future product approval.</p>
                             <p><a href="">Visit TOPL</a></p>
-                            
-                            <h5 class="h6 text-uppercase text-muted margin-top-4">Attachments</h5>
+                            <hr>
+                            <h5 class="h6 text-uppercase text-muted margin-top-0">Attachments</h5>
                             <ul class="list-unstyled margin-top-1 margin-bottom-1">
                                 <li class="padding-top-1"><a href=""><i class="icon icon-file-image-o margin-right-1"></i>product-interface.jpeg</a></li>
                                 <li class="padding-top-1"><a href=""><i class="icon icon-file-movie-o margin-right-1"></i>product-noiseEmission.mp4</a></li>
                             </ul>
+                            <hr>
+                            <embed src="../../generated/pdfs/brochure_05.pdf" width="100%" height="500" alt="pdf" pluginspage="http://www.adobe.com/products/acrobat/readstep2.html">
                         </div>
                 </div>
             </div>
@@ -130,6 +152,8 @@ layout: null
 <script>
     
     var windowWidth = $(window).width();
+
+
 
     $(window).resize(function(){
         if ($(window).width() !== windowWidth) {
@@ -152,5 +176,10 @@ layout: null
         e.preventDefault();        
         $('.app-sidebar').removeClass('open');
         $('.btn-pgActions, .btn-displayOpts, .pager').removeClass('hide');
-    });     
+    });    
+
+    if (windowWidth < 768) {
+         $('.link-sidebar').click();
+         console.log(windowWidth);
+    } 
 </script>
