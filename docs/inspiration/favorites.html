@@ -2,7 +2,7 @@
 title: "Favorites"
 layout: null
 ---
-{% include appDemo/app-head.html title="Search" fluid="true" %}
+{% include appDemo/app-head.html title="Favorites" fluid="true" %}
 
     {% include appDemo/appHeader.html %}
     <main class="container-fluid container-full container-switch">
@@ -138,7 +138,7 @@ layout: null
                                 <li class="padding-top-1"><a href=""><i class="icon icon-file-movie-o margin-right-1"></i>product-noiseEmission.mp4</a></li>
                             </ul>
                             <hr>
-                            <iframe class="iframe-pdf" src="http://docs.google.com/gview?url=http://www.uspto.gov/web/offices/com/iip/pdf/brochure_05.pdf&embedded=true" frameborder="0"></iframe>
+                            <iframe class="iframe-pdf" frameborder="0"></iframe>
                         </div>
                 </div>
             </div>
@@ -150,10 +150,7 @@ layout: null
 {% include appDemo/app-footerScripts.html %}
 
 <script>
-    
     var windowWidth = $(window).width();
-
-
 
     $(window).resize(function(){
         if ($(window).width() !== windowWidth) {
@@ -181,4 +178,6 @@ layout: null
     if (windowWidth < 768) {
          $('.link-sidebar').click();
     } 
+
+    $('.iframe-pdf').attr('src', 'http://docs.google.com/gview?url=http://www.uspto.gov/web/offices/com/iip/pdf/brochure_05.pdf&embedded=true');
 </script>
