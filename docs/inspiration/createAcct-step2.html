@@ -57,8 +57,8 @@ hidden: true
                 <div class="form-group has-error">
                     <label class="control-label col-sm-3 required" for="fn12">First name</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control form-control-width-md" id="fn12" required aria-required="true">
-                        <span class="help-block">This field is required.</span>
+                        <input type="text" class="form-control form-control-width-md" id="fn12" required aria-required="true" aria-describedby="help-fn">
+                        <span id="help-fn" class="help-block">This field is required.</span>
                     </div>
                 </div>
                 <div class="form-group">
@@ -76,9 +76,9 @@ hidden: true
                 <div class="form-group has-error">
                     <label class="control-label col-sm-3 required" for="phone12">Phone number</label>
                     <div class="col-sm-9">
-                        <input type="text" class="form-control form-control-width-md" id="phone12" required aria-required="true" aria-describedby="help-phone" data-inputmask="'mask': '999-999-9999', 'placeholder': 'ˍ'">
+                        <input type="text" class="form-control form-control-width-md" id="phone12" required aria-required="true" aria-describedby="help-phone help-phoneErr" data-inputmask="'mask': '999-999-9999', 'placeholder': 'ˍ'">
                         <span id="help-phone" class="help-block">(format: 202-999-9999)</span>
-                        <span class="help-block">This field is required.</span>
+                        <span id="help-phoneErr" class="help-block">This field is required.</span>
                     </div>
                 </div>
                 <div class="form-group">
