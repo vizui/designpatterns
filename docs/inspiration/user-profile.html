@@ -30,12 +30,12 @@ layout: null
                 </div>
                 <ul role="tab-list" class="nav nav-stacked ">
                     <li class="category" role="presentation">General</li>
-                    <li role="presentation" class="active"><a href="#" role="tab">Projects</a></li>
-                    <li role="presentation"><a href="#" role="tab">Deployments</a></li>
-                    <li role="presentation"><a href="#" role="tab">Billing</a></li>
+                    <li role="presentation" class="active"><a href="#" role="tab">System sources</a></li>
+                    <li role="presentation"><a href="#" role="tab">Reports</a></li>
+                    <li role="presentation"><a href="#" role="tab">Favorites</a></li>
                     <li class="category" role="presentation">System</li>
                     <li role="presentation"><a href="#" role="tab">Notifications</a></li>
-                    <li role="presentation"><a href="#" role="tab">Emails</a></li>
+                    <li role="presentation"><a href="#" role="tab">API Manager</a></li>
                     <li role="presentation"><a href="#" role="tab">SSH keys</a></li>
                 </ul>
             </div>
@@ -43,7 +43,7 @@ layout: null
                 <div class="panel-body">
                     <a href="#void" class="link-sidebar"><i class="icon icon-columns"></i>Settings</a>
                     <div class="clearfix" style="margin-bottom: 10px;">
-                        <h3 class="h4" style="margin-top: 6px; float: left;">Projects</h3>
+                        <h3 class="h4" style="margin-top: 6px; float: left;">System sources</h3>
                         <ul role="tablist" style="margin-left: 8px;" class="nav nav-pills pull-left">
                             <li class="active"><a data-toggle="tab" role="tab" href="#">Active</a></li>
                             <li><a data-toggle="tab" role="tab" href="#">Completed</a></li>
@@ -63,45 +63,45 @@ layout: null
                             <thead>
                                 <tr>
                                     <th style="width: 28px;">
-                                        <input type="checkbox" indeterminate="">
+                                        <input type="checkbox" indeterminate="" title="Select all rows">
                                     </th>
-                                    <th>Project name</th>
+                                    <th>System</th>
                                     <th>Description</th>
-                                    <th>Fees</th>
+                                    <th>Role</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
                                     <td>
-                                        <input type="checkbox">
+                                        <input type="checkbox" title="Select row">
                                     </td>
                                     <td>Payments</td>
                                     <td><span>Process payments using third party api</span></td>
-                                    <td><span>$5,400</span></td>
+                                    <td>Admin</td>
                                 </tr>
                                 <tr class="info">
                                     <td>
-                                        <input type="checkbox" checked="">
+                                        <input type="checkbox" checked="" title="Select row">
                                     </td>
                                     <td>Invoice</td>
                                     <td><span>Add attachments confirmation</span></td>
-                                    <td><span>$4,500</span></td>
+                                    <td>Subscriber</td>
                                 </tr>
                                 <tr class="info">
                                     <td>
-                                        <input type="checkbox" checked="">
+                                        <input type="checkbox" checked="" title="Select row">
                                     </td>
                                     <td>Templates</td>
                                     <td><span>Refactor reports to use the new reports library</span></td>
-                                    <td><span>$9,000</span></td>
+                                    <td>Super Admin</td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        <input type="checkbox" disabled="">
+                                        <input type="checkbox" disabled="" title="Select row">
                                     </td>
                                     <td>Application Management</td>
                                     <td><span>Improve application management workflow</span></td>
-                                    <td><span>$6,000</span></td>
+                                    <td>Subscriber</td>
                                 </tr>
                             </tbody>
                         </table>
