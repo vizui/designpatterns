@@ -2,16 +2,6 @@
  * Application header/banner styles
  * ======================================================================== */
 
-/* Fluid and fixed width content sizing and media queries. Matches Bootstrap 3.0 breakpoints */
-
-// .app-header {
-//     min-height: 120px;
-//     position: relative;
-//     @media (min-width: 640px) {
-//         min-height: auto;
-//     }
-// }
-
 .uspto-container {
     margin-right: auto;
     margin-left: auto;
@@ -46,10 +36,14 @@
 }
 
 .navbar-brand {
+    font-size: 15px;
     font-weight: 600;
     small {
         color: #FFF;
         margin-left: 5px;
+    }
+    @media (min-width: 360px) {
+        font-size: 17px;
     }
 }
 
@@ -65,22 +59,6 @@
 
 /* reset */
 
-// .uspto-header {
-//     font-family: "Segoe UI", "Helvetica Neue", sans-serif;
-// }
-
-
-/* Top header */
-// .navbar-brand {
-//     font-size: 14px;
-// }
-
-// @media (min-width: 768px) {
-//     .navbar-brand {
-//         font-size: 17px;
-//     }
-// }
-
 .uspto-header__top {
     background-color: #323232;
     padding: 8px 0;
@@ -90,8 +68,7 @@
     height: 23px;
     width: 66px;
     float: left;
-    margin-left: 0;
-    margin-right: 10px;
+    margin: -1px 10px 0 0;
 }
 
 .uspto-header__top__links {
@@ -161,10 +138,7 @@
 }
 
 .ex-sub-header--gadgets {
-    float: left;
-     // @media (min-width: 640px) { 
-     //    float: left;
-     // }
+    float: left;     
 }
 
 .ex-sub-header--gadgets .btn {
@@ -189,54 +163,6 @@
         display: none;
     }
 }
-
-// .search {    
-//     background-color: #f2f2f2;
-//     bottom: 0;
-//     left: 0;
-//     position: absolute;
-//     text-align: center;
-//     width: 100%;
-
-//     input {
-//         background-color: #fff;
-//         border: 1px solid #ccc;
-//     } 
-//     .btn-search {
-//         width: 3em;
-//     }
-
-//     @media (min-width: 640px) {
-//         background-color: transparent;
-//         float: right;
-//         padding: 0;
-//         position: static;
-//         text-align: right;
-//         width: auto;
-//         .btn-search {
-//              .ex-btn__inverse();
-//              background: rgba(255, 255, 255, 0.05) none repeat scroll 0 0;
-//              padding: 6px
-             
-//         }
-//         .icon.icon-search::after {
-//             background-image: url("../images/icons/white.svg");
-//         }
-//     }
-// }
-
-// .pg-search {
-//     min-height: auto;
-//     .search {
-//         display: none;
-//     }
-// }
-
-// @media (min-width: 640px) {
-//     .ex-sub-header .search {
-//         float: right;
-//     }
-// }
 
 .search {
     display: none;
@@ -308,7 +234,6 @@
     background: rgba(0, 0, 0, .5);
     display: inline-block;
     width: 200px;
-    // margin-top: 4px;
     height: 30px;
     padding: 5px 12px;
     padding-right: 28px;
@@ -330,20 +255,6 @@
     margin-left: 8px;
 }
 
-// .sect-header {
-//     .sect-heading {
-//         float: left;
-//         font-size: 28px;
-//         margin: 0;
-//         small {
-//             display: block;
-//             font-size: 16px;
-//             margin: 0;
-//             font-weight: 400;
-//             color: #808080;
-//         }
-//     }
-// }
 .btn-fixed, .btn-fluid {
     display: none;
     @media (min-width: 768px) {
