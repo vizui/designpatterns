@@ -116,7 +116,7 @@ abbr[data-original-title] {
 }
 .navbar-brand small {
   color: #FFF;
-  margin-left: 5px;
+  margin-left: 3px;
 }
 @media (min-width: 360px) {
   .navbar-brand {
