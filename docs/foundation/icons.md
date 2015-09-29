@@ -25,6 +25,21 @@ title: "Icons"
 </div>
 {:/nomarkdown}
 
+#### Icon Colors
+{::nomarkdown}
+<div class="row" style="max-width: 800px;">
+<div class="col-xs-12">You can change the color of an icon by utilizing the following CSS classes:</div>
+<div class="col-xs-12">&nbsp;</div>
+<div class="col-xs-6 col-sm-4 col-md-2 text-center"><i class="icon icon-cloud icon-color-primary"></i><div>Primary</div><div class="text-muted">.icon-color-primary</div></div>
+<div class="col-xs-6 col-sm-4 col-md-2 text-center"><i class="icon icon-bell icon-color-info"></i><div>Info</div><div class="text-muted">.icon-color-info</div></div>
+<div class="col-xs-6 col-sm-4 col-md-2 text-center"><i class="icon icon-check-circle icon-color-success"></i><div>Success</div><div class="text-muted">.icon-color-success</div></div>
+<div class="col-xs-6 col-sm-4 col-md-2 text-center"><i class="icon icon-warning icon-color-warning"></i><div>Warning</div><div class="text-muted">.icon-color-warning</div></div>
+<div class="col-xs-6 col-sm-4 col-md-2 text-center"><i class="icon icon-exclamation icon-color-danger"></i><div>Danger</div><div class="text-muted">.icon-color-danger</div></div>
+<div class="col-xs-12">&nbsp;</div>
+<div class="col-xs-12 em">Note:<span class="text-muted"> Use either a colored circle with a white icon, or a colored icon; not both together.</span></div>
+</div>
+{:/nomarkdown}
+
 #### Sizes
 - Icons can vary in size
 - When scaling icons, ensure the sizes used appear sharp on standard and high DPI screens
