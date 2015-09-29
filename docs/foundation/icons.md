@@ -4,7 +4,7 @@ title: "Icons"
 <div class="pl-pattern">
 ### Overview
 
-#### Colors
+#### System icons
 
 {::nomarkdown}
 <div class="row" style="max-width: 800px;">
@@ -25,7 +25,7 @@ title: "Icons"
 </div>
 {:/nomarkdown}
 
-#### Icon Colors
+#### Icon colors
 {::nomarkdown}
 <div class="row" style="max-width: 800px;">
 <div class="col-xs-12">You can change the color of an icon by utilizing the following CSS classes:</div>
