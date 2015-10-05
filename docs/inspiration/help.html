@@ -4,11 +4,18 @@ layout: null
 preview: true
 ---
 {% include appDemo/app-head.html  title="Help" %}
+
+<div class="skipLinks alert-info">
+   <a class="sr-only focusable" href="#main">Skip to main content</a>
+   <a class="sr-only focusable" href="#contentNav">Skip to content navigation</a>
+   <a class="sr-only focusable" href="#supportInfo">Skip to supporting information</a>   
+</div>
 {% include appDemo/appHeader.html %}   
 
 <main class="container-full container-switch container">
     <div class="main-wrapper row-grid">
         <nav class="app-sidebar help-topics">
+            <a id="contentNav" tabindex="-1"></a>
             <div class="close-sidebar keyline-bottom clearfix">
                 <button class="btn-closeSidebar pull-right btn btn-sm btn-default btn-hover"><i class="icon icon-angle-double-left"></i> Close</button>
             </div>
@@ -38,6 +45,7 @@ preview: true
         <div class="col">
             <div class="row-grid">
                 <div class="main-content col keyline-left">
+                    <a id="main" tabindex="-1"></a>
                     <div class="padding-2 keyline-bottom clearfix">
                     <a class="link-sidebar" href="#void"><i class="icon icon-columns"></i>Topics</a>
                         <div class="pull-left">
@@ -110,7 +118,8 @@ preview: true
 
                     
                 </div>                
-                <aside class="aside padding-2 keyline-left">                    
+                <aside class="aside padding-2 keyline-left">
+                    <a id="supportInfo" tabindex="-1"></a>                    
                     <h3 class="margin-top-0">Help center</h3>
                     <h4 class="h6 text-uppercase text-muted">Resources</h4>
                     <ul class="list-unstyled">

@@ -264,3 +264,27 @@
        display: inline-block; 
     }    
 }
+
+.skipLinks {
+    text-align: center;
+}
+
+.skipLinks a {
+    display: block;
+    font-weight: 700;
+    text-align: center;
+}
+
+.skipLinks a:hover, .skipLinks a:focus, .skipLinks a:active {
+    padding: 5px;
+    text-decoration: none;
+}
+
+.sr-only.focusable:active, .sr-only.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0 auto;
+    overflow: visible;
+    position: static;
+    width: 300px;
+}
