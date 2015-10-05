@@ -6,22 +6,28 @@ preview: true
 {% include appDemo/app-head.html  title="Dashboard" fluid="true" %}
 
 
+<div class="skipLinks alert-info">
+   <a class="sr-only focusable" href="#main">Skip to main content</a>
+   <a class="sr-only focusable" href="#contentNav">Skip to content navigation</a>
+   <a class="sr-only focusable" href="#supportInfo">Skip to supporting information</a>
+</div>
 {% include appDemo/appHeader.html %}    
 
 <main class="container-fluid container-full container-switch">
     <div class="main-wrapper row-grid">
         <nav class="app-sidebar dashboards">
+            <a id="contentNav" tabindex="-1"></a>
             <div class="close-sidebar keyline-bottom clearfix">
                 <button class="btn-closeSidebar pull-right btn btn-sm btn-default btn-hover" type="button"><i class="icon icon-angle-double-left"></i> Close</button>
             </div>
             <ul class="nav nav-stacked" role="tab-list">
                 <li role="presentation" class="category"><i class="icon icon-dashboard"></i> Dashboards</li>
-                <li role="presentation" class="active"><a role="tab" href="#">Systems Summary</a></li>
+                <li role="presentation" class="active"><a role="tab" href="#">Systems summary</a></li>
                 <li role="presentation"><a role="tab" href="#">System A</a></li>
                 <li role="presentation"><a role="tab" href="#">System B</a></li>
                 <li role="presentation"><a role="tab" href="#">System C</a></li>
                 <li role="presentation" class="category"><i class="icon icon-bar-chart"></i> Reports</li>
-                <li role="presentation"><a role="tab" href="#">Fees and Transactions</a></li>
+                <li role="presentation"><a role="tab" href="#">Fees and transactions</a></li>
                 <li role="presentation"><a role="tab" href="#">Trends</a></li>
                 <li role="presentation"><a role="tab" href="#">Disposition</a></li>
                 <li role="presentation"><a role="tab" href="#">Custom</a></li>
@@ -30,30 +36,31 @@ preview: true
         <div class="col">
             <div class="row-grid">
                 <div class="main-content col keyline-left">
+                    <a id="main" tabindex="-1"></a>
                     <div class="padding-2 keyline-bottom clearfix">
                         <div class="pull-left">
-                        <a class="link-sidebar" href="#void"><i class="icon icon-columns"></i>Dashboards &amp; Reports</a>
-                            <h2 class="margin-top-0">Systems Summary</h2>
-                            <dl class="dl-inline clearfix" style="margin-bottom: -4px;">
+                            <a class="link-sidebar" href="#void"><i class="icon icon-columns"></i>Dashboards &amp; Reports</a>
+                            <h2 class="margin-top-0">Systems summary</h2>
+                            <dl class="dl-inline clearfix margin-bottom-1">
                                 <dt>Status</dt>
                                 <dd>3 systems reporting</dd>
                                 <dt>Data</dt>
                                 <dd><span class="label label-success subtle">Complete</span></dd>
                             </dl>
                         </div>
-                        <!-- <div class="meta-filedApps">
-                            <div class="margin-top-0 text-muted">Dec. filings</div>
-                            <span class="h1 margin-0">4,201</span>
-                        </div> -->
+                        <div class="meta-filedApps">
+                            <div class="margin-top-0 text-muted">Total filings</div>
+                            <span class="h1 margin-0">10,201</span>
+                        </div>
                     </div>
                     <div class="padding-2">
-                        <h3 class="margin-top-0">Filing history <span class="small">for the year 2015</span></h3>
+                        <h3 class="margin-top-0">Filing history <span class="small">Jan. - Dec. 2015</span></h3>
                         <div class="morrisChart" id="balance-chart" style="overflow: hidden; height: 200px;"></div>
                     </div>
                     <div class="padding-2 keyline-top">
                         <h3 class="margin-top-0">Recent applications</h3>
                         <div class="table-responsive">
-                            <table class="table-recentApps table table-striped table-inverse margin-top-2">
+                            <table class="table-recentApps table table-striped table-inverse margin-top-1">
                                 <thead>
                                     <tr>
                                         <th>Filing Date</th>
@@ -129,23 +136,20 @@ preview: true
                         </div>
                     </div>
                 </div>
-                <aside class="aside padding-2 keyline-left">                    
-                    <h3 class="margin-top-0">Help center</h3>
-                    <h4 class="h6 text-uppercase text-muted">Resources</h4>
+                <aside class="aside padding-2 keyline-left dashboards">
+                    <a id="supportInfo" tabindex="-1"></a>
+                    <h3 class="margin-top-0">System resources</h3>
+                    <h4 class="h6 text-uppercase text-muted">Data</h4>
                     <ul class="list-unstyled">
-                        <li><a href="">Search existing trademarks</a></li>
-                        <li><a href="">Instructional videos</a></li>
+                        <li><a href="#void">Data dictionary</a></li>
+                        <li><a href="#void">API Manager</a></li>
                     </ul>
-                    <h4 class="h6 text-uppercase text-muted">Faq</h4>
+                    <h4 class="h6 text-uppercase text-muted">Reference</h4>
                     <ul class="list-unstyled">
-                        <li><a href="">What is a mark?</a></li>
-                        <li><a href="">Can I change my mark later?</a></li>
+                        <li><a href="#void" data-toggle="modal" data-target="#modal-extSite">Wiki<span class="icon icon-external-link"></span></a></li>
+                        <li><a href="#void" data-toggle="modal" data-target="#modal-extSite">Glossary<span class="icon icon-external-link"></span></a></li>
                     </ul>
-                    <h3>Related articles</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="">Searching for trademarks</a></li>
-                        <li><a href="">How to file a patent</a></li>
-                    </ul>                
+                    
                 </aside>
                 
             </div>
@@ -153,6 +157,22 @@ preview: true
     </div>
     {% include appDemo/modal-confirmPromote.html %}
     {% include appDemo/modal-appSettings.html %}
+    <div aria-labelledby="hd-extSite" role="dialog" tabindex="-1" id="modal-extSite" class="modal fade in" aria-hidden="true">
+            <div role="document" class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button aria-label="Close" data-dismiss="modal" class="close" type="button"><span aria-hidden="true">×</span></button>
+                        <span id="hd-extSite" class="h4 modal-title">You are leaving the Application Monitor Demo application.</span>
+                    </div>
+                    <div class="modal-body">
+                        <p>We have provided a link to this site because it has information that may be of interest to our users. The United States Patent and Trademark Office does not necessarily endorse the views expressed or the facts presented on this site. Further, the United States Patent and Trademark Office does not endorse any commercial products that may be advertised or available on this site. We hope your visit was informative and enjoyable.</p>
+                    </div>
+                    <div class="modal-footer text-center">
+                        <a id="link-extSite" href="https://www.commerce.gov/" target="_blank"><b>Go to the link</b></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 </main>
    
 

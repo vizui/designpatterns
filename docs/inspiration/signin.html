@@ -5,9 +5,13 @@ hidden: false
 preview: true
 ---
 {% include appDemo/app-head.html %}
+<div class="skipLinks alert-info">
+   <a class="sr-only focusable" href="#main">Skip to main content</a>   
+</div>
 {% include appDemo/appHeader-external.html %}
 <main class="container panel-login center-block">
     <div class="panel panel-default margin-top-3">
+        <a id="main" tabindex="-1"></a>
         <h2 class="margin-top-0 text-center">Application Monitor</h2>
         <p class="help-block text-center">Sign in with your application account.</p>
         <form role="form" class="margin-top-4">
