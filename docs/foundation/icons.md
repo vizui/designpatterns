@@ -4,7 +4,7 @@ title: "Icons"
 <div class="pl-pattern">
 ### Overview
 
-#### System Icons
+#### System icons
 
 {::nomarkdown}
 <div class="row" style="max-width: 800px;">
