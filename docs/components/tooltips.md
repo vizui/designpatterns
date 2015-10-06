@@ -23,15 +23,32 @@ Use tooltips for:
 
 {::nomarkdown}
 <div class="pl-preview">
-<div class="tooltip fade in right" style="display: inline-block; position: relative; width: auto;">
-    <div class="tooltip-inner">I'm a tooltip!</div>
-    <div class="tooltip-arrow"></div>
+<div class="row text-center">
+    <div class="col-xs-12 col-sm-6">
+        <div>Standard tooltip:</div>
+        <div class="tooltip fade in right" style="display: inline-block; position: relative; width: auto;">
+            <div class="tooltip-inner">I'm a tooltip!</div>
+            <div class="tooltip-arrow"></div>
+        </div><br /><br />
+    </div>
+    <div class="col-xs-12 col-sm-6">
+        <div>Light tooltip (for dark interfaces):</div>
+            <div class="tooltip tooltip-light fade in right" style="display: inline-block; position: relative; width: auto;">
+                <div class="tooltip-inner">I'm a light tooltip!</div>
+                <div class="tooltip-arrow"></div>
+            </div><br />
+    </div>
 </div>
 </div>
 {:/nomarkdown}
 
 {% highlight html %}
 <div class="tooltip fade in right">
+    <div class="tooltip-inner">I'm a tooltip!</div>
+    <div class="tooltip-arrow"></div>
+</div>
+
+<div class="tooltip tooltip-light fade in right">
     <div class="tooltip-inner">I'm a tooltip!</div>
     <div class="tooltip-arrow"></div>
 </div>
