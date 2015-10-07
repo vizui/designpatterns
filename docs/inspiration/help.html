@@ -170,20 +170,17 @@ preview: true
             windowWidth = $(window).width();
 
             $('.app-sidebar').removeClass('open');
-            $('.link-top').removeClass('hide');
         }
     });
 
     $('.link-sidebar').click(function(e) {
         e.preventDefault();        
         $('.app-sidebar').toggleClass('open'); 
-        $('.link-top').addClass('hide');
     });
 
     $('.btn-closeSidebar').click(function(e) {
         e.preventDefault();        
         $('.app-sidebar').removeClass('open');
-        $('.link-top').removeClass('hide');
     });
 
     $('.btn-fixed, .btn-fluid').addClass('hide');

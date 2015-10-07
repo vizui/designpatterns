@@ -3,7 +3,38 @@ title: "Dashboard"
 layout: null
 preview: true
 ---
-{% include appDemo/app-head.html  title="Dashboard" fluid="true" %}
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+
+        <title>{{page.title}} - USPTO UI Design Library</title>
+
+        <meta name="description" content="{{page.description}}">
+        <meta name="keywords" contnet="{{page.keywords}}">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="theme-color" content="#004c97">
+
+        <meta property="og:title" content="{{page.title}}">
+        <meta property="og:description" content="{{page.description}}">
+
+        <link rel="shortcut icon" href="{{site.baseurl}}/generated/favicon.ico">
+
+        <!--[if lt IE 9]>
+            <script src="{{site.baseurl}}/generated/vendor/html5shiv/html5shiv.min.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+        <link href="{{site.baseurl}}/generated/styles/vendor.css" rel="stylesheet"/>
+        <link href="{{site.baseurl}}/generated/styles/main.css" rel="stylesheet"/>
+        <link href="{{site.baseurl}}/generated/styles/appDemo.min.css" rel="stylesheet"/>        
+
+    </head>
+    <body class="{{include.bodyClass}}">
+    <!--[if lt IE 9]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
 
 
 <div class="skipLinks alert-info">
@@ -37,8 +68,8 @@ preview: true
             <div class="row-grid">
                 <div class="main-content col keyline-left">
                     <a id="main" tabindex="-1"></a>
-                    <div class="padding-2 keyline-bottom clearfix">
-                        <div class="pull-left">
+                    <div class="title-block row-grid padding-2 keyline-bottom">
+                        <div class="heading">
                             <a class="link-sidebar" href="#void"><i class="icon icon-columns"></i>Dashboards &amp; Reports</a>
                             <h2 class="margin-top-0">Systems summary</h2>
                             <dl class="dl-inline clearfix margin-bottom-1">
@@ -48,9 +79,11 @@ preview: true
                                 <dd><span class="label label-success subtle">Complete</span></dd>
                             </dl>
                         </div>
-                        <div class="meta-filedApps">
-                            <div class="margin-top-0 text-muted">Total filings</div>
-                            <span class="h1 margin-0">10,201</span>
+                        <div class="meta">
+                            <div class="meta-filedApps">
+                                <div class="margin-top-0 text-muted">Total filings</div>
+                                <span class="h1 margin-0">10,201</span>
+                            </div>
                         </div>
                     </div>
                     <div class="padding-2">
@@ -175,9 +208,10 @@ preview: true
         </div>
 </main>
    
-
-{% include appDemo/app-footerScripts.html %}
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+<script src="{{site.baseurl}}/generated/scripts/vendor.js"></script>
+<script src="{{site.baseurl}}/generated/scripts/plugins.js"></script>
+<script src="//components.uspto.gov/js/ais/2-4-pattern-library.js"></script>
+<script src="{{site.baseurl}}/generated/scripts/appDemo.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 <script>
@@ -234,14 +268,30 @@ new Morris.Area({
     }
 });
 
+    var windowWidth = $(window).width();
+
+    $(window).resize(function(){        
+        if ($(window).width() != windowWidth) {
+
+            windowWidth = $(window).width();
+
+            $('.app-sidebar').removeClass('open');
+        }
+    });
+
 $('.link-sidebar').click(function(e) {
     e.preventDefault();
-    $('.app-sidebar').toggleClass('open');
+    $('.app-sidebar, .title-block').toggleClass('open');
 });
 
 $('.btn-closeSidebar').click(function(e) {
     e.preventDefault();
-    $('.app-sidebar').removeClass('open');
+    $('.app-sidebar, .title-block').removeClass('open');
 });
-
 </script>
+</body>
+
+</html>
+
+
+
