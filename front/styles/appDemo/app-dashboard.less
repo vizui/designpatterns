@@ -23,17 +23,40 @@
     }
 }
 
-.table-recentApps td:last-child {
-    white-space: nowrap;
+.title-block {
+    .heading, .meta {
+        display: block;
+        vertical-align: top;
+    }
+    .heading {
+        width: 300px;
+    }
+    .meta {
+        margin-top: 15px;
+    }
+    .meta-filedApps {
+        clear: both;
+        float: none;        
+    }
+    @media (min-width: 480px) {
+        .heading, .meta {
+            display: table-cell;
+        }
+        .meta-filedApps { 
+            float: right;
+        }
+    }
 }
 
-.meta-filedApps {
-    clear: both;
-    float: none;
-    @media (min-width: 768px) {
-        clear: none;
-        float: right;
-    }
+.title-block.open .heading, .title-block.open .meta {
+    display: block;
+    .meta-filedApps {
+        float: none;
+    }    
+}
+
+.table-recentApps td:last-child {
+    white-space: nowrap;
 }
 
 .aside.dashboards {
