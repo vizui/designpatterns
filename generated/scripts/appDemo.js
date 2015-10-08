@@ -58,11 +58,16 @@
     function resizeTabNav() {
 
         if (window.matchMedia('(min-width: 640px)').matches) {
-            $('.nav-settings').find('.dropdown-menu').toggleClass('dropdown-menu nav nav-tabs')
-            .end().find('.btn').addClass('hide');
+            $('.nav-settings')
+                .find('.dropdown-menu')
+                .toggleClass('dropdown-menu nav nav-tabs')
+                .end()
+                .find('.btn').addClass('hide');
         } else {
-            $('.nav-settings').find('.nav-tabs').toggleClass('dropdown-menu nav nav-tabs')
-            .end().find('.btn').removeClass('hide');
+            $('.nav-settings')
+                .find('.nav-tabs')
+                .toggleClass('dropdown-menu nav nav-tabs')
+                .end().find('.btn').removeClass('hide');
         }
     }
 
@@ -73,9 +78,7 @@
         window.onresize = function() {
 
             if ($(window).width() !== windowWidth) {
-
                 windowWidth = $(window).width();
-
                 resizeTabNav();
             }
 
