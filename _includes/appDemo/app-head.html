@@ -15,15 +15,21 @@
         <meta property="og:description" content="{{page.description}}">
 
         <link rel="shortcut icon" href="{{site.baseurl}}/generated/favicon.ico">
-
-        <!--[if lt IE 9]>
+        
+        <!--[if lte IE 9]>
+            <script src="{{site.baseurl}}/generated/vendor/matchMedia/matchMedia.js"></script>        
             <script src="{{site.baseurl}}/generated/vendor/html5shiv/html5shiv.min.js"></script>
         <![endif]-->
 
         <link href="{{site.baseurl}}/generated/styles/vendor.css" rel="stylesheet"/>
         <link href="{{site.baseurl}}/generated/styles/main.css" rel="stylesheet"/>
         <link href="{{site.baseurl}}/generated/styles/appDemo.min.css" rel="stylesheet"/>        
-
+        <style>
+            /* fix for IE transparent scroll bar */
+            @-ms-viewport {
+                width: auto !important;
+            }
+    </style>
     </head>
     <body class="{{include.bodyClass}}">
     <!--[if lt IE 9]>

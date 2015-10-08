@@ -212,12 +212,12 @@ module.exports = function (grunt) {
         // Copies remaining files to places other tasks can use
         copy: {
             dist: {
-                files: [{ // htmlshiv to assets for < IE9
+                files: [{ // htmlshiv and matchMedia polyfill for <= IE9
                     dot: true,
                     expand: true,
-                    cwd: 'front/vendor/html5shiv/',
-                    src: ['html5shiv.min.js'],
-                    dest: '<%= paths.assets %>/vendor/html5shiv/'
+                    cwd: 'front/vendor/',
+                    src: ['html5shiv/*.*', 'matchMedia/*.*'],
+                    dest: '<%= paths.assets %>/vendor/'
                 }, { // icon sprite to assets folder
                     dot: true,
                     expand: true,
