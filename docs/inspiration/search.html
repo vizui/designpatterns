@@ -12,14 +12,14 @@ preview: true
     </div>
     {% include appDemo/appHeader.html %}
     <main class="container-fluid container-full container-switch">
-    <div class="panel panel-default" style="display: inline-block; width: 100%; border-radius: 0; border-top: none; border-left: none; border-right: none; box-shadow: none;">
+    <div class="panel-page panel panel-default">
         <a id="search" tabindex="-1"></a>
-        <div class="keyline-bottom" style="background: #f4f4f4;">
+        <div class="header keyline-bottom">
             <div class="container-fluid">
-                <div class="padding-left-1 padding-top-2 padding-bottom-2">
+                <form class="padding-left-1 padding-top-2 padding-bottom-2" role="form">
                     <h2 class="margin-top-0">Find applications</h2>                    
                     <div class="input-search input-group">
-                        <input type="text" placeholder="Search all fields" class="form-control">
+                        <input type="text" placeholder="Search all fields" class="form-control" title="Search all fields" aria-label="Search all fields">
                         <span class="input-group-btn">
                                 <button class="btn btn-primary"><i class="icon icon-inverse icon-search"></i></button>
                             </span>
@@ -27,7 +27,7 @@ preview: true
                     <div class="help-block" style="margin-bottom: 0;">
                         <a href="#void"><span class="icon icon-angle-right" style="font-size: 14px;"></span> Show advanced search</a>
                     </div>                    
-                </div>
+                </form>
             </div>
         </div>
         
@@ -66,11 +66,11 @@ preview: true
                                     <div class="row">
                                         <div class="form-group col-sm-6">
                                             <span class="input-icon icon icon-calendar-o"></span>
-                                            <input type="text" placeholder="Start" class="datepicker form-control" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'">
+                                            <input type="text" placeholder="Start" class="datepicker form-control" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'" title="Start date" aria-label="Start date">
                                         </div>
                                         <div class="form-group col-sm-6">
                                             <span class="input-icon icon icon-calendar-o"></span>
-                                            <input type="text" placeholder="End" class="datepicker form-control" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'">
+                                            <input type="text" placeholder="End" class="datepicker form-control" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'" title="End date" aria-label="End date">
                                         </div>
                                     </div>
                                 </div>
@@ -498,32 +498,48 @@ preview: true
 
 
 
-{% include appDemo/app-footerScripts.html %}
-
+<script src="{{site.baseurl}}/generated/scripts/vendor.js"></script>
+<script src="{{site.baseurl}}/generated/scripts/plugins.js"></script>
+<script src="//components.uspto.gov/js/ais/2-4-pattern-library.js"></script>
+<script src="{{site.baseurl}}/generated/scripts/appDemo.js"></script>
 <script>
-    
-    var windowWidth = $(window).width();
+var windowWidth = $(window).width();
 
-    $(window).resize(function(){
-        if ($(window).width() !== windowWidth) {
+$(window).resize(function() {
+    if ($(window).width() !== windowWidth) {
 
-            windowWidth = $(window).width();
+        windowWidth = $(window).width();
 
-            $('.app-sidebar').removeClass('open');
-            $('.btn-pgActions, .btn-displayOpts, .pager').removeClass('hide');
-        }
-    });
-
-
-    $('.link-sidebar').click(function(e) {
-        e.preventDefault();        
-        $('.app-sidebar').toggleClass('open');
-        $('.btn-pgActions, .btn-displayOpts, .pager').toggleClass('hide');
-    });
-
-    $('.btn-closeSidebar').click(function(e) {
-        e.preventDefault();        
         $('.app-sidebar').removeClass('open');
         $('.btn-pgActions, .btn-displayOpts, .pager').removeClass('hide');
-    });     
+    }
+});
+
+/* enable datepickers */
+$('.datepicker').datepicker({
+    // autoSize: true,
+    // showButtonPanel: true,
+    numberOfMonths: 1,
+    showOtherMonths: true
+    // changeMonth: true,
+    // changeYear: true
+});
+
+$('.link-sidebar').click(function(e) {
+    e.preventDefault();
+    $('.app-sidebar').toggleClass('open');
+    $('.btn-pgActions, .btn-displayOpts, .pager').toggleClass('hide');
+});
+
+$('.btn-closeSidebar').click(function(e) {
+    e.preventDefault();
+    $('.app-sidebar').removeClass('open');
+    $('.btn-pgActions, .btn-displayOpts, .pager').removeClass('hide');
+});
 </script>
+</body>
+
+</html>
+
+
+

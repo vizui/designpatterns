@@ -2,6 +2,19 @@
  * Search results styles
  * ======================================================================== */
 
+.panel-page {
+    border-radius: 0;
+    border-top: none;
+    box-shadow: none;
+    display: inline-block;
+    width: 100%;
+    .header {
+        background-color: #eee;
+    }
+}
+
+
+
 .input-search {
     width: auto;
     @media (min-width: 640px) {
@@ -35,6 +48,14 @@
     a[data-toggle="collapse"] {
         display: block;
     }
+    .input-icon {
+         margin-left: 6px;
+         + input {
+            padding-left: 23px;
+            padding-right: 6px;
+        }
+    }
+
 }
 
 .btn-pgActions {
