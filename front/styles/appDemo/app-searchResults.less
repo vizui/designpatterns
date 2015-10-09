@@ -13,8 +13,6 @@
     }
 }
 
-
-
 .input-search {
     width: auto;
     @media (min-width: 640px) {
@@ -36,6 +34,14 @@
     }
 }
 
+.tabs-results {
+    border-bottom: none;
+    padding-left: 8px;
+    .badge {
+        margin-left: 5px;
+    }
+}
+
 .filters {
     form {
         margin-top: 18px;
@@ -49,8 +55,8 @@
         display: block;
     }
     .input-icon {
-         margin-left: 6px;
-         + input {
+        margin-left: 6px;
+        + input {
             padding-left: 23px;
             padding-right: 6px;
         }
@@ -58,7 +64,7 @@
     .h5 {
         color: #888;
         font-size: 12px;
-        margin-left: 15px; 
+        margin-left: 15px;
         margin-top: 25px;
         text-transform: uppercase;
     }
@@ -102,5 +108,69 @@
     }
     th:nth-child(2) {
         width: 700px;
+    }
+}
+
+.table-multiline {
+    .dl-horizontal {
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+.panel-actionBar {
+    background-color: #333;
+    margin-left: -1px;
+    margin-right: -1px;
+    padding: 3px 10px;
+    text-align: right;
+    .icon {
+        margin-left: 5px;
+    }
+}
+
+.config-ui {
+    // overflow: hidden;
+    position: fixed;
+    right: -182px;
+    top: 135px;
+    transition-duration: 0.5s;
+    &.open {
+        right: 0;
+    }
+    .toggle {
+        background-color: #009CDE;
+        
+        cursor: pointer;
+        // float: left;
+        // padding: 10px 15px;
+        // margin-left: -50px;
+        margin-right: 15px;
+        // padding: 10px 11px 10px 13px;
+        padding: 8px 15px 8px 10px;
+        text-transform: uppercase;
+    }
+    .panel {
+        border-top: none;
+        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.05);     
+        // float: left;
+    }
+    .panel-heading {
+        background-color: #009CDE;
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        // box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+        color: #FFF;
+        margin-left: -40px;
+        padding-left: 5px;
+    }
+    .panel-body {
+        // box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+    }
+    ul {
+        padding-left: 0;
+    }
+    li {
+        margin-bottom: 10px;
     }
 }
