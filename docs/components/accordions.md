@@ -22,7 +22,7 @@ Accordions can operate as either single-select or multi-select.
 
 - __Single-select__ allows only one panel to be expanded at any given time. Expanding a panel collapses the previously expanded panel.
 - __Multi-select__ allows more than one panel to be expanded at any given time. Expanding a panel has no impact on the other panels.
-  - __Expand/collapse all__ allows all panels to be expanded or collapsed simultaneously. It is important to note when all panels are in a "open" or "closed" state, clicking on a single panel will cause an indeterminate state to ocurr.
+  - __Expand/collapse all__ allows all panels to be expanded or collapsed simultaneously. It is important to note when all panels are in a "open" or "closed" state, clicking on a single panel will cause an indeterminate state to ocurr. 
 
 {::nomarkdown}
 <div class="pl-preview">
