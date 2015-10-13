@@ -27,7 +27,7 @@ Accordions can operate as either single-select or multi-select.
 {::nomarkdown}
 <div class="pl-preview">
     <div class="panel-toggler">
-      <a data-target="#3collapseOne,#3collapseTwo,#3collapseThree" data-toggle="collapse" >Expand All</a>&nbsp;|&nbsp;<a data-target="#3collapseOne,#3collapseTwo,#3collapseThree"  data-toggle="collapse">Collapse All</a>
+      <a id="expand-all">Expand All</a>&nbsp;|&nbsp;<a id="collapse-all">Collapse All</a>
     </div>
     <div class="panel-group" id="3accordion" role="tablist" aria-multiselectable="true">
       <div class="panel panel-default">
@@ -103,6 +103,27 @@ Accordions can operate as either single-select or multi-select.
 {% endhighlight %}
 
 </div>
+<script>
+setTimeout(function(){
+   var collapseOne = $('#3collapseOne');
+   var collapseTwo = $('#3collapseTwo');
+   var collapseThree = $('#3collapseThree');
+
+   $('#collapse-all').click(function(){
+      collapseOne.collapse('hide');
+      collapseTwo.collapse('hide');
+      collapseThree.collapse('hide');
+   });
+
+  $('#expand-all').click(function(){
+      collapseOne.collapse('show');
+      collapseTwo.collapse('show');
+      collapseThree.collapse('show');
+  });
+
+}, 100);
+  
+</script>
 
 <div class="pl-pattern">
 ### Styles
