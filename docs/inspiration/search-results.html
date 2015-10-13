@@ -28,7 +28,7 @@ preview: true
                         <a href="#void"><span class="icon icon-angle-right" style="font-size: 14px;"></span> Show advanced search</a>
                     </div>
                 </form>
-                <ul class="tabs-results nav nav-tabs" role="tablist">
+                <ul class="tabs-results nav nav-tabs hide" role="tablist">
                     <li class="active"><a href="#" role="tab" data-toggle="tab">All<span class="badge">61</span></a></li>
                     <li><a href="#" data-toggle="tab" role="tab">Unassigned<span class="badge">45</span></a></li>
                     <li><a href="#" data-toggle="tab" role="tab">Partially assigned<span class="badge">34</span></a></li>
@@ -465,7 +465,8 @@ preview: true
                             </tbody>
                         </table>
                     </div>
-                    {% include appDemo/table-bordered.html %} {% include appDemo/table-multiline.html %}
+                    {% include appDemo/table-bordered.html %} 
+                    {% include appDemo/table-multiline.html %}
                     <div class="text-center">
                         <div class="pager btn-group">
                             <a class="btn btn-default" href="#" disabled><i class="icon icon-angle-left"></i></a>
