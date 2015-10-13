@@ -15,7 +15,7 @@
 
     /* select2 things */
     $('.select2').select2({
-        minimumResultsForSearch: 4
+        minimumResultsForSearch: 6
     });
 
     /* expandable rows */
