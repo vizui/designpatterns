@@ -19,13 +19,13 @@ preview: true
                 <form class="padding-left-1 padding-top-2 padding-bottom-2" role="form">
                     <h2 class="margin-top-0">Find applications</h2>
                     <div class="input-search input-group">
-                        <input type="text" placeholder="Search all fields" class="form-control" title="Search all fields" aria-label="Search all fields">
+                        <input id="txt-find" type="text" placeholder="Search all fields" class="form-control" title="Search all fields" aria-label="Search all fields">
                         <span class="input-group-btn">
                                 <button class="btn btn-primary"><i class="icon icon-inverse icon-search"></i></button>
                             </span>
                     </div>
                     <div class="help-block" style="margin-bottom: 0;">
-                        <a href="#void"><span class="icon icon-angle-right" style="font-size: 14px;"></span> Show advanced search</a>
+                        <a href="#void">Show advanced search</a>
                     </div>
                 </form>
                 <ul class="tabs-results nav nav-tabs hide" role="tablist">
@@ -37,15 +37,15 @@ preview: true
             </div>
         </div>
         <div class="main-wrapper row-grid">
-            <div class="app-sidebar filters">
+            <div class="app-sidebar filters keyline-right">
                 <a id="filters" tabindex="-1"></a>
-                <form>
-                    <div class="close-sidebar keyline-bottom clearfix">
-                        <button class="btn-closeSidebar pull-right btn btn-sm btn-default btn-hover"><i class="icon icon-angle-double-left"></i> Close</button>
-                    </div>
-                    <div class="filter-heading">
-                        <span class="h4" tabindex="0">Refine by</span> <a href="" class="filters-clear">Clear</a>
-                    </div>
+                <div class="close-sidebar keyline-bottom clearfix">
+                    <button class="btn-closeSidebar pull-right btn btn-sm btn-default btn-hover"><i class="icon icon-angle-double-left"></i> Close</button>
+                </div>
+                <div class="filter-heading">
+                    <span class="h4" tabindex="0">Refine by</span> <a href="" class="filters-clear">Clear</a>
+                </div>
+                <form class="filters-accordion filters-switchOpt" role="form">
                     <div class="h5" tabindex="0">Assignment</div>
                     <div class="filter-list">
                         <div class="filter-group-title">
@@ -85,33 +85,31 @@ preview: true
                         </div>
                         <div id="2filterGroup2" class="collapse">
                             <div class="filter-group-content">
-                                <div class="form-group">
-                                    <div class="checkbox">
-                                        <label>
-                                            <input checked type="checkbox">Assignment <span class="text-muted">(13)</span></label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox"> Change of name <span class="text-muted">(45)</span></label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox"> Trademark <span class="text-muted">(18)</span></label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox"> Certification <span class="text-muted">(32)</span></label>
-                                    </div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input type="checkbox"> Service <span class="text-muted">(43)</span></label>
-                                    </div>
-                                    <a href="" style="margin-left: 21px; display: block; margin-top: -5px;">Show 12 more...</a>
+                                <div class="checkbox">
+                                    <label>
+                                        <input checked type="checkbox">Assignment <span class="text-muted">(13)</span></label>
                                 </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Change of name <span class="text-muted">(45)</span></label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Trademark <span class="text-muted">(18)</span></label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Certification <span class="text-muted">(32)</span></label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox"> Service <span class="text-muted">(43)</span></label>
+                                </div>
+                                <a href="#void">Show 12 more...</a>
                             </div>
                         </div>
                         <div class="filter-group-title">
-                            <a href="#void" data-toggle="collapse" data-target="#2filterGroup5"><i class="icon icon-angle-right pull-right"></i> <span class="badge pull-right">1</span> Applicant</a>
+                            <a href="#void" data-toggle="collapse" data-target="#2filterGroup5"><i class="icon icon-angle-right pull-right"></i> Applicant</a>
                         </div>
                         <div id="2filterGroup5" class="collapse">
                             <div class="filter-group-content">
@@ -162,347 +160,441 @@ preview: true
                         </div>
                     </div>
                 </form>
+                <form class="filters-selections filters-switchOpt hide" role="form">
+                     <div class="filter">
+                        <label for="s2id_autogen2" class="h5 control-label">Select year</label>
+                        <select class="select2 form-control">
+                            <option>2015</option>
+                            <option>2014</option>
+                            <option>2013</option>
+                            <option>2012</option>
+                        </select>
+                    </div>
+                    <div class="filter">
+                    <div class="h5" tabindex="0">Filing date range</div>
+                    
+                        <div class="form-group">
+                            <span class="input-icon icon icon-calendar-o"></span>
+                            <input type="text" placeholder="Start" class="datepicker form-control" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'" title="Start date" aria-label="Start date">
+                        </div>
+                        <div class="form-group margin-bottom-0">
+                            <span class="input-icon icon icon-calendar-o"></span>
+                            <input type="text" placeholder="End" class="datepicker form-control" data-inputmask="'mask': 'm/d/y', 'placeholder': 'mm/dd/yyyy'" title="End date" aria-label="End date">
+                        </div>
+                    </div>
+                    <div class="filter">
+                    <div class="h5" tabindex="0">Applicant</div>
+                        <label for="s2id_autogen4" class="control-label">Select applicant</label>
+                        <select class="select2 form-control">
+                            <option>All</option>
+                            <option>JOHN SMITH ET AL</option>
+                            <option>JANE LLC</option>
+                            <option>JOHNSON CO</option>
+                            <option>INITECH</option>
+                        </select>
+                    </div>
+                    <div class="filter">
+                        <div class="h5" tabindex="0">Application type</div>
+                        <div class="form-group">
+                            <div class="checkbox">
+                                <label>
+                                    <input checked type="checkbox">Assignment <span class="text-muted">(13)</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Change of name <span class="text-muted">(45)</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Trademark <span class="text-muted">(18)</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Certification <span class="text-muted">(32)</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Service <span class="text-muted">(43)</span></label>
+                            </div>
+                            <a href="" style="margin-left: 21px; display: block; margin-top: -5px;">Show 12 more...</a>
+                        </div>
+                    </div>
+                    <div class="filter">
+                        <fieldset>
+                            <legend class="h5 control-label">Assignee country</legend>
+                            <div class="radio">
+                                <label><input type="radio" name="countryOpts" id="rdo-usa" value="" checked>United States<span class="help-block">(including all US territories)</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="countryOpts" id="rdo-france" value="">France</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="countryOpts" id="rdo-germany" value="">Germany</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="countryOpts" id="rdo-gungary" value="">Hungary</label>
+                            </div>
+                        </fieldset>
+                    </div>
+                </form>
             </div>
-            <div class="col keyline-left">
-                <div class="panel-body">
-                    <div class="results-header">
-                        <a id="searchResults" tabindex="-1"></a>
-                        <a class="link-sidebar" href="#void"><i class="icon icon-columns"></i>Refine</a>
-                        <div class="pg-actions clearfix">
-                            <h3 class="h4 pull-left"><span style="font-weight: 400">900 results for </span>application</h3>
-                            <div class="btn-pgActions btn-group">
-                                <button id="btn-pgActions" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actions <span class="caret"></span></button>
-                                <ul class="dropdown-menu" aria-labelledby="btn-pgActions">
-                                    <li role="presentation"><a href="#">Print</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li role="presentation"><a href="#">Download Excel</a></li>
-                                    <li role="presentation"><a href="#">Download CSV</a></li>
-                                </ul>
+            <div class="row-grid">
+                <div class="main-content col">
+                    <div class="panel-body">
+                        <div class="results-header">
+                            <a id="searchResults" tabindex="-1"></a>
+                            <a class="link-sidebar" href="#void"><i class="icon icon-columns"></i>Refine</a>
+                            <div class="pg-actions clearfix">
+                                <h3 class="h4 pull-left"><span style="font-weight: 400">900 results for </span>application</h3>
+                                <div class="btn-pgActions btn-group">
+                                    <button id="btn-pgActions" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actions <span class="caret"></span></button>
+                                    <ul class="dropdown-menu" aria-labelledby="btn-pgActions">
+                                        <li role="presentation"><a href="#">Print</a></li>
+                                        <li role="separator" class="divider"></li>
+                                        <li role="presentation"><a href="#">Download Excel</a></li>
+                                        <li role="presentation"><a href="#">Download CSV</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <ul class="list-keywords list-unstyled margin-bottom-0">
+                                <li class="filter-value"><span>Application type: Service</span> <i class="icon icon-close icon-muted"></i></li>
+                                <li class="filter-value"><span>Applicant: JANE LLC</span> <i class="icon icon-close icon-muted"></i></li>
+                            </ul>
+                        </div>
+                        <div class="table-actions row">
+                            <div class="col-xs-6">
+                                <span class="table-searchResults table-switchOpt"><a class="btn btn-link"><i class="icon icon-angle-right"></i> Expand/collapse all</a></span>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="btn-group dropdown pull-right">
+                                    <button id="btn-displayOpts" type="button" class="btn-displayOpts btn btn-default dropdown-toggle" data-toggle="dropdown">10 per page <span class="caret"></span></button>
+                                    <ul class="dropdown-menu" role="menu" aria-labelledby="btn-displayOpts">
+                                        <li role="presentation" class="dropdown-header">Show up to</li>
+                                        <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
+                                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                        <ul class="list-unstyled margin-bottom-0">
-                            <li class="filter-value"><span>Application type: Service</span> <i class="icon icon-close icon-muted"></i></li>
-                            <li class="filter-value"><span>Applicant: JANE LLC</span> <i class="icon icon-close icon-muted"></i></li>
-                        </ul>
-                    </div>
-                    <div class="table-actions row">
-                        <div class="col-xs-6">
-                            <a class="btn btn-link"><i class="icon icon-angle-right"></i> Expand/collapse all</a>
+                        <div class="table-searchResults table-responsive table-switchOpt">
+                            <table class="table table-inverse table-sortable table-outline" data-pl-expandable-rows role="grid">
+                                <thead>
+                                    <tr role="row">
+                                        <th class="sortable" scope="col" role="columnheader" aria-sort="none">Application title</th>
+                                        <th scope="col" role="columnheader" aria-sort="none">Description</th>
+                                        <th class="sortable" scope="col" role="columnheader" aria-sort="descending">Fees &nbsp;<i class="icon icon-caret-down icon-inverse"></i></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="icon icon-angle-right"></i> &nbsp;Update technical data</td>
+                                        <td><span>Update technical data</span></td>
+                                        <td><span>$4,500</span></td>
+                                    </tr>
+                                    <tr data-pl-detail-row style="display: none;">
+                                        <td colspan="3">
+                                            <dl class="dl-horizontal" style="margin-bottom: 0;">
+                                                <dt>Examiner</dt>
+                                                <dd>IP, Sikyin / 69776 / 1742</dd>
+                                                <dt>SPE (multiple)</dt>
+                                                <dd>John Olaskey</dd>
+                                                <dt>Applicants</dt>
+                                                <dd>Roman Amirpur</dd>
+                                                <dt>Inventors</dt>
+                                                <dd>Disney Dale</dd>
+                                                <dt>Law firm</dt>
+                                                <dd>Clayton &amp; Clayton Associates</dd>
+                                                <dt></dt>
+                                                <dd>
+                                                    <a href="master-detail-app.html" style="margin-top: 8px;" class="btn btn-success">View application</a>
+                                                </dd>
+                                            </dl>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon icon-angle-right"></i> &nbsp;Permit for testing on public land</td>
+                                        <td><span>Permit for testing on public land</span></td>
+                                        <td><span>$4,400</span></td>
+                                    </tr>
+                                    <tr data-pl-detail-row style="display: none;">
+                                        <td colspan="3">
+                                            <dl class="dl-horizontal" style="margin-bottom: 0;">
+                                                <dt>Examiner</dt>
+                                                <dd>IP, Sikyin / 69776 / 1742</dd>
+                                                <dt>SPE (multiple)</dt>
+                                                <dd>John Olaskey</dd>
+                                                <dt>Applicants</dt>
+                                                <dd>Roman Amirpur</dd>
+                                                <dt>Inventors</dt>
+                                                <dd>Disney Dale</dd>
+                                                <dt>Law firm</dt>
+                                                <dd>Clayton &amp; Clayton Associates</dd>
+                                                <dt></dt>
+                                                <dd>
+                                                    <a href="master-detail-app.html" style="margin-top: 8px;" class="btn btn-success">View application</a>
+                                                </dd>
+                                            </dl>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon icon-angle-right"></i> &nbsp;Addendum to Code 83.1a</td>
+                                        <td><span>Addendum to Code 83.1a</span></td>
+                                        <td><span>$4,300</span></td>
+                                    </tr>
+                                    <tr data-pl-detail-row style="display: none;">
+                                        <td colspan="3">
+                                            <dl class="dl-horizontal" style="margin-bottom: 0;">
+                                                <dt>Examiner</dt>
+                                                <dd>IP, Sikyin / 69776 / 1742</dd>
+                                                <dt>SPE (multiple)</dt>
+                                                <dd>John Olaskey</dd>
+                                                <dt>Applicants</dt>
+                                                <dd>Roman Amirpur</dd>
+                                                <dt>Inventors</dt>
+                                                <dd>Disney Dale</dd>
+                                                <dt>Law firm</dt>
+                                                <dd>Clayton &amp; Clayton Associates</dd>
+                                                <dt></dt>
+                                                <dd>
+                                                    <a href="master-detail-app.html" style="margin-top: 8px;" class="btn btn-success">View application</a>
+                                                </dd>
+                                            </dl>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon icon-angle-right"></i> &nbsp;Request for evaluation</td>
+                                        <td><span>Request for evaluation</span></td>
+                                        <td><span>$4,200</span></td>
+                                    </tr>
+                                    <tr data-pl-detail-row style="display: none;">
+                                        <td colspan="3">
+                                            <dl class="dl-horizontal" style="margin-bottom: 0;">
+                                                <dt>Examiner</dt>
+                                                <dd>IP, Sikyin / 69776 / 1742</dd>
+                                                <dt>SPE (multiple)</dt>
+                                                <dd>John Olaskey</dd>
+                                                <dt>Applicants</dt>
+                                                <dd>Roman Amirpur</dd>
+                                                <dt>Inventors</dt>
+                                                <dd>Disney Dale</dd>
+                                                <dt>Law firm</dt>
+                                                <dd>Clayton &amp; Clayton Associates</dd>
+                                                <dt></dt>
+                                                <dd>
+                                                    <a href="master-detail-app.html" style="margin-top: 8px;" class="btn btn-success">View application</a>
+                                                </dd>
+                                            </dl>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon icon-angle-right"></i> &nbsp;Request for change of ownership</td>
+                                        <td><span>Request for change of ownership</span></td>
+                                        <td><span>$4,100</span></td>
+                                    </tr>
+                                    <tr data-pl-detail-row style="display: none;">
+                                        <td colspan="3">
+                                            <dl class="dl-horizontal" style="margin-bottom: 0;">
+                                                <dt>Examiner</dt>
+                                                <dd>IP, Sikyin / 69776 / 1742</dd>
+                                                <dt>SPE (multiple)</dt>
+                                                <dd>John Olaskey</dd>
+                                                <dt>Applicants</dt>
+                                                <dd>Roman Amirpur</dd>
+                                                <dt>Inventors</dt>
+                                                <dd>Disney Dale</dd>
+                                                <dt>Law firm</dt>
+                                                <dd>Clayton &amp; Clayton Associates</dd>
+                                                <dt></dt>
+                                                <dd>
+                                                    <a href="master-detail-app.html" style="margin-top: 8px;" class="btn btn-success">View application</a>
+                                                </dd>
+                                            </dl>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon icon-angle-right"></i> &nbsp;New development within private bandwidth</td>
+                                        <td><span>New development within private bandwidth</span></td>
+                                        <td><span>$4,000</span></td>
+                                    </tr>
+                                    <tr data-pl-detail-row style="display: none;">
+                                        <td colspan="3">
+                                            <dl class="dl-horizontal" style="margin-bottom: 0;">
+                                                <dt>Examiner</dt>
+                                                <dd>IP, Sikyin / 69776 / 1742</dd>
+                                                <dt>SPE (multiple)</dt>
+                                                <dd>John Olaskey</dd>
+                                                <dt>Applicants</dt>
+                                                <dd>Roman Amirpur</dd>
+                                                <dt>Inventors</dt>
+                                                <dd>Disney Dale</dd>
+                                                <dt>Law firm</dt>
+                                                <dd>Clayton &amp; Clayton Associates</dd>
+                                                <dt></dt>
+                                                <dd>
+                                                    <a href="master-detail-app.html" style="margin-top: 8px;" class="btn btn-success">View application</a>
+                                                </dd>
+                                            </dl>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon icon-angle-right"></i> &nbsp;Permit for testing on public land</td>
+                                        <td><span>Permit for testing on public land</span></td>
+                                        <td><span>$3,900</span></td>
+                                    </tr>
+                                    <tr data-pl-detail-row style="display: none;">
+                                        <td colspan="3">
+                                            <dl class="dl-horizontal" style="margin-bottom: 0;">
+                                                <dt>Examiner</dt>
+                                                <dd>IP, Sikyin / 69776 / 1742</dd>
+                                                <dt>SPE (multiple)</dt>
+                                                <dd>John Olaskey</dd>
+                                                <dt>Applicants</dt>
+                                                <dd>Roman Amirpur</dd>
+                                                <dt>Inventors</dt>
+                                                <dd>Disney Dale</dd>
+                                                <dt>Law firm</dt>
+                                                <dd>Clayton &amp; Clayton Associates</dd>
+                                                <dt></dt>
+                                                <dd>
+                                                    <a href="master-detail-app.html" style="margin-top: 8px;" class="btn btn-success">View application</a>
+                                                </dd>
+                                            </dl>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon icon-angle-right"></i> &nbsp;Addendum to Code 83.1a</td>
+                                        <td><span>Addendum to Code 83.1a</span></td>
+                                        <td><span>$3,800</span></td>
+                                    </tr>
+                                    <tr data-pl-detail-row style="display: none;">
+                                        <td colspan="3">
+                                            <dl class="dl-horizontal" style="margin-bottom: 0;">
+                                                <dt>Examiner</dt>
+                                                <dd>IP, Sikyin / 69776 / 1742</dd>
+                                                <dt>SPE (multiple)</dt>
+                                                <dd>John Olaskey</dd>
+                                                <dt>Applicants</dt>
+                                                <dd>Roman Amirpur</dd>
+                                                <dt>Inventors</dt>
+                                                <dd>Disney Dale</dd>
+                                                <dt>Law firm</dt>
+                                                <dd>Clayton &amp; Clayton Associates</dd>
+                                                <dt></dt>
+                                                <dd>
+                                                    <a href="master-detail-app.html" style="margin-top: 8px;" class="btn btn-success">View application</a>
+                                                </dd>
+                                            </dl>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon icon-angle-right"></i> &nbsp;Request for evaluation</td>
+                                        <td><span>Request for evaluation</span></td>
+                                        <td><span>$3,700</span></td>
+                                    </tr>
+                                    <tr data-pl-detail-row style="display: none;">
+                                        <td colspan="3">
+                                            <dl class="dl-horizontal" style="margin-bottom: 0;">
+                                                <dt>Examiner</dt>
+                                                <dd>IP, Sikyin / 69776 / 1742</dd>
+                                                <dt>SPE (multiple)</dt>
+                                                <dd>John Olaskey</dd>
+                                                <dt>Applicants</dt>
+                                                <dd>Roman Amirpur</dd>
+                                                <dt>Inventors</dt>
+                                                <dd>Disney Dale</dd>
+                                                <dt>Law firm</dt>
+                                                <dd>Clayton &amp; Clayton Associates</dd>
+                                                <dt></dt>
+                                                <dd>
+                                                    <a href="master-detail-app.html" style="margin-top: 8px;" class="btn btn-success">View application</a>
+                                                </dd>
+                                            </dl>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="icon icon-angle-right"></i> &nbsp;Request for change of ownership</td>
+                                        <td><span>Request for change of ownership</span></td>
+                                        <td><span>$3,600</span></td>
+                                    </tr>
+                                    <tr data-pl-detail-row style="display: none;">
+                                        <td colspan="3">
+                                            <dl class="dl-horizontal" style="margin-bottom: 0;">
+                                                <dt>Examiner</dt>
+                                                <dd>IP, Sikyin / 69776 / 1742</dd>
+                                                <dt>SPE (multiple)</dt>
+                                                <dd>John Olaskey</dd>
+                                                <dt>Applicants</dt>
+                                                <dd>Roman Amirpur</dd>
+                                                <dt>Inventors</dt>
+                                                <dd>Disney Dale</dd>
+                                                <dt>Law firm</dt>
+                                                <dd>Clayton &amp; Clayton Associates</dd>
+                                                <dt></dt>
+                                                <dd>
+                                                    <a href="master-detail-app.html" style="margin-top: 8px;" class="btn btn-success">View application</a>
+                                                </dd>
+                                            </dl>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
-                        <div class="col-xs-6">
-                            <div class="btn-group dropdown pull-right">
-                                <button id="btn-displayOpts" type="button" class="btn-displayOpts btn btn-default dropdown-toggle" data-toggle="dropdown">10 per page <span class="caret"></span></button>
-                                <ul class="dropdown-menu" role="menu" aria-labelledby="btn-displayOpts">
-                                    <li role="presentation" class="dropdown-header">Show up to</li>
-                                    <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
-                                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
-                                </ul>
+                        {% include appDemo/table-bordered.html %} {% include appDemo/table-multiline.html %}
+                        <div class="text-center">
+                            <div class="pager btn-group">
+                                <a class="btn btn-default" href="#" disabled><i class="icon icon-angle-left"></i></a>
+                                <a class="btn btn-default active" href="#">1</a>
+                                <a class="btn btn-default" href="#">2</a>
+                                <a class="btn btn-default" href="#">3</a>
+                                <a class="btn btn-default" href="#">4</a>
+                                <a class="btn btn-default" href="#">5</a>
+                                <a class="btn btn-default" href="#"><i class="icon icon-angle-right"></i></a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="table-responsive">
-                        <table class="table-searchResults table table-inverse table-sortable table-outline" data-pl-expandable-rows role="grid">
-                            <thead>
-                                <tr role="row">
-                                    <th class="sortable" scope="col" role="columnheader" aria-sort="none">Application title</th>
-                                    <th scope="col" role="columnheader" aria-sort="none">Description</th>
-                                    <th class="sortable" scope="col" role="columnheader" aria-sort="descending">Fees &nbsp;<i class="icon icon-caret-down icon-inverse"></i></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><i class="icon icon-angle-right"></i> &nbsp;Update technical data</td>
-                                    <td><span>Update technical data</span></td>
-                                    <td><span>$4,500</span></td>
-                                </tr>
-                                <tr data-pl-detail-row style="display: none;">
-                                    <td colspan="3">
-                                        <dl class="dl-horizontal" style="margin-bottom: 0;">
-                                            <dt>Examiner</dt>
-                                            <dd>IP, Sikyin / 69776 / 1742</dd>
-                                            <dt>SPE (multiple)</dt>
-                                            <dd>John Olaskey</dd>
-                                            <dt>Applicants</dt>
-                                            <dd>Roman Amirpur</dd>
-                                            <dt>Inventors</dt>
-                                            <dd>Disney Dale</dd>
-                                            <dt>Law firm</dt>
-                                            <dd>Clayton &amp; Clayton Associates</dd>
-                                            <dt></dt>
-                                            <dd>
-                                                <button style="margin-top: 8px;" class="btn btn-success">View application</button>
-                                            </dd>
-                                        </dl>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><i class="icon icon-angle-right"></i> &nbsp;Permit for testing on public land</td>
-                                    <td><span>Permit for testing on public land</span></td>
-                                    <td><span>$4,400</span></td>
-                                </tr>
-                                <tr data-pl-detail-row style="display: none;">
-                                    <td colspan="3">
-                                        <dl class="dl-horizontal" style="margin-bottom: 0;">
-                                            <dt>Examiner</dt>
-                                            <dd>IP, Sikyin / 69776 / 1742</dd>
-                                            <dt>SPE (multiple)</dt>
-                                            <dd>John Olaskey</dd>
-                                            <dt>Applicants</dt>
-                                            <dd>Roman Amirpur</dd>
-                                            <dt>Inventors</dt>
-                                            <dd>Disney Dale</dd>
-                                            <dt>Law firm</dt>
-                                            <dd>Clayton &amp; Clayton Associates</dd>
-                                            <dt></dt>
-                                            <dd>
-                                                <button style="margin-top: 8px;" class="btn btn-success">View application</button>
-                                            </dd>
-                                        </dl>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><i class="icon icon-angle-right"></i> &nbsp;Addendum to Code 83.1a</td>
-                                    <td><span>Addendum to Code 83.1a</span></td>
-                                    <td><span>$4,300</span></td>
-                                </tr>
-                                <tr data-pl-detail-row style="display: none;">
-                                    <td colspan="3">
-                                        <dl class="dl-horizontal" style="margin-bottom: 0;">
-                                            <dt>Examiner</dt>
-                                            <dd>IP, Sikyin / 69776 / 1742</dd>
-                                            <dt>SPE (multiple)</dt>
-                                            <dd>John Olaskey</dd>
-                                            <dt>Applicants</dt>
-                                            <dd>Roman Amirpur</dd>
-                                            <dt>Inventors</dt>
-                                            <dd>Disney Dale</dd>
-                                            <dt>Law firm</dt>
-                                            <dd>Clayton &amp; Clayton Associates</dd>
-                                            <dt></dt>
-                                            <dd>
-                                                <button style="margin-top: 8px;" class="btn btn-success">View application</button>
-                                            </dd>
-                                        </dl>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><i class="icon icon-angle-right"></i> &nbsp;Request for evaluation</td>
-                                    <td><span>Request for evaluation</span></td>
-                                    <td><span>$4,200</span></td>
-                                </tr>
-                                <tr data-pl-detail-row style="display: none;">
-                                    <td colspan="3">
-                                        <dl class="dl-horizontal" style="margin-bottom: 0;">
-                                            <dt>Examiner</dt>
-                                            <dd>IP, Sikyin / 69776 / 1742</dd>
-                                            <dt>SPE (multiple)</dt>
-                                            <dd>John Olaskey</dd>
-                                            <dt>Applicants</dt>
-                                            <dd>Roman Amirpur</dd>
-                                            <dt>Inventors</dt>
-                                            <dd>Disney Dale</dd>
-                                            <dt>Law firm</dt>
-                                            <dd>Clayton &amp; Clayton Associates</dd>
-                                            <dt></dt>
-                                            <dd>
-                                                <button style="margin-top: 8px;" class="btn btn-success">View application</button>
-                                            </dd>
-                                        </dl>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><i class="icon icon-angle-right"></i> &nbsp;Request for change of ownership</td>
-                                    <td><span>Request for change of ownership</span></td>
-                                    <td><span>$4,100</span></td>
-                                </tr>
-                                <tr data-pl-detail-row style="display: none;">
-                                    <td colspan="3">
-                                        <dl class="dl-horizontal" style="margin-bottom: 0;">
-                                            <dt>Examiner</dt>
-                                            <dd>IP, Sikyin / 69776 / 1742</dd>
-                                            <dt>SPE (multiple)</dt>
-                                            <dd>John Olaskey</dd>
-                                            <dt>Applicants</dt>
-                                            <dd>Roman Amirpur</dd>
-                                            <dt>Inventors</dt>
-                                            <dd>Disney Dale</dd>
-                                            <dt>Law firm</dt>
-                                            <dd>Clayton &amp; Clayton Associates</dd>
-                                            <dt></dt>
-                                            <dd>
-                                                <button style="margin-top: 8px;" class="btn btn-success">View application</button>
-                                            </dd>
-                                        </dl>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><i class="icon icon-angle-right"></i> &nbsp;New development within private bandwidth</td>
-                                    <td><span>New development within private bandwidth</span></td>
-                                    <td><span>$4,000</span></td>
-                                </tr>
-                                <tr data-pl-detail-row style="display: none;">
-                                    <td colspan="3">
-                                        <dl class="dl-horizontal" style="margin-bottom: 0;">
-                                            <dt>Examiner</dt>
-                                            <dd>IP, Sikyin / 69776 / 1742</dd>
-                                            <dt>SPE (multiple)</dt>
-                                            <dd>John Olaskey</dd>
-                                            <dt>Applicants</dt>
-                                            <dd>Roman Amirpur</dd>
-                                            <dt>Inventors</dt>
-                                            <dd>Disney Dale</dd>
-                                            <dt>Law firm</dt>
-                                            <dd>Clayton &amp; Clayton Associates</dd>
-                                            <dt></dt>
-                                            <dd>
-                                                <button style="margin-top: 8px;" class="btn btn-success">View application</button>
-                                            </dd>
-                                        </dl>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><i class="icon icon-angle-right"></i> &nbsp;Permit for testing on public land</td>
-                                    <td><span>Permit for testing on public land</span></td>
-                                    <td><span>$3,900</span></td>
-                                </tr>
-                                <tr data-pl-detail-row style="display: none;">
-                                    <td colspan="3">
-                                        <dl class="dl-horizontal" style="margin-bottom: 0;">
-                                            <dt>Examiner</dt>
-                                            <dd>IP, Sikyin / 69776 / 1742</dd>
-                                            <dt>SPE (multiple)</dt>
-                                            <dd>John Olaskey</dd>
-                                            <dt>Applicants</dt>
-                                            <dd>Roman Amirpur</dd>
-                                            <dt>Inventors</dt>
-                                            <dd>Disney Dale</dd>
-                                            <dt>Law firm</dt>
-                                            <dd>Clayton &amp; Clayton Associates</dd>
-                                            <dt></dt>
-                                            <dd>
-                                                <button style="margin-top: 8px;" class="btn btn-success">View application</button>
-                                            </dd>
-                                        </dl>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><i class="icon icon-angle-right"></i> &nbsp;Addendum to Code 83.1a</td>
-                                    <td><span>Addendum to Code 83.1a</span></td>
-                                    <td><span>$3,800</span></td>
-                                </tr>
-                                <tr data-pl-detail-row style="display: none;">
-                                    <td colspan="3">
-                                        <dl class="dl-horizontal" style="margin-bottom: 0;">
-                                            <dt>Examiner</dt>
-                                            <dd>IP, Sikyin / 69776 / 1742</dd>
-                                            <dt>SPE (multiple)</dt>
-                                            <dd>John Olaskey</dd>
-                                            <dt>Applicants</dt>
-                                            <dd>Roman Amirpur</dd>
-                                            <dt>Inventors</dt>
-                                            <dd>Disney Dale</dd>
-                                            <dt>Law firm</dt>
-                                            <dd>Clayton &amp; Clayton Associates</dd>
-                                            <dt></dt>
-                                            <dd>
-                                                <button style="margin-top: 8px;" class="btn btn-success">View application</button>
-                                            </dd>
-                                        </dl>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><i class="icon icon-angle-right"></i> &nbsp;Request for evaluation</td>
-                                    <td><span>Request for evaluation</span></td>
-                                    <td><span>$3,700</span></td>
-                                </tr>
-                                <tr data-pl-detail-row style="display: none;">
-                                    <td colspan="3">
-                                        <dl class="dl-horizontal" style="margin-bottom: 0;">
-                                            <dt>Examiner</dt>
-                                            <dd>IP, Sikyin / 69776 / 1742</dd>
-                                            <dt>SPE (multiple)</dt>
-                                            <dd>John Olaskey</dd>
-                                            <dt>Applicants</dt>
-                                            <dd>Roman Amirpur</dd>
-                                            <dt>Inventors</dt>
-                                            <dd>Disney Dale</dd>
-                                            <dt>Law firm</dt>
-                                            <dd>Clayton &amp; Clayton Associates</dd>
-                                            <dt></dt>
-                                            <dd>
-                                                <button style="margin-top: 8px;" class="btn btn-success">View application</button>
-                                            </dd>
-                                        </dl>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><i class="icon icon-angle-right"></i> &nbsp;Request for change of ownership</td>
-                                    <td><span>Request for change of ownership</span></td>
-                                    <td><span>$3,600</span></td>
-                                </tr>
-                                <tr data-pl-detail-row style="display: none;">
-                                    <td colspan="3">
-                                        <dl class="dl-horizontal" style="margin-bottom: 0;">
-                                            <dt>Examiner</dt>
-                                            <dd>IP, Sikyin / 69776 / 1742</dd>
-                                            <dt>SPE (multiple)</dt>
-                                            <dd>John Olaskey</dd>
-                                            <dt>Applicants</dt>
-                                            <dd>Roman Amirpur</dd>
-                                            <dt>Inventors</dt>
-                                            <dd>Disney Dale</dd>
-                                            <dt>Law firm</dt>
-                                            <dd>Clayton &amp; Clayton Associates</dd>
-                                            <dt></dt>
-                                            <dd>
-                                                <button style="margin-top: 8px;" class="btn btn-success">View application</button>
-                                            </dd>
-                                        </dl>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    {% include appDemo/table-bordered.html %} 
-                    {% include appDemo/table-multiline.html %}
-                    <div class="text-center">
-                        <div class="pager btn-group">
-                            <a class="btn btn-default" href="#" disabled><i class="icon icon-angle-left"></i></a>
-                            <a class="btn btn-default active" href="#">1</a>
-                            <a class="btn btn-default" href="#">2</a>
-                            <a class="btn btn-default" href="#">3</a>
-                            <a class="btn btn-default" href="#">4</a>
-                            <a class="btn btn-default" href="#">5</a>
-                            <a class="btn btn-default" href="#"><i class="icon icon-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
+                {% include appDemo/aside-collections.html %}
             </div>
-            {% include appDemo/aside-collections.html %}
         </div>
         <div class="config-ui">
             <!-- <div class="toggle"></div> -->
             <div class="panel panel-default">
-                <div class="panel-heading"><span class="toggle icon icon-gear icon-inverse"></span>UI Configuration</div>
+                <div class="panel-heading">
+                    <button class="btn btn-icon-only toggle"><span class="icon icon-inverse"></span></button><span class="panel-title" tabindex="0">UI Configuration</span></div>
                 <div class="panel-body">
-                    <ul>
+                    <ul class="list-unstyled">
                         <li class="switch">
-                            <input type="checkbox" id="switch1" data-target="tabs-results">
-                            <label for="switch1" data-on="ON" data-off="OFF">Tabs</label>
-                        </li>
-                        <!-- <li class="switch">
-                            <input type="checkbox" id="switch3" checked data-target="filters">
-                            <label for="switch3" data-on="ON" data-off="OFF">filters</label>
-                        </li> -->
-                        <li class="switch">
-                            <input type="checkbox" id="switch2" data-target="table-multiline">
-                            <label for="switch2" data-on="ON" data-off="OFF">Multi-line table</label>
+                            <input type="checkbox" id="chk-tabs" data-target="tabs-results">
+                            <label for="chk-tabs" data-on="ON" data-off="OFF">Tabs</label>
                         </li>
                         <li class="switch">
-                            <input type="checkbox" id="switch3" data-target="table-bordered">
-                            <label for="switch3" data-on="ON" data-off="OFF">Bordered table</label>
+                            <input type="checkbox" id="chk-keywords" checked data-target="list-keywords">
+                            <label for="chk-keywords" data-on="ON" data-off="OFF">Filter selections</label>
+                        </li>
+                        <li class="divider"><span class="h5" tabindex="0">Filter types</span></li>
+                        <li class="switch">
+                            <input type="radio" id="rdo-accordion" name="filtersSwitch" checked data-target="filters-accordion">
+                            <label for="rdo-accordion" data-on="ON" data-off="OFF">Accordion</label>
+                        </li>
+                        <li class="switch">
+                            <input type="radio" id="rdo-selections" name="filtersSwitch" data-target="filters-selections">
+                            <label for="rdo-selections" data-on="ON" data-off="OFF">Selections</label>
+                        </li>
+                        
+                        <li class="divider"><span class="h5" tabindex="0">Search results</span></li>
+                        <li class="switch">
+                            <input type="radio" id="rdo-expRows" class="chk-switchTbl" name="tblsSwitch" checked data-target="table-searchResults">
+                            <label for="rdo-expRows" data-on="ON" data-off="OFF">Expanding rows</label>
+                        </li>
+                        <li class="switch">
+                            <input type="radio" id="rdo-multiline" class="chk-switchTbl" name="tblsSwitch" data-target="table-multiline">
+                            <label for="rdo-multiline" data-on="ON" data-off="OFF">Multi-line</label>
+                        </li>
+                        <li class="switch">
+                            <input type="radio" id="rdo-bordered" class="chk-switchTbl" name="tblsSwitch" data-target="table-bordered">
+                            <label for="rdo-bordered" data-on="ON" data-off="OFF">Bordered</label>
                         </li>
                     </ul>
                 </div>
@@ -516,6 +608,7 @@ preview: true
 
 
 
+
 <script src="{{site.baseurl}}/generated/scripts/vendor.js"></script>
 <script src="{{site.baseurl}}/generated/scripts/plugins.js"></script>
 <script src="//components.uspto.gov/js/ais/2-4-pattern-library.js"></script>
@@ -523,6 +616,7 @@ preview: true
 <script>
 var windowWidth = $(window).width();
 
+// resize window only if width changes
 $(window).resize(function() {
     if ($(window).width() !== windowWidth) {
 
@@ -533,7 +627,39 @@ $(window).resize(function() {
     }
 });
 
-/* enable datepickers */
+
+// toggle Collections aside display
+$('.btn-collections')
+    .removeClass('hide')
+    .click(function() {
+        $('.aside').toggleClass('hide');
+    });
+
+// events for Collections aside
+$('.aside')
+    .on('click', '.link-appNumSearch', function(e){ 
+        var appNum = $(this).find('.appNum').text();
+        console.log(appNum);
+        e.preventDefault();
+
+        $('#txt-search, #txt-find').val(appNum);
+    })
+    .on('click', '.close', function(e){         
+        e.preventDefault();
+
+        $('.aside').addClass('hide');
+    })
+    .on('click', '[data-toggle="collapsible"]', function(e){         
+        var trigger = $(this),
+            target = trigger.attr('href'),
+            expanded = trigger.attr('aria-expanded') === 'true';
+        
+        e.preventDefault();
+        trigger.attr('aria-expanded', !expanded);
+        $(target).find('tr').toggleClass('hide').attr('aria-hidden', expanded);
+    });
+
+// enable datepickers 
 $('.datepicker').datepicker({
     // autoSize: true,
     // showButtonPanel: true,
@@ -543,29 +669,51 @@ $('.datepicker').datepicker({
     // changeYear: true
 });
 
+// toggle filters sidebar
 $('.link-sidebar').click(function(e) {
     e.preventDefault();
     $('.app-sidebar').toggleClass('open');
     $('.btn-pgActions, .btn-displayOpts, .pager').toggleClass('hide');
 });
 
+// hide filters sidebar
 $('.btn-closeSidebar').click(function(e) {
     e.preventDefault();
     $('.app-sidebar').removeClass('open');
     $('.btn-pgActions, .btn-displayOpts, .pager').removeClass('hide');
 });
 
+// toggle UI configurator
 $('.config-ui')
     .on('click', '.toggle', function() {
         $('.config-ui').toggleClass('open');
     });
 
-$('.switch').on('click', 'input[type="checkbox"]', function() {
+// toggle switches for UI widgets
+$('.switch')
+    .on('click', 'input[type="checkbox"]', function() {
         var attr = '.' + $(this).attr('data-target');
         
+        // $('.chk-switchTbl').not($(this)).prop('checked', false);
+        // $('.table-responsive').addClass('hide');
+        $(attr).toggleClass('hide');        
+    })
+    .on('click', 'input[name="tblsSwitch"]', function() {
+        var attr = '.' + $(this).attr('data-target');
+        
+        $('.table-switchOpt').addClass('hide');
+        $(attr).toggleClass('hide');        
+    })
+    .on('click', 'input[name="filtersSwitch"]', function() {
+        var attr = '.' + $(this).attr('data-target');
+        
+        $('.filters-switchOpt').addClass('hide');
         $(attr).toggleClass('hide');        
     });
 
+// set defaults for UI configurator toggle switches
+$('#chk-tabs').prop('checked', false);
+$('#chk-keywords, #chk-expRows, #rdo-expRows, #rdo-accordion').prop('checked', true);
 
 </script>
 </body>
