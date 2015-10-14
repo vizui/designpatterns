@@ -1,14 +1,29 @@
-<div class="table-bordered table-responsive table-switchOpt hide">
-    <table class="table table-sortable">
+<div class="table-border table-switchOpt hide">
+<div class="table-actions row">
+    <div class="col-xs-12">
+        <div class="btn-group dropdown">
+            <button id="btn-displayOpts" type="button" class="btn-displayOpts btn btn-default dropdown-toggle" data-toggle="dropdown">10 per page <span class="caret"></span></button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="btn-displayOpts">
+                <li role="presentation" class="dropdown-header">Show up to</li>
+                <li role="presentation" class="active"><a role="menuitem" tabindex="-1" href="#">10 items</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">25 items</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">50 items</a></li>
+                <li role="presentation"><a role="menuitem" tabindex="-1" href="#">100 items</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="table-responsive">
+    <table class="table-bordered table table-sortable table-hover table-inverse">
         <thead>
             <tr>
-                <th>Application
-                    <abbr title="Number">#</abbr><span class="icon icon-sort"></span></th>
-                <th>Docket
-                    <abbr title="Number">#</abbr><span class="icon icon-sort"></span></th>
+                <th class="sortable"><a href="#void">Application
+                                    <abbr title="Number">#</abbr><span class="icon icon-sort icon-inverse"></span></a></th>
+                <th class="sortable"><a href="#void">Docket
+                                    <abbr title="Number">#</abbr><span class="icon icon-sort icon-inverse"></span></a></th>
                 <th>Title</th>
-                <th>Filing Date<span class="icon icon-caret-down"></span></th>
-                <th>Status<span class="icon icon-sort"></span></th>
+                <th class="sortable"><a href="#void">Filing Date<span class="icon icon-caret-down icon-inverse"></span></a></th>
+                <th class="sortable"><a href="#void">Status<span class="icon icon-sort icon-inverse"></span></a></th>
                 <th>IFW</th>
                 <th class="table-config-column">
                     <button type="button" data-container="body" title="Show and hide columns" data-toggle="tooltip"><i class="icon icon-ellipsis-h"></i></button>
@@ -48,4 +63,5 @@
             </tr>
         </tbody>
     </table>
+</div>
 </div>

@@ -94,10 +94,21 @@ abbr[title], abbr[data-original-title] {
 }
 
 .table-sortable {
+    & thead > tr > .sortable:hover {
+        background-color: #666;
+    }
     th {
         .icon {
             margin-left: 5px;
         }
     }
+}
 
+.table-inverse {
+    &.table-bordered > thead > tr > th {
+        border-bottom: none;
+    }
+    th a {
+        color: #FFF;
+    }
 }
