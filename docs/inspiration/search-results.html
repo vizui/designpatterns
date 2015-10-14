@@ -85,6 +85,7 @@ preview: true
                         </div>
                         <div id="2filterGroup2" class="collapse">
                             <div class="filter-group-content">
+                                <div class="form-group">
                                 <div class="checkbox">
                                     <label>
                                         <input checked type="checkbox">Assignment <span class="text-muted">(13)</span></label>
@@ -106,6 +107,7 @@ preview: true
                                         <input type="checkbox"> Service <span class="text-muted">(43)</span></label>
                                 </div>
                                 <a href="#void">Show 12 more...</a>
+                                </div>
                             </div>
                         </div>
                         <div class="filter-group-title">
@@ -195,7 +197,7 @@ preview: true
                     </div>
                     <div class="filter">
                         <div class="h5" tabindex="0">Application type</div>
-                        <div class="form-group">
+                        <div class="form-group margin-bottom-0">
                             <div class="checkbox">
                                 <label>
                                     <input checked type="checkbox">Assignment <span class="text-muted">(13)</span></label>
@@ -216,7 +218,7 @@ preview: true
                                 <label>
                                     <input type="checkbox"> Service <span class="text-muted">(43)</span></label>
                             </div>
-                            <a href="" style="margin-left: 21px; display: block; margin-top: -5px;">Show 12 more...</a>
+                            <a href="#void">Show 12 more...</a>
                         </div>
                     </div>
                     <div class="filter">
@@ -245,7 +247,7 @@ preview: true
                             <a id="searchResults" tabindex="-1"></a>
                             <a class="link-sidebar" href="#void"><i class="icon icon-columns"></i>Refine</a>
                             <div class="pg-actions clearfix">
-                                <h3 class="h4 pull-left"><span style="font-weight: 400">900 results for </span>application</h3>
+                                <h3 class="h4 pull-left margin-top-0"><span style="font-weight: 400">900 results for </span>application</h3>
                                 <div class="btn-pgActions btn-group">
                                     <button id="btn-pgActions" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actions <span class="caret"></span></button>
                                     <ul class="dropdown-menu" aria-labelledby="btn-pgActions">
@@ -257,13 +259,13 @@ preview: true
                                 </div>
                             </div>
                             <ul class="list-keywords list-unstyled margin-bottom-0">
-                                <li class="filter-value"><span>Application type: Service</span> <i class="icon icon-close icon-muted"></i></li>
-                                <li class="filter-value"><span>Applicant: JANE LLC</span> <i class="icon icon-close icon-muted"></i></li>
+                                <li class="filter-value" tabindex="0"><span>Application type: Service</span> <i class="icon icon-close icon-muted"></i></li>
+                                <li class="filter-value" tabindex="0"><span>Applicant: JANE LLC</span> <i class="icon icon-close icon-muted"></i></li>
                             </ul>
                         </div>
                         <div class="table-actions row">
                             <div class="col-xs-6">
-                                <span class="table-searchResults table-switchOpt"><a class="btn btn-link"><i class="icon icon-angle-right"></i> Expand/collapse all</a></span>
+                                <span class="table-searchResults table-switchOpt"><a class="btn btn-link" href="#void"><i class="icon icon-angle-right"></i> Expand/collapse all</a></span>
                             </div>
                             <div class="col-xs-6">
                                 <div class="btn-group dropdown pull-right">
@@ -573,6 +575,10 @@ preview: true
                             <input type="checkbox" id="chk-keywords" checked data-target="list-keywords">
                             <label for="chk-keywords" data-on="ON" data-off="OFF">Filter selections</label>
                         </li>
+                        <li class="switch">
+                            <input type="checkbox" id="chk-collections" data-target="collections">
+                            <label for="chk-collections" data-on="ON" data-off="OFF">Right sidebar</label>
+                        </li>
                         <li class="divider"><span class="h5" tabindex="0">Filter types</span></li>
                         <li class="switch">
                             <input type="radio" id="rdo-accordion" name="filtersSwitch" checked data-target="filters-accordion">
@@ -633,6 +639,7 @@ $('.btn-collections')
     .removeClass('hide')
     .click(function() {
         $('.aside').toggleClass('hide');
+        $('#chk-collections').prop('checked', $('.collections').is(':visible'));
     });
 
 // events for Collections aside
@@ -655,7 +662,7 @@ $('.aside')
             expanded = trigger.attr('aria-expanded') === 'true';
         
         e.preventDefault();
-        trigger.attr('aria-expanded', !expanded);
+        trigger.attr('aria-expanded', !expanded).find('.icon').toggleClass('icon-plus-square-o icon-minus-square-o');
         $(target).find('tr').toggleClass('hide').attr('aria-hidden', expanded);
     });
 
@@ -712,7 +719,7 @@ $('.switch')
     });
 
 // set defaults for UI configurator toggle switches
-$('#chk-tabs').prop('checked', false);
+$('#chk-tabs, #chk-collections').prop('checked', false);
 $('#chk-keywords, #chk-expRows, #rdo-expRows, #rdo-accordion').prop('checked', true);
 
 </script>

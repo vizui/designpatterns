@@ -43,9 +43,6 @@
 }
 
 .filters {
-    form {
-        margin-top: 18px;
-    }
     &.open {
         form {
             margin-top: 3px;
@@ -54,6 +51,7 @@
     a[data-toggle="collapse"] {
         display: block;
     }
+
     .input-icon {
         margin-left: 6px;
         + input {
@@ -68,7 +66,13 @@
         margin-top: 25px;
         text-transform: uppercase;
     }
+    label {
+        &.h5 {
+            font-weight: 600;
+        }
+    }
     &-selections {
+        margin-top: 25px;
         .h5 {
             margin-left: 0;
             margin-top: 0;
@@ -151,17 +155,7 @@
     th:last-child, td:last-child {
         text-align: right;
         width: 30px;
-    }
-    [data-toggle="collapsible"][aria-expanded="false"] .icon:after {
-        background-position: 0 -780px;
-        height: 14px;
-        width: 11px;
-    }
-    [data-toggle="collapsible"][aria-expanded="true"] .icon:after {
-        background-position: -120px -690px;
-        height: 14px;
-        width: 11px;
-    }
+    }    
 }
 
 .panel-collections {
