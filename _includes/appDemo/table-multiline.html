@@ -1,9 +1,13 @@
 <div class="table-multiline table-switchOpt hide">
     <div class="table-actions row">
         <div class="col-xs-6">
-            <div class="btn-group" role="group" aria-label="...">
-                <button type="button" class="btn btn-default"><i class="icon icon-list"></i> List View</button>
-                <button type="button" class="btn btn-default active"><i class="icon icon-list-alt"></i> Detail View</button>
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-default">
+                <input type="radio" name="viewOpts" id="viewOpt1" autocomplete="off"> <i class="icon icon-list"></i> List View
+              </label>
+              <label class="btn btn-default active">
+                <input type="radio" name="viewOpts" id="viewOpt2" autocomplete="off" checked> <i class="icon icon-list-alt"></i> Detail View
+              </label>              
             </div>
         </div>
         <div class="col-xs-6">
@@ -23,13 +27,13 @@
         <table class="table table-sortable table-striped table-inverse">
             <thead>
                 <tr>
-                    <th><a href="#void">Application
+                    <th class="sortable"><a href="#void">Application
                                             <abbr title="Number">#</abbr><span class="icon icon-sort icon-inverse"></span></a></th>
-                    <th><a href="#void">Docket
+                    <th class="sortable"><a href="#void">Docket
                                             <abbr title="Number">#</abbr><span class="icon icon-sort icon-inverse"></span></a></th>
                     <th>Title</th>
-                    <th><a href="#void">Filing Date<span class="icon icon-caret-down icon-inverse"></span></a></th>
-                    <th><a href="#void">Status<span class="icon icon-sort icon-inverse"></span></a></th>
+                    <th class="sortable"><a href="#void">Filing Date<span class="icon icon-caret-down icon-inverse"></span></a></th>
+                    <th class="sortable"><a href="#void">Status<span class="icon icon-sort icon-inverse"></span></a></th>
                     <th>IFW</th>
                 </tr>
             </thead>
