@@ -7,6 +7,8 @@
     border-top: none;
     box-shadow: none;
     display: inline-block;
+    overflow: hidden;
+    position: relative;
     width: 100%;
     .header {
         background-color: #eee;
@@ -29,16 +31,41 @@
             margin-top: 9px;
         }
     }
-    // @media (min-width: 768px) {
-    //     margin-bottom: 6px;
-    // }
 }
 
 .tabs-results {
-    border-bottom: none;
-    padding-left: 8px;
+    .nav-tabs, .btn {
+        border-bottom: none;       
+    }
+    .nav-tabs {
+         padding-left: 8px;
+    }
+     .btn {
+        background-color: #FFF;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        box-shadow: none;
+        margin-bottom: -1px;
+        position: relative;
+        left: 8px;
+    }
     .badge {
         margin-left: 5px;
+    }
+    .dropdown-menu {
+        a {
+            overflow: hidden;
+        }
+        span {
+            display: inline-block;
+        }
+        span:first-child {
+            width: 100px;
+        }
+        .badge {
+            min-width: 30px;
+            text-align: center;
+        }
     }
 }
 
@@ -70,7 +97,7 @@
             font-weight: 600;
         }
     }
-    &-selections {
+    &-flat {
         margin-top: 25px;
         .h5 {
             margin-left: 0;
@@ -99,7 +126,7 @@
 .btn-pgActions {
     position: absolute;
     right: 0;
-    top: -27px;
+    top: -37px;
     .dropdown-menu {
         left: auto;
         right: 0;
@@ -134,16 +161,20 @@
     }
 }
 
+.table-border, .table-multiline {
+    th { 
+        white-space: nowrap;
+    }
+}
+
 .table-multiline {
     .dl-horizontal {
-        @media(min-width: 600px) {
-            display: inline-block;
-            margin-right: 60px;
-            vertical-align: top;
-            &:last-child { 
-                a {
-                    margin: 0;
-                }
+        display: inline-block;
+        margin-right: 60px;
+        vertical-align: top;
+        &:last-child {
+            a {
+                margin: 0;
             }
         }
         @media(min-width: 768px) {
@@ -154,7 +185,7 @@
             dd {
                 margin-left: 110px;
             }
-            &:last-child { 
+            &:last-child {
                 a {
                     margin: 0 0 0 110px;
                 }
@@ -163,6 +194,9 @@
         &:last-child {
             dl {
                 margin-bottom: 5px;
+            }
+            dd {
+                margin-bottom: 0;
             }
             @media(min-width: 1280px) {
                 a {
@@ -178,6 +212,8 @@
         }
     }
 }
+
+
 
 .table-collections {
     margin-bottom: 0;
@@ -216,12 +252,13 @@
 }
 
 .config-ui {
-    position: fixed;
-    right: -185px;
-    top: 90px;
+    position: absolute;
+    right: -193px;
+    top: 17px;
     transition-duration: 0.5s;
     z-index: 2;
-    @media (min-width: 640px) {
+    @media(min-width: 768px) {
+        position: fixed;
         top: 135px;
     }
     &.open {

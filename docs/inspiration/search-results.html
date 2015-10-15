@@ -28,12 +28,17 @@ preview: true
                         <a href="#void">Show advanced search</a>
                     </div>
                 </form>
-                <ul class="tabs-results nav nav-tabs hide" role="tablist">
-                    <li class="active"><a href="#" role="tab" data-toggle="tab">All<span class="badge">61</span></a></li>
-                    <li><a href="#" data-toggle="tab" role="tab">Unassigned<span class="badge">45</span></a></li>
-                    <li><a href="#" data-toggle="tab" role="tab">Partially assigned<span class="badge">34</span></a></li>
-                    <li><a href="#" data-toggle="tab" role="tab">Fully nassigned<span class="badge">3</span></a></li>
-                </ul>
+                <div class="tabs-results tabs-responsive btn-group hide">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        All<span class="badge">61</span> <span class="caret"></span>
+                    </button>
+                    <ul class=" dropdown-menu">
+                        <li class="active"><a href="#" role="tab" data-toggle="tab"><span>All</span><span class="badge">61</span></a></li>
+                        <li><a href="#" data-toggle="tab" role="tab"><span>Unassigned</span><span class="badge">45</span></a></li>
+                        <li><a href="#" data-toggle="tab" role="tab"><span>Partially assigned</span><span class="badge">34</span></a></li>
+                        <li><a href="#" data-toggle="tab" role="tab"><span>Fully assigned</span><span class="badge">3</span></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
         <div class="main-wrapper row-grid">
@@ -162,7 +167,7 @@ preview: true
                         </div>
                     </div>
                 </form>
-                <form class="filters-selections filters-switchOpt hide" role="form">
+                <form class="filters-flat filters-switchOpt hide" role="form">
                      <div class="filter">
                         <label for="s2id_autogen2" class="h5 control-label">Select year</label>
                         <select class="select2 form-control">
@@ -285,9 +290,9 @@ preview: true
                                 <table class="table table-inverse table-sortable table-outline" data-pl-expandable-rows role="grid">
                                     <thead>
                                         <tr role="row">
-                                            <th class="sortable" scope="col" role="columnheader" aria-sort="none">Application title</th>
+                                            <th class="sortable" scope="col" role="columnheader" aria-sort="none">Application title<span class="icon icon-sort icon-inverse"></span></th>
                                             <th scope="col" role="columnheader" aria-sort="none">Description</th>
-                                            <th class="sortable" scope="col" role="columnheader" aria-sort="descending"><a href="#void">Fees &nbsp;<i class="icon icon-caret-down icon-inverse"></i></a></th>
+                                            <th class="sortable" scope="col" role="columnheader" aria-sort="descending"><a href="#void">Fees<i class="icon icon-caret-down icon-inverse"></i></a></th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -575,20 +580,20 @@ preview: true
                         </li>
                         <li class="switch">
                             <input type="checkbox" id="chk-collections" data-target="collections">
-                            <label for="chk-collections" data-on="ON" data-off="OFF">Right sidebar</label>
+                            <label for="chk-collections" data-on="ON" data-off="OFF">Collections panel</label>
                         </li>
                         <li class="switch">
                             <input type="checkbox" id="chk-keywords" checked data-target="list-keywords">
-                            <label for="chk-keywords" data-on="ON" data-off="OFF">Filter selections</label>
+                            <label for="chk-keywords" data-on="ON" data-off="OFF">Filter keywords</label>
                         </li>
-                        <li class="divider"><span class="h5" tabindex="0">Filter types</span></li>
+                        <li class="divider"><span class="h5" tabindex="0">Filter style</span></li>
                         <li class="switch">
                             <input type="radio" id="rdo-accordion" name="filtersSwitch" checked data-target="filters-accordion">
                             <label for="rdo-accordion" data-on="ON" data-off="OFF">Accordion</label>
                         </li>
                         <li class="switch">
-                            <input type="radio" id="rdo-selections" name="filtersSwitch" data-target="filters-selections">
-                            <label for="rdo-selections" data-on="ON" data-off="OFF">Selections</label>
+                            <input type="radio" id="rdo-flat" name="filtersSwitch" data-target="filters-flat">
+                            <label for="rdo-flat" data-on="ON" data-off="OFF">Flat</label>
                         </li>
                         
                         <li class="divider"><span class="h5" tabindex="0">Search results</span></li>

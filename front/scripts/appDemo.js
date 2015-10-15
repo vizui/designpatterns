@@ -58,13 +58,13 @@
     function resizeTabNav() {
 
         if (window.matchMedia('(min-width: 640px)').matches) {
-            $('.nav-settings')
+            $('.tabs-responsive')
                 .find('.dropdown-menu')
                 .toggleClass('dropdown-menu nav nav-tabs')
                 .end()
                 .find('.btn').addClass('hide');
         } else {
-            $('.nav-settings')
+            $('.tabs-responsive')
                 .find('.nav-tabs')
                 .toggleClass('dropdown-menu nav nav-tabs')
                 .end().find('.btn').removeClass('hide');
