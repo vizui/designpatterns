@@ -26,14 +26,27 @@
     });
 
     /* container switch */
-    $('.btn-fixed').click(function() {
+    function fixedContainer() {
         $('[data-toggle="tooltip"]').tooltip('hide');
         $('header .container-fluid, main').addClass('container').removeClass('container-fluid');
-    });
+        $('#chk-container').prop('checked', false);
+    }
 
-    $('.btn-fluid').click(function() {
+    function fluidContainer() {
         $('[data-toggle="tooltip"]').tooltip('hide');
         $('header .container, main').addClass('container-fluid').removeClass('container');
+        $('#chk-container').prop('checked', true);
+    }
+
+    $('.btn-fixed').click(fixedContainer);
+    $('.btn-fluid').click(fluidContainer);
+
+    $('#chk-container').click(function() {
+        if (this.checked) {
+            fluidContainer();
+        } else {
+            fixedContainer();
+        }
     });
 
     /* Create Account terms agreement checkbox */
