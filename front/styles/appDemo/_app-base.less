@@ -1,55 +1,24 @@
 /* ========================================================================
- * Base/grid application styles
+ * Base/global application styles
  * ======================================================================== */
-
 body {
     background-color: #f6f6f6;
 }
 
-.row-grid {
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-}
-
-.col {
-    display: table-cell;
-    vertical-align: top;
-}
-
-header .container {
-    min-width: 240px;
-}
-
-main,
-header .container-fluid {
-    width: 100%;
-}
-
 main {
     padding-bottom: 100px;
+    width: 100%;
 }
 
-.container-full {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.container-switch {
-    transition: width 0.5s;
-}
-
-.main-wrapper {
-    background-color: #FFF;
-}
-
-.main-content {
-    display: block;
-}
-
-@media (min-width: 1024px) {
-    .main-content {
-        display: table-cell;
+.main {
+    &-wrapper {
+        background-color: #FFF;
+    }
+    &-content {
+        display: block;
+        @media (min-width: 1024px) {
+            display: table-cell;
+        }
     }
 }
 

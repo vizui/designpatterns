@@ -2,7 +2,7 @@
  * Search results styles
  * ======================================================================== */
 
-.panel-page {
+.panel--page {
     border-radius: 0;
     border-top: none;
     box-shadow: none;
@@ -12,6 +12,7 @@
     width: 100%;
     .header {
         background-color: #eee;
+        padding-left: 14px;
     }
 }
 
@@ -138,7 +139,7 @@
     }
 }
 
-.table-actions {
+.table--actions {
     margin-bottom: 5px;
     .btn-link {
         display: inline-block;
@@ -149,7 +150,7 @@
     }
 }
 
-.table-searchResults {
+.table--searchResults {
     th {
         white-space: nowrap;
     }
@@ -161,22 +162,17 @@
     }
 }
 
-.table-border, .table-multiline {
+.table--border, .table--multiline {
     th { 
         white-space: nowrap;
     }
 }
 
-.table-multiline {
+.table--multiline {
     .dl-horizontal {
         display: inline-block;
         margin-right: 60px;
-        vertical-align: top;
-        &:last-child {
-            a {
-                margin: 0;
-            }
-        }
+        vertical-align: top;        
         @media(min-width: 768px) {
             dt {
                 text-align: left;
@@ -184,19 +180,22 @@
             }
             dd {
                 margin-left: 110px;
-            }
-            &:last-child {
-                a {
-                    margin: 0 0 0 110px;
-                }
-            }
+            }            
         }
         &:last-child {
+            a {
+                margin: 0;
+            }
             dl {
                 margin-bottom: 5px;
             }
             dd {
                 margin-bottom: 0;
+            }
+            @media (min-width: 768px) {
+                a {
+                    margin: 0 0 0 110px;
+                }
             }
             @media(min-width: 1280px) {
                 a {
@@ -213,9 +212,7 @@
     }
 }
 
-
-
-.table-collections {
+.table--collections {
     margin-bottom: 0;
     table-layout: fixed;
     th:first-child {
@@ -232,7 +229,7 @@
     }
 }
 
-.panel-collections {
+.panel--collections {
     margin-bottom: 0;
     .panel-body {
         max-height: 415px;
@@ -241,7 +238,7 @@
     }
 }
 
-.panel-actionBar {
+.panel__actionBar {
     background-color: #333;
     margin-left: -1px;
     margin-right: -1px;
@@ -296,7 +293,7 @@
             width: 12px;
         }
     }
-    .panel-title {
+    .panel__title {
         display: inline-block;
         font-size: 13px;
         margin-top: -2px;
