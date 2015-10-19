@@ -1,15 +1,15 @@
 ---
-title: "Accordions"
+title: "Collapsible Panels"
 ---
 
 <div class="pl-pattern">
-<h3>Accordions</h3>
+<h3>Collapsible Panels</h3>
 
 #### Purpose
 Users need to see only relevant content.
 
 #### Description
-Accordions provide users with the ability to expand and collapse content as needed. Accordions can simplify the interface by hiding content until it is needed.
+Collapsible panels provide users with the ability to expand and collapse content as needed. They can simplify the interface by hiding content until it is needed.
 
 &nbsp;
 
@@ -18,15 +18,15 @@ Accordions provide users with the ability to expand and collapse content as need
 <div class="pl-pattern">
 ### Behaviors
 
-Accordions can operate as either single-select or multi-select.
+Collapsible panels can operate as either single-select (accordion) or multi-select.
 
-- __Single-select__ allows only one panel to be expanded at any given time. Expanding a panel collapses the previously expanded panel.
+- __Single-select__ allows only one panel to be expanded at any given time. Expanding a panel collapses the previously expanded panel. This is commonly referred to as an "Accordion". 
 - __Multi-select__ allows more than one panel to be expanded at any given time. Expanding a panel has no impact on the other panels.
-  - __Expand/collapse all__ allows all panels to be expanded or collapsed simultaneously. It is important to note when all panels are in a "open" or "closed" state, clicking on a single panel will cause an indeterminate state to ocurr. 
+  - __Expand/collapse all__ allows all panels to be expanded or collapsed simultaneously. It is important to note when all panels are in a "open" or "closed" state, the corresponding button should be disabled. When there are panels in both "open" and "closed" states, both buttons are enabled.
 
 {::nomarkdown}
 <div class="pl-preview">
-    <div class="panel-toggler">
+    <div id="HonKongFooey" class="panel-toggler">
       <a id="expand-all">Expand All</a>&nbsp;|&nbsp;<a id="collapse-all">Collapse All</a>
     </div>
     <div class="panel-group" id="3accordion" role="tablist" aria-multiselectable="true">
@@ -103,27 +103,6 @@ Accordions can operate as either single-select or multi-select.
 {% endhighlight %}
 
 </div>
-<script>
-setTimeout(function(){
-   var collapseOne = $('#3collapseOne');
-   var collapseTwo = $('#3collapseTwo');
-   var collapseThree = $('#3collapseThree');
-
-   $('#collapse-all').click(function(){
-      collapseOne.collapse('hide');
-      collapseTwo.collapse('hide');
-      collapseThree.collapse('hide');
-   });
-
-  $('#expand-all').click(function(){
-      collapseOne.collapse('show');
-      collapseTwo.collapse('show');
-      collapseThree.collapse('show');
-  });
-
-}, 100);
-  
-</script>
 
 <div class="pl-pattern">
 ### Styles
