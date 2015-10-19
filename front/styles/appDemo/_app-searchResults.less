@@ -1,14 +1,28 @@
 /* ========================================================================
  * Search results styles
  * ======================================================================== */
+.pane {
+    &-left, &-right {
+        background-color: #FFF;
+        display: none;
+        @media(min-width: 1024px) {
+            display: table-cell;
+        }
+    }
+    &-center {
+        overflow: hidden;
+        position: relative;
+    }
+}
 
 .panel--page {
     border-radius: 0;
     border-top: none;
     box-shadow: none;
     display: inline-block;
-    overflow: hidden;
-    position: relative;
+    margin-bottom: 0;
+    // overflow: hidden;
+    // position: relative;
     width: 100%;
     .header {
         background-color: #eee;
@@ -38,9 +52,9 @@
     .nav-tabs, .btn {
         border-bottom: none;       
     }
-    .nav-tabs {
-         padding-left: 8px;
-    }
+    // .nav-tabs {
+    //      padding-left: 8px;
+    // }
      .btn {
         background-color: #FFF;
         border-bottom-left-radius: 0;
@@ -48,7 +62,7 @@
         box-shadow: none;
         margin-bottom: -1px;
         position: relative;
-        left: 8px;
+        // left: 8px;
     }
     .badge {
         margin-left: 5px;
@@ -251,10 +265,10 @@
 .config-ui {
     position: absolute;
     right: -193px;
-    top: 17px;
+    top: 16px;
     transition-duration: 0.5s;
     z-index: 2;
-    @media(min-width: 768px) {
+    @media(min-height: 768px) {
         position: fixed;
         top: 135px;
     }
@@ -313,5 +327,12 @@
         font-size: 12px;
         font-weight: normal;
         text-transform: uppercase;
+    }
+}
+
+.switch--pane {
+    display: none;
+    @media(min-width: 1024px) {
+        display: block;
     }
 }
