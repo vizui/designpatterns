@@ -12,7 +12,7 @@ preview: true
 </div>
 {% include appDemo/appHeader.html %}
 
-<main class="container-fluid container--full">
+<main class="container-fluid container--full" style="overflow: hidden; position: relative">
     <div class="row-grid">
         
         {% include appDemo/search-pane-left.html %}
@@ -98,22 +98,27 @@ preview: true
                 </div>
                 
             </div>
-            <div class="config-ui">
+            
+        </div>
+        {% include appDemo/search-pane-right.html %}
+    </div>
+    {% include appDemo/modal-appSettings.html %}
+    <div class="config-ui">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <button class="btn btn-icon-only toggle"><span class="icon icon-inverse"></span></button><span tabindex="0" class="panel__title">UI Configuration</span></div>
                         <div class="panel-body">
                             <ul class="list-unstyled">
                                 <li class="switch switch--container">
-                                    <input type="checkbox" checked id="chk-container" autocomplete="off">
+                                    <input type="checkbox" checked id="chk-container" class="js-chkPanels" autocomplete="off">
                                     <label data-off="Fixed" data-on="Fluid" for="chk-container">Page container</label>
                                 </li>
                                 <li class="switch switch--pane">
-                                    <input type="checkbox" data-target="pane-left" id="chk-leftPane" autocomplete="off">
+                                    <input type="checkbox" data-target="pane-left" id="chk-leftPane" class="js-chkPanels" autocomplete="off">
                                     <label data-off="OFF" data-on="ON" for="chk-leftPane">Left pane</label>
                                 </li>
                                 <li class="switch switch--pane">
-                                    <input type="checkbox" data-target="pane-right" id="chk-rightPane" autocomplete="off">
+                                    <input type="checkbox" data-target="pane-right" id="chk-rightPane" class="js-chkPanels" autocomplete="off">
                                     <label data-off="OFF" data-on="ON" for="chk-rightPane">Right pane</label>
                                 </li>
                                 <li class="switch">
@@ -153,11 +158,7 @@ preview: true
                             </ul>
                         </div>
                     </div>
-                </div>
-        </div>
-        {% include appDemo/search-pane-right.html %}
-    </div>
-    {% include appDemo/modal-appSettings.html %}
+            </div>
 </main>
 
 
@@ -247,10 +248,15 @@ $('.config-ui')
 
 // toggle switches for UI widgets
 $('.switch')
-    .on('click', 'input[type="checkbox"]:not(#chk-container)', function() {
+    .on('click', 'input[type="checkbox"]:not(.js-chkPanels)', function() {
         var attr = '.' + $(this).attr('data-target');
         
         $(attr).toggleClass('hide');        
+    })
+     .on('click', '#chk-leftPane, #chk-rightPane', function() {
+        var attr = '.' + $(this).attr('data-target');
+        
+        $(attr).toggleClass('open');        
     })
     .on('click', 'input[name="tblsSwitch"]', function() {
         var attr = '.' + $(this).attr('data-target');

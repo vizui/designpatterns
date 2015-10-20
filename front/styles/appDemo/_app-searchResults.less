@@ -1,17 +1,29 @@
 /* ========================================================================
  * Search results styles
  * ======================================================================== */
+
 .pane {
-    &-left, &-right {
+    &-left,
+    &-right {
         background-color: #FFF;
         display: none;
+        overflow: hidden;
+        transition: width 0.5s;
+        vertical-align: top;
+        width: 0;
         @media(min-width: 1024px) {
             display: table-cell;
         }
     }
-    &-center {
-        overflow: hidden;
-        position: relative;
+    &-left {
+        &.open {
+            width: 175px;
+        }
+    }
+    &-right {
+        &.open {
+            width: 225px;
+        }
     }
 }
 
@@ -21,8 +33,6 @@
     box-shadow: none;
     display: inline-block;
     margin-bottom: 0;
-    // overflow: hidden;
-    // position: relative;
     width: 100%;
     .header {
         background-color: #eee;
@@ -49,20 +59,17 @@
 }
 
 .tabs-results {
-    .nav-tabs, .btn {
-        border-bottom: none;       
+    .nav-tabs,
+    .btn {
+        border-bottom: none;
     }
-    // .nav-tabs {
-    //      padding-left: 8px;
-    // }
-     .btn {
+    .btn {
         background-color: #FFF;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
         box-shadow: none;
         margin-bottom: -1px;
         position: relative;
-        // left: 8px;
     }
     .badge {
         margin-left: 5px;
@@ -176,8 +183,9 @@
     }
 }
 
-.table--border, .table--multiline {
-    th { 
+.table--border,
+.table--multiline {
+    th {
         white-space: nowrap;
     }
 }
@@ -186,7 +194,7 @@
     .dl-horizontal {
         display: inline-block;
         margin-right: 60px;
-        vertical-align: top;        
+        vertical-align: top;
         @media(min-width: 768px) {
             dt {
                 text-align: left;
@@ -194,7 +202,7 @@
             }
             dd {
                 margin-left: 110px;
-            }            
+            }
         }
         &:last-child {
             a {
@@ -312,6 +320,10 @@
         font-size: 13px;
         margin-top: -2px;
         vertical-align: middle;
+    }
+    ul,
+    li:last-child {
+        margin-bottom: 0;
     }
     ul {
         padding-left: 0;
