@@ -20,18 +20,21 @@
         transition: width 0.5s;
         vertical-align: top;
         width: 0;
-        @media(min-width: 1024px) {
-            display: table-cell;
-        }
     }
     &-left {
         &.open {
-            width: 175px;
+            @media(min-width: 1024px) {
+                display: table-cell;
+                width: 175px;
+            }
         }
     }
     &-right {
         &.open {
-            width: 225px;
+            @media(min-width: 1024px) {
+                display: table-cell;
+                width: 225px;
+            }
         }
     }
 }
