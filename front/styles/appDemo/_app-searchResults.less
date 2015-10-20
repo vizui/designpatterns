@@ -2,10 +2,13 @@
  * Search results styles
  * ======================================================================== */
 .search-results {
-    overflow-x: hidden;
-    overflow-y: auto;
-    padding-right: 0 !important;
-    position: relative;
+    &.modal-open {
+        padding-right: 0 !important;
+    }
+    .wrapper {
+        overflow-x: hidden;
+        position: relative;
+    }
 }
 
 .pane {
@@ -291,7 +294,7 @@
 .config-ui {
     position: absolute;
     right: -193px;
-    top: 92px;
+    top: 12px;
     transition-duration: 0.5s;
     z-index: 2;
     @media(min-height: 768px) and (min-width: 640px) {
