@@ -12,7 +12,7 @@ preview: true
 </div>
 {% include appDemo/appHeader.html %}
 
-<main class="container-fluid container--full" style="overflow: hidden; position: relative">
+<main class="container-fluid container--full">
     <div class="row-grid">
         
         {% include appDemo/search-pane-left.html %}
@@ -103,7 +103,10 @@ preview: true
         {% include appDemo/search-pane-right.html %}
     </div>
     {% include appDemo/modal-appSettings.html %}
-    <div class="config-ui">
+    
+</main>
+
+<div class="config-ui">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <button class="btn btn-icon-only toggle"><span class="icon icon-inverse"></span></button><span tabindex="0" class="panel__title">UI Configuration</span></div>
@@ -159,9 +162,6 @@ preview: true
                         </div>
                     </div>
             </div>
-</main>
-
-
 
 
 <script src="{{site.baseurl}}/generated/scripts/vendor.js"></script>
