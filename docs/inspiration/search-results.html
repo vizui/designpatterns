@@ -138,7 +138,7 @@ $('.btn-collections')
         $('#chk-collections').prop('checked', $('.collections').is(':visible'));
     });
 
-// events for Collections aside
+// events for Collections panel
 $('.panel--collections')
     .on('click', '.link-appNumSearch', function(e){ 
         var appNum = $(this).find('.appNum').text();
@@ -162,6 +162,12 @@ $('.panel--collections')
         trigger.attr('aria-expanded', !expanded).find('.icon').toggleClass('icon-plus-square-o icon-minus-square-o');
         $(target).find('tr').toggleClass('hide').attr('aria-hidden', expanded);
     });
+
+// initialize tooltip for table cols toggle
+$('.btn-tblCols').tooltip({
+    placement: 'top',
+    template: '<div class="tooltip tooltip-light" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>'
+});
 
 // enable datepickers 
 $('.datepicker').datepicker({
