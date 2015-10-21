@@ -79,7 +79,8 @@ preview: true
                                         <li tabindex="0" class="filter-value"><span>Applicant: JANE LLC</span> <i class="icon icon-close icon-muted"></i></li>
                                     </ul>
                                 </div>
-                                {% include appDemo/table-searchResults.html %} {% include appDemo/table-bordered.html %} {% include appDemo/table-multiline.html %}
+                                {% include appDemo/table-searchResults.html %} {% include appDemo/table-bordered.html %} 
+                                <!-- {% include appDemo/table-multiline.html %} -->
                                 <div class="text-center">
                                     <div class="pager btn-group">
                                         <a disabled="" href="#" class="btn btn-default"><i class="icon icon-angle-left"></i></a>
@@ -138,7 +139,7 @@ $('.btn-collections')
     });
 
 // events for Collections aside
-$('.aside')
+$('.panel--collections')
     .on('click', '.link-appNumSearch', function(e){ 
         var appNum = $(this).find('.appNum').text();
         console.log(appNum);
@@ -149,7 +150,7 @@ $('.aside')
     .on('click', '.close', function(e){         
         e.preventDefault();
 
-        $('.aside').addClass('hide');
+        $('.collections').addClass('hide');
          $('#chk-collections').prop('checked', false);
     })
     .on('click', '[data-toggle="collapsible"]', function(e){         
