@@ -2,39 +2,6 @@
  * Application header/banner styles
  * ======================================================================== */
 
-.uspto-container {
-    margin-right: auto;
-    margin-left: auto;
-}
-
-@media (min-width: 768px) {
-    .uspto-container {
-        width: 720px;
-    }
-}
-
-@media (min-width: 992px) {
-    .uspto-container {
-        width: 940px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .uspto-container {
-        width: 1140px;
-    }
-}
-
-.uspto-container--fluid {
-    width: 100%;
-}
-
-.uspto-container:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 .navbar-brand {
     font-size: 14px;
     font-weight: 600;
@@ -110,7 +77,7 @@
 
 .ex-sub-header {
     background: #282930;
-    height: 38px;    
+    height: 38px;
     color: #fff;
     padding-right: 4px;
 }
@@ -141,7 +108,7 @@
 }
 
 .ex-sub-header--gadgets {
-    float: left;     
+    float: left;
 }
 
 .ex-sub-header--gadgets .btn {
@@ -162,14 +129,14 @@
 
 .ex-sub-header--gadgets .btn-search--mobile {
     display: inline-block;
-    @media (min-width: 640px) { 
+    @media (min-width: 640px) {
         display: none;
     }
 }
 
 .search {
     display: none;
-    @media (min-width: 640px) { 
+    @media (min-width: 640px) {
         background-color: transparent;
         display: block;
         float: right;
@@ -178,46 +145,18 @@
         text-align: right;
         width: auto;
         .btn-search {
-             .ex-btn__inverse();
-             background: rgba(255, 255, 255, 0.05) none repeat scroll 0 0;
-             padding: 6px;
-             width: 3em;
-             &:active:focus {
+            .ex-btn__inverse();
+            background: rgba(255, 255, 255, 0.05) none repeat scroll 0 0;
+            padding: 6px;
+            width: 3em;
+            &:active:focus {
                 background-color: #666;
-             }
-        }        
+            }
+        }
         .icon.icon-search::after {
             background-image: url("../images/icons/white.svg");
         }
     }
-}
-
-.ex-container {
-    position: absolute;
-    top: 72px;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: #d6d7da;
-    padding: 10px;
-}
-
-.ex-header {
-    height: 34px;
-    color: #fff;
-    background: #004c97;
-}
-
-.ex-header--menu {
-    display: inline-block;
-    background: rgba(0, 0, 0, .1);
-    padding: 8px;
-    width: 36px;
-    text-align: center;
-}
-
-.ex-header--buttons {
-    margin-left: 40px;
 }
 
 .ex-btn__inverse {
@@ -249,42 +188,52 @@
     color: #fff;
 }
 
-.ex-sub-header--text {
-    padding: 10px 12px;
-}
-
-.ex-sub-header--text__border-left {
-    border-left: 1px solid rgba(0, 0, 0, .4);
-    margin-left: 8px;
-}
-
-.btn-fixed, .btn-fluid, .switch--container {
-    display: none;
-    @media (min-width: 768px) {
-       display: inline-block; 
-    }    
+.btn {
+    &-fixed,
+    &-fluid,
+    &-collections,
+    .switch--container {
+        display: none;
+    }
+    &-fixed,
+    &-fluid,
+    .switch--container {
+        @media (min-width: 768px) {
+            display: inline-block;
+        }
+    }
+    &-collections {
+        @media (min-width: 1024px) {
+            display: inline-block;
+        }
+    }
 }
 
 .skipLinks {
     text-align: center;
+    a {
+        display: block;
+        font-weight: 700;
+        text-align: center;
+        &:hover,
+        &:focus,
+        &:active {
+            padding: 5px;
+            text-decoration: none;
+        }
+    }
 }
 
-.skipLinks a {
-    display: block;
-    font-weight: 700;
-    text-align: center;
-}
-
-.skipLinks a:hover, .skipLinks a:focus, .skipLinks a:active {
-    padding: 5px;
-    text-decoration: none;
-}
-
-.sr-only.focusable:active, .sr-only.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0 auto;
-    overflow: visible;
-    position: static;
-    width: 300px;
+.sr-only {
+    &.focusable {
+        &:active,
+        &:focus {
+            clip: auto;
+            height: auto;
+            margin: 0 auto;
+            overflow: visible;
+            position: static;
+            width: 300px;
+        }
+    }
 }
