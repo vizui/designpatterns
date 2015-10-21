@@ -1,6 +1,7 @@
 /* ========================================================================
  * Search results styles
  * ======================================================================== */
+
 .search-results {
     &.modal-open {
         padding-right: 0 !important;
@@ -367,9 +368,19 @@
     }
 }
 
-.switch--pane {
-    display: none;
-    @media(min-width: 1024px) {
-        display: block;
+.switch {
+    &--container,
+    &--pane {
+        display: none;
+    }
+    &--container {
+        @media (min-width: 768px) {
+            display: inline-block;
+        }
+    }
+    &--pane {
+        @media(min-width: 1024px) {
+            display: block;
+        }
     }
 }
