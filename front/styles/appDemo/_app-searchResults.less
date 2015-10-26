@@ -1,6 +1,7 @@
 /* ========================================================================
  * Search results styles
  * ======================================================================== */
+
 .search-results {
     &.modal-open {
         padding-right: 0 !important;
@@ -203,6 +204,10 @@
     }
 }
 
+.table--border thead > tr > .table-config-column > button:hover {
+    background-color: #666;
+}
+
 .table--multiline {
     .hidden-small {
         @media(max-width: 340px) {
@@ -363,9 +368,19 @@
     }
 }
 
-.switch--pane {
-    display: none;
-    @media(min-width: 1024px) {
-        display: block;
+.switch {
+    &--container,
+    &--pane {
+        display: none;
+    }
+    &--container {
+        @media (min-width: 768px) {
+            display: inline-block;
+        }
+    }
+    &--pane {
+        @media(min-width: 1024px) {
+            display: block;
+        }
     }
 }
