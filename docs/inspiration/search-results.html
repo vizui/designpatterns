@@ -14,9 +14,7 @@ preview: true
 
 <main class="wrapper container-fluid container--full">
     <div class="row-grid">
-        
         {% include appDemo/search-pane-left.html %}
-        
         <div class="pane-center col">
             <div class="panel--page panel panel-default">
                 <a tabindex="-1" id="search"></a>
@@ -54,7 +52,8 @@ preview: true
                         <div class="filter-heading">
                             <span tabindex="0" class="h4">Refine by</span> <a class="filters-clear" href="">Clear</a>
                         </div>
-                        {% include appDemo/filters-accordion.html %} {% include appDemo/filters-flat.html %}
+                        {% include appDemo/filters-accordion.html %}
+                        {% include appDemo/filters-flat.html %}
                     </div>
                     <div class="row-grid">
                         <div class="main-content col">
@@ -79,8 +78,7 @@ preview: true
                                         <li tabindex="0" class="filter-value"><span>Applicant: JANE LLC</span> <i class="icon icon-close icon-muted"></i></li>
                                     </ul>
                                 </div>
-                                {% include appDemo/table-searchResults.html %} {% include appDemo/table-bordered.html %} 
-                                <!-- {% include appDemo/table-multiline.html %} -->
+                                {% include appDemo/table-searchResults.html %} {% include appDemo/table-bordered.html %}
                                 <div class="text-center">
                                     <div class="pager btn-group">
                                         <a disabled="" href="#" class="btn btn-default"><i class="icon icon-angle-left"></i></a>
@@ -97,15 +95,14 @@ preview: true
                         {% include appDemo/aside-collections.html %}
                     </div>
                 </div>
-                
             </div>
-            
         </div>
         {% include appDemo/search-pane-right.html %}
     </div>
-    {% include appDemo/modal-appSettings.html %}
+    {% include appDemo/modal-appSettings.html %} 
     {% include appDemo/search-config-ui.html %}
 </main>
+
 
     
 
@@ -214,13 +211,13 @@ $('.switch')
     .on('click', 'input[name="tblsSwitch"]', function() {
         var attr = '.' + $(this).attr('data-target');
         
-        $('.table--switchOpt').addClass('hide');
+        $('.js-tableSwitch').addClass('hide');
         $(attr).toggleClass('hide');        
     })
     .on('click', 'input[name="filtersSwitch"]', function() {
         var attr = '.' + $(this).attr('data-target');
         
-        $('.filters-switchOpt').addClass('hide');
+        $('.js-filterSwitch').addClass('hide');
         $(attr).toggleClass('hide');        
     });
     
