@@ -59,32 +59,48 @@ title: "Icons"
 
 </div>
 <div class="pl-pattern">
+{::nomarkdown}<div class="pull-right"><span class="label label-info">Proposed</span></div>{:/nomarkdown}
+
 ### USPTO Intellectual Property Symbols
 
 {::nomarkdown}
-<div class="row pl-icon-list sec-ip-symbols">
-    <div class="col-md-3 col-sm-4"><i class="icon icon-utility-patent"></i> icon-utility-patent</div>
-    <div class="col-md-3 col-sm-4"><i class="icon icon-patent-pending"></i> icon-patent-pending</div>
-    <div class="col-md-3 col-sm-4"><i class="icon icon-plant-patent"></i> icon-plant-patent</div>
-    <div class="col-md-3 col-sm-4"><i class="icon icon-pro-se"></i> icon-pro-se</div>
-    <div class="col-md-3 col-sm-4"><i class="icon icon-invention"></i> icon-invention</div>
-    <div class="col-md-3 col-sm-4"><i class="icon icon-maker"></i> icon-maker</div>
-    <div class="col-md-3 col-sm-4"><i class="icon icon-intellectual-property"></i> icon-intellectual-property</div>
-    <div class="col-md-3 col-sm-4"><i class="icon icon-design-patent"></i> icon-design-patent</div>
-    <div class="col-md-3 col-sm-4"><i class="icon icon-prior-art"></i> icon-prior-art</div>
-    <div class="col-md-3 col-sm-4"><i class="icon icon-small-inventor"></i> icon-small-inventor</div>
-    <div class="col-md-3 col-sm-4"><i class="icon icon-large-inventor"></i> icon-large-inventor</div>
-    <div class="col-md-3 col-sm-4"><i class="icon icon-infringement"></i> icon-infringement</div>
-    <div class="col-md-3 col-sm-4"><i class="icon icon-trade-secret"></i> icon-trade-secret</div>
-    <div class="col-md-3 col-sm-4"><i class="icon icon-micro-entity-inventor"></i> icon-micro-entity-inventor</div>
-    <div class="col-md-3 col-sm-4"><i class="icon icon-service-mark"></i> icon-service-mark</div>
-    <div class="col-md-3 col-sm-4"><i class="icon icon-counterfeit"></i> icon-counterfeit</div>
-    <div class="col-md-3 col-sm-4"><i class="icon icon-ptotrademark"></i> icon-ptotrademark</div>
-    <div class="col-md-3 col-sm-4"><i class="icon icon-stem"></i> icon-stem</div>
-    <div class="col-md-3 col-sm-4"><i class="icon icon-pro-bono"></i> icon-pro-bono</div>
+<div class="row pl-icon-list-large sec-ip-symbols">
+    <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-utility-patent"></i> icon-utility-patent</div>
+    <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-patent-pending"></i> icon-patent-pending</div>
+    <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-plant-patent"></i> icon-plant-patent</div>
+    <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-pro-se"></i> icon-pro-se</div>
+    <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-invention"></i> icon-invention</div>
+    <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-maker"></i> icon-maker</div>
+    <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-intellectual-property"></i> icon-intellectual-property</div>
+    <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-design-patent"></i> icon-design-patent</div>
+    <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-prior-art"></i> icon-prior-art</div>
+    <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-small-inventor"></i> icon-small-inventor</div>
+    <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-large-inventor"></i> icon-large-inventor</div>
+    <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-infringement"></i> icon-infringement</div>
+    <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-trade-secret"></i> icon-trade-secret</div>
+    <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-micro-entity-inventor"></i> icon-micro-entity-inventor</div>
+    <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-service-mark"></i> icon-service-mark</div>
+    <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-counterfeit"></i> icon-counterfeit</div>
+    <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-ptotrademark"></i> icon-ptotrademark</div>
+    <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-stem"></i> icon-stem</div>
+    <div class="col-lg-4 col-md-6 col-sm-6"><i class="icon-ip icon-pro-bono"></i> icon-pro-bono</div>
 </div>
-<div class="pull-right text-muted">Download the original SVG/PNG files at <a href="https://thenounproject.com/USPTO/" target="_blank">thenounproject.com/USPTO</a></div>
+
 {:/nomarkdown}
+
+#### About
+
+These icons were created during the <a href="http://www.uspto.gov/about-us/organizational-offices/office-under-secretary-and-director/intellectual-property-iconathon" target="_blank">USPTO Iconathon</a>, a workshop to create a set of icons that represent intellectual property concepts that don’t have a universal and recognized icon to represent them. Partnering with the <a href="https://thenounproject.com/" target="_blank">Noun Project</a>, we called on students, civic activists, artists, and intellectual property enthusiasts to collaborate, brainstorm, and sketch designs. 
+
+#### Suggested usage
+
+- As complementary artwork for headings (H1,H2,H3) 
+- On welcome and/or marketing pages
+- Featured icons in website billboard sections
+- Alongside lists of anchor links
+
+Download the original SVG/PNG files at <a href="https://thenounproject.com/USPTO/" target="_blank">thenounproject.com/USPTO</a>
+
 <br/>
 </div>
 

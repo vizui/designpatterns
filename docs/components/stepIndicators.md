@@ -79,6 +79,45 @@ The veritcal style is useful for navigation or for "scroll spy" behavior.
 </ol>
 {% endhighlight %}
 
+
+
+#### Arrow
+
+The arrow style is useful for multi-step wizards.
+
+{::nomarkdown}
+<div class="pl-preview">
+<div style="max-width: 600px;">
+    <ol class="nav-steps nav-stacked">
+        <li>
+            <a href="">Applicant information</a>
+        </li>
+        <li class="active">
+            <span href="">Mark information</span>
+        </li>
+        <li>
+            <a href="">Goods and services</a>
+        </li>
+    </ol>
+</div>
+</div>
+{:/nomarkdown}
+
+{% highlight html %}
+<ol class="nav-steps">
+    <li  style="width:33.3%">
+        <span>Applicant information</span>
+    </li>
+    <li class="active" style="width:33.3%">
+        <span>Mark information</span>
+    </li>
+    <li class="" style="width:33.3%">
+        <span>Goods and services</span>
+    </li>
+</ol>
+{% endhighlight %}
+
+
 #### Dots
 
 The dot step indicator is useful for very simple processes, like a tour.
