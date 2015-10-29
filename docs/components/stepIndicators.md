@@ -79,6 +79,7 @@ The veritcal style is useful for navigation or for "scroll spy" behavior.
 </ol>
 {% endhighlight %}
 
+
 #### Dots
 
 The dot step indicator is useful for very simple processes, like a tour.
