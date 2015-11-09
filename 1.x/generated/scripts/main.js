@@ -19,6 +19,24 @@
     });
 
     /*
+     * Add collapsible panel functionality
+     */
+    var collapseOne = $('#3collapseOne');
+    var collapseTwo = $('#3collapseTwo');
+    var collapseThree = $('#3collapseThree');
+    $('#collapse-all').click(function(){
+        collapseOne.collapse('hide');
+        collapseTwo.collapse('hide');
+        collapseThree.collapse('hide');
+    });
+
+    $('#expand-all').click(function(){
+        collapseOne.collapse('show');
+        collapseTwo.collapse('show');
+        collapseThree.collapse('show');
+    });
+
+    /*
      * Add subnav
      */
     var activeSubNav = $('.pl-sidebar > .nav > .active');

@@ -6,6 +6,21 @@ layout: pattern
 {::nomarkdown}
 <div class="pl-versions">
     <div class="pl-panel">
+        <h4>1.4.0 - Nov 09, 2015 <a href="{{site.repository.url}}/releases/tag/v1.4.0">(Download)</a></h4>
+        <span class="label subtle label-info">NEW</span>
+        <ul>
+            <li>USPTO Iconothon icons</li>
+            <li>New Inspirations</li>
+            <li>Search interface designer</li>
+        </ul>
+        <span class="label subtle label-success">IMPROVED</span>
+        <ul>
+            <li>Icons updated to match Font Awesome 4.4</li>
+            <li>Optional tooltip with lighter color for dark interfaces</li>
+            <li>Misc. bug fixes, enhancements</li>
+        </ul>
+    </div>
+    <div class="pl-panel">
         <h4>1.3.0 - Aug 21, 2015 <a href="{{site.repository.url}}/releases/tag/v1.3.0">(Download)</a></h4>
         <span class="label subtle label-info">NEW</span>
         <ul>
