@@ -36,7 +36,7 @@ title: "Icons"
 <div class="col-xs-6 col-sm-4 col-md-2 text-center"><i class="icon icon-warning icon-color-warning"></i><div>Warning</div><div class="text-muted">.icon-color-warning</div></div>
 <div class="col-xs-6 col-sm-4 col-md-2 text-center"><i class="icon icon-exclamation icon-color-danger"></i><div>Danger</div><div class="text-muted">.icon-color-danger</div></div>
 <div class="col-xs-12">&nbsp;</div>
-<div class="col-xs-12 em">Note:<span class="text-muted"> Use either a colored circle with a white icon, or a colored icon; not both together. If necessary, you may use a dark circle to add emphasis to warning icons.</span></div>
+<div class="col-xs-12 em">Note:<span class="text-muted"> Use either a colored circle with a white icon, or a colored icon; not both together. If necessary, you may use a dark circle to add emphasis to warning icons. Always ensure final icon usage is 508 compliant.</span></div>
 </div>
 {:/nomarkdown}
 
