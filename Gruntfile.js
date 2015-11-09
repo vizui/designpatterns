@@ -239,14 +239,30 @@ module.exports = function (grunt) {
                 }, { // minified css to downloads folders
 
                 }]
+            },
+            release: {
+                files: [{ // Do things for a full release
+                    cwd: '_site/',
+                    src: ['**/*', '!**/1.x/**'],
+                    dest: '1.x/',
+                    expand:true
+                }]
             }
         },
 
         // Zips up src less files, images, and minified css
         zip: {
             '<%= paths.downloads %>/usptostrap-<%= config.version %>.zip': ['<%= paths.downloads %>/**/*']
+        },
+        
+        //Jekyll Tasks
+        jekyll: {
+            release : {
+                options : {
+                    config: '_config_release.yml'
+                }
+            }
         }
-
     });
 
     grunt.registerTask('build', [
@@ -259,6 +275,23 @@ module.exports = function (grunt) {
         'autoprefixer',
         'copy:dist',
         'zip'
+    ]);
+    
+    // Use caution, this will overwrite files.
+    //This will overwrite the 1x folder
+    grunt.registerTask('doversionedrelease', [
+        'clean:dist',
+        'jshint',
+        'less',
+        'imagemin',
+        'usebanner',
+        'concat',
+        'autoprefixer',
+        'copy:dist',
+        'zip',
+        'jekyll:release',
+        'copy:release'
+
     ]);
 
     grunt.registerTask('default', [
