@@ -1,9 +1,9 @@
 ---
-title: "Collapsible Panels"
+title: "Collapsible panels"
 ---
 
 <div class="pl-pattern">
-<h3>Collapsible Panels</h3>
+<h3>Collapsible panels</h3>
 
 #### Purpose
 Users need to see only relevant content.
@@ -86,7 +86,7 @@ Collapsible panels can operate as either single-select (accordion) or multi-sele
                     <td><span >$5,400</span></td>
                 </tr>
                 <tr>
-                    <td>Account Management</td>
+                    <td>Account management</td>
                     <td><span >Improve account management workflow</span></td>
                     <td><span >$6,000</span></td>
                 </tr>
@@ -170,7 +170,7 @@ The standard style provides more distinction between the panel and internal/surr
                     <td><span >$5,400</span></td>
                 </tr>
                 <tr>
-                    <td>Account Management</td>
+                    <td>Account management</td>
                     <td><span >Improve account management workflow</span></td>
                     <td><span >$6,000</span></td>
                 </tr>
@@ -249,7 +249,7 @@ For simple content or layouts, the light style may work better.
                     <td><span >$5,400</span></td>
                 </tr>
                 <tr>
-                    <td>Account Management</td>
+                    <td>Account management</td>
                     <td><span >Improve account management workflow</span></td>
                     <td><span >$6,000</span></td>
                 </tr>
