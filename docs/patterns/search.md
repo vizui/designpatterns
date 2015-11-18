@@ -42,7 +42,7 @@ Users need to search for data.
         </span>
     </div>
     <div class="help-block">
-        <a href="">Show advanced search</a>
+        <a href="#">Show advanced search</a>
     </div>
 </div>
 </div>
