@@ -170,7 +170,7 @@ Users must choose between two or more mutually exclusive options.
         <label><input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>Disabled</label>
     </div>
     <div class="radio">
-      <label><input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">Extended <div class="text-muted" style="width: 300px;">This option has some useful help text associated with it that elaborates on the state or purpose.</div></label>
+      <label><input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">Extended <span class="help-block">This option has some useful help text associated with it that elaborates on the state or purpose.</span></label>
     </div>
   </fieldset>
 </div>
@@ -189,7 +189,7 @@ Users must choose between two or more mutually exclusive options.
       <label><input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>Disabled</label>
   </div>
   <div class="radio">
-    <label><input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">Extended <div class="text-muted">This option has some useful help text associated with it that elaborates on the state or purpose.</div></label>
+    <label><input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">Extended <span class="help-block">This option has some useful help text associated with it that elaborates on the state or purpose.</span></label>
   </div>
 </fieldset>
 {% endhighlight %}
@@ -223,7 +223,7 @@ Users must choose between two or more mutually exclusive options.
   <label class="radio-inline">
     <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> Normal
   </label>
-<fieldset>
+</fieldset>
 {% endhighlight %}
 
 </div>
@@ -267,7 +267,7 @@ Users need to specify which option(s) from a set are applicable/valid/true based
       <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes3" value="option3" disabled>Disabled</label>
     </div>
     <div class="checkbox">
-      <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes4" value="option4">Extended <div class="text-muted" style="width: 300px;">This option has some useful help text associated with it that elaborates on the state or purpose.</div></label>
+      <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes4" value="option4">Extended <span class="help-block">This option has some useful help text associated with it that elaborates on the state or purpose.</span></label>
     </div>
   </fieldset>
 </div>
@@ -286,7 +286,7 @@ Users need to specify which option(s) from a set are applicable/valid/true based
     <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes3" value="option3" disabled>Disabled</label>
   </div>
   <div class="checkbox">
-    <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes4" value="option4">Extended <div class="text-muted">This option has some useful help text associated with it that elaborates on the state or purpose.</div></label>
+    <label><input type="checkbox" name="optionsCheckboxes" id="optionsCheckboxes4" value="option4">Extended <span class="help-block">This option has some useful help text associated with it that elaborates on the state or purpose.</span></label>
   </div>
 </fieldset>
 {% endhighlight %}
@@ -295,17 +295,18 @@ Users need to specify which option(s) from a set are applicable/valid/true based
 
 {::nomarkdown}
 <div class="pl-preview">
-<fieldset>
-  <legend class="sr-only">Inline checkboxes example</legend>
-  <label class="checkbox-inline">
-    <input type="checkbox" id="inlineCheckbox1" value="option1" checked> Checked
-  </label> <label class="checkbox-inline">
-    <input type="checkbox" id="inlineCheckbox2" value="option2"> Normal
-  </label> <label class="checkbox-inline">
-    <input type="checkbox" id="inlineCheckbox3" value="option3" disabled> Disabled
-  </label>
-  </div>
-</fieldset>
+  <fieldset>
+    <legend class="sr-only">Inline checkboxes example</legend>
+    <label class="checkbox-inline">
+      <input type="checkbox" id="inlineCheckbox1" value="option1" checked> Checked
+    </label> <label class="checkbox-inline">
+      <input type="checkbox" id="inlineCheckbox2" value="option2"> Normal
+    </label> <label class="checkbox-inline">
+      <input type="checkbox" id="inlineCheckbox3" value="option3" disabled> Disabled
+    </label>
+  </fieldset>
+</div>
+
 {:/nomarkdown}
 
 
@@ -611,7 +612,7 @@ Date pickers can provide:
                 </div>
             </div>
             <div class="form-group">
-                <span for="dp2" class="col-sm-3 control-label" style="font-weight: 600;">Range</span>
+                <span class="col-sm-3 control-label" style="font-weight: 600;">Range</span>
                 <div class="col-sm-9">
                     <div class="row">
                         <div class="col-sm-6">
@@ -682,32 +683,32 @@ Sliders can provide:
     <div class="row">
         <form role="form" class="col-sm-12 form-horizontal">
             <div class="form-group">
-                <span for="sl1" class="col-sm-3 control-label">Basic</span>
+                <span class="col-sm-3 control-label">Basic</span>
                 <div class="col-sm-9">
                     <div id="sl1" data-nouislider data-min="0" data-max="50" data-step="10" data-start="10"></div>
                 </div>
             </div>
             <div class="form-group">
-                <span for="sl2" class="col-sm-3 control-label">Ticks</span>
+                <span class="col-sm-3 control-label">Ticks</span>
                 <div class="col-sm-9">
                     <div id="sl2" data-nouislider data-pips="true" data-min="0" data-max="50" data-step="10" data-start="20"></div>
                 </div>
             </div>
             <div class="form-group">
-                <span for="sl3" class="col-sm-3 control-label">Range</span>
+                <span class="col-sm-3 control-label">Range</span>
                 <div class="col-sm-9">
                     <div id="sl3" data-nouislider data-pips="true" data-min="0" data-max="50" data-step="10" data-start="0" data-start-b="30"></div>
                 </div>
             </div>
             <div class="form-group">
-                <span for="sl5" class="col-sm-3 control-label">Value</span>
+                <span class="col-sm-3 control-label">Value</span>
                 <div class="col-sm-9">
                     <strong style="display: block; margin-bottom: -5px; margin-top: 7px;" id="sl5-lower"></strong>
                     <div id="sl5" data-nouislider data-link-lower="#sl5-lower" data-min="0" data-max="50" data-step="10" data-start="50"></div>
                 </div>
             </div>
             <div class="form-group">
-                <span for="sl6" class="col-sm-3 control-label">Values</span>
+                <span class="col-sm-3 control-label">Values</span>
                 <div class="col-sm-9">
                     <div class="clearfix" style="margin-bottom: -5px; margin-top: 7px;">
                       <strong style="" id="sl6-lower"></strong> to <strong style="" id="sl6-upper"></strong>
@@ -716,7 +717,7 @@ Sliders can provide:
                 </div>
             </div>
             <div class="form-group">
-                <span for="sl7" class="col-sm-3 control-label">Disabled</span>
+                <span class="col-sm-3 control-label">Disabled</span>
                 <div class="col-sm-9">
                     <div id="sl7" data-nouislider disabled data-min="0" data-max="50" data-step="10" data-start="30"></div>
                 </div>
@@ -776,7 +777,7 @@ The rich text editor allows for text input with additional formatting and inline
         </div>
     </div>
     <label for="txt-note">Note</label>
-    <textarea name="" id="txt-note" cols="30" rows="10" class="form-control" style="border-top-left-radius: 0; border-top-right-radius: 0;" placeholder="Enter note here..."></textarea>
+    <textarea id="txt-note" cols="30" rows="10" class="form-control" style="border-top-left-radius: 0; border-top-right-radius: 0;" placeholder="Enter note here..."></textarea>
 </div>
 </div>
 {:/nomarkdown}
@@ -812,7 +813,7 @@ The rich text editor allows for text input with additional formatting and inline
             <button type="button" data-toggle="tooltip" data-placement="top" title="Insert image" class="btn btn-hover btn-icon-only"><i class="icon icon-image"></i><span class="sr-only">Insert image</span></button>
         </div>
     </div>
-    <textarea name="" id="" cols="30" rows="10" class="form-control" style="border-top-left-radius: 0; border-top-right-radius: 0;" placeholder="Enter note here..."></textarea>
+    <textarea id="" cols="30" rows="10" class="form-control" style="border-top-left-radius: 0; border-top-right-radius: 0;" placeholder="Enter note here..."></textarea>
 </div>
 {% endhighlight %}
 </div>
