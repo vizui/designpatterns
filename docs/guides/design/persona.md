@@ -7,11 +7,11 @@ title: "Persona"
         <div class="col-sm-6">
             <h3 style="font-size: 28px; font-weight: 400; margin-top: 0">Persona</h3>
             <h4>When to use</h4>
-            <p>The purpose of the personas is to provide a reliable representation of your key audience segments for reference. Th einlcuded quesitons and areas of discussion will help you sconstruct a "picture" of the visitors to your site.</p>
+            <p>The purpose of personas is to provide a reliable representation of your key audience segments for reference.  The included questions and areas of discussion will help you construct a “picture” of the visitors to your site.​</p>
             <h4>Benefits</h4>
             <h4>Challenges</h4>
             <h4>Tips</h4>
-            <p>For any given project, it is advisable to limit yourself to the main audiences for the site, and only 3 or 4 of them at best. The more personas you have the more granular the population you are working toward supporitng. It is better to paint wiht a broad brush and meet the needs of hte larger populations than try to meet the needs of everyone.
+            <p>For any given project, it is advisable to limit yourself to the main audiences for the site, and only 3 or 4 of them at best. The more personas you have the more granular the population you are working toward supporting.  It is better to paint with a broad brush and meet the needs of the larger populations than try to meet the needs of everyone.
             </p>
             <h4>Questions to ask during personal development</h4>
             <ol>
@@ -23,7 +23,7 @@ title: "Persona"
                     </ul>
                 </li>
                 <li>
-                    <h5>Describe the User</h5>
+                    <h5>Describe the user</h5>
                     <h6>Personal</h6>
                     <ul>
                         <li>What is the age of your person?</li>
@@ -61,15 +61,16 @@ title: "Persona"
                     </ul>
                 </li>
             </ol>
-            <h4>Helpful links</h4>
-            <a href="http://www.usability.gov/how-to-and-tools/methods/personas.html" target="_blank">Personas guide - Usability.gov</a>
         </div>
-        <div class="col-sm-6 text-center">
-            <div class="text-right" style="margin-bottom: 10px">
-                <a href="http://vizui.github.io/designpatterns/docs/guides/downloads/persona.pdf" style="margin-right: 15px"><i class="icon icon-file-pdf-o" style="margin-right: 5px"></i><b>Template_Persona.pdf</b></a>
+        <div class="col-sm-6">
+            <iframe class="iframe-pdf" frameborder="0" src="http://docs.google.com/gview?url=http://vizui.github.io/designpatterns/docs/guides/downloads/persona.pdf&amp;embedded=true" style="height: 500px; width: 100%"></iframe>
+            <div class="" style="margin-top: 10px">
+                <a href="http://vizui.github.io/designpatterns/docs/guides/downloads/persona.pdf"><i class="icon icon-file-pdf-o" style="margin-right: 5px"></i><b>Template_Persona.pdf</b></a>
+                <br>
                 <a href="#"><i class="icon icon-file-word-o" style="margin-right: 5px"></i><b>Template_Persona.doc</b></a>
             </div>
-            <iframe class="iframe-pdf" frameborder="0" src="http://docs.google.com/gview?url=http://vizui.github.io/designpatterns/docs/guides/downloads/persona.pdf&amp;embedded=true" style="height: 500px; width: 100%"></iframe>
+            <h4>Helpful links</h4>
+            <a href="http://www.usability.gov/how-to-and-tools/methods/personas.html" target="_blank">Personas guide - Usability.gov</a>
         </div>
     </div>
     <br>
