@@ -665,7 +665,8 @@ These examples show various form configurations.
    <div class="form-group">
     <label for="si12" class="col-sm-3 control-label required">State</label>
     <div class="col-sm-9">
-        <select id="si12" required aria-required="true" class="form-control-width-xs select2 form-control">
+        <select id="si12" required aria-required="true" class="form-control-width-sm select2 form-control">
+          <option value="" disabled selected hidden>Select</option>
           <option>AL</option>
           <option>AK</option>
           <option>AZ</option>
@@ -724,6 +725,7 @@ These examples show various form configurations.
     <label for="si12" class="col-sm-3 control-label required">State</label>
     <div class="col-sm-9">
         <select required aria-required="true" id="si12" class="form-control form-control-width-md">
+          <option value="" disabled selected hidden>Select</option>
           <option>AL</option>
           <option>AK</option>
           <option>AZ</option>
@@ -788,6 +790,7 @@ These examples show various form configurations.
         <label class="control-label required" for="t12">Title</label>
         <div>
             <select class="select2 form-control-width-sm form-control" id="t12" required aria-required="true">
+              <option value="" disabled selected hidden>Select</option>
               <option value="Mr.">Mr.</option>
               <option value="Mrs.">Mrs.</option>
               <option value="Miss">Miss</option>
@@ -819,6 +822,7 @@ These examples show various form configurations.
       <div class="form-group">
         <label class="control-label required" for="country12">Country</label>
         <select class="select2 form-control" id="country12" required aria-required="true">
+          <option value="" disabled selected hidden>Select</option>
           <option value="Mr.">United States</option>
         </select>
       </div>
@@ -875,6 +879,7 @@ These examples show various form configurations.
   <div class="form-group">
     <label class="control-label required" for="t12">Title</label>
     <select class="form-control" id="t12" required aria-required="true">
+      <option value="" disabled selected hidden>Select</option>
       <option value="Mr.">Mr.</option>
       <option value="Mrs.">Mrs.</option>
       <option value="Miss">Miss</option>
@@ -905,6 +910,7 @@ These examples show various form configurations.
   <div class="form-group">
     <label class="control-label required" for="country12">Country</label>
     <select class="form-control" id="country12" required aria-required="true">
+      <option value="" disabled selected hidden>Select</option>
       <option value="Mr.">United States</option>
     </select>
   </div>
