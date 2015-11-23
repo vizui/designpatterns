@@ -29,7 +29,8 @@ Use a popover instead of a tooltip or dialog when:
   <div class="arrow"></div>
   <h3 class="popover-title">Add note</h3>
   <div class="popover-content">
-    <textarea placeholder="Enter note here" class="form-control" name="" id="" rows="3"></textarea>
+    <label for="txt-note1" class="sr-only">Note</label>
+    <textarea placeholder="Enter note here" class="form-control" name="" id="txt-note1" rows="3"></textarea>
   </div>
   <div class="popover-toolbar">
         <button class="btn btn-hover btn-icon-only"><i class="icon icon-image"></i><span class="sr-only">Add image</span></button>
@@ -58,7 +59,8 @@ Use a popover instead of a tooltip or dialog when:
     <div class="arrow"></div>
     <h3 class="popover-title">Add note</h3>
     <div class="popover-content">
-        <textarea placeholder="Enter note here" class="form-control" name="" id="" rows="3"></textarea>
+        <label for="txt-note" class="sr-only">Note</label>
+        <textarea placeholder="Enter note here" class="form-control" name="" id="txt-note" rows="3"></textarea>
     </div>
     <div class="popover-toolbar">
         <button class="btn btn-hover btn-icon-only"><i class="icon icon-image"></i><span class="sr-only">Add image</span></button>

@@ -27,7 +27,7 @@ Progress bars should be used when there is a determinate amount of time/progress
 {% highlight html %}
 <div class="progress-labels">
     Importing...
-    <span id="exampleProgressBarValue" class="pull-right text-muted">60%</span>
+    <span id="exampleProgressBarValue1" class="pull-right text-muted">60%</span>
 </div>
 <div class="progress">
     <div id="exampleProgressBar" class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
@@ -42,7 +42,7 @@ Progress bars should be used when there is a determinate amount of time/progress
 <div style="max-width: 200px;">
     <div class="progress-label">
         Finalizing...
-        <span id="exampleProgressBarValue" class="pull-right text-muted">100%</span>
+        <span id="exampleProgressBarValue2" class="pull-right text-muted">100%</span>
     </div>
     <div class="progress">
       <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
@@ -56,7 +56,7 @@ Progress bars should be used when there is a determinate amount of time/progress
 {% highlight html %}
 <div class="progress-label">
     Finalizing...
-    <span id="exampleProgressBarValue" class="pull-right text-muted">100%</span>
+    <span id="exampleProgressBarValue3" class="pull-right text-muted">100%</span>
 </div>
 <div class="progress">
     <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
@@ -90,9 +90,9 @@ If a simple action is initiated from an icon-only button, the icon can be replac
 
 {::nomarkdown}
 <div class="pl-preview">
-<button class="btn btn-default btn-icon-only"><i class="icon icon-star-o"></i></button>
-<button class="btn btn-default btn-icon-only loading-background" disabled><i style="visibility: hidden;" class="icon icon-star-o"></i></button>
-<button class="btn btn-default btn-icon-only"><i class="icon icon-star"></i></button>
+<button class="btn btn-default btn-icon-only" aria-label="Add to Favorites"><i class="icon icon-star-o"></i></button>
+<button class="btn btn-default btn-icon-only loading-background" aria-label="Reload" disabled><i style="visibility: hidden;" class="icon icon-star-o"></i></button>
+<button class="btn btn-default btn-icon-only" aria-label="Remove from Favorites"><i class="icon icon-star"></i></button>
 </div>
 {:/nomarkdown}
 

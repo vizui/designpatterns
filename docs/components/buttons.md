@@ -186,11 +186,11 @@ Dropdown buttons can provide a menu or popover when clicked.
     <div class="btn-group">
         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Dropdown <span class="caret"></span></button>
         <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li role="menuitem"><a href="#">Action</a></li>
+            <li role="menuitem"><a href="#">Another action</a></li>
+            <li role="menuitem"><a href="#">Something else here</a></li>
+            <li class="divider" role="menuitem"></li>
+            <li role="menuitem"><a href="#">Separated link</a></li>
         </ul>
     </div>
 </div>
@@ -202,11 +202,11 @@ Dropdown buttons can provide a menu or popover when clicked.
     Dropdown <span class="caret"></span>
   </button>
   <ul class="dropdown-menu" role="menu">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li class="divider"></li>
-    <li><a href="#">Separated link</a></li>
+    <li role="menuitem"><a href="#">Action</a></li>
+    <li role="menuitem"><a href="#">Another action</a></li>
+    <li role="menuitem"><a href="#">Something else here</a></li>
+    <li class="divider" role="menuitem"></li>
+    <li role="menuitem"><a href="#">Separated link</a></li>
   </ul>
 </div>
 {% endhighlight %}
@@ -228,11 +228,11 @@ Split buttons contain both a button and a dropdown. Clicking the button performs
         <span class="sr-only">Toggle Dropdown</span>
       </button>
       <ul class="dropdown-menu" role="menu">
-        <li><a href="#">Action</a></li>
-        <li><a href="#">Another action</a></li>
-        <li><a href="#">Something else here</a></li>
-        <li class="divider"></li>
-        <li><a href="#">Separated link</a></li>
+        <li role="menuitem"><a href="#">Action</a></li>
+        <li role="menuitem"><a href="#">Another action</a></li>
+        <li role="menuitem"><a href="#">Something else here</a></li>
+        <li class="divider" role="menuitem"></li>
+        <li role="menuitem"><a href="#">Separated link</a></li>
       </ul>
     </div> <div class="btn-group">
       <button type="button" class="btn btn-primary">Action</button>
@@ -241,11 +241,11 @@ Split buttons contain both a button and a dropdown. Clicking the button performs
         <span class="sr-only">Toggle Dropdown</span>
       </button>
       <ul class="dropdown-menu" role="menu">
-        <li><a href="#">Action</a></li>
-        <li><a href="#">Another action</a></li>
-        <li><a href="#">Something else here</a></li>
-        <li class="divider"></li>
-        <li><a href="#">Separated link</a></li>
+        <li role="menuitem"><a href="#">Action</a></li>
+        <li role="menuitem"><a href="#">Another action</a></li>
+        <li role="menuitem"><a href="#">Something else here</a></li>
+        <li class="divider" role="menuitem"></li>
+        <li role="menuitem"><a href="#">Separated link</a></li>
       </ul>
     </div>
 </div>
@@ -259,11 +259,11 @@ Split buttons contain both a button and a dropdown. Clicking the button performs
     <span class="sr-only">Toggle Dropdown</span>
   </button>
   <ul class="dropdown-menu" role="menu">
-    <li><a href="#">Action</a></li>
-    <li><a href="#">Another action</a></li>
-    <li><a href="#">Something else here</a></li>
-    <li class="divider"></li>
-    <li><a href="#">Separated link</a></li>
+    <li role="menuitem"><a href="#">Action</a></li>
+    <li role="menuitem"><a href="#">Another action</a></li>
+    <li role="menuitem"><a href="#">Something else here</a></li>
+    <li class="divider" role="menuitem"></li>
+    <li role="menuitem"><a href="#">Separated link</a></li>
   </ul>
 </div>
 {% endhighlight %}
