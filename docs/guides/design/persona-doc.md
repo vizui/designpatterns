@@ -1,5 +1,5 @@
 ---
-title: "Persona PDF"
+title: "Persona DOC"
 ---
 {::nomarkdown}
 <div class="pl-pattern">
@@ -63,7 +63,8 @@ title: "Persona PDF"
             </ol>
         </div>
         <div class="col-sm-6">
-            <iframe class="iframe-pdf" frameborder="0" src="http://docs.google.com/gview?url=http://vizui.github.io/designpatterns/docs/guides/downloads/persona.pdf&amp;embedded=true" style="height: 500px; width: 100%"></iframe>
+            <!-- <iframe class="iframe-pdf" frameborder="0" src="https://view.officeapps.live.com/op/view.aspx?src=http%3A%2F%2Fvizui.github.io%2Fdesignpatterns%2Fdocs%2Fguides%2Fdownloads%2Fpersona.docx" style="height: 500px; width: 100%"></iframe> -->
+            <iframe class="iframe-pdf" frameborder="0" src="http://docs.google.com/gview?url=http://vizui.github.io/designpatterns/docs/guides/downloads/persona.docx&amp;embedded=true" style="height: 500px; width: 100%"></iframe>
             <div class="" style="margin-top: 10px">
                 <a href="http://vizui.github.io/designpatterns/docs/guides/downloads/persona.pdf"><i class="icon icon-file-pdf-o" style="margin-right: 5px"></i><b>Template_Persona.pdf</b></a>
                 <br>
