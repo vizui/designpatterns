@@ -1,9 +1,9 @@
 ---
-title: "Persona"
+title: "Persona 1"
 ---
 {::nomarkdown}
 <div class="pl-pattern">
-    <h3>Persona</h3>
+    <h3>Persona 1</h3>
     <h4>When to use</h4>
     <p>The purpose of personas is to provide a reliable representation of your key audience segments for reference.  The included questions and areas of discussion will help you construct a “picture” of the visitors to your site.​</p>
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-pdf">View template</button>
