@@ -33,14 +33,13 @@ For example, on a website, you might choose to have one section per page, or mul
 
 All sections are positioned on a single page.
 
-
 <div class="row">
 
-<div class="col-sm-3">
+<div class="col-sm-4">
 ![Diagram showing all sections on a page](../guides/images/EffectiveForms1@2x.png)
 </div>
 
-<div class="col-sm-3">
+<div class="col-sm-4">
 #### The good
 
 * There's only one submit button to press
@@ -50,7 +49,7 @@ All sections are positioned on a single page.
 * Progress is self-evident
 </div>
 
-<div class="col-sm-3">
+<div class="col-sm-4">
 #### The bad
 
 * Long forms can be overwhelming and off-putting
@@ -71,10 +70,11 @@ All sections are positioned on a single page.
 
 Each section goes on its own page.
 
-![Diagram showing each section on its own page]({{ site.baseurl }}/static/img/effective-forms/EffectiveForms2@2x.png)
+![Diagram showing each section on its own page](../guides/images/EffectiveForms2@2x.png)
 
-<div class="content-50 content-first">
+<div class="row">
 
+<div class="col-sm-6">
 #### The good
 
 * It's easier to handle branching and dependencies between sections
@@ -85,8 +85,7 @@ Each section goes on its own page.
 
 </div>
 
-<div class="content-50 content-last">
-
+<div class="col-sm-6">
 #### The bad
 
 * Can be harder for users to see where they are within the form
@@ -97,6 +96,7 @@ Each section goes on its own page.
 * Not a natural fit for non-linear processes like looping, adding and removing
 
 </div>
+</div>
 <br><br>
 </div>
 
@@ -105,16 +105,15 @@ Each section goes on its own page.
 
 All sections on a single page, but each new section only appears once the previous section has been completed. Done well, option 3 is a hybrid of the other two that has benefits of both the other options. Within this hybrid option there are still some important design decisions to make, for example:
 
-{: class="georgia-ex"}
 * Will future questions be shown in any way or will you only see the questions you've answered?
 * What happens if you go back and edit a previous question?
     * Does the current question stay open or closed?
     * How do you get back to the current question once you've edited a previous one?
     * Do you lose all your answers to questions that follow the one you go back to edit?
 
-![Diagram showing an accordion form]({{ site.baseurl }}/static/img/effective-forms/EffectiveForms3@2x.png)
-
-<div class="content-50 content-first">
+![Diagram showing an accordion form](../guides/images/EffectiveForms3@2x.png)
+<div class="row">
+<div class="col-sm-6">
 
 #### The good
 
@@ -126,14 +125,15 @@ All sections on a single page, but each new section only appears once the previo
 
 </div>
 
-<div class="content-50 content-last">
+<div class="col-sm-6">
 
 #### The bad
 
 * Implementation and interface is more complex
-<br><br>
+</div>
 </div>
 
+<br><br>
 </div>
 
 <div class="pl-pattern">   
@@ -145,12 +145,13 @@ Done well, this can give you the benefits of both the single page and wizard app
 
 As always, these design decisions must have a strong, user-centred rationale behind them.
 
-![Diagram showing a hybrid form]({{ site.baseurl }}/static/img/effective-forms/EffectiveForms4@2x.png)
+![Diagram showing a hybrid form](../guides/images/EffectiveForms4@2x.png)
 <br><br>
 </div>
 
 <div class="pl-pattern">
 ### Best practices
+
 #### Helping users
 
 You should be aiming for a service that's so intuitive people don't need any help in using it. If you find yourself explaining the interface within the interface it's a sign that something has gone wrong. 
@@ -159,25 +160,17 @@ Sometimes though, people are going to need extra help. Many government forms inv
 
 ##### Methods for providing extra help:
 
-<div class="content-50 content-first">
-
 ###### Inline help
 Short, snappy text, positioned near the part of the interface it refers to. If it's something that everyone needs to know, make it permanently visible.
 
 ###### Progressive disclosure
 A fancy phrase for hiding stuff until it's clicked on. Used carefully this is a good way of keeping the interface free from potentially confusing clutter. Only use this for help that's intended for a small subset of your audience (say, less than 10%).
 
-</div>
-
-<div class="content-50 content-last">
-
 ###### Field masking
 When a specific data entry format is required, as for phone numbers, dates, and social security numbers, provide an example of the required format (e.g., XXX-XX-XXXX).
 
 ###### Rich contextual help
 Sometimes you need to give users access to supporting content, in case they're unfamiliar with the terminology or concepts involved in the form. This kind of content should probably exist as a page outside of the form, and then be repurposed in some way within the form.
-
-</div>
   
 #### Communicating errors
 
@@ -185,17 +178,11 @@ Despite providing the best possible helper text and contextual help, you should 
 
 ##### Tips for communicating errors:
 
-<div class="content-50 content-first">
-
 ###### Indicate optional and/or required fields
 If most of the fields are required, leave them alone and just mark the optional fields as optional. If most of the fields are optional, leave them alone and just mark the required fields as required. If it’s close to a tie, go with whichever choice might be better for your users.
 
 ###### Combine field-level error text with a page-level error message
 This is particularly important for accessibility. If someone is using a screenreader to navigate the page, a digest of errors at the top of the page will help them understand which fields need fixing. Including anchor links to the invalid fields will allow them to find and fix the error without re-navigating the entire form. 
-
-</div>
-
-<div class="content-50 content-last">
 
 ###### Be descriptive with error text
 Tell the user what caused the error and how to correct it.
@@ -205,27 +192,25 @@ Check for errors as the user fills out the form (e.g., using javascript) and pro
 
 Also consider including affirmative inline validation (such as green checkmarks) for required text fields, especially those that require specific formats or character counts, such as Zip Codes and passwords.
 
-</div>
 <br><br>
 </div>
 
-<div class="pl-pattern">   
-### Saving progress
+  
+#### Saving progress
 
 If the average time to complete a form is more than you can reasonably expect your users to spend in a single session, then you need to provide a way for them to save their progress.
 
 The same goes if the session is likely to be interrupted for some reason. For example, if the user is suddenly asked for information which they might not have immediately on hand (a way to mitigate this is to warn users if they're going to be asked for that kind of information). Another example is that the user might start a form on their mobile device and want to continue filling it out on their desktop computer.
-<br><br>
-</div>
 
-<div class="pl-pattern">   
-### Setting expectations
+
+
+ 
+#### Setting expectations
 
 The further in to a form someone gets, the more time they have invested in it and the greater their annoyance if they have to abandon it for some reason.
 
 Be honest about what you're offering users, and what you're not offering them. In particular, people need to know up front about any:
 
-{: class="georgia-ex"}
 * Costs involved
 * Waiting periods or delays
 * Uncommon or hard-to-find infomation they'll need to provide
@@ -237,14 +222,14 @@ Use common sense, though. Don't try to make everyone read a page of terms and co
 
 The best approach is to meet (or exceed) people's expectations. For example, if your delivery times are typical and you accept all the usual payment methods then you won't need to warn everyone about them up front.
 <br><br>
-</div>
 
-<div class="pl-pattern">   
-### Keeping it simple
+
+  
+#### Keeping it simple
 
 Every request for information from the user:
 
-{: class="georgia-ex"}
+
 * Requires additional physical and cognitive effort 
 * Creates another opportunity for them to get something 'wrong'
 * Increases the time it takes to complete the form
