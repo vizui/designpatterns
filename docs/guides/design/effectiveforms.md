@@ -198,19 +198,12 @@ Check for errors as the user fills out the form (e.g., using javascript) and pro
 
 Also consider including affirmative inline validation (such as green checkmarks) for required text fields, especially those that require specific formats or character counts, such as Zip Codes and passwords.
 
-<br><br>
-</div>
-
-  
 #### Saving progress
 
 If the average time to complete a form is more than you can reasonably expect your users to spend in a single session, then you need to provide a way for them to save their progress.
 
 The same goes if the session is likely to be interrupted for some reason. For example, if the user is suddenly asked for information which they might not have immediately on hand (a way to mitigate this is to warn users if they're going to be asked for that kind of information). Another example is that the user might start a form on their mobile device and want to continue filling it out on their desktop computer.
 
-
-
- 
 #### Setting expectations
 
 The further in to a form someone gets, the more time they have invested in it and the greater their annoyance if they have to abandon it for some reason.
@@ -227,10 +220,7 @@ Be honest about what you're offering users, and what you're not offering them. I
 Use common sense, though. Don't try to make everyone read a page of terms and conditions before they start (they won't).
 
 The best approach is to meet (or exceed) people's expectations. For example, if your delivery times are typical and you accept all the usual payment methods then you won't need to warn everyone about them up front.
-<br><br>
 
-
-  
 #### Keeping it simple
 
 Every request for information from the user:
@@ -248,7 +238,7 @@ Asking for information because 'it might be useful' or 'it helps with our record
 </div>
 
 <div class="pl-pattern">   
-### Attribution
+##### Attribution
 This guide on effective forms has been adapted from the guide [Effective forms](https://cfpb.github.io/design-manual/guides/effective-forms.html) in the [CFPB Design Manual](https://cfpb.github.io/design-manual/) which is itself adapted from the guide [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) in the [GOV.UK Government Service Design Manual](https://www.gov.uk/service-manual), which is licensed under the [Open Government License v2.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/).
 <br><br>
 </div>
