@@ -3,8 +3,8 @@ title: "Template for guides"
 ---
 <div class="pl-pattern">   
 ###Modal doc preview/download
+
 {::nomarkdown}
-    <h3>Modal preview example</h3>
     <h4>When to use</h4>
     <p>The purpose of personas is to provide a reliable representation of your key audience segments for reference.  The included questions and areas of discussion will help you construct a “picture” of the visitors to your site.​</p>
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-pdf">View template</button>
@@ -73,10 +73,10 @@ For any given project, it is advisable to limit yourself to the main audiences f
 <br><br>
 </div>
 
+<div class="pl-pattern">   
+###Inline doc preview/download
 
 {::nomarkdown}
-<div class="pl-pattern">
-    <h3>Inline doc preview example</h3>
     <h4>When to use</h4>
     <p>The purpose of personas is to provide a reliable representation of your key audience segments for reference.  The included questions and areas of discussion will help you construct a “picture” of the visitors to your site.​</p>
     <a class="btn btn-primary" role="button" data-toggle="collapse" href="#template" aria-expanded="false" aria-controls="template">
@@ -111,13 +111,19 @@ For any given project, it is advisable to limit yourself to the main audiences f
     <h4>Helpful links</h4>
     <a href="http://www.usability.gov/how-to-and-tools/methods/personas.html" target="_blank">Personas guide - Usability.gov</a>
     <br><br>
-</div>
 {:/nomarkdown}
+</div>
+
 
 {::nomarkdown}
 <div class="pl-pattern">
     <div class="row">
         <div class="col-sm-6">
+        
+        {::nomarkdown}
+          ###2 col doc preview/download
+        {:/nomarkdown}
+        {::nomarkdown}
             <h3 style="font-size: 28px; font-weight: 400; margin-top: 0">2 column with preview example</h3>
             <h4>When to use</h4>
             <p>The purpose of personas is to provide a reliable representation of your key audience segments for reference.  The included questions and areas of discussion will help you construct a “picture” of the visitors to your site.​</p>
