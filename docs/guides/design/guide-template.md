@@ -1,6 +1,17 @@
 ---
 title: "Template for guides"
 ---
+
+<div class="pl-pattern">   
+###New section title
+####Sub-sections
+Normal text
+####Sub-sections
+Normal text
+<br><br>
+</div>
+
+
 <div class="pl-pattern">   
 ###Modal doc preview/download
 
