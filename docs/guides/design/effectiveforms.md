@@ -3,15 +3,6 @@ title: "Effective forms"
 ---
 
 <div class="pl-pattern">   
-###New section title
-####Sub-sections
-Normal text
-####Sub-sections
-Normal text
-<br><br>
-</div>
-
-<div class="pl-pattern">   
 ###Effective forms
 
 Web forms provide an incredible advantage over paper forms in their potential for accessibility, usability, and operational efficiency, but when designed without users in mind they can lose many of these benefits. In this guide, we’ve outlined several ways to ensure the best possible user experience.
@@ -35,11 +26,9 @@ How you answer these questions will help you decide how to structure the form. I
 
 For example, on a website, you might choose to have one section per page, or multiple sections per page. It depends on what's going to work best for your users.
 
-
-
-#### Example structures
-
-##### Option 1: Single page
+</div>
+<div class="pl-pattern">   
+### Option 1: Single page
 
 All sections are positioned on a single page.
 
@@ -72,7 +61,8 @@ All sections are positioned on a single page.
 
 </div>
 
----
+</div>
+<div class="pl-pattern">   
 
 ### Option 2: Wizard
 
@@ -105,7 +95,8 @@ Each section goes on its own page.
 
 </div>
 
----
+</div>
+<div class="pl-pattern">   
 
 ### Option 3: Accordion form
 
@@ -140,7 +131,8 @@ All sections on a single page, but each new section only appears once the previo
 
 </div>
 
----
+</div>
+<div class="pl-pattern">   
 
 ### Option 4: Hybrid
 
@@ -151,8 +143,9 @@ Done well, this can give you the benefits of both the single page and wizard app
 As always, these design decisions must have a strong, user-centred rationale behind them.
 
 ![Diagram showing a hybrid form]({{ site.baseurl }}/static/img/effective-forms/EffectiveForms4@2x.png)
-
-## Helping users
+</div>
+<div class="pl-pattern">   
+### Helping users
 
 You should be aiming for a service that's so intuitive people don't need any help in using it. If you find yourself explaining the interface within the interface it's a sign that something has gone wrong. 
 
@@ -179,8 +172,9 @@ When a specific data entry format is required, as for phone numbers, dates, and 
 Sometimes you need to give users access to supporting content, in case they're unfamiliar with the terminology or concepts involved in the form. This kind of content should probably exist as a page outside of the form, and then be repurposed in some way within the form.
 
 </div>
-
-## Communicating errors
+</div>
+<div class="pl-pattern">   
+### Communicating errors
 
 Despite providing the best possible helper text and contextual help, you should still plan for when users make errors when filling out your forms.
 
@@ -207,15 +201,17 @@ Check for errors as the user fills out the form (e.g., using javascript) and pro
 Also consider including affirmative inline validation (such as green checkmarks) for required text fields, especially those that require specific formats or character counts, such as Zip Codes and passwords.
 
 </div> 
-
-## Saving progress
+</div>
+<div class="pl-pattern">   
+### Saving progress
 
 If the average time to complete a form is more than you can reasonably expect your users to spend in a single session, then you need to provide a way for them to save their progress.
 
 The same goes if the session is likely to be interrupted for some reason. For example, if the user is suddenly asked for information which they might not have immediately on hand (a way to mitigate this is to warn users if they're going to be asked for that kind of information). Another example is that the user might start a form on their mobile device and want to continue filling it out on their desktop computer.
 
-
-## Setting expectations
+</div>
+<div class="pl-pattern">   
+### Setting expectations
 
 The further in to a form someone gets, the more time they have invested in it and the greater their annoyance if they have to abandon it for some reason.
 
@@ -233,8 +229,9 @@ Use common sense, though. Don't try to make everyone read a page of terms and co
 
 The best approach is to meet (or exceed) people's expectations. For example, if your delivery times are typical and you accept all the usual payment methods then you won't need to warn everyone about them up front.
 
-
-## Keeping it simple
+</div>
+<div class="pl-pattern">   
+### Keeping it simple
 
 Every request for information from the user:
 
@@ -248,14 +245,22 @@ Every request for information from the user:
 Asking for information because 'it might be useful' or 'it helps with our record keeping' should be considered against all of these factors.
 
 
-
-## Attribution
+</div>
+<div class="pl-pattern">   
+### Attribution
 
 This guide on effective forms has been adapted from the guide [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) in the [GOV.UK Government Service Design Manual](https://www.gov.uk/service-manual), which is licensed under the [Open Government License v2.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/).
 <br><br>
 </div>
 
-
+<div class="pl-pattern">   
+###New section title
+####Sub-sections
+Normal text
+####Sub-sections
+Normal text
+<br><br>
+</div>
 
 
 
