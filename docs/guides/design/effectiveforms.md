@@ -33,7 +33,10 @@ For example, on a website, you might choose to have one section per page, or mul
 
 All sections are positioned on a single page.
 
-<div class="col-sm-3">
+<div class="pl-preview">
+    <div class="container-fluid pl-grid-example">
+        <div class="row">
+           <div class="col-sm-3">
 ![Diagram showing all sections on a page](../guides/images/EffectiveForms1@2x.png)
 </div>
 
@@ -58,7 +61,11 @@ All sections are positioned on a single page.
 * How do you save partial progress?
 * Can be harder to track analytics like drop-off rates
 
+</div> 
+        </div>
+    </div>
 </div>
+
 <br><br>
 </div>
 
