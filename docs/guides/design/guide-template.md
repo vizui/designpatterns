@@ -1,8 +1,9 @@
 ---
 title: "Template for guides"
 ---
+<div class="pl-pattern">   
+###Modal doc preview/download
 {::nomarkdown}
-<div class="pl-pattern">
     <h3>Modal preview example</h3>
     <h4>When to use</h4>
     <p>The purpose of personas is to provide a reliable representation of your key audience segments for reference.  The included questions and areas of discussion will help you construct a “picture” of the visitors to your site.​</p>
@@ -32,17 +33,16 @@ title: "Template for guides"
     <h4>Helpful links</h4>
     <a href="http://www.usability.gov/how-to-and-tools/methods/personas.html" target="_blank">Personas guide - Usability.gov</a>
     <br><br>
-</div>
 {:/nomarkdown}
-
+</div>
 <div class="pl-pattern">   
-###Example of a text based section
+###Text section
 For any given project, it is advisable to limit yourself to the main audiences for the site, and only 3 or 4 of them at best. The more personas you have the more granular the population you are working toward supporting.  It is better to paint with a broad brush and meet the needs of the larger populations than try to meet the needs of everyone.
 <br><br>
 </div>
 
 <div class="pl-pattern">
-###Example #2 of a text based section
+###Text section w/list
 1. ####Define the purpose/vision for the site
 - What is the purpose of the site?
 - What are the goals of the site?
