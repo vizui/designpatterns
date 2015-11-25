@@ -33,13 +33,11 @@ For example, on a website, you might choose to have one section per page, or mul
 
 All sections are positioned on a single page.
 
-<div class="content-25 content-first">
-
-![Diagram showing all sections on a page]({{ site.baseurl }}/static/img/effective-forms/EffectiveForms1@2x.png)
-
+<div class="col-sm-3">
+![Diagram showing all sections on a page](../guides/images/EffectiveForms1@2x.png)
 </div>
 
-<div class="content-33">
+<div class="col-sm-3">
 
 #### The good
 
@@ -51,7 +49,7 @@ All sections are positioned on a single page.
 
 </div>
 
-<div class="content-33 content-last">
+<div class="col-sm-3">
 
 #### The bad
 
