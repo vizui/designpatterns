@@ -33,15 +33,14 @@ For example, on a website, you might choose to have one section per page, or mul
 
 All sections are positioned on a single page.
 
-<div class="pl-preview">
-    <div class="container-fluid pl-grid-example">
-        <div class="row">
-           <div class="col-sm-3">
+
+<div class="row">
+
+<div class="col-sm-3">
 ![Diagram showing all sections on a page](../guides/images/EffectiveForms1@2x.png)
 </div>
 
 <div class="col-sm-3">
-
 #### The good
 
 * There's only one submit button to press
@@ -49,22 +48,19 @@ All sections are positioned on a single page.
 * It doesn't force a fixed order of completion
 * You benefit from context of neighboring sections
 * Progress is self-evident
-
 </div>
 
 <div class="col-sm-3">
-
 #### The bad
 
 * Long forms can be overwhelming and off-putting
 * It's less well suited to branching or non-linear flow
 * How do you save partial progress?
 * Can be harder to track analytics like drop-off rates
-
 </div> 
-        </div>
-    </div>
+
 </div>
+
 
 <br><br>
 </div>
