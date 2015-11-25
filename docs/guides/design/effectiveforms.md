@@ -238,19 +238,7 @@ Asking for information because 'it might be useful' or 'it helps with our record
 </div>
 
 <div class="pl-pattern">   
-##### Attribution
+#### Attribution
 This guide on effective forms has been adapted from the guide [Effective forms](https://cfpb.github.io/design-manual/guides/effective-forms.html) in the [CFPB Design Manual](https://cfpb.github.io/design-manual/) which is itself adapted from the guide [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) in the [GOV.UK Government Service Design Manual](https://www.gov.uk/service-manual), which is licensed under the [Open Government License v2.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/).
 <br><br>
 </div>
-
-<div class="pl-pattern">   
-###New section title
-####Sub-sections
-Normal text
-####Sub-sections
-Normal text
-<br><br>
-</div>
-
-
-
