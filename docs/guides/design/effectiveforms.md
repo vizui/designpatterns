@@ -148,60 +148,58 @@ As always, these design decisions must have a strong, user-centred rationale beh
 <br><br>
 </div>
 
-<div class="pl-pattern">   
-### Helping users
+<div class="pl-pattern">
+### Best practices
+#### Helping users
 
 You should be aiming for a service that's so intuitive people don't need any help in using it. If you find yourself explaining the interface within the interface it's a sign that something has gone wrong. 
 
 Sometimes though, people are going to need extra help. Many government forms involve concepts and terminology that people will be unfamiliar with. Some of this stuff takes a lot of explaining, so we need a way of providing contextual help of varying degrees of detail throughout a form.
 
-#### Methods for providing extra help:
+##### Methods for providing extra help:
 
 <div class="content-50 content-first">
 
-##### Inline help
+###### Inline help
 Short, snappy text, positioned near the part of the interface it refers to. If it's something that everyone needs to know, make it permanently visible.
 
-##### Progressive disclosure
+###### Progressive disclosure
 A fancy phrase for hiding stuff until it's clicked on. Used carefully this is a good way of keeping the interface free from potentially confusing clutter. Only use this for help that's intended for a small subset of your audience (say, less than 10%).
 
 </div>
 
 <div class="content-50 content-last">
 
-##### Field masking
+###### Field masking
 When a specific data entry format is required, as for phone numbers, dates, and social security numbers, provide an example of the required format (e.g., XXX-XX-XXXX).
 
-##### Rich contextual help
+###### Rich contextual help
 Sometimes you need to give users access to supporting content, in case they're unfamiliar with the terminology or concepts involved in the form. This kind of content should probably exist as a page outside of the form, and then be repurposed in some way within the form.
 
 </div>
-<br><br>
-</div>
-
-<div class="pl-pattern">   
-### Communicating errors
+  
+#### Communicating errors
 
 Despite providing the best possible helper text and contextual help, you should still plan for when users make errors when filling out your forms.
 
-#### Tips for communicating errors:
+##### Tips for communicating errors:
 
 <div class="content-50 content-first">
 
-##### Indicate optional and/or required fields
+###### Indicate optional and/or required fields
 If most of the fields are required, leave them alone and just mark the optional fields as optional. If most of the fields are optional, leave them alone and just mark the required fields as required. If it’s close to a tie, go with whichever choice might be better for your users.
 
-##### Combine field-level error text with a page-level error message
+###### Combine field-level error text with a page-level error message
 This is particularly important for accessibility. If someone is using a screenreader to navigate the page, a digest of errors at the top of the page will help them understand which fields need fixing. Including anchor links to the invalid fields will allow them to find and fix the error without re-navigating the entire form. 
 
 </div>
 
 <div class="content-50 content-last">
 
-##### Be descriptive with error text
+###### Be descriptive with error text
 Tell the user what caused the error and how to correct it.
 
-##### Validate fields before the user submits
+###### Validate fields before the user submits
 Check for errors as the user fills out the form (e.g., using javascript) and provide inline messaging with instructions for how to correct the error.
 
 Also consider including affirmative inline validation (such as green checkmarks) for required text fields, especially those that require specific formats or character counts, such as Zip Codes and passwords.
