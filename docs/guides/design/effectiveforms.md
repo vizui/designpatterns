@@ -112,7 +112,9 @@ All sections on a single page, but each new section only appears once the previo
     * Do you lose all your answers to questions that follow the one you go back to edit?
 
 ![Diagram showing an accordion form](../guides/images/EffectiveForms3@2x.png)
+
 <div class="row">
+
 <div class="col-sm-6">
 
 #### The good
@@ -130,7 +132,9 @@ All sections on a single page, but each new section only appears once the previo
 #### The bad
 
 * Implementation and interface is more complex
+
 </div>
+
 </div>
 
 <br><br>
@@ -146,7 +150,9 @@ Done well, this can give you the benefits of both the single page and wizard app
 As always, these design decisions must have a strong, user-centred rationale behind them.
 
 ![Diagram showing a hybrid form](../guides/images/EffectiveForms4@2x.png)
+
 <br><br>
+
 </div>
 
 <div class="pl-pattern">
