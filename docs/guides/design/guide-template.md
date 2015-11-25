@@ -114,17 +114,11 @@ For any given project, it is advisable to limit yourself to the main audiences f
 {:/nomarkdown}
 </div>
 
-
-{::nomarkdown}
 <div class="pl-pattern">
+###2 col doc preview/download
+{::nomarkdown}
     <div class="row">
         <div class="col-sm-6">
-        
-        {::nomarkdown}
-          ###2 col doc preview/download
-        {:/nomarkdown}
-        {::nomarkdown}
-            <h3 style="font-size: 28px; font-weight: 400; margin-top: 0">2 column with preview example</h3>
             <h4>When to use</h4>
             <p>The purpose of personas is to provide a reliable representation of your key audience segments for reference.  The included questions and areas of discussion will help you construct a “picture” of the visitors to your site.​</p>
             <h4>Benefits</h4>
@@ -146,5 +140,6 @@ For any given project, it is advisable to limit yourself to the main audiences f
         </div>
     </div>
     <br>
-</div>
+
 {:/nomarkdown}
+</div>
