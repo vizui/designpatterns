@@ -36,7 +36,8 @@ All sections are positioned on a single page.
 <div class="row">
 
 <div class="col-sm-4">
-![Diagram showing all sections on a page](../images/EffectiveForms1@2x.png)
+<img src="../images/EffectiveForms1@2x.png" alt="Diagram showing all sections on a page" width="100%">
+
 </div>
 
 <div class="col-sm-4">
