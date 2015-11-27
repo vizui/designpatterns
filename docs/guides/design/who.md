@@ -33,8 +33,8 @@ This persona document contains sections for
 - Does not want
 
 {::nomarkdown}
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-pdf">Preview template</button>
-    <div class="modal fade" id="modal-pdf" tabindex="-1" role="dialog" aria-labelledby="hd-pdf">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-persona">Preview template</button>
+    <div class="modal fade" id="modal-persona" tabindex="-1" role="dialog" aria-labelledby="hd-pdf">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -71,8 +71,8 @@ Consolidate information gathered about different user roles.
 consolidating information. while personas seek to enhance empathy, the role template attapts to provide statistical information
 
 {::nomarkdown}
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-pdf">Preview template</button>
-    <div class="modal fade" id="modal-pdf" tabindex="-1" role="dialog" aria-labelledby="hd-pdf">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-role">Preview template</button>
+    <div class="modal fade" id="modal-role" tabindex="-1" role="dialog" aria-labelledby="hd-pdf">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
@@ -92,7 +92,7 @@ consolidating information. while personas seek to enhance empathy, the role temp
 
 ####Download	
 
-<a href="http://vizui.github.io/designpatterns/docs/guides/downloads/persona-template.docx"><i class="icon icon-file-pdf-o" style="margin-right: 5px"></i>role-template.doc</a>
+<a href="http://vizui.github.io/designpatterns/docs/guides/downloads/role-template.docx"><i class="icon icon-file-pdf-o" style="margin-right: 5px"></i>role-template.doc</a>
 
 <br><br>
 </div>
