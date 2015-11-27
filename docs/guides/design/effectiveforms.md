@@ -110,7 +110,7 @@ All sections on a single page, but each new section only appears once the previo
     * How do you get back to the current question once you've edited a previous one?
     * Do you lose all your answers to questions that follow the one you go back to edit?
 
-![Diagram showing an accordion form](../images/EffectiveForms3@2x.png)
+<img src="../images/EffectiveForms3@2x.png" alt="Diagram showing an accordion form" width="100%">
 
 <div class="row">
 
@@ -148,7 +148,8 @@ Done well, this can give you the benefits of both the single page and wizard app
 
 As always, these design decisions must have a strong, user-centred rationale behind them.
 
-![Diagram showing a hybrid form](../images/EffectiveForms4@2x.png)
+
+<img src="../images/EffectiveForms4@2x.png" alt="Diagram showing a hybrid form" width="100%">
 
 <br><br>
 
@@ -237,7 +238,7 @@ Asking for information because 'it might be useful' or 'it helps with our record
 </div>
 
 <div class="pl-pattern">   
-#### Attribution
+<h3>Attribution</h3>
 This guide on effective forms has been adapted from the guide [Effective forms](https://cfpb.github.io/design-manual/guides/effective-forms.html) in the [CFPB Design Manual](https://cfpb.github.io/design-manual/) which is itself adapted from the guide [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) in the [GOV.UK Government Service Design Manual](https://www.gov.uk/service-manual), which is licensed under the [Open Government License v2.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/).
 <br><br>
 </div>
