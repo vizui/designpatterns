@@ -7,25 +7,29 @@ title: "Who"
 
 One of the initial steps in creating a good design is the knowing who we are designing for. This includes those typically thought of as end users, as well as others that may come into contact with the system such as support staff, those who load data, those who troubleshoot, etc. As well as Stakeholders
 
--Primary users
--Secondary users
--Stakeholders
+- Primary users
+- Secondary users
+- Stakeholders
 <br><br>
 </div>
 
 
 <div class="pl-pattern">
 ###Persona template
+
 ####Purpose
+
 The purpose of personas is to provide a reliable representation of your key audience segments for reference.  The included questions and areas of discussion will help you construct a “picture” of the visitors to your site.​
+
 ####Description
+
 This persona document contains sections for 
--demographic information
--Quote
--Long form prose
--Tasks
--Wants
--Does not want
+- demographic information
+- Quote
+- Long form prose
+- Tasks
+- Wants
+- Does not want
 
 {::nomarkdown}
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-pdf">View template</button>
@@ -46,8 +50,11 @@ This persona document contains sections for
       </div>
     </div>
 {:/nomarkdown}
+
 ####Download	
+
 <a href="http://vizui.github.io/designpatterns/docs/guides/downloads/persona-template.doc"><i class="icon icon-file-pdf-o" style="margin-right: 5px"></i>persona-template.doc</a>
+
 <br><br>
 </div>
 	
