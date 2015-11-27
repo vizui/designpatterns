@@ -71,8 +71,11 @@ All sections are positioned on a single page.
 
 Each section goes on its own page.
 
-<div class="row">
+
 <img src="../images/EffectiveForms2@2x.png" alt="Diagram showing each section on its own page" width="100%">
+
+
+<div class="row">
 <div class="col-sm-6">
 #### The good
 
