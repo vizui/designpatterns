@@ -23,8 +23,9 @@ The purpose of personas is to provide a reliable representation of your key audi
 
 ####Description
 
-This persona document contains sections for 
-- demographic information
+This persona document contains sections for
+
+- Demographic information
 - Quote
 - Long form prose
 - Tasks
@@ -32,7 +33,7 @@ This persona document contains sections for
 - Does not want
 
 {::nomarkdown}
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-pdf">View template</button>
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-pdf">Preview template</button>
     <div class="modal fade" id="modal-pdf" tabindex="-1" role="dialog" aria-labelledby="hd-pdf">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -41,7 +42,7 @@ This persona document contains sections for
             <h4 class="modal-title" id="hd-pdf">Persona template</h4>
           </div>
           <div class="modal-body">
-            <iframe class="iframe-pdf" frameborder="0" src="http://docs.google.com/gview?url=http://vizui.github.io/designpatterns/docs/guides/downloads/persona-template.doc&amp;embedded=true" style="height: 500px; width: 100%"></iframe>
+            <iframe class="iframe-pdf" frameborder="0" src="http://docs.google.com/gview?url=http://vizui.github.io/designpatterns/docs/guides/downloads/persona-template.docx&amp;embedded=true" style="height: 500px; width: 100%"></iframe>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -53,13 +54,52 @@ This persona document contains sections for
 
 ####Download	
 
-<a href="http://vizui.github.io/designpatterns/docs/guides/downloads/persona-template.doc"><i class="icon icon-file-pdf-o" style="margin-right: 5px"></i>persona-template.doc</a>
+<a href="http://vizui.github.io/designpatterns/docs/guides/downloads/persona-template.docx"><i class="icon icon-file-pdf-o" style="margin-right: 5px"></i>persona-template.doc</a>
 
 <br><br>
 </div>
-	
+
+<div class="pl-pattern">
+###User Role template
+
+####Purpose
+
+Consolidate information gathered about different user roles.
+
+####Description
+
+consolidating information. while personas seek to enhance empathy, the role template attapts to provide statistical information
+
+{::nomarkdown}
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-pdf">Preview template</button>
+    <div class="modal fade" id="modal-pdf" tabindex="-1" role="dialog" aria-labelledby="hd-pdf">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="hd-pdf">User Role template</h4>
+          </div>
+          <div class="modal-body">
+            <iframe class="iframe-pdf" frameborder="0" src="http://docs.google.com/gview?url=http://vizui.github.io/designpatterns/docs/guides/downloads/role-template.docx&amp;embedded=true" style="height: 500px; width: 100%"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+{:/nomarkdown}
+
+####Download	
+
+<a href="http://vizui.github.io/designpatterns/docs/guides/downloads/persona-template.docx"><i class="icon icon-file-pdf-o" style="margin-right: 5px"></i>role-template.doc</a>
+
+<br><br>
+</div>
+
+
 <div class="pl-pattern">
 ###Additional resources
-<a href="http://www.usability.gov/how-to-and-tools/methods/personas.html" target="_blank">Personas guide - Usability.gov</a>
+<a href="http://www.usability.gov/how-to-and-tools/methods/personas.html" target="_blank">XXXXXXXXXXXXXX</a>
 <br><br>
 </div>
