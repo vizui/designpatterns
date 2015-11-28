@@ -12,6 +12,7 @@ One of the initial steps in creating a good design is the knowing who we are des
 - Stakeholders
 <br><br>
 </div>
+<div class="row">
 <div class="pl-pattern col-sm-6">
 ###Interview worksheet on roles
 
@@ -94,7 +95,7 @@ This persona document contains sections for
 
 <br><br>
 </div>
-
+</div>
 <div class="pl-pattern">
 ###User Role template
 
