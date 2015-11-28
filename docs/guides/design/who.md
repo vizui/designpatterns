@@ -12,7 +12,43 @@ One of the initial steps in creating a good design is the knowing who we are des
 - Stakeholders
 <br><br>
 </div>
+<div class="pl-pattern">
+###Interview worksheet on roles
 
+####Purpose
+
+For use during one on one interviews to discover the different roles involved with the work the system is being designed to support.
+
+####Description
+
+Use during one on one interviews
+
+{::nomarkdown}
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-worksheetrole">Preview template</button>
+    <div class="modal fade" id="modal-worksheetrole" tabindex="-1" role="dialog" aria-labelledby="hd-pdf">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="hd-pdf">Roles - interview worksheet</h4>
+          </div>
+          <div class="modal-body">
+            <iframe class="iframe-pdf" frameborder="0" src="http://docs.google.com/gview?url=http://vizui.github.io/designpatterns/docs/guides/downloads/interviewworksheet-roles.docx&amp;embedded=true" style="height: 500px; width: 100%"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+{:/nomarkdown}
+
+####Download	
+
+<a href="http://vizui.github.io/designpatterns/docs/guides/downloads/interviewworksheet-roles.docx"><i class="icon icon-file-pdf-o" style="margin-right: 5px"></i>interviewworksheet-roles.docx</a>
+
+<br><br>
+</div>
 
 <div class="pl-pattern">
 ###Persona template
@@ -54,7 +90,7 @@ This persona document contains sections for
 
 ####Download	
 
-<a href="http://vizui.github.io/designpatterns/docs/guides/downloads/persona-template.docx"><i class="icon icon-file-pdf-o" style="margin-right: 5px"></i>persona-template.doc</a>
+<a href="http://vizui.github.io/designpatterns/docs/guides/downloads/persona-template.docx"><i class="icon icon-file-pdf-o" style="margin-right: 5px"></i>persona-template.docx</a>
 
 <br><br>
 </div>
@@ -92,7 +128,7 @@ consolidating information. while personas seek to enhance empathy, the role temp
 
 ####Download	
 
-<a href="http://vizui.github.io/designpatterns/docs/guides/downloads/role-template.docx"><i class="icon icon-file-pdf-o" style="margin-right: 5px"></i>role-template.doc</a>
+<a href="http://vizui.github.io/designpatterns/docs/guides/downloads/role-template.docx"><i class="icon icon-file-pdf-o" style="margin-right: 5px"></i>role-template.docx</a>
 
 <br><br>
 </div>
