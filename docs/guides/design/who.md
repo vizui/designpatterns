@@ -12,7 +12,7 @@ One of the initial steps in creating a good design is the knowing who we are des
 - Stakeholders
 <br><br>
 </div>
-<div class="pl-pattern">
+<div class="pl-pattern col-sm-6">
 ###Interview worksheet on roles
 
 ####Purpose
@@ -50,7 +50,7 @@ Use during one on one interviews
 <br><br>
 </div>
 
-<div class="pl-pattern">
+<div class="pl-pattern col-sm-6">
 ###Persona template
 
 ####Purpose
