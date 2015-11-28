@@ -13,6 +13,23 @@ One of the initial steps in creating a good design is the knowing who we are des
 <br><br>
 </div>
 
+<div class="pl-pattern">   
+###User Stories - Discover who will interact or will be impacted by our system
+
+During the initial phase of the project, it is important to understand who we are designing the system for. If the UX work is being tracked via users stories in SCRUM or as cards in XXXX, the following are suggestions to enter as activities:
+
+- Gather initial set of users from project team
+- Gathering available materials
+	- PAPs for roles
+	- Role descriptions in calls for poposals
+	- other projects
+- Conduct individual interviews
+- Perform analysis and summarize information gathered on roles
+- Create personas
+
+<br><br>
+</div>
+
 <div class="pl-pattern">
 ###Group facilitation - Roles
 
