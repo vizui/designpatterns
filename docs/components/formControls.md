@@ -1,7 +1,19 @@
 ---
 title: "Form controls"
 ---
+<div class="pl-pattern">
+### Overview
 
+As you customize form controls from this library, be sure they continue to meet the following accessibility requirements:
+
+- All form control tags should have an associated label. The labels for attribute value should match the related input id attribute and should also be unique to the entire page. For example, the input with id="favorite-national-park" will always have a label with for="favorite-national-park". This way screen readers are able to perceive the relevant content.
+- Any additional information — such as required, optional, or example text — should be wrapped within the label tags. For example: `<label for="name">Favorite Pie <span>Optional</span></label>`. This way screen readers know what additional information is related to each field. 
+- Do not replace `<input>` tag-based form controls with styled `<div>` tags, or use JavaScript to create 'fake' form controls. Screen readers have a difficult time reading form controls that are not written in semantic HTML.
+- If you adjust the color scheme of the buttons, ensure a minimum contrast ratio of 4.5:1 (for small text, 3:1 for large) for the default, hover, focus, and selected states of the button. The disabled state may have less contrast to indicate that it is inactive. 
+
+&nbsp;
+
+</div>
 
 <div class="pl-pattern">
 ### Text box
@@ -12,6 +24,10 @@ Users need to input a simple text value.
 #### Description
 Text boxes allow the user to input a simple text value. A text box only allows for a single line of input. 
 
+#### Accessibility
+
+- Avoid placeholder text for accessibility reasons. Most browsers’ default rendering of placeholder text does not provide a high enough contrast ratio. 
+- Avoid breaking numbers with distinct sections (such as phone numbers, Social Security Numbers, or credit card numbers) into separate input fields. For example, use one input for phone number, not three (one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful. 
 
 {::nomarkdown}
 <div class="pl-preview">
@@ -45,10 +61,9 @@ Text boxes allow the user to input a simple text value. A text box only allows f
 
 Input masks ensure that the user understands the input format required, in addition to making input less error-prone by potentially restricting the number or types of characters that can be entered.
 
-<span class="text-muted">Example uses https://github.com/RobinHerbots/jquery.inputmask for demo purposes.</span>
-
 {::nomarkdown}
 <div class="pl-preview">
+<div class="text-muted" style="margin: -20px 0 20px;">Example uses https://github.com/RobinHerbots/jquery.inputmask for demo purposes.</div>
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
     <div class="row">
         <form class="form-horizontal col-sm-12" role="form">
@@ -81,7 +96,6 @@ Input masks ensure that the user understands the input format required, in addit
 <input type="text" class="form-control" id="im1" data-inputmask="'mask': 'PCT/99,999,999'">
 <input type="text" class="form-control" id="im1" data-inputmask="'alias': 'date'">
 {% endhighlight %}
-
 
 </div>
 
@@ -151,8 +165,8 @@ Users must choose between two or more mutually exclusive options.
 - Ensure there is adequate spacing between adjacent fields and radio/checkbox groups
 
 #### Accessibility
-- Wrap groups of radio buttons in a <code>fieldset</code> and use a <code>legend</code> to provide a description for the grouping. 
-- Radio buttons (such as male/female for gender) that make sense from their labels alone do not require fieldset and legend.
+- Group related radio buttons together with `<fieldset>` and describe the group with `<legend>`.
+- Each radio button should have a `<label>`. Associate the two by matching the `<label>’s` for attribute to the `<input>’s` id attribute.
 
 #### Vertical
 
@@ -247,9 +261,8 @@ Users need to specify which option(s) from a set are applicable/valid/true based
 - Ensure there is adequate spacing between adjacent fields and radio/checkbox groups
 
 #### Accessibility
-- Wrap groups of checkboxes in a <code>fieldset</code> and use a <code>legend</code> to provide a description for the grouping. 
-- Single checkboxes that make sense from their labels alone do not require fieldset and legend.
-
+- Surround a related set of checkboxes with a `<fieldset>`. The `<legend>` provides context for the grouping. Do not use fieldset and legend for a single check.
+- Each input should have a semantic `id` attribute, and its corresponding label should have the same value in it’s `for` attribute.
 
 #### Vertical
 
@@ -402,10 +415,14 @@ The user needs to choose an option from a predefined set.
 - If there are 5 or more options, the list should allow for filtering via a text field
 - For empty selects, use a placeholder in the format of `Select a [type]...` or `Select...`
 
-<span class="text-muted">Example uses https://github.com/ivaynberg/select2 for demo purposes.</span>
+#### Accessibility
+
+- Make sure your dropdown has a label. Don’t replace it with the default menu option (for example, removing the “State” label and just having the dropdown read “Select a state” by default).
+- Don’t use JavaScript to automatically submit the form (or do anything else) when an option is selected. Auto-submission disrupts screen readers because they select each option as they read them. 
 
 {::nomarkdown}
 <div class="pl-preview">
+<div class="text-muted" style="margin: -20px 0 20px;">Example uses https://github.com/ivaynberg/select2 for demo purposes.</div>
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
     <div class="row">
         <form role="form" class="col-sm-12 form-horizontal">
@@ -597,10 +614,17 @@ Date pickers can provide:
 - Highlighting/disabling of days/rows/columns (e.g., disable weekends or highlight bi-week)
 - Ability to type date as well as use a calendar dropdown
 
-<span class="text-muted">Example uses jQuery UI for demo purposes.</span>
+#### Accessibility
+
+- These text fields should follow the <a href="#text-box">accessibility guidelines for all text inputs</a>.
+- Do not use JavaScript to auto advance the focus from one field to the next. This makes it difficult for keyboard-only users to navigate and correct mistakes.
+
+
 
 {::nomarkdown}
 <div class="pl-preview">
+<div class="text-muted" style="margin: -20px 0 20px;">Example uses jQuery UI for demo purposes.</div>
+
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
     <div class="row">
         <form role="form" class="col-sm-12 form-horizontal">
@@ -675,10 +699,11 @@ Sliders can provide:
 - Step increments
 - Multi-handle range
 
-<span class="text-muted">Example uses https://github.com/leongersen/noUiSlider for demo purposes.</span>
+
 
 {::nomarkdown}
 <div class="pl-preview">
+<div class="text-muted" style="margin: -20px 0 20px;">Example uses https://github.com/leongersen/noUiSlider for demo purposes.</div>
 <div class="container-fluid" style="max-width: 400px; margin: 0;">
     <div class="row">
         <form role="form" class="col-sm-12 form-horizontal">
@@ -776,7 +801,7 @@ The rich text editor allows for text input with additional formatting and inline
             <button type="button" data-toggle="tooltip" data-placement="top" title="Insert image" class="btn btn-hover btn-icon-only"><i class="icon icon-image"></i><span class="sr-only">Insert image</span></button>
         </div>
     </div>
-    <label for="txt-note">Note</label>
+    <label for="txt-note" class="sr-only">Note</label>
     <textarea id="txt-note" cols="30" rows="10" class="form-control" style="border-top-left-radius: 0; border-top-right-radius: 0;" placeholder="Enter note here..."></textarea>
 </div>
 </div>
