@@ -1,19 +1,21 @@
 ---
-title: "Who"
+title: "Identify stakeholders"
 ---
 
 <div class="pl-pattern">   
-<h3>Discover - Who are we designing for?</h3>
+<h3>Identify stakeholders</h3>
 
 One of the initial steps in creating a good design is the knowing who we are designing for. This includes those typically thought of as end users, as well as others that may come into contact with the system such as support staff, those who load data, those who troubleshoot, etc. As well as Stakeholders
 
 - Primary users
 - Secondary users
 - Stakeholders
+
 <br><br>
 </div>
 
-<div class="pl-pattern">   
+<div class="pl-pattern">
+
 ###User Stories - Discover who will interact or will be impacted by our system
 
 During the initial phase of the project, it is important to understand who we are designing the system for. If the UX work is being tracked via users stories in SCRUM or as cards in XXXX, the following are suggestions to enter as activities:
@@ -31,6 +33,7 @@ During the initial phase of the project, it is important to understand who we ar
 </div>
 
 <div class="pl-pattern">
+
 ###Group facilitation - Roles
 
 ####Purpose
@@ -69,6 +72,7 @@ Use during group workshops
 </div>
 
 <div class="pl-pattern">
+
 ###Interview worksheet on roles
 
 ####Purpose
@@ -107,6 +111,7 @@ Use during one on one interviews
 </div>
 
 <div class="pl-pattern">
+
 ###Persona template
 
 ####Purpose
@@ -152,6 +157,7 @@ This persona document contains sections for
 </div>
 
 <div class="pl-pattern">
+
 ###User Role template
 
 ####Purpose
@@ -193,5 +199,6 @@ consolidating information. while personas seek to enhance empathy, the role temp
 <div class="pl-pattern">
 ###Additional resources
 <a href="http://www.usability.gov/how-to-and-tools/methods/personas.html" target="_blank">XXXXXXXXXXXXXX</a>
+
 <br><br>
 </div>
