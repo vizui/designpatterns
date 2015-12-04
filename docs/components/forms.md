@@ -292,24 +292,26 @@ __Don't__
 
 {::nomarkdown}
 <div class="pl-preview">
+<h4>Field level validation</h4>
+<br>
 <form class="form-horizontal" style="max-width: 450px;" role="form">
     <div class="form-group has-error">
-      <label for="em9" class="col-sm-3 control-label required">Invalid</label>
+      <label for="em9" class="col-sm-3 control-label required">Email</label>
       <div class="col-sm-9">
         <input type="email" class="form-control form-control-width-md" id="em9" value="john.smith@gmail" required aria-required="true" aria-invalid="true">
         <span class="help-block">This email address is not valid.</span>
       </div>
     </div>
     <div class="form-group has-error">
-      <label for="pw9" class="col-sm-3 control-label required">Required</label>
+      <label for="pw9" class="col-sm-3 control-label required">Password</label>
       <div class="col-sm-9">
-        <input type="text" class="form-control form-control-width-md" required aria-required="true" id="pw9" aria-invalid="true">
+        <input type="password" class="form-control form-control-width-md" required aria-required="true" id="pw9" aria-invalid="true">
         <span class="help-block">This field is required.</span>
       </div>
     </div>
     <div class="form-group">
       <div class="col-sm-offset-3 col-sm-9">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Log in</button>
       </div>
     </div>
 </form>
@@ -320,22 +322,22 @@ __Don't__
 {% highlight html %}
 <form class="form-horizontal" role="form">
     <div class="form-group has-error">
-      <label for="em9" class="col-sm-3 control-label required">Invalid</label>
+      <label for="em9" class="col-sm-3 control-label required">Email</label>
       <div class="col-sm-9">
         <input type="email" class="form-control form-control-width-md" id="em9" value="john.smith@gmail" required aria-required="true" aria-invalid="true">
         <span class="help-block">This email address is not valid.</span>
       </div>
     </div>
     <div class="form-group has-error">
-      <label for="pw9" class="col-sm-3 control-label required">Required</label>
+      <label for="pw9" class="col-sm-3 control-label required">Password</label>
       <div class="col-sm-9">
-        <input type="text" class="form-control form-control-width-md" required aria-required="true" id="pw9" aria-invalid="true">
+        <input type="password" class="form-control form-control-width-md" required aria-required="true" id="pw9" aria-invalid="true">
         <span class="help-block">This field is required.</span>
       </div>
     </div>
     <div class="form-group">
       <div class="col-sm-offset-3 col-sm-9">
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Log in</button>
       </div>
     </div>
 </form>
@@ -344,31 +346,26 @@ __Don't__
 
 {::nomarkdown}
 <div class="pl-preview">
-<form class="form-horizontal" style="max-width: 450px;" role="form">
-    <div class="form-group">
-        <div class="col-sm-offset-3 col-sm-9">
-            <div class="alert alert-danger" style="margin: 0;">
-                <i class="alert-icon alert-icon-danger"></i> The email or password you entered is incorrect.
-            </div>
-        </div>
+<h4>Form level validation</h4>
+<br>
+<form  style="max-width: 450px;" role="form">
+    <div class="alert alert-danger">
+        <i class="alert-icon alert-icon-danger"></i> Middle name is a required. Please provide the missing information.
     </div>
     <div class="form-group">
-      <label for="em10" class="col-sm-3 control-label required">Email</label>
-      <div class="col-sm-9">
-        <input type="email" class="form-control" id="em10" value="john.smith@gmail.com" required aria-required="true">
+        <label class="control-label required" for="fn12">First name</label>
+        <input type="text" class="form-control" id="fn12" value="John" required aria-required="true">
       </div>
-    </div>
-    <div class="form-group">
-      <label for="pw10" class="col-sm-3 control-label required">Password</label>
-      <div class="col-sm-9">
-        <input type="password" class="form-control" id="pw10" required aria-required="true">
+      <div class="form-group has-error">
+        <label class="control-label required" for="mn12">Middle name</label>
+        <input type="text" class="form-control" id="mn12" required aria-required="true" aria-invalid="true">
+        <span class="help-block">This field is required.</span>
       </div>
-    </div>
-    <div class="form-group">
-      <div class="col-sm-offset-3 col-sm-9">
-        <button type="submit" class="btn btn-primary">Sign in</button>
+      <div class="form-group">
+        <label class="control-label required" for="ln12">Last name</label>
+        <input type="text" class="form-control" id="ln12" value="Smith" required aria-required="true">
       </div>
-    </div>
+      <button type="submit" class="btn btn-primary">Add user</button>
 </form>
 </div>
 {:/nomarkdown}
@@ -376,31 +373,22 @@ __Don't__
 
 {% highlight html %}
 <form class="form-horizontal" role="form">
-  <div class="form-group has-error">
-    <label for="em10" class="col-sm-2 control-label">Email</label>
-    <div class="col-sm-10">
-      <input type="email" class="form-control form-control-width-md" id="em10">
-      <span class="help-block">Email is not valid.</span>
+  <div class="alert alert-danger">
+        <i class="alert-icon alert-icon-danger"></i> Middle name is a required field.
     </div>
-  </div>
-  <div class="form-group">
-    <label for="pw10" class="col-sm-2 control-label">Password</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control form-control-width-md" id="pw10" >
-    </div>
-  </div>
-  <div class="form-group has-error">
-    <label for="passwordInput4" class="col-sm-2 control-label">Confirm password</label>
-    <div class="col-sm-10">
-      <input type="password" class="form-control form-control-width-md" id="passwordInput4">
-      <span class="help-block">Passwords do not match.</span>
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-primary">Sign in</button>
-    </div>
-  </div>
+    <div class="form-group">
+        <label class="control-label required" for="fn12">First name</label>
+        <input type="text" class="form-control" id="fn12" value="John" required aria-required="true">
+      </div>
+      <div class="form-group has-error">
+        <label class="control-label required" for="mn12">Middle name</label>
+        <input type="text" class="form-control" id="mn12" required aria-required="true" aria-invalid="true">
+        <span class="help-block">This field is required.</span>
+      </div>
+      <div class="form-group">
+        <label class="control-label required" for="ln12">Last name</label>
+        <input type="text" class="form-control" id="ln12" value="Smith" required aria-required="true">
+      </div>
 </form>
 {% endhighlight %}
 </div>
@@ -635,318 +623,3 @@ __Text area__
 
 </div>
 
-<div class="pl-pattern">
-### Examples
-
-These examples show various form configurations.
-
-
-#### Various form elements
-
-
-{::nomarkdown}
-<div class="pl-preview">
-<form class="form-horizontal" style="max-width: 450px;" role="form">
-  <div class="form-group">
-    <label for="em12" class="col-sm-3 control-label required">Email</label>
-    <div class="col-sm-9">
-      <input type="email" class="form-control form-control-width-md" id="em12" required aria-required="true">
-      <span class="help-block">Your email will be used to log in.</span>
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="n12" class="col-sm-3 control-label required">Name</label>
-    <div class="col-sm-9">
-      <input type="text" class="form-control-width-md form-control" id="n12" required aria-required="true">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="ci12" class="col-sm-3 control-label required">City</label>
-    <div class="col-sm-9">
-      <input type="text" class="form-control-width-md form-control" id="ci12" required aria-required="true">
-    </div>
-   </div>
-   <div class="form-group">
-    <label for="si12" class="col-sm-3 control-label required">State</label>
-    <div class="col-sm-9">
-        <select id="si12" required aria-required="true" class="form-control-width-sm select2 form-control">
-          <option value="" disabled selected hidden>Select</option>
-          <option>AL</option>
-          <option>AK</option>
-          <option>AZ</option>
-          <option>AR</option>
-          <option>CA</option>
-          <option>WA</option>
-        </select>
-    </div>
-  </div>
-  <div class="form-group">
-    <span class="col-sm-3 control-label">Shipping</span>
-    <div class="col-sm-9">
-      <div class="radio">
-        <label><input type="radio" name="opr2" id="opr21" value="option1" checked>UPS</label>
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="opr2" id="opr22" value="option2">FedEx</label>
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="opr2" id="opr23" value="option3">USPS</label>
-      </div>
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-3 col-sm-9">
-      <button type="submit" class="btn btn-primary">Send</button>
-    </div>
-  </div>
-</form>
-</div>
-{:/nomarkdown}
-
-
-{% highlight html %}
-<form class="form-horizontal" role="form">
-  <div class="form-group">
-    <label for="em13" class="col-sm-3 control-label">Email</label>
-    <div class="col-sm-9">
-      <input type="email" class="form-control form-control-width-md" id="em13">
-      <span class="help-block">Your email will be used to log in.</span>
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="n12" class="col-sm-3 control-label required">Name</label>
-    <div class="col-sm-9">
-      <input required aria-required="true" type="text" class="form-control form-control-width-md" id="n12">
-    </div>
-  </div>
-  <div class="form-group">
-    <label for="ci12" class="col-sm-3 control-label required">City</label>
-    <div class="col-sm-9">
-      <input required aria-required="true" type="email" class="form-control form-control-width-md" id="ci12">
-    </div>
-</div>
-<div class="form-group">
-    <label for="si12" class="col-sm-3 control-label required">State</label>
-    <div class="col-sm-9">
-        <select required aria-required="true" id="si12" class="form-control form-control-width-md">
-          <option value="" disabled selected hidden>Select</option>
-          <option>AL</option>
-          <option>AK</option>
-          <option>AZ</option>
-          <option>AR</option>
-          <option>CA</option>
-        </select>
-    </div>
-  </div>
-  <div class="form-group">
-    <span class="col-sm-3 control-label">Shipping</span>
-    <div class="col-sm-9">
-      <div class="radio">
-        <label><input type="radio" name="opr2" id="opr21" value="option1" checked>UPS</label>
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="opr2" id="opr22" value="option2">FedEx</label>
-      </div>
-      <div class="radio">
-        <label><input type="radio" name="opr2" id="opr23" value="option3">USPS</label>
-      </div>
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-3 col-sm-9">
-        <div class="checkbox">
-          <label>
-            <input type="checkbox"> Send me notifications via email
-          </label>
-        </div>
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-3 col-sm-9">
-      <button type="submit" class="btn btn-default">Back</button>
-      <button type="submit" class="btn btn-primary pull-right ">Submit</button>
-    </div>
-  </div>
-</form>
-{% endhighlight %}
-
-
-{::nomarkdown}
-<div class="pl-preview">
-<div class="" style="max-width: 450px;">
-    <form role="form" class="col-sm-offset-3" style="max-width: 350px;">
-      <div class="form-group">
-        <div class="alert alert-danger" role="alert">
-          <i class="alert-icon alert-icon-danger"></i>Please fix the 3 errors.
-        </div>
-      </div>
-      <div class="form-group has-error">
-        <label class="control-label required" for="em14">USPTO email address</label>
-        <input type="email" class="form-control" id="em14" value="john.smith@gmail.com" required aria-required="true" aria-invalid="true">
-        <span class="help-block">Email must end with uspto.gov.</span>
-      </div>
-      <div class="form-group has-error" >
-        <label class="control-label required" for="eid12">Employee ID</label> <a href="#" class="pull-right">Find my Employee ID</a>
-        <input type="text" class="form-control" id="eid12" value="238942a" required aria-required="true" aria-invalid="true">
-        <span class="help-block">Employee ID must be numeric.</span>
-      </div>
-      <div class="form-group">
-        <label class="control-label required" for="t12">Title</label>
-        <div>
-            <select class="select2 form-control-width-sm form-control" id="t12" required aria-required="true">
-              <option value="" disabled selected hidden>Select</option>
-              <option value="Mr.">Mr.</option>
-              <option value="Mrs.">Mrs.</option>
-              <option value="Miss">Miss</option>
-            </select>
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="control-label required" for="fn12">First name</label>
-        <input type="text" class="form-control" id="fn12" value="John" required aria-required="true">
-      </div>
-      <div class="form-group has-error">
-        <label class="control-label required" for="mn12">Middle name</label>
-        <input type="text" class="form-control" id="mn12" required aria-required="true" aria-invalid="true">
-        <span class="help-block">This field is required.</span>
-      </div>
-      <div class="form-group">
-        <label class="control-label required" for="ln12">Last name</label>
-        <input type="text" class="form-control" id="ln12" value="Smith" required aria-required="true">
-      </div>
-      <div class="form-group">
-        <label class="control-label required" for="phone12">Telephone number</label>
-        <input type="text" class="form-control" id="phone12" required aria-required="true">
-      </div>
-      <div class="form-group">
-        <div class="form-group-heading">
-          <h4>Address</h4>
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="control-label required" for="country12">Country</label>
-        <select class="select2 form-control" id="country12" required aria-required="true">
-          <option value="" disabled selected hidden>Select</option>
-          <option value="Mr.">United States</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label class="control-label required" for="adline1">Address line 1</label>
-        <input type="text" class="form-control" id="adline1" required aria-required="true">
-      </div>
-      <div class="form-group">
-        <label class="control-label required" for="adline2">Address line 2</label>
-        <input type="text" class="form-control" id="adline2" required aria-required="true">
-      </div>
-      <div class="form-group">
-        <label class="control-label required" for="city12">City</label>
-        <input type="text" class="form-control" id="city12" required aria-required="true">
-      </div>
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="form-group">
-            <label class="control-label required" for="state12">State</label>
-            <input type="text" class="form-control" id="state12" required aria-required="true">
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="form-group">
-            <label class="control-label required" for="zipcode12">Zip code</label>
-            <input type="text" class="form-control" id="zipcode12" required aria-required="true">
-          </div>
-        </div>
-      </div>
-      <button type="button" class="btn btn-default">Cancel</button>
-      <button type="submit" disabled class="btn btn-primary pull-right">Next</button>
-    </form>
-</div>
-</div>
-{:/nomarkdown}
-
-{% highlight html %}
-<form role="form">
-  <div class="form-group">
-    <div class="alert alert-danger">
-      <i class="alert-icon alert-icon-danger"></i>Please fix the 3 errors.
-    </div>
-  </div>
-  <div class="form-group has-error">
-    <label class="control-label required" for="em15">USPTO email address</label>
-    <input type="email" class="form-control" id="em15" value="john.smith@gmail.com" required aria-required="true">
-    <span class="help-block">Email must end with uspto.gov.</span>
-  </div>
-  <div class="form-group has-error" >
-    <label class="control-label required" for="eid12">Employee ID</label> <a href="#" class="pull-right">Find my Employee ID</a>
-    <input type="text" class="form-control" id="eid12" value="238942a" required aria-required="true">
-    <span class="help-block">Employee ID must be numeric.</span>
-  </div>
-  <div class="form-group">
-    <label class="control-label required" for="t12">Title</label>
-    <select class="form-control" id="t12" required aria-required="true">
-      <option value="" disabled selected hidden>Select</option>
-      <option value="Mr.">Mr.</option>
-      <option value="Mrs.">Mrs.</option>
-      <option value="Miss">Miss</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label class="control-label required" for="fn12">First name</label>
-    <input type="text" class="form-control" id="fn12" value="John" required aria-required="true">
-  </div>
-  <div class="form-group has-error">
-    <label class="control-label required" for="mn12">Middle name</label>
-    <input type="text" class="form-control" id="mn12" required aria-required="true">
-    <span class="help-block">This field is required.</span>
-  </div>
-  <div class="form-group">
-    <label class="control-label required" for="ln12">Last name</label>
-    <input type="text" class="form-control" id="ln12" value="Smith" required aria-required="true">
-  </div>
-  <div class="form-group">
-    <label class="control-label required" for="phone12">Telephone number</label>
-    <input type="text" class="form-control" id="phone12" required aria-required="true">
-  </div>
-  <div class="form-group">
-    <div class="form-group-heading">
-        <h4>Address</h4>
-    </div>
-  </div>
-  <div class="form-group">
-    <label class="control-label required" for="country12">Country</label>
-    <select class="form-control" id="country12" required aria-required="true">
-      <option value="" disabled selected hidden>Select</option>
-      <option value="Mr.">United States</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label class="control-label required" for="adline1">Address line 1</label>
-    <input type="text" class="form-control" id="adline1" required aria-required="true">
-  </div>
-  <div class="form-group">
-    <label class="control-label required" for="adline2">Address line 2</label>
-    <input type="text" class="form-control" id="adline2" required aria-required="true">
-  </div>
-  <div class="form-group">
-    <label class="control-label required" for="city12">City</label>
-    <input type="text" class="form-control" id="city12" required aria-required="true">
-  </div>
-  <div class="row">
-    <div class="col-sm-6">
-      <div class="form-group">
-        <label class="control-label required" for="state12">State</label>
-        <input type="text" class="form-control" id="state12" required aria-required="true">
-      </div>
-    </div>
-    <div class="col-sm-6">
-      <div class="form-group">
-        <label class="control-label required" for="zipcode12">Zip code</label>
-        <input type="text" class="form-control" id="zipcode12" required aria-required="true">
-      </div>
-    </div>
-  </div>
-  <button type="button" class="btn btn-default">Cancel</button>
-  <button type="submit" disabled class="btn btn-primary pull-right">Next</button>
-</form>
-{% endhighlight %}
-
-</div>
