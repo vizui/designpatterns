@@ -66,6 +66,7 @@ doctypes:
   - inspiration
 
 guidetypes:
+  - research
   - design
   - evaluation
 
