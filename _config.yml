@@ -67,6 +67,7 @@ doctypes:
 
 guidetypes:
   - research
+  - requirements
   - design
   - evaluation
 
