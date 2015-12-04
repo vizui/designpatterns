@@ -1,17 +1,19 @@
-﻿---
+---
 title: "Identify environment"
 ---
 
-<div class="pl-pattern">   
+<div class="pl-pattern">
+
 <h3>Identify environment</h3>
 
-fdsa
+fdsagfsdg fdsg fds gfdsg fdsg fds gfds gfdsg fdsgfds gfds gfsd
 
 <br><br>
 </div>
 
 
 <div class="pl-pattern">
+
 ###Group facilitation - Roles
 
 ####Purpose
