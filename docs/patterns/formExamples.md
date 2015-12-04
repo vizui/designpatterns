@@ -7,19 +7,29 @@ title: "Form: Examples"
 
 These examples show various form configurations.
 
-<br>
 
-### Address
+
 
 {::nomarkdown}
 <div class="pl-preview">
+
 <div class="" style="max-width: 450px;">
-    <form role="form" class="col-sm-offset-3" style="max-width: 350px;">
+    
+    <form role="form">
       <div class="form-group">
         <div class="alert alert-danger" role="alert">
           <i class="alert-icon alert-icon-danger"></i>Please fix the 3 errors.
         </div>
       </div>
+      <div class="form-group">
+        <span class="help-block text-right">* indicates required</span>
+      </div>
+      <div class="form-group">
+        <div class="form-group-heading">
+          <h4>Account ID</h4>
+        </div>
+      </div>
+      
       <div class="form-group has-error">
         <label class="control-label required" for="em14">USPTO email address</label>
         <input type="email" class="form-control" id="em14" value="john.smith@gmail.com" required aria-required="true" aria-invalid="true">
@@ -29,6 +39,11 @@ These examples show various form configurations.
         <label class="control-label required" for="eid12">Employee ID</label> <a href="#" class="pull-right">Find my Employee ID</a>
         <input type="text" class="form-control" id="eid12" value="238942a" required aria-required="true" aria-invalid="true">
         <span class="help-block">Employee ID must be numeric.</span>
+      </div>
+      <div class="form-group">
+        <div class="form-group-heading">
+          <h4>Name</h4>
+        </div>
       </div>
       <div class="form-group">
         <label class="control-label required" for="t12">Title</label>
@@ -97,7 +112,7 @@ These examples show various form configurations.
         </div>
       </div>
       <button type="button" class="btn btn-default">Cancel</button>
-      <button type="submit" disabled class="btn btn-primary pull-right">Save &amp; Continue</button>
+      <button type="submit" class="btn btn-primary pull-right">Save &amp; Continue</button>
     </form>
 </div>
 </div>
@@ -185,7 +200,7 @@ These examples show various form configurations.
     </div>
   </div>
   <button type="button" class="btn btn-default">Cancel</button>
-  <button type="submit" disabled class="btn btn-primary pull-right">Save &amp; Continue</button>
+  <button type="submit" class="btn btn-primary pull-right">Save &amp; Continue</button>
 </form>
 {% endhighlight %}
 
