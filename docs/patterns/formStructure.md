@@ -2,11 +2,9 @@
 title: "Form structure"
 ---
 
-<p class="text-center">   
-This guide has been adapted from [Effective forms](https://cfpb.github.io/design-manual/guides/effective-forms.html) in the [CFPB Design Manual](https://cfpb.github.io/design-manual/) which is itself adapted from the guide [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) in the [GOV.UK Government Service Design Manual](https://www.gov.uk/service-manual), which is licensed under the [Open Government License v2.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/).
-</p>
+<div class="pl-pattern">   
 
-<div class="pl-pattern" style="margin-top: 20px;">   
+
 <h3>Form structure</h3>
 
 Web forms provide an incredible advantage over paper forms in their potential for accessibility, usability, and operational efficiency, but when designed without users in mind they can lose many of these benefits. In this guide, we’ve outlined several ways to ensure the best possible user experience.
@@ -33,18 +31,18 @@ For example, on a website, you might choose to have one section per page, or mul
 </div>
 
 <div class="pl-pattern">   
-### Single page layout
+### Single page
 
 All sections are positioned on a single page.
 
 <div class="row">
 
-<div class="col-sm-4">
-<img src="../images/EffectiveForms1@2x.png" alt="Diagram showing all sections on a page" width="100%">
+<div class="col-sm-6 col-md-5 col-lg-2">
+<img src="../images/USPTO-EF-Single-Page.png" alt="Diagram showing all sections on a page">
 
 </div>
 
-<div class="col-sm-4">
+<div class="col-sm-6 col-md-3">
 #### The good
 
 * There's only one submit button to press
@@ -54,7 +52,7 @@ All sections are positioned on a single page.
 * Progress is self-evident
 </div>
 
-<div class="col-sm-4">
+<div class="col-sm-6 col-md-3">
 #### The bad
 
 * Long forms can be overwhelming and off-putting
@@ -70,17 +68,18 @@ All sections are positioned on a single page.
 </div>
 
 
-<!-- <div class="pl-pattern">   
-### Option 2: Wizard
+<div class="pl-pattern">   
+### Wizard
 
-Each section goes on its own page.
+<p>Each section goes on its own page. </p>
+<p style="margin-bottom: 20px">Please see the <a href="wizards.html"><b>Wizards pattern</b></a> for more details on how to implement the layout and navigation.</p>
 
 
-<img src="../images/EffectiveForms2@2x.png" alt="Diagram showing each section on its own page" width="100%">
+<img class="img-responsive" src="../images/USPTO-EF-Wizard.png" alt="Diagram showing each section on its own page">
 
 
 <div class="row">
-<div class="col-sm-6">
+<div class="col-sm-6 col-md-6 col-lg-4">
 #### The good
 
 * It's easier to handle branching and dependencies between sections
@@ -91,7 +90,7 @@ Each section goes on its own page.
 
 </div>
 
-<div class="col-sm-6">
+<div class="col-sm-6 col-md-6 col-lg-4">
 #### The bad
 
 * Can be harder for users to see where they are within the form
@@ -104,7 +103,7 @@ Each section goes on its own page.
 </div>
 </div>
 <br><br>
-</div> -->
+</div>
 
 <!-- <div class="pl-pattern">   
 ### Option: Accordion form
@@ -147,7 +146,7 @@ All sections on a single page, but each new section only appears once the previo
 </div> -->
 
 <div class="pl-pattern">   
-### Hybrid layout
+### Hybrid
 
 For more complicated forms, some combination of the other options might be your best bet.
 
@@ -156,7 +155,7 @@ Done well, this can give you the benefits of both the single page and wizard app
 As always, these design decisions must have a strong, user-centred rationale behind them.
 
 
-<img src="../images/EffectiveForms4@2x.png" alt="Diagram showing a hybrid form" width="100%">
+<img class="img-responsive" src="../images/USPTO-EF-Hybrid.png" alt="Diagram showing a hybrid form">
 
 <br><br>
 
@@ -244,4 +243,10 @@ Asking for information because 'it might be useful' or 'it helps with our record
 <br><br>
 </div> -->
 
+<div class="pl-pattern">
+<h3 style="font-size: 16px; margin-top: 0">Attribution</h3>
 
+This guide has been adapted from [Effective forms](https://cfpb.github.io/design-manual/guides/effective-forms.html) in the [CFPB Design Manual](https://cfpb.github.io/design-manual/) which is itself adapted from the guide [Designing transactions](https://www.gov.uk/service-manual/user-centred-design/designing-transactions.html) in the [GOV.UK Government Service Design Manual](https://www.gov.uk/service-manual), which is licensed under the [Open Government License v2.0](http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2/).
+
+&nbsp;
+</div>
