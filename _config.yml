@@ -66,6 +66,7 @@ doctypes:
   - inspiration
 
 guidetypes:
+  - project
   - research
   - requirements
   - design
