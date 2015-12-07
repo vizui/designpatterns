@@ -79,14 +79,14 @@ Use vertical steps when there are 5 or more steps, when there are nested steps, 
                         <label for="txt-email1">Email 1</label>
                         <div class="input-group">
                             <input id="txt-email1" type="text" class="form-control" value="jsmith@corp.com">
-                            <div class="input-group-btn"><button class="btn btn-default"><i class="icon icon-times"></i></button></div>
+                            <div class="input-group-btn"><button class="btn btn-default" type="button"><i class="icon icon-times"></i></button></div>
                         </div>
                     </div>
                     <div class="form-group has-error" style="">
                         <label for="txt-email2">Email 2</label>
                         <div class="input-group">
                             <input id="txt-email2" type="text" class="form-control" value="aharrison@corp">
-                            <div class="input-group-btn"><button class="btn btn-default"><i class="icon icon-times"></i></button></div>
+                            <div class="input-group-btn"><button class="btn btn-default" type="button"><i class="icon icon-times"></i></button></div>
                         </div>
                         <p class="help-block">Invalid email address.</p>
                     </div>
@@ -94,12 +94,12 @@ Use vertical steps when there are 5 or more steps, when there are nested steps, 
                         <label for="txt-email3">Email 3</label>
                         <div class="input-group">
                             <input id="txt-email3" type="text" class="form-control" placeholder="Enter an email address">
-                            <div class="input-group-btn"><button class="btn btn-default">Add</button></div>
+                            <div class="input-group-btn"><button class="btn btn-default" type="button">Add</button></div>
                         </div>
                     </div>
                         <div class="text-right" style="position: absolute; padding: 15px; bottom: 0; right: 0; left: 0;">
-                        <button class="btn btn-default pull-left">Back</button>
-                        <button class="btn btn-primary">Continue</button>
+                        <button class="btn btn-default pull-left" type="button">Back</button>
+                        <button class="btn btn-primary" type="button">Continue</button>
                     </div>
                 </div>
             </div>
@@ -150,8 +150,8 @@ Use horizontal steps when there are 4 or less steps.
                     </div>
                 </form>
                 <div class="text-right" style="margin-top: 24px;">
-                    <button class="btn btn-default pull-left">Back</button>
-                    <button class="btn btn-primary">Continue</button>
+                    <button class="btn btn-default pull-left" type="button">Back</button>
+                    <button class="btn btn-primary" type="button">Continue</button>
                 </div>
             </div>
 <!--             <div style="display: inline-block; width: 100%; text-align: center; padding: 15px; margin-bottom: 10px;">
@@ -174,23 +174,23 @@ Buttons for a wizard can vary depending on the need. The primary actions should 
 <div class="pl-preview">
 <div style="max-width: 450px; display: inline-block; width: 100%;">
     <div class="btn-toolbar">
-        <button class="btn btn-primary pull-right">Continue</button>
+        <button class="btn btn-primary pull-right" type="button">Continue</button>
     </div>
     <hr>
     <div class="btn-toolbar">
-        <button class="btn btn-default">Back</button>
-        <button class="btn btn-primary pull-right">Continue</button>
+        <button class="btn btn-default" type="button">Back</button>
+        <button class="btn btn-primary pull-right" type="button">Continue</button>
     </div>
     <hr>
     <div class="btn-toolbar">
-        <button class="btn btn-default">Back</button><button class="btn btn-default">Cancel</button>
-        <button class="btn btn-primary pull-right">Continue</button>
+        <button class="btn btn-default" type="button">Back</button><button class="btn btn-default" type="button">Cancel</button>
+        <button class="btn btn-primary pull-right" type="button">Continue</button>
     </div>
     <hr>
     <div class="btn-toolbar">
-        <button class="btn btn-default">Back</button><button class="btn btn-default">Cancel</button>
-        <button class="btn btn-primary pull-right">Continue</button>
-        <button class="btn btn-default pull-right">Save</button>
+        <button class="btn btn-default" type="button">Back</button><button class="btn btn-default" type="button">Cancel</button>
+        <button class="btn btn-primary pull-right" type="button">Continue</button>
+        <button class="btn btn-default pull-right" type="button">Save</button>
     </div>
     <p style="margin-top: 10px;" class="pull-right text-muted"> Last saved 09/19/14 10:45 AM</p>
 </div>

@@ -13,9 +13,9 @@ These examples show various form configurations.
 {::nomarkdown}
 <div class="pl-preview">
 
-<div class="" style="max-width: 450px;">
-    
-    <form role="form">
+<div class="container" style="margin: 0">
+  <div class="row">
+    <form class="col-sm-6" role="form">
       <div class="form-group">
         <div class="alert alert-danger" role="alert">
           <i class="alert-icon alert-icon-danger"></i>Please fix the 3 errors.
@@ -114,6 +114,7 @@ These examples show various form configurations.
       <button type="button" class="btn btn-default">Cancel</button>
       <button type="submit" class="btn btn-primary pull-right">Save &amp; Continue</button>
     </form>
+  </div>
 </div>
 </div>
 {:/nomarkdown}
