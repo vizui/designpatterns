@@ -10,3 +10,9 @@ title: "Guides"
     <p class="text-muted" style="font-size: 11px;">This is a product of the U.S. Patent and Trademark Office - User Experience Division.</p>
 </div>
 {:/nomarkdown}
+
+|**Project**				|**Research**		|**Requirements**	|**Design**		|**Evaluation**		|
+|Start						|Stakeholders		|Requirements		|Design			|Evaluation			|
+|* [Kickoff meeting]	(/project/project-start.html#kickoff-meeting-questions)		|Goals				|Requirements		|Design			|Evaluation			|
+|End						|Tasks				|Requirements		|Design			|Evaluation			|
+|* Project transition		|Environment		|Requirements		|Design			|Evaluation			|
