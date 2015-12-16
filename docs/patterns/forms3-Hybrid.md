@@ -3,15 +3,18 @@ title: "Form: Hybrid"
 ---
 
 <div class="pl-pattern">   
-### Hybrid
+<h3>Form: Hybrid</h3>
 
-For more complicated forms, some combination of the other options might be your best bet.
+#### Purpose
+Users need guidance filling out a complex, multi-step form.
 
-Done well, this can give you the benefits of both the single page and wizard approaches. It also allows you to create a sense of rhythm to the overall flow, which can help users understand when they have moved into a different part of the form, and break up the monotony of filling in forms.
+
+#### Description
+For more complex forms, a combination of the single page and wizard layouts may give you the benefits of both approaches. A hybrid layout can accommodate long forms and help users understand their progression through all the steps.
 
 As always, these design decisions must have a strong, user-centred rationale behind them.
-
-
+<br>
+<br>
 <img class="img-responsive" src="../images/USPTO-EF-Hybrid.png" alt="Diagram showing a hybrid form">
 
 <br><br>

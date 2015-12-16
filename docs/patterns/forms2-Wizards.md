@@ -3,10 +3,10 @@ title: "Form: Wizards"
 ---
 
 <div class="pl-pattern">
-<h3>Wizards</h3>
+<h3>Form: Wizards</h3>
 
 #### Purpose
-Users need guidance filling out a complex form.
+Users need guidance filling out a complex, multi-step form.
 
 #### Description
 Splitting a complex form into multiple steps accomplishes a few things:

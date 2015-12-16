@@ -3,16 +3,14 @@ title: "Form: Single page"
 ---
 
 <div class="pl-pattern">   
-### Single page
+<h3>Form: Single page</h3>
 
-All sections are positioned on a single page.
+#### Purpose
+Users need guidance filling out a form where all sections are positioned on a single page.
+
+#### Description
 
 <div class="row">
-
-<div class="col-sm-6 col-md-5 col-lg-2">
-<img src="../images/USPTO-EF-Single-Page.png" alt="Diagram showing all sections on a page">
-
-</div>
 
 <div class="col-sm-6 col-md-3">
 #### The good
@@ -33,8 +31,11 @@ All sections are positioned on a single page.
 * Can be harder to track analytics like drop-off rates
 </div> 
 
+<div class="col-sm-6 col-md-5 col-lg-2">
+<img src="../images/USPTO-EF-Single-Page.png" alt="Diagram showing all sections on a page">
 </div>
 
+</div>
 
 <br><br>
 </div>

@@ -3,12 +3,14 @@ title: "Form: Examples"
 ---
 
 <div class="pl-pattern">
-<h3>Examples</h3>
+<h3>Form: Examples</h3>
 
 These examples show various form configurations.
+<br><br>
+</div>
 
-
-
+<div class="pl-pattern">
+### Create Account
 
 {::nomarkdown}
 <div class="pl-preview">
@@ -111,6 +113,7 @@ These examples show various form configurations.
           </div>
         </div>
       </div>
+      <br>
       <button type="button" class="btn btn-default">Cancel</button>
       <button type="submit" class="btn btn-primary pull-right">Save &amp; Continue</button>
     </form>
@@ -123,7 +126,7 @@ These examples show various form configurations.
 <form role="form">
   <div class="form-group">
     <div class="alert alert-danger">
-      <i class="alert-icon alert-icon-danger"></i>Please fix the 3 errors.
+      <i class="alert-icon alert-icon-danger"></i>Please fix the 3 errors below.
     </div>
   </div>
   <div class="form-group has-error">
@@ -204,5 +207,122 @@ These examples show various form configurations.
   <button type="submit" class="btn btn-primary pull-right">Save &amp; Continue</button>
 </form>
 {% endhighlight %}
+</div>
 
+
+
+<div class="pl-pattern">
+### Application 
+
+{::nomarkdown}
+<div class="pl-preview">
+<div class="container" style="margin: 0">
+  <div class="row">
+    <form class="form-horizontal col-sm-6" role="form">
+      
+      <div class="form-group">
+        <span class="help-block text-right">* indicates required</span>
+      </div>
+      <div class="form-group">
+        <div class="form-group-heading">
+          <h4>Invention</h4>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-3 required" for="t122">Title of invention</label>
+        <div class="col-sm-9"><textarea cols="40" rows="2" class="form-control form-control-width-lg" id="t122"></textarea></div>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label col-sm-3 required" for="sm12">Subject matter</label>
+        <div class="col-sm-9">
+            <select class="select2 form-control-width-sm form-control" id="sm12" required aria-required="true">
+              <option value="" disabled selected hidden>Select</option>
+              <option>Utility</option>
+                <option>Plant</option>
+                <option>Design</option>
+            </select>
+        </div>
+      </div>
+      
+      
+      <div class="form-group">
+        <label class="control-label col-sm-3" for="ln122">Suggested Class</label>
+        <div class="col-sm-9"><input type="text" class="form-control form-control-width-md" id="ln122" aria-required="false"></div>
+      </div>
+     <div class="form-group">
+        <label class="control-label col-sm-3" for="sc122">Sub-class</label>
+        <div class="col-sm-9"><input type="text" class="form-control form-control-width-md" id="sc122" aria-required="false"></div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-3" for="stc12">Technology Center</label>
+        <div class="col-sm-9"><input type="text" class="form-control form-control-width-md" id="stc12" aria-required="false"></div>
+      </div>
+       <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+          <button type="submit" class="btn btn-primary">Save</button>
+          <button type="button" class="btn btn-default">Cancel</button>
+        </div>
+      </div>
+      
+    </form>
+  </div>
+</div>
+</div>
+{:/nomarkdown}
+
+{% highlight html %}
+<form class="form-horizontal" role="form">
+    <div class="form-group">
+        <span class="help-block text-right">* indicates required</span>
+    </div>
+    <div class="form-group">
+        <div class="form-group-heading">
+            <h4>Invention</h4>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-3 required" for="t122">Title of invention</label>
+        <div class="col-sm-9">
+            <textarea cols="40" rows="2" class="form-control form-control-width-lg" id="t122"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-3 required" for="sm12">Subject matter</label>
+        <div class="col-sm-9">
+            <select class="select2 form-control-width-sm form-control" id="sm12" required aria-required="true">
+                <option value="" disabled selected hidden>Select</option>
+                <option>Utility</option>
+                <option>Plant</option>
+                <option>Design</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="ln122">Suggested Class</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control form-control-width-md" id="ln122" aria-required="false">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="sc122">Sub-class</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control form-control-width-md" id="sc122" aria-required="false">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-sm-3" for="stc12">Technology Center</label>
+        <div class="col-sm-9">
+            <input type="text" class="form-control form-control-width-md" id="stc12" aria-required="false">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-3 col-sm-9">
+            <button type="submit" class="btn btn-primary">Save</button>
+            <button type="button" class="btn btn-default">Cancel</button>
+        </div>
+    </div>
+</form>
+
+{% endhighlight %}
 </div>
