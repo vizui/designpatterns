@@ -1,11 +1,11 @@
 ---
-title: "Forms"
+title: "Form structure"
 ---
 
 <div class="pl-pattern">   
 
 
-### Form structure
+### Overview
 
 Web forms provide an incredible advantage over paper forms in their potential for accessibility, usability, and operational efficiency, but when designed without users in mind they can lose many of these benefits. In this guide, we’ve outlined several ways to ensure the best possible user experience.
 
