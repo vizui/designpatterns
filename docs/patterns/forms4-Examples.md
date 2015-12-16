@@ -1,5 +1,6 @@
 ---
 title: "Form: Examples"
+preview: true
 ---
 
 <div class="pl-pattern">
