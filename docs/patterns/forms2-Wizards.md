@@ -25,6 +25,32 @@ A wizard is usually composed of:
 
 &nbsp;
 
+<img class="img-responsive" src="../images/USPTO-EF-Wizard.png" alt="Diagram showing each section on its own page">
+<div class="row">
+<div class="col-sm-6 col-lg-4">
+#### The good
+
+* It's easier to handle branching and dependencies between sections
+* It's easier to let the user save progress
+* A long form can feel more manageable
+* Easier to guide a user through an unfamiliar process
+* Easier to capture analytics like drop-off rates for each section
+
+</div>
+
+<div class="col-sm-6 col-lg-4">
+#### The bad
+
+* Can be harder for users to see where they are within the form
+* It can slow users down as they have to click and load each section
+* You lose the contextual information from neighboring sections
+* Harder for users to review and edit previous sections
+* There's no single place for users to go back and edit their data
+* Not a natural fit for non-linear processes like looping, adding and removing
+
+</div>
+</div>
+<br><br>
 </div>
 
 <div class="pl-pattern">
