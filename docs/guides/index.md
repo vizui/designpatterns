@@ -14,6 +14,6 @@ title: "Guides"
 | **Project** | **Research** | **Requirements** | **Design** | **Evaluation** |
 |-----------|-----------|-----------|-----------|-----------|
 | Start | Stakeholders | Requirements | Design | Evaluation |
-|- [Kickoff meeting] (/project/project-start.html#kickoff-meeting-questions) |Goals				|Requirements		|Design			|Evaluation			|
+|- [Kickoff meeting] (./project/project-start.html#kickoff-meeting-questions) |Goals				|Requirements		|Design			|Evaluation			|
 |End						|Tasks				|Requirements		|Design			|Evaluation			|
 |Project transition		|Environment		|Requirements		|Design			|Evaluation			|
