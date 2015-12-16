@@ -1,3 +1,8 @@
+<STYLE type="text/css">
+    p.Address {text-align:center;font-family:Times; margin-bottom: 10px;}
+</style>
+
+
 ---
 title: "Usability Test Plan"
 ---
@@ -19,7 +24,9 @@ title: "Usability Test Plan"
 
 This document describes a test plan for conducting a usability test during the development of <font color="red">[web site name or application name]</font>.
 
+<p class="Address">
 The goals of usability testing include establishing a baseline of user performance, establishing and validating user performance measures, and identifying potential design concerns to be addressed in order to improve the efficiency, productivity, and end-user satisfaction
+</p>
 
 > *add or delete goals*
 
