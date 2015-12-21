@@ -42,17 +42,10 @@ layout: pattern
             <div class="col-sm-12 col-lg-12">
                 <h4 class="margin-top-0">USPTO Axure widget library</h4>
                 <p>This library allows for rapid wireframing of interactions using the look & feel of the USPTO pattern library. The USPTO widget library can be used in Axure or other compatible software.</p>
-               <a href="{{site.baseurl}}/downloads/usptostrap-{{site.version}}.zip" class="btn btn-primary"><i class="icon icon-inverse icon-download"></i> &nbsp;Download USPTO Axure Widget Library</a>
-                <div class="margin-top-1 small">Current release version: <strong>0.1.1</strong></div>
+               <a href="https://github.com/USPTO/designpatterns/tree/gh-pages/resources/" class="btn btn-primary"><i class="icon icon-inverse icon-download"></i> &nbsp;Download USPTO Axure Widget Library</a>
+                <div class="margin-top-1 small">Current release version: <strong>0.1.0</strong></div>
             </div>
         </div>
-         <!--<div class="col-sm-6 col-lg-6">
-                <h4 class="margin-top-0">Axure widget library</h4>
-                <p>This library allows for rapid wireframing of interactions using the look & feel of the USPTO pattern library. The USPTO widget library can be used in Axure or other compatible software. </p>
-               <a href="{{site.baseurl}}/downloads/usptostrap-{{site.version}}.zip" class="btn btn-primary"><i class="icon icon-inverse icon-download"></i> &nbsp;Download USPTO Axure Widget Library</a>
-                <div class="margin-top-1 small">Current release version: <strong>0.1</strong></div>
-            </div>
-        </div>-->
     </div>
 
 {:/nomarkdown}
