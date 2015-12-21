@@ -33,4 +33,26 @@ layout: pattern
         <p>The compiled CSS file includes a themed and extended version of Bootstrap. You shouldn't include the original Bootstrap CSS in your web page. If you're going to be writing any additional CSS specific for your web page, we recommend using the LESS files instead and taking advantage of the variables when possible.</p>
     </div>
 </div>
+
+<div class="">
+    <div class="pl-panel">
+        <div class="row">
+        <h2 class="margin-top-0">Wireframe & prototype resources</h2>
+        <p>&nbsp;</p>
+            <div class="col-sm-12 col-lg-12">
+                <h4 class="margin-top-0">USPTO Axure widget library</h4>
+                <p>This library allows for rapid wireframing of interactions using the look & feel of the USPTO pattern library. The USPTO widget library can be used in Axure or other compatible software.</p>
+               <a href="{{site.baseurl}}/downloads/usptostrap-{{site.version}}.zip" class="btn btn-primary"><i class="icon icon-inverse icon-download"></i> &nbsp;Download USPTO Axure Widget Library</a>
+                <div class="margin-top-1 small">Current release version: <strong>0.1.1</strong></div>
+            </div>
+        </div>
+         <!--<div class="col-sm-6 col-lg-6">
+                <h4 class="margin-top-0">Axure widget library</h4>
+                <p>This library allows for rapid wireframing of interactions using the look & feel of the USPTO pattern library. The USPTO widget library can be used in Axure or other compatible software. </p>
+               <a href="{{site.baseurl}}/downloads/usptostrap-{{site.version}}.zip" class="btn btn-primary"><i class="icon icon-inverse icon-download"></i> &nbsp;Download USPTO Axure Widget Library</a>
+                <div class="margin-top-1 small">Current release version: <strong>0.1</strong></div>
+            </div>
+        </div>-->
+    </div>
+
 {:/nomarkdown}
