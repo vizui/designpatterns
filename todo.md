@@ -16,7 +16,6 @@ __Pagination__
 __To be scheduled__
 - Add description for "non-iconothon" icons
 - Time picker
-- Cards
 - Notes
 - Image/text zoom
 - Image gallery
@@ -35,7 +34,7 @@ __To be scheduled__
 - Add red form highlights for multiple checkboxes and other text-heavy form elements
 - Writing style guide (mod OCCO's for pattern library - See https://design.atlassian.com/2.1/product/foundations/writing-style)
 
-__v1.4 Releases (TBD)__
+__v1.4 Releases (10/2015)__
 - Iconothon icons
 - New inspirations
 - Tooltips with lighter color
@@ -45,6 +44,7 @@ __v1.5 Releases (TBD)__
 - Step indicator modifications
 - Tooltip indicators
 - Tables and expanded row color schema
+- Cards
 
 __v2.0 Releases (TBD)__
 - Gadget framework
