@@ -4,7 +4,27 @@ layout: pattern
 ---
 
 {::nomarkdown}
+
+
 <div class="pl-versions">
+    <div class="pl-panel">
+        <h4>1.4.2 - Dec 04, 2015 <a href="{{site.repository.url}}/releases/tag/v1.4.1">(Download)</a></h4>
+        <span class="label subtle label-success">NEW</span>
+        <ul>
+            <li>Inclusion of the USPTO Axure widget library version 0.1.0</li>
+        </ul>
+        <span class="label subtle label-success">IMPROVED</span>
+        <ul>
+            <li>Fixed missing RSS icon, refreshed SVG icon set to compensate (bug)</li>
+        </ul>
+    </div>
+    <div class="pl-panel">
+        <h4>1.4.1 - Dec 04, 2015 <a href="{{site.repository.url}}/releases/tag/v1.4.1">(Download)</a></h4>
+        <span class="label subtle label-success">IMPROVED</span>
+        <ul>
+            <li>Bug fixes</li>
+        </ul>
+    </div>
     <div class="pl-panel">
         <h4>1.4.0 - Nov 09, 2015 <a href="{{site.repository.url}}/releases/tag/v1.4.0">(Download)</a></h4>
         <span class="label subtle label-info">NEW</span>
