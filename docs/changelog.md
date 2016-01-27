@@ -8,7 +8,7 @@ layout: pattern
 
 <div class="pl-versions">
     <div class="pl-panel">
-        <h4>1.4.2 - Dec 04, 2015 <a href="{{site.repository.url}}/releases/tag/v1.4.1">(Download)</a></h4>
+        <h4>1.4.2 - Dec 04, 2015 <a href="{{site.repository.url}}/releases/tag/v1.4.2">(Download)</a></h4>
         <span class="label subtle label-success">NEW</span>
         <ul>
             <li>Inclusion of the USPTO Axure widget library version 0.1.0</li>
