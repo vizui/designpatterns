@@ -35,7 +35,7 @@
     <div class="pl-container">
         <nav class="pl-sidebar">
             <ul class="nav nav-stacked">
-                {% for c in site.doctypes %}
+                {% for c in site.guidetypes %}
                     <li class="category">{{c}}</li>
                     {% for p in site.pages %}
                         {% if p.url contains c %}
@@ -52,6 +52,14 @@
             </ul>
         </nav>
         <section class="pl-content">
+            <noscript>
+                <div class="pl-preview-header" style="margin-bottom: 0">
+                    <div class="alert alert-danger" style="line-height: 25px;">
+                        <p>For full functionality of this site it is necessary to enable JavaScript.</p>
+                        <p>Here are the <a href="http://www.enable-javascript.com/" target="_blank"> instructions how to enable JavaScript in your web browser</a>.</p>
+                    </div>
+                </div>
+            </noscript>
             {% if page.preview == true %}
                 <div class="pl-preview-header">This document is a preview.</div>
             {% endif %}
