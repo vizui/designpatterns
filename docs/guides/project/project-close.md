@@ -11,7 +11,6 @@ When a project is ending or the team transitioning, it is important that knowled
 <br><br>
 </div>
 
-
 <div class="pl-pattern">
 
 project-transition
@@ -24,7 +23,7 @@ Transfer knowledge team has gained
 
 ####Description
 
-fdsafdsa
+Description of document goes here
 
 {::nomarkdown}
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-projecttransition">Preview template</button>
