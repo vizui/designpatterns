@@ -4,27 +4,24 @@ title: "Project close"
 
 <div class="pl-pattern">
 
-<h3>Project close</h3>
+<h3>Section heading here</h3>
 
 When a project is ending or the team transitioning, it is important that knowledge transfer occurs.
 
 <br><br>
 </div>
 
-
 <div class="pl-pattern">
 
-project-transition
+### Project transition template
 
-###Project transition template
-
-####Purpose
+#### Purpose
 
 Transfer knowledge team has gained
 
-####Description
+#### Description
 
-fdsafdsa
+Description of document goes here
 
 {::nomarkdown}
     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-projecttransition">Preview template</button>
@@ -46,7 +43,7 @@ fdsafdsa
     </div>
 {:/nomarkdown}
 
-####Download	
+#### Download	
 
 <a href="http://vizui.github.io/designpatterns/docs/guides/downloads/project-transition.docx"><i class="icon icon-file-pdf-o" style="margin-right: 5px"></i>project-transition.docx</a>
 
