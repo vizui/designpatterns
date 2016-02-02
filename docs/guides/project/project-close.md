@@ -15,13 +15,13 @@ When a project is ending or the team transitioning, it is important that knowled
 
 project-transition
 
-###Project transition template
+### Project transition template
 
-####Purpose
+#### Purpose
 
 Transfer knowledge team has gained
 
-####Description
+#### Description
 
 Description of document goes here
 
@@ -45,7 +45,7 @@ Description of document goes here
     </div>
 {:/nomarkdown}
 
-####Download	
+#### Download	
 
 <a href="http://vizui.github.io/designpatterns/docs/guides/downloads/project-transition.docx"><i class="icon icon-file-pdf-o" style="margin-right: 5px"></i>project-transition.docx</a>
 
