@@ -8,7 +8,7 @@ layout: pattern
 
 <div class="pl-versions">
  <div class="pl-panel">
-        <h4>1.4.3 - Feb 21, 2016 <a href="{{site.repository.url}}/releases/tag/v1.4.3">(Download)</a></h4>
+        <h4>1.4.3 - Feb 2, 2016 <a href="{{site.repository.url}}/releases/tag/v1.4.3">(Download)</a></h4>
         <span class="label subtle label-success">NEW</span>
         <ul>
             <li>Addition of foundation -> links page and language</li>
