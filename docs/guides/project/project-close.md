@@ -33,7 +33,7 @@ Description of document goes here
             <h4 class="modal-title" id="hd-pdf">Knowledge transition template</h4>
           </div>
           <div class="modal-body">
-            <iframe class="iframe-pdf" frameborder="0" src="http://docs.google.com/gview?url=http://vizui.github.io/designpatterns/docs/guides/downloads/project-transition.docx&amp;embedded=true" style="height: 500px; width: 100%"></iframe>
+            <iframe class="iframe-pdf" frameborder="0" src="http://docs.google.com/gview?url=http://uspto.github.io/designpatterns/docs/guides/downloads/project-transition.docx&amp;embedded=true" style="height: 500px; width: 100%"></iframe>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -45,7 +45,7 @@ Description of document goes here
 
 #### Download	
 
-<a href="http://vizui.github.io/designpatterns/docs/guides/downloads/project-transition.docx"><i class="icon icon-file-pdf-o" style="margin-right: 5px"></i>project-transition.docx</a>
+<a href="../downloads/project-transition.docx"><i class="icon icon-file-pdf-o" style="margin-right: 5px"></i>project-transition.docx</a>
 
 <br><br>
 </div>
